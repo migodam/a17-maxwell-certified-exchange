@@ -1,0 +1,1 @@
+{"policy":"exact_score_teacher","completed_round":0,"accepted":[{"round":0,"drop":[1],"add":[104],"kind":"swap","Qhat":2.3259483815527875e-05,"Q_true":3.2508646537351896e-05,"actual_rank":4,"tau":3.975942529905593e-18}],"selected_ids":[0,2,3,104]}

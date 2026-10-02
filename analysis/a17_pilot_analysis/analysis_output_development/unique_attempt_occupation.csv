@@ -1,0 +1,10 @@
+attempt,unit,start_events,end_events,distinct_end_events,occupation_s,exit_code,terminal,status,stop_reason,accounting
+a17_cuda_gate_48699a0e57,cuda_gate,1,1,1,16.905999999959022,1,True,TERMINAL,,unique attempt charged once; overlapping/nested phase timings never added
+a17_cuda_gate_outputdir_retry_7b37966a6b,cuda_gate_outputdir_retry,1,1,1,3.1869999999762513,0,True,TERMINAL,,unique attempt charged once; overlapping/nested phase timings never added
+a17_o2007_early_1e26bbb71a,o2007_early,1,1,1,1.0619999999762513,1,True,TERMINAL,,unique attempt charged once; overlapping/nested phase timings never added
+a17_o2007_early_portable_72f528da5a,o2007_early_portable,1,1,1,119.70299999997951,0,True,TERMINAL,,unique attempt charged once; overlapping/nested phase timings never added
+a17_o2007_late_1c20efb4a6,o2007_late,1,1,1,119.875,0,True,TERMINAL,,unique attempt charged once; overlapping/nested phase timings never added
+a17_o2007_middle_d8247c9282,o2007_middle,1,1,1,121.07799999997951,0,True,TERMINAL,,unique attempt charged once; overlapping/nested phase timings never added
+a17_o2012_early_e7bf1ffc5a,o2012_early,1,1,1,1303.5780000000377,0,True,TERMINAL,,unique attempt charged once; overlapping/nested phase timings never added
+a17_o2012_late_v5_db1449d60f,o2012_late_v5,1,1,1,491.90600000001723,0,True,TERMINAL,,unique attempt charged once; overlapping/nested phase timings never added
+a17_o2012_middle_v5_73757df7b2,o2012_middle_v5,1,1,1,630.7810000000172,0,True,TERMINAL,,unique attempt charged once; overlapping/nested phase timings never added

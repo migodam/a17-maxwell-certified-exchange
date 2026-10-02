@@ -1,0 +1,60 @@
+\clearpage
+\section*{S14. Full-material preconditioner execution}
+The observation and injection factors also determine a low-rank change of the material normal matrix. This section follows that change into an inverse used by full-H PCG, then records the checks and costs of its implementation. The final solve continues to use the complete material operator.
+The new experiments reuse historical states and preserve their original material fields, damping, data, acquisition, and material parameterization. All material coordinates use the declared volume-weighted physical metric. Complex dielectric increments are packed into real and imaginary parts; because the frozen DDA derivative is complex-linear in the increment, the implementation uses its equivalent complex representation internally. The requested two-column current enrichment is a complex current rank, not a two-dimensional real material repair. Over six illuminations, the update signatures may have many more material columns.
+
+Gate 0 compares a dense inverse, an indefinite Woodbury realization, and rank-revealing QR followed by a small SPD solve. Seven cases include random complex matrices, exact and near rank loss, adjoint and realification checks, and a 27-cell vector DDA. The largest small-DDA inverse residual is approximately \(6.3\times10^{-13}\). A separate adapter check uses the production tangent convention for Gaussian and voxel coordinates, with discrepancies below \(3\times10^{-15}\). These are implementation checks, not continuum validation.
+
+Let \(D=Y_bT_b\). The signature-based identity
+\[
+H_C-H_0=[J_0^*Y_b,T_b^*]
+\begin{bmatrix}0&I\\I&Y_b^*Y_b\end{bmatrix}
+[J_0^*Y_b,T_b^*]^*
+\]
+uses block-diagonal observation factors for different illuminations and a shared material coordinate. The small inverse does not evaluate full \(JZ\) or \(HZ\). Its setup still includes candidate projection/SVD, \(LC\), local injection adjoints, whitening by the baseline inverse, and a small Cholesky factorization. An independently built enlarged Galerkin model checks the resulting Jacobian and inverse. These reconstruction checks are offline validation: their costs appear in job occupation, not in the marginal solver comparison.
+
+Every full-H solve starts at the same old-model step. The stopping target is
+\[
+\frac{\|Hs+h\|_2}{\|h\|_2}\le10^{-8},
+\]
+with a maximum of 150 PCG iterations and an explicitly recomputed final residual. Each full normal action entails six primal and six adjoint full-wave right-hand sides. The initial and final residual evaluations are charged. No dense full-H factorization is used by the online solver. Baseline timings include CPU copies that retain the first six paid current/material actions; their instrumentation overhead is not separately attributed. Thus the reported wall ratios concern this instrumented prototype, and small single-replay margins cannot establish production acceleration. Exact small-tangent spectra, reference intervals, and the separate 30-step and 100-step voxel Ritz diagnostic are offline data.
+
+A computable conservative energy-error interval follows from \(H\succeq\lambda I\):
+\[
+\|s-s_*\|_H\le\|Hs+h\|_2/\sqrt\lambda,
+\qquad \Phi(s)-\Phi(s_*)\le\|Hs+h\|_2^2/(2\lambda).
+\]
+The CSV uses an upper bound for \(\|h\|\) obtained from the stored initial full-H action and initial defect. This can be conservative; it is not labeled an exact reference error.
+
+\section*{S15. Probabilistic certificates and reuse accounting}
+The bidirectional tail gives a sufficient spectral condition; evaluating it cheaply requires a separate statistical check. Independent receiver/material actions probe the omitted transfer, with an explicit failure probability. We then account for how checking, construction, and history acquisition affect repeated use of the inverse.
+For a fixed real operator \(A\) and independent standard real Gaussian vectors \(g_i\),
+\[
+\Pr\{\|A\|_2>2\max_{1\le i\le8}\|Ag_i\|_2\}
+\le[2\Phi_{\rm N}(1/2)-1]^8=4.62285\times10^{-4}.
+\]
+The primary campaign uses \(A=(J-J_C)\Lambda^{-1/2}\). Its upper bound also bounds \(\eta_C\), but can be loose. All candidates are frozen before these validation probes. A union bound over the 72 candidate checks is 0.0333; sharing probe vectors across fixed banks does not require cross-bank independence for this union bound. One nonvacuous upper bound is not evidence that the other bounds failed probabilistically: a value above one simply gives no contraction certificate.
+
+A post-primary four-case check replaces $\Lambda$ whitening by the available exact $H_C$ inverse factor in the Jacobian probe operator. For prior-adjoint ranks 2/12, the two objects yield upper bounds 3.765/2.342 and 14.345/8.861. All remain vacuous; the factor and probe costs are recorded. These results exclude an easy resolution merely by changing the whitening.
+
+The reuse check factors \(M_{C,a}=FF^*\) and probes the symmetric operator
+\[
+A=F^*(H_t-H_{C,a})F.
+\]
+An upper bound below one yields spectral equivalence; the declared refresh threshold is 0.6. The small factor is constructed from the positive eigenvalues of the QR-SPD block, with no hidden regularization. Eight full-H actions per check are charged. A certificate based on a mean-square probe statistic would not satisfy the stated maximum-probe probability formula and is not used.
+
+Chronological policies are always refresh, never refresh, refresh every two saved states, and independent-probe-triggered refresh. Cached construction timings are recharged at each simulated refresh, so the reported totals are measured phase sums, not uninterrupted end-to-end trajectories. At the first state, no historical adjoint bank exists; the reuse driver records a residual-current fallback. Later adjoint banks use previous-state paid current snapshots.
+
+The frozen-H multiple-RHS experiment uses eight distinct one-percent complex measurement-noise realizations at the same late material state. It represents repeated local uncertainty/data-perturbation solves, not eight nonlinear reconstructions. Full state, baseline inverse, and the corresponding RHS construction are genuinely common. Snapshot acquisition is available from the disclosed preceding full solve; it is not a free cold-start resource. The setup and one probabilistic check are paid before the eight proposed solves. Baseline/proposed order alternates.
+
+The initial rank-two material-recycling control receives already-paid histories from separately timed baseline solves. It is therefore an externally assisted historical-information comparator, not a standalone recycling policy. The rank-12 extension corrects this deployment distinction: after the common initial history, each recycling solve captures its own full-H actions and reuses only those. Both controls use a refreshed material coarse correction followed by full-H PCG. Neither is claimed to exhaust optimized deflated/block/recycling Krylov implementations.
+
+\section*{S16. Structured-path experiment and limits}
+The principal path experiment has a one-dimensional chain of 13 wavevectors with all three field components. A uniform lossy background is inverted blockwise through the dyadic Maxwell symbol; a nearest-neighbor modulation defines the residual mode graph. Injection and observation lie in a specified noncentral channel. Increasing the retained radius from zero to three changes the minimum omitted round-trip order from two to eight. The residual coupling norm is explicitly scaled to the reported \(\rho\); this is a controlled finite Fourier model rather than an Ewald periodic simulation of the sharp target.
+
+All four selectors use matched current rank: support-path neighborhoods, centered low frequency, background-propagation block strength, and direct observation strength with deterministic ties. The leading exponent is fitted on the smallest three coupling values; the theoretical statement remains an upper bound. Strong residual coupling outside \(\rho<1\) is retained as an assumption-failure check in the auxiliary periodic stress experiment. An auxiliary worker's control labeled ``radiation'' actually used propagation strength; that row is excluded from receiver-ranking claims.
+
+The finite free-space witness uses the implemented polarizability derivative and total field. One seeded material perturbation produces six illumination-dependent tangent-current responses through the full current equation. The construction projects these responses outside the joint receiver-row and old-current space and retains two independent orthonormal columns. The full material Jacobian is used for evaluation, not to select the witness. This deliberate construction tests existence rather than prevalence or a general online selection rule. The current solve residual stays around \(10^{-15}\), while the feedback-dressed derivative change is percent-level. The uniform-grid changes are a discrete sensitivity check, not independent continuum validation. Supplement S23 specifies the output and derivative norms and their real-material interpretation.
+
+\section*{S17. Reproduction and evidence hierarchy}
+The accompanying execution archive provides a frozen protocol, source hashes, raw anchor JSON and paid-current histories, resource logs, failures, and experiment/cost ledgers. The original paired-repair and sharp-reconstruction records remain unchanged. New records are labeled by stage and cannot be pooled with the historical 72/36 comparisons as independent trials. The standalone reproduction guide identifies local CPU tests and the direct-LAN CUDA commands. The code retains FP64, fixed within-solve preconditioning, an explicit SPD failure path, and a serial GPU watchdog. No FFT acceleration or native TSOM optimizer is implemented in this extension; no speed or superiority claim depends on either.

@@ -1,0 +1,460 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=24mm]{geometry}
+\usepackage{amsmath,amssymb,graphicx,booktabs,tabularx,array,url}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\setsansfont{Arial}\setmonofont{Menlo}
+\usepackage{microtype}
+\setlength{\emergencystretch}{2em}
+\newcommand{\Range}{\operatorname{Range}}
+\begin{document}
+
+\section*{Supplement: Physical Model, Derivations, and Numerical Evidence}
+This companion document supplies the physical model, proofs, protocols, and complete evidence for the current-transfer and conditional current-design manuscript. Its S-numbered equations retain their source numbering. Smooth-target and sharp-target comparisons are separate numerical records. Historical material-repair, preconditioning, and independent sphere tests precede the conditional-exchange study and its information, interaction, and cost diagnostics.
+\setcounter{figure}{0}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\renewcommand{\theHfigure}{S\arabic{figure}}
+\setcounter{table}{0}
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\theHtable}{S\arabic{table}}
+\section*{S1. From the Maxwell volume-integral equation to operator notation}
+\input{SUPPLEMENT_PHYSICAL_BRIDGE.tex}
+\subsection*{Physical coordinates and the implemented vector-Maxwell model}
+
+All material normal equations are over real Hilbert spaces, with material coordinates \(s\in\mathbb R^d\). For complex material contrast, the real and imaginary grid values are stacked, and the real material expansion satisfies \(Q_T^\top M_\chi Q_T=I\). A complex-output map \(F\) of real material coordinates has real adjoint \(v\mapsto\operatorname{Re}(F^Hv)\); equivalently, use its fully realified matrix. For a complex current operator,
+
+\[
+\mathbb R(F)=\begin{bmatrix}\operatorname{Re}F&-\operatorname{Im}F\\
+\operatorname{Im}F&\operatorname{Re}F\end{bmatrix}.
+\]
+
+For \(P\) illuminations, \(L\), \(S\), \(V\), and \(C\) lift blockwise, while the \(B_p\) stack vertically and share the same \(s\). In particular, \(C_{\rm blk}=I_P\otimes\mathbb R(C)\) has \(2Pr_c\) columns. One cannot choose separate material updates for separate illuminations, or replace the vertically stacked Jacobian covariance by a sum that omits cross-illumination blocks.
+
+The current and material metrics are normalized before all orthogonalizations. Orthogonal rotations of an admissible physical tangent preserve the assertions. Different Gaussian and voxel spans are different admissible tangents. Their numerical comparison does not establish an invariant ranking across different physical spaces.
+
+The actual reused DDA models an isotropic nonmagnetic dielectric, \(\chi=\epsilon_r-1\), on cell centers in a box of side 1.5. A cell has volume \(v=(1.5/n)^3\). With \(\boldsymbol n=\boldsymbol r/\|\boldsymbol r\|\), the off-diagonal electric dyadic is
+
+\[
+G(\boldsymbol r)=\frac{e^{ikr}}{4\pi r}
+\left[k^2(I-\boldsymbol n\boldsymbol n^\top)
++\left(\frac{ik}{r}-\frac1{r^2}\right)(I-3\boldsymbol n\boldsymbol n^\top)\right]. \tag{S1}
+\]
+
+Self blocks are excluded from \(G_{\rm off}\). The implemented cell polarizability and derivative are
+
+\[
+a(\chi)=\frac{3v\chi}{\chi+3-i\,3c_kv\chi},\qquad
+c_k=\frac{k^3}{6\pi},\qquad
+a'(\chi)=\frac{9v}{(\chi+3-i\,3c_kv\chi)^2}. \tag{S2}
+\]
+
+For dipole moments \(p_p\), the normalized current is \(c_p=p_p/\sqrt v\). The state, total field, tangent, and measurement equations are
+
+\[
+\begin{aligned}
+L&=I-D_aG_{\rm off},&
+Lc_p&=D_ae_p^{\rm inc}/\sqrt v,\\
+E_p&=e_p^{\rm inc}+G_{\rm off}(\sqrt v\,c_p),&
+L\delta c_p&=D_{a'E_p}Q_Ts/\sqrt v,\\
+y_p&=\sqrt v\,G_{\rm rec}c_p.
+\end{aligned} \tag{S3}
+\]
+
+The material-to-vector map in the tangent multiplies each cell's scalar material perturbation by its three field components. It is not a scalar diagonal on an unrelated vector space. Polarizability is not contrast; dropping \(a'(\chi)\) changes the Jacobian. At zero contrast \(a'=v\), so zero contrast does not remove the material tangent. Equation (S2) incorporates Clausius--Mossotti and radiation-reaction terms in one expression; the final denominator, not an intermediate rearrangement at \(\chi=-3\), specifies its singularities. These formulas document the reused code. Reference [11] supplies DDA background, not an audited derivation of this exact implementation.
+
+There are six transverse plane-wave illuminations and 64 receivers on a sphere of radius 5, with two transverse readout functionals each. The receiver map retains the dyadic near-field terms. Measured scattered fields and tangent actions share the scalar normalization \(\|y_{\rm clean}\|\); no estimated noise-covariance whitening was used in the experiments. This clean norm remains known and fixed in the synthetic noise checks.
+
+The material metric is \(vI\) for each complex component. Gaussian columns are \(\exp[-\|x_i-\xi_\nu\|^2/(2\times0.28^2)]\), with \(\xi_\nu\in\{-0.45,0,0.45\}^3\). An SVD of the volume-weighted columns produces the orthonormal physical tangent. Voxel expansion is \(\delta\chi=(s_{\rm re}+is_{\rm im})/\sqrt v\). Smooth Gaussian profiles define the internal truth, with object-dependent weights and a constant background; their fixed-box support is truncated at the outer boundary. This paragraph describes the smooth-object subset; the sharp-interface experiments are documented in S11.
+
+\section*{S2. Feedback factorization, bounds, and actual-ROM drift}
+
+How does an added current change the measured material derivative? We first hold the material injection fixed and eliminate the old current coordinates, exposing the direct and retained-feedback paths. We then separate this enlargement from the additional injection change caused by using a different approximate total field.
+
+Let \(A=I-L\), \(V^*V=C^*C=I\), \(V^*C=0\), and \(D_V=I-V^*AV\). Assume the retained and Schur blocks used below are invertible. All block formulas first hold in complex current coordinates and then lift to the real shared-material system. The coefficient arrays $u$ and $a$ below collect responses to material coordinate directions; applying them to $s$ gives the coefficients of the associated current perturbation. The enlarged Galerkin equation is
+
+\[
+\begin{bmatrix}D_V&-A_{VC}\\-A_{CV}&I-A_{CC}\end{bmatrix}
+\begin{bmatrix}u\\a\end{bmatrix}
+=\begin{bmatrix}B_V\\B_C\end{bmatrix}. \tag{S4}
+\]
+
+Solving the first row yields \(u=D_V^{-1}B_V+D_V^{-1}A_{VC}a\). Substitution into the second row gives
+
+\[
+\Gamma_Ca=N_C,\quad
+\Gamma_C=I-A_{CC}-A_{CV}D_V^{-1}A_{VC},\quad
+N_C=B_C+A_{CV}D_V^{-1}B_V. \tag{S5}
+\]
+
+Thus \(K_C=K_0+\bar C\Gamma_C^{-1}N_C\), where \(\bar C=C+VD_V^{-1}A_{VC}\). Since \(R_0C=0\), \(\bar C=(I-R_0L)C\). Direct multiplication gives \(V^*L\bar C=0\) and \(C^*L\bar C=\Gamma_C\). Observation gives \(\Delta J=Y_C\Gamma_C^{-1}N_C\). The injection-side adjoint is
+
+\[
+N_C^*=B^*(I-R_0^*L^*)C. \tag{S6}
+\]
+
+These formulas require invertibility of the retained and Schur blocks, not self-adjointness or normality of \(L\). Near-singular blocks invalidate an unqualified numerical closure claim even if a computed bank remains usable as a proposal space.
+
+If \(\|A_{VV}\|\le\eta<1\), the Neumann-series bound gives \(\|D_V^{-1}\|\le(1-\eta)^{-1}\). It follows that
+
+\[
+\|Y_C-SC\|\le\frac{\|SV\|\|A_{VC}\|}{1-\eta},\qquad
+\|N_C-B_C\|\le\frac{\|A_{CV}\|\|B_V\|}{1-\eta}. \tag{S7}
+\]
+
+When \(\sigma_{\min}(SC)>0\), divide the first bound applied to a coefficient vector by \(\|SCa\|\ge\sigma_{\min}(SC)\|a\|\). If \(SC\) has dark directions, no such all-direction relative bound follows; it can only be stated on a specified restricted coefficient subspace with a positive lower singular value. For \(F_C=A_{CC}+A_{CV}D_V^{-1}A_{VC}\), the sufficient condition \(\|F_C\|<1\) gives \(\|\Gamma_C^{-1}\|\le(1-\|F_C\|)^{-1}\). These are sufficient conditions, not numerical classifications established for every A12 scene.
+
+The full-minus-actual-ROM diagnostic uses a different comparison. Write \(P=VV^*\), \(Q=I-P\), and let \(R_P\) invert \(PLP\) on \(\operatorname{Range}P\), extended by zero. The projected full tangent equation is
+
+\[
+PK=R_PPB+R_PPAQ\,QK.
+\]
+
+Subtract \(\widehat K=R_PP\widehat B\) and add \(QK\):
+
+\[
+K-\widehat K=QK+R_PPAQ\,QK+R_PP(B-\widehat B). \tag{S8}
+\]
+
+Only retained-block invertibility is needed for this identity. Applying \(S\) gives the three recorded observable contributions. Their vectors may interfere. The last term vanishes when the ROM interpolates the full primal field at the anchor and forms injection consistently, as in the enlargement comparison; it is intentionally observable in the unanchored Gs24 diagnostic.
+
+For a genuinely changing ROM field, \(B_i s=Db[s]-DL[s]j_i\) and \(\delta B s=-DL[s](j_1-j_0)\). The enlarged inverse obeys
+
+\[
+R_C=R_0+\bar C\Gamma_C^{-1}C^*(I-LR_0).
+\]
+
+Hence \(K_1-K_0\) includes both the frozen-injection correction and \(R_C\delta B\). Its rank need not satisfy the small-bank bound stated for fixed \(B\). If the residual or regularizer also changes, its additional normal-equation terms must be included. The main theorem deliberately freezes all these quantities.
+
+\section*{S3. Effective support, minimality, inertia, and degeneracies}
+
+We now ask which material directions can carry the step change produced by the two current paths. Subtracting the normal equations identifies this support; a rank-revealing factorization then separates independent observation and injection contributions. The inertia calculation describes how curvature is redistributed between two positive-definite regularized problems.
+
+Let \(D=J_C-J_0\), with \(J_0,J_C,\Lambda\) fixed, and \(\Delta H=J_C^*J_C-J_0^*J_0\). Positive regularization \(\Lambda\succ0\) keeps both \(H_0\) and \(H_C\) positive definite, even when their difference \(\Delta H\) is indefinite. For common \(r,\ell\), subtraction gives
+
+\[
+H_0(s_C-s_0)=-\Delta Hs_C-D^*r. \tag{S9}
+\]
+
+The identity \(\Delta H=J_0^*D+D^*J_C\) shows that \(\operatorname{Range}[\Delta H,D^*]\) is contained in \(\operatorname{Range}[J_0^*D,D^*]\). Rearranging to \(J_0^*D=\Delta H-D^*J_C\) proves the reverse inclusion. Multiplying by invertible \(M_0\) yields the effective support \(\mathcal E_{\rm pert}=M_0\operatorname{Range}[J_0^*D,D^*]\) of the step-change identity (S9).
+
+For the minimality statement, take any independent pair \((x,r)\) and choose the common prior-linear term \(\ell=-H_Cx-J_C^*r\). Then \(s_C=x\), and (S9) ranges over \(-M_0\operatorname{Range}[\Delta H,D^*]\). Conversely every step difference belongs to that range. Thus the span of all differences over arbitrary \(r\) and shared \(\ell\) is exactly \(\mathcal E_{\rm pert}\). The quantifier on \(\ell\) is essential: a fixed prior gradient and a single residual may activate a smaller space. Minimality concerns this effective support; a numerically assembled raw bank may contain redundant directions.
+
+Let \(D=\widehat Y\widehat T\) have full-column-rank \(\widehat Y\in\mathbb R^{m\times q}\) and full-row-rank \(\widehat T\in\mathbb R^{q\times d}\). Then
+
+\[
+\operatorname{Range}(J_0^*D)=\operatorname{Range}(J_0^*\widehat Y),\quad
+\operatorname{Range}(D^*)=\operatorname{Range}(\widehat T^*).
+\]
+
+Put \(U=J_0^*\widehat Y\), \(W=[U,\widehat T^*]\), and \(F=\widehat Y^*\widehat Y\). Expansion gives
+
+\[
+\Delta H=W\begin{bmatrix}0&I\\I&F\end{bmatrix}W^*. \tag{S10}
+\]
+
+The middle quadratic form is \(2x^*y+y^*Fy\). With \(\widetilde x=x+Fy/2\), it becomes \(2\widetilde x^*y\), which has \(q\) positive and \(q\) negative directions. If \(W\) has full column rank, a thin QR factorization reduces its nonzero inertia to a nonsingular congruence of that middle matrix; therefore \(\Delta H\) has rank \(2q\) and inertia \((q,q,d-2q)\). If the two signature ranges overlap or have dependencies, only the upper bound \(2q\) applies. This standard inertia calculation identifies the roles of the electromagnetic observation and injection factors.
+
+For the main two-coordinate example, choose current dimension two, \(L=I\), \(V=(1,0)^\top\), \(C=(0,1)^\top\), \(S=[1,1]\), and \(B=I\). Then \(R_0=\operatorname{diag}(1,0)\), \(J_0=[1,0]\), \(J_C=[1,1]\), \(Y_C=1\), and \(N_C=[0,1]\). With \(\Lambda=I,r=1,\ell=0\), the two material lift ranges are the two coordinate axes and the step difference has both components. The analytic example isolates the least-squares coupling from the scattering mechanism measured in the Maxwell experiments.
+
+The following degeneracies follow directly:
+
+\begin{table}[tbp]\centering\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\linewidth}{lX}\toprule
+Condition & Consequence \\\midrule
+\(N_C=0\) & No new material excitation and \(D=0\). \\
+\(Y_C=0\) & No dressed observation and \(D=0\). \\
+\(J_0^*\widehat Y=0\) & Injection alone contains the effective support; \(\Delta H=D^*D\succeq0\). \\
+\(\operatorname{Range}U\subseteq\operatorname{Range}\widehat T^*\) & Injection alone suffices. \\
+\(\operatorname{Range}\widehat T^*\subseteq\operatorname{Range}U\) & Observation alone suffices. \\
+\(\Delta Hs_0+D^*r=0\) & The particular step is unchanged, even if \(D\ne0\). \\
+\bottomrule\end{tabularx}
+\end{table}
+
+For the last row, the condition makes \(s_0\) satisfy the enlarged normal equation; uniqueness gives \(s_C=s_0\). Necessity follows by subtracting the equations. With \(P\) illuminations and \(r_c\) shared complex current columns, \(q\le2Pr_c\) and \(\dim\mathcal E_{\rm pert}\le\min(d,4Pr_c)\). The A12 measured rank 48 is the raw paired-bank rank after numerical revelation, not a separately measured minimal effective rank.
+
+\section*{S4. Full-goal optimization and defect alignment}
+
+Step closure describes a model change, whereas optimization asks how much of the current full-model defect can be removed. Projecting that defect onto the paired material space gives its exact quadratic gain. The calculation explains both the guaranteed improvement over a specified direct step and the possibility that a same-rank Krylov correction is more effective.
+
+For an independent material basis \(Z\), expanding the unchanged full quadratic gives
+
+\[
+\Phi(s_0+Za)=\Phi(s_0)+a^*Z^*d_0+\frac12a^*Z^*HZa.
+\]
+
+Minimization gives \(a_*=- (Z^*HZ)^{-1}Z^*d_0\), where \(d_0=Hs_0+h\) is the full-quadratic defect at the original step. Since \(s_C\in s_0+\mathcal E_0(C)\), the specified direct step is a feasible competitor. Completing the square gives the full quadratic and energy ordering. Numerically discarding nonzero signatures may lose that inclusion; the measured closure residual is then a separate required diagnostic.
+
+For \(U_H=H^{1/2}Z\), its Euclidean projector is \(P=U_H(U_H^*U_H)^{-1}U_H^*\). The resulting gain is \(\Delta\Phi=\tfrac12d_0^*Z(Z^*HZ)^{-1}Z^*d_0=\tfrac12\|PH^{-1/2}d_0\|^2\). Thus a structurally complete envelope with \(H^{-1/2}d_0\perp H^{1/2}\mathcal E\) yields zero gain. By contrast, for \(d_0\ne0\) and \(M_0\succ0\), a line search along \(-M_0d_0\) yields positive quadratic gain because \(d_0^*M_0d_0>0\). The gain is therefore controlled by defect alignment as well as structural support; the measured Krylov comparisons test these two properties on the declared states.
+
+For redundant columns the inverse is replaced by a Moore--Penrose inverse on the effective range. If earlier paid directions \(U\) have already been optimized, \(U^*d=0\), remove overlap with \(D_Z=(I-\Pi_U^H)Z\), where \(\Pi_U^H=U(U^*HU)^{-1}U^*H\). Then
+
+\[
+\delta s=-D_ZG^\dagger b,\quad
+G=D_Z^*HD_Z,\quad b=D_Z^*d,\quad
+\Delta\Phi=\frac12b^*G^\dagger b. \tag{S11}
+\]
+
+Since \(\ker G=\ker D_Z\), \(b\perp\ker G\), so the minimum exists despite redundant coordinates. The gain applies to the specified full quadratic and paid space, without implying the cheapest construction or a nonlinear convergence rate.
+
+\section*{S5. Certificate, constraints, and model-error boundaries}
+
+To assess a proposed material step, we measure its distance from the minimizer of the fixed full quadratic. A residual identity separates the energy removed by a correction from the error still remaining. The subsequent constraint calculation identifies the additional term introduced when the active material constraints change.
+
+For any local proposal \(s\), \(d=Hs+h=H(s-s_*)\). If \(q=d-Hz\), expand \(q^*H^{-1}q\) to obtain
+
+\[
+E_0^2=d^*H^{-1}d=2d^*z-z^*Hz+q^*H^{-1}q. \tag{S12}
+\]
+
+The original-proposal lower bound is \(\max(0,2d^*z-z^*Hz)\). The original upper adds \(\|q\|^2/\mu\), for verified \(H\succeq\mu I\). The repaired step \(s-z\) has only the tail error \(q^*H^{-1}q\). Adding the already removed energy to its acceptance test would evaluate the wrong step.
+
+If \(M_0^{1/2}HM_0^{1/2}\succeq aI\), then \(q^*H^{-1}q\le q^*M_0q/a\). In the experiments, \(\Lambda=\lambda I\) gives \(\mu=\lambda\). The stored thin reduced factor \(Z_0\) satisfies \(H_0=\mathbb R_{\rm material}(Z_0^*Z_0)+\lambda I\); its Frobenius norm gives the conservative endpoint \(a=\lambda/(\lambda+\|Z_0\|_F^2)\). A Ritz value alone is not an enclosing endpoint. The unscaled indicator \(d^*M_0d\) remains an estimate.
+
+For \(p=-\Phi(s-z)>0\), the optimal reduction is \(p_*=p+E_{\rm rem}^2/2\). Hence \(U_{\rm rem}\le2\tau p/(1-\tau)\) implies \(p/p_*\ge1-\tau\). The comparison uses \(\tau=0.01\). Floating-point certificates are conditional on the declared operators, endpoints, and action accuracy, not interval-arithmetic enclosures.
+
+Constraints add a term absent from the unconstrained closure. If exact constrained minimizers satisfy \(H_is_i+h_i+n_i=0\), with \(n_i\) in the normal cone to the common feasible set, then
+
+\[
+H_0(s_C-s_0)=-\Delta Hs_C-D^*r-(n_C-n_0). \tag{S13}
+\]
+
+The normal-cone difference need not lie in the paired support. If both minimizers are known to lie on a common affine active face \(s=a+Fu\), one can apply the unconstrained algebra to the reduced coordinates with Jacobians \(J_iF\), residuals \(r+J_ia\), and the restricted regularizer, retaining any resulting residual-change terms. Active-face changes do not inherit that statement. No such constrained closure is claimed for the deployed projection routine.
+
+The reused routine imposes \(\operatorname{Re}\chi\ge-0.5\) and \(\operatorname{Im}\chi\ge0\). Voxel coordinates are clipped. Gaussian coordinates use a Euclidean nearest-step QP in the physical tangent, solved by SLSQP with \(\texttt{ftol}=10^{-12}\) and 200 iterations. A violation above \(10^{-7}\) raises an error; the later line search has a \(10^{-8}\) feasibility allowance. This is not an \(H\)-metric constrained GN solve or a certified KKT solution. Projected proposals undergo full nonlinear Armijo acceptance; non-descent projections can trigger explicit projected-gradient fallback.
+
+Likewise, replacing the numerical Maxwell operator or data changes \(H,h\) and the target minimizer. A certificate for one frozen discrete model says nothing by itself about that additional error. The finer-DDA check in S8 illustrates the distinction without providing a continuum error bound or an independent solver validation.
+
+\section*{S6. Existing campaign and numerical comparison contract}
+
+The experiment implementation was frozen before the held-out runs. It forms Jacobian-vector and adjoint actions rather than a dense full material Jacobian in the large cases. The six preflight identities were checked on a \(4^3\) DDA model with 192 complex current coordinates, six illuminations, 54 real material coordinates, base rank 16, and a two-complex-column bank. Recorded relative errors are \(3.881358\times10^{-15}\), \(8.329538\times10^{-14}\), \(6.540705\times10^{-14}\), \(4.270382\times10^{-16}\), \(1.260824\times10^{-16}\), and \(1.118307\times10^{-15}\) for T1--T6. They check implementation identities, not physical performance.
+
+The main scene configurations are:
+
+\begin{table}[tbp]\centering\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\linewidth}{lXXXXXXX}\toprule
+Object & Grid & Tangent & Family & \(k\) & Max Re \(\chi\) & Max Im \(\chi\) & Illumination \\\midrule
+11 & 12 & Gaussian & safe & 1 & 0.490 & 0.063 & balanced \\
+12 & 12 & voxel & smooth & 2 & 1.826 & 0.109 & balanced \\
+13 & 12 & Gaussian & contact & 2.5 & 3.349 & 0.202 & balanced \\
+14 & 12 & Gaussian & partial & 2.2 & 1.793 & 0.142 & reduced diversity \\
+15 & 12 & Gaussian & curved & 2 & 1.211 & 0.084 & balanced \\
+16 & 14 & voxel & smooth & 2.1 & 1.233 & 0.097 & balanced \\
+17 & 14 & Gaussian & contact & 2.5 & 2.909 & 0.209 & balanced \\
+18 & 14 & voxel & partial & 2.3 & 1.257 & 0.086 & reduced diversity \\
+\bottomrule\end{tabularx}
+\end{table}
+
+Contrast is \(\epsilon_r-1\). ``Contact'' denotes overlapping smooth inclusions, not a sharp internal dielectric junction. Balanced acquisition has three directions with two polarizations each; reduced diversity has six directions with one polarization each, not a limited aperture. All \(12^3\) inversions use \(14^3\) generated data; the three \(14^3\) stress objects use same-grid data. These are same-family discretization comparisons.
+
+E2 uses unanchored Gs24 on the normalized base proposal and three fixed random directions. E3--E5 append full primal currents, with actual base rank 30. Residual candidates come from the dominant current correction directions of the base material proposal; Gs candidates use the next two discarded measurement modes; the TSOM-inspired bank uses two retained-orthogonalized directions from a bounded approximate domain bank. It is not the native TSOM optimizer. Generic material banks are Gaussian-random orthonormal columns. The E3 Krylov control starts from \(-M_0d_0\), applies \(M_0H\), and reorthogonalizes to the requested material rank; all 72 controls attain rank 48.
+
+For the finite reference \(s_{\rm ref}\), let its remaining normal residual be \(d_{\rm ref}\) and \(\rho=\|d_{\rm ref}\|/\sqrt\lambda\). If a candidate's measured distance is \(e=\|s-s_{\rm ref}\|_H\), its true finite-model error is conditionally enclosed by
+
+\[
+[\max(0,e-\rho),e+\rho]. \tag{S14}
+\]
+
+Nonoverlapping intervals establish strict order. Relative ratios require both errors to be reference resolved; the near-floor Krylov errors therefore give bounded absolute orderings, not enormous measured gain factors. Figure 3 displays norm ratios; the statistical material-repair tables use squared-norm ratios. The eight objects, rather than the 24 anchors or 72 bank rows, are the bootstrap unit. Existing intervals use 10,000 object resamples and are descriptive for this small configuration set.
+
+The registered numerical closure check divides the residual \(H\)-distance to the material span by the \(H\)-norm of \(s_C-s_0\). Its tolerance is \(\max(10^{-10},10\times\text{full-state solve residual})\). Five records fail, all with the TSOM-inspired bank at anchor 0:
+
+\begin{table}[tbp]\centering\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\linewidth}{lXXXX}\toprule
+Object & Normalized distance & Absolute \(H\)-distance & Step-change \(H\)-norm & Threshold \\\midrule
+11 & 1.0939666e-8 & 2.2031698e-15 & 2.0139279e-7 & 1e-10 \\
+12 & 1.1782990e-9 & 2.7878889e-14 & 2.3660285e-5 & 1e-10 \\
+15 & 6.2132273e-10 & 1.0607294e-15 & 1.7072117e-6 & 1e-10 \\
+16 & 1.2359778e-9 & 3.4281067e-14 & 2.7735989e-5 & 1e-10 \\
+18 & 6.2408257e-10 & 3.1206828e-14 & 5.0004325e-5 & 1e-10 \\
+\bottomrule\end{tabularx}
+\end{table}
+
+The other 67 pass. Small absolute distances do not waive the normalized failures. All paired-versus-direct optimization orderings can still hold, because they test a different quantity. The measured maximum Schur condition number, 1.061, is not evidence of a continuum distance from resonance.
+
+\section*{S7. Certificate calibration and complete-cost detail}
+
+The 96 original proposals consist of the base and three paired-bank proposals at each anchor. The saved calibration separates original-proposal safe recall from acceptance after executing the correction.
+
+\begin{table}[tbp]\centering\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\linewidth}{lXXXXXX}\toprule
+Estimator & Safe recall & False safe & Coverage & Median \(H\)-norm effectivity & p90 & Maximum \\\midrule
+Crude positive-curvature bound & 72.3\% & 0 & 100.0\% & 3.526 & 7.583 & 25.39 \\
+Preconditioned indicator & 100.0\% & 0 & 91.7\% & 1.027 & 1.089 & 1.204 \\
+Conservative spectral bound & 46.8\% & 0 & 100.0\% & 25.58 & 32.34 & 33.09 \\
+Tail-corrected bound & 93.6\% & 0 & 100.0\% & 1.105 & 5.806 & 25.39 \\
+\bottomrule\end{tabularx}
+\end{table}
+
+Effectivity is an upper error-norm estimate divided by the finite-reference proxy \(H\)-error norm; reference-induced effectivity intervals remain in the raw data. The tail method accepts 44 of 47 safe original proposals, rejects three safe proposals, and falsely accepts none of 49 unsafe proposals. All 96 proposals become acceptable after repair, a different event. Its mean correction count is 1.365 and mean recorded calibration time 0.5498 s. The unscaled preconditioned indicator has coverage only 88/96; zero observed false-safe decisions do not turn it into a bound.
+
+\begin{figure}[tbp]\centering
+\includegraphics[width=\linewidth]{figures/Figure4_certificate.pdf}
+\caption{Conditional local energy-error calibration. Left: squared errors and bounds. Right: upper \(H\)-norm effectivity and paid wall time. Zero lower bounds remain in the data but cannot appear on a logarithmic axis.}
+\end{figure}
+
+The separate unpreconditioned eight-action Gauss/Radau diagnostic has 192 action rows. Its conditional bounds are supported by the eligible finite-reference intervals. Final \(H\)-norm effectivity is about 1.005, but the median paired time ratio to accepted B0 is 1.514. It is separately paid offline work, not an extra free consequence of the deployed PCG trajectory.
+
+All E5 routes use the same \(M_0\), full actions, initial proposal, and 99\% reduction target. B1 is a bounded material-history/Krylov adaptation; it compresses accumulated paid step/gradient history by SVD to eight directions and is not a reproduction of a named published solver. B2 is a selective sensitivity/adjoint adaptation, likewise not a full reproduction of adaptive-RB literature. B3 uses paired warm repair; B4 and B5 use paired and generic augmentation respectively. B4/B5 comparisons isolate bank source under the same route; B3/B4 also change execution route.
+
+\begin{table}[tbp]\centering\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\linewidth}{lXXXXX}\toprule
+Route & Method-stage ratio [95\% CI] & Anchor-inclusive ratio [95\% CI] & Cold-equivalent ratio [95\% CI] & Median PCG corrections & Median full RHS \\\midrule
+B0 & 1 & 1 & 1 & 2 & 66 \\
+B1 & 3.489 [3.457, 3.541] & 1.386 [1.248, 1.392] & 1.316 [1.187, 1.320] & 0 & 234 \\
+B2 & 2.308 [2.264, 2.321] & 1.199 [1.123, 1.205] & 1.163 [1.093, 1.168] & 2 & 150 \\
+B3 & 3.757 [3.528, 4.147] & 1.416 [1.330, 1.445] & 1.341 [1.235, 1.368] & 1 & 342 \\
+B4 & 9.786 [9.430, 10.031] & 2.299 [1.908, 2.365] & 2.066 [1.678, 2.121] & 1 & 648 \\
+B5 & 9.505 [9.287, 9.753] & 2.270 [1.880, 2.361] & 2.039 [1.657, 2.111] & 1 & 642 \\
+\bottomrule\end{tabularx}
+\end{table}
+
+The B3 anchor-inclusive ratio is 1.41629, with object-bootstrap interval [1.32959, 1.44545]. Each ratio first pairs the same object, anchor, and repeat with B0; six ratios per object are collapsed by a median, followed by an eight-object median and bootstrap. ``Anchor-inclusive'' is method wall time plus shared ROM setup and full-state anchor time. The cold equivalent additionally allocates common geometry setup across three anchors and must not be summed over methods as actual campaign elapsed time. Offline reference and truth generation are separate.
+
+JVP/VJP call counts alone do not count batched columns. Full RHS counts each full-solve right-hand-side column. Candidate generation, adjoint pullbacks, full \(JZ/HZ\), QR, small solves, and refreshes remain charged. E3 timings omit candidate generation for direct steps and random generation/QR for generic banks, while single-sided tests are charged the shared paired build. Those unequal subtotals cannot support end-to-end claims.
+
+Development measured a 1.9249 s median bank-plus-warm phase and an estimated PCG saving of -0.0762 s after removing that expense. The frozen controller disabled unpaid new banks; held-out timings were not used to learn a new rule. \(M_0\) is rebuilt at each anchor. No verified cross-anchor spectral transfer, dynamic rolling cost adaptation, or N-Port rank-saving result is part of the implemented evidence.
+
+\section*{S8. Nonlinear, noise, and finer-discretization evidence}
+
+Five preselected objects compare B0, B1, static ROM, and MURR. The other three provide B0 trajectories and anchors. All methods share \(\chi_0=0.1+0.04i\), prior weight \(10^{-5}\), initial LM damping 0.01 multiplied by 0.3 every three iterations, an 18-iteration cap, physical projection, and full nonlinear Armijo acceptance. ``Static'' denotes a fixed Gs24 mode-selection rule plus the current primal anchor, with operators refreshed at each state, not a single immutable operator.
+
+The registered endpoint criteria are \(e_{\chi,m}\le1.02e_{\chi,B0}+0.002\) and \(e_{y,m}\le1.02e_{y,B0}+0.0002\). Receiver holdout uses a rotated receiver array at the same frequency and incident fields. This is distinct from object-level holdout from development. A B0 material error above 25\% triggers an insufficient-recovery screen; passing it alone does not prove accurate or generally robust reconstruction.
+
+\begin{table}[tbp]\centering\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\linewidth}{lXXXXXX}\toprule
+Object & B0 material error & Static material error & B0 seconds & Static seconds & B0/static state trials & Static endpoint noninferiority \\\midrule
+11 & 2.810\% & 3.906\% & 94.7 & 73.4 & 18/18 & fail \\
+13 & 0.973\% & 1.135\% & 92.4 & 206.8 & 16/57 & pass \\
+15 & 0.447\% & 0.540\% & 101.8 & 140.9 & 18/38 & pass \\
+16 & 9.539\% & 16.320\% & 553.5 & 684.8 & 42/64 & fail \\
+17 & 0.067\% & 0.128\% & 233.8 & 371.2 & 16/34 & pass \\
+\bottomrule\end{tabularx}
+\end{table}
+
+MURR follows B0 and has bitwise-identical saved materials in all five objects. Its nonlinear time ratio is 1.000 [0.994, 1.019]. This is a skip-path result, not paired enrichment evidence. Object 16's combined 9.54\% B0/MURR material error contains real-part error 8.38\% and imaginary-part error 36.82\%; the static imaginary error is 50.33\%. Visual loss and boundary errors are retained, not hidden behind the combined norm. A voxel tangent of dimension 5488 with 1536 real measurements has unregularized local Jacobian nullity at least 3952; that dimensional fact is not a global nonlinear nonuniqueness theorem.
+
+\begin{figure}[tbp]\centering
+\includegraphics[width=\linewidth]{figures/Figure6_material_slices.pdf}
+\caption{Smooth-target material slices on shared row scales for truth, matched full PCG, the fixed current rule, and the cost-controlled skip policy. Object 13 uses finer-grid data; object 16 is same-grid stress. Slices are the positive central cell planes, not exactly \(z=0\). Identity of the full-PCG and skip-policy estimates shows that no paired bank was executed.}
+\end{figure}
+
+The full nonlinear B0 trajectories reach as many as 37 PCG corrections as LM damping changes. The fixed-curvature E5 median cannot represent the entire nonlinear solve. Explicit gradient fallbacks, projection distances, and all accepted/rejected full-state trials remain paid.
+
+Two Gaussian objects use one fixed complex noise realization at each nonzero level, shared across B0/MURR. The clean synthetic norm remains the normalization; these are controlled checks, not noise-blind deployment. The shared endpoints are:
+
+\begin{table}[tbp]\centering\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\linewidth}{lXXXXXXX}\toprule
+Object & Noise & Material error & Clean receiver-holdout relative error & B0 seconds & Linear certified proposals & Full-state trials & Gradient fallbacks \\\midrule
+11 & 0\% & 2.810\% & 0.00005953 & 94.7 & 18/18 & 18 & 0 \\
+11 & 1\% & 12.116\% & 0.001587 & 596.5 & 18/18 & 164 & 11 \\
+11 & 3\% & 18.879\% & 0.004846 & 631.2 & 18/18 & 175 & 13 \\
+13 & 0\% & 0.973\% & 0.0007953 & 92.4 & 16/16 & 16 & 0 \\
+13 & 1\% & 1.527\% & 0.001801 & 94.5 & 16/16 & 16 & 0 \\
+13 & 3\% & 2.362\% & 0.004622 & 96.5 & 16/16 & 16 & 0 \\
+\bottomrule\end{tabularx}
+\end{table}
+
+For object 11 at 1\% noise, all 18 preprojection proposals were accepted by the local certificate, but only seven retain that provenance after 11 gradient replacements. At 3\%, five retain it after 13 replacements. Neither count certifies constrained optimality. None of the four nonzero-noise endpoints crosses 25\% material error, but skipped banks establish no paired-bank noise advantage.
+
+The finer-grid endpoint check uses object 13 only. Saved Gaussian coefficients are lifted to \(14^3\) using the same continuous dictionary, with maximum fitting residual \(2.147\times10^{-15}\), followed by forward evaluation only. Exact B0/MURR material identity allows one shared fine solve.
+
+\begin{table}[tbp]\centering\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\linewidth}{lXXXXX}\toprule
+Method & Material error at \(12^3\) & Material error at \(14^3\) & Clean holdout at \(12^3\) & Clean holdout at \(14^3\) & Training field at \(14^3\) \\\midrule
+B0 / MURR & 0.009734 & 0.009733 & 0.0007953 & 0.007911 & 0.007910 \\
+Static & 0.01135 & 0.01134 & 0.0008284 & 0.007947 & 0.007946 \\
+\bottomrule\end{tabularx}
+\end{table}
+
+All entries are relative norms, not percentages. The 0.7809\% coarse/fine truth-field discrepancy uses the training acquisition and fine truth-field norm. The approximately 0.00361 percentage-point static--B0 fine holdout difference uses the rotated receiver operator and its own truth norm. Their operators and denominators differ; the former is not an error bar or a resolution threshold for the latter. The evaluation reveals discretization dependence without providing a physical-error enclosure for method differences or a rigorous continuum bound from two grids. It was registered after initial held-out inspection, does not alter trajectories or thresholds, and remains within the same DDA family.
+
+\section*{S9. Evidence provenance and final scope}
+
+The original smooth-target campaign ran on an RTX 4060 Laptop GPU, 8 GB, with an i9-14900HX host. Its 20 main jobs and one fine-grid endpoint evaluation completed. Peak GPU allocation/reservation was 5.064/6.074 GiB. A separate development native-process failure with exit code 3221225477 and its successful same-configuration retry remain distinct records; the cause is not inferred from the exit code.
+
+The immutable A12 experiment ledger has 1698 data rows, including 31 process records, 24 anchors, 35 nonlinear records, 576 iteration rows, 648 E3 method rows, 96 calibrations, and 288 E5 executions. It includes development and rejected/failed records; it is not a count of independent held-out experiments. The final writing read all rows and retained the original files.
+
+Three analysis corrections remain essential. First, the legacy zero-valued method-level fallback field is not a count of projected-gradient fallback; per-iteration history is authoritative. Second, history objectives are pre-step while material errors are post-step; final objective is reconstructed from the last accepted trial or unchanged state rather than a rejected last attempt. Third, original linear certification and retained certificate provenance after projection/fallback are distinct events. These corrections affect reporting, not frozen algorithms or measurements.
+
+The feedback, certificate, cost, and smooth-reconstruction figures reuse original data; the mechanism schematic and repair comparison have been redrawn for this manuscript. Corresponding CSV sidecars and per-anchor JSON remain authoritative. Raw figure ratios, empirical table values, finite-reference error intervals, complete histories, and source provenance are linked in the final claim ledger. Earlier conditional cross-anchor, TSOM-safe, and N-Port extensions remain in the historical supplement but are not added as contributions to this mechanism paper.
+
+The manuscript and this supplement state and prove the theoretical results directly. New revision diagnostics are kept separate from the original campaign. The original S-DBIM/FFT-TSOM full-text gaps remain in the final reference audit. Inaccessible text is not evidence that an equivalent result does not exist.
+
+\section*{S10. Precision path in five registered numerical closure failures}
+
+The original 72-pair study registered five normalized closure failures, all at the first state with the TSOM-inspired bank. We retained that decision and replayed those five cases together with three passing controls of the same bank and state index. The original source snapshot fixes the current model; the replay records the hash of its historical TSOM candidate dependency. Current, Schur, and Jacobian actions use \(\texttt{complex128}\); material normal steps and material signatures use \(\texttt{float64}\). No formal reconstruction uses the FP32 diagnostic branch.
+
+Independent calculation of \(s_C\) and \(s_0\), followed by subtraction, gives an absolute closure distance between \(4.48\times10^{-16}\) and \(6.26\times10^{-14}\). The corresponding step changes have \(H\)-norm between \(2.01\times10^{-7}\) and \(5.00\times10^{-5}\). To locate cancellation, the same step difference was evaluated from
+\begin{equation}
+H_C\Delta s=-\{\Delta J^*r+[J_C^*J_C-J_0^*J_0]s_0\},\qquad\Delta s=s_C-s_0,
+\label{eq:stable-step-difference}
+\end{equation}
+using the low-rank Schur JVP/VJP, without forming a complete voxel Jacobian or a dense material Hessian. The eight direct-subtraction normalized distances range from \(1.42\times10^{-11}\) to \(1.03\times10^{-8}\); the difference-equation distances range from \(2.06\times10^{-15}\) to \(2.48\times10^{-14}\). The small Schur singular values lie in \([1.0624,1.0684]\), its normalized solve backward error is at most \(2.15\times10^{-16}\), and no tracked nonzero FP64 value is subnormal. This is numerical evidence for cancellation in the two-step subtraction followed by division by a small true step change, not for Schur ill-conditioning or underflow.
+
+A controlled small-Schur precision test gives CPU/GPU FP64 solution differences of \(1.17\times10^{-16}\)--\(2.18\times10^{-16}\). GPU FP32 differs from CPU FP64 by \(6.58\times10^{-8}\)--\(1.43\times10^{-7}\), illustrating why changing precision would answer a different question. Complete GPU FP64 replays of the same eight saved anchors give direct-subtraction normalized distances of \(1.10\times10^{-11}\)--\(1.23\times10^{-8}\), versus \(2.17\times10^{-15}\)--\(3.21\times10^{-14}\) from the difference equation; no tracked GPU intermediate is subnormal. The GPU FP32 branch is a small-Schur stress test, not a full inverse replay or the precision used in the original campaign. Original failed labels remain unchanged.
+
+\begin{figure}[tbp]\centering
+\includegraphics[width=\linewidth]{figures/Figure_precision_cancellation.pdf}
+\caption{Targeted CPU FP64 replay of five historical closure failures (red) and three matched passing cases (teal). Directly subtracting independently computed regularized steps leaves small absolute errors that grow after division by the step difference. The Schur-action normal-equation-difference route computes the same quantity without the cancellation. Complete GPU FP64 replay follows the same pattern; its per-case values are tabulated in the R1 raw-data companion. The dashed line is the original \(10^{-10}\) tolerance floor; original status labels are unchanged.}
+\end{figure}
+
+\section*{S11. Complete sharp-target primary endpoints}
+
+Table~\ref{tab:sharp-all} lists every completed primary trajectory, including real and imaginary contrast error, fixed-threshold outer-support overlap, held-out response, true objective ratio, fallback events, and counted full Jacobian-vector right-hand sides. The threshold is the predeclared midpoint between zero background and the lowest nonzero real material class; it is used only for evaluation, not supplied as a region to the inverse solver. A dash in the full-JVP column means that the fixed-current route did not perform the corresponding full-model material action. Successful-segment algorithmic time does not erase crashed attempts or restarted setup; campaign occupation is computed from every started job in the remote execution ledger.
+
+\input{sharp_endpoint_table.tex}
+
+Table~\ref{tab:sharp-class-means} makes the contrast loss explicit. These class averages are evaluation summaries at the true class locations, not class labels supplied to the inverse solver. In particular, the high-contrast ellipsoid's recovered mean is less than one in real contrast for both methods although its true value is seven.
+
+\input{sharp_class_mean_table.tex}
+
+The complete predeclared 3\% noise and same-grid resolution extensions appear in Table~\ref{tab:sharp-extension}; they are distinct from the primary 16 trajectories and the historical local 72 comparisons.
+
+\input{sharp_extension_table.tex}
+
+At the 12 saved zero-noise full-model pre-update states, three candidate-bank rules provide the 36 local rows in Tables~\ref{tab:sharp-local-gains} and \ref{tab:sharp-local-mechanism}. Every paired and material Krylov space has equal real rank 48. The same-state bank rows share the full physical state and cannot be counted as independent targets. Negative direct gain means that the new current model's step is worse on the unchanged full quadratic than the previous reduced-model step.
+
+\input{sharp_local_table.tex}
+
+\begin{figure*}[tbp]\centering
+\includegraphics[width=0.94\textwidth]{figures/Figure_sharp_imag_slices.pdf}
+\caption{Imaginary-contrast (loss) slices for the four zero-noise sharp targets: sampled truth, full-model PCG, and the fixed Gs24 current-selection rule. Both inversion routes produce diffuse loss and localized high-loss hotspots that do not reproduce the piecewise-constant truth. All panels share one \(\operatorname{PowerNorm}(\gamma=0.45)\) mapping and one physical-value color scale, so displayed brightness is nonlinear in imaginary contrast. The display makes small positive values visible; quantitative real and imaginary errors remain in Table~\ref{tab:sharp-all}. Appearance alone does not quantify material recovery or identify a unique error mechanism.}
+\label{fig:sharp-imag-slices}
+\end{figure*}
+
+\clearpage
+\section*{S12. Receiver-dependent local repair gains}
+
+Table~\ref{tab:faemis-repair} reports the fixed-probe, fixed-absolute-noise synthetic residual experiment described in the main text. The material state and current bank are fixed within each three-radius series, but each receiver defines its own full local quadratic. Paired and Krylov material ranks are both 48 in every row. These are two states with correlated receiver changes, not twelve independent inverse problems. Far-field replacement is not ordered in gain across the two states.
+
+\begin{table}[tbp]\centering\caption{Local full-quadratic gain under finite-distance and strict far-field receiver operators. The far/finite ratio refers to paired gain; Krylov is an equal-real-rank material correction under the same receiver and local quadratic.}\label{tab:faemis-repair}
+\resizebox{\textwidth}{!}{\begin{tabular}{llrrrr}\hline
+State & Radius & Finite paired & Finite Krylov & Far paired & Far/finite paired \\\hline
+Sharp voxel & 5 & 0.0025299 & 0.0065130 & 0.0026130 & 1.0328\\
+Sharp voxel & 10 & 0.0011306 & 0.0026628 & 0.0011792 & 1.0430\\
+Sharp voxel & 20 & 0.00046452 & 0.0010354 & 0.00047462 & 1.0217\\
+Smooth Gaussian & 5 & 0.000055429 & 0.000057983 & 0.000051556 & 0.9301\\
+Smooth Gaussian & 10 & 0.000022031 & 0.000024835 & 0.000020807 & 0.9444\\
+Smooth Gaussian & 20 & 0.0000058438 & 0.0000068420 & 0.0000054876 & 0.9391\\
+\hline\end{tabular}}
+\end{table}
+
+\section*{S13. Paid GPU occupation and phase profiling}
+
+The revision consumed 3.416 charged GPU-job hours: 3.140 hours for sharp-target trajectories, 0.083 hours for precision/receiver diagnostics, and 0.192 hours for frozen local comparisons. Three sharp-trajectory and two local-comparison attempts failed before successful retries; their time remains in the occupation total. All 24 planned sharp trajectories (16 primary plus eight declared extensions) and all 12 frozen local-state jobs completed. The largest one-second sampled device-memory fraction was 65.2\% across 12148 samples in 45 trace files; no 80\% warning or 90\% memory stop was recorded. This sampled maximum is not an upper bound on subsecond memory peaks.
+
+At the representative zero-noise full-model sphere, cuboid, and shell trajectories, median per-iteration preparation times were 0.336, 0.328, and 0.320\,s; controller times were 7.773, 6.937, and 5.320\,s; line-search times were 14.617, 20.063, and 4.657\,s. Across 36 candidate banks in the local comparisons, the median candidate generation and two-sided envelope construction were 0.024 and 0.234\,s, respectively; the recorded paired-bank build median was 0.267\,s. The complete diagnostic, including direct current enlargement, paired and Krylov corrections, and full-goal checks, took a median 45.081\,s across 12 saved states. These component medians cannot be added to reconstruct one specific job. They are profiling of distinct workflows, not a new matched-quality paired versus PCG cost comparison. The historical 1.416 anchor-inclusive wall ratio remains the relevant measured method comparison.
+
+\begin{figure*}[tbp]\centering
+\includegraphics[width=0.96\textwidth]{figures/Figure_cost_resources.pdf}
+\caption{Inclusive GPU occupation, sampled device memory, representative full-model nonlinear stages, and frozen-anchor local comparison actions. Failed attempts and retries are charged in panel (a). Panel (b) shows one-second sampled values; it cannot resolve shorter peaks. Panel (c) profiles the full-model baseline, whereas panel (d) combines separate local comparison actions and is not a matched nonlinear solver cost test. The historical paid paired/PCG wall ratio is 1.416 in a separate campaign.}
+\label{fig:cost-resources}
+\end{figure*}
+
+\input{EXEC_SUPPLEMENT.tex}
+\input{HISTORICAL_STRESS_DETAILS.tex}
+\input{REUSE_PROTOCOL_SUPPLEMENT.tex}
+\input{CURRENT_DESIGN_SUPPLEMENT.tex}
+\input{EXCHANGE_SUPPLEMENT.tex}
+\end{document}

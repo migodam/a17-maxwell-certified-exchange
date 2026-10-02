@@ -1,0 +1,7 @@
+state,object_id,phase,weak,intermediate,strong,prior_precision,lambda_total,scope
+object_2001_early,2001,early,0,2,52,1e-05,0.01001,complete full-reference Gaussian information eigenbasis; voxel absent
+object_2001_late,2001,late,0,0,54,1e-05,3.4299999999999993e-05,complete full-reference Gaussian information eigenbasis; voxel absent
+object_2001_middle,2001,middle,0,0,54,1e-05,0.00301,complete full-reference Gaussian information eigenbasis; voxel absent
+object_2007_early_portable,2007,early,0,2,52,1e-05,0.01001,complete full-reference Gaussian information eigenbasis; voxel absent
+object_2007_late,2007,late,0,0,54,1e-05,3.4299999999999993e-05,complete full-reference Gaussian information eigenbasis; voxel absent
+object_2007_middle,2007,middle,0,0,54,1e-05,0.00301,complete full-reference Gaussian information eigenbasis; voxel absent

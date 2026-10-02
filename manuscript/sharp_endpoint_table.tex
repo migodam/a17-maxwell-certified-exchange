@@ -1,0 +1,21 @@
+\begin{table}[tbp]\centering\caption{Complete frozen sharp-scene primary endpoints. Material errors and IoU are against the declared discrete truth on a common grid. The true objective ratio is final/initial; fallback counts are recorded nonlinear fallback events. Times are successful-segment algorithmic totals including shared setup, not inclusive GPU occupation for failed/retried attempts. Inclusive occupation is separately charged in the run ledger. Re and Im RMSE use contrast units.}\label{tab:sharp-all}
+\resizebox{\textwidth}{!}{\begin{tabular}{lllr rrrrrrrrr}\hline
+Object & Noise & Method & Re RMSE & Im RMSE & Rel. material & IoU & Held-out & Obj. ratio & Fallback & Accepted & Time (s) & Full JVP RHS \\\hline
+sphere & 0\% & full PCG & 1.256 & 0.069 & 0.755 & 0.026 & 0.027 & 0.001109 & 11 & 18 & 427.2 & 9804 \\
+sphere & 0\% & fixed Gs24 & 1.275 & 0.061 & 0.766 & 0.000 & 0.032 & 0.001458 & 12 & 18 & 274.1 & -- \\
+sphere & 1\% & full PCG & 1.256 & 0.070 & 0.755 & 0.026 & 0.027 & 0.001205 & 11 & 18 & 432.7 & 9960 \\
+sphere & 1\% & fixed Gs24 & 1.270 & 0.061 & 0.764 & 0.000 & 0.032 & 0.001605 & 11 & 18 & 246.3 & -- \\
+split cuboid & 0\% & full PCG & 1.000 & 0.071 & 0.750 & 0.455 & 0.047 & 0.003368 & 14 & 18 & 479.7 & 9180 \\
+split cuboid & 0\% & fixed Gs24 & 1.009 & 0.081 & 0.757 & 0.437 & 0.055 & 0.004693 & 14 & 18 & 274.6 & -- \\
+split cuboid & 1\% & full PCG & 0.999 & 0.070 & 0.749 & 0.457 & 0.047 & 0.003499 & 14 & 18 & 226.7 & 5826 \\
+split cuboid & 1\% & fixed Gs24 & 1.008 & 0.079 & 0.757 & 0.439 & 0.055 & 0.004861 & 14 & 18 & 267.6 & -- \\
+eccentric shell & 0\% & full PCG & 0.836 & 0.059 & 0.560 & 0.692 & 0.019 & 0.0005275 & 8 & 18 & 356.4 & 8400 \\
+eccentric shell & 0\% & fixed Gs24 & 0.875 & 0.078 & 0.587 & 0.675 & 0.026 & 0.00101 & 11 & 18 & 228.0 & -- \\
+eccentric shell & 1\% & full PCG & 0.869 & 0.072 & 0.583 & 0.662 & 0.021 & 0.0008201 & 11 & 18 & 418.6 & 9156 \\
+eccentric shell & 1\% & fixed Gs24 & 0.874 & 0.076 & 0.586 & 0.672 & 0.026 & 0.001155 & 11 & 18 & 236.1 & -- \\
+two ellipsoids & 0\% & full PCG & 1.086 & 0.053 & 0.906 & 0.000 & 0.073 & 0.01224 & 15 & 18 & 462.7 & 9012 \\
+two ellipsoids & 0\% & fixed Gs24 & 1.079 & 0.055 & 0.901 & 0.000 & 0.072 & 0.01177 & 13 & 18 & 301.7 & -- \\
+two ellipsoids & 1\% & full PCG & 1.087 & 0.053 & 0.907 & 0.000 & 0.072 & 0.01208 & 15 & 18 & 464.9 & 9108 \\
+two ellipsoids & 1\% & fixed Gs24 & 1.079 & 0.055 & 0.901 & 0.000 & 0.071 & 0.0116 & 14 & 18 & 288.5 & -- \\
+\hline\end{tabular}}
+\end{table}

@@ -1,0 +1,1 @@
+{"full_move_count":600,"spectrum_move_count":48,"fixed_incoming_ids":[4,32,64,96,128,144,5,33,65,97,129,145],"teacher_best_added_for_evaluation_only":false,"selection_uses_information":false,"scope":"Fixed twelve incoming per removal + teacherbest; remaining moves trace only, no full spectrum coverage claim."}

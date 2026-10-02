@@ -1,0 +1,1 @@
+{"status":"PASS","checkpoints":36,"resolved_checkpoints":36,"linked_spectrum_moves":3665,"witness_count":3332,"missing":[],"cpu_wall_s":6.6713667919975705,"new_full_actions":0,"scope":"exact fixed spectrum subset plus separately biased teacher-best augmentation; no full-neighborhood claim"}

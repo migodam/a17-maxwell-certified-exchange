@@ -1,0 +1,7 @@
+# Information-diagnostic implementation update
+
+The first voxel state completed in 1300.056 seconds (1303.578 seconds watchdog occupation). Its 16-direction public reference has 1536 data rows. The former generic real-information helper diagonalized a 1536x1536 data Gram for this tall thin matrix. The same nonzero spectrum is computed by a thin SVD, without producing a large matrix of zero eigenvalues.
+
+A CPU-only independent review compared 354 Gaussian records and 15 physical voxel reference-projected endpoint records. The actual recorded values agreed within 1e-9; the largest voxel discrepancy was 1.5e-14. The new thin SVD passed fixed analytic-rank tests at the original 1e-9 tolerance. The attempted minimum-Gram-only variant failed synthetic rank-deficient tests at small prior precision because tiny positive Gram roundoff was amplified; that failure is retained. Thin SVD avoids that artifact, and the original diagnostic values are not rewritten.
+
+Only the offline real-information helper changes in deployment V5. It never feeds candidate selection or acceptance. The source receipt and deployment archive identify each epoch. Parent analytic test error was 3.8e-16. The worker single-CPU-call comparison on an actual 1536x16 stored reference was approximately665x faster for this diagnostic alone; this is neither matched remote job timing nor a proposed-selector acceleration claim. The corresponding remote total time reduction remains to be measured. All CPU/setup/teacher/diagnostic work is charged in the job occupation ledger.

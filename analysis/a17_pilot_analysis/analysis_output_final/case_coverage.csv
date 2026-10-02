@@ -1,0 +1,14 @@
+preserved_status_conflict,attempt_classification,directory,object_id,phase,result_status,status_file_status,terminal,main_eligible_complete_state,observed_k,required_k,errors,failure_error,result_wall_total_s_nonadditive
+False,,<WORKSPACE>/Gaussian/A17/EXCHANGE_R1/results/object_2001_early,2001,early,COMPLETED,COMPLETED,True,True,"[4, 8, 16]","[4, 8, 16]",[],,118.13621520000743
+False,,<WORKSPACE>/Gaussian/A17/EXCHANGE_R1/results/object_2001_late,2001,late,COMPLETED,COMPLETED,True,True,"[4, 8, 16]","[4, 8, 16]",[],,115.24012380000204
+False,,<WORKSPACE>/Gaussian/A17/EXCHANGE_R1/results/object_2001_middle,2001,middle,COMPLETED,COMPLETED,True,True,"[4, 8, 16]","[4, 8, 16]",[],,116.87770840001758
+True,KNOWN_FAILED_HISTORICAL_ATTEMPT,<WORKSPACE>/Gaussian/A17/EXCHANGE_R1/results/object_2007_early,2007,early,,RUNNING,True,False,[],"[4, 8, 16]","[""MISSING_CELLS_JSON"", ""MISSING_REQUIRED_K:[4, 8, 16]""]",KeyError('inputs\\object_2007\\common_data.npz'),
+False,,<WORKSPACE>/Gaussian/A17/EXCHANGE_R1/results/object_2007_early_portable,2007,early,COMPLETED,COMPLETED,True,True,"[4, 8, 16]","[4, 8, 16]",[],,116.65036470000632
+False,,<WORKSPACE>/Gaussian/A17/EXCHANGE_R1/results/object_2007_late,2007,late,COMPLETED,COMPLETED,True,True,"[4, 8, 16]","[4, 8, 16]",[],,116.79334239999298
+False,,<WORKSPACE>/Gaussian/A17/EXCHANGE_R1/results/object_2007_middle,2007,middle,COMPLETED,COMPLETED,True,True,"[4, 8, 16]","[4, 8, 16]",[],,117.94344920001458
+False,,<WORKSPACE>/Gaussian/A17/EXCHANGE_R1/results/object_2012_early,2012,early,COMPLETED,COMPLETED,True,True,"[4, 8, 16]","[4, 8, 16]",[],,1300.0557494999957
+False,,<WORKSPACE>/Gaussian/A17/EXCHANGE_R1/results/object_2012_late,2012,late,COMPLETED,COMPLETED,True,True,"[4, 8, 16]","[4, 8, 16]",[],,488.74350889999187
+False,,<WORKSPACE>/Gaussian/A17/EXCHANGE_R1/results/object_2012_middle,2012,middle,COMPLETED,COMPLETED,True,True,"[4, 8, 16]","[4, 8, 16]",[],,627.870957200008
+False,,<WORKSPACE>/Gaussian/A17/EXCHANGE_R1/results/object_2014_early,2014,early,COMPLETED,COMPLETED,True,True,"[4, 8, 16]","[4, 8, 16]",[],,627.4245120999985
+False,,<WORKSPACE>/Gaussian/A17/EXCHANGE_R1/results/object_2014_late,2014,late,COMPLETED,COMPLETED,True,True,"[4, 8, 16]","[4, 8, 16]",[],,326.5828634999925
+False,,<WORKSPACE>/Gaussian/A17/EXCHANGE_R1/results/object_2014_middle,2014,middle,COMPLETED,COMPLETED,True,True,"[4, 8, 16]","[4, 8, 16]",[],,630.9531859999988

@@ -1,0 +1,1 @@
+{"status":"FAILED_LOGGING_BEFORE_PILOT","error":"TypeError duplicate ids in information diagnostic dictionary","scope":"CPU production-driver smoke; no frozen physical result generated","correction":"merge shared identical ids field explicitly; no mathematical/threshold change"}

@@ -1,0 +1,24 @@
+\section{我把选模问题收缩到一个更具体的改动}
+陈教授，我从Gaussian/N-Port压缩开始关心这个问题，最初想的是把场和电流算得更省。读SOM、Twofold SOM和S-DBIM以后，我意识到接收可见性、内部传播以及材料一致性已经有很成熟的研究。我的问题逐渐变成：在这些current subspace的基础上，一个指定的current change究竟怎样改变当前material update？
+
+retained feedback给出了其中的物理过程。新增电流既直接辐射，又通过内部场激发原有电流；接收端看到二者的复振幅叠加。反过来，材料变化也可能先进入保留电流，再传到新增方向。这个frequency-domain feedback来自方程消元，不是给某个模式拟合一个经验权重。
+
+我现在把模型改变同时写到data curvature和normal-equation offset里：
+\[
+ \mathsf I_U=J_U^TJ_U,\qquad h_U=J_U^Tr+\ell,
+ \qquad H_Us_U=-h_U.
+\]
+前者描述材料变化会产生哪些接收响应；后者保留这些响应与当前residual的方向和符号。电流变化产生 $D$ 后，两者分别改变为
+\[
+ \Delta\mathsf I=J_o^TD+D^TJ_o+D^TD,
+ \qquad\Delta h=D^Tr.
+\]
+因此实际material step difference是
+\[
+ d=-H_n^{-1}(\Delta h+\Delta\mathsf I s_o).
+\]
+这也解释了为什么一个transfer norm或information spectrum不足以直接决定选模。相同的 $J^TJ$ 甚至可以对应相反的 $J^Tr$，生成相反的材料步。
+
+为了把这一点检验得更明确，我从receiver spectral backbone出发，只允许少量current exchange。每次动作保持实际current dimension和完整目标不变，用richer reduced anchor提出候选，再用full directional output检查actual finite gain。接受以后重新计算条件邻域，避免用初始评分解释后续所有动作。
+
+我的判断分成三个问题：receiver附近是否确实有更好的current space；有限信息的proposal能找到多少；取得和检查这些信息需要付出多少成本。full-GN fidelity、一次材料真值诊断和最终nonlinear reconstruction分别报告。这里的信息谱作为解释，不替代signed gain，也不把double-precision check称为严格certificate。

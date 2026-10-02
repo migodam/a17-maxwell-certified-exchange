@@ -1,0 +1,53 @@
+figure,panel,object_id,policy,rank,metric,value,units,source
+Figure1,Smooth Gaussian,2001,receiver_no_swap,4,object_summed_full_GN_gap_three_states,0.0016965940890081872,full frozen quadratic objective,per_policy_main.csv
+Figure1,Smooth Gaussian,2001,receiver_no_swap,8,object_summed_full_GN_gap_three_states,0.0001544148932971562,full frozen quadratic objective,per_policy_main.csv
+Figure1,Smooth Gaussian,2001,receiver_no_swap,16,object_summed_full_GN_gap_three_states,3.104313342351976e-05,full frozen quadratic objective,per_policy_main.csv
+Figure1,Smooth Gaussian,2001,exact_score_teacher,4,object_summed_full_GN_gap_three_states,0.00011866955346848893,full frozen quadratic objective,per_policy_main.csv
+Figure1,Smooth Gaussian,2001,exact_score_teacher,8,object_summed_full_GN_gap_three_states,5.361271766748844e-05,full frozen quadratic objective,per_policy_main.csv
+Figure1,Smooth Gaussian,2001,exact_score_teacher,16,object_summed_full_GN_gap_three_states,1.2913335280290801e-05,full frozen quadratic objective,per_policy_main.csv
+Figure1,Smooth Gaussian,2001,directed_verified,4,object_summed_full_GN_gap_three_states,0.00024309982530121754,full frozen quadratic objective,per_policy_main.csv
+Figure1,Smooth Gaussian,2001,directed_verified,8,object_summed_full_GN_gap_three_states,9.774433715138394e-05,full frozen quadratic objective,per_policy_main.csv
+Figure1,Smooth Gaussian,2001,directed_verified,16,object_summed_full_GN_gap_three_states,1.7499476460933688e-05,full frozen quadratic objective,per_policy_main.csv
+Figure1,Smooth Gaussian,2001,exact_score_teacher,all,total_gap_ratio_to_receiver,0.09840089170142209,dimensionless ratio,object_summed_ratios.csv
+Figure1,Smooth Gaussian,2001,directed_verified,all,total_gap_ratio_to_receiver,0.19040048674462942,dimensionless ratio,object_summed_ratios.csv
+Figure1,Near-contact Gaussian,2007,receiver_no_swap,4,object_summed_full_GN_gap_three_states,0.0002786483249746576,full frozen quadratic objective,per_policy_main.csv
+Figure1,Near-contact Gaussian,2007,receiver_no_swap,8,object_summed_full_GN_gap_three_states,0.00015292241684730374,full frozen quadratic objective,per_policy_main.csv
+Figure1,Near-contact Gaussian,2007,receiver_no_swap,16,object_summed_full_GN_gap_three_states,2.4084432786728508e-05,full frozen quadratic objective,per_policy_main.csv
+Figure1,Near-contact Gaussian,2007,exact_score_teacher,4,object_summed_full_GN_gap_three_states,6.492948797244812e-05,full frozen quadratic objective,per_policy_main.csv
+Figure1,Near-contact Gaussian,2007,exact_score_teacher,8,object_summed_full_GN_gap_three_states,1.8870880645379652e-05,full frozen quadratic objective,per_policy_main.csv
+Figure1,Near-contact Gaussian,2007,exact_score_teacher,16,object_summed_full_GN_gap_three_states,8.073437788683223e-06,full frozen quadratic objective,per_policy_main.csv
+Figure1,Near-contact Gaussian,2007,directed_verified,4,object_summed_full_GN_gap_three_states,0.00018898809468504245,full frozen quadratic objective,per_policy_main.csv
+Figure1,Near-contact Gaussian,2007,directed_verified,8,object_summed_full_GN_gap_three_states,9.613830129257592e-05,full frozen quadratic objective,per_policy_main.csv
+Figure1,Near-contact Gaussian,2007,directed_verified,16,object_summed_full_GN_gap_three_states,1.2764435685184108e-05,full frozen quadratic objective,per_policy_main.csv
+Figure1,Near-contact Gaussian,2007,exact_score_teacher,all,total_gap_ratio_to_receiver,0.20163011752343407,dimensionless ratio,object_summed_ratios.csv
+Figure1,Near-contact Gaussian,2007,directed_verified,all,total_gap_ratio_to_receiver,0.6537637412295972,dimensionless ratio,object_summed_ratios.csv
+Figure1,Layered voxel,2012,receiver_no_swap,4,object_summed_full_GN_gap_three_states,0.00278953459291029,full frozen quadratic objective,per_policy_main.csv
+Figure1,Layered voxel,2012,receiver_no_swap,8,object_summed_full_GN_gap_three_states,0.0005433434745554908,full frozen quadratic objective,per_policy_main.csv
+Figure1,Layered voxel,2012,receiver_no_swap,16,object_summed_full_GN_gap_three_states,0.00016736183499307947,full frozen quadratic objective,per_policy_main.csv
+Figure1,Layered voxel,2012,exact_score_teacher,4,object_summed_full_GN_gap_three_states,0.00031328022212757207,full frozen quadratic objective,per_policy_main.csv
+Figure1,Layered voxel,2012,exact_score_teacher,8,object_summed_full_GN_gap_three_states,0.00015121520690595638,full frozen quadratic objective,per_policy_main.csv
+Figure1,Layered voxel,2012,exact_score_teacher,16,object_summed_full_GN_gap_three_states,6.738942527573049e-05,full frozen quadratic objective,per_policy_main.csv
+Figure1,Layered voxel,2012,directed_verified,4,object_summed_full_GN_gap_three_states,0.00048228130372429505,full frozen quadratic objective,per_policy_main.csv
+Figure1,Layered voxel,2012,directed_verified,8,object_summed_full_GN_gap_three_states,0.0003977720631953357,full frozen quadratic objective,per_policy_main.csv
+Figure1,Layered voxel,2012,directed_verified,16,object_summed_full_GN_gap_three_states,9.172654651748114e-05,full frozen quadratic objective,per_policy_main.csv
+Figure1,Layered voxel,2012,exact_score_teacher,all,total_gap_ratio_to_receiver,0.15195668557907097,dimensionless ratio,object_summed_ratios.csv
+Figure1,Layered voxel,2012,directed_verified,all,total_gap_ratio_to_receiver,0.27763237392798495,dimensionless ratio,object_summed_ratios.csv
+Figure1,Asymmetric voxel,2014,receiver_no_swap,4,object_summed_full_GN_gap_three_states,0.0005425582565245707,full frozen quadratic objective,per_policy_main.csv
+Figure1,Asymmetric voxel,2014,receiver_no_swap,8,object_summed_full_GN_gap_three_states,0.00019881696995566108,full frozen quadratic objective,per_policy_main.csv
+Figure1,Asymmetric voxel,2014,receiver_no_swap,16,object_summed_full_GN_gap_three_states,4.324184690766302e-05,full frozen quadratic objective,per_policy_main.csv
+Figure1,Asymmetric voxel,2014,exact_score_teacher,4,object_summed_full_GN_gap_three_states,7.448266934855686e-05,full frozen quadratic objective,per_policy_main.csv
+Figure1,Asymmetric voxel,2014,exact_score_teacher,8,object_summed_full_GN_gap_three_states,3.675030055880806e-05,full frozen quadratic objective,per_policy_main.csv
+Figure1,Asymmetric voxel,2014,exact_score_teacher,16,object_summed_full_GN_gap_three_states,1.6502815396075274e-05,full frozen quadratic objective,per_policy_main.csv
+Figure1,Asymmetric voxel,2014,directed_verified,4,object_summed_full_GN_gap_three_states,0.00015556390860018557,full frozen quadratic objective,per_policy_main.csv
+Figure1,Asymmetric voxel,2014,directed_verified,8,object_summed_full_GN_gap_three_states,0.00014741089918340577,full frozen quadratic objective,per_policy_main.csv
+Figure1,Asymmetric voxel,2014,directed_verified,16,object_summed_full_GN_gap_three_states,2.5045023366357567e-05,full frozen quadratic objective,per_policy_main.csv
+Figure1,Asymmetric voxel,2014,exact_score_teacher,all,total_gap_ratio_to_receiver,0.16280016027677088,dimensionless ratio,object_summed_ratios.csv
+Figure1,Asymmetric voxel,2014,directed_verified,all,total_gap_ratio_to_receiver,0.4180635908591606,dimensionless ratio,object_summed_ratios.csv
+Figure2,near-contact Gaussian fixed exchange,2007,fixed_move_drop0_add4,4,delta_logdet_volume,6.312725761123517,dimensionless prior-normalized information,hash-linked LINKED_MOVES.json
+Figure2,near-contact Gaussian fixed exchange,2007,fixed_move_drop0_add4,4,delta_effective_dim,1.8613056861882313,dimensionless prior-normalized information,hash-linked LINKED_MOVES.json
+Figure2,near-contact Gaussian fixed exchange,2007,fixed_move_drop0_add4,4,Q_true,-5.575387517724516e-05,full frozen quadratic objective,hash-linked LINKED_MOVES.json
+Figure2,near-contact Gaussian fixed exchange,2007,fixed_move_drop0_add4,4,base_full_gap,0.00014968486970471037,full frozen quadratic objective,base_json_path and exact saved Q identity
+Figure2,near-contact Gaussian fixed exchange,2007,fixed_move_drop0_add4,4,child_full_gap_from_saved_Q,0.00020543874488195555,full frozen quadratic objective,base_json_path and exact saved Q identity
+Figure2,near-contact Gaussian paired addition,2007,common_rank14_core_addition,15,Q_A,-3.239105029922168e-08,full frozen quadratic objective,pair_forced_dimension.json
+Figure2,near-contact Gaussian paired addition,2007,common_rank14_core_addition,15,Q_B,-5.8389114908801817e-08,full frozen quadratic objective,pair_forced_dimension.json
+Figure2,near-contact Gaussian paired addition,2007,common_rank14_core_addition,16,Q_pair,3.478737678174405e-07,full frozen quadratic objective,pair_forced_dimension.json

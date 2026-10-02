@@ -1,0 +1,1 @@
+{"status":"FAILED_BEFORE_PHYSICS","attempt":"a17_o2007_early_1e26bbb71a","error":"str(relative_path) Windows backslashes did not match portable manifest slash keys","correction":"Path.as_posix for lookup and metadata; same exact files/hashes; no thresholds or numerical implementation changes","numerical_results_generated":false}

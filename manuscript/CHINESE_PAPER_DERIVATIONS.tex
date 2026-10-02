@@ -1,0 +1,311 @@
+\section{论文的数学设置：从材料到测量}
+前面的部分给出了背景和直觉。下面按论文的论证顺序展开中文推导：先固定材料和测量的含义，再消去电流坐标，随后推导材料步变化、完整导数误差及预条件条件。这里整理的是英文正文和理论说明中已有的结果，不增加实验或改变成立条件。
+
+\subsection{物理材料空间与多照明}
+用 $\chi$ 表示介电对比度（dielectric contrast），$X$ 表示对应的材料响应算子（material-response operator）。第 $p$ 次照明的感应电流（induced current）满足
+\begin{equation}
+ j_p=X(e_p^{\rm inc}+G_Dj_p),\qquad L=I-XG_D.
+\end{equation}
+$G_D$ 是内部矢量 Green 算子（internal vector Green operator），$e_p^{\rm tot}=e_p^{\rm inc}+G_Dj_p$ 是总场（total field）。材料变化用实坐标 $s\in\mathbb R^d$ 表示；复介电材料的实部和虚部都是这个实向量的组成部分。物理材料切向（physical material tangent）$Q_T$ 满足
+\begin{equation}
+ \delta\chi=Q_Ts,\qquad Q_T^\top M_\chi Q_T=I.
+\end{equation}
+这里的等式在实化坐标中理解，$M_\chi$ 是体积加权的材料 $L^2$ 内积。这样，同一材料子空间仅仅换单位或旋转坐标，不会人为改变某个方向的重要性。
+
+对电流方程求方向导数（directional derivative），得到
+\begin{equation}
+ L\,\delta j_p=DX[Q_Ts]e_p^{\rm tot}=:B_ps,
+ \qquad K_p=L^{-1}B_p,\qquad J_p=SK_p.
+\end{equation}
+$B_p$ 是材料注入映射（material-injection map）：它将材料扰动转成电流方程的右端。实际电流变化是 $K_ps$，并不是 $B_ps$。$S$ 包括接收、归一化与需要时的噪声白化（noise whitening）；$J_p$ 是材料到测量的 Jacobian。
+
+所有照明共享同一个材料向量 $s$，但有各自的电流。把各次测量的实部、虚部纵向堆叠（stacking），形成实线性映射 $J$。后面的 $J^*$ 是该实材料内积下的伴随（adjoint）。例如，复输出矩阵 $F$ 作用于实材料坐标时，伴随为 $v\mapsto\operatorname{Re}(F^Hv)$，不能遗漏取实部。电流分块公式可先用复记号写出，再对照明做块对角提升和实化（realification）。
+
+\subsection{DDA 中极化率的导数必须保留}
+实际离散偶极子近似（discrete-dipole approximation, DDA）使用极化率（polarizability）$a(\chi)$，而不是把 $X$ 直接替换为 $\chi$。对体积为 $v$ 的单元，所用模型为
+\begin{equation}
+ a(\chi)=\frac{3v\chi}{\chi+3-i3c_kv\chi},\qquad
+ a'(\chi)=\frac{9v}{(\chi+3-i3c_kv\chi)^2},\qquad c_k=\frac{k^3}{6\pi}.
+\end{equation}
+在偶极矩坐标下，$L=I-D_aG_{\rm off}$，扰动激励包含 $a'(\chi)\delta\chi\,e_p^{\rm tot}$；电流范数再按单元体积归一化。因而材料注入同时依赖当前材料、局部总场和允许的材料方向。把 $a$ 当成对比度，或者漏掉 $a'$，都会改变实际研究的材料导数。完整离散 Green 核及坐标因子见英文补充材料S1。
+
+\subsection{冻结状态下的局部材料问题}
+固定当前材料、照明、残差和正则化。令 $r$ 为预测减观测的测量残差（data residual），$\Lambda\succ0$ 为正则化及阻尼曲率，$\ell$ 为共同的先验线性项。Gauss--Newton局部二次模型写成
+\begin{equation}
+ \begin{aligned}
+ \Phi(s)&=\tfrac12\|r+Js\|^2-\tfrac12\|r\|^2
+             +\tfrac12s^*\Lambda s+\ell^*s\\
+ &=\tfrac12s^*Hs+h^*s,\qquad
+ H=J^*J+\Lambda,\quad h=J^*r+\ell.
+ \end{aligned}
+\end{equation}
+这里 $H$ 是正则化 Gauss--Newton Hessian，也就是材料法方程（material normal equation）的矩阵，不是包含全部二阶导数的精确非线性 Hessian。完整局部解为 $s_*=-H^{-1}h$，并且
+\begin{equation}
+ \Phi(s)-\Phi(s_*)=\tfrac12\|s-s_*\|_H^2,
+ \qquad \|u\|_H^2=u^*Hu.
+\end{equation}
+因此，局部二次误差和 $H$-范数步误差等价；它们都不等于最终材料重建误差。
+
+\section{消去保留电流：反馈修饰的导数变化}
+\subsection{从分块电流方程得到 Schur complement}
+设 $V$ 为原先保留的正交电流基，$C$ 为指定新增候选基（candidate bank），满足 $V^*V=C^*C=I$、$V^*C=0$。令 $A=I-L$，并用 $A_{VC}=V^*AC$ 等记号表示分块。假设 $D_V=I-A_{VV}=V^*LV$ 可逆，原电流响应为
+\begin{equation}
+ R_0=VD_V^{-1}V^*,\quad K_0=R_0B,\quad J_0=SK_0.
+\end{equation}
+注意 $R_0$ 作用在电流空间；后面 $M_0=(J_0^*J_0+\Lambda)^{-1}$ 作用在材料空间。
+
+对任意材料右端，增广后的电流写成 $V\alpha+C\gamma$。Galerkin投影要求方程残差与整个保留空间正交，因此
+\begin{equation}
+ \begin{bmatrix}D_V&-A_{VC}\\-A_{CV}&I-A_{CC}\end{bmatrix}
+ \begin{bmatrix}\alpha\\\gamma\end{bmatrix}
+ =\begin{bmatrix}B_Vs\\B_Cs\end{bmatrix},
+ \qquad B_V=V^*B,\quad B_C=C^*B.
+\end{equation}
+第一行给出 $\alpha=D_V^{-1}(B_Vs+A_{VC}\gamma)$。代入第二行后，新增坐标满足
+\begin{equation}
+ \Gamma_C\gamma=N_Cs,
+ \quad\Gamma_C=I-A_{CC}-A_{CV}D_V^{-1}A_{VC},
+ \quad N_C=B_C+A_{CV}D_V^{-1}B_V.
+\end{equation}
+$\Gamma_C$ 是 Schur补矩阵（Schur complement），描述新增空间自身作用和新增—保留—新增反馈回路。$N_C$ 则是消去原坐标后，材料真正进入新增方程的激励。
+
+\subsection{反馈修饰切向分解及其物理含义}
+定义
+\begin{equation}
+ \bar C=C+VD_V^{-1}A_{VC}=(I-R_0L)C,\qquad Y_C=S\bar C.
+\end{equation}
+只要 $\Gamma_C$ 可逆，回代立即得到
+\begin{equation}\label{zh:tangent}
+ \boxed{K_C-K_0=\bar C\Gamma_C^{-1}N_C,\qquad
+ J_C-J_0=Y_C\Gamma_C^{-1}N_C.}
+\end{equation}
+这就是反馈修饰切向分解（feedback-dressed tangent factorization）。在对比源表述下，$A=XG_D$，于是
+\begin{equation}
+ \bar C=C+R_0XG_DC,\qquad Y_C=SC+SR_0XG_DC.
+\end{equation}
+$SC$ 是直接辐射；$G_DC$ 是新增电流产生的内部场；$XG_DC$ 是该场激发的材料电流作用；$R_0$ 进一步处理保留空间中的相互散射。接收器看到两条路径的复振幅叠加，既可能增强，也可能抵消。另一侧 $N_C=B_C+A_{CV}D_V^{-1}B_V$ 表明，材料既能直接激发新增方向，也能先激发保留方向再传到新增方向。
+
+这不是给直接输出乘一个经验增益。一般 $\bar C$ 不再与 $V$ 欧氏正交，却满足 $V^*L\bar C=0$：它正是保持原Galerkin方程不被破坏的修正。整个解释是频域反馈（frequency-domain feedback），不额外假定控制系统的时域稳定性。
+
+\subsection{弱反馈的绝对界与相对界不同}
+若 $\|A_{VV}\|_2\le\eta<1$，Neumann级数给出 $\|D_V^{-1}\|_2\le(1-\eta)^{-1}$，从而
+\begin{equation}
+ \|Y_C-SC\|_2\le\frac{\|SV\|_2\|A_{VC}\|_2}{1-\eta}.
+\end{equation}
+要相对直接输出给出统一保证，还需要 $SC$ 在所研究系数空间中有正的最小奇异值：
+\begin{equation}
+ \frac{\|(Y_C-SC)u\|_2}{\|SCu\|_2}
+ \le\frac{\|SV\|_2\|A_{VC}\|_2}
+ {(1-\eta)\sigma_{\min}(SC)},\qquad u\ne0.
+\end{equation}
+对于严格位于接收零空间的电流（receiver-dark current），这个正下界不存在；近乎暗的方向即使有很小的正奇异值，相对界也可能大到无法提供有用保证。它的绝对反馈可以不大，却远大于直接输出。因此，大的反馈/直接比值本身不能证明谐振；高材料对比度也不能单独证明反馈一定强。
+
+\section{材料步为什么需要两组方向：闭包定理的中文证明}
+令 $T_C=\Gamma_C^{-1}N_C$，于是 $J_C=J_0+Y_CT_C$。在相同 $r,\Lambda,\ell$ 下，定义
+\begin{equation}
+ \begin{aligned}
+ H_0&=J_0^*J_0+\Lambda,& M_0&=H_0^{-1},\\
+ s_0&=-M_0(J_0^*r+\ell),&
+ s_C&=-(J_C^*J_C+\Lambda)^{-1}(J_C^*r+\ell).
+ \end{aligned}
+\end{equation}
+\paragraph{定理：双侧材料步闭包（paired material-step closure）。}
+在上述可逆性、共同正则化和精确算子作用条件下，若没有截掉非零作用方向，则
+\begin{equation}\label{zh:closure}
+ \begin{aligned}
+ s_C-s_0={}&-M_0J_0^*Y_C(T_Cs_C)\\
+ &-M_0N_C^*\Gamma_C^{-*}Y_C^*(r+J_Cs_C)
+ \in\mathcal E_0(C),\\
+ \mathcal E_0(C)&=\operatorname{Range}M_0[J_0^*Y_C,N_C^*].
+ \end{aligned}
+\end{equation}
+\paragraph{证明。}
+展开曲率差和线性项差：
+\begin{equation}
+ \begin{aligned}
+ \Delta H&=J_0^*Y_CT_C+T_C^*Y_C^*J_0+T_C^*Y_C^*Y_CT_C,\\
+ \Delta h&=T_C^*Y_C^*r.
+ \end{aligned}
+\end{equation}
+两套法方程相减，得到
+\begin{equation}
+ H_0(s_C-s_0)=-\Delta Hs_C-\Delta h
+ =-J_0^*Y_CT_Cs_C-T_C^*Y_C^*(r+J_Cs_C).
+\end{equation}
+左乘 $M_0$，再使用 $T_C^*=N_C^*\Gamma_C^{-*}$，即得式\eqref{zh:closure}。\hfill$\square$
+
+第一组 $M_0J_0^*Y_C$ 是观测侧材料拉回（observation-side material pullback）：新增观测响应与原材料敏感度发生耦合，改变原有材料方向上的步长。第二组 $M_0N_C^*$ 是注入侧材料拉回（injection-side material pullback）：更新后的测量残差沿新增激励路径返回材料空间。只看右端改变 $\Delta h$ 会漏掉第一组中的曲率耦合。
+
+闭包告诉我们步差可能出现在哪里，并不保证当前步一定改变。若 $r=0,\ell=0$，即使 $J_C-J_0\ne0$，仍有 $s_C=s_0=0$。物理通路给出影响的可能性，当前残差和正则化决定它是否实际参与更新。
+
+\subsection{非单调曲率的最小例子}
+取
+\begin{equation}
+ J_0=[1,0],\quad J_C=[1,1],\quad\Lambda=I,\quad r=1,\quad\ell=0.
+\end{equation}
+直接求解可得 $s_0=(-1/2,0)^\top$、$s_C=(-1/3,-1/3)^\top$，步差为 $(1/6,-1/3)^\top$。观测侧沿第一个材料坐标，注入侧沿第二个材料坐标，单独一侧都无法表达全部步差。同时
+\begin{equation}
+ \Delta H=\begin{bmatrix}0&1\\1&1\end{bmatrix},\qquad\det\Delta H=-1.
+\end{equation}
+因此曲率差是不定矩阵（indefinite matrix）。这个例子可嵌入 $L=I$ 的Galerkin模型，说明不定性不要求多重散射才能发生。Maxwell反馈决定实际物理因子；最小二乘法方程本身产生两侧耦合。增加电流空间是改进已有测量模型，不是增加独立测量，二者不能混为一谈。
+
+\subsection{结构闭包与当前误差对齐是两件事}
+设 $Z$ 是 $\mathcal E_0(C)$ 的独立基。在不改变完整局部目标的前提下，令修正步为 $s=s_0+Zq$。记完整目标在 $s_0$ 的梯度缺陷为 $d_0=Hs_0+h$，则
+\begin{equation}
+ q_*=-\bigl(Z^*HZ\bigr)^{-1}Z^*d_0,
+ \qquad
+ \Phi(s_0)-\Phi(s_0+Zq_*)
+ =\tfrac12 d_0^*Z(Z^*HZ)^{-1}Z^*d_0.
+\end{equation}
+因为 $s_C$ 在这个仿射空间中，最优修正一定不差于指定的 $s_C$。但增益取决于 $Z^*d_0$；若它为零，修正没有收益。用 $P_Z$ 表示到 $H^{1/2}Z$ 的正交投影，还可把增益写为 $\tfrac12\|P_ZH^{-1/2}d_0\|^2$。这解释了为什么完整描述某个模型变化的方向，不一定是消除当前完整误差的最佳方向。材料Krylov方向直接从误差出发，完全可能更有效。
+
+\section{双向遗漏传递如何控制完整材料求解}
+\subsection{Jacobian tail 的精确恒等式}
+对满足 $U^*LU$ 可逆的正交保留基 $U$，定义
+\begin{equation}
+ R_U=U(U^*LU)^{-1}U^*,\quad J_U=SR_UB,
+ \quad\mathcal I_U=B-LR_UB,\quad\mathcal O_U=S-SR_UL.
+\end{equation}
+$\mathcal I_U$ 是材料注入残差（injection residual）；$\mathcal O_U$ 是观测残差映射（observation residual）。这里不是测量数据残差 $r$。由 $R_ULR_U=R_U$，有 $R_U\mathcal I_U=0$，因此
+\begin{equation}\label{zh:tail}
+ \begin{aligned}
+ J-J_U&=SL^{-1}(B-LR_UB)\\
+ &=\bigl(S-SR_UL\bigr)L^{-1}\mathcal I_U
+ =\boxed{\mathcal O_UL^{-1}\mathcal I_U}.
+ \end{aligned}
+\end{equation}
+Jacobian尾部（Jacobian tail）指完整与约化材料导数之差，不是物体的空间边缘。式\eqref{zh:tail}追踪遗漏影响的完整路径：材料进入未解释的电流激励，经全波传播，再返回未解释的观测通道。
+
+\subsection{从归一化导数误差到谱界}
+令 $H_U=J_U^*J_U+\Lambda$，用约化材料曲率归一化遗漏导数：
+\begin{equation}
+ \eta_U=\|(J-J_U)H_U^{-1/2}\|_2.
+\end{equation}
+将测量与正则项堆叠为增广最小二乘算子（augmented least-squares operator）
+\begin{equation}
+ \mathcal A_U=\begin{bmatrix}J_U\\\Lambda^{1/2}\end{bmatrix},\qquad
+ \mathcal A=\begin{bmatrix}J\\\Lambda^{1/2}\end{bmatrix}.
+\end{equation}
+对任意实向量 $x$，$\|\mathcal A_UH_U^{-1/2}x\|=\|x\|$。三角不等式和反三角不等式给出
+\begin{equation}
+ (1-\eta_U)\|x\|\le\|\mathcal AH_U^{-1/2}x\|
+ \le(1+\eta_U)\|x\|.
+\end{equation}
+当 $\eta_U<1$ 时平方并对任意 $x$ 取界，得到
+\begin{equation}
+ (1-\eta_U)^2H_U\preceq H\preceq(1+\eta_U)^2H_U,
+ \qquad
+ \kappa(H_U^{-1/2}HH_U^{-1/2})
+ \le\left(\frac{1+\eta_U}{1-\eta_U}\right)^2.
+\end{equation}
+这里 $\preceq$ 为半正定序（Loewner order），$\kappa$ 是对称预条件算子的谱条件数（spectral condition number）。它不是直接把非对称乘积 $H_U^{-1}H$ 的奇异值比拿来使用。
+
+预条件共轭梯度（preconditioned conjugate gradient, PCG）使用固定 $H_U^{-1}$ 求解完整 $Hs=-h$。代入标准PCG误差界，有
+\begin{equation}
+ \|e_k\|_H\le2\left(\frac{\sqrt\kappa-1}{\sqrt\kappa+1}\right)^k\|e_0\|_H
+ \le2\eta_U^k\|e_0\|_H.
+\end{equation}
+PCG界本身是已有理论；这里的用途是把电磁遗漏传递转成材料方程的明确要求。
+
+进一步，若有可信的 $0<\beta\le\sigma_{\min}(L)$，则由式\eqref{zh:tail}和 $H_U\succeq\Lambda$ 得到电流侧充分界
+\begin{equation}
+ \eta_U\le\frac{\|\mathcal O_U\|_2\,
+ \|\mathcal I_U\Lambda^{-1/2}\|_2}{\beta}.
+\end{equation}
+这里需要完整 $L$ 的稳定性下界。小Schur矩阵条件数接近1，不能代替这个要求；少量随机探针也不会自动给出确定性的全空间保证。
+
+\section{如何实现材料 preconditioner，而不是另解一个近似逆问题}
+\subsection{精确低秩更新和小SPD实现}
+把实化、堆叠后的Jacobian差记成 $D=Y_bT_b$。展开 $H_C-H_0$，得到
+\begin{equation}
+ H_C=H_0+W\mathsf K W^*,\quad
+ W=[J_0^*Y_b,T_b^*],\quad
+ \mathsf K=\begin{bmatrix}0&I\\I&Y_b^*Y_b\end{bmatrix}.
+\end{equation}
+中间矩阵 $\mathsf K$ 可以不定，但 $H_C=J_C^*J_C+\Lambda$ 仍正定。写 $M_0=F_0F_0^*$，对 $F_0^*W$ 做秩揭示QR（rank-revealing QR）：$F_0^*W=QR$，$Q^*Q=I$。于是
+\begin{equation}
+ F_0^*H_CF_0=I+QR\mathsf KR^*Q^*.
+\end{equation}
+该矩阵在 $Q$ 的正交补上为单位阵，在 $Q$ 张成的空间上为小矩阵 $\mathsf S=I+R\mathsf KR^*$。由于整个矩阵正定，$\mathsf S$ 也正定。分别求逆后得到
+\begin{equation}
+ \boxed{M_C=F_0\bigl[(I-QQ^*)+Q\mathsf S^{-1}Q^*\bigr]F_0^*.}
+\end{equation}
+因此只需要分解小的对称正定块（symmetric positive-definite block, SPD block）。精确性要求没有截掉非零作用特征（signature）；接近秩亏（near rank deficiency）时的数值截断误差必须另查。Woodbury和QR是实现工具，不单独作为原创性。
+
+构建完成后，PCG每一步仍作用完整 $H$，$M_C$ 仅调整迭代尺度。在共同完整残差要求下，它不会把目标改成 $H_Cs=-h_C$。候选和物理状态均已知时，可以通过 $LC,SC$、局部材料伴随和保留求解形成作用特征矩阵（signature matrices），不必为了整个材料修正库再支付完整 $JZ/HZ$。但获取候选、保存历史、构建、检查和应用都必须计费。
+
+\subsection{已付费的 current snapshots 到底是什么}
+一次完整法方程作用已经计算了
+\begin{equation}
+ z\longmapsto L^{-1}Bz\longmapsto Jz
+ \longmapsto L^{-*}S^*Jz\longmapsto J^*Jz.
+\end{equation}
+其中第一个电流是正向电流样本（primal current snapshot），第二个是从接收响应反向传播的伴随电流样本（adjoint current snapshot）。Snapshot就是计算过程中已保存的一列场/电流向量，不是图像截图。若 $U$ 同时包含一组材料方向 $Z$ 的全部正向和伴随电流，则Galerkin一致性给出
+\begin{equation}
+ J_UZ=JZ,\qquad H_UZ=HZ.
+\end{equation}
+第一式来自正向包含；第二式还需要伴随包含，从而把 $JZ$ 正确拉回材料空间。这个关系与既有primal/dual interpolation理论一致。压缩后的少量snapshot不一定保留包含条件，所以定理不能直接证明低秩版本有效。
+
+\subsection{可执行流程与标准Ritz对照}
+算法在一个冻结材料状态下执行四步：先将已付费的current snapshots投影到 $V$ 的正交补并选出独立 $C$；再按当前材料重算反馈和注入并构造 $M_C$；用与选择独立的探针计算收费检查；最后固定 $M_C$，让PCG求解完整法方程，达到共同真实残差标准。实验会保留充分检查失败的结果，继续观察实际性能；这不等于部署时已有自动认证策略。
+
+标准材料复用（material recycling）从自己的历史求解方向中提取Ritz向量（Ritz vectors），在相同额外存储字节预算下构造材料粗空间 $Z$。令
+\begin{equation}
+ E=Z^*HZ,\qquad P=I-ZE^{-1}Z^*H,
+ \qquad M_{\rm two}=ZE^{-1}Z^*+PM_0P^*.
+\end{equation}
+这个两层预条件器（two-level preconditioner）在整个迭代过程中处理粗空间，不只是提供一次warm start。旧状态的 $HZ$ 必须对当前 $H$ 刷新并收费；相同状态下可缓存，但需控制相关历史方向变换带来的误差。比较对象是具体的实现，不是所有recycling Krylov方法。
+
+\section{往返散射路径与复用期：两个有条件的设计结论}
+\subsection{Fourier路径深度界的推导}
+选取可精确求解的背景 $L_b$，写成
+\begin{equation}
+ L=L_b(I-\mathcal A),\qquad B_b=L_b^{-1}B,\qquad
+ J=S(I-\mathcal A)^{-1}B_b,\quad\rho=\|\mathcal A\|_2<1.
+\end{equation}
+这里小的是背景尚未吸收的剩余耦合，不一定是全部散射。设正交投影 $\Pi$ 保留完整三分量Fourier块、与 $L_b$ 交换，并满足 $\Pi B_b=B_b$、$S\Pi=S$。从材料注入支持到任一遗漏模式至少需要 $a$ 次剩余散射，从遗漏模式返回观测支持至少需要 $b$ 次。令 $Q_\perp=I-\Pi$，且
+\begin{equation}
+ R_\Pi=\Pi(I_\Pi-\Pi\mathcal A\Pi)^{-1}\Pi.
+\end{equation}
+对背景处理后的系统，两侧残差为
+\begin{equation}
+ \mathcal I_\Pi=Q_\perp\mathcal A R_\Pi B_b,\qquad
+ \mathcal O_\Pi=SR_\Pi\mathcal A Q_\perp.
+\end{equation}
+展开Neumann级数，注入端前 $a-1$ 阶不能到达遗漏空间，观测端前 $b-1$ 阶不能返回接收支持。因此
+\begin{equation}
+ \|\mathcal I_\Pi\Lambda^{-1/2}\|_2
+ \le\|B_b\Lambda^{-1/2}\|_2\frac{\rho^a}{1-\rho},\qquad
+ \|\mathcal O_\Pi\|_2\le\|S\|_2\frac{\rho^b}{1-\rho}.
+\end{equation}
+再用 $\|(I-\mathcal A)^{-1}\|_2\le(1-\rho)^{-1}$ 和双侧尾部恒等式，得到
+\begin{equation}
+ \boxed{\|(J-J_\Pi)\Lambda^{-1/2}\|_2
+ \le\frac{\|S\|_2\|B_b\Lambda^{-1/2}\|_2}{(1-\rho)^3}\rho^{a+b}.}
+\end{equation}
+这给出往返路径深度（round-trip path depth），而不是以零频为中心的普遍低频排序。有限自由空间边界、宽频材料激励和非不变子空间会破坏这些支持条件；受控模型中的幂律不能直接搬到任意DDA目标。
+
+\subsection{材料改变后的 reuse / refresh 条件}
+在状态 $a$ 构建预条件器，令 $F_a=H_{C,a}^{-1/2}$。定义构建误差与后续Hessian漂移（Hessian drift）
+\begin{equation}
+ \epsilon_a=\|F_a(H_a-H_{C,a})F_a\|_2,\qquad
+ \delta_t=\|F_a(H_t-H_a)F_a\|_2.
+\end{equation}
+由于
+\begin{equation}
+ F_aH_tF_a-I=F_a(H_a-H_{C,a})F_a+F_a(H_t-H_a)F_a,
+\end{equation}
+其范数不超过 $\epsilon_a+\delta_t$。若这个和小于1，则
+\begin{equation}
+ \kappa(F_aH_tF_a)\le\frac{1+\epsilon_a+\delta_t}{1-\epsilon_a-\delta_t}.
+\end{equation}
+固定 $H$ 只换残差时，$\delta_t=0$；材料或阻尼变化时，必须重新控制漂移，不能因snapshot已经存在就默认旧逆仍有效。这个充分条件也不保证实现便宜：若每次节省 $t_s>0$、构建及检查费 $t_b$，回本还要求实际累计节省超过 $t_b$。若 $t_s\le0$，单靠重复使用无法摊销。
+
+\section{从定理到实验：哪些问题仍需数值回答}
+推导确立的是精确关系和充分条件。数值部分需要分别检验：反馈在真实矢量Maxwell对象中是否明显；两组材料方向是否带来当前优化收益；预条件器是否在相同完整残差要求下节省作用数和总时间；这些现象是否经得住独立物理参考。它们不是同一项验收。
+
+自由空间选模使用四个固定评分：直接接收 $\|Sc\|$；当前材料加权的内部传播 $\|(I-L)c\|$；未计反馈的注入—观测乘积；以及单候选反馈贡献
+\begin{equation}
+ q_{\rm fb}(c)=\frac{\|Y_c\|_2\|N_c\|_F}{|\Gamma_c|\sqrt\lambda},\qquad \Lambda=\lambda I.
+\end{equation}
+此处 $c$ 为一列归一化复电流，$Y_c$ 是其接收向量，$N_c$ 按照明纵向排列材料注入行；$\|N_c\|_F^2=\sum_p\|N_{c,p}\|_2^2$。该乘积给出共享单候选在各照明上的聚合导数能量尺度，不是将完整堆叠 Jacobian 的谱范数拆成乘积，也不是完整遗漏尾部证书。多个候选同时加入会相互耦合，所以应在独立材料方向和完整求解上评价，而不能仅用评分定义本身作为成功证据。后面的图表按这个顺序解释物理结果、求解对照、完整费用和失败边界。

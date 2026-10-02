@@ -1,0 +1,16 @@
+{"elapsed_s":0.0,"memory_mib":477.0,"gpu_util":32.0,"memory_util":33.0,"host_rss":17477632,"host_cpu_times":[0.046875,0.0]}
+{"elapsed_s":1.062999999965541,"memory_mib":477.0,"gpu_util":24.0,"memory_util":30.0,"host_rss":27521024,"host_cpu_times":[0.078125,0.03125]}
+{"elapsed_s":2.125,"memory_mib":477.0,"gpu_util":24.0,"memory_util":30.0,"host_rss":29237248,"host_cpu_times":[0.09375,0.03125]}
+{"elapsed_s":3.1719999999622814,"memory_mib":477.0,"gpu_util":28.0,"memory_util":32.0,"host_rss":46321664,"host_cpu_times":[0.171875,0.09375]}
+{"elapsed_s":4.23499999998603,"memory_mib":477.0,"gpu_util":32.0,"memory_util":32.0,"host_rss":50946048,"host_cpu_times":[0.234375,0.15625]}
+{"elapsed_s":5.312999999965541,"memory_mib":477.0,"gpu_util":25.0,"memory_util":30.0,"host_rss":56037376,"host_cpu_times":[0.28125,0.1875]}
+{"elapsed_s":6.39100000000326,"memory_mib":477.0,"gpu_util":24.0,"memory_util":30.0,"host_rss":60407808,"host_cpu_times":[0.296875,0.234375]}
+{"elapsed_s":7.452999999979511,"memory_mib":477.0,"gpu_util":34.0,"memory_util":33.0,"host_rss":264499200,"host_cpu_times":[0.59375,0.65625]}
+{"elapsed_s":8.5,"memory_mib":477.0,"gpu_util":24.0,"memory_util":30.0,"host_rss":307515392,"host_cpu_times":[1.4375,0.734375]}
+{"elapsed_s":9.562999999965541,"memory_mib":477.0,"gpu_util":25.0,"memory_util":30.0,"host_rss":372813824,"host_cpu_times":[2.125,0.9375]}
+{"elapsed_s":10.59399999998277,"memory_mib":477.0,"gpu_util":33.0,"memory_util":33.0,"host_rss":397971456,"host_cpu_times":[2.703125,1.25]}
+{"elapsed_s":11.64100000000326,"memory_mib":477.0,"gpu_util":27.0,"memory_util":31.0,"host_rss":402378752,"host_cpu_times":[3.171875,1.78125]}
+{"elapsed_s":12.702999999979511,"memory_mib":477.0,"gpu_util":27.0,"memory_util":31.0,"host_rss":415297536,"host_cpu_times":[4.125,1.828125]}
+{"elapsed_s":13.780999999959022,"memory_mib":648.0,"gpu_util":11.0,"memory_util":4.0,"host_rss":712876032,"host_cpu_times":[4.484375,2.09375]}
+{"elapsed_s":14.812999999965541,"memory_mib":654.0,"gpu_util":9.0,"memory_util":3.0,"host_rss":870195200,"host_cpu_times":[4.78125,2.328125]}
+{"elapsed_s":15.85999999998603,"memory_mib":654.0,"gpu_util":10.0,"memory_util":4.0,"host_rss":999284736,"host_cpu_times":[5.484375,2.421875]}

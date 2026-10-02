@@ -1,0 +1,162 @@
+\section{Electromagnetic Entry, Feedback, and Observation}
+
+\subsection{Physical tangent and frozen inverse problem}
+
+Consider isotropic, nonmagnetic dielectric contrast \(\chi\) with a fixed acquisition geometry. For illumination \(p\), the contrast-source formulation is
+
+\[
+\begin{aligned}
+j_p&=X(e_p^{\rm inc}+G_Dj_p),&
+L&=I-XG_D,\\
+L\,\delta j_p&=B_ps,&
+B_ps&=DX[Q_Ts]e_p^{\rm tot}.
+\end{aligned}\tag{1}
+\]
+
+Here \(G_D\) is the internal vector Green operator; \(X\) is the material response; \(e_p^{\rm tot}\) is the current total field; and \(Q_T\) expands a real material coordinate vector \(s\in\mathbb R^d\), including both parts of complex contrast. Thus \(d\) is the admissible real material dimension. Its realified expansion obeys \(Q_T^\top M_\chi Q_T=I\), with the volume-weighted material \(L^2\) metric \(M_\chi\). Current coordinates are also normalized to their declared discrete metric. With the receiver/scaling map \(S\),
+
+\[
+K_p=L^{-1}B_p,\qquad J_p=SK_p. \tag{2}
+\]
+
+The actual DDA uses contrast-dependent polarizability, rather than substituting \(X=\chi\) in its discrete equation. Its injection retains the polarizability derivative and the vector local field; Supplement S1 gives the exact implemented model. The operator identities use \(A=I-L\); \(A=XG_D\) expresses their contrast-source interpretation, and \(A=D_aG_{\rm off}\) is the implemented DDA counterpart.
+
+Illuminations have separate currents and one shared material vector $s\in\mathbb R^d$. Each excitation $B_ps$ produces a current change $L^{-1}B_ps$ and measurement change $J_ps$. Stacking $[\operatorname{Re}(J_ps);\operatorname{Im}(J_ps)]$ over illuminations gives one real measurement vector. The normal equations are therefore real material-space equations, with $^*$ denoting the corresponding adjoint. The complex current-block identities lift through block-diagonal current operators and vertically stacked material injection (Supplement S1).
+
+At a frozen state, let \(r\) be predicted minus observed data, \(\Lambda\succ0\) the common regularization/damping curvature, and \(\ell\) its common linear prior term. Define the full relative quadratic
+
+\[
+\begin{aligned}
+\Phi(s)&=\frac12\|r+Js\|^2-\frac12\|r\|^2\\
+&\quad+\frac12s^*\Lambda s+\ell^*s\\
+&=\frac12s^*Hs+h^*s,\\
+H&=J^*J+\Lambda,& h&=J^*r+\ell.
+\end{aligned}\tag{3}
+\]
+
+Thus \(\Phi(0)=0\), \(s_*=-H^{-1}h\), and the squared \(H\)-energy step error is twice the full quadratic gap, providing an exact measure of local step quality.
+
+\subsection{Specified Galerkin enlargement}
+
+Let \(V\) be an orthonormal current basis, \(C\) an orthonormal candidate bank with \(V^*C=0\), and assume \(V^*LV\) is invertible. The old Galerkin operators are
+
+\[
+\begin{aligned}
+R_0&=V(V^*LV)^{-1}V^*,& K_0&=R_0B,\\
+J_0&=SK_0,& H_0&=J_0^*J_0+\Lambda,\\
+&&M_0&=H_0^{-1}.
+\end{aligned}\tag{4}
+\]
+
+\(R_0\) solves a retained current equation; \(M_0\) solves a material normal equation. Put
+
+\[
+\begin{aligned}
+\bar C&=(I-R_0L)C=C+R_0AC,& Y_C&=S\bar C,\\
+N_C&=C^*(B-LK_0),& \Gamma_C&=C^*L\bar C.
+\end{aligned}\tag{5}
+\]
+
+The symbol \(\Gamma_C\) denotes a current Schur matrix and is distinct from the receiver map \(S\). For \(A_{UV}=U^*AV\), \(D_V=I-A_{VV}\), \(B_V=V^*B\), and \(B_C=C^*B\), these factors become
+
+\[
+\begin{aligned}
+\bar C&=C+VD_V^{-1}A_{VC},\\
+Y_C&=SC+(SV)D_V^{-1}A_{VC},\\
+N_C&=B_C+A_{CV}D_V^{-1}B_V,\\
+\Gamma_C&=I-A_{CC}-A_{CV}D_V^{-1}A_{VC}.
+\end{aligned} \tag{6}
+\]
+
+\textbf{Proposition 1 (feedback-dressed tangent factorization).} If \(\Gamma_C\) is invertible, the strictly Galerkin tangent in \([V,C]\) satisfies
+
+\[
+K_C-K_0=\bar C\Gamma_C^{-1}N_C,\qquad
+\Delta J:=J_C-J_0=Y_C\Gamma_C^{-1}N_C. \tag{7}
+\]
+
+\textbf{Proof.} The enlarged coefficient matrix has blocks \(D_V,-A_{VC},-A_{CV},I-A_{CC}\). Eliminating its retained coordinates gives \(\Gamma_C\) and right-hand side \(N_C\). Back-substitution adds \(VD_V^{-1}A_{VC}\) to the raw candidate response \(C\), proving (6)--(7). It also gives \(V^*L\bar C=0\). \hfill\(\square\)
+
+Equation (6) identifies three physical paths. First, an added current radiates directly through \(SC\), but also generates an internal field through \(G_D\), excites retained currents through \(X\), and radiates through \(SV\) after retained-space rescattering. Hence
+
+\[
+\boxed{\bar C=C+R_0XG_DC}
+\]
+
+in the contrast-source formulation. Second, material injection can enter the retained space through \(B_V\) before reaching the new coordinates through \(A_{CV}\). Third, \(A_{CV}D_V^{-1}A_{VC}\) is the added-to-retained-to-added loop, which enters the Schur inverse rather than a single-pass correction. The dressed current preserves the retained Galerkin equations through \(V^*L\bar C=0\), while generally losing Euclidean orthogonality to \(V\). For a receiver-dark candidate, the isolated direct branch \(SC\) is zero or near roundoff; internal scattering produces the nonzero dressed response \(S\bar C\).
+
+
+
+\subsection{Weak relative feedback requires more than weak scattering}
+
+If \(\|A_{VV}\|\le\eta<1\), a sufficient absolute bound is
+
+\[
+\|Y_C-SC\|\le
+\frac{\|SV\|\,\|A_{VC}\|}{1-\eta}. \tag{8}
+\]
+
+To obtain a direction-uniform \emph{relative} bound on a candidate subspace, its direct radiation must also be bounded away from zero. If \(SC\) is injective there, then
+
+\[
+\frac{\|(Y_C-SC)a\|}{\|SCa\|}
+\le\frac{\|SV\|\,\|A_{VC}\|}
+{(1-\eta)\sigma_{\min}(SC)}
+\quad(a\ne0). \tag{9}
+\]
+
+A singular \(SC\) requires restriction to a specified non-dark coefficient space. A sufficient Schur-invertibility condition is \(\|A_{CC}+A_{CV}D_V^{-1}A_{VC}\|<1\). These sufficient conditions separate weak absolute coupling from weak relative feedback. Small absolute feedback may dominate a nearly dark direct response; cross-space coupling and a large, possibly nonnormal retained resolvent provide additional amplification mechanisms. Their contributions must be resolved before attributing a large ratio to resonance.
+
+\section{Paired Material Closure and Nonmonotone Curvature}
+
+\subsection{The two-channel regularized step change}
+
+Set \(T_C=\Gamma_C^{-1}N_C\). For the same \(B,r,\Lambda,\ell\), define
+
+\[
+\begin{aligned}
+s_0&=-M_0(J_0^*r+\ell),\\
+s_C&=-(J_C^*J_C+\Lambda)^{-1}(J_C^*r+\ell),\\
+\mathcal E_0(C)&=\operatorname{Range}M_0[J_0^*Y_C,N_C^*].
+\end{aligned}\tag{10}
+\]
+
+\textbf{Theorem 1 (paired step-change closure).} Under Proposition 1, with exact actions, positive regularization, and no nonzero signature removed,
+
+\[
+\begin{aligned}
+s_C-s_0={}&-M_0J_0^*Y_C(T_Cs_C)\\
+&-M_0N_C^*\Gamma_C^{-*}Y_C^*(r+J_Cs_C)
+\in\mathcal E_0(C).
+\end{aligned} \tag{11}
+\]
+
+\textbf{Proof.} Write \(\Delta H=J_C^*J_C-J_0^*J_0\) and \(\Delta h=\Delta J^*r\). Expanding \(J_C=J_0+Y_CT_C\) gives
+
+\[
+\Delta H=J_0^*Y_CT_C+T_C^*Y_C^*J_0+T_C^*Y_C^*Y_CT_C.
+\]
+
+Subtract the normal equations: \(H_0(s_C-s_0)=-\Delta Hs_C-\Delta h\). Collect the first observation term and the remaining \(T_C^*Y_C^*(r+J_Cs_C)\) term, and use \(T_C^*=N_C^*\Gamma_C^{-*}\). \hfill\(\square\)
+
+The observation lift \(M_0J_0^*Y_C\) redistributes the update along old sensitivities when they couple to the added response. The injection lift \(M_0N_C^*\) pulls the updated data residual back through the new current excitation. Looking only at \(\Delta h\) retains the second channel and can miss the first channel's Hessian coupling.
+
+The factors identify the available routes for material influence, while the coefficients in (11) determine how the present residual activates them. For example, when $r=0$ and $\ell=0$, both regularized steps vanish regardless of the derivative change. This separates structural coupling from its activation in a particular inverse step.
+
+\subsection{Why one side is generally insufficient}
+
+The exact illustration
+
+\[
+J_0=[1,0],\quad J_C=[1,1],\quad \Lambda=I,\quad r=1,\quad\ell=0
+\]
+
+gives \(s_0=(-1/2,0)^\top\), \(s_C=(-1/3,-1/3)^\top\), and \(s_C-s_0=(1/6,-1/3)^\top\). The observation lift is along the first material coordinate and the injection lift along the second. Neither alone contains the change. Although \(\Delta J=[0,1]\) has rank one,
+
+\[
+\Delta H=\begin{bmatrix}0&1\\1&1\end{bmatrix},\qquad\det\Delta H=-1. \tag{12}
+\]
+
+Both \(H_0=J_0^*J_0+\Lambda\) and \(H_C=J_C^*J_C+\Lambda\) remain positive definite under \(\Lambda\succ0\). The indefinite difference \(\Delta H\) describes redistribution of material curvature between these two well-posed regularized problems.
+
+This algebraic illustration embeds in \(L=I\) Galerkin reduction (Supplement S3). It isolates the least-squares effect: two-sided material coupling can occur even without scattering feedback. Feedback determines the electromagnetic factors; material least squares supplies the two-channel normal coupling.

@@ -1,0 +1,22 @@
+\documentclass[UTF8,a4paper,11pt,fontset=none]{ctexart}
+\usepackage{fontspec}\setmainfont{Times New Roman}\setsansfont{Arial}\setmonofont{Menlo}\setCJKmainfont{Songti SC}\setCJKsansfont{Heiti SC}
+\usepackage[margin=2.2cm]{geometry}\usepackage{amsmath,amssymb,graphicx,booktabs,tabularx,hyperref,microtype}
+\hypersetup{hidelinks}
+\setlength{\parskip}{.4em}\setlength{\emergencystretch}{2em}
+\title{电流模式怎样影响材料反演？\\关于内部反馈、双向传递与材料求解的研究汇报}
+\author{}\date{}
+\begin{document}\maketitle\vspace{-2em}
+陈教授您好，这份汇报想从问题的来由讲起，说明我如何从电流压缩走到材料更新的物理机制，以及计算结果让我怎样调整方法。我希望讨论的中心不是增加了多少个电流方向，而是这些方向为什么会、或为什么不会影响材料反演。
+\input{CHEN_BACKGROUND_COMPACT.tex}
+\input{CHEN_MODEL_AND_EVIDENCE.tex}
+\input{EXCHANGE_CHEN_BACKGROUND.tex}
+\input{EXCHANGE_CHEN_RESULTS.tex}
+\section{我想进一步请教的物理问题}
+我目前最想弄清楚的是，在有限孔径、非均匀材料的真实散射中，怎样用可计算的量判断“材料能激发，而且反馈后能被接收”的方向。现在的分解给出了这两个环节，但把它们压缩成稳定、便宜的选模规则仍有难点。
+
+我也希望结合您对 SOM、TSOM 和 S-DBIM 的理解，讨论这种材料切向视角与原有电流子空间物理的联系：哪些解释只是已有认识的另一种表述，哪些条件确实补充了对材料更新的理解？特别是，若直接辐射很弱而内部返回路径明显，最合适的解释应当从观测孔径、内部传播，还是二者与材料激励的联合结构出发？
+
+最后是计算上的问题。伴随电流样本（adjoint current snapshots）提供了一种把接收信息带回电流空间的方式，但并非在所有状态都值得保留。我想听听您对后续验证重点的建议：怎样选择一个最有辨别力的电磁场景，使不同机制给出可区分、可证伪的预测，而不是继续增加许多相似的性能对照。对选模而言，我特别想找到一个便宜的内部返回量，提前排除许多最后被完整定向检查拒绝的候选。
+\section*{主要参考文献与阅读线索}
+陈教授的专著\emph{Computational Methods for Electromagnetic Inverse Scattering}（2018）提供逆散射与子空间方法的背景；Chen、Zhong 与 Agarwal（2010）的综述，以及 Zhong 与 Chen（2011）的 FFT-TSOM 工作说明内部传播和外部观测的联合组织；Ye 与 Chen（2017）的 S-DBIM 说明背景场更新与材料求解的联系。de Sturler 等的 插值逆向降阶模型（interpolatory inverse ROM）工作提供正向/伴随包含与导数保持的对照；Gaul 等关于 增广/消去 Krylov（augmented/deflated Krylov）的框架用于标准材料复用比较。完整文献条目见随附英文论文。
+\end{document}

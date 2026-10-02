@@ -1,0 +1,40 @@
+\section{把指定电流改动追到材料这一步}
+我用共享的实材料向量$s$表示复介电材料的实部和虚部。材料方向先按体积加权的物理内积正交化，所有illumination共享同一个$s$；场和电流仍为复数。材料切向与接收响应满足
+\[
+ L\delta j_p=B_ps,\qquad \delta y_p=S\delta j_p,
+ \qquad J_p=SL^{-1}B_p.
+\]
+$B_p$是material injection，包含当前total field和材料响应导数；$L^{-1}$是内部耦合后的响应；$S$把电流送到receiver。DDA使用polarizability $a(\chi)$，因此注入保留$a'(\chi)E_p^{\rm tot}$，而不是把$a$直接当contrast。
+
+设原current basis为$V$，$R_0=V(V^*LV)^{-1}V^*$。新增方向$C$及其诱发的retained response为
+\[
+ \bar C=(I-R_0L)C=C+R_0XG_DC.
+\]
+第二项依次经过internal field、material response与retained-space solve。Receiver看到$S\bar C$，而不只是$SC$。指定增广的材料导数差为
+\[
+ D_C=Y_C\Gamma_C^{-1}N_C,
+\]
+其中$Y_C=S\bar C$描述反馈后输出，$N_C=C^*(I-LR_0)B$描述材料注入，$\Gamma_C=C^*L\bar C$保留新增方向经原空间返回的耦合。这是包含相位和候选间干涉的整体关系，不能当作三个互不相关的单列权重。
+
+三组构造的自由空间Maxwell见证，直接receiver output低于$1.7\times10^{-16}$，反馈后output norm为0.0672--0.0888，材料导数差达到完整Jacobian的3.56\%--5.22\%。它们说明directly dark currents可以通过内部返回路径影响材料；构造见证不表示任意物体中此现象的频率。
+
+实化以后，指定step difference落在观测与注入两组material pullbacks组成的空间中：
+\[
+ s_C-s_0\in\operatorname{Range}
+ H_0^{-1}[J_0^TY_C,N_C^T].
+\]
+这个paired closure回答模型改动会影响哪些方向，却不保证这些方向最能修正完整目标的误差。已有数值证据让我保留了这一分别。
+
+\begin{center}\small
+\begin{tabularx}{\linewidth}{@{}p{.39\linewidth}X@{}}\toprule
+比较的问题&结果与我的理解\\\midrule
+Paired repair与specified direct enlargement&平滑72/72、尖锐36/36更好，支持两侧material作用。\\
+Equal-rank material Krylov与paired repair&全部72/72、36/36更好；step-change support不是最佳error correction。\\
+Paid paired warm start与普通PCG&总时间1.416倍，full-wave RHS 66变342，未获加速。\\
+Current-derived inverse的八次复用&已有history时六对象成本比0.773--0.877；cached Ritz在两个对象更快，专门获取history后六对象都失去时间优势。\\\bottomrule
+\end{tabularx}
+\end{center}
+
+固定current dimension的更广检验也有明确边界。43个无噪声状态、15个对象中，合法current search相对receiver的对象中位完整二次风险比为0.4242，而受测finite-gain规则总体为1.0947。高预算时其绝对风险停在约$10^{-4}$，receiver下降更快；不是分母达到数值底噪。Finite/first-order旧比值0.1171还包含位移和末端swap差别，不能单独归因为曲率项。
+
+这里的full-GN fidelity是当前完整quadratic的步差；精确参考时风险为$\|s-s_*\|_H^2/2$。它不等于final reconstruction error。四个尖锐目标的最终材料误差仍为0.755、0.750、0.560、0.906。独立vector Mie核对在中等对比球的最细$32^3$网格给出复场误差0.252\%、uniform material derivative误差0.731\%；粗高对比球仍有21.40\%误差。这些物理与恢复边界没有被新的frozen-state交换结果替代。

@@ -1,0 +1,80 @@
+
+\clearpage
+\section*{S27. Receiver-centered exchange: frozen contract and dictionary}
+\input{CONDITIONAL_EXCHANGE_PROTOCOL.tex}
+The twelve state runs yield 36 cells and 180 terminal policy records: unchanged receiver, reduced-anchor conditional exchange, exact-score local teacher, directed-verified exchange, and rank-at-most-$k$ actions. Early, middle, and late denote saved indices 0, 3, and 17. These are four reused objects, not a new independent acquisition dataset. No additional noise or nonlinear reconstruction trajectory is generated. The exchange dictionary is newly frozen and differs from the earlier broad current-selection search, including its random seed; their oracle domains are not interchangeable.
+
+The declared dictionary contains 154 atoms: 32 receiver, 32 internal, 32 Fourier, 32 anchor primal/dual, 16 residual, and 10 random. Its lossless projected union has dimension 128. Each selected endpoint is a genuine current space with the stated complex dimension, shared across all illuminations. A conditional round removes one declared current atom and considers feasible replacements in the remaining shared core. Every accepted action reconstructs the endpoint step and the next conditional neighborhood. The local teacher examines its complete declared one-swap neighborhood, but follows at most three greedy actions; it is not a global current-space oracle.
+
+\section*{S28. Finite gain, uncertainty, and acceptance}
+Let $x=s_o$, $d=s_n-s_o$, $u=r+Jx$, and $z=Jd$. Expanding the unchanged complete quadratic gives
+\[
+Q=-u^Tz-(\ell+\Lambda x)^Td
+-\tfrac12(z^Tz+d^T\Lambda d).
+\]
+This formula needs no complete adjoint once $Jx$ is available. Cached $Jx$ is updated after acceptance. Each new finalist still pays for the full physical direction action $Jd$.
+
+Suppose certified output bounds give $\|u-\hat u\|\le e_u$ and $\|z-\hat z\|\le e_z$, while $d,\ell,\Lambda$ are fixed and evaluated exactly at this level. Cauchy--Schwarz and the quadratic expansion give
+\[
+|Q-\hat Q|\le e_u\|\hat z\|
++(\|\hat u\|+\|\hat z\|)e_z
++e_ue_z+\tfrac12e_z^2.
+\]
+Additional material or arithmetic errors need their own terms. An iterative residual without an applicable resolvent or output bound does not provide $e_u,e_z$. The present implementation consequently stores a null deterministic radius and uses high-fidelity numerical checks. The 22 unresolved and 14 move-budget stops remain distinct from a complete-neighborhood certificate.
+
+The scale-aware numerical acceptance threshold is frozen before extension. The previous draft's approximate literal was corrected to its original exact declaration before the extension, with all 14792 existing classifications unchanged. This is recorded as a source epoch, not retroactively assumed from a current hash.
+
+\section*{S29. Separate displacement from its evaluation}
+The old-curvature displacement is
+\[
+v=-H_o^{-1}(J_o^TDs_o+D^Te_o),
+\]
+whereas the executed endpoint displacement includes the $D^TDs_o$ term and uses $H_n^{-1}$. On the same twelve-incoming candidate set at each receiver checkpoint, the diagnostic crosses direction choice ($v,d$) with linear or quadratic evaluation. All eight ranking rules execute the actual endpoint $d$; reference choice is additionally anchor or complete.
+
+\begin{table}[htbp]\centering\caption{Mandatory top-one choices with negative actual complete gain, out of 36. No-op is excluded from this ranking diagnostic but is included in deployment acceptance.}
+\begin{tabular}{@{}lrrrr@{}}\toprule
+Reference&$v$, linear&$v$, quadratic&$d$, linear&$d$, quadratic\\\midrule
+Complete&24&18&29&1\\
+Richer reduced anchor&26&20&30&2\\\bottomrule
+\end{tabular}\end{table}
+These counts isolate a common-checkpoint finite-displacement effect. They do not identify the contribution of curvature alone to earlier entire-path policy ratios.
+
+\section*{S30. Information magnitude, fidelity, and signed alignment}
+All metrics use common real physical material coordinates and fixed $P=10^{-5}I$, separately from numerical LM damping. For $K_U=P^{-1/2}J_U^TJ_UP^{-1/2}$,
+\[
+\mathcal D(U)=\tfrac12\log\det(I+K_U),\qquad
+d_{\rm eff}(U)=\operatorname{tr}[(I+K_U)^{-1}K_U].
+\]
+Complete spectra use the 54-dimensional Gaussian tangent. Voxel spectra use the same sixteen-direction projected material space. The projected spectrum cannot certify the 3456-dimensional voxel spectrum. Data normalization is numerical, without a calibrated covariance or a posterior-information claim.
+
+The information subset fixes twelve incoming directions for each removal and adds the teacher-best endpoint when absent. The latter addition is utility-biased. The 3665 spectral records and the multiple-metric witness records are not independent physical samples or the entire exchange neighborhood.
+
+The resolved information/utility witness increases $\mathcal D$ by 6.3127257611 and $d_{\rm eff}$ by 1.8613056862, while $Q=-5.5753875177\times10^{-5}$. Its initial gap $1.49684869697\times10^{-4}$ becomes $2.05438744875\times10^{-4}$. Its normalized curvature-fidelity improvement is $1.54242633\times10^{-4}$. The saved arrays, state/pool hashes, and move identity bind this example across spectral and action records.
+
+All six complete Gaussian references have zero directions with $\nu\le1$ under the declared scale; each early state has two intermediate directions and 52 strong directions, and each middle/late state has 54 strong directions under the frozen bands. A direction decomposition using the matched full solve curvature reproduces the 72 endpoint risk changes with maximum relative discrepancy $6.50\times10^{-11}$. LM is retained in the matching risk weights rather than silently added to the information definition. No full-material weak-space claim is made for voxel.
+
+\section*{S31. Costs, timing controls, and bounded learned priority}
+Seventeen closed remote attempts cost 4889.515~s including all failures, teacher evaluations, diagnostics, and timing work. Two failed attempts cost 16.906~s and 1.062~s, respectively: a missing output directory in the initial CUDA gate and a platform-specific source-manifest locator before physics. Both failures and their receipts are preserved. The sampled device-memory maximum is 1872~MiB. There is no outstanding attempt, numerical process, or execution lock at the terminal snapshots.
+
+The matched physical timing driver constructs one full state per representative object and performs actual CUDA FP64 direction actions. Forty-five formal and nine paid prewarm samples per object give five rotated repetitions of three methods at each current rank. Formal repetition measures timing variability, not independent scientific evidence. Each object pays 1656 tangent RHS across all 54 trials: 1008 in selection and 648 in separate offline endpoint evaluation. A fresh physical state costs 5.434~s and 5.727~s; historical anchor/pool acquisition and transferred arrays are separately receipted. Independent end-to-end cold time remains null.
+
+\begin{table}[htbp]\centering\caption{Median warm physical selector time in seconds. Legacy is a receiver-start cached fixed-onepass control, not the entire earlier finite-gain policy.}\label{tab:exchange-time-supp}
+\begin{tabular}{@{}llrrr@{}}\toprule
+Material space&Policy&$k=4$&$k=8$&$k=16$\\\midrule
+Gaussian&Cached one-pass&.138&.113&.151\\
+&One directed decision&.328&.503&.937\\
+&Conditional, at most three&.594&1.418&2.690\\
+Voxel&Cached one-pass&.196&.207&.219\\
+&One directed decision&.333&.596&1.215\\
+&Conditional, at most three&.891&1.153&3.400\\\bottomrule
+\end{tabular}\end{table}
+The legacy Gaussian rank-16 control has measured negative complete gain $-2.1689\times10^{-7}$; this observation is retained. Shared setup is not silently renamed a cold measurement. Timing endpoint steps match production compatible outputs to relative error at most $6.73\times10^{-14}$. Production Gaussian small solves use CPU, whereas the matched physical backend uses CUDA; their wall times are not merged.
+
+The priority pilot trains two fixed small architectures with three seeds each, using near-contact and layered objects for training, smooth for validation, and asymmetric for testing. The dataset contains 47712 dictionary records, of which 43108 are feasible. MLP heldout top-two capture is .988459, .988461, and .991617; the group-mean architecture gives .765571, .759893, and .980288. The analytical anchor top-two rule gives .998850. All six runs are retained. Total CPU training takes 9.413~s; these times exclude physical feature acquisition and new validation. No all-in network speedup or reconstruction contribution is established.
+
+\section*{S32. Runtime provenance and release boundaries}
+The terminal extension snapshot contains the executed state results and source; the subsequent timing snapshot is a delta bound to that full snapshot and unchanged core hashes. Runtime receipts identify actual module paths, source epochs, precision, and input hashes. Source changes are limited to the recorded implementation epochs; timing does not alter the core selector.
+
+The public release byte-copies eligible executable sources and numeric archives. Metadata-only locator remaps carry original/public hashes and exact transformation records; no whole-source regular-expression privacy substitution is used. Forty-two historical vendor modules remain externally identified by hash. The release therefore supports evidence inspection, figure reproduction, and independent portable algebra tests, but is not a self-contained GPU Maxwell replay package.
+
+An all-failed current/Schur batch can return before recording its phase-specific timer. Complete job wall time and failure counters remain charged. This branch was not triggered in the accepted timing snapshots and remains an implementation accounting limitation, rather than a demonstrated missing total fee. Private kernel transfers lack full byte instrumentation. Missing cold and transfer quantities retain null values and explicit reasons.

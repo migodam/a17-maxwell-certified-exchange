@@ -1,0 +1,10 @@
+\section{What the Transfer Geometry Can Guarantee}
+The paired space describes the material change caused by a specified current enlargement. Optimizing in that space and reducing the error of a complete material step are different tasks. For a material correction $d$ from a step $x$, the complete objective gain is $-g_F(x)^Td-d^TH_Fd/2$. Thus even a large, accurately represented current contribution can point away from the present full-model defect.
+
+There is a corresponding complete-tail identity. For $R_U=U(U^*LU)^{-1}U^*$, set $\mathcal I_U=(I-LR_U)B$ and $\mathcal O_U=S(I-R_UL)$. Direct multiplication gives
+\[
+ J-J_U=\mathcal O_U L^{-1}\mathcal I_U.
+\]
+An omitted response must connect the material injection side to the observation side through the interacting current equation. The factors are residual operators, not independent scalar weights. Without a bound on $L^{-1}$, their norms alone do not certify a small material error.
+
+This geometry has also been used to construct a material inverse for complete normal-equation solves. The low-rank inverse realization and the standard PCG spectral consequences are given in the supplement. In this paper they provide a design comparison, rather than an additional solver contribution: a structural repair space can lose to material Krylov directions, and preconditioning can save iterations while losing total time. The current-selection test below instead fixes the actual current dimension and asks whether changing the model improves the material step itself.

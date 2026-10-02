@@ -1,0 +1,11 @@
+# A17 candidate-domain provenance clarification
+
+The A17 candidate generator uses the existing A16-format implementation with a fixed seed of 20260930, set before the first A17 full-gain labels. The new master seed 20261002 is used for new diagnostics/probes; it is not the pool seed. These facts are bound by the actual first-state runtime receipt and the matching pilot_v3 deployment member, not inferred from the current working tree.
+
+The original A16 object-specific seed for object 2007 early was 2853503809, derived by the original scenario seed rule. The A17 bank is therefore a new predeclared A16-format dictionary, not a byte-identical replay of the original A16 dictionary. Its 154 logical atoms comprise receiver/internal/Fourier/anchor-primal-dual families of 32 columns each, residual-up 16 and random 10. The lossless public Q embedding is built to span the actual new bank, anchor and exposed histories; embedding rank is not the retained dimension k.
+
+The teacher fully enumerates the feasible 1-swap neighborhood of this new dictionary (600/1168/2208 proposals at receiver k=4/8/16). It is not a global current-space optimum, an exhaustive comparison over the historical A16 bank, or a certified stop without valid output error bounds. Online incoming rules and all seed choices remain fixed; the provenance finding does not justify replacing the pool after viewing labels.
+
+Cache-only postprocessing of the old object 2007 early selected spaces found receiver spaces fully represented in the new Q (relative projection error <4e-15; archived step match <4e-12). The six old S8 spaces were not represented (relative projection residual 0.55–0.67), and their information diagnostics remain UNRESOLVED. They are not silently projected to a different space. Receiver/Fourier spans agree, while other seed-dependent families differ. This is a coverage limitation, not evidence of an old S8 numerical bug, and seed has not been isolated as the only possible backend difference.
+
+Evidence: research/delegated/a17_oldspace_information/newpostprocess/POOL_SEED_AUDIT.json and SUMMARY.md (workspace-level paths). The original A16 arrays, risks, seeds and source are untouched. A17 claims and publication must describe the new domain explicitly; comparisons to A16 retain their separate domain and no direct policy-causal attribution.

@@ -1,0 +1,56 @@
+\section*{中英文术语与符号速查}
+\addcontentsline{toc}{section}{中英文术语与符号速查}
+\markboth{中英文术语与符号速查}{中英文术语与符号速查}
+首次阅读时不必记住全部名称。正文会先解释用途，再使用术语；这里供读到公式时回查。Snapshot保留英文，指求解过程中保存的电流向量，而不是图像。
+
+\noindent\begin{tabular}{p{.23\linewidth}p{.32\linewidth}p{.36\linewidth}}
+\toprule 中文名称 & 英文术语 & 本文中的含义\\\midrule
+电磁逆散射 & electromagnetic inverse scattering & 根据外部散射场恢复内部材料。\\
+感应电流 & induced current & 材料在总电场作用下产生的响应。\\
+材料切向 & material tangent & 当前允许的微小材料变化方向。\\
+材料注入 & material injection & 材料变化形成电流方程右端的过程。\\
+保留空间反馈 & retained feedback & 新增电流激发已保留电流后，后者产生的响应。\\
+反馈修饰 & feedback-dressed & 直接电流方向加上保留空间反馈。\\
+观测／注入特征 & observation/injection signatures & 导数变化在接收侧和材料激励侧的因子。\\
+材料拉回 & material pullback & 通过伴随将观测或电流信息映回材料坐标。\\
+双侧材料闭包 & paired material closure & 两组材料方向包含指定电流增广的全部步差。\\
+导数遗漏误差 & Jacobian tail & 完整与约化材料 Jacobian 之差。\\
+正向／伴随电流样本 & primal/adjoint current snapshots & 已付费计算并保存、供后续利用的电流向量。\\
+预条件器 & preconditioner & 改善完整材料方程迭代尺度的近似逆。\\
+预条件共轭梯度 & preconditioned conjugate gradient (PCG) & 求解正定材料法方程的迭代方法。\\
+\bottomrule\end{tabular}
+\clearpage
+\noindent\begin{tabular}{p{.23\linewidth}p{.32\linewidth}p{.36\linewidth}}
+\toprule 中文名称 & 英文术语 & 本文中的含义\\\midrule
+材料空间复用 & material recycling & 后续求解保留已有的材料方向。\\
+增广／消去 & augmentation/deflation & 用粗空间持续处理已学到的求解方向。\\
+Ritz 向量 & Ritz vectors & 由历史小投影特征值问题提取的近似谱方向。\\
+正定／半正定 & positive definite/semidefinite & 二次型严格为正／非负的矩阵性质。\\
+Schur 补 & Schur complement & 消去保留坐标后新增坐标的有效方程。\\
+噪声白化 & noise whitening & 按噪声协方差统一测量误差的尺度。\\
+充分条件检查 & certificate & 通过时给出保证；未通过不等于方法失效。\\
+摊销／回本 & amortization/break-even & 累计节省覆盖额外构建费用。\\
+复用／刷新 & reuse/refresh & 继续使用已有近似逆／根据状态重新构造。\\
+离散偶极子近似 & discrete-dipole approximation (DDA) & 用耦合极化单元离散三维 Maxwell 散射。\\
+体素／高斯基函数 & voxel/Gaussian basis & 逐单元／平滑局部函数的材料表示。\\
+\bottomrule
+\end{tabular}
+\clearpage
+\begin{table}[htbp]\centering
+\caption{主要符号：区分电流空间与材料空间。}\small
+\begin{tabularx}{\linewidth}{lX}\toprule
+符号 & 含义\\\midrule
+$\chi,s,Q_T$ & 材料对比度、实材料更新坐标、物理正交材料切向。\\
+$L,G_D,S$ & 电流方程、内部 Green 传播、接收映射。\\
+$B,J$ & 材料注入、完整材料到测量的导数。\\
+$V,C,U$ & 原保留电流、新增电流、任意待评价电流基；$[U,C]$ 是其增广。\\
+$k,s_U,s_*$ & 所有照明共享的实际复电流列数、约化与完整材料步。\\
+$D_C,d_C,Q_C$ & 指定增广的导数差、材料步差、完整目标上的有符号收益。\\
+$R_0,R_U$ & 在相应电流子空间中求解方程的响应。\\
+$\bar C,Y_C,N_C,\Gamma_C$ & 反馈修饰电流、观测因子、注入因子、小 Schur 方程。\\
+$r,\Lambda,\ell$ & 数据残差、正则及阻尼曲率、先验线性项。\\
+$H,H_0,H_C$ & 完整、原约化及增广约化的材料法方程矩阵。\\
+$M_0,M_C$ & $H_0,H_C$ 的逆，用作完整材料方程的预条件器。\\
+$\eta_U,\mathcal I_U,\mathcal O_U$ & 归一化导数误差、注入残差、观测残差映射。\\
+\bottomrule\end{tabularx}
+\end{table}

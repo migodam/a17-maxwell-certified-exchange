@@ -1,0 +1,1395 @@
+{
+  "self_contained_maxwell_gpu_replay": false,
+  "external_kernel_count": 42,
+  "external_kernels": [
+    {
+      "identity": "frozen_statistics",
+      "sha256": "4942d73146898efc320b0dc732f7a3184bc8ef86b0ffeac1b9a6c3c6ec218dc0",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "headroom_diagnostics",
+      "sha256": "853e08bc8d82e4f43ad6811a3d40379de427b66d0c0df5f5ccc99e4f3308e202",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "selector_coordinates",
+      "sha256": "4bfd9747d67201f6e7216a0a41c560ead5a6139be5be2b5b0d8490fff78315c2",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "run_development_queue",
+      "sha256": "b3c6b10b805ca35472ef515575155477cc77a5dc61361f6b8550444fb1fe43c9",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "offline_metrics",
+      "sha256": "675840da8883057ccc59c8c3ce87c08b69d4ae7ddd92e3699960828e1be04436",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "run_monitored",
+      "sha256": "57aab8f0d6cdd1d552dc6bcfbdd0329bdf12ad5bcb16ae6740649012447095e8",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "run_core_bundle",
+      "sha256": "638f0c588428dab8706f3547b911fbe8acc9f50b5ce22c62add6b29613346937",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "run_validation_queue",
+      "sha256": "ce74a8373b335284e2ab376d2c6e14a92c5bab5504ef8391eb7ba0162a19a94b",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "plot_scene_manifest",
+      "sha256": "186bf672e55dd55b231221eea2ba0971fb68eb3bd0bbf301ab0ad947b7c617bd",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "offline_material_control",
+      "sha256": "b7c7092da1bb5b75fd9615b9ca0d64575405edd75e83b631d33eeec60a4490c6",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "collect_results",
+      "sha256": "b0d9050b6d6a4afcb621815711395b26ec1410182e1a69a5a39e1ab6a8b1adab",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "fast_contractions",
+      "sha256": "a03471ef83e90fda7d49fb1f25d84b3f36b2eb8a203d97f0c1a9cb7172798eeb",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "run_frozen",
+      "sha256": "f7a9a4572be9972886f50d9440f410e37938c95e510de10ba8a14f701c06f61e",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "diagnostic_replay",
+      "sha256": "29921e5b2d0390ac63471e5a9f6084f6f58d46b37d27c1102d44685338898ca3",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "run_development_recovery",
+      "sha256": "1e2855335d83fb72fb9768af08be4acbe768359928519176595e89218afb1554",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "snapshot_terminal",
+      "sha256": "07ef0a5e188dca920b8478d9481b728eeae5f3b19aa3b25daaf04801574a2e3b",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "profile_compressed_kernels",
+      "sha256": "cba2447d954cfd87330375dee8a855051388d3fc1795362d5e50182b215695ab",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "check_import_runtime",
+      "sha256": "c857838bdd09de19630388660786d7db44b1b546836772c794b93914b4b81328",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "selectors_current",
+      "sha256": "419d2fbe7f3a95ba02e9debd97445769ed739a95582b052dd09f59b1cdbfeeae",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "run_reference",
+      "sha256": "eef9525bb5fe613e3f877bd3d2f078605f0c10f2e1673b6fc19b2077eccb09f7",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "run_mechanism_controls",
+      "sha256": "dd2d3394575171245407e70777affed64ae5afff11ce42f43defe08a19beda7e",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "collect_cost_ledger",
+      "sha256": "316f0b44319d810e0257f624e1a3db3a5754e94840e1105408b541cf925f47d7",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "scenes",
+      "sha256": "087389a8f9968e5775c4bb9a858fd261351d6e208d3a203f4c5cbd1401c93f91",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "material_gauge_persistence",
+      "sha256": "f064e378d13df5a0835e4338a9c7d9b4914e1c89fbd365cdded735047f2641cc",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "signed_round_reuse",
+      "sha256": "f1e64c6b7423b7bdd95830b184879754cfc2b2ea0b51a5b2b26d2a15ab115e04",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "check_declared_import_paths",
+      "sha256": "0e65c42bc1036d42b80fc4512e610109eb72b19d90bd31d223002e3704092d53",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "plot_headroom",
+      "sha256": "ea7e5943023bc0767869f049acc4fde503e031fd6c53365904ae2c4d7da328f2",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "anchor_permission",
+      "sha256": "afc3795eb474bf3a9e937ca84738a00abf7ebe0f19201732984acc86968f702b",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "mechanism_ablation_helpers",
+      "sha256": "a2e12508231ee4a39655c1542bbfd78318e9d569fa5eaf199ae24ff6b91e2997",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "operators",
+      "sha256": "09c7d7285a7d238cbeb5c8c376c185e2f055c26b6d08e4c6c68122691552f9c9",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "plot_results",
+      "sha256": "7e8e41cec87c176b05cc1a08f84dc3bbabec8de761471319f1b3e49886081c73",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "snapshot_completed",
+      "sha256": "e70a4c1a55163fc086ae8f5d40b119217021ddcefaccc6b07d5530c25eb51b6f",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "a10_common",
+      "sha256": "2f839f86bc79c89ec5deba08d68624cf43b155f90c8a843906fc1bca5fe27f8d",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "a9_engine",
+      "sha256": "e4e28318e54598af66b29a407c0ab7ae8f9c10f56614f228687f896ef78c45e3",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "anchored_rom",
+      "sha256": "daca797b622c79f39612e250896f0ea1cadac81da823360fe0e87141d143633f",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "cair",
+      "sha256": "e8b6ae0a97de23db232d3c2731a642b0e2a238e13590636f803eafb1e23c36b8",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "campaign_common",
+      "sha256": "8d8af32accd40ba1efaa84ad08b4ef1bce75c8d04612c34cd78f658293f83f05",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "experiment_support",
+      "sha256": "a14f1a9ee4c6f1b6af4e0be1e5b36cb38c16582d1296a3644759b5f3e0445346",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "feasible_step",
+      "sha256": "779b729e71fbd9d46e748cb6f79284435994a1a4fbcac91439cca98ff69473f6",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "galerkin_rom",
+      "sha256": "d68abbeb3dbfee8790769c451569e5b9069a74cc8799bbdd030b599d7f4eeede",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "pairtsom_adapter",
+      "sha256": "b554e7873012ef1e8bf37e68efb2869c89217de09f1cdf21ee0974ffe0d31604",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    },
+    {
+      "identity": "reduced_normal",
+      "sha256": "c64c3dafb0982cb9cd88fae6340f252fa0e5c8add9db62bdacd10476adba5281",
+      "source_epoch": "R1_SOURCE_MANIFEST_LOCKED",
+      "scope": "EXTERNAL_NOT_BUNDLED"
+    }
+  ],
+  "source_exclusions": [
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/RESUME_STATUS.md",
+      "source_sha256": "30b8daa04403c069acca292c311fa0ddc12f98fb9b0a40a643f90e0fe23f851b",
+      "reason": "DOCUMENT_MACHINE_LOCATORS_REQUIRES_NEW_OWNER_AUTHORED_ENTRY",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/execution/a17_cuda_gate_48699a0e57.log",
+      "source_sha256": "c7d5f4acb836a4308ad2a9a87f7614b89612e235e3e8ba80b9c2f8cfa353e850",
+      "reason": "TRANSFER_ARCHIVE_RAW_LOG_OR_KEY_CONFIG_EXCLUDED",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/execution/a17_cuda_gate_outputdir_retry_7b37966a6b.log",
+      "source_sha256": "52fbfdedcec097ed62ef552e0bbc69f4fc69601a1a13b325c3e610e428968f91",
+      "reason": "TRANSFER_ARCHIVE_RAW_LOG_OR_KEY_CONFIG_EXCLUDED",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/execution/a17_matched_timing_gaussian_v2_bcff649d45.log",
+      "source_sha256": "e40c2a97afc76630dcab82918c7947aedfbb9d89e55b7c69568151a3090c84b2",
+      "reason": "TRANSFER_ARCHIVE_RAW_LOG_OR_KEY_CONFIG_EXCLUDED",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/execution/a17_matched_timing_voxel_v2_e41c601f60.log",
+      "source_sha256": "3d4034f38ea094761ff16c502ffeb6d290b84552c6c116a4767bd38b73dd68b7",
+      "reason": "TRANSFER_ARCHIVE_RAW_LOG_OR_KEY_CONFIG_EXCLUDED",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/execution/a17_o2001_early_v5_extension_d6534d72c1.log",
+      "source_sha256": "912c7d56f27a32540eebd096a209b71b409a800aa3831ca324f726ee1c93c1b3",
+      "reason": "TRANSFER_ARCHIVE_RAW_LOG_OR_KEY_CONFIG_EXCLUDED",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/execution/a17_o2001_late_v5_extension_619ce8025a.log",
+      "source_sha256": "07535f0970a160a9c44f63cfa2b9ebca614a3817259e600ea21a4858ef85304e",
+      "reason": "TRANSFER_ARCHIVE_RAW_LOG_OR_KEY_CONFIG_EXCLUDED",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/execution/a17_o2001_middle_v5_extension_306320d3df.log",
+      "source_sha256": "3be60e3e9f3fd6340776ba3cec451a94131c229f7cbe101c505e43a15d74bc4d",
+      "reason": "TRANSFER_ARCHIVE_RAW_LOG_OR_KEY_CONFIG_EXCLUDED",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/execution/a17_o2007_early_1e26bbb71a.log",
+      "source_sha256": "d358d9746db7a0df8ae86f056a1ecfeba51a256666bdff9204fab6e3b4be2bdd",
+      "reason": "TRANSFER_ARCHIVE_RAW_LOG_OR_KEY_CONFIG_EXCLUDED",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/execution/a17_o2007_early_portable_72f528da5a.log",
+      "source_sha256": "f2126dbf1b89676b37ab421b072f2b42843c0a8fe71dc076c1336416210ba032",
+      "reason": "TRANSFER_ARCHIVE_RAW_LOG_OR_KEY_CONFIG_EXCLUDED",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/execution/a17_o2007_late_1c20efb4a6.log",
+      "source_sha256": "512b65c1dd7a27592eabe1da59216f7af45ebdcbb3fb1167e9c9c6d552606e98",
+      "reason": "TRANSFER_ARCHIVE_RAW_LOG_OR_KEY_CONFIG_EXCLUDED",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/execution/a17_o2007_middle_d8247c9282.log",
+      "source_sha256": "2febbb917444f1dfb2f1178e2e2eab61ebefb58666fd274016b6f9783b7bf494",
+      "reason": "TRANSFER_ARCHIVE_RAW_LOG_OR_KEY_CONFIG_EXCLUDED",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/execution/a17_o2012_early_e7bf1ffc5a.log",
+      "source_sha256": "065a06dfae87cb10da79c3e4b63bfa45b8b1e94adc416ad05e0969806a1c1c22",
+      "reason": "TRANSFER_ARCHIVE_RAW_LOG_OR_KEY_CONFIG_EXCLUDED",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/execution/a17_o2012_late_v5_db1449d60f.log",
+      "source_sha256": "d3fd2d9b3be4046b9be4743adbb741afcadb758ef1e4a6ed52c98b2aee1ca4f0",
+      "reason": "TRANSFER_ARCHIVE_RAW_LOG_OR_KEY_CONFIG_EXCLUDED",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/execution/a17_o2012_middle_v5_73757df7b2.log",
+      "source_sha256": "7d9fed5dd2750268ddc06d198092dff5a6d3b3ca1d172c037094a856f4ab1d66",
+      "reason": "TRANSFER_ARCHIVE_RAW_LOG_OR_KEY_CONFIG_EXCLUDED",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/execution/a17_o2014_early_v5_extension_99d0748e02.log",
+      "source_sha256": "ca47eda1f7f2ecddff975c8c9ff709c9e609117203a165daa7e3516d007802b8",
+      "reason": "TRANSFER_ARCHIVE_RAW_LOG_OR_KEY_CONFIG_EXCLUDED",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/execution/a17_o2014_late_v5_extension_4f619f2a60.log",
+      "source_sha256": "adb219696521ea86f00e91436037101604c0850f691d11bb0bfcaeff99dc9e44",
+      "reason": "TRANSFER_ARCHIVE_RAW_LOG_OR_KEY_CONFIG_EXCLUDED",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/execution/a17_o2014_middle_v5_extension_6fb5d1d005.log",
+      "source_sha256": "464ea4fb7184899bec72688739093c868ef9cdf5528a1230bb9d5cda91f0e15a",
+      "reason": "TRANSFER_ARCHIVE_RAW_LOG_OR_KEY_CONFIG_EXCLUDED",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/manuscript/CHINESE_BACKGROUND.tex",
+      "source_sha256": "3af8b023de21d220a046aac86a0a84fca84d795a67865372ec4152d2da434fea",
+      "reason": "ROOT_MANUSCRIPT_REPORT_PDF_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/manuscript/CHINESE_DISCUSSION.tex",
+      "source_sha256": "da01a4e8b6edd215ef16a3462c6b122ae63865bec1878eb0e6dc8bb7e3eff3dc",
+      "reason": "ROOT_MANUSCRIPT_REPORT_PDF_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/manuscript/CHINESE_PAPER_DESIGN.tex",
+      "source_sha256": "05f6043a00553e49bc092efbcec06d5b1721195737b8442d42e4b808b6991607",
+      "reason": "ROOT_MANUSCRIPT_REPORT_PDF_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/manuscript/CHINESE_RESULTS.tex",
+      "source_sha256": "44c821ad9b1bd07d28e689521fe3b940dac7a682308ad312d69186a1ca258b98",
+      "reason": "ROOT_MANUSCRIPT_REPORT_PDF_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/manuscript/CONSEQUENCES.tex",
+      "source_sha256": "9b5f84fe58302762d856958c6b32c766de4eb55da69b769cf3d9b5d7a8bab051",
+      "reason": "ROOT_MANUSCRIPT_REPORT_PDF_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/manuscript/CURRENT_DESIGN_BACKGROUND_CHEN.tex",
+      "source_sha256": "e5366ab78a30c1c61a23e2f68a8265accbc747ca48c056314644da241484b683",
+      "reason": "ROOT_MANUSCRIPT_REPORT_PDF_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/manuscript/CURRENT_DESIGN_CHEN_RESULTS.tex",
+      "source_sha256": "f69345aff774996e44f84507244839a8843b92856bef655fb9c8bdf1a66caa99",
+      "reason": "ROOT_MANUSCRIPT_REPORT_PDF_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/manuscript/CURRENT_DESIGN_RESULTS_ZH.tex",
+      "source_sha256": "b0c488f94e320e62a468e46f252685bb9cf55d6643ec399ce42ac7a59c7ba360",
+      "reason": "ROOT_MANUSCRIPT_REPORT_PDF_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/manuscript/CURRENT_DESIGN_THEORY.tex",
+      "source_sha256": "425ec469beb7a827ac8a4d39fe8ac22dbf82497c00f113e54655cb2c52b3cd8a",
+      "reason": "ROOT_MANUSCRIPT_REPORT_PDF_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/manuscript/EXPERIMENTS.tex",
+      "source_sha256": "b5459eb0620d7e6931c64efc7597a0e62b9fa29741c5e2a69685ae5c96d8108a",
+      "reason": "ROOT_MANUSCRIPT_REPORT_PDF_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/manuscript/MIE_FINAL.tex",
+      "source_sha256": "97ff4a3a4fdc451f17ed0d91d210a3f8b011a996a37c7ef9de9850071781691a",
+      "reason": "ROOT_MANUSCRIPT_REPORT_PDF_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/manuscript/MIE_ZH.tex",
+      "source_sha256": "3bfa996929e9bc8c7af22366a6b88209be6b42c10d19eb288758d571632821da",
+      "reason": "ROOT_MANUSCRIPT_REPORT_PDF_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/manuscript/READER_BACKGROUND.tex",
+      "source_sha256": "c578053287ec5d6c615f66779fb0fdcea911f7a0e989ed27a18ff07666cf058f",
+      "reason": "ROOT_MANUSCRIPT_REPORT_PDF_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/manuscript/READER_DISCUSSION.tex",
+      "source_sha256": "9b9773477beb5c7412ef5b4f4c292e1882cf095dcd692afc127bfdd61a0a7116",
+      "reason": "ROOT_MANUSCRIPT_REPORT_PDF_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/manuscript/READER_RESULTS.tex",
+      "source_sha256": "b7567557e98cffa46a8808c8569962a0d1eceeae25b5ccddfff242224e4528dd",
+      "reason": "ROOT_MANUSCRIPT_REPORT_PDF_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/manuscript/REUSE_FINAL.tex",
+      "source_sha256": "b98c8efe965f9aa80184a185e5a11e7963871aa6832eae3c95ffc6d256f75bb3",
+      "reason": "ROOT_MANUSCRIPT_REPORT_PDF_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/manuscript/REUSE_ZH.tex",
+      "source_sha256": "f76ad7c16d2698d0a80c3bb9ea9cfd81a94312a33aeca33897e9e0e125af285c",
+      "reason": "ROOT_MANUSCRIPT_REPORT_PDF_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/manuscript/SCORES_FINAL.tex",
+      "source_sha256": "f2c960a59cbf1f248348ab81b2c6281bd764e05519dbfd6f64acf7e3282100f3",
+      "reason": "ROOT_MANUSCRIPT_REPORT_PDF_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/manuscript/SCORES_ZH.tex",
+      "source_sha256": "b81eb8e80ba60381ecb213d1ad690698c6da93c8ad2d9f80db57fcabea762f1a",
+      "reason": "ROOT_MANUSCRIPT_REPORT_PDF_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/manuscript/SPHERE_MECHANISM_FINAL.tex",
+      "source_sha256": "bdac59ee2cd337994d5ed6dde0c398e9ed0eadec5cbdfa1130d09555282626c2",
+      "reason": "ROOT_MANUSCRIPT_REPORT_PDF_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/manuscript/SPHERE_MECHANISM_ZH.tex",
+      "source_sha256": "1b8f554728f0bfe837c21fef8822afa3938e73f75cd44bd1e74646ee69d71dab",
+      "reason": "ROOT_MANUSCRIPT_REPORT_PDF_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/manuscript/figures/Figure1_mechanism.pdf",
+      "source_sha256": "09e69b4160363505b9b560f4c7bf6740057f5b7812366da9b925178903ac6aa2",
+      "reason": "ROOT_MANUSCRIPT_REPORT_PDF_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/manuscript/figures/Figure2_feedback.pdf",
+      "source_sha256": "4506a057b143b8f1717ea8f1463c13d5c9d3956c0faa151198d92301c583cf94",
+      "reason": "ROOT_MANUSCRIPT_REPORT_PDF_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/manuscript/figures/Figure3_material_repair.pdf",
+      "source_sha256": "24940ec547cfcf814533271d66e8904217df139cb57223ca06196eabb327bb1d",
+      "reason": "ROOT_MANUSCRIPT_REPORT_PDF_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/manuscript/figures/Figure5_cost.pdf",
+      "source_sha256": "3625c7927274cd97b92bb1a47f09f225b3c9b8be7f110d851d4793d52863b8e4",
+      "reason": "ROOT_MANUSCRIPT_REPORT_PDF_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/manuscript/figures/Figure_sharp_imag_slices.png",
+      "source_sha256": "91787dc0c35f1b35436e047dee0960ca0dfebee0bfdcdedca4a93faeb44a5c2a",
+      "reason": "ROOT_MANUSCRIPT_REPORT_PDF_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/manuscript/figures/Mechanism_closure.pdf",
+      "source_sha256": "6f52b3bf478e821fd35006823d1e7556cdeab41f2c902189c89542cca86059fe",
+      "reason": "ROOT_MANUSCRIPT_REPORT_PDF_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/manuscript/figures/Mechanism_closure_compact.pdf",
+      "source_sha256": "ff28285316f2b0ae7830851d449c229f81660ef2b5430c109a80a92a265d6e53",
+      "reason": "ROOT_MANUSCRIPT_REPORT_PDF_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/manuscript/figures/conditional_exchange_mechanism.pdf",
+      "source_sha256": "7b7b67747e179cf6441a487286cafe983b172f69cf2a2b2a009aed712b16bb3b",
+      "reason": "ROOT_MANUSCRIPT_REPORT_PDF_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/manuscript/figures/mie_independent.pdf",
+      "source_sha256": "00f8ea8f9f0dba79e4344ca15a3c23cd3b096765b010118a6011b06921d0c18f",
+      "reason": "ROOT_MANUSCRIPT_REPORT_PDF_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/manuscript/figures/path_depth_dark.pdf",
+      "source_sha256": "6296dbfebe08ba4718843cb4912a16c3b3b8dc988c25ae1cdc22ff0582c21294",
+      "reason": "ROOT_MANUSCRIPT_REPORT_PDF_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/manuscript/figures/preconditioner_cost.pdf",
+      "source_sha256": "c8826d97a943231b8cda967f10db9a3b780c2cdaec9feb31df0220d953263415",
+      "reason": "ROOT_MANUSCRIPT_REPORT_PDF_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/manuscript/figures/repair_bounds.pdf",
+      "source_sha256": "25d895f6103b457c33ae660cb4715569fefbd8c2d73eba951143fad608fad1eb",
+      "reason": "ROOT_MANUSCRIPT_REPORT_PDF_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/manuscript/figures/reuse_cost.pdf",
+      "source_sha256": "b1cb0a5a2e4d44ed3c6518d4e7b0ef7be901f3fba37e36fa6960c314803e669d",
+      "reason": "ROOT_MANUSCRIPT_REPORT_PDF_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/manuscript/figures/reuse_objects.pdf",
+      "source_sha256": "0242a22d4e3c7d5c88f99fa6c1dc229f521ee65809752f62c4ba8c261b29369e",
+      "reason": "ROOT_MANUSCRIPT_REPORT_PDF_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/manuscript/figures/score_outcomes.pdf",
+      "source_sha256": "0c627b0281a2bb544ebaf0be7f2936830c04fdac5cc1ea3c4c597f558d63a0ac",
+      "reason": "ROOT_MANUSCRIPT_REPORT_PDF_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/manuscript/figures/snapshot11.pdf",
+      "source_sha256": "5c354b27bd86fb161fd6723cfdfc689960aab452e8425847e7463727dad71c1a",
+      "reason": "ROOT_MANUSCRIPT_REPORT_PDF_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/research/deployments/development_terminal_snapshot_v5.zip",
+      "source_sha256": "615b642a33d763a521fd129c2c0e8d6bd642ccaf8136a91d8ba64d72b8813314",
+      "reason": "TRANSFER_ARCHIVE_RAW_LOG_OR_KEY_CONFIG_EXCLUDED",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/research/deployments/extension_terminal_snapshot_v5.zip",
+      "source_sha256": "e02ce8a36295185b578c8511588128c2efbccbd58e2ff741036a97cac34bd0a7",
+      "reason": "TRANSFER_ARCHIVE_RAW_LOG_OR_KEY_CONFIG_EXCLUDED",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/research/deployments/first_terminal_snapshot.zip",
+      "source_sha256": "94b7ed668f85ea5b8b9b9e14869b282b291361954b35d2710e1ce12b0338c33a",
+      "reason": "TRANSFER_ARCHIVE_RAW_LOG_OR_KEY_CONFIG_EXCLUDED",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/research/deployments/gate_execution/a17_cuda_gate_48699a0e57.log",
+      "source_sha256": "c7d5f4acb836a4308ad2a9a87f7614b89612e235e3e8ba80b9c2f8cfa353e850",
+      "reason": "TRANSFER_ARCHIVE_RAW_LOG_OR_KEY_CONFIG_EXCLUDED",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/research/deployments/gate_execution/a17_cuda_gate_outputdir_retry_7b37966a6b.log",
+      "source_sha256": "52fbfdedcec097ed62ef552e0bbc69f4fc69601a1a13b325c3e610e428968f91",
+      "reason": "TRANSFER_ARCHIVE_RAW_LOG_OR_KEY_CONFIG_EXCLUDED",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/research/deployments/gate_v1.zip",
+      "source_sha256": "ff22f0ab1a4476d58e8d8472a394ce1deabc06a7f830689ca1f1cd1eb4f99f47",
+      "reason": "TRANSFER_ARCHIVE_RAW_LOG_OR_KEY_CONFIG_EXCLUDED",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/research/deployments/matched_timing_v2.zip",
+      "source_sha256": "8cd88afb58f2b16de22b41b901e1979d37057c54c1172932f11f92f43ec0aff5",
+      "reason": "TRANSFER_ARCHIVE_RAW_LOG_OR_KEY_CONFIG_EXCLUDED",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/research/deployments/pilot_v2.zip",
+      "source_sha256": "f5da039ba1345c8cfa0afce97d53c62c8d6f35c2792ed117cd0fd5aa4e3f4eb2",
+      "reason": "TRANSFER_ARCHIVE_RAW_LOG_OR_KEY_CONFIG_EXCLUDED",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/research/deployments/pilot_v3.zip",
+      "source_sha256": "b4b051ea03848abc0f11a26e4a5bbc0dcc3c5fe6e9ad8b7b160f656424bf05c2",
+      "reason": "TRANSFER_ARCHIVE_RAW_LOG_OR_KEY_CONFIG_EXCLUDED",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/research/deployments/pilot_v4.zip",
+      "source_sha256": "b3c6c34d93468d14487ff3a7188a21a36bc8ba25e3c076e23ac2182de3b14cda",
+      "reason": "TRANSFER_ARCHIVE_RAW_LOG_OR_KEY_CONFIG_EXCLUDED",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/research/deployments/pilot_v5_info.zip",
+      "source_sha256": "bebd701238227b2597247f38c2fdf883817dfbb96dba8bf670ec9b971f34b7c5",
+      "reason": "TRANSFER_ARCHIVE_RAW_LOG_OR_KEY_CONFIG_EXCLUDED",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/research/deployments/second_terminal_snapshot.zip",
+      "source_sha256": "2be5657f641b6e61318bb31bbb3b16966fcecfc9362110d1dbea7d43c0358472",
+      "reason": "TRANSFER_ARCHIVE_RAW_LOG_OR_KEY_CONFIG_EXCLUDED",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/research/deployments/timing_terminal_snapshot_v2.zip",
+      "source_sha256": "ebb165add9b313430828a24a3d73828018e63840188475e2710a79beb84571ab",
+      "reason": "TRANSFER_ARCHIVE_RAW_LOG_OR_KEY_CONFIG_EXCLUDED",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/tests/API_AND_VERIFICATION.md",
+      "source_sha256": "45fffbd5d87f3a1ab7e0e20014e942d823085ad366b5cb39cd6564e3834d8ae0",
+      "reason": "DOCUMENT_MACHINE_LOCATORS_REQUIRES_NEW_OWNER_AUTHORED_ENTRY",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "Gaussian/A17/EXCHANGE_R1/tests/verify_a17.py",
+      "source_sha256": "b9855bd1569ec8f093a9da26ebd79df553404969a841fc6262f3370a59a86e4e",
+      "reason": "PRIVATE_LITERAL_SOURCE_OMITTED_NO_REWRITE",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_absolute_risk_execution/A17_ABSOLUTE_RISK_AUDIT.md",
+      "source_sha256": "5fd5cca454872c7aefb71f31a19ee101d5c45571d50b15f7872f6cf70d9a03ac",
+      "reason": "DOCUMENT_MACHINE_LOCATORS_REQUIRES_NEW_OWNER_AUTHORED_ENTRY",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_absolute_risk_execution/absolute_risk_overview.pdf",
+      "source_sha256": "ee87620640bd277702c1dec17ada883b343a094829f74a8a91d3eacfa08d7cc8",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_absolute_risk_execution/absolute_risk_overview.png",
+      "source_sha256": "8b1832d69a75392e89f7593194cc8de44f95e7eaa9f5db1b0b48438b6722c0dd",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_absolute_risk_execution/absolute_risk_overview.svg",
+      "source_sha256": "3d1ea13ee543849aebfe59fd62096025674a1f480ee20ee32f82ab5ba1ec7cdc",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_absolute_risk_execution/analyze_absolute_risk.py",
+      "source_sha256": "40e27929f6666c1ca391ae89e5c92c5bb41caec41828223953cb61e74a381189",
+      "reason": "PRIVATE_LITERAL_SOURCE_OMITTED_NO_REWRITE",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_absolute_risk_execution/same_state_risk_factors.pdf",
+      "source_sha256": "4f5a7ecb1f32324eaafd395b469376457f69b63b9fb2e8403298c17c613c598b",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_absolute_risk_execution/same_state_risk_factors.png",
+      "source_sha256": "71cf32407d02f228e2c120f67678ae59b2d8dcb286713b76fcf9efaf5e4ccba4",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_absolute_risk_execution/same_state_risk_factors.svg",
+      "source_sha256": "62ea67667c88259afd53748f5d1324e3789d4511439644156b18bc0a496714bb",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_pilot_analysis/README.md",
+      "source_sha256": "af0935b8f40f86030e3a4a28c9394de5492d8552441cf99f1ed726a374e7ace9",
+      "reason": "DOCUMENT_MACHINE_LOCATORS_REQUIRES_NEW_OWNER_AUTHORED_ENTRY",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_pilot_analysis/analysis_output_development/attempt_occupation.pdf",
+      "source_sha256": "c210d922ac9cc9788c9e21b8ed228775093e9209645cf33e10fa016894bcb8fc",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_pilot_analysis/analysis_output_development/attempt_occupation.png",
+      "source_sha256": "b5b7f671afeb15a958247eda0249bc2731c593b04acfe59671ededa09ff8ee59",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_pilot_analysis/analysis_output_development/attempt_occupation.svg",
+      "source_sha256": "6a3fc4010f80f51f557a928773bdf8e8989c1943eb6b797bbacd66f4b76d769a",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_pilot_analysis/analysis_output_development/direction_curvature_selected_gains.pdf",
+      "source_sha256": "b012cd81ddb2673dfa822f6eaa80e9d087cc7f3a5dd14e905f88467f06a89926",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_pilot_analysis/analysis_output_development/direction_curvature_selected_gains.png",
+      "source_sha256": "daa969bdeaab9e160e00482e40588949c4041ba36540cb22eac90c00c3a020b3",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_pilot_analysis/analysis_output_development/direction_curvature_selected_gains.svg",
+      "source_sha256": "5fc0751a2bee54f01bac6fd219cc062577e712b77b3c4ae5e82b36e77f844236",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_pilot_analysis/analysis_output_development/information_Q_ranking.pdf",
+      "source_sha256": "4a8cbe1d6de278d8610ae79ad4494199d042e7befaf177b591a26852ff72b22f",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_pilot_analysis/analysis_output_development/information_Q_ranking.png",
+      "source_sha256": "31fb4bf0b74892461803e5e5d19407e1c1dc4263bd1e4799ad1f4970c9cd4e45",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_pilot_analysis/analysis_output_development/information_Q_ranking.svg",
+      "source_sha256": "53fd11adab81ec2c7895247ca3c9edd01a2ffec47119722c52db1b99791779ec",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_pilot_analysis/analysis_output_development/pair_interaction_witnesses.pdf",
+      "source_sha256": "c24ebe385925cb72a9ede8cd52169df37ec243ac40c258b49d73423afcceb8d0",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_pilot_analysis/analysis_output_development/pair_interaction_witnesses.png",
+      "source_sha256": "2b54a9f18336fa5da3db7793c304dc32ba3994c41211457891219e064a8e4a99",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_pilot_analysis/analysis_output_development/pair_interaction_witnesses.svg",
+      "source_sha256": "7061f29cf8c962d3d29892c03b367d9e5061716814aa29b1d31d6ca3765ef656",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_pilot_analysis/analysis_output_development/policy_absolute_risk_information.pdf",
+      "source_sha256": "435a7cf2a176ce93ac73fbf0df5e3f1aef64826130aa786472468ff7960df613",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_pilot_analysis/analysis_output_development/policy_absolute_risk_information.png",
+      "source_sha256": "1f7b0cdf3cc0125bee68e918cee0e9d2fc92e4eb8ea75f04d1b2a7047ed2370e",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_pilot_analysis/analysis_output_development/policy_absolute_risk_information.svg",
+      "source_sha256": "eec75a6c88742dfe781018cb6ebb2fa97dad96579d048190931a4b29466c5b43",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_pilot_analysis/analysis_output_development/same_checkpoint_regret.pdf",
+      "source_sha256": "0b9ae5dc4152d4f9a440cbbca96c532dbb258babcd1b013fa65957c2fe2bcaad",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_pilot_analysis/analysis_output_development/same_checkpoint_regret.png",
+      "source_sha256": "4538b079fb926899692d6fcce5176cba104cf944a1594f3e1410ea47889b7de3",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_pilot_analysis/analysis_output_development/same_checkpoint_regret.svg",
+      "source_sha256": "0275dbd90d367fd3b4f7226059a78a005db444aa811c22c6a9271e474c8f74d2",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_pilot_analysis/analysis_output_final/attempt_occupation.pdf",
+      "source_sha256": "5b422e7443ac1616706c44ac839896d6067a71ecf433bf1106d8b0a9fc46dc38",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_pilot_analysis/analysis_output_final/attempt_occupation.png",
+      "source_sha256": "1af5f3eac812443f65c47feddf4b601cd1bf1ab0cc7cd7209b3d19b65f9c40d9",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_pilot_analysis/analysis_output_final/attempt_occupation.svg",
+      "source_sha256": "4d67175ac6d0770c7d2b80957f973685d4d24ca6404fa8d8108510fcce4e417f",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_pilot_analysis/analysis_output_final/direction_curvature_selected_gains.pdf",
+      "source_sha256": "945b4eedd9e6bc09d93123fe60ae6a17801031105a4e534438891569e3f7cfe6",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_pilot_analysis/analysis_output_final/direction_curvature_selected_gains.png",
+      "source_sha256": "313e61eeeba7d0fc78cc9ad5c5137d07ce3bc12d2e03c055a80dc59ddc4b2acd",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_pilot_analysis/analysis_output_final/direction_curvature_selected_gains.svg",
+      "source_sha256": "1571c1a77e84a135142d522b1a4f4c91f848030abf96ab123b2cfe3bf5063c50",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_pilot_analysis/analysis_output_final/information_Q_ranking.pdf",
+      "source_sha256": "ae4f34536efbfeb706b9222085d5ffed5e4c713f635edbf9762a135fa2b340e4",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_pilot_analysis/analysis_output_final/information_Q_ranking.png",
+      "source_sha256": "d019572d59cd9339a30d047df00022613ebd3ae11a8b3fcaa281f9bb368d16b6",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_pilot_analysis/analysis_output_final/information_Q_ranking.svg",
+      "source_sha256": "19acedb97cd55a1d806a34efa03a463c0eecbb12ed1f4eb1bb585de92f36f3c9",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_pilot_analysis/analysis_output_final/pair_interaction_witnesses.pdf",
+      "source_sha256": "4675826a00ab3a11a7cb31ec23c4985160ea4d8cecb16865bce46da32dff3ec0",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_pilot_analysis/analysis_output_final/pair_interaction_witnesses.png",
+      "source_sha256": "97dd81fefddf76c0fd14bf16536521db387708ed7a03793b7c34aa3011a08098",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_pilot_analysis/analysis_output_final/pair_interaction_witnesses.svg",
+      "source_sha256": "15a1fa286d3abd9d26a9ea9b15a16903a732d99a3dbc39bae85af734969dc668",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_pilot_analysis/analysis_output_final/policy_absolute_risk_information.pdf",
+      "source_sha256": "7d8d62342c9c9b88febbf5ba052de605b31fa966797c9fb5dc89608b67fef627",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_pilot_analysis/analysis_output_final/policy_absolute_risk_information.png",
+      "source_sha256": "1994afc64e24cbc085fd88853d9fb5dcac2d689ea94d194e5c62377dd093b436",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_pilot_analysis/analysis_output_final/policy_absolute_risk_information.svg",
+      "source_sha256": "0dcbd85ec46ccf2b86b1186cb45599ddcd9cbccdba424a425a735aa052895435",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_pilot_analysis/analysis_output_final/same_checkpoint_regret.pdf",
+      "source_sha256": "c228022f1a55dc54a7174164b95752e29b929a7cc77a7f6a976c35e5e6ec9a5c",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_pilot_analysis/analysis_output_final/same_checkpoint_regret.png",
+      "source_sha256": "b40fdafef3986564af76fc7a9ffbd75a9727221fdd2658b085876b5721201ccc",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_pilot_analysis/analysis_output_final/same_checkpoint_regret.svg",
+      "source_sha256": "a7cad8b64ced74f33f398ae1a3ecdb3f1e7f2d65ec20ad16a51ad9fb694f626a",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_pilot_analysis/analyze_pilot.py",
+      "source_sha256": "b3ebcb42a367e9abfe3c0c5ff0a82a05b8ed0bfd115dec8100e7882e9453cfe6",
+      "reason": "PRIVATE_LITERAL_SOURCE_OMITTED_NO_REWRITE",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_pilot_analysis/check_implementation.py",
+      "source_sha256": "c5fa74988d6f503b5cb089a7605fe9a02bbbcbd876be8cc517877847ba27d115",
+      "reason": "PRIVATE_LITERAL_SOURCE_OMITTED_NO_REWRITE",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_gn_direction_analysis/README.md",
+      "source_sha256": "d792474d19383c0723a4de1ddff43c9cf6ba0f01cdb6c031030b027fb8db9496",
+      "reason": "DOCUMENT_MACHINE_LOCATORS_REQUIRES_NEW_OWNER_AUTHORED_ENTRY",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_gn_direction_analysis/development_all/object_2007_early_portable_band_gains.pdf",
+      "source_sha256": "57287993525f213e2ea85ecd0b25c1a677c7d71486a1f3a41da00e600621b5bc",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_gn_direction_analysis/development_all/object_2007_early_portable_band_gains.png",
+      "source_sha256": "122275fb4c1350b181b6fd9d68c0198ea434e76be01d11f850ba99d88233cf69",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_gn_direction_analysis/development_all/object_2007_early_portable_band_gains.svg",
+      "source_sha256": "62f602e6161c8bcc5add5c466d9c264171f52aca04a9f36e4e7fcd3738598ac2",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_gn_direction_analysis/development_all/object_2007_late_band_gains.pdf",
+      "source_sha256": "b64447df4f0a728e246466a2ecdb3de4464e09b6e58730f131a2eb82ea0b3d90",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_gn_direction_analysis/development_all/object_2007_late_band_gains.png",
+      "source_sha256": "61c6bf61f38cca7b8b23bcf7babc2ae481e41a567a54b59ca01c178a54bc0678",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_gn_direction_analysis/development_all/object_2007_late_band_gains.svg",
+      "source_sha256": "e88e544dc52ce7801d8a8c6063f25bbd431682785de784ff691354e07bcff4f1",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_gn_direction_analysis/development_all/object_2007_middle_band_gains.pdf",
+      "source_sha256": "0d3ad381e3a32a76481b2e2ed7d444cad43bea8c72e4b5d0eaf3586b0d9829ce",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_gn_direction_analysis/development_all/object_2007_middle_band_gains.png",
+      "source_sha256": "56c2631903f30da9ab122ca71f032697aec63e0cb8a45c6154d2d8c34207a3df",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_gn_direction_analysis/development_all/object_2007_middle_band_gains.svg",
+      "source_sha256": "66d2663ad57a7f287a3ec6210842b9c40084422b977e9081fa59f4495a0f46da",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_gn_direction_analysis/final_results/object_2001_early_band_gains.pdf",
+      "source_sha256": "ce18a940aab4713efd71c42e29cb2acd107abf65d18349a50fbbc7196523ef38",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_gn_direction_analysis/final_results/object_2001_early_band_gains.png",
+      "source_sha256": "4fe8fc28e7e8bff81f27bbc3cfd787766ddd24dad8786a7b858b2b017208f9c8",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_gn_direction_analysis/final_results/object_2001_early_band_gains.svg",
+      "source_sha256": "28a10c2096574cb43f779c8066a768ac021e537d48294b9adf1dcfabd6ef1790",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_gn_direction_analysis/final_results/object_2001_late_band_gains.pdf",
+      "source_sha256": "6bde62778e012e887d9572d1769826a06881069626b9b4275147139389ef7c27",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_gn_direction_analysis/final_results/object_2001_late_band_gains.png",
+      "source_sha256": "e98e9a1265e5468fd26e387b9ad3d51ec94e5fc306723f79fdda2533367b2eac",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_gn_direction_analysis/final_results/object_2001_late_band_gains.svg",
+      "source_sha256": "6b07d3c89edda993d102d636ecd2769ae517c02e5b961646dab0c944f00d7afb",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_gn_direction_analysis/final_results/object_2001_middle_band_gains.pdf",
+      "source_sha256": "43a89e029c4b7fcc475804bce087681638697964134574ba5938c6cc1b39f9a0",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_gn_direction_analysis/final_results/object_2001_middle_band_gains.png",
+      "source_sha256": "e728e7ce2752ae596c5bc007156d562f59721436d0ddbf92f21b01c03c05b77d",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_gn_direction_analysis/final_results/object_2001_middle_band_gains.svg",
+      "source_sha256": "8f11a0bbffb16d9293c55592e7b6ee7f7c55d5c384563d0b58427f35450c4666",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_gn_direction_analysis/final_results/object_2007_early_portable_band_gains.pdf",
+      "source_sha256": "d2696ca03d8bd16f6c26c8491b442f3d11ffd9d8f546d7414de6c280471c505f",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_gn_direction_analysis/final_results/object_2007_early_portable_band_gains.png",
+      "source_sha256": "122275fb4c1350b181b6fd9d68c0198ea434e76be01d11f850ba99d88233cf69",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_gn_direction_analysis/final_results/object_2007_early_portable_band_gains.svg",
+      "source_sha256": "dfc511a77e8faf56b4aa70934fbd5fed676437100126aecc8b0cac4febbd74c9",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_gn_direction_analysis/final_results/object_2007_late_band_gains.pdf",
+      "source_sha256": "dbfd72d73999a8c04e529d09703409c77365f5cc862358eb65ac83139f23d1cb",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_gn_direction_analysis/final_results/object_2007_late_band_gains.png",
+      "source_sha256": "61c6bf61f38cca7b8b23bcf7babc2ae481e41a567a54b59ca01c178a54bc0678",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_gn_direction_analysis/final_results/object_2007_late_band_gains.svg",
+      "source_sha256": "634cfc7f3caa9d1c4201d098261b83ccc5af5ef39bab8fcd98c2629370c654b1",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_gn_direction_analysis/final_results/object_2007_middle_band_gains.pdf",
+      "source_sha256": "c7c742c74f788574457b371106f1f8ccd298d196074dc99173690b7388855617",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_gn_direction_analysis/final_results/object_2007_middle_band_gains.png",
+      "source_sha256": "56c2631903f30da9ab122ca71f032697aec63e0cb8a45c6154d2d8c34207a3df",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_gn_direction_analysis/final_results/object_2007_middle_band_gains.svg",
+      "source_sha256": "632e2ac24812492f635940b993dd538246b7fd248704b78ac7f04c9b9957bcd2",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_gn_direction_analysis/object_2007_early_portable_band_gains.pdf",
+      "source_sha256": "750077515f395fcc3ec17d7749729507e72fa944248d9808e71ad98bcb627891",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_gn_direction_analysis/object_2007_early_portable_band_gains.png",
+      "source_sha256": "122275fb4c1350b181b6fd9d68c0198ea434e76be01d11f850ba99d88233cf69",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_gn_direction_analysis/object_2007_early_portable_band_gains.svg",
+      "source_sha256": "51ed547bb494976dcd9d0a2c938d5d2b4a09efe3526a998b7676fa563482fa19",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_matched_timing_analysis/figures/objective_gain.png",
+      "source_sha256": "9a3c5a092439581ca29c47e2120d1c1f4bda747456202ed1da6a8361439c05fb",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_matched_timing_analysis/figures/warm_wall.pdf",
+      "source_sha256": "4549072b6d052320e343bca23574f13d77ce6eb16e32364b48e4e983ef54770a",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_matched_timing_analysis/figures/warm_wall.png",
+      "source_sha256": "b8e58a92f653cf7a9761c5ba94eca3eb5c3286c20c23600afc8b08ed204a9278",
+      "reason": "ROOT_REPORT_FIGURE_VISUAL_SCIENCE_REVIEW_PENDING_ADD_LATER",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_tiny_proposer/check_toy.py",
+      "source_sha256": "e86ae409252fd1128747a9584661e715c5010de68ff13f6dc03cffa87aff311f",
+      "reason": "PRIVATE_LITERAL_SOURCE_OMITTED_NO_REWRITE",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_tiny_proposer/real_runs_final/group_mean_32_16_seed20261002.pt",
+      "source_sha256": "6670a714ad0e346c5bbfb6f2069fa83373da522c089ee356b8dc8a73fc48f25d",
+      "reason": "MODEL_CHECKPOINT_SCOPE_NEEDS_ROOT_EXPLICIT_SELECTION",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_tiny_proposer/real_runs_final/group_mean_32_16_seed20261003.pt",
+      "source_sha256": "644c40037bbe9fb978fbc36b5d47cd06de6ccf26146fb0256b45343f1de1fdd2",
+      "reason": "MODEL_CHECKPOINT_SCOPE_NEEDS_ROOT_EXPLICIT_SELECTION",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_tiny_proposer/real_runs_final/group_mean_32_16_seed20261004.pt",
+      "source_sha256": "f21f71e11db50416369e6d1222169058b0d028c976fadf230e647c3e4c40cc7c",
+      "reason": "MODEL_CHECKPOINT_SCOPE_NEEDS_ROOT_EXPLICIT_SELECTION",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_tiny_proposer/real_runs_final/tiny_mlp_32_16_seed20261002.pt",
+      "source_sha256": "1f82ba6acf792483c2c41f34ffc4d4a6fd3b0d7301c47095b3c5424e849ced90",
+      "reason": "MODEL_CHECKPOINT_SCOPE_NEEDS_ROOT_EXPLICIT_SELECTION",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_tiny_proposer/real_runs_final/tiny_mlp_32_16_seed20261003.pt",
+      "source_sha256": "43977351cb74f0f8a3c80dc9866a1e73191290004d2c95e40f2e30bf5cc46922",
+      "reason": "MODEL_CHECKPOINT_SCOPE_NEEDS_ROOT_EXPLICIT_SELECTION",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_tiny_proposer/real_runs_final/tiny_mlp_32_16_seed20261004.pt",
+      "source_sha256": "b1e366e25b337e3049e04b7b795ed95ebdd9bc0d2efa7fb723e140333b11b4e4",
+      "reason": "MODEL_CHECKPOINT_SCOPE_NEEDS_ROOT_EXPLICIT_SELECTION",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_tiny_proposer/tiny_proposer.py",
+      "source_sha256": "6a32c01fd269d9328334554d90347f6821848c855d7b208d187d82dd124d815d",
+      "reason": "PRIVATE_LITERAL_SOURCE_OMITTED_NO_REWRITE",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_public_stage_prepare/portable_algebra.py",
+      "source_sha256": "7d49d547752f1b96d87261ce197db78b4200ea0ff6c2102c11807e94225f3a9b",
+      "reason": "PUBLIC_INTERPRETER_HEADER_FLAGS_CONSERVATIVE_DETECTOR; NEW_AST_EQUIVALENT_INDEPENDENT_TEST_VERSION_INCLUDED; NO_EXECUTED_SOURCE_REWRITE",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_public_stage_prepare/SOURCE_RUNTIME_ASSOCIATIONS.json",
+      "source_sha256": "bba8d3822b1d6a5842fc013548fa01af82e97eb6c38de3da25cc539d610126ce",
+      "reason": "JSON_POINTER_METADATA_REPRESENTED_REVERSIBLY_WITH_TOKENS_IN_PUBLIC_AUDIT_DOCUMENT; ORIGINAL_HASH_AND_REVERSAL_FINGERPRINT_RETAINED",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    },
+    {
+      "public_identity": "research/delegated/a17_public_stage_prepare/CSV_LINEAGE_REVIEW.json",
+      "source_sha256": "addd0ed34b5207277138199ec1c7e139b623b46ebe735a280fc5001544d2978a",
+      "reason": "JSON_POINTER_METADATA_REPRESENTED_REVERSIBLY_WITH_TOKENS_IN_PUBLIC_AUDIT_DOCUMENT; ORIGINAL_HASH_AND_REVERSAL_FINGERPRINT_RETAINED",
+      "original_bytes_unchanged": true,
+      "explicit_owner_plan_omission": true
+    }
+  ],
+  "scope": "new A17 byte-preserved source, independently authored CPU algebra tests, audited raw numerical records and metadata transformations; selector/scientific claims unchanged"
+}

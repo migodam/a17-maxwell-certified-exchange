@@ -1,0 +1,1 @@
+{"policy":"surrogate_exchange","completed_round":0,"accepted":[{"round":0,"drop":[1],"add":[4],"kind":"swap","Qhat":0.00014498577804081427,"Q_true":0.0001528863406837208,"actual_rank":4,"tau":1.2439756065155214e-17}],"selected_ids":[0,2,3,4]}

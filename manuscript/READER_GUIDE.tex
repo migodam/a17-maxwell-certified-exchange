@@ -1,0 +1,32 @@
+\documentclass[UTF8,a4paper,11pt,fontset=none]{ctexart}
+\usepackage{fontspec}\setmainfont{Times New Roman}\setsansfont{Arial}\setmonofont{Menlo}\setCJKmainfont{Songti SC}\setCJKsansfont{Heiti SC}
+\usepackage[margin=2.1cm]{geometry}\usepackage{amsmath,amssymb,graphicx,booktabs,tabularx,hyperref,microtype}
+\hypersetup{hidelinks}\setlength{\parskip}{.35em}\setlength{\emergencystretch}{2em}
+\title{一个电流模式何时影响材料更新？\\论文中文稿、推导与从零解读}\author{}\date{}
+\begin{document}\maketitle
+\section*{中文摘要}
+电磁逆散射用接收场寻找未知材料。接收器看见的是物体内部全部相互作用电流的辐射；一个电流方向对材料更新的作用，既取决于材料能否激发它，也取决于它经过内部反馈后能否返回接收端。本文对指定电流空间改变，推导反馈修饰的导数分解和完整材料步差的双侧支撑。改变模型同时改变数据曲率与残差拉回，因此信息量增加和材料步改善并不等价。
+
+这一机制形成可执行的条件交换设计：保留可靠的receiver基底，只提出少量替换，用更丰富的约化参考排序，再用完整物理方向检查实际收益。四类三维Maxwell对象、两种材料表示的36个冻结状态--预算单元中，最多三次交换在35个单元改善完整GN更新，一个保持不变；对象汇总风险比中位数为0.348，即差距下降约65.2\%。在各对象的共同checkpoint上先汇总单次gain，完整字典中的代理排序取得最佳局部单步收益的98.1--99.6\%；主要漏失来自短候选池的覆盖。真实Maxwell例子进一步展示信息体积增加但材料步变差，以及两单列不利而联合有利的相互作用。
+
+本文的正面结论是同电流预算下的局部材料更新设计。完整费用、严格证书的条件、已有Krylov对照和未验证的非线性迁移集中报告，使物理规律与可执行价值对应。
+\section*{阅读路线}
+先读背景和核心公式，建立材料、场、电流、测量的关系；再读中文论文推导，理解反馈为何来自消元，步差为何需要两组材料方向；最后读交换结果，区分评分准确性、候选覆盖、实际收益和费用。这是一份包含完整中文论文理解与证明的文稿，读者不需要预先读英文或了解项目代号。
+\setcounter{tocdepth}{1}\tableofcontents\clearpage
+\input{TERMINOLOGY_ZH.tex}
+\input{READER_FUNDAMENTALS.tex}
+\clearpage
+\part{中文论文：物理模型与严格推导}
+\input{CHINESE_PAPER_DERIVATIONS.tex}
+\input{CURRENT_DESIGN_DERIVATIONS_ZH.tex}
+\input{EXCHANGE_DERIVATIONS_ZH.tex}
+\clearpage
+\part{中文论文：证据与材料相关设计}
+\input{READER_HISTORICAL_EVIDENCE.tex}
+\input{EXCHANGE_READER_RESULTS.tex}
+\section{论文的价值与可执行认识}
+这篇工作的理论价值，是把一个指定current change从电磁反馈一路连接到实际材料步，而不是只证明场或导数误差不一样。实验价值，是用三维Maxwell证据展示直接辐射会漏掉反馈、结构完整未必对齐目标、信息增加未必有益，并在同current budget上给出可重复的局部交换改善。工程价值，是把判断缩小到少量可检查动作，并明确它需要什么信息、支付什么费用。
+
+最强的设计结论可以直接表述为：可靠receiver空间不必推倒重来，少量经过完整收益检查的条件替换，已经能够明显降低完整材料步误差。最需要改进的部分也已定位：不是仅靠更复杂网络拟合得分，而是低成本覆盖真正有用的incoming directions。严格output bounds、噪声和有约束的nonlinear transfer是下一层验证任务；它们不会改变这里已经解决的冻结更新问题。
+\clearpage{\small\setlength{\parskip}{0pt}\input{REFERENCES.tex}}
+\end{document}

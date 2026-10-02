@@ -1,0 +1,1 @@
+{"policy":"adaptive_leq_k","completed_round":0,"accepted":[{"round":0,"drop":[1],"add":[5],"kind":"swap","Qhat":0.0011304865416655642,"Q_true":0.0011416925426274052,"actual_rank":4,"tau":2.8915684191413185e-14}],"selected_ids":[0,2,3,5]}

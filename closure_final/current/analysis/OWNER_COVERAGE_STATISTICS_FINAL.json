@@ -1,0 +1,275 @@
+{
+  "schema": "a17.owner.coverage.statistics.final.v1",
+  "evidence_sha256": "e4f7c13169e570d49d6b5e0e16e8111c9c94e891dd419cded826c2652c40d978",
+  "scope": "INITIAL_1SWAP_OPPORTUNITY_AND_BOUNDED_LOCAL_3ACTION_PATH_NOT_GLOBAL_ORACLE",
+  "complete_objects": 10,
+  "partial_objects": 1,
+  "actual_cells": 96,
+  "planned_cells": 99,
+  "initial_object_statistics": {
+    "anchor_top1_significance_verified_noop_capture": {
+      "min": 0.9730198774817673,
+      "max": 0.999851110001978,
+      "median": 0.9953752723504441,
+      "iqr": [
+        0.9926317625182245,
+        0.9968628355175496
+      ]
+    },
+    "balanced12_capture": {
+      "min": 0.4911935488613052,
+      "max": 0.9530729105328387,
+      "median": 0.7295146020348386,
+      "iqr": [
+        0.6568338299680012,
+        0.8774841973135742
+      ]
+    }
+  },
+  "initial_object_rows": [
+    {
+      "all_planned_initial_complete": true,
+      "anchor_top1_raw_noop_capture": 0.9991722477523135,
+      "anchor_top1_significance_verified_noop_capture": 0.9991722477523135,
+      "balanced12_capture": 0.6879345461250665,
+      "complete_initial_cells": 9,
+      "object_id": 2002,
+      "planned_cells": 9,
+      "positive_teacher_cells_observed": 9,
+      "scope": "Initial receiver neighborhood only; positive-full-teacher-Q weighted; zero opportunities excluded from ratio weights",
+      "teacher_positive_gain_sum": 0.0006742869332513632
+    },
+    {
+      "all_planned_initial_complete": true,
+      "anchor_top1_raw_noop_capture": 0.9970637949024033,
+      "anchor_top1_significance_verified_noop_capture": 0.9970637949024033,
+      "balanced12_capture": 0.9530729105328387,
+      "complete_initial_cells": 9,
+      "object_id": 2003,
+      "planned_cells": 9,
+      "positive_teacher_cells_observed": 9,
+      "scope": "Initial receiver neighborhood only; positive-full-teacher-Q weighted; zero opportunities excluded from ratio weights",
+      "teacher_positive_gain_sum": 0.0023145940863120275
+    },
+    {
+      "all_planned_initial_complete": true,
+      "anchor_top1_raw_noop_capture": 0.9936140215496023,
+      "anchor_top1_significance_verified_noop_capture": 0.9936140215496023,
+      "balanced12_capture": 0.7098620914460337,
+      "complete_initial_cells": 9,
+      "object_id": 2004,
+      "planned_cells": 9,
+      "positive_teacher_cells_observed": 9,
+      "scope": "Initial receiver neighborhood only; positive-full-teacher-Q weighted; zero opportunities excluded from ratio weights",
+      "teacher_positive_gain_sum": 0.0004619909468524697
+    },
+    {
+      "all_planned_initial_complete": true,
+      "anchor_top1_raw_noop_capture": 0.999851110001978,
+      "anchor_top1_significance_verified_noop_capture": 0.999851110001978,
+      "balanced12_capture": 0.7491671126236435,
+      "complete_initial_cells": 9,
+      "object_id": 2005,
+      "planned_cells": 9,
+      "positive_teacher_cells_observed": 9,
+      "scope": "Initial receiver neighborhood only; positive-full-teacher-Q weighted; zero opportunities excluded from ratio weights",
+      "teacher_positive_gain_sum": 0.0008128774327226045
+    },
+    {
+      "all_planned_initial_complete": true,
+      "anchor_top1_raw_noop_capture": 0.9962599573629886,
+      "anchor_top1_significance_verified_noop_capture": 0.9962599573629886,
+      "balanced12_capture": 0.890938704161741,
+      "complete_initial_cells": 9,
+      "object_id": 2006,
+      "planned_cells": 9,
+      "positive_teacher_cells_observed": 9,
+      "scope": "Initial receiver neighborhood only; positive-full-teacher-Q weighted; zero opportunities excluded from ratio weights",
+      "teacher_positive_gain_sum": 0.009407325344146723
+    },
+    {
+      "all_planned_initial_complete": true,
+      "anchor_top1_raw_noop_capture": 0.9902694904007793,
+      "anchor_top1_significance_verified_noop_capture": 0.9902694904007793,
+      "balanced12_capture": 0.8915825863070821,
+      "complete_initial_cells": 9,
+      "object_id": 2008,
+      "planned_cells": 9,
+      "positive_teacher_cells_observed": 9,
+      "scope": "Initial receiver neighborhood only; positive-full-teacher-Q weighted; zero opportunities excluded from ratio weights",
+      "teacher_positive_gain_sum": 0.0004067410554239771
+    },
+    {
+      "all_planned_initial_complete": true,
+      "anchor_top1_raw_noop_capture": 0.9958121508503832,
+      "anchor_top1_significance_verified_noop_capture": 0.9958121508503832,
+      "balanced12_capture": 0.6464669245823128,
+      "complete_initial_cells": 9,
+      "object_id": 2009,
+      "planned_cells": 9,
+      "positive_teacher_cells_observed": 9,
+      "scope": "Initial receiver neighborhood only; positive-full-teacher-Q weighted; zero opportunities excluded from ratio weights",
+      "teacher_positive_gain_sum": 0.0014703776458449749
+    },
+    {
+      "all_planned_initial_complete": true,
+      "anchor_top1_raw_noop_capture": 0.9730198774817673,
+      "anchor_top1_significance_verified_noop_capture": 0.9730198774817673,
+      "balanced12_capture": 0.5671910853465261,
+      "complete_initial_cells": 9,
+      "object_id": 2010,
+      "planned_cells": 9,
+      "positive_teacher_cells_observed": 9,
+      "scope": "Initial receiver neighborhood only; positive-full-teacher-Q weighted; zero opportunities excluded from ratio weights",
+      "teacher_positive_gain_sum": 0.0018398286367474037
+    },
+    {
+      "all_planned_initial_complete": true,
+      "anchor_top1_raw_noop_capture": 0.9949383938505051,
+      "anchor_top1_significance_verified_noop_capture": 0.9949383938505051,
+      "balanced12_capture": 0.4911935488613052,
+      "complete_initial_cells": 9,
+      "object_id": 2011,
+      "planned_cells": 9,
+      "positive_teacher_cells_observed": 9,
+      "scope": "Initial receiver neighborhood only; positive-full-teacher-Q weighted; zero opportunities excluded from ratio weights",
+      "teacher_positive_gain_sum": 0.0019002440933528575
+    },
+    {
+      "all_planned_initial_complete": true,
+      "anchor_top1_raw_noop_capture": 0.9923043428410986,
+      "anchor_top1_significance_verified_noop_capture": 0.9923043428410986,
+      "balanced12_capture": 0.8371206767690735,
+      "complete_initial_cells": 9,
+      "object_id": 2013,
+      "planned_cells": 9,
+      "positive_teacher_cells_observed": 9,
+      "scope": "Initial receiver neighborhood only; positive-full-teacher-Q weighted; zero opportunities excluded from ratio weights",
+      "teacher_positive_gain_sum": 0.000576699814766516
+    },
+    {
+      "all_planned_initial_complete": false,
+      "anchor_top1_raw_noop_capture": null,
+      "anchor_top1_significance_verified_noop_capture": null,
+      "balanced12_capture": null,
+      "complete_initial_cells": 6,
+      "object_id": 2016,
+      "planned_cells": 9,
+      "positive_teacher_cells_observed": 6,
+      "scope": "Initial receiver neighborhood only; positive-full-teacher-Q weighted; zero opportunities excluded from ratio weights",
+      "teacher_positive_gain_sum": null
+    }
+  ],
+  "path_comparison": {
+    "online_better": 5,
+    "teacher_better": 90,
+    "within_evaluation_floor": 1
+  },
+  "path_object_rows": [
+    {
+      "object_id": 2002,
+      "observed_cells": 9,
+      "complete": true,
+      "online_sum": 0.0006395371210973266,
+      "bounded_teacher_sum": 0.0002879865334065214,
+      "online_to_bounded_teacher_ratio": 2.2207188424139157,
+      "partial_scope": "9 planned cells; missing cells not imputed"
+    },
+    {
+      "object_id": 2003,
+      "observed_cells": 9,
+      "complete": true,
+      "online_sum": 0.001539886549726682,
+      "bounded_teacher_sum": 0.0013606933571068014,
+      "online_to_bounded_teacher_ratio": 1.131692560769822,
+      "partial_scope": "9 planned cells; missing cells not imputed"
+    },
+    {
+      "object_id": 2004,
+      "observed_cells": 9,
+      "complete": true,
+      "online_sum": 0.0007409284971028857,
+      "bounded_teacher_sum": 0.0005794816641241876,
+      "online_to_bounded_teacher_ratio": 1.27860559353971,
+      "partial_scope": "9 planned cells; missing cells not imputed"
+    },
+    {
+      "object_id": 2005,
+      "observed_cells": 9,
+      "complete": true,
+      "online_sum": 0.00031709538253094587,
+      "bounded_teacher_sum": 0.0001418304973097013,
+      "online_to_bounded_teacher_ratio": 2.2357348281627742,
+      "partial_scope": "9 planned cells; missing cells not imputed"
+    },
+    {
+      "object_id": 2006,
+      "observed_cells": 9,
+      "complete": true,
+      "online_sum": 0.002911453847677295,
+      "bounded_teacher_sum": 0.001901601973386101,
+      "online_to_bounded_teacher_ratio": 1.5310532321824395,
+      "partial_scope": "9 planned cells; missing cells not imputed"
+    },
+    {
+      "object_id": 2008,
+      "observed_cells": 9,
+      "complete": true,
+      "online_sum": 0.00034115002200412104,
+      "bounded_teacher_sum": 0.0001944655815331263,
+      "online_to_bounded_teacher_ratio": 1.7542951267497573,
+      "partial_scope": "9 planned cells; missing cells not imputed"
+    },
+    {
+      "object_id": 2009,
+      "observed_cells": 9,
+      "complete": true,
+      "online_sum": 0.0013019664333435558,
+      "bounded_teacher_sum": 0.00043618951253852987,
+      "online_to_bounded_teacher_ratio": 2.984864137989905,
+      "partial_scope": "9 planned cells; missing cells not imputed"
+    },
+    {
+      "object_id": 2010,
+      "observed_cells": 9,
+      "complete": true,
+      "online_sum": 0.0016282328809013348,
+      "bounded_teacher_sum": 0.0005118631106643366,
+      "online_to_bounded_teacher_ratio": 3.1809928220615173,
+      "partial_scope": "9 planned cells; missing cells not imputed"
+    },
+    {
+      "object_id": 2011,
+      "observed_cells": 9,
+      "complete": true,
+      "online_sum": 0.0015084355631976671,
+      "bounded_teacher_sum": 0.00033588342977656496,
+      "online_to_bounded_teacher_ratio": 4.490949625592137,
+      "partial_scope": "9 planned cells; missing cells not imputed"
+    },
+    {
+      "object_id": 2013,
+      "observed_cells": 9,
+      "complete": true,
+      "online_sum": 0.0002481341685952078,
+      "bounded_teacher_sum": 9.123188812610754e-05,
+      "online_to_bounded_teacher_ratio": 2.719818406610397,
+      "partial_scope": "9 planned cells; missing cells not imputed"
+    },
+    {
+      "object_id": 2016,
+      "observed_cells": 6,
+      "complete": false,
+      "online_sum": 0.00016989125978931412,
+      "bounded_teacher_sum": 6.301088615064461e-05,
+      "online_to_bounded_teacher_ratio": 2.696220767045602,
+      "partial_scope": "9 planned cells; missing cells not imputed"
+    }
+  ],
+  "limitations": [
+    "Initial positive-Q weighted captures are not deployed multi-step capture.",
+    "Path differences combine candidate coverage, ranking, and search interactions.",
+    "The online rule can outperform the greedy full-dictionary path; it is not a global oracle.",
+    "Evaluation-only floors used here do not enter online acceptance."
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "schema": "a17.final.validation.lock.v1",
+  "lock_status": "IMMUTABLE_PRE_HOLDOUT",
+  "created_utc": "2026-10-02T10:18:16.343044+00:00",
+  "permitted_modes": [
+    "replay",
+    "validation",
+    "noise"
+  ],
+  "phases": {
+    "early": 0,
+    "middle": 3,
+    "late": 17
+  },
+  "k": [
+    4,
+    8,
+    16
+  ],
+  "replay_objects": [
+    2001,
+    2007,
+    2012,
+    2014
+  ],
+  "validation_objects": [
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2008,
+    2009,
+    2010,
+    2011,
+    2013,
+    2016
+  ],
+  "noise_objects": [
+    2002,
+    2005,
+    2009,
+    2016
+  ],
+  "noise_percent": [
+    1,
+    3
+  ],
+  "noise_realizations": 3,
+  "noise_phases": [
+    "middle"
+  ],
+  "noise_seed_components": [
+    20261002,
+    "object_id",
+    "basis_points",
+    "realization_index"
+  ],
+  "nonlinear_objects": [
+    2002,
+    2005,
+    2009,
+    2016
+  ],
+  "nonlinear_k": 8,
+  "nonlinear_noise_percent": 0,
+  "nonlinear_outer_cap": 18,
+  "online_incoming_count": 12,
+  "max_finalists_per_round": 2,
+  "max_actions": 3,
+  "anchor_rank": 64,
+  "pool_count": 32,
+  "residual_up_count": 16,
+  "random_pool_count": 10,
+  "pool_and_anchor_seed": 20260930,
+  "master_seed": 20261002,
+  "cuda_candidate_batch": 16,
+  "cpu_threads": 4,
+  "current_stability_relative_min": 1e-10,
+  "endpoint_normal_relative_residual_actual": 1e-10,
+  "reference_relative_residual": 1e-10,
+  "online_tolerance_schema": "a17.online.numerical_significance.v1",
+  "online_tolerance_sha256": "0cb18fc4b91f377c8a1cc96c426bbcff7e000a846b515aa53e59a384466cb8bf",
+  "online_tolerance_safety": 32,
+  "online_tolerance_scale_rule": "abs_gain_terms + ||r||^2 + ||u||^2 + |ell dot x| + lambda ||x||^2; no reference/floor/truth",
+  "online_tolerance_accumulation_length": "real_data_dimension+3*real_material_dimension+16",
+  "acceptance": "Q > tau_online; highest Q among eligible top2; otherwise no-op",
+  "stop_rules": [
+    "ABSTAIN_UNRESOLVED",
+    "MOVE_BUDGET_EXHAUSTED"
+  ],
+  "prior_paid_occupation_s": 4889.515,
+  "cumulative_limit_s": 43200,
+  "max_job_s": 7200,
+  "memory_warning": 0.8,
+  "memory_stop": 0.9,
+  "baseline_lock_sha256": "eb0fe259b9fd524521cd8e6c0eb93e8d5be921ba22dbc057cd5b370be24f2a5e",
+  "input_manifest_sha256": "ef75e7c448756ddce45bf92dedbc19e19c481478a54e42088d1c01232286c944",
+  "holdout_manifest_sha256": "7b83634f34f0b00d61e89e72584a865617690f2f4cbd145c29c56140d2a6e288",
+  "bootstrap_seed": 20261002,
+  "bootstrap_repetitions": 10000,
+  "strict_new_blind_holdout_confirmed": 0,
+  "teacher_evaluation": "offline only; no full labels in online policy",
+  "baseline_lock_path": "research/A17_REMOTE_EXECUTION_BASELINE_LOCK.json",
+  "deployment_sources": {
+    "code/verified_exchange.py": "b237b985377831eb9c93b36449ce84493494ca373769fe74acc0551c1ec421de",
+    "code/closure_runtime.py": "14cee50971f7234d049c0dc3e71f8755a3c248b2ea867088355d86fea3edadc2",
+    "code/closure_state.py": "6ea766c775d20c56665b01b371c06b080259991366d242bedccc591da8c5382f",
+    "code/online_tolerance.py": "0cb18fc4b91f377c8a1cc96c426bbcff7e000a846b515aa53e59a384466cb8bf",
+    "code/run_closure.py": "f7fa41676d92b375c6a7b8552cd9d8f47acab568359e770581f011f5e6201ebe",
+    "code/closure_state_v2.py": "4eb15d3cfc3df786f14fea1a8f030cb9325dbf5d8a40d91803fbacc16b5ec1a5",
+    "code/run_closure_v2.py": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63",
+    "code/run_locked_batch_v3.py": "cd6c97b1df19a2cc08900ecce53de5dff89426736055c01f7da2c99d01788f07"
+  },
+  "replay_fixture_manifest_sha256": "0e3d1caf767a9b6c5f470706415de33902301dbfae527891eb96a95229f7317a",
+  "adapter_bug_version": "v2: bind historical coefficient fixtures by exact fileSHA, not physical-pool byteSHA",
+  "replay_result_before_lock": "36/36 unchanged terminal IDs, steps and Js bitwise;75/75 accepted; zero risk difference",
+  "primary_expected_cells": 99,
+  "noise_expected_cells": 72,
+  "nonlinear_initialization": "existing_scene_init",
+  "independent_unit": "object",
+  "evaluation_floor_online_access": false,
+  "candidate_source_scope": "unchanged154atoms; familybalanced12; anchor64;top2;max3exchanges",
+  "threshold_replay_arrays_sha256": "f800875ece5592a4e287aeba4ffbee2e4f06d95443b6784e90a7d4a11a57b99d"
+}

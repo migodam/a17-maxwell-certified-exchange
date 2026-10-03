@@ -1,0 +1,148 @@
+{
+  "status": {
+    "schema": "a17.closure.collect.v1",
+    "status": "INCOMPLETE_MECHANICAL_COLLECTION",
+    "phase_status": {
+      "replay": "COMPLETE_MECHANICAL_OWNER_REVIEW_REQUIRED",
+      "validation": "INCOMPLETE_OR_CRITICAL_AUDIT_ISSUES",
+      "noise": "INCOMPLETE_OR_CRITICAL_AUDIT_ISSUES"
+    },
+    "critical_issues": 0,
+    "retained_historical_issues": 3,
+    "expected_counts": {
+      "replay": 36,
+      "validation": 99,
+      "noise": 72
+    },
+    "required_counts": {
+      "replay": 36,
+      "validation": 99,
+      "noise": 72
+    },
+    "audited_counts": {
+      "replay": 36
+    },
+    "replay_comparisons": 36,
+    "missing_cells": 171,
+    "issues": 3,
+    "holdout_caveat": "Locked A17-rule validation on historically studied corpus; NOT confirmed blind validation.",
+    "driver_mode_to_user_phase": {
+      "validation": "holdout_validation",
+      "replay": "old36_replay",
+      "noise": "noise_validation"
+    },
+    "manifest_primary_scope": "Locked A17-rule validation on historically studied Maxwell assets; not wholly unseen validation",
+    "confirmed_blind_objects": 0,
+    "manifest_sha256": "7b83634f34f0b00d61e89e72584a865617690f2f4cbd145c29c56140d2a6e288",
+    "scientific_verdict": null,
+    "bootstrap_is_object_cluster_only": true,
+    "old36_cells_are_not_independent": true
+  },
+  "mechanical_metrics": {
+    "accepted_trajectory_equal": {
+      "True": 36
+    },
+    "shortlist_order_equal": {
+      "True": 36
+    },
+    "terminal_selected_ids_equal": {
+      "True": 36
+    },
+    "actual_rank_equal": {
+      "True": 36
+    },
+    "stop_reason_equal": {
+      "True": 36
+    },
+    "state_hash_equal": {
+      "True": 36
+    },
+    "candidate_identity_set_equal": {
+      "True": 36
+    },
+    "candidate_status_equal": {
+      "True": 36
+    },
+    "step_exact_equal": {
+      "True": 36
+    },
+    "Js_exact_equal": {
+      "True": 36
+    },
+    "shortlist_Qhat_exact_equal": {
+      "False": 36
+    },
+    "candidate_Qhat_exact_equal": {
+      "False": 36
+    },
+    "pool_hash_equal": {
+      "False": 36
+    },
+    "max_shortlist_Qhat_max_abs_error": 1.3010426069826053e-18,
+    "max_candidate_score_max_abs_error": 2.7755575615628914e-17,
+    "max_step_max_abs_error": 0.0,
+    "max_step_relative_norm_error": 0.0,
+    "max_Js_max_abs_error": 0.0,
+    "max_Js_relative_norm_error": 0.0,
+    "max_final_risk_abs_error": 0.0,
+    "max_receiver_risk_abs_error": 0.0,
+    "compared_round_arrays": 75,
+    "max_round_step_max_abs_error": 0.0,
+    "max_round_step_relative_norm_error": 0.0,
+    "max_round_Js_max_abs_error": 0.0,
+    "max_round_Js_relative_norm_error": 0.0,
+    "old_accepted_moves": 75,
+    "new_accepted_moves": 75,
+    "max_accepted_Q_true_abs_error": 1.3010426069826053e-18,
+    "max_accepted_Qhat_abs_error": 4.336808689942018e-19,
+    "historical_first_state_variants": [
+      {
+        "object_id": "2007",
+        "phase": "early",
+        "k": "4"
+      },
+      {
+        "object_id": "2007",
+        "phase": "early",
+        "k": "8"
+      },
+      {
+        "object_id": "2007",
+        "phase": "early",
+        "k": "16"
+      }
+    ]
+  },
+  "issues": [
+    {
+      "kind": "CLOSED_FAILED_MONITORED_JOB_NO_SCIENTIFIC_RESULT",
+      "severity": "retained_history",
+      "attempt": "a17_closure_gate0_cuda_v2_bc126c07a4174490bf65e841deeaecdb",
+      "exit_code": 1,
+      "stop_reason": null,
+      "occupation_s": 1.125
+    },
+    {
+      "kind": "CLOSED_FAILED_MONITORED_JOB_NO_SCIENTIFIC_RESULT",
+      "severity": "retained_history",
+      "attempt": "a17_closure_replay_2007_18d0d03080e94bcb9077334079164044",
+      "exit_code": 1,
+      "stop_reason": null,
+      "occupation_s": 9.48399999999674
+    },
+    {
+      "kind": "NONCOMPLETED_STATE_RETAINED",
+      "severity": "retained_history",
+      "known_historical_preselection_hash_failure": true,
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/remote_snapshots/replay_complete/results/replay/object_2007/early",
+      "status": {
+        "status": "FAILED",
+        "error": "ValueError('persisted pool hash mismatch')",
+        "traceback": "Traceback (most recent call last):\n  File \"D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure.py\", line 210, in <module>\n    try:run(args)\n  File \"D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure.py\", line 88, in run\n    t=time.perf_counter();work=persisted_workspace(bundle,persisted)\n  File \"D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\closure_state.py\", line 141, in persisted_workspace\n    raise ValueError('persisted pool hash mismatch')\nValueError: persisted pool hash mismatch\n",
+        "object_id": 2007,
+        "phase": "early"
+      }
+    }
+  ],
+  "scientific_verdict": null
+}

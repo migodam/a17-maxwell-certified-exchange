@@ -1,0 +1,16 @@
+{
+  "status": "FAIL_API_SHAPE_REJECTION",
+  "tests": 11,
+  "passed": 10,
+  "errors": 1,
+  "failed_test": "test_scalar_direction_rejected_cleanly",
+  "observed": "IndexError: tuple index out of range",
+  "expected": "ValueError",
+  "online_tolerance_sha256": "0cb18fc4b91f377c8a1cc96c426bbcff7e000a846b515aa53e59a384466cb8bf",
+  "test_sha256": "20c8ba08d2b52bf5580434fd02aef3bd8a1e130c6a032319a102fb77b0919dea",
+  "log_sha256": "d85e46cc70875b7f71ddf16423ec18cd8c3f8b07178ce44479ee102366112271",
+  "python": "3.13.13",
+  "root_formula_modified": false,
+  "threshold_relaxed": false,
+  "source_hash_capture_limitation": "Source hash was recorded after failing unit execution, not before import. Parent edited validation during this task; this hash is not proof of the loaded failing source text. Initial log is preserved verbatim."
+}

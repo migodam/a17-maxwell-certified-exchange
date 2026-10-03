@@ -1,0 +1,111 @@
+{
+  "cases": [
+    {
+      "common_file": "closure_final/evidence/nonlinear/inputs/object_2002/common_data.npz",
+      "curve_file": "closure_final/audits/nonlinear/curves/2002_receiver_only.json",
+      "object_id": 2002,
+      "policy": "receiver_only",
+      "saved_updates": 18,
+      "state_file": "closure_final/evidence/nonlinear/results/nonlinear_transfer_v1/object_2002/receiver_only/final.npz",
+      "status": "COMPLETED"
+    },
+    {
+      "common_file": "closure_final/evidence/nonlinear/inputs/object_2002/common_data.npz",
+      "curve_file": "closure_final/audits/nonlinear/curves/2002_verified_exchange.json",
+      "object_id": 2002,
+      "policy": "verified_exchange",
+      "saved_updates": 18,
+      "state_file": "closure_final/evidence/nonlinear/results/nonlinear_transfer_v1/object_2002/verified_exchange/final.npz",
+      "status": "COMPLETED"
+    },
+    {
+      "common_file": "closure_final/evidence/nonlinear/inputs/object_2005/common_data.npz",
+      "curve_file": "closure_final/audits/nonlinear/curves/2005_receiver_only.json",
+      "object_id": 2005,
+      "policy": "receiver_only",
+      "saved_updates": 18,
+      "state_file": "closure_final/evidence/nonlinear/results/nonlinear_transfer_v1/object_2005/receiver_only/final.npz",
+      "status": "COMPLETED"
+    },
+    {
+      "common_file": "closure_final/evidence/nonlinear/inputs/object_2005/common_data.npz",
+      "curve_file": "closure_final/audits/nonlinear/curves/2005_verified_exchange.json",
+      "object_id": 2005,
+      "policy": "verified_exchange",
+      "saved_updates": 18,
+      "state_file": "closure_final/evidence/nonlinear/results/nonlinear_transfer_v1/object_2005/verified_exchange/final.npz",
+      "status": "COMPLETED"
+    },
+    {
+      "common_file": "closure_final/evidence/nonlinear/inputs/object_2009/common_data.npz",
+      "curve_file": "closure_final/audits/nonlinear/curves/2009_receiver_only.json",
+      "object_id": 2009,
+      "policy": "receiver_only",
+      "saved_updates": 18,
+      "state_file": "closure_final/evidence/nonlinear/results/nonlinear_transfer_v1/object_2009/receiver_only/final.npz",
+      "status": "COMPLETED"
+    },
+    {
+      "common_file": "closure_final/evidence/nonlinear/inputs/object_2009/common_data.npz",
+      "curve_file": "closure_final/audits/nonlinear/curves/2009_verified_exchange.json",
+      "object_id": 2009,
+      "policy": "verified_exchange",
+      "saved_updates": 18,
+      "state_file": "closure_final/evidence/nonlinear/results/nonlinear_transfer_v1/object_2009/verified_exchange/final.npz",
+      "status": "COMPLETED"
+    },
+    {
+      "object_id": 2016,
+      "policy": "receiver_only",
+      "saved_updates": 0,
+      "status": "NOT_RUN"
+    },
+    {
+      "common_file": "closure_final/evidence/nonlinear/inputs/object_2016/common_data.npz",
+      "curve_file": "closure_final/audits/nonlinear/curves/2016_verified_exchange.json",
+      "object_id": 2016,
+      "policy": "verified_exchange",
+      "saved_updates": 17,
+      "state_file": "closure_final/evidence/nonlinear/results/nonlinear_transfer_v1/object_2016/verified_exchange/last_safe_state.npz",
+      "status": "FAILED_PREFIX"
+    }
+  ],
+  "counts": {
+    "completed": 6,
+    "failed_prefix": 1,
+    "not_run": 1,
+    "planned": 8
+  },
+  "files": {
+    "closure_final/audits/nonlinear/curves/2002_receiver_only.json": "19e6e8dd68000706c81a9f322af54b26ce64cb7dab9809747f9d76cc31927976",
+    "closure_final/audits/nonlinear/curves/2002_verified_exchange.json": "010cfd2964b2e896d3cb12f75a425916dade4bb428b4f637c5b951fcc29fbbcb",
+    "closure_final/audits/nonlinear/curves/2005_receiver_only.json": "17e8d26106cfcbb9159bec6f55e754a1dec9f70d40c86f53d85a52681f9cab9b",
+    "closure_final/audits/nonlinear/curves/2005_verified_exchange.json": "1c882fa0bd05db973710fa39fc17c53b8bef5416d7ce612b812afabf724779a5",
+    "closure_final/audits/nonlinear/curves/2009_receiver_only.json": "ea87255553d2c73ac7b9814b713fec1adf165d2926b7171e964be63ddfbcc982",
+    "closure_final/audits/nonlinear/curves/2009_verified_exchange.json": "0a4334bf0aa4be4e67dddfbcd12fc8b0fae8994b575e9746c8f34d5e86fddc26",
+    "closure_final/audits/nonlinear/curves/2016_verified_exchange.json": "2b05a87653540a2e283a119e7832657d84388478f54bf19b6a39dbbb41cde08d",
+    "closure_final/evidence/nonlinear/inputs/object_2002/common_data.npz": "c279daff286f902a2b6178e16708d5977d95279632e526bbf37c925c61dc0f0b",
+    "closure_final/evidence/nonlinear/inputs/object_2005/common_data.npz": "5d73f2831ea58ba5d0a48640fdcdf033a6ed52d5c7f2399584e90da9e0e07e75",
+    "closure_final/evidence/nonlinear/inputs/object_2009/common_data.npz": "097b06cc87a7e58373c7f17fb91e195a10f7431e363d8bbba21c8c3b5efd1c3c",
+    "closure_final/evidence/nonlinear/inputs/object_2016/common_data.npz": "5f6a83847dcfbdf012277149b1445bc49f13f923129e2245f9424048dd3ba5cf",
+    "closure_final/evidence/nonlinear/results/nonlinear_transfer_v1/object_2002/receiver_only/final.npz": "de344e0dec9560417e44001a5557120794be755f544b21ab6a776a555eb3c9cc",
+    "closure_final/evidence/nonlinear/results/nonlinear_transfer_v1/object_2002/verified_exchange/final.npz": "102797699a57a07f2bb1120cfd7e2494b066072da7b3358eb547254ede09a790",
+    "closure_final/evidence/nonlinear/results/nonlinear_transfer_v1/object_2005/receiver_only/final.npz": "804a8ae5c960d47c7071bd9dc32bb2ea2451e78012039c2fb34bd5a7daa331d1",
+    "closure_final/evidence/nonlinear/results/nonlinear_transfer_v1/object_2005/verified_exchange/final.npz": "2be44491f66c09a307769cfb2831f4497033c7fa8d45d8d94987b3142c896d70",
+    "closure_final/evidence/nonlinear/results/nonlinear_transfer_v1/object_2009/receiver_only/final.npz": "7000e45130ec377b642c8700f3ab883d06de82cd1d41346a2b51711ec38d8302",
+    "closure_final/evidence/nonlinear/results/nonlinear_transfer_v1/object_2009/verified_exchange/final.npz": "ebb00e5a217a7e84fe6f9d0b8d82fa166a55234b51925cfb6b7d274880220fa1",
+    "closure_final/evidence/nonlinear/results/nonlinear_transfer_v1/object_2016/verified_exchange/last_safe_state.npz": "a997ee08103d6484e8fb9301d6c498541421d2c153637bc5cff2ac1843c83401"
+  },
+  "grid_shape": [
+    12,
+    12,
+    12
+  ],
+  "objective_regularization_lambda2": 1e-05,
+  "schema": "a17.public.saved.nonlinear.inputs.v1",
+  "source_reference_sha256": {
+    "build_figures.py": "0dcab78ada5aab167ccd8b67440232dfe1367161da28b7b31b0c017cdaf447b8",
+    "collect_saved_nonlinear_v2.py": "f09fc95f40c7fb557ca43165d8a289efeaba3cd85a8c81f5f752b27a04f5aec4"
+  },
+  "synthetic_fixture": false
+}

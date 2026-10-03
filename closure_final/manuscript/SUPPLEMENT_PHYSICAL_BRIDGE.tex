@@ -1,0 +1,50 @@
+\subsection*{The continuous scattering picture}
+The starting point is the vector-Maxwell volume-integral equation for an isotropic, nonmagnetic dielectric. For one illumination, write the induced current, or equivalently a consistently scaled contrast source, schematically as
+\[
+j(\boldsymbol r)=X(\boldsymbol r)\left[E^{\rm inc}(\boldsymbol r)
++\int_D G_D(\boldsymbol r,\boldsymbol r')j(\boldsymbol r')\,d\boldsymbol r'\right].
+\]
+Here $G_D$ maps source currents to the internal electric field, $X$ is the local material response, and the bracket is the total field $E^{\rm tot}$. The singular self-interaction is understood in the chosen Maxwell volume-integral convention; the implemented cell self-response is specified below. The physical constants associated with the source convention are included consistently in $X$ and the Green maps.
+
+A small admissible change $\delta\chi$ changes both the local material response and the field produced by the currents. Differentiating at the current material state gives
+\[
+\delta j(\boldsymbol r)=DX[\delta\chi](\boldsymbol r)E^{\rm tot}(\boldsymbol r)
++X(\boldsymbol r)\int_DG_D(\boldsymbol r,\boldsymbol r')\delta j(\boldsymbol r')\,d\boldsymbol r'.
+\]
+The first term injects the material perturbation into the current equation. The second rescatters the resulting current perturbation. Moving rescattering to the left defines
+\[
+L=I-XG_D,\qquad \mathcal B\delta\chi=DX[\delta\chi]E^{\rm tot},
+\qquad L\delta j=\mathcal B\delta\chi.
+\]
+For receiver channel $m$, including its polarization readout, the observation equation is
+\[
+\delta y_m=\int_DG_{S,m}(\boldsymbol r_m,\boldsymbol r')\delta j(\boldsymbol r')\,d\boldsymbol r'
+=:(S\delta j)_m.
+\]
+At a well-posed material state where $L$ is invertible, $\delta y=SL^{-1}\mathcal B\delta\chi$. In physical material coordinates $\delta\chi=Q_Ts$, define $B=\mathcal BQ_T$; the material Jacobian is then $J=SL^{-1}B$. Receiver normalization or noise weighting, when used, is included in $S$ and the data inner product.
+
+Carrying the spatial integrals through each elimination, adjoint pullback, and multi-illumination calculation would obscure this structure. We therefore use operator notation from this point onward. Three levels remain distinct: the continuous contrast-source equation supplies the physical interpretation; $L\delta j=Bs$, $\delta y=S\delta j$ supplies the abstract derivative structure; and the implemented DDA realizes the local response through the contrast-dependent cell polarizability $a(\chi)$. Its $B$ contains $a'(\chi)$ and the three-component total field, as shown in (S2)--(S3).
+
+\subsection*{Why an adjoint returns information to material space}
+The adjoint is defined by the data and physical material inner products:
+\[
+\langle Js,q\rangle_{\rm data}=\langle s,J^*q\rangle_{\rm material},
+\qquad J^*=B^*L^{-*}S^*.
+\]
+Here $^*$ denotes adjoints in the realified data, current, and physical material spaces. Equivalently, in metric-normalized complex arrays with real material coordinates, $J^*q=\operatorname{Re}(B^HL^{-H}S^Hq)$. The coordinate convention below makes this real-part pullback explicit.
+
+Whereas $J$ predicts the measurement change caused by a material direction, $J^*$ maps a receiver residual or test vector to material directions that could explain it. Read the adjoint product from right to left: $S^*q$ puts receiver information into the current equation; $L^{-*}$ propagates it through the adjoint multiple-scattering system; $B^*$ pulls that response back through the local-field and material factors. This is an adjoint source calculation with the stated metrics, rather than a new physical illumination experiment.
+
+This return path prepares the two material factors used below. $J_0^*Y_C$ pulls the added observation through the original material sensitivity, while $N_C^*$ returns information through the added material-injection path. Both enter when the material normal equation changes.
+
+\subsection*{How a retained current basis produces feedback}
+Approximate a current perturbation by $\delta j(\boldsymbol r)=\sum_i v_i(\boldsymbol r)\alpha_i$. Galerkin testing requires the current-equation residual to be orthogonal to the retained basis $V$. Hence $V^*LV\alpha=V^*Bs$, and, for an invertible retained block,
+\[
+R_0=V(V^*LV)^{-1}V^*,\qquad \delta j_0=R_0Bs.
+\]
+$R_0$ is the reduced current solution operator. Add orthonormal directions $C$ outside $V$. Eliminating the old coefficients leaves a Schur equation for the new ones. Back-substitution produces
+\[
+\bar C=(I-R_0L)C=C+R_0XG_DC,\qquad
+Y_C=S\bar C,\quad N_C=C^*(B-LR_0B),\quad\Gamma_C=C^*L\bar C.
+\]
+The added current directly radiates through $SC$ and also excites retained currents, whose response returns through $SR_0XG_DC$. Their sum $S\bar C$ is the dressed observation. Thus $\bar C$ follows from solving the retained feedback loop, with no empirical correction factor. Proposition 1 in the main manuscript gives the elimination and invertibility conditions. The next subsection fixes the coordinates and the exact DDA realization needed to evaluate these operators.

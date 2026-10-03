@@ -1,0 +1,31 @@
+\section{Completed constrained reconstruction pairs}
+All saved completed updates satisfy the common feasibility and Armijo checks. The three complete pairs reach the shared 18-update cap. Their complete-volume material errors, measured and held-out data errors, and total child walls are reported in Table~\ref{tab:supp-nonlinear}. The near-contact real component worsens slightly even while data errors decrease. This is a useful separation between local full-model fidelity and estimator quality.
+
+\begin{table}[htbp]\centering\small
+\caption{Nonlinear endpoints: unchanged receiver $\to$ verified exchange. Each wall measurement includes its own setup, acquisition, outer work, rejection and terminal evaluation; it is one trajectory timing, not a timing confidence interval.}\label{tab:supp-nonlinear}
+\begin{tabular}{lrrr}\toprule
+Quantity&Smooth / voxel&Near-contact / Gaussian&Shell / Gaussian\\\midrule
+Complex-material error&$.30266\to.26986$&$.67219\to.67068$&$.60964\to.56599$\\
+Real-material error&$.28114\to.25156$&$.68104\to.68346$&$.60815\to.56506$\\
+Imaginary-material error&$.74388\to.65064$&$.44390\to.28589$&$.69755\to.62190$\\
+Measured-data error&$.006637\to.002837$&$.010532\to.007083$&$.014179\to.012178$\\
+Held-out data error&$.006637\to.002836$&$.010521\to.007080$&$.014190\to.012179$\\
+Child wall (s)&$216.46\to579.89$&$407.71\to710.49$&$405.90\to592.29$\\
+Wall ratio&2.679&1.743&1.459\\
+Full-forward RHS&$354\to390$&$696\to762$&$690\to552$\\
+Full-adjoint RHS&$108\to108$&$108\to108$&$108\to108$\\
+Full tangent $Jx$ RHS&$0\to108$&$0\to108$&$0\to108$\\
+Full tangent $Jd$ RHS&$0\to600$&$0\to636$&$0\to636$\\\bottomrule
+\end{tabular}
+\end{table}
+
+The fourth object's exchange trajectory saves 17 completed accepted updates. Before update 18, construction of that trajectory's receiver-derived starting endpoint fails the frozen normal-residual test. The separate receiver-only job is not run after this fault. Thus there are six completed trajectories, one failed trajectory with a verified prefix, and one not-run baseline among eight planned jobs. No final paired material comparison is inferred for this object.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=.93\linewidth]{figures/nonlinear_closure_v1/nonlinear_objective_curves.pdf}
+\caption{Accepted nonlinear objectives for the three complete pairs and the separate fourth-object prefix. The latter has no completed receiver-only comparator. Its failure and the unrun baseline remain in the eight-job denominator.}
+\end{figure}
+
+\input{CLOSURE_SUPPLEMENT_COVERAGE.tex}
+
+\input{CLOSURE_SUPPLEMENT_COST.tex}

@@ -1,0 +1,9 @@
+# Final closure release contents
+
+The final manuscript, Chinese reports and technical supplement are under manuscript/. The reported scientific position is a Maxwell mechanism and conditional-design paper: median object-summed frozen-GN gap decreases by 50.7% across ten complete additional objects. Formal submission still requires the source-level novelty and authorship work identified in reports/FINAL_SUBMISSION_READINESS.md.
+
+Large saved evidence is in three GitHub release volumes at tag `a17-final-closure-2026-10-03`. The volumes are source/science arrays and metadata deduplicated by SHA, with 8,138 original aliases retained in ALIAS_BLOB_INDEX.json. Download the ZIP volumes to a local VOLUME_DIR and use REPRODUCE_FINAL.md. Index SHA is `13d41095d29c7807556d28d02524a94df9b43ddbdd34f630ac13cdd176f0de0d`. The index's published:false values record the local build-time state; successful hosting is represented by the GitHub release, rather than a rewrite of these audited build receipts.
+
+The code-only/root comparison initially selected all current/ aliases, including NPZ arrays deliberately stored in release volumes and absent from Git. That invocation failed on layout scope. The subsequent complete source check reads archived Python and Git source directly and passes all 86 Python aliases/191 matrix-multiply nodes, preserving their bytes. Public saved-array reanalysis and 41 synthetic tests also pass. This is a packaging check, not evidence of new Maxwell performance.
+
+The nonlinear full-metric mode intentionally retains the failed fourth object's unavailable fields as null; it is not converted into a complete pair. The private raw cost authority remains excluded, while public fee derivatives reproduce all failed charges and totals. No research source was redacted or rewritten, and no new physics, network training or solver experiment was run during publication.

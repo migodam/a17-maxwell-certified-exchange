@@ -1,0 +1,32 @@
+{
+  "schema": "a17.owner.final.pdf.delivery.v1",
+  "status": "FINAL_COPIED_BYTE_IDENTICALLY_AFTER_53_PAGE_VISUAL_REVIEW",
+  "pages": 53,
+  "source_manifest_sha256": "cb5863bad8e6a35de09e21aa49956ec8aedd35d345e0e725ad8d1b178506a7c1",
+  "page_review_sha256": "1b37cd5091145454f8c65cf2ff8163dcd0f4462e489da119725fc1a0cead1f6b",
+  "visual_receipt_sha256": "c1de252eb06b361aff25eddf8376cc59f2f3e52feb54766ce2cb7e14322b4a3d",
+  "owner_layout_approved": true,
+  "old_outputs_preserved": true,
+  "pdfs": {
+    "PAPER_TAP_FINAL.pdf": {
+      "sha256": "8644124916578d0159e070f330fd1978811fabcdaad6726983cb0ab2c5abc7de",
+      "bytes": 1225859,
+      "pages": 11
+    },
+    "PAPER_SUPPLEMENT_FINAL.pdf": {
+      "sha256": "10aac9e48441fbef0a8d46fecb84fcac9732e82d80e034e45e3a5e5be79d38e7",
+      "bytes": 220129,
+      "pages": 11
+    },
+    "REPORT_TO_XUDONG_FINAL.pdf": {
+      "sha256": "3332cf998e42275e9df7acc635097c0dce6f5f37ca716542625ef53b284436e7",
+      "bytes": 1266635,
+      "pages": 7
+    },
+    "READER_GUIDE_FINAL.pdf": {
+      "sha256": "2657efe8a52ac94c53d2c724f74fc3dcb8f2da310dbe73031630407665315f17",
+      "bytes": 1519611,
+      "pages": 24
+    }
+  }
+}

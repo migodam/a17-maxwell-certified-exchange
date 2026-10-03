@@ -1,0 +1,12 @@
+all_planned_initial_complete,anchor_top1_raw_noop_capture,anchor_top1_significance_verified_noop_capture,balanced12_capture,complete_initial_cells,object_id,planned_cells,positive_teacher_cells_observed,scope,teacher_positive_gain_sum
+True,0.9991722477523135,0.9991722477523135,0.6879345461250665,9,2002,9,9,Initial receiver neighborhood only; positive-full-teacher-Q weighted; zero opportunities excluded from ratio weights,0.0006742869332513632
+True,0.9970637949024033,0.9970637949024033,0.9530729105328387,9,2003,9,9,Initial receiver neighborhood only; positive-full-teacher-Q weighted; zero opportunities excluded from ratio weights,0.0023145940863120275
+True,0.9936140215496023,0.9936140215496023,0.7098620914460337,9,2004,9,9,Initial receiver neighborhood only; positive-full-teacher-Q weighted; zero opportunities excluded from ratio weights,0.0004619909468524697
+True,0.999851110001978,0.999851110001978,0.7491671126236435,9,2005,9,9,Initial receiver neighborhood only; positive-full-teacher-Q weighted; zero opportunities excluded from ratio weights,0.0008128774327226045
+True,0.9962599573629886,0.9962599573629886,0.890938704161741,9,2006,9,9,Initial receiver neighborhood only; positive-full-teacher-Q weighted; zero opportunities excluded from ratio weights,0.009407325344146723
+True,0.9902694904007793,0.9902694904007793,0.8915825863070821,9,2008,9,9,Initial receiver neighborhood only; positive-full-teacher-Q weighted; zero opportunities excluded from ratio weights,0.0004067410554239771
+True,0.9958121508503832,0.9958121508503832,0.6464669245823128,9,2009,9,9,Initial receiver neighborhood only; positive-full-teacher-Q weighted; zero opportunities excluded from ratio weights,0.0014703776458449749
+True,0.9730198774817673,0.9730198774817673,0.5671910853465261,9,2010,9,9,Initial receiver neighborhood only; positive-full-teacher-Q weighted; zero opportunities excluded from ratio weights,0.0018398286367474037
+True,0.9949383938505051,0.9949383938505051,0.4911935488613052,9,2011,9,9,Initial receiver neighborhood only; positive-full-teacher-Q weighted; zero opportunities excluded from ratio weights,0.0019002440933528575
+True,0.9923043428410986,0.9923043428410986,0.8371206767690735,9,2013,9,9,Initial receiver neighborhood only; positive-full-teacher-Q weighted; zero opportunities excluded from ratio weights,0.000576699814766516
+False,,,,6,2016,9,6,Initial receiver neighborhood only; positive-full-teacher-Q weighted; zero opportunities excluded from ratio weights,

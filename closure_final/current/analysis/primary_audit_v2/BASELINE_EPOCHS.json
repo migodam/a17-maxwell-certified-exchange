@@ -1,0 +1,23 @@
+{
+  "epochs": [
+    {
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/remote_snapshots/primary_complete_v1/research/A17_BASELINE_LOCK.json",
+      "sha256": "6317976787509a7680826f12a891695af7ccd45dcd4bf6834c84a76e88263a00",
+      "read_only_code_count": 14,
+      "epoch_scope": null,
+      "local_only_nonruntime_files": {},
+      "prior_paid_occupation_s": 4889.515
+    },
+    {
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/remote_snapshots/primary_complete_v1/research/A17_REMOTE_EXECUTION_BASELINE_LOCK.json",
+      "sha256": "eb0fe259b9fd524521cd8e6c0eb93e8d5be921ba22dbc057cd5b370be24f2a5e",
+      "read_only_code_count": 13,
+      "epoch_scope": "Actual unchanged remote runtime source epoch: 13 executable files plus original metadata; local-only audit_first_state.py never required/imported by this runtime",
+      "local_only_nonruntime_files": {
+        "code/audit_first_state.py": "b0f9fde52e53a33e91d05b60154a31977fe217f2ee481111541a3cfbef4a139c"
+      },
+      "prior_paid_occupation_s": 4889.515
+    }
+  ],
+  "scope": "13 remote executable files vs14 local code files; local-only audit_first_state.py is nonruntime; preserve separate lock hashes rather than equate epochs"
+}

@@ -1,0 +1,7 @@
+{
+  "status": "FAILED",
+  "error": "ValueError('RECEIVER_ENDPOINT_NORMAL_RESIDUAL_FAILED')",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py\", line 214, in <module>\n    try:run(args)\n  File \"D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py\", line 144, in run\n    record,endpoint=online_exchange(w.ctx,w,engine,w.anchor,action,k,out/f'k{k}',identity)\n  File \"D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\verified_exchange.py\", line 58, in online_exchange\n    raise ValueError('RECEIVER_ENDPOINT_' + receiver['status'][0])\nValueError: RECEIVER_ENDPOINT_NORMAL_RESIDUAL_FAILED\n",
+  "object_id": 2016,
+  "phase": "late"
+}

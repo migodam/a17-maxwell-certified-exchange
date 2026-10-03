@@ -1,0 +1,168 @@
+{
+  "derivation_identity": "NEW_PUBLIC_REANALYSIS_NOT_HISTORICAL_RUNTIME",
+  "objective_curve": [
+    {
+      "accepted": true,
+      "iteration": 0,
+      "object_id": 2009,
+      "objective_after": 0.0031660877774575802,
+      "objective_before": 0.13541038254328186,
+      "policy": "receiver_only",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 1,
+      "object_id": 2009,
+      "objective_after": 0.0005435849466994871,
+      "objective_before": 0.0031660877774575794,
+      "policy": "receiver_only",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 2,
+      "object_id": 2009,
+      "objective_after": 0.00025424542563414523,
+      "objective_before": 0.0005435849466994871,
+      "policy": "receiver_only",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 3,
+      "object_id": 2009,
+      "objective_after": 0.00022521453200029189,
+      "objective_before": 0.0002542454256341453,
+      "policy": "receiver_only",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 4,
+      "object_id": 2009,
+      "objective_after": 0.00018594517074294704,
+      "objective_before": 0.00022521453200029183,
+      "policy": "receiver_only",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 5,
+      "object_id": 2009,
+      "objective_after": 0.00017590159896060904,
+      "objective_before": 0.00018594517074294699,
+      "policy": "receiver_only",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 6,
+      "object_id": 2009,
+      "objective_after": 0.00014896856734596844,
+      "objective_before": 0.00017590159896060896,
+      "policy": "receiver_only",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 7,
+      "object_id": 2009,
+      "objective_after": 0.00013467015472968245,
+      "objective_before": 0.00014896856734596844,
+      "policy": "receiver_only",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 8,
+      "object_id": 2009,
+      "objective_after": 0.00012778136413104816,
+      "objective_before": 0.00013467015472968245,
+      "policy": "receiver_only",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 9,
+      "object_id": 2009,
+      "objective_after": 0.00012085294551301978,
+      "objective_before": 0.00012778136413104816,
+      "policy": "receiver_only",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 10,
+      "object_id": 2009,
+      "objective_after": 0.00011677285601113673,
+      "objective_before": 0.00012085294551301975,
+      "policy": "receiver_only",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 11,
+      "object_id": 2009,
+      "objective_after": 0.00011401481182076576,
+      "objective_before": 0.00011677285601113677,
+      "policy": "receiver_only",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 12,
+      "object_id": 2009,
+      "objective_after": 0.00011230719431692481,
+      "objective_before": 0.00011401481182076576,
+      "policy": "receiver_only",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 13,
+      "object_id": 2009,
+      "objective_after": 0.00010742926708079577,
+      "objective_before": 0.0001123071943169248,
+      "policy": "receiver_only",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 14,
+      "object_id": 2009,
+      "objective_after": 0.00010647014377670193,
+      "objective_before": 0.00010742926708079577,
+      "policy": "receiver_only",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 15,
+      "object_id": 2009,
+      "objective_after": 0.0001064620023806572,
+      "objective_before": 0.0001064701437767019,
+      "policy": "receiver_only",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 16,
+      "object_id": 2009,
+      "objective_after": 0.00010212371678894692,
+      "objective_before": 0.0001064620023806572,
+      "policy": "receiver_only",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 17,
+      "object_id": 2009,
+      "objective_after": 0.00010113178829741431,
+      "objective_before": 0.00010212371678894692,
+      "policy": "receiver_only",
+      "scope": "COMPLETED_ENDPOINT"
+    }
+  ],
+  "source_merged_curves_sha256": "b746333c6254d488a671fd13e72b74ec91dd8e77fed99647bf586227c31522ff"
+}

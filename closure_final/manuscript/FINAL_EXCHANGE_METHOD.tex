@@ -1,0 +1,35 @@
+\section{Receiver-Centered Conditional Exchange}
+\subsection{Proposal, finite check, and recomputation}
+For each state, start with the first $k$ receiver singular directions, with $k=4,8,16$ complex current columns shared by all illuminations. Subsequent exchanges can replace these directions; the preserved quantity is current rank, not every original receiver column. The admissible real material coordinates, forward residual, material injection, prior, and damping are unchanged. An auxiliary common embedding caches the projected current, receiver, and injection operators. Its dimension is not the retained current dimension: each evaluated Galerkin endpoint still has exactly $k$ independent columns. This is a comparison at equal representation dimension. Anchor acquisition, the dictionary and directional checks are additional information and computation paid by the exchange policy, and are recorded separately.
+
+The frozen proposal rule uses the existing current dictionary and a family-balanced pool of 12 incoming atoms. Its six sources are receiver modes, internal-propagation modes, Fourier modes, anchor primal/dual responses, anchor current-equation residuals, and fixed random currents. Cycling through this fixed source order selects two available atoms per source, excluding already selected atoms. A 64-column reduced anchor supplies an independent approximation to the full quadratic for ranking. Removing one retained atom and adding one incoming atom defines a concrete replacement. We solve its endpoint material problem and rank the actual displacement using the anchor finite gain. All conditional factors, including the complete Schur coupling, are recomputed after an accepted action. Singular common cores use stable direct endpoint calculations; endpoints failing the frozen current-stability or normal-equation-residual criteria are rejected. Both relative cutoffs are $10^{-10}$; a small normal residual and a well-conditioned current block are separate requirements.
+
+Only the two highest-ranked feasible finalists receive full directional checks. The current output $J_Fx$ is cached and a finalist requires $J_Fd$. Each direction costs one current right-hand side per illumination. Among the checked finalists, the largest gain above the online numerical tolerance is accepted. Otherwise the state remains unchanged and the algorithm abstains within its tested pool. The procedure terminates after three accepted replacements or an abstention. Untested incoming atoms can contain useful actions, so this stopping rule does not establish full-dictionary local optimality.
+
+\subsection{An online numerical significance threshold}
+All proposal and acceptance inputs are available without the full optimal material step. For FP64 arrays define
+\begin{equation}\label{eq:online-scale}
+\begin{split}
+S_Q={}&\sum_i|u_i||z_i|+\sum_j|(\ell+\Lambda x)_j||d_j|\\
+&+\tfrac12\|z\|^2+\tfrac12\lambda\|d\|^2+\|r\|^2+\|u\|^2\\
+&+|\ell^Tx|+\lambda\|x\|^2,
+\end{split}
+\end{equation}
+where the implemented regularization is $\Lambda=\lambda I$. With $m_R$ real data entries, $d_R$ real material entries, machine precision $\epsilon_{64}$, and $n=m_R+3d_R+16$, use
+\begin{equation}\label{eq:online-tolerance}
+\tau_{\rm online}=32\,\mathrm{tiny}_{64}
++32\frac{n\epsilon_{64}}{1-n\epsilon_{64}}S_Q.
+\end{equation}
+Here $\mathrm{tiny}_{64}$ is the smallest positive normal FP64 number, as returned by the implemented floating-point type. The factor 32 and summation scale were fixed analytically before validation. The initial-output terms retain the numerical scale when a proposed displacement is extremely small. This tolerance assesses floating-point significance in the reported gain; it is not a bound on Maxwell discretization or current-solve output error. The present experiments therefore use \emph{high-fidelity numerical verification}. A deterministic acceptance certificate would additionally require the valid output-error radii stated in the preceding section.
+
+The earlier evaluation-derived floor is excluded from the controller. Physical replay of all 36 original cells verifies this change: all 75 accepted replacements, final spaces, material steps, and directional outputs are unchanged. The replayed final and receiver gaps each agree exactly with their pre-replay values. Full optimal steps are loaded only after all online endpoints for a state have been saved, for evaluation.
+
+\subsection{What is evaluated}
+The primary metric is the frozen full-GN quadratic gap
+\begin{equation}\label{eq:gn-gap}
+R_{\rm GN}(U)=\Phi_F(s_U)-\Phi_F(s_*)
+=\tfrac12\|s_U-s_*\|_{H_F}^{2}.
+\end{equation}
+The identity in (\ref{eq:gn-gap}) uses the exact optimizer. A numerically converged reference $\tilde s_*$ retains the term $g_F(\tilde s_*)^T(s_U-\tilde s_*)$ when its quadratic gap is evaluated; the true reference residual and evaluation-only floor are stored separately. The full optimizer is an offline reference. Each object is summarized by the sum of its eligible state--budget gaps divided by the corresponding receiver sum. Absolute gaps and normalized $H_F$ step errors accompany ratios, particularly when the receiver gap is small. Independent aggregation and bootstrap resampling use objects; multiple states and budgets of one object are correlated measurements.
+
+For nonlinear transfer, both policies use the same full forward model, physical material parameterization, constraints, damping, prior, and line search. Only the tangent-current policy changes. The finite frozen gain applies to its unprojected displacement. A projected or backtracked nonlinear step is subsequently judged by the common full nonlinear objective.

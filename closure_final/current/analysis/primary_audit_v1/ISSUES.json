@@ -1,0 +1,70 @@
+[
+  {
+    "kind": "CLOSED_FAILED_MONITORED_JOB_NO_SCIENTIFIC_RESULT",
+    "severity": "retained_history",
+    "attempt": "a17_closure_gate0_cuda_v2_bc126c07a4174490bf65e841deeaecdb",
+    "exit_code": 1,
+    "stop_reason": null,
+    "occupation_s": 1.125
+  },
+  {
+    "kind": "CLOSED_FAILED_MONITORED_JOB_NO_SCIENTIFIC_RESULT",
+    "severity": "retained_history",
+    "attempt": "a17_closure_locked_validation_continuation_v1_2016_04a22623ea944b76a824ae6aa4285358",
+    "exit_code": 1,
+    "stop_reason": null,
+    "occupation_s": 100.60899999999674
+  },
+  {
+    "kind": "CLOSED_FAILED_MONITORED_JOB_NO_SCIENTIFIC_RESULT",
+    "severity": "retained_history",
+    "attempt": "a17_closure_replay_2007_18d0d03080e94bcb9077334079164044",
+    "exit_code": 1,
+    "stop_reason": null,
+    "occupation_s": 9.48399999999674
+  },
+  {
+    "kind": "TERMINAL_AUDIT_REJECTED",
+    "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/remote_snapshots/primary_complete_v1/results/locked_validation_continuation_v1/object_2016/early",
+    "reasons": [
+      "NO_UNIQUE_DIRECT_OR_EXACT_BATCH_PAIRED_BINDING",
+      "BATCH_BINDING_ERRORS:[{\"attempt\": \"a17_closure_gate0_cuda_v2_bc126c07a4174490bf65e841deeaecdb\", \"error\": \"ValueError('monitored parent not one of exact reviewed serial runner names')\"}, {\"attempt\": \"a17_closure_gate0_cuda_v3_c9f6b834b24b4425a1451d6510b46afa\", \"error\": \"ValueError('monitored parent not one of exact reviewed serial runner names')\"}, {\"attempt\": \"a17_closure_locked_validation_continuation_v1_2003_e62ac5b29b1d42ecac5b63720e7e0f10\", \"error\": \"ValueError('parent command/batch mode-object mismatch')\"}, {\"attempt\": \"a17_closure_locked_validation_continuation_v1_2004_abb477d73a064ae1b10a355cc1b6faf7\", \"error\": \"ValueError('parent command/batch mode-object mismatch')\"}, {\"attempt\": \"a17_closure_locked_validation_continuation_v1_2005_92e605d173434ee8851cdcb9d151a257\", \"error\": \"ValueError('parent command/batch mode-object mismatch')\"}, {\"attempt\": \"a17_closure_locked_validation_continuation_v1_2006_858bf52a07154e46996f117b114eeaef\", \"error\": \"ValueError('parent command/batch mode-object mismatch')\"}, {\"attempt\": \"a17_closure_locked_validation_continuation_v1_2008_ec18dd78aa984bef83c87fc401c03e68\", \"error\": \"ValueError('parent command/batch mode-object mismatch')\"}, {\"attempt\": \"a17_closure_locked_validation_continuation_v1_2009_a849071e93854311b14c0f3374326e40\", \"error\": \"ValueError('parent command/batch mode-object mismatch')\"}, {\"attempt\": \"a17_closure_locked_validation_continuation_v1_2010_167ddd9956d4416ead95ca711b1c5b13\", \"error\": \"ValueError('parent command/batch mode-object mismatch')\"}, {\"attempt\": \"a17_closure_locked_validation_continuation_v1_2011_7dab4fa1f0964848bdbef12aebd1eeac\", \"error\": \"ValueError('parent command/batch mode-object mismatch')\"}, {\"attempt\": \"a17_closure_locked_validation_continuation_v1_2013_258c710f6fc64761805c7d5a5cf78e31\", \"error\": \"ValueError('parent command/batch mode-object mismatch')\"}, {\"attempt\": \"a17_closure_locked_validation_continuation_v1_2016_04a22623ea944b76a824ae6aa4285358\", \"error\": \"ValueError('batch row path/returncode/status invalid')\"}, {\"attempt\": \"a17_closure_locked_validation_v1_2002_e3dd53c45173436b8006b14e4a049be2\", \"error\": \"ValueError('parent command/batch mode-object mismatch')\"}, {\"attempt\": \"a17_closure_replay_2007_18d0d03080e94bcb9077334079164044\", \"error\": \"ValueError('parent command/batch mode-object mismatch')\"}, {\"attempt\": \"a17_closure_replay_2007_v2_e219059d9d3b4362886a47dcff3da659\", \"error\": \"ValueError('parent command/batch mode-object mismatch')\"}, {\"attempt\": \"a17_closure_replay_remaining_v2_2001_7016d76662014c3d98910ea298dfe051\", \"error\": \"ValueError('parent command/batch mode-object mismatch')\"}, {\"attempt\": \"a17_closure_replay_remaining_v2_2012_779a36662bac440aa852f9ff678d7168\", \"error\": \"ValueError('parent command/batch mode-object mismatch')\"}, {\"attempt\": \"a17_closure_replay_remaining_v2_2014_ae31117d083b4246a36e7125d4593113\", \"error\": \"ValueError('parent command/batch mode-object mismatch')\"}]"
+    ],
+    "severity": "critical"
+  },
+  {
+    "kind": "NONCOMPLETED_STATE_RETAINED",
+    "severity": "critical",
+    "known_historical_preselection_hash_failure": false,
+    "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/remote_snapshots/primary_complete_v1/results/locked_validation_continuation_v1/object_2016/late",
+    "status": {
+      "status": "FAILED",
+      "error": "ValueError('RECEIVER_ENDPOINT_NORMAL_RESIDUAL_FAILED')",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py\", line 214, in <module>\n    try:run(args)\n  File \"D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py\", line 144, in run\n    record,endpoint=online_exchange(w.ctx,w,engine,w.anchor,action,k,out/f'k{k}',identity)\n  File \"D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\verified_exchange.py\", line 58, in online_exchange\n    raise ValueError('RECEIVER_ENDPOINT_' + receiver['status'][0])\nValueError: RECEIVER_ENDPOINT_NORMAL_RESIDUAL_FAILED\n",
+      "object_id": 2016,
+      "phase": "late"
+    }
+  },
+  {
+    "kind": "TERMINAL_AUDIT_REJECTED",
+    "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/remote_snapshots/primary_complete_v1/results/locked_validation_continuation_v1/object_2016/middle",
+    "reasons": [
+      "NO_UNIQUE_DIRECT_OR_EXACT_BATCH_PAIRED_BINDING",
+      "BATCH_BINDING_ERRORS:[{\"attempt\": \"a17_closure_gate0_cuda_v2_bc126c07a4174490bf65e841deeaecdb\", \"error\": \"ValueError('monitored parent not one of exact reviewed serial runner names')\"}, {\"attempt\": \"a17_closure_gate0_cuda_v3_c9f6b834b24b4425a1451d6510b46afa\", \"error\": \"ValueError('monitored parent not one of exact reviewed serial runner names')\"}, {\"attempt\": \"a17_closure_locked_validation_continuation_v1_2003_e62ac5b29b1d42ecac5b63720e7e0f10\", \"error\": \"ValueError('parent command/batch mode-object mismatch')\"}, {\"attempt\": \"a17_closure_locked_validation_continuation_v1_2004_abb477d73a064ae1b10a355cc1b6faf7\", \"error\": \"ValueError('parent command/batch mode-object mismatch')\"}, {\"attempt\": \"a17_closure_locked_validation_continuation_v1_2005_92e605d173434ee8851cdcb9d151a257\", \"error\": \"ValueError('parent command/batch mode-object mismatch')\"}, {\"attempt\": \"a17_closure_locked_validation_continuation_v1_2006_858bf52a07154e46996f117b114eeaef\", \"error\": \"ValueError('parent command/batch mode-object mismatch')\"}, {\"attempt\": \"a17_closure_locked_validation_continuation_v1_2008_ec18dd78aa984bef83c87fc401c03e68\", \"error\": \"ValueError('parent command/batch mode-object mismatch')\"}, {\"attempt\": \"a17_closure_locked_validation_continuation_v1_2009_a849071e93854311b14c0f3374326e40\", \"error\": \"ValueError('parent command/batch mode-object mismatch')\"}, {\"attempt\": \"a17_closure_locked_validation_continuation_v1_2010_167ddd9956d4416ead95ca711b1c5b13\", \"error\": \"ValueError('parent command/batch mode-object mismatch')\"}, {\"attempt\": \"a17_closure_locked_validation_continuation_v1_2011_7dab4fa1f0964848bdbef12aebd1eeac\", \"error\": \"ValueError('parent command/batch mode-object mismatch')\"}, {\"attempt\": \"a17_closure_locked_validation_continuation_v1_2013_258c710f6fc64761805c7d5a5cf78e31\", \"error\": \"ValueError('parent command/batch mode-object mismatch')\"}, {\"attempt\": \"a17_closure_locked_validation_continuation_v1_2016_04a22623ea944b76a824ae6aa4285358\", \"error\": \"ValueError('batch row path/returncode/status invalid')\"}, {\"attempt\": \"a17_closure_locked_validation_v1_2002_e3dd53c45173436b8006b14e4a049be2\", \"error\": \"ValueError('parent command/batch mode-object mismatch')\"}, {\"attempt\": \"a17_closure_replay_2007_18d0d03080e94bcb9077334079164044\", \"error\": \"ValueError('parent command/batch mode-object mismatch')\"}, {\"attempt\": \"a17_closure_replay_2007_v2_e219059d9d3b4362886a47dcff3da659\", \"error\": \"ValueError('parent command/batch mode-object mismatch')\"}, {\"attempt\": \"a17_closure_replay_remaining_v2_2001_7016d76662014c3d98910ea298dfe051\", \"error\": \"ValueError('parent command/batch mode-object mismatch')\"}, {\"attempt\": \"a17_closure_replay_remaining_v2_2012_779a36662bac440aa852f9ff678d7168\", \"error\": \"ValueError('parent command/batch mode-object mismatch')\"}, {\"attempt\": \"a17_closure_replay_remaining_v2_2014_ae31117d083b4246a36e7125d4593113\", \"error\": \"ValueError('parent command/batch mode-object mismatch')\"}]"
+    ],
+    "severity": "critical"
+  },
+  {
+    "kind": "NONCOMPLETED_STATE_RETAINED",
+    "severity": "retained_history",
+    "known_historical_preselection_hash_failure": true,
+    "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/remote_snapshots/primary_complete_v1/results/replay/object_2007/early",
+    "status": {
+      "status": "FAILED",
+      "error": "ValueError('persisted pool hash mismatch')",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure.py\", line 210, in <module>\n    try:run(args)\n  File \"D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure.py\", line 88, in run\n    t=time.perf_counter();work=persisted_workspace(bundle,persisted)\n  File \"D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\closure_state.py\", line 141, in persisted_workspace\n    raise ValueError('persisted pool hash mismatch')\nValueError: persisted pool hash mismatch\n",
+      "object_id": 2007,
+      "phase": "early"
+    }
+  }
+]

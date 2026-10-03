@@ -1,0 +1,10 @@
+{
+  "scope": "Read-only formula/domain source references; never imported or executed",
+  "source_files": {
+    "Gaussian/A17/CLOSURE_R1/code/run_coverage_v2.py": "a7b3d8377b119b5c121e4d7d72c6bdd914eb0d7029b829104261c1a5ca9ecc14",
+    "Gaussian/A17/CLOSURE_R1/code/online_tolerance.py": "0cb18fc4b91f377c8a1cc96c426bbcff7e000a846b515aa53e59a384466cb8bf",
+    "Gaussian/A17/EXCHANGE_R1/code/maxwell_state.py": "8f12cc187b67fd6d5ed0378dd62b39055e28c8512289fb5bc893ad987e04eb51",
+    "Gaussian/A17/EXCHANGE_R1/code/run_exchange.py": "8305891509db380224bcdc1743cb3e69c0d84cd706629afdafcf40645400448d",
+    "Gaussian/A17/CLOSURE_R1/code/closure_state_v2.py": "4eb15d3cfc3df786f14fea1a8f030cb9325dbf5d8a40d91803fbacc16b5ec1a5"
+  }
+}

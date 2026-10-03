@@ -1,0 +1,48 @@
+\input{SUPPLEMENT_PHYSICAL_BRIDGE.tex}
+\subsection*{Physical coordinates and the implemented vector-Maxwell model}
+
+All material normal equations are over real Hilbert spaces, with material coordinates \(s\in\mathbb R^d\). For complex material contrast, the real and imaginary grid values are stacked, and the real material expansion satisfies \(Q_T^\top M_\chi Q_T=I\). A complex-output map \(F\) of real material coordinates has real adjoint \(v\mapsto\operatorname{Re}(F^Hv)\); equivalently, use its fully realified matrix. For a complex current operator,
+
+\[
+\mathbb R(F)=\begin{bmatrix}\operatorname{Re}F&-\operatorname{Im}F\\
+\operatorname{Im}F&\operatorname{Re}F\end{bmatrix}.
+\]
+
+For \(P\) illuminations, \(L\), \(S\), \(V\), and \(C\) lift blockwise, while the \(B_p\) stack vertically and share the same \(s\). In particular, \(C_{\rm blk}=I_P\otimes\mathbb R(C)\) has \(2Pr_c\) columns. The material curvature is the sum $J^TJ=\sum_p\operatorname{Re}(J_p^HJ_p)$ over shared material coordinates; no cross-illumination term is needed in this material normal matrix. In contrast, the output covariance $JJ^T$ has off-diagonal illumination blocks. It cannot be replaced by unrelated per-illumination inverse problems.
+
+The current and material metrics are normalized before all orthogonalizations. Orthogonal rotations of an admissible physical tangent preserve the assertions. Different Gaussian and voxel spans are different admissible tangents. Their numerical comparison does not establish an invariant ranking across different physical spaces.
+
+The actual reused DDA models an isotropic nonmagnetic dielectric, \(\chi=\epsilon_r-1\), on cell centers in a box of side 1.5. A cell has volume \(v=(1.5/n)^3\). With \(\boldsymbol n=\boldsymbol r/\|\boldsymbol r\|\), the off-diagonal electric dyadic is
+
+\[
+G(\boldsymbol r)=\frac{e^{ikr}}{4\pi r}
+\left[k^2(I-\boldsymbol n\boldsymbol n^\top)
++\left(\frac{ik}{r}-\frac1{r^2}\right)(I-3\boldsymbol n\boldsymbol n^\top)\right]. \tag{S1}
+\]
+
+Self blocks are excluded from \(G_{\rm off}\). The implemented cell polarizability and derivative are
+
+\[
+a(\chi)=\frac{3v\chi}{\chi+3-i\,3c_kv\chi},\qquad
+c_k=\frac{k^3}{6\pi},\qquad
+a'(\chi)=\frac{9v}{(\chi+3-i\,3c_kv\chi)^2}. \tag{S2}
+\]
+
+For dipole moments \(p_p\), the normalized current is \(c_p=p_p/\sqrt v\). The state, total field, tangent, and measurement equations are
+
+\[
+\begin{aligned}
+L&=I-D_aG_{\rm off},&
+Lc_p&=D_ae_p^{\rm inc}/\sqrt v,\\
+E_p&=e_p^{\rm inc}+G_{\rm off}(\sqrt v\,c_p),&
+L\delta c_p&=D_{a'E_p}Q_Ts/\sqrt v,\\
+y_p&=\sqrt v\,G_{\rm rec}c_p.
+\end{aligned} \tag{S3}
+\]
+
+The material-to-vector map in the tangent multiplies each cell's scalar material perturbation by its three field components. It is not a scalar diagonal on an unrelated vector space. Polarizability is not contrast; dropping \(a'(\chi)\) changes the Jacobian. At zero contrast \(a'=v\), so zero contrast does not remove the material tangent. Equation (S2) incorporates Clausius--Mossotti and radiation-reaction terms in one expression; the final denominator, not an intermediate rearrangement at \(\chi=-3\), specifies its singularities. These formulas document the reused code. Reference~\cite{r11} supplies DDA background, not an audited derivation of this exact implementation.
+
+There are six transverse plane-wave illuminations and 64 receivers on a sphere of radius 5, with two transverse readout functionals each. The receiver map retains the dyadic near-field terms. Measured scattered fields and tangent actions share the scalar normalization \(\|y_{\rm clean}\|\); no estimated noise-covariance whitening was used in the experiments. This clean norm remains known and fixed in the synthetic noise checks.
+
+The material metric is \(vI\) for each complex component. Gaussian columns are \(\exp[-\|x_i-\xi_\nu\|^2/(2\times0.28^2)]\), with \(\xi_\nu\in\{-0.45,0,0.45\}^3\). An SVD of the volume-weighted columns produces the orthonormal physical tangent. Voxel expansion is \(\delta\chi=(s_{\rm re}+is_{\rm im})/\sqrt v\). Smooth Gaussian profiles define the internal truth, with object-dependent weights and a constant background; their fixed-box support is truncated at the outer boundary. This paragraph describes the smooth-object subset; the sharp-interface protocols are retained in the historical supplement archive.
+

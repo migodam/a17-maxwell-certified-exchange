@@ -1,0 +1,168 @@
+{
+  "derivation_identity": "NEW_PUBLIC_REANALYSIS_NOT_HISTORICAL_RUNTIME",
+  "objective_curve": [
+    {
+      "accepted": true,
+      "iteration": 0,
+      "object_id": 2009,
+      "objective_after": 0.0021420397679387257,
+      "objective_before": 0.13541038254328186,
+      "policy": "verified_exchange",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 1,
+      "object_id": 2009,
+      "objective_after": 0.0005352185837132011,
+      "objective_before": 0.002142039767938726,
+      "policy": "verified_exchange",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 2,
+      "object_id": 2009,
+      "objective_after": 0.00020774553878824103,
+      "objective_before": 0.0005352185837132011,
+      "policy": "verified_exchange",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 3,
+      "object_id": 2009,
+      "objective_after": 0.00015564225781012305,
+      "objective_before": 0.00020774553878824106,
+      "policy": "verified_exchange",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 4,
+      "object_id": 2009,
+      "objective_after": 0.00011604972808305697,
+      "objective_before": 0.00015564225781012307,
+      "policy": "verified_exchange",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 5,
+      "object_id": 2009,
+      "objective_after": 0.00010347233455108791,
+      "objective_before": 0.00011604972808305694,
+      "policy": "verified_exchange",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 6,
+      "object_id": 2009,
+      "objective_after": 0.0001034499353794484,
+      "objective_before": 0.00010347233455108791,
+      "policy": "verified_exchange",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 7,
+      "object_id": 2009,
+      "objective_after": 0.00010131119277731468,
+      "objective_before": 0.00010344993537944841,
+      "policy": "verified_exchange",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 8,
+      "object_id": 2009,
+      "objective_after": 9.284907924842475e-05,
+      "objective_before": 0.0001013111927773147,
+      "policy": "verified_exchange",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 9,
+      "object_id": 2009,
+      "objective_after": 8.545634854987251e-05,
+      "objective_before": 9.284907924842479e-05,
+      "policy": "verified_exchange",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 10,
+      "object_id": 2009,
+      "objective_after": 8.506670431106542e-05,
+      "objective_before": 8.545634854987251e-05,
+      "policy": "verified_exchange",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 11,
+      "object_id": 2009,
+      "objective_after": 8.254520302719075e-05,
+      "objective_before": 8.506670431106542e-05,
+      "policy": "verified_exchange",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 12,
+      "object_id": 2009,
+      "objective_after": 8.153356855527691e-05,
+      "objective_before": 8.254520302719077e-05,
+      "policy": "verified_exchange",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 13,
+      "object_id": 2009,
+      "objective_after": 8.151694926290867e-05,
+      "objective_before": 8.15335685552769e-05,
+      "policy": "verified_exchange",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 14,
+      "object_id": 2009,
+      "objective_after": 7.709280495408024e-05,
+      "objective_before": 8.151694926290867e-05,
+      "policy": "verified_exchange",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 15,
+      "object_id": 2009,
+      "objective_after": 7.57812884642996e-05,
+      "objective_before": 7.709280495408025e-05,
+      "policy": "verified_exchange",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 16,
+      "object_id": 2009,
+      "objective_after": 7.501710010168214e-05,
+      "objective_before": 7.578128846429963e-05,
+      "policy": "verified_exchange",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 17,
+      "object_id": 2009,
+      "objective_after": 7.481450780874414e-05,
+      "objective_before": 7.501710010168218e-05,
+      "policy": "verified_exchange",
+      "scope": "COMPLETED_ENDPOINT"
+    }
+  ],
+  "source_merged_curves_sha256": "b746333c6254d488a671fd13e72b74ec91dd8e77fed99647bf586227c31522ff"
+}

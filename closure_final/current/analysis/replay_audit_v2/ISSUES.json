@@ -1,0 +1,31 @@
+[
+  {
+    "kind": "CLOSED_FAILED_MONITORED_JOB_NO_SCIENTIFIC_RESULT",
+    "severity": "retained_history",
+    "attempt": "a17_closure_gate0_cuda_v2_bc126c07a4174490bf65e841deeaecdb",
+    "exit_code": 1,
+    "stop_reason": null,
+    "occupation_s": 1.125
+  },
+  {
+    "kind": "CLOSED_FAILED_MONITORED_JOB_NO_SCIENTIFIC_RESULT",
+    "severity": "retained_history",
+    "attempt": "a17_closure_replay_2007_18d0d03080e94bcb9077334079164044",
+    "exit_code": 1,
+    "stop_reason": null,
+    "occupation_s": 9.48399999999674
+  },
+  {
+    "kind": "NONCOMPLETED_STATE_RETAINED",
+    "severity": "retained_history",
+    "known_historical_preselection_hash_failure": true,
+    "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/remote_snapshots/replay_complete/results/replay/object_2007/early",
+    "status": {
+      "status": "FAILED",
+      "error": "ValueError('persisted pool hash mismatch')",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure.py\", line 210, in <module>\n    try:run(args)\n  File \"D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure.py\", line 88, in run\n    t=time.perf_counter();work=persisted_workspace(bundle,persisted)\n  File \"D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\closure_state.py\", line 141, in persisted_workspace\n    raise ValueError('persisted pool hash mismatch')\nValueError: persisted pool hash mismatch\n",
+      "object_id": 2007,
+      "phase": "early"
+    }
+  }
+]

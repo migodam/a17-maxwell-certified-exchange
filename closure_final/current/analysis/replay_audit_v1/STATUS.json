@@ -1,0 +1,30 @@
+{
+  "schema": "a17.closure.collect.v1",
+  "status": "INCOMPLETE_MECHANICAL_COLLECTION",
+  "expected_counts": {
+    "replay": 36,
+    "validation": 99,
+    "noise": 72
+  },
+  "required_counts": {
+    "replay": 36,
+    "validation": 99,
+    "noise": 72
+  },
+  "audited_counts": {},
+  "replay_comparisons": 0,
+  "missing_cells": 207,
+  "issues": 15,
+  "holdout_caveat": "Locked A17-rule validation on historically studied corpus; NOT confirmed blind validation.",
+  "driver_mode_to_user_phase": {
+    "validation": "holdout_validation",
+    "replay": "old36_replay",
+    "noise": "noise_validation"
+  },
+  "manifest_primary_scope": "Locked A17-rule validation on historically studied Maxwell assets; not wholly unseen validation",
+  "confirmed_blind_objects": 0,
+  "manifest_sha256": "7b83634f34f0b00d61e89e72584a865617690f2f4cbd145c29c56140d2a6e288",
+  "scientific_verdict": null,
+  "bootstrap_is_object_cluster_only": true,
+  "old36_cells_are_not_independent": true
+}

@@ -1,0 +1,24 @@
+mode,noise_basis_points,object_id,observed_cells,expected_cells,complete,numerator_sum,denominator_sum,evaluation_floor_sum,ratio,ratio_missing_reason,all_cells_signed_gain_sum,aggregation,status
+noise,100,2002,0,9,False,,,,,NO_CELLS,,sum paired absolute GN gaps within object before ratio; cells/realizations not independent,DESCRIPTIVE_PARTIAL
+noise,100,2005,0,9,False,,,,,NO_CELLS,,sum paired absolute GN gaps within object before ratio; cells/realizations not independent,DESCRIPTIVE_PARTIAL
+noise,100,2009,0,9,False,,,,,NO_CELLS,,sum paired absolute GN gaps within object before ratio; cells/realizations not independent,DESCRIPTIVE_PARTIAL
+noise,100,2016,0,9,False,,,,,NO_CELLS,,sum paired absolute GN gaps within object before ratio; cells/realizations not independent,DESCRIPTIVE_PARTIAL
+noise,300,2002,0,9,False,,,,,NO_CELLS,,sum paired absolute GN gaps within object before ratio; cells/realizations not independent,DESCRIPTIVE_PARTIAL
+noise,300,2005,0,9,False,,,,,NO_CELLS,,sum paired absolute GN gaps within object before ratio; cells/realizations not independent,DESCRIPTIVE_PARTIAL
+noise,300,2009,0,9,False,,,,,NO_CELLS,,sum paired absolute GN gaps within object before ratio; cells/realizations not independent,DESCRIPTIVE_PARTIAL
+noise,300,2016,0,9,False,,,,,NO_CELLS,,sum paired absolute GN gaps within object before ratio; cells/realizations not independent,DESCRIPTIVE_PARTIAL
+replay,0,2001,0,9,False,,,,,NO_CELLS,,sum paired absolute GN gaps within object before ratio; cells/realizations not independent,DESCRIPTIVE_PARTIAL
+replay,0,2007,0,9,False,,,,,NO_CELLS,,sum paired absolute GN gaps within object before ratio; cells/realizations not independent,DESCRIPTIVE_PARTIAL
+replay,0,2012,0,9,False,,,,,NO_CELLS,,sum paired absolute GN gaps within object before ratio; cells/realizations not independent,DESCRIPTIVE_PARTIAL
+replay,0,2014,0,9,False,,,,,NO_CELLS,,sum paired absolute GN gaps within object before ratio; cells/realizations not independent,DESCRIPTIVE_PARTIAL
+validation,0,2002,0,9,False,,,,,NO_CELLS,,sum paired absolute GN gaps within object before ratio; cells/realizations not independent,DESCRIPTIVE_PARTIAL
+validation,0,2003,0,9,False,,,,,NO_CELLS,,sum paired absolute GN gaps within object before ratio; cells/realizations not independent,DESCRIPTIVE_PARTIAL
+validation,0,2004,0,9,False,,,,,NO_CELLS,,sum paired absolute GN gaps within object before ratio; cells/realizations not independent,DESCRIPTIVE_PARTIAL
+validation,0,2005,0,9,False,,,,,NO_CELLS,,sum paired absolute GN gaps within object before ratio; cells/realizations not independent,DESCRIPTIVE_PARTIAL
+validation,0,2006,0,9,False,,,,,NO_CELLS,,sum paired absolute GN gaps within object before ratio; cells/realizations not independent,DESCRIPTIVE_PARTIAL
+validation,0,2008,0,9,False,,,,,NO_CELLS,,sum paired absolute GN gaps within object before ratio; cells/realizations not independent,DESCRIPTIVE_PARTIAL
+validation,0,2009,0,9,False,,,,,NO_CELLS,,sum paired absolute GN gaps within object before ratio; cells/realizations not independent,DESCRIPTIVE_PARTIAL
+validation,0,2010,0,9,False,,,,,NO_CELLS,,sum paired absolute GN gaps within object before ratio; cells/realizations not independent,DESCRIPTIVE_PARTIAL
+validation,0,2011,0,9,False,,,,,NO_CELLS,,sum paired absolute GN gaps within object before ratio; cells/realizations not independent,DESCRIPTIVE_PARTIAL
+validation,0,2013,0,9,False,,,,,NO_CELLS,,sum paired absolute GN gaps within object before ratio; cells/realizations not independent,DESCRIPTIVE_PARTIAL
+validation,0,2016,0,9,False,,,,,NO_CELLS,,sum paired absolute GN gaps within object before ratio; cells/realizations not independent,DESCRIPTIVE_PARTIAL

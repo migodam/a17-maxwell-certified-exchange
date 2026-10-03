@@ -1,0 +1,247 @@
+{
+  "schema": "a17.owner.nonlinear.statistics.v1",
+  "cases_source_sha256": "e9ed0a74688a67406f2340d6be36c3252f9b9cad1f9cb45f611768d668bf9b7e",
+  "completed_pairs": 3,
+  "planned_pairs": 4,
+  "failed_verified_prefix": {
+    "object": 2016,
+    "completed_updates": 17,
+    "failure_iteration": 17,
+    "endpoint_metrics": null
+  },
+  "unrun_receiver": 2016,
+  "allin_timing_scope": "Each policy physical setup + all outer work + terminal evaluation; child wall excludes enclosing monitor overhead",
+  "rows": [
+    {
+      "object_id": 2002,
+      "material_complex_relative": [
+        0.30265989991235837,
+        0.26985570102104034
+      ],
+      "material_complex_relative_ratio": 0.891613659752028,
+      "material_real_relative": [
+        0.28113554429981186,
+        0.25156272929660584
+      ],
+      "material_real_relative_ratio": 0.8948094056307991,
+      "material_imag_relative": [
+        0.7438821436297941,
+        0.6506356973584516
+      ],
+      "material_imag_relative_ratio": 0.874648898256458,
+      "measured_data_relative": [
+        0.006636584760103277,
+        0.002836637656785271
+      ],
+      "measured_data_relative_ratio": 0.42742430923780256,
+      "heldout_data_relative": [
+        0.0066372560770399805,
+        0.002836497012561256
+      ],
+      "heldout_data_relative_ratio": 0.4273598878267553,
+      "final_objective": [
+        2.2812266605176488e-05,
+        4.825952316539358e-06
+      ],
+      "final_objective_ratio": 0.2115507590746931,
+      "child_wall_s": [
+        216.4555556999985,
+        579.8921897999826
+      ],
+      "wall_ratio": 2.679035832204267,
+      "receiver_only_counters": {
+        "kernel_build_blocks": 9,
+        "kernel_entries": 26873856,
+        "full_L_materializations": 59,
+        "lu_factorizations": 59,
+        "lu_factorizations_full": 59,
+        "solve_calls": 77,
+        "solve_rhs": 462,
+        "solve_rhs_full_forward": 354,
+        "solve_rhs_full": 462,
+        "goff_rhs": 354,
+        "solve_rhs_full_adjoint": 108,
+        "solve_rhs_adjoint": 108,
+        "gs_svd": 1,
+        "a12_L_cuda_uploads": 18,
+        "a12_L_matvec_rhs": 144
+      },
+      "receiver_only_accepted_updates": 18,
+      "verified_exchange_counters": {
+        "kernel_build_blocks": 9,
+        "kernel_entries": 26873856,
+        "full_L_materializations": 65,
+        "lu_factorizations": 65,
+        "lu_factorizations_full": 65,
+        "solve_calls": 151,
+        "solve_rhs": 1206,
+        "solve_rhs_full_forward": 390,
+        "solve_rhs_full": 1206,
+        "goff_rhs": 390,
+        "solve_rhs_full_adjoint": 108,
+        "solve_rhs_adjoint": 108,
+        "gs_svd": 1,
+        "a12_L_cuda_uploads": 18,
+        "a12_L_matvec_rhs": 3996,
+        "jvp_calls": 68,
+        "solve_rhs_full_tangent": 708,
+        "jvp_rhs": 708
+      },
+      "verified_exchange_accepted_updates": 18
+    },
+    {
+      "object_id": 2005,
+      "material_complex_relative": [
+        0.6721905292828861,
+        0.6706810840360217
+      ],
+      "material_complex_relative_ratio": 0.9977544383904444,
+      "material_real_relative": [
+        0.6810403285506288,
+        0.6834570638717895
+      ],
+      "material_real_relative_ratio": 1.0035485935558381,
+      "material_imag_relative": [
+        0.44389608112576434,
+        0.28588573530292966
+      ],
+      "material_imag_relative_ratio": 0.6440375291845226,
+      "measured_data_relative": [
+        0.010531539728438188,
+        0.0070832379481887515
+      ],
+      "measured_data_relative_ratio": 0.67257382404037,
+      "heldout_data_relative": [
+        0.010520701970468883,
+        0.0070800563729569894
+      ],
+      "heldout_data_relative_ratio": 0.6729642558861924,
+      "final_objective": [
+        5.552962524636269e-05,
+        2.5144678638447564e-05
+      ],
+      "final_objective_ratio": 0.45281556514906596,
+      "child_wall_s": [
+        407.7147637999733,
+        710.4885576000088
+      ],
+      "wall_ratio": 1.7426117979592657,
+      "receiver_only_counters": {
+        "kernel_build_blocks": 9,
+        "kernel_entries": 26873856,
+        "full_L_materializations": 116,
+        "lu_factorizations": 116,
+        "lu_factorizations_full": 116,
+        "solve_calls": 134,
+        "solve_rhs": 804,
+        "solve_rhs_full_forward": 696,
+        "solve_rhs_full": 804,
+        "goff_rhs": 696,
+        "solve_rhs_full_adjoint": 108,
+        "solve_rhs_adjoint": 108,
+        "gs_svd": 1,
+        "a12_L_cuda_uploads": 18,
+        "a12_L_matvec_rhs": 144
+      },
+      "receiver_only_accepted_updates": 18,
+      "verified_exchange_counters": {
+        "kernel_build_blocks": 9,
+        "kernel_entries": 26873856,
+        "full_L_materializations": 127,
+        "lu_factorizations": 127,
+        "lu_factorizations_full": 127,
+        "solve_calls": 216,
+        "solve_rhs": 1614,
+        "solve_rhs_full_forward": 762,
+        "solve_rhs_full": 1614,
+        "goff_rhs": 762,
+        "solve_rhs_full_adjoint": 108,
+        "solve_rhs_adjoint": 108,
+        "gs_svd": 1,
+        "a12_L_cuda_uploads": 18,
+        "a12_L_matvec_rhs": 3996,
+        "jvp_calls": 71,
+        "solve_rhs_full_tangent": 744,
+        "jvp_rhs": 744
+      },
+      "verified_exchange_accepted_updates": 18
+    },
+    {
+      "object_id": 2009,
+      "material_complex_relative": [
+        0.6096404981110085,
+        0.5659891533320666
+      ],
+      "material_complex_relative_ratio": 0.9283982200752786,
+      "material_real_relative": [
+        0.6081470702418288,
+        0.5650597986341002
+      ],
+      "material_real_relative_ratio": 0.9291499150187552,
+      "material_imag_relative": [
+        0.6975505261954482,
+        0.6219015495622531
+      ],
+      "material_imag_relative_ratio": 0.8915505417997507,
+      "measured_data_relative": [
+        0.014178603090241278,
+        0.012178344863873399
+      ],
+      "measured_data_relative_ratio": 0.8589241680836246,
+      "heldout_data_relative": [
+        0.014189977176007021,
+        0.012179283961979337
+      ],
+      "heldout_data_relative_ratio": 0.8583018711666821,
+      "final_objective": [
+        0.00010113178829741431,
+        7.481450780874412e-05
+      ],
+      "final_objective_ratio": 0.7397724204057898,
+      "child_wall_s": [
+        405.90425640001195,
+        592.2920954999863
+      ],
+      "wall_ratio": 1.4591916348772953,
+      "receiver_only_counters": {
+        "kernel_build_blocks": 9,
+        "kernel_entries": 26873856,
+        "full_L_materializations": 115,
+        "lu_factorizations": 115,
+        "lu_factorizations_full": 115,
+        "solve_calls": 133,
+        "solve_rhs": 798,
+        "solve_rhs_full_forward": 690,
+        "solve_rhs_full": 798,
+        "goff_rhs": 690,
+        "solve_rhs_full_adjoint": 108,
+        "solve_rhs_adjoint": 108,
+        "gs_svd": 1,
+        "a12_L_cuda_uploads": 18,
+        "a12_L_matvec_rhs": 144
+      },
+      "receiver_only_accepted_updates": 18,
+      "verified_exchange_counters": {
+        "kernel_build_blocks": 9,
+        "kernel_entries": 26873856,
+        "full_L_materializations": 92,
+        "lu_factorizations": 92,
+        "lu_factorizations_full": 92,
+        "solve_calls": 181,
+        "solve_rhs": 1404,
+        "solve_rhs_full_forward": 552,
+        "solve_rhs_full": 1404,
+        "goff_rhs": 552,
+        "solve_rhs_full_adjoint": 108,
+        "solve_rhs_adjoint": 108,
+        "gs_svd": 1,
+        "a12_L_cuda_uploads": 18,
+        "a12_L_matvec_rhs": 3996,
+        "jvp_calls": 71,
+        "solve_rhs_full_tangent": 744,
+        "jvp_rhs": 744
+      },
+      "verified_exchange_accepted_updates": 18
+    }
+  ]
+}

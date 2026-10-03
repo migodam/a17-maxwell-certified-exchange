@@ -1,0 +1,3326 @@
+{
+  "schema": "a17.saved.coverage.array.review.v1",
+  "status": "CHECKED_SAVED_ARRAY_ARITHMETIC_CONSISTENT_WITH_DECLARED_LIMITS",
+  "source_sha256": "c9ea96781f4be3b32d7c900ca793058e6324009b5a73529bd4558e62341130dc",
+  "evidence_sha256": "e4f7c13169e570d49d6b5e0e16e8111c9c94e891dd419cded826c2652c40d978",
+  "state_denominator": 33,
+  "k_cell_denominator": 99,
+  "checked_rounds": 285,
+  "checked_path_actions": 270,
+  "check_counts": {
+    "dictionary154": 32,
+    "complete_declared_domain": 285,
+    "checkpoint_base_binding": 285,
+    "score_index_shape": 285,
+    "proposal_index_order": 377720,
+    "row_Qhat": 370521,
+    "row_Qtrue": 370521,
+    "row_tau": 370521,
+    "label_significance": 370521,
+    "domain_counts": 285,
+    "full_label_domain": 285,
+    "balanced12_members": 285,
+    "summary_positive_count": 285,
+    "summary_significant_positive_count": 285,
+    "summary_balanced12_feasible_count": 285,
+    "summary_teacher_best_raw_positive_gain": 285,
+    "summary_teacher_best_significant_gain": 285,
+    "summary_balanced12_best_raw_positive_gain": 285,
+    "summary_balanced12_best_significant_gain": 285,
+    "summary_balanced12_opportunity_capture": 285,
+    "summary_balanced12_significant_opportunity_capture": 285,
+    "summary_omitted_opportunity": 285,
+    "summary_full_dictionary_anchor_top1_signed_true_gain": 285,
+    "summary_full_dictionary_anchor_top1_verified_noop_gain": 285,
+    "summary_full_dictionary_anchor_top1_signed_regret": 285,
+    "summary_full_dictionary_anchor_top1_noop_regret": 285,
+    "summary_full_dictionary_anchor_top1_signed_capture": 285,
+    "summary_full_dictionary_anchor_top1_noop_capture": 285,
+    "summary_full_dictionary_anchor_top1_significance_regret": 285,
+    "summary_best_raw_move": 285,
+    "summary_best_significant_move": 285,
+    "summary_anchor_top1_move": 285,
+    "selected_significant_exists": 270,
+    "teacher_selected_ids": 270,
+    "teacher_direction_hash": 270,
+    "selected_directional_Q": 270,
+    "selected_directional_tau": 270,
+    "selected_phi_gain": 270,
+    "teacher_path_round_exists": 270,
+    "saved_path_gain": 270,
+    "saved_path_tau": 270,
+    "saved_path_ids": 270,
+    "cell_initial_record_exact": 96,
+    "teacher_path_file_count": 96,
+    "evidence_result_sha": 96,
+    "evidence_teacher_best_raw_positive_gain": 96,
+    "evidence_teacher_best_significant_gain": 96,
+    "evidence_balanced12_best_raw_positive_gain": 96,
+    "evidence_balanced12_best_significant_gain": 96,
+    "evidence_balanced12_opportunity_capture": 96,
+    "evidence_balanced12_significant_opportunity_capture": 96,
+    "evidence_full_dictionary_anchor_top1_signed_true_gain": 96,
+    "evidence_full_dictionary_anchor_top1_verified_noop_gain": 96,
+    "evidence_full_dictionary_anchor_top1_signed_capture": 96,
+    "evidence_full_dictionary_anchor_top1_noop_capture": 96,
+    "evidence_actual_full_gap": 96,
+    "evidence_teacher_full_gap": 96,
+    "evidence_actual_minus_teacher": 96,
+    "actual_minus_teacher_phi_gap": 96,
+    "saved_actual_minus_teacher_gap": 96,
+    "reference_dense_shapes": 15,
+    "absolute_half_H_energy": 90,
+    "absolute_gradient_cross": 90,
+    "absolute_full_gap": 90,
+    "dense_J_saved_Js": 90,
+    "invalid_endpoint_null": 7199
+  },
+  "maximum_absolute_differences": {
+    "row_Qhat": 0.0,
+    "row_Qtrue": 0.0,
+    "row_tau": 0.0,
+    "summary_positive_count": 0.0,
+    "summary_significant_positive_count": 0.0,
+    "summary_balanced12_feasible_count": 0.0,
+    "summary_teacher_best_raw_positive_gain": 0.0,
+    "summary_teacher_best_significant_gain": 0.0,
+    "summary_balanced12_best_raw_positive_gain": 0.0,
+    "summary_balanced12_best_significant_gain": 0.0,
+    "summary_balanced12_opportunity_capture": 0.0,
+    "summary_balanced12_significant_opportunity_capture": 0.0,
+    "summary_omitted_opportunity": 0.0,
+    "summary_full_dictionary_anchor_top1_signed_true_gain": 0.0,
+    "summary_full_dictionary_anchor_top1_verified_noop_gain": 0.0,
+    "summary_full_dictionary_anchor_top1_signed_regret": 0.0,
+    "summary_full_dictionary_anchor_top1_noop_regret": 0.0,
+    "summary_full_dictionary_anchor_top1_signed_capture": 0.0,
+    "summary_full_dictionary_anchor_top1_noop_capture": 0.0,
+    "summary_full_dictionary_anchor_top1_significance_regret": 0.0,
+    "selected_directional_Q": 7.806255641895632e-18,
+    "selected_directional_tau": 6.462348535570529e-27,
+    "selected_phi_gain": 1.5178830414797062e-18,
+    "saved_path_gain": 0.0,
+    "saved_path_tau": 0.0,
+    "evidence_teacher_best_raw_positive_gain": 0.0,
+    "evidence_teacher_best_significant_gain": 0.0,
+    "evidence_balanced12_best_raw_positive_gain": 0.0,
+    "evidence_balanced12_best_significant_gain": 0.0,
+    "evidence_balanced12_opportunity_capture": 0.0,
+    "evidence_balanced12_significant_opportunity_capture": 0.0,
+    "evidence_full_dictionary_anchor_top1_signed_true_gain": 0.0,
+    "evidence_full_dictionary_anchor_top1_verified_noop_gain": 0.0,
+    "evidence_full_dictionary_anchor_top1_signed_capture": 0.0,
+    "evidence_full_dictionary_anchor_top1_noop_capture": 0.0,
+    "evidence_actual_full_gap": 0.0,
+    "evidence_teacher_full_gap": 0.0,
+    "evidence_actual_minus_teacher": 0.0,
+    "actual_minus_teacher_phi_gap": 9.75781955236954e-19,
+    "saved_actual_minus_teacher_gap": 0.0,
+    "absolute_half_H_energy": 3.2526065174565133e-18,
+    "absolute_gradient_cross": 3.2689373678339934e-18,
+    "absolute_full_gap": 3.2526065174565133e-19,
+    "dense_J_saved_Js": 5.134781488891349e-16
+  },
+  "failures": [],
+  "unverified": [
+    {
+      "where": "2002/early",
+      "reason": "ABSOLUTE_FULL_GAP_NOT_RECOMPUTED_NO_SAVED_DENSE_J_OR_REFERENCE",
+      "reference_available": true,
+      "denseJ_available": false
+    },
+    {
+      "where": "2002/middle",
+      "reason": "ABSOLUTE_FULL_GAP_NOT_RECOMPUTED_NO_SAVED_DENSE_J_OR_REFERENCE",
+      "reference_available": true,
+      "denseJ_available": false
+    },
+    {
+      "where": "2002/late",
+      "reason": "ABSOLUTE_FULL_GAP_NOT_RECOMPUTED_NO_SAVED_DENSE_J_OR_REFERENCE",
+      "reference_available": true,
+      "denseJ_available": false
+    },
+    {
+      "where": "2004/early",
+      "reason": "ABSOLUTE_FULL_GAP_NOT_RECOMPUTED_NO_SAVED_DENSE_J_OR_REFERENCE",
+      "reference_available": true,
+      "denseJ_available": false
+    },
+    {
+      "where": "2004/middle",
+      "reason": "ABSOLUTE_FULL_GAP_NOT_RECOMPUTED_NO_SAVED_DENSE_J_OR_REFERENCE",
+      "reference_available": true,
+      "denseJ_available": false
+    },
+    {
+      "where": "2004/late",
+      "reason": "ABSOLUTE_FULL_GAP_NOT_RECOMPUTED_NO_SAVED_DENSE_J_OR_REFERENCE",
+      "reference_available": true,
+      "denseJ_available": false
+    },
+    {
+      "where": "2006/early",
+      "reason": "ABSOLUTE_FULL_GAP_NOT_RECOMPUTED_NO_SAVED_DENSE_J_OR_REFERENCE",
+      "reference_available": true,
+      "denseJ_available": false
+    },
+    {
+      "where": "2006/middle",
+      "reason": "ABSOLUTE_FULL_GAP_NOT_RECOMPUTED_NO_SAVED_DENSE_J_OR_REFERENCE",
+      "reference_available": true,
+      "denseJ_available": false
+    },
+    {
+      "where": "2006/late",
+      "reason": "ABSOLUTE_FULL_GAP_NOT_RECOMPUTED_NO_SAVED_DENSE_J_OR_REFERENCE",
+      "reference_available": true,
+      "denseJ_available": false
+    },
+    {
+      "where": "2008/early",
+      "reason": "ABSOLUTE_FULL_GAP_NOT_RECOMPUTED_NO_SAVED_DENSE_J_OR_REFERENCE",
+      "reference_available": true,
+      "denseJ_available": false
+    },
+    {
+      "where": "2008/middle",
+      "reason": "ABSOLUTE_FULL_GAP_NOT_RECOMPUTED_NO_SAVED_DENSE_J_OR_REFERENCE",
+      "reference_available": true,
+      "denseJ_available": false
+    },
+    {
+      "where": "2008/late",
+      "reason": "ABSOLUTE_FULL_GAP_NOT_RECOMPUTED_NO_SAVED_DENSE_J_OR_REFERENCE",
+      "reference_available": true,
+      "denseJ_available": false
+    },
+    {
+      "where": "2010/early",
+      "reason": "ABSOLUTE_FULL_GAP_NOT_RECOMPUTED_NO_SAVED_DENSE_J_OR_REFERENCE",
+      "reference_available": true,
+      "denseJ_available": false
+    },
+    {
+      "where": "2010/middle",
+      "reason": "ABSOLUTE_FULL_GAP_NOT_RECOMPUTED_NO_SAVED_DENSE_J_OR_REFERENCE",
+      "reference_available": true,
+      "denseJ_available": false
+    },
+    {
+      "where": "2010/late",
+      "reason": "ABSOLUTE_FULL_GAP_NOT_RECOMPUTED_NO_SAVED_DENSE_J_OR_REFERENCE",
+      "reference_available": true,
+      "denseJ_available": false
+    },
+    {
+      "where": "2016/early",
+      "reason": "ABSOLUTE_FULL_GAP_NOT_RECOMPUTED_NO_SAVED_DENSE_J_OR_REFERENCE",
+      "reference_available": true,
+      "denseJ_available": false
+    },
+    {
+      "where": "2016/middle",
+      "reason": "ABSOLUTE_FULL_GAP_NOT_RECOMPUTED_NO_SAVED_DENSE_J_OR_REFERENCE",
+      "reference_available": true,
+      "denseJ_available": false
+    },
+    {
+      "where": "2016/late",
+      "reason": "NO_OFFLINE_RESULTS_OR_PRIMARY_BINDING",
+      "state_status": "NOT_RUN_PRIMARY_INCOMPLETE"
+    },
+    {
+      "scope": "All unselected feasible candidates",
+      "reason": "NO_SAVED_ENDPOINT_D_AND_DIRECTIONAL_Z_FOR_EVERY_CANDIDATE; Qhat/Qtrue/tau checked against move arrays and aggregates, not independently recomputed from absent directions"
+    }
+  ],
+  "rounds": [
+    {
+      "where": "2002/early/k4/round0",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2002/early/k4/round1",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2002/early/k4/round2",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2002/early/k8/round0",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2002/early/k8/round1",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2002/early/k8/round2",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2002/early/k16/round0",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2002/early/k16/round1",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2002/early/k16/round2",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2002/middle/k4/round0",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2002/middle/k4/round1",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2002/middle/k4/round2",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2002/middle/k8/round0",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2002/middle/k8/round1",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2002/middle/k8/round2",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2002/middle/k16/round0",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2002/middle/k16/round1",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2002/middle/k16/round2",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2002/late/k4/round0",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2002/late/k4/round1",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2002/late/k4/round2",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2002/late/k8/round0",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2002/late/k8/round1",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2002/late/k8/round2",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2002/late/k16/round0",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2002/late/k16/round1",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2002/late/k16/round2",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2003/early/k4/round0",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2003/early/k4/round1",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2003/early/k4/round2",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2003/early/k8/round0",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2003/early/k8/round1",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2003/early/k16/round0",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2003/early/k16/round1",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2003/middle/k4/round0",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2003/middle/k4/round1",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2003/middle/k4/round2",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2003/middle/k8/round0",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2003/middle/k8/round1",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2003/middle/k8/round2",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2003/middle/k16/round0",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2003/middle/k16/round1",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2003/middle/k16/round2",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2003/late/k4/round0",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2003/late/k4/round1",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2003/late/k4/round2",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2003/late/k8/round0",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2003/late/k8/round1",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2003/late/k8/round2",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2003/late/k16/round0",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2003/late/k16/round1",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2003/late/k16/round2",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2004/early/k4/round0",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2004/early/k4/round1",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2004/early/k4/round2",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2004/early/k8/round0",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2004/early/k8/round1",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2004/early/k8/round2",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2004/early/k16/round0",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2004/early/k16/round1",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2004/early/k16/round2",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2004/middle/k4/round0",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2004/middle/k4/round1",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2004/middle/k4/round2",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2004/middle/k8/round0",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2004/middle/k8/round1",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2004/middle/k8/round2",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2004/middle/k16/round0",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2004/middle/k16/round1",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2004/middle/k16/round2",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2004/late/k4/round0",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2004/late/k4/round1",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2004/late/k4/round2",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2004/late/k8/round0",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2004/late/k8/round1",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2004/late/k8/round2",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2004/late/k16/round0",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2004/late/k16/round1",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2004/late/k16/round2",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2005/early/k4/round0",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2005/early/k4/round1",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2005/early/k8/round0",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2005/early/k8/round1",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2005/early/k8/round2",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2005/early/k16/round0",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2005/early/k16/round1",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2005/early/k16/round2",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2005/middle/k4/round0",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2005/middle/k4/round1",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2005/middle/k4/round2",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2005/middle/k8/round0",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2005/middle/k8/round1",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2005/middle/k8/round2",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2005/middle/k16/round0",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2005/middle/k16/round1",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2005/middle/k16/round2",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2005/late/k4/round0",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2005/late/k4/round1",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2005/late/k4/round2",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2005/late/k8/round0",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2005/late/k8/round1",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2005/late/k8/round2",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2005/late/k16/round0",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2005/late/k16/round1",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2005/late/k16/round2",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2006/early/k4/round0",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2006/early/k4/round1",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2006/early/k4/round2",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2006/early/k8/round0",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2006/early/k8/round1",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2006/early/k8/round2",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2006/early/k16/round0",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2006/early/k16/round1",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2006/early/k16/round2",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2006/middle/k4/round0",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2006/middle/k4/round1",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2006/middle/k4/round2",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2006/middle/k8/round0",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2006/middle/k8/round1",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2006/middle/k8/round2",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2006/middle/k16/round0",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2006/middle/k16/round1",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2006/middle/k16/round2",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2006/late/k4/round0",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 194,
+      "labeled": 194
+    },
+    {
+      "where": "2006/late/k4/round1",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 558,
+      "labeled": 558
+    },
+    {
+      "where": "2006/late/k4/round2",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 551,
+      "labeled": 551
+    },
+    {
+      "where": "2006/late/k8/round0",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 243,
+      "labeled": 243
+    },
+    {
+      "where": "2006/late/k8/round1",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1122,
+      "labeled": 1122
+    },
+    {
+      "where": "2006/late/k8/round2",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1072,
+      "labeled": 1072
+    },
+    {
+      "where": "2006/late/k16/round0",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 369,
+      "labeled": 369
+    },
+    {
+      "where": "2006/late/k16/round1",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2096,
+      "labeled": 2096
+    },
+    {
+      "where": "2006/late/k16/round2",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2039,
+      "labeled": 2039
+    },
+    {
+      "where": "2008/early/k4/round0",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2008/early/k4/round1",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2008/early/k4/round2",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2008/early/k8/round0",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2008/early/k8/round1",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2008/early/k8/round2",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2008/early/k16/round0",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2008/early/k16/round1",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2008/early/k16/round2",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2008/middle/k4/round0",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2008/middle/k4/round1",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2008/middle/k4/round2",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2008/middle/k8/round0",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2008/middle/k8/round1",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2008/middle/k8/round2",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2008/middle/k16/round0",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2008/middle/k16/round1",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2008/middle/k16/round2",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2008/late/k4/round0",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 385,
+      "labeled": 385
+    },
+    {
+      "where": "2008/late/k4/round1",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 440,
+      "labeled": 440
+    },
+    {
+      "where": "2008/late/k4/round2",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 501,
+      "labeled": 501
+    },
+    {
+      "where": "2008/late/k8/round0",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 864,
+      "labeled": 864
+    },
+    {
+      "where": "2008/late/k8/round1",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 836,
+      "labeled": 836
+    },
+    {
+      "where": "2008/late/k8/round2",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 785,
+      "labeled": 785
+    },
+    {
+      "where": "2008/late/k16/round0",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 1678,
+      "labeled": 1678
+    },
+    {
+      "where": "2008/late/k16/round1",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 1628,
+      "labeled": 1628
+    },
+    {
+      "where": "2008/late/k16/round2",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 1612,
+      "labeled": 1612
+    },
+    {
+      "where": "2009/early/k4/round0",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2009/early/k4/round1",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2009/early/k4/round2",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2009/early/k8/round0",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2009/early/k8/round1",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2009/early/k8/round2",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2009/early/k16/round0",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2009/early/k16/round1",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2009/early/k16/round2",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2009/middle/k4/round0",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2009/middle/k4/round1",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2009/middle/k4/round2",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2009/middle/k8/round0",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2009/middle/k8/round1",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2009/middle/k8/round2",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2009/middle/k16/round0",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2009/middle/k16/round1",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2009/middle/k16/round2",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2009/late/k4/round0",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2009/late/k4/round1",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2009/late/k4/round2",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2009/late/k8/round0",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2009/late/k8/round1",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2009/late/k8/round2",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2009/late/k16/round0",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2009/late/k16/round1",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2009/late/k16/round2",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2010/early/k4/round0",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2010/early/k4/round1",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2010/early/k4/round2",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2010/early/k8/round0",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2010/early/k8/round1",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2010/early/k8/round2",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2010/early/k16/round0",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2010/early/k16/round1",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2010/early/k16/round2",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2010/middle/k4/round0",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2010/middle/k4/round1",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2010/middle/k4/round2",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2010/middle/k8/round0",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2010/middle/k8/round1",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2010/middle/k8/round2",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2010/middle/k16/round0",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2010/middle/k16/round1",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2010/middle/k16/round2",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2010/late/k4/round0",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 511,
+      "labeled": 511
+    },
+    {
+      "where": "2010/late/k4/round1",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 559,
+      "labeled": 559
+    },
+    {
+      "where": "2010/late/k4/round2",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2010/late/k8/round0",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1152,
+      "labeled": 1152
+    },
+    {
+      "where": "2010/late/k8/round1",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1136,
+      "labeled": 1136
+    },
+    {
+      "where": "2010/late/k8/round2",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2010/late/k16/round0",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2170,
+      "labeled": 2170
+    },
+    {
+      "where": "2010/late/k16/round1",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2128,
+      "labeled": 2128
+    },
+    {
+      "where": "2010/late/k16/round2",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2188,
+      "labeled": 2188
+    },
+    {
+      "where": "2011/early/k4/round0",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2011/early/k4/round1",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2011/early/k4/round2",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2011/early/k8/round0",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2011/early/k8/round1",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2011/early/k8/round2",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2011/early/k16/round0",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2011/early/k16/round1",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2011/early/k16/round2",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2011/middle/k4/round0",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2011/middle/k4/round1",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2011/middle/k4/round2",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2011/middle/k8/round0",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2011/middle/k8/round1",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2011/middle/k8/round2",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2011/middle/k16/round0",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2011/middle/k16/round1",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2011/middle/k16/round2",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2011/late/k4/round0",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2011/late/k4/round1",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2011/late/k4/round2",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2011/late/k8/round0",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2011/late/k8/round1",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2011/late/k8/round2",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2011/late/k16/round0",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2011/late/k16/round1",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2011/late/k16/round2",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2013/early/k4/round0",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2013/early/k4/round1",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2013/early/k4/round2",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2013/early/k8/round0",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2013/early/k8/round1",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2013/early/k8/round2",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2013/early/k16/round0",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2013/early/k16/round1",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2013/early/k16/round2",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2013/middle/k4/round0",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2013/middle/k4/round1",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2013/middle/k4/round2",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2013/middle/k8/round0",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2013/middle/k8/round1",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2013/middle/k8/round2",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2013/middle/k16/round0",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2013/middle/k16/round1",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2013/middle/k16/round2",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2013/late/k4/round0",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2013/late/k4/round1",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2013/late/k4/round2",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2013/late/k8/round0",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2013/late/k8/round1",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2013/late/k8/round2",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2013/late/k16/round0",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2013/late/k16/round1",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2013/late/k16/round2",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2016/early/k4/round0",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2016/early/k4/round1",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2016/early/k4/round2",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2016/early/k8/round0",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2016/early/k8/round1",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2016/early/k8/round2",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2016/early/k16/round0",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2016/early/k16/round1",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2016/early/k16/round2",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2016/middle/k4/round0",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2016/middle/k4/round1",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2016/middle/k4/round2",
+      "status": "COMPLETE",
+      "declared": 600,
+      "feasible": 600,
+      "labeled": 600
+    },
+    {
+      "where": "2016/middle/k8/round0",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2016/middle/k8/round1",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2016/middle/k8/round2",
+      "status": "COMPLETE",
+      "declared": 1168,
+      "feasible": 1168,
+      "labeled": 1168
+    },
+    {
+      "where": "2016/middle/k16/round0",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2016/middle/k16/round1",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    },
+    {
+      "where": "2016/middle/k16/round2",
+      "status": "COMPLETE",
+      "declared": 2208,
+      "feasible": 2208,
+      "labeled": 2208
+    }
+  ],
+  "path_actions": [
+    {
+      "where": "2002/early/k4/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2002/early/k4/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2002/early/k4/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2002/early/k8/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2002/early/k8/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2002/early/k8/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2002/early/k16/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2002/early/k16/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2002/early/k16/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2002/middle/k4/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2002/middle/k4/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2002/middle/k4/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2002/middle/k8/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2002/middle/k8/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2002/middle/k8/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2002/middle/k16/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2002/middle/k16/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2002/middle/k16/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2002/late/k4/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2002/late/k4/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2002/late/k8/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2002/late/k8/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2002/late/k8/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2002/late/k16/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2002/late/k16/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2002/late/k16/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2003/early/k4/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2003/early/k4/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2003/early/k8/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2003/early/k16/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2003/middle/k4/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2003/middle/k4/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2003/middle/k4/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2003/middle/k8/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2003/middle/k8/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2003/middle/k8/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2003/middle/k16/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2003/middle/k16/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2003/middle/k16/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2003/late/k4/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2003/late/k4/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2003/late/k4/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2003/late/k8/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2003/late/k8/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2003/late/k8/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2003/late/k16/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2003/late/k16/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2003/late/k16/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2004/early/k4/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2004/early/k4/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2004/early/k8/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2004/early/k8/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2004/early/k16/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2004/early/k16/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2004/early/k16/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2004/middle/k4/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2004/middle/k4/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2004/middle/k4/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2004/middle/k8/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2004/middle/k8/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2004/middle/k8/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2004/middle/k16/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2004/middle/k16/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2004/middle/k16/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2004/late/k4/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2004/late/k4/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2004/late/k8/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2004/late/k8/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2004/late/k16/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2004/late/k16/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2004/late/k16/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2005/early/k4/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2005/early/k8/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2005/early/k8/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2005/early/k8/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2005/early/k16/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2005/early/k16/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2005/early/k16/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2005/middle/k4/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2005/middle/k4/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2005/middle/k4/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2005/middle/k8/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2005/middle/k8/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2005/middle/k8/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2005/middle/k16/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2005/middle/k16/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2005/middle/k16/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2005/late/k4/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2005/late/k4/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2005/late/k4/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2005/late/k8/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2005/late/k8/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2005/late/k8/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2005/late/k16/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2005/late/k16/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2005/late/k16/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2006/early/k4/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2006/early/k4/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2006/early/k8/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2006/early/k8/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2006/early/k8/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2006/early/k16/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2006/early/k16/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2006/early/k16/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2006/middle/k4/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2006/middle/k4/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2006/middle/k4/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2006/middle/k8/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2006/middle/k8/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2006/middle/k8/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2006/middle/k16/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2006/middle/k16/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2006/middle/k16/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2006/late/k4/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2006/late/k4/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2006/late/k4/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2006/late/k8/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2006/late/k8/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2006/late/k8/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2006/late/k16/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2006/late/k16/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2006/late/k16/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2008/early/k4/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2008/early/k4/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2008/early/k8/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2008/early/k8/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2008/early/k16/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2008/early/k16/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2008/early/k16/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2008/middle/k4/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2008/middle/k4/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2008/middle/k4/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2008/middle/k8/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2008/middle/k8/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2008/middle/k8/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2008/middle/k16/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2008/middle/k16/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2008/middle/k16/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2008/late/k4/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2008/late/k4/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2008/late/k8/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2008/late/k8/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2008/late/k8/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2008/late/k16/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2008/late/k16/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2008/late/k16/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2009/early/k4/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2009/early/k4/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2009/early/k4/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2009/early/k8/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2009/early/k8/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2009/early/k8/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2009/early/k16/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2009/early/k16/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2009/early/k16/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2009/middle/k4/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2009/middle/k4/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2009/middle/k4/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2009/middle/k8/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2009/middle/k8/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2009/middle/k8/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2009/middle/k16/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2009/middle/k16/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2009/middle/k16/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2009/late/k4/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2009/late/k4/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2009/late/k4/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2009/late/k8/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2009/late/k8/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2009/late/k8/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2009/late/k16/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2009/late/k16/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2009/late/k16/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2010/early/k4/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2010/early/k4/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2010/early/k8/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2010/early/k8/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2010/early/k8/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2010/early/k16/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2010/early/k16/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2010/early/k16/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2010/middle/k4/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2010/middle/k4/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2010/middle/k4/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2010/middle/k8/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2010/middle/k8/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2010/middle/k8/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2010/middle/k16/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2010/middle/k16/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2010/late/k4/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2010/late/k4/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2010/late/k4/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2010/late/k8/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2010/late/k8/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2010/late/k8/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2010/late/k16/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2010/late/k16/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2010/late/k16/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2011/early/k4/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2011/early/k4/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2011/early/k4/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2011/early/k8/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2011/early/k8/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2011/early/k8/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2011/early/k16/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2011/early/k16/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2011/early/k16/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2011/middle/k4/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2011/middle/k4/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2011/middle/k4/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2011/middle/k8/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2011/middle/k8/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2011/middle/k8/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2011/middle/k16/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2011/middle/k16/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2011/middle/k16/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2011/late/k4/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2011/late/k4/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2011/late/k4/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2011/late/k8/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2011/late/k8/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2011/late/k8/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2011/late/k16/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2011/late/k16/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2011/late/k16/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2013/early/k4/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2013/early/k4/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2013/early/k4/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2013/early/k8/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2013/early/k8/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2013/early/k8/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2013/early/k16/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2013/early/k16/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2013/early/k16/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2013/middle/k4/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2013/middle/k4/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2013/middle/k4/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2013/middle/k8/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2013/middle/k8/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2013/middle/k8/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2013/middle/k16/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2013/middle/k16/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2013/middle/k16/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2013/late/k4/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2013/late/k4/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2013/late/k4/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2013/late/k8/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2013/late/k8/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2013/late/k8/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2013/late/k16/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2013/late/k16/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2013/late/k16/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2016/early/k4/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2016/early/k4/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2016/early/k4/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2016/early/k8/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2016/early/k8/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2016/early/k8/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2016/early/k16/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2016/early/k16/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2016/early/k16/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2016/middle/k4/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2016/middle/k4/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2016/middle/k4/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2016/middle/k8/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2016/middle/k8/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2016/middle/k8/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2016/middle/k16/round0",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2016/middle/k16/round1",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    },
+    {
+      "where": "2016/middle/k16/round2",
+      "output_hash_exact_after_saved_sum_subtraction": false
+    }
+  ],
+  "no_kernel_import_or_physics": true,
+  "scientific_verdict": "ROOT_ONLY",
+  "tolerances": {
+    "numeric_rel": 2e-11,
+    "numeric_abs": 2e-13,
+    "tau_rel": 2e-10,
+    "tau_abs": 2e-24,
+    "array_row_and_capture": "exact float equality"
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "schema": "a17.final.public.copy.checks.v1",
+  "status": "PUBLIC_COPY_AND_RELEASE_ARRAY_REANALYSIS_PASSED",
+  "source_integrity": {
+    "schema": "a17.owner.copied.source.final.check.v1",
+    "status": "PASS_EXACT_COPIED_GIT_AND_ARCHIVED_PYTHON_SOURCE",
+    "git_rows_checked": 306,
+    "python_aliases_parsed": 86,
+    "matrix_multiply_nodes_across_aliases": 191,
+    "private_role_arithmetic_identifiers": 0,
+    "scope": "Exact source/AST and saved archive bytes; no research source imports or physics",
+    "earlier_helper_scope_error": "prefix current selected archived NPZ aliases absent from Git; preserved as packaging invocation failure, not byte or numerical failure"
+  },
+  "synthetic_tests": {
+    "portable_saved_evidence": 33,
+    "public_fee_tables": 8,
+    "scope": "synthetic mechanical tests, not new Maxwell validation"
+  },
+  "public_fee_reanalysis": {
+    "schema": "a17.public.fee.csv.reconstruction.v1",
+    "status": "PASS_PUBLIC_DERIVED_CSV_FEES",
+    "source_authoritative_json_sha256": "6dd4a7d670b493cf508cb04df00dbdb4ee7c3bfd94bd8fb92148d7471d6ce27b",
+    "public_authority_sha256": "fd9d842a2fbd63309480dded35223bcaaeffca3fd1cd017297f216a9a2e02955",
+    "input_sha256": {
+      "attempt_csv": "ad0bfbeb634fce6f7eb3c0d6a57cc52d3048aea0501f488be4f9d3c00af7e98b",
+      "rejected_preflight_csv": "b5b9d04d5b6793c3519a5a8ef76005137ee69db1fbfdd2af23155aab6c34a88e"
+    },
+    "old_carry_s": 4889.515,
+    "occupation_s": 15072.343000000052,
+    "rejected_preflight_s": 0.2019999999902211,
+    "campaign_s": 19962.06000000004,
+    "failed_attempts_retained": 4,
+    "rejected_preflights_retained": 2,
+    "phase_totals": [
+      {
+        "partition": "original_replay",
+        "occupation_s": 268.7490000000107,
+        "rejected_preflight_s": 0.0
+      },
+      {
+        "partition": "primary_validation",
+        "occupation_s": 1158.673000000068,
+        "rejected_preflight_s": 0.015000000013969839
+      },
+      {
+        "partition": "noise",
+        "occupation_s": 895.25,
+        "rejected_preflight_s": 0.0
+      },
+      {
+        "partition": "nonlinear_transfer",
+        "occupation_s": 3704.670999999973,
+        "rejected_preflight_s": 0.0
+      },
+      {
+        "partition": "offline_coverage",
+        "occupation_s": 9039.907000000007,
+        "rejected_preflight_s": 0.0
+      },
+      {
+        "partition": "gate_or_failed_setup",
+        "occupation_s": 5.092999999993481,
+        "rejected_preflight_s": 0.18699999997625127
+      }
+    ],
+    "nested_stages_added": false,
+    "raw_private_monitor_reaudited": false,
+    "scope": "Reconstruct audited public CSV fees only. Private SSH/CIM/command monitor originals are not available or audited by this program."
+  },
+  "public_coverage_reanalysis": {
+    "schema": "a17.public.coverage.aggregate.validation.v1",
+    "identity": "NEW_PUBLIC_REANALYSIS_NOT_HISTORICAL_RUNTIME",
+    "status": "PUBLIC_AUTHORITY_AND_CSV_VALIDATED",
+    "source_authority_sha256": "e4f7c13169e570d49d6b5e0e16e8111c9c94e891dd419cded826c2652c40d978",
+    "snapshot_receipt_sha256": "0d1463078905fcdc54dcc215d47a34e6a1629629691439805c44effeb966f7e8",
+    "input_csv_sha256": {
+      "initial": "b396575a8cb347d97093661b94292097310f782fed39d91eae01d3f1d4e33889",
+      "path": "71a36ceb1799caa35c09ab95134318de62c2eae4e03dae764f56d50f2eceef49"
+    },
+    "planned_objects": 11,
+    "planned_cells": 99,
+    "initial_aggregation_recomputed_from_public_cells": true,
+    "missing_public_cells_reason": null,
+    "initial_scope": "Initial receiver-neighborhood opportunity only; positive full-teacher-Q weighted; zero opportunities have no ratio",
+    "path_scope": "Separate bounded local path final risk; no global oracle or deterministic certificate",
+    "private_source_bound_provenance_reaudited": false,
+    "initial_complete_objects": 10,
+    "path_null_cells": 3,
+    "port_source_sha256": "e40a11e168b433b3355809bd410559550c5da9ef5154ca93103ec864f6ec9bc4"
+  },
+  "public_nonlinear_saved_reanalysis": {
+    "counts": {
+      "completed": 6,
+      "failed_prefix": 1,
+      "not_run": 1,
+      "planned": 8
+    },
+    "objective_curve_rows": 125,
+    "strict_full_metric_mode": "EXPECTED_FAILURE_FAILED_PREFIX_FIELDS_REMAIN_NULL",
+    "source_report_sha256": "3d935d66eaa90e40899acd98021466ff9ea15eb3fb57fd666a90e6cdd5744529"
+  },
+  "release_index_sha256": "13d41095d29c7807556d28d02524a94df9b43ddbdd34f630ac13cdd176f0de0d",
+  "release_volumes": [
+    {
+      "CRC": "PASS",
+      "bytes": 1983884693,
+      "filename": "A17_CLOSURE_EVIDENCE_part01.zip",
+      "member_sha256": "PASS",
+      "members": 65,
+      "published": false,
+      "sha256": "74c4bd1a43e0055615ef36b3ef9701eb2b5eaf4eab1f92f1e8e200e63195b1c8"
+    },
+    {
+      "CRC": "PASS",
+      "bytes": 1983126268,
+      "filename": "A17_CLOSURE_EVIDENCE_part02.zip",
+      "member_sha256": "PASS",
+      "members": 2406,
+      "published": false,
+      "sha256": "dc316ada7ec5845cdccb03184761f8cd3be5f91c4a06761291a9b673c5f26705"
+    },
+    {
+      "CRC": "PASS",
+      "bytes": 85621454,
+      "filename": "A17_CLOSURE_EVIDENCE_part03.zip",
+      "member_sha256": "PASS",
+      "members": 3548,
+      "published": false,
+      "sha256": "e7cc445c5236d5d512bcc2309b56064f4deaebc59128d64d1be41be74d741045"
+    }
+  ],
+  "saved_materialization": {
+    "status": "MATERIALIZED_NEW_READER_DIRECTORY",
+    "identity": "NEW_PUBLIC_REANALYSIS_NOT_HISTORICAL_RUNTIME",
+    "index_sha256": "13d41095d29c7807556d28d02524a94df9b43ddbdd34f630ac13cdd176f0de0d",
+    "selected_aliases": 11,
+    "verified_volumes": [
+      {
+        "volume": 2,
+        "filename": "A17_CLOSURE_EVIDENCE_part02.zip",
+        "sha256": "dc316ada7ec5845cdccb03184761f8cd3be5f91c4a06761291a9b673c5f26705",
+        "CRC": "PASS",
+        "all_member_SHA": "PASS"
+      },
+      {
+        "volume": 3,
+        "filename": "A17_CLOSURE_EVIDENCE_part03.zip",
+        "sha256": "e7cc445c5236d5d512bcc2309b56064f4deaebc59128d64d1be41be74d741045",
+        "CRC": "PASS",
+        "all_member_SHA": "PASS"
+      }
+    ],
+    "materialized": true
+  },
+  "numerical_physics_rerun": false,
+  "final_pdf_delivery": {
+    "schema": "a17.owner.final.pdf.delivery.v1",
+    "status": "FINAL_COPIED_BYTE_IDENTICALLY_AFTER_53_PAGE_VISUAL_REVIEW",
+    "pages": 53,
+    "source_manifest_sha256": "cb5863bad8e6a35de09e21aa49956ec8aedd35d345e0e725ad8d1b178506a7c1",
+    "page_review_sha256": "1b37cd5091145454f8c65cf2ff8163dcd0f4462e489da119725fc1a0cead1f6b",
+    "visual_receipt_sha256": "c1de252eb06b361aff25eddf8376cc59f2f3e52feb54766ce2cb7e14322b4a3d",
+    "owner_layout_approved": true,
+    "old_outputs_preserved": true,
+    "pdfs": {
+      "PAPER_TAP_FINAL.pdf": {
+        "sha256": "8644124916578d0159e070f330fd1978811fabcdaad6726983cb0ab2c5abc7de",
+        "bytes": 1225859,
+        "pages": 11
+      },
+      "PAPER_SUPPLEMENT_FINAL.pdf": {
+        "sha256": "10aac9e48441fbef0a8d46fecb84fcac9732e82d80e034e45e3a5e5be79d38e7",
+        "bytes": 220129,
+        "pages": 11
+      },
+      "REPORT_TO_XUDONG_FINAL.pdf": {
+        "sha256": "3332cf998e42275e9df7acc635097c0dce6f5f37ca716542625ef53b284436e7",
+        "bytes": 1266635,
+        "pages": 7
+      },
+      "READER_GUIDE_FINAL.pdf": {
+        "sha256": "2657efe8a52ac94c53d2c724f74fc3dcb8f2da310dbe73031630407665315f17",
+        "bytes": 1519611,
+        "pages": 24
+      }
+    }
+  }
+}

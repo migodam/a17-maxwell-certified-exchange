@@ -1,0 +1,5 @@
+{
+  "status": "FAILED_BINDING_VALIDATION",
+  "error": "extracted manifest differs",
+  "collector_sha256": "1dc48f964aa8126bf204873c211fd3ada9180d63a737989584741d51edd64e2f"
+}

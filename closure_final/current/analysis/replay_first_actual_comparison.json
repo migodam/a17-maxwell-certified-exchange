@@ -1,0 +1,74 @@
+[
+  {
+    "phase": "early",
+    "k": 4,
+    "ids_equal": true,
+    "step_abs": 0.0,
+    "old_accepted": 1,
+    "new_accepted": 1
+  },
+  {
+    "phase": "early",
+    "k": 8,
+    "ids_equal": true,
+    "step_abs": 0.0,
+    "old_accepted": 2,
+    "new_accepted": 2
+  },
+  {
+    "phase": "early",
+    "k": 16,
+    "ids_equal": true,
+    "step_abs": 0.0,
+    "old_accepted": 3,
+    "new_accepted": 3
+  },
+  {
+    "phase": "middle",
+    "k": 4,
+    "ids_equal": true,
+    "step_abs": 0.0,
+    "old_accepted": 2,
+    "new_accepted": 2
+  },
+  {
+    "phase": "middle",
+    "k": 8,
+    "ids_equal": true,
+    "step_abs": 0.0,
+    "old_accepted": 3,
+    "new_accepted": 3
+  },
+  {
+    "phase": "middle",
+    "k": 16,
+    "ids_equal": true,
+    "step_abs": 0.0,
+    "old_accepted": 1,
+    "new_accepted": 1
+  },
+  {
+    "phase": "late",
+    "k": 4,
+    "ids_equal": true,
+    "step_abs": 0.0,
+    "old_accepted": 3,
+    "new_accepted": 3
+  },
+  {
+    "phase": "late",
+    "k": 8,
+    "ids_equal": true,
+    "step_abs": 0.0,
+    "old_accepted": 3,
+    "new_accepted": 3
+  },
+  {
+    "phase": "late",
+    "k": 16,
+    "ids_equal": true,
+    "step_abs": 0.0,
+    "old_accepted": 3,
+    "new_accepted": 3
+  }
+]

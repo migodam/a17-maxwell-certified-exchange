@@ -1,0 +1,39 @@
+\documentclass[UTF8,a4paper,11pt,fontset=none]{ctexart}
+\usepackage{fontspec}\setmainfont{Times New Roman}\setsansfont{Arial}\setmonofont{Menlo}\setCJKmainfont{Songti SC}\setCJKsansfont{Heiti SC}
+\usepackage[margin=2.1cm]{geometry}\usepackage{amsmath,amssymb,graphicx,booktabs,tabularx,hyperref,microtype}
+\hypersetup{hidelinks}\setlength{\parskip}{.35em}\setlength{\emergencystretch}{2em}
+\title{接收电流空间何时值得改变？\\论文中文稿、完整推导与从零解读}\author{}\date{}
+% Use cached readable math sizes; no network font installation.
+\DeclareMathSizes{10}{10}{7}{6}
+\DeclareMathSizes{9}{9}{6}{6}
+\DeclareMathSizes{8}{8}{6}{6}
+\DeclareMathSizes{7}{7}{6}{6}
+\DeclareMathSizes{6}{6}{6}{6}
+\DeclareMathSizes{5}{6}{6}{6}
+\begin{document}\maketitle
+\input{CLOSURE_ABSTRACT_ZH.tex}
+\section*{怎样阅读这份材料}
+这份材料同时提供论文的中文理解稿和入门解释。先建立材料、场、电流、测量之间的关系，再推导指定电流改变怎样影响材料步，最后说明每类实验回答哪个问题。所有主要推导用中文写出；读者不需要先读英文，也不需要了解内部项目编号。
+
+只记住一个问题即可：已经有一个按接收器选出的可靠电流空间，什么时候值得换掉其中一个方向？本文不要求发明新的完整求解器。它把某次替换的物理影响算清楚，然后检查这个影响是否改善当前材料更新。
+\setcounter{tocdepth}{1}\tableofcontents\clearpage
+\input{FINAL_TERMINOLOGY_ZH.tex}
+\input{READER_FUNDAMENTALS.tex}
+\clearpage\part{中文论文：从材料激发到实际更新}
+\input{FINAL_CHINESE_DERIVATIONS.tex}
+\input{EXCHANGE_DERIVATIONS_ZH.tex}
+\input{FINAL_METHOD_ZH.tex}
+\clearpage\part{中文论文：物理见证、冻结验证与迁移}
+\input{FINAL_WITNESSES_ZH.tex}
+\input{CLOSURE_READER_RESULTS.tex}
+\clearpage
+\section{论文解决了什么，又留下什么}
+理论价值在于把指定电流改动的材料入口、内部反馈和接收返回分开，再把这些因子连接到残差相关的实际步差。已知Schur补和二次收益公式是工具；真正值得解释的是Maxwell电流怎样改变材料法方程，以及为什么可见性、信息体积和当前收益是不同判断。
+
+实验价值在于几类证据互相约束：暗电流显示直接输出会漏掉反馈；信息正而收益负显示曲率汇总不够；pair见证显示当前相关性可能非加性；共同候选诊断显示真实有限位移的代价会改变排序。冻结规则验证则检验这种具体交换设计能否从原四对象移到更多对象，噪声和受约束重建检验其适用层次。
+
+工程价值是把判断限制在少量可收费动作上。相同电流秩不是相同时间；缓存$Jx$和逐finalist计算$Jd$避免了多余完整伴随，但候选与anchor仍需成本。一个没有找到好动作的短池，不代表整个字典没有好方向；一个改善完整GN步的交换，也不保证最终真值误差变小。
+
+对后续研究，最清楚的难点是候选取得（candidate acquisition）：怎样不用完整teacher就较低成本地把有价值的方向放进候选池。本文保留冻结规则，不用新增网络或调参把这个难点掩盖掉。理论成立、验证的范围和失败边界共同决定这篇论文应当怎样被使用。
+\clearpage{\small\setlength{\parskip}{0pt}\input{FINAL_REFERENCES.tex}}
+\end{document}

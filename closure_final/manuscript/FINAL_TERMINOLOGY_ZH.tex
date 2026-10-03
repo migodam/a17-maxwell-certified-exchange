@@ -1,0 +1,37 @@
+\section*{中英文术语与符号速查}\addcontentsline{toc}{section}{中英文术语与符号速查}
+\markboth{中英文术语与符号速查}{中英文术语与符号速查}
+\noindent\begin{tabularx}{\linewidth}{p{.23\linewidth}p{.31\linewidth}X}\toprule
+中文名称&英文术语&用途\\\midrule
+电磁逆散射&electromagnetic inverse scattering&从散射场估计材料。\\
+感应电流&induced current&材料受总场激发产生的响应。\\
+材料切向&material tangent&允许的微小材料变化方向。\\
+材料注入&material injection&把材料变化变成电流方程右端。\\
+保留空间反馈&retained feedback&新增方向激发已有电流后返回的响应。\\
+反馈修饰&feedback-dressed&原方向加上保持保留方程一致的反馈。\\
+材料拉回&material pullback&由伴随将输出影响返回材料变量。\\
+双侧支撑&paired material support&两组材料方向包含指定模型改变的步差。\\
+接收基底&receiver-derived basis&按直接接收谱建立的初始空间，仍需通过端点求解检查。\\
+条件交换&conditional exchange&在当前已选空间下重算的一列替换。\\
+较丰富约化参考&richer reduced anchor&用于排序的较大约化模型，不是完整最优解。\\
+有限有符号收益&finite signed gain&实际位移在共同完整二次目标上减少的量。\\
+高精度定向复核&high-fidelity directional check&计算$Jd$检查收益的数值方法。\\
+数值显著性&numerical significance&收益超过预先固定的浮点尺度容差。\\
+GN二次差距&full-GN quadratic gap&约化材料步相对完整最优步的局部误差。\\
+候选覆盖&candidate coverage&短池实际包含多少可用机会。\\
+弃权／无动作&abstention / no-op&没有接受的候选时保持当前空间。\\
+线搜索&line search&在共同非线性目标上缩短并接受可行步。\\
+\bottomrule\end{tabularx}
+
+\begin{table}[htbp]\centering\small
+\begin{tabularx}{\linewidth}{lX}\toprule
+符号&含义\\\midrule
+$\chi,Q_T,s$&材料对比度、物理正交展开、实材料更新。\\
+$L,G_D,S,B,J$&内部方程、内部传播、接收、材料注入、材料导数。\\
+$V,A,C,k$&交换公式中的共同核心、移出方向、移入方向、共享复电流列数。消元公式另以$A=I-L$表示内部传播，依公式上下文区分。\\
+$\bar C,Y_C,N_C,\Gamma_C$&反馈修饰电流、观测因子、注入因子、Schur补。\\
+$r,\Lambda,\ell,H,h$&数据残差、正则曲率、先验线性项、法方程矩阵和正号常数项。\\
+$x,d,u,z,Q$&原材料步、实际步差、$r+J_Fx$、$J_Fd$、完整收益。\\
+$s_*,R_{\rm GN},\rho_{\rm obj}$&离线完整参考步、完整GN差距、对象内求和风险比。\\
+\bottomrule\end{tabularx}
+\caption{电流列数与实材料维数是不同预算；复输出对应同一个共享实材料变量。}
+\end{table}\clearpage

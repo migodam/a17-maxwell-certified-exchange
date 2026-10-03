@@ -1,0 +1,37 @@
+\section{Locked Three-Dimensional Validation}
+\subsection{Common physical problem and comparison}
+The experiments use the same vector-Maxwell DDA state and derivative operators throughout; general DDA background is given in~\cite{r11}. Six transverse plane-wave illuminations and 64 dual-polarization receivers sample the scattered field. The inverse grid has $12^3$ cells in a box of side 1.5, with $k_0=2$; truth data use a $14^3$ grid. Both grids use the same DDA family. The material coordinates are volume-orthonormal Gaussian or voxel tangents, with the true polarizability derivative retained. The full forward residual and injection are common to both policies; only the tangent-current space changes. Current ranks $k=4,8,16$ are actual shared complex columns, distinct from the real material dimension. The Supplement provides the implemented dyadic, acquisition, gauges, and hash-locked protocol.
+
+We compare the unchanged receiver backbone with the frozen verified-exchange rule. Each object contributes the initial linearization, saved iteration index 3, and last saved linearization. A complete object therefore has nine state--rank cells. We aggregate absolute full-GN gaps within an object before dividing by its receiver total. The independent aggregation unit is the object, not a state or rank. A 10,000-draw object bootstrap uses the predeclared seed 20261002.
+
+\subsection{Original objects and additional-object validation}
+The original smooth Gaussian, near-contact Gaussian, layered voxel, and asymmetric voxel objects give 35 improved cells and one equal cell out of 36. Their object-summed gap ratios are 0.1904,0.6538,0.2776, and 0.4181; the median 0.3478 represents a 65.2\% reduction. The physical threshold replay preserves all these results.
+
+Before additional results, we locked the rule, thresholds, seeds, and all eleven remaining compatible objects. Ten objects provide complete nine-cell coverage and all ten improve. Their median object-summed ratio is 0.4928, a 50.7\% reduction; the interquartile range is [0.3314,0.5588] and the object-bootstrap 95\% interval for the median is [0.3133,0.5647]. The remaining asymmetric voxel object completes six early/middle cells, with ratio 0.4925. Its late receiver endpoint fails the frozen normal-residual check at the first budget; the two subsequent budgets are not run. All three unavailable cells remain in the 99-cell denominator.
+
+Among the 96 audited additional-object cells, 95 improve, one is equal within the evaluation floor, and none worsen. Absolute receiver gaps span $2.74\times10^{-7}$--$3.09\times10^{-3}$; exchange gaps span $8.73\times10^{-8}$--$8.36\times10^{-4}$. The smallest receiver denominator exceeds its evaluation floor by $6.31\times10^9$, and the maximum full-reference true normal residual is $9.55\times10^{-12}$. The improvement is resolved in the stored absolute quantities, rather than created by dividing two floor-level risks. Figure~\ref{fig:locked-primary} reports both ratios and absolute gaps.
+
+\begin{figure*}[t]\centering
+\includegraphics[width=.92\textwidth]{figures/closure_validation_v2/Figure1_primary_overview.pdf}
+\caption{Frozen-rule validation on all planned additional objects. Left: object-summed full-GN gap ratios; filled markers are ten complete objects, while the hollow marker uses six of nine cells from the remaining object. Right: paired absolute gap sums by current rank; dashed curves retain that object's two available states. Geometry labels distinguish smooth profiles, contact structures, shells, and asymmetric structures; the complete representation mapping is in the Supplement. These quantities measure frozen material-step fidelity.}\label{fig:locked-primary}
+\end{figure*}
+
+These additional objects were historically studied in a broader current-ranking investigation. Inspected records show no object-specific use in historical exchange-teacher or pilot-network development, but complete blind independence cannot be established from their historical exposure. We therefore describe this test as locked-rule validation on additional previously studied Maxwell objects. The bootstrap summarizes this fixed object set; it is not a distribution-free generalization guarantee.
+
+\subsection{Noisy residuals}
+Four objects were preselected by geometry and representation: smooth voxel, near-contact Gaussian, shell Gaussian, and asymmetric voxel. Their middle-state physics is fixed while 1\% and 3\% relative complex noise changes the residual, with three independent realizations at each level. Every noisy residual receives its own offline full-GN reference after online selection. All 72 planned cells are audited: 71 improve and one abstains with an unchanged gap. The median object-summed ratios are 0.3307 at 1\% and 0.4026 at 3\% (Table~\ref{tab:noise}).
+
+The controller verifies 408 finalists and rejects 98 below the numerical threshold; 172 exchanges are accepted. Verification costs 2448 current right-hand sides for $Jd$, including rejected finalists. Selected directions change with the residual, so this evidence concerns retained update utility rather than invariance of selected modes. The limited four-object, middle-state test supports the effect at these two noise levels.
+
+\begin{table}[t]\centering\caption{Noise: ratio of object-summed full-GN gaps. Each entry sums three realizations and three current ranks.}\label{tab:noise}
+\begin{tabular}{lrr}\toprule
+Geometry / material tangent&1\%&3\%\\\midrule
+Smooth / voxel&0.3255&0.4384\\
+Near-contact / Gaussian&0.0996&0.1873\\
+Shell / Gaussian&0.3358&0.3667\\
+Asymmetric / voxel&0.3687&0.5330\\\midrule
+Object median&0.3307&0.4026\\\bottomrule
+\end{tabular}
+\end{table}
+
+\input{CLOSURE_SECONDARY_RESULTS.tex}

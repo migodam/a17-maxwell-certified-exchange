@@ -1,0 +1,751 @@
+{
+  "schema": "a17.final.three-perspective.review.v2",
+  "scope": "read-only current reachable FINAL sources; cost and coverage closed; independent simulated advisory perspectives, root final scientific owner",
+  "recommendations": {
+    "TAP": "major",
+    "current_subspace": "minor",
+    "ROM_method_contribution": "major",
+    "ROM_Maxwell_specialization_discussion": "minor"
+  },
+  "questions": [
+    {
+      "question": 1,
+      "title": "最强、最可站稳的主张",
+      "TAP": "在规定三维矢量Maxwell离散问题、固定材料状态和共同完整GN目标上，有额外方向核验的同电流秩替换改善材料步保真度。十个完整额外对象的对象汇总中位gap下降50.7%，96个有效单元95改善、1底噪内相同；机制见证提供有用电磁解释。这是有边界的机制加设计证据。",
+      "current_subspace": "指定电流改变的材料入口、保留空间反馈、接收返回可以明确分解，再追踪到残差相关的有限材料位移。它解释接收奇异排序为什么不是材料用途排序，并允许从receiver起点做小步修正。",
+      "ROM": "最强结果是针对给定state/residual的具体模型改动，以实际端点材料位移而非响应强度进行task-aware评估。方向式可验证一个标量gain且不需新的完整伴随；数值资料支持这个接口在受测对象上有用。它不构成新的通用ROM接受定理。",
+      "evidence": [
+        "E01",
+        "E04",
+        "E08",
+        "E09",
+        "E28"
+      ]
+    },
+    {
+      "question": 2,
+      "title": "最脆弱或最容易被审稿人挑战的主张",
+      "TAP": "最脆弱的是把上述接口提升为足够独立的TAP方法贡献：成熟current-subspace内部传播与inverse-ROM验收已覆盖不少组成部分，原SOM/TSOM/FFT-TSOM/S-DBIM全文尚未闭合。其次是把局部gap收益外推成普遍图像优势。当前正文基本避免了这种外推，贡献差异仍需source-level论证。",
+      "current_subspace": "不能把反馈称作每次收益的因果原因，也不能把两侧支撑称作Maxwell专有新代数。L=I例子已明确表明普通最小二乘也会有双侧耦合。物理因子承担解释价值，而不是单凭定理形式取得新颖性。",
+      "ROM": "最脆弱的是fixed-rank交换与已知adaptive/task-oriented ROM的差异是否足够实质。缺少native-ROM性能对照时，不能说整体更强；高精度检查、primal/dual响应和丰富参考都已成熟。此问题是贡献评估风险，不是本轮发现了数值矛盾。",
+      "evidence": [
+        "E02",
+        "E28",
+        "E30",
+        "E31",
+        "E18"
+      ]
+    },
+    {
+      "question": 3,
+      "title": "什么内容真正具有Maxwell特性？",
+      "TAP": "矢量Green耦合、当前总场中的材料注入和极化率导数、跨照明共享实材料变量，以及保留电流导致的复接收返回，构成电磁内容。直接暗而反馈亮、信息正而材料收益负等受控Maxwell见证，比Schur展开本身更有TAP说服力。",
+      "current_subspace": "新增方向的直接SC与保留反馈SR0XG_DC是可区分的物理路径，且可干涉。TSOM已用内部传播，因此贡献必须落在指定改变如何产生材料步后果，而不是“首次发现内部反馈”。",
+      "ROM": "抽象J=SL^{-1}B、低秩导数差、法方程相减和二次gain都可移到其他参数化PDE。Maxwell-specific是具体L/B/S的来源及物理见证，算法接受逻辑并非电磁独占。",
+      "evidence": [
+        "E01",
+        "E02",
+        "E03",
+        "E28",
+        "E34"
+      ]
+    },
+    {
+      "question": 4,
+      "title": "相同k的比较是否公平？",
+      "TAP": "对于“同表示维数下材料用途”公平：端点实际保持k列共享复电流，状态、材料坐标、残差、prior/damping不变；原receiver列可替换。但它不是equal-cost或equal-information实验，64列anchor、154字典与全方向核验是额外支付的信息。",
+      "current_subspace": "将receiver作为起点并保留总rank是清楚的设计约束；不能说所有receiver列始终保留，也不能把计算embedding维数误当端点rank。固定短池等规则锁定使测试可比较，但不隔离每类候选取得的单独贡献。",
+      "ROM": "同rank控制的是最终表示大小。丰富anchor及高保真核验使两策略拥有不同construction budgets；该设计可以有用，却没有证明同资源条件下的最优ROM。冷启动receiver-only未独立计时，不应制造在线all-in增量。",
+      "evidence": [
+        "E06",
+        "E07",
+        "E23",
+        "E22"
+      ]
+    },
+    {
+      "question": 5,
+      "title": "局部材料步与最终成像如何区分？",
+      "TAP": "完整GN gap是对规定正则局部更新的保真，不是真值误差。三组完整受约束配对复材料误差下降10.8%、0.22%、7.16%，但接触实部略差、接触/shell峰值仍模糊；因此只支持有限重建后果。",
+      "current_subspace": "材料激发和接收返回先解释“能够影响”，残差与有限位移再判定“当前值得”。后续投影和line search改变执行位移，必须由共同非线性目标另行接受，不能借冻结Q直接保证图像。",
+      "ROM": "这是模型精度与inverse-estimator质量的经典区别。更忠实的局部GN方向并不消除欠定性、regularization偏差、非线性或参数表示误差。当前文字和逐分量数据承认了这个区别。",
+      "evidence": [
+        "E04",
+        "E18",
+        "E19",
+        "E37"
+      ]
+    },
+    {
+      "question": 6,
+      "title": "额外对象、噪声和coverage证据有多强？",
+      "TAP": "强于只看开发四对象：规则先锁定、所有兼容额外资产入计划、96/99有效且保留失败；对象聚合而非99独立样本。噪声72/72完成，71改善1no-op，但只四对象中期、两级合成噪声。历史资产曝光使confirmed strict-blind对象为0，不能称全新盲测泛化。",
+      "current_subspace": "覆盖新证据尤其有价值：全字典anchor初次机会捕获97.30–99.99%，12池49.12–95.31%，说明本固定字典/受测对象上取得候选损失比全字典anchor排序损失更明显。它是对象内正gain加权的初次receiver-neighborhood机会，不是每单元保证或部署整条路径捕获。",
+      "ROM": "局部teacher对96cell的声明字典诊断闭合，仍非global oracle。90teacher终态更好、5online更好、1floor内相同意味着路径交互不可忽略；终态差距不能全叫score regret。15局部数值停止、81达到3动作cap，无合法输出半径则无deterministic certificate。",
+      "evidence": [
+        "E10",
+        "E45",
+        "E08",
+        "E11",
+        "E13",
+        "E14",
+        "E15",
+        "E16"
+      ]
+    },
+    {
+      "question": 7,
+      "title": "费用说明是否足够、能支持效率主张吗？",
+      "TAP": "费用已闭合且读法合理：19,962.060秒/5.545小时是整个campaign执行占用，含历史、失败、离线标签，不是一次成像。三完整配对all-in child wall都更慢1.46–2.68倍。工程结论应保持“额外物理作用购买局部保真”，没有加速证据。",
+      "current_subspace": "拒绝finalist也收费，Jx/Jd按真实RHS保留，Gaussian离线full-J只支付一次，缓存标签不再虚增物理次数；voxel保留实际块作用。费用总量与子阶段不重复相加。这让设计价格透明，但没有每候选独立冷费用。",
+      "ROM": "阶段缺少可分离wall时保留null是正确的。少算新增伴随不等于少总计算；shell forward RHS下降而总wall上升就是实证。现有计时各一次，不提供计时置信区间或跨平台效率结论；offline9039.907秒也不是廉价online选择费用。",
+      "evidence": [
+        "E22",
+        "E24",
+        "E25",
+        "E26",
+        "E27",
+        "E23",
+        "E12",
+        "E20"
+      ]
+    },
+    {
+      "question": 8,
+      "title": "与generic goal-oriented/adaptive ROM的关系？",
+      "TAP": "现稿已承认primal/dual导数保持、task-aware降阶、fallback和高精度验收，并把接口放到Maxwell电流设计。这个crediting正确；仍需把直接最近邻原文与本指定fixed-rank replacement的差异逐点定位，才能判断TAP独立贡献够不够。",
+      "current_subspace": "两fold方法已考虑内部传播，所以“内部+接收”本身不新。当前区分较合理：传播空间组织、指定电流替换、共享材料法方程改变与残差相关有限位移是不同对象。没有native TSOM run，不能把inspired bank代理结果称作原算法比较。",
+      "ROM": "这更像成熟ROM思想的一项有物理解释的专门化：固定rank替换引起的step utility，经廉价于完整优化参考的Jd标量核验。是否超过有价值的应用/诊断需更精确的方法差异论证；目前没有generic ROM superiority、new acceptance theorem或certified trust-region claim。",
+      "evidence": [
+        "E28",
+        "E29",
+        "E30",
+        "E32",
+        "E02"
+      ]
+    },
+    {
+      "question": 9,
+      "title": "历史负结果和未来分支是否被诚实处理？",
+      "TAP": "历史paired比direct好但被equal-material-rank Krylov全面超过、paid1.416倍更慢、宽域ranking中位1.0947的负结果仍在supp。新版不把receiver-centered结果拿来覆盖旧问题，这增加可信度。无需为投稿再引入网络、selector或solver支线。",
+      "current_subspace": "pair的5/540是rank14到16的添加见证，不是same-k交换陷阱；29/36是强制top-one并去掉no-op的诊断，不是部署失败率。覆盖指出候选取得是明确未来问题，但当前冻结12池没有改规则。",
+      "ROM": "适应性空间取得和路径选择可作为未来ROM研究问题；本稿不需要假装已解决global search或全空间停止。保持历史失败、受限teacher和外部kernel重放依赖，比继续叠加通用模块更有助于定义当前贡献。",
+      "evidence": [
+        "E32",
+        "E33",
+        "E36",
+        "E35",
+        "E44",
+        "E43"
+      ]
+    },
+    {
+      "question": 10,
+      "title": "最终独立建议：ready / minor / major / not ready",
+      "TAP": "MAJOR（针对TAP投稿的内容与贡献判断）。局部证据、费用和coverage现已足够连贯；没有发现新的致命叙事或数据口径错误。仍需关闭最近邻原文缺口，并明确说明成熟ROM/SOM组成之外何种Maxwell设计内容足够独立。不因PDF尚未构建或旧pending includes给not-ready。对研究讨论稿可按minor使用，但不是期刊认可。",
+      "current_subspace": "MINOR（作为current-subspace机制与条件设计研究稿）。核心问题、物理链条、fixed-rank边界、失败和费用均清楚；剩余是精确术语和source-level比较。若判断TAP最终录用价值，还必须回到TAP的major门，而不能用机械齐备替代贡献判断。",
+      "ROM": "MAJOR（若按新的inverse-ROM方法贡献评估）；MINOR（若明确是Maxwell专门化/机制诊断与有界条件设计）。成熟验收与导数保持重合已承认，但差异尚未以直接最近邻算法级论证完全闭合。没有要求新solver/NN或新增实验分支；这不是对原代数有效性作否定。",
+      "evidence": [
+        "E30",
+        "E31",
+        "E28",
+        "E22",
+        "E13",
+        "E18"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "V2-01",
+      "status": "OPEN_REVIEW_RISK",
+      "severity": "major",
+      "title": "投稿级贡献差异与原文缺口仍未闭合",
+      "note": "这不是新发现的误引或否定原创性。current机制接口清楚，但SOM/TSOM/FFT-TSOM/S-DBIM原全文OPEN，成熟adaptive inverse-ROM已有验收/fallback/enrichment。费用和覆盖封口不能自动关闭贡献门。",
+      "minimal_action": "根线程继续关闭现有最近邻全文条目；用当前comparison表定位指定同秩电流修改到材料位移接口的实质差异。保留不作first-ever/native-performance声明。",
+      "evidence": [
+        "E30",
+        "E31",
+        "E28"
+      ]
+    },
+    {
+      "id": "V2-02",
+      "status": "NEW_MINOR_WORDING",
+      "severity": "minor",
+      "title": "陈教授独立稿首次LM缩写未展开",
+      "note": "陈教授稿首次在信息尺度说明中出现LM阻尼，未在该独立入口先展开Levenberg–Marquardt；中文全文稿有展开，但不能要求汇报读者跨稿寻找。",
+      "minimal_action": "仅把第一次“LM阻尼”改为“Levenberg–Marquardt（LM）阻尼”。",
+      "evidence": [
+        "E39"
+      ]
+    },
+    {
+      "id": "V2-03",
+      "status": "NEW_MINOR_WORDING",
+      "severity": "minor",
+      "title": "费用补充的paired attempts易与实验配对混读",
+      "note": "“61 paired closed attempts”本意是attempt起止记录成对闭合，不是61组receiver/exchange科学对照。上下文可理解，仍可消除这个机械歧义。",
+      "minimal_action": "改为“61 closed attempts with matched start/end ledger records”。",
+      "evidence": [
+        "E46",
+        "E24"
+      ]
+    },
+    {
+      "id": "V2-04",
+      "status": "VERIFIED_SCOPE",
+      "severity": "none",
+      "title": "初次机会、12池与teacher路径三种量没有误粘",
+      "note": "97.30–99.99%与49.12–95.31%限定十完整对象加权初次机会；90/5/1是两条最多三步路径终态比较。没有读成global oracle、部署全路径99.99%或严格certificate。",
+      "minimal_action": "保留当前定义与caption，不扩大结论。",
+      "evidence": [
+        "E13",
+        "E15",
+        "E16"
+      ]
+    },
+    {
+      "id": "V2-05",
+      "status": "VERIFIED_SCOPE",
+      "severity": "none",
+      "title": "primary、noise、nonlinear失败分母及blind资格正确",
+      "note": "primary96/99保留3不可用；noise72不是独立对象数；NL六完成一失败一NR，失败属于exchange第18次前内部receiver-derived endpoint，未运行独立baseline无推断。confirmed strict-blind为0。",
+      "minimal_action": "保留当前失败归属和历史曝光说明。",
+      "evidence": [
+        "E08",
+        "E11",
+        "E19",
+        "E10",
+        "E45"
+      ]
+    },
+    {
+      "id": "V2-06",
+      "status": "VERIFIED_SCOPE",
+      "severity": "none",
+      "title": "同rank不等成本且三组重建全部更慢",
+      "note": "主文和费用补充均说明cold frozen baseline未独立取得；5.545h为campaign；每次拒绝/失败保留；阶段嵌套；Gaussian缓存标签不二次charge；all-in NL1.46–2.68倍更慢。",
+      "minimal_action": "不新增equal-cost/faster-imaging措辞。",
+      "evidence": [
+        "E06",
+        "E23",
+        "E24",
+        "E25",
+        "E27"
+      ]
+    },
+    {
+      "id": "V2-07",
+      "status": "VERIFIED_SCOPE",
+      "severity": "none",
+      "title": "历史负结果及29/36受控诊断未转写成部署失败率",
+      "note": "Krylov更强、paired更慢、宽域from-scratch负结果与precision失败仍保留。29/36明确mandatory top-one/no-op removed；pair是增秩添加。",
+      "minimal_action": "保留受控诊断及历史边界，不因最终正面结果删去。",
+      "evidence": [
+        "E32",
+        "E33",
+        "E35",
+        "E36"
+      ]
+    },
+    {
+      "id": "V2-08",
+      "status": "VERIFIED_TERMINOLOGY",
+      "severity": "none",
+      "title": "关键定义、双语及研究者称呼未回退",
+      "note": "reader术语表定义anchor；陈教授稿称呼陈教授并用我；P是照明数，P0=1e-5 I是信息尺度。共同核心奇异与端点可行分别处理，实际gain限定冻结unprojected位移；无需旧proof补丁。",
+      "minimal_action": "仅V2-02缩写展开；没有建议加入新概念。",
+      "evidence": [
+        "E38",
+        "E40",
+        "E41",
+        "E42",
+        "E03"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "E01",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/CORE_THEORY.tex",
+      "line": 80,
+      "quote": "Equation (6) identifies three physical paths. First, an added current radiates directly through \\(SC\\), but also generates an internal field through \\(G_D\\), excites retained currents through \\(X\\), and radiates through \\(SV\\) after retained-space rescattering. Hence",
+      "sha256": "1af4d3d080daee41b7b58eef2469228c1ed6a18ab67e105e702121d7c6a46952"
+    },
+    {
+      "id": "E02",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/CORE_THEORY.tex",
+      "line": 164,
+      "quote": "This algebraic illustration embeds in \\(L=I\\) Galerkin reduction: take $V=e_1$, $C=e_2$, $S=[1,1]$, and $B=I_2$. It isolates the least-squares effect: two-sided material coupling can occur even without scattering feedback. Feedback determines the electromagnetic factors; material least squares supplies the two-channel normal coupling.",
+      "sha256": "1af4d3d080daee41b7b58eef2469228c1ed6a18ab67e105e702121d7c6a46952"
+    },
+    {
+      "id": "E03",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/CONDITIONAL_EXCHANGE_THEORY.tex",
+      "line": 22,
+      "quote": "The formula follows by subtracting the two normal equations. It applies to the fixed unconstrained quadratic; changing an active constraint set requires its own optimality equations.",
+      "sha256": "960389016c8478bb1c69834ffa7a3c5a895fa8ca0ba28040f039b6c7527556fd"
+    },
+    {
+      "id": "E04",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/CONDITIONAL_EXCHANGE_THEORY.tex",
+      "line": 31,
+      "quote": "Positive gain means a better approximation to this frozen full-model material update. It does not by itself determine material truth error. The latter also contains a cross term with the unknown material error, and nonlinear reconstruction additionally requires feasible updates and step acceptance.",
+      "sha256": "960389016c8478bb1c69834ffa7a3c5a895fa8ca0ba28040f039b6c7527556fd"
+    },
+    {
+      "id": "E05",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_EXCHANGE_METHOD.tex",
+      "line": 7,
+      "quote": "Only the two highest-ranked feasible finalists receive full directional checks. The current output $J_Fx$ is cached and a finalist requires $J_Fd$. Each direction costs one current right-hand side per illumination. Among the checked finalists, the largest gain above the online numerical tolerance is accepted. Otherwise the state remains unchanged and the algorithm abstains within its tested pool. The procedure terminates after three accepted replacements or an abstention. Untested incoming atoms can contain useful actions, so this stopping rule does not establish full-dictionary local optimality.",
+      "sha256": "d44f6fd687db75a995155ce44468fdd7549945952d1c4fb6c92e731093495527"
+    },
+    {
+      "id": "E06",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_EXCHANGE_METHOD.tex",
+      "line": 3,
+      "quote": "For each state, start with the first $k$ receiver singular directions, with $k=4,8,16$ complex current columns shared by all illuminations. Subsequent exchanges can replace these directions; the preserved quantity is current rank, not every original receiver column. The admissible real material coordinates, forward residual, material injection, prior, and damping are unchanged. An auxiliary common embedding caches the projected current, receiver, and injection operators. Its dimension is not the retained current dimension: each evaluated Galerkin endpoint still has exactly $k$ independent columns. This is a comparison at equal representation dimension. Anchor acquisition, the dictionary and directional checks are additional information and computation paid by the exchange policy, and are recorded separately.",
+      "sha256": "d44f6fd687db75a995155ce44468fdd7549945952d1c4fb6c92e731093495527"
+    },
+    {
+      "id": "E07",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_EXCHANGE_METHOD.tex",
+      "line": 5,
+      "quote": "The frozen proposal rule uses the existing current dictionary and a family-balanced pool of 12 incoming atoms. Its six sources are receiver modes, internal-propagation modes, Fourier modes, anchor primal/dual responses, anchor current-equation residuals, and fixed random currents. Cycling through this fixed source order selects two available atoms per source, excluding already selected atoms. A 64-column reduced anchor supplies an independent approximation to the full quadratic for ranking. Removing one retained atom and adding one incoming atom defines a concrete replacement. We solve its endpoint material problem and rank the actual displacement using the anchor finite gain. All conditional factors, including the complete Schur coupling, are recomputed after an accepted action. Singular common cores use stable direct endpoint calculations; endpoints failing the frozen current-stability or normal-equation-residual criteria are rejected. Both relative cutoffs are $10^{-10}$; a small normal residual and a well-conditioned current block are separate requirements.",
+      "sha256": "d44f6fd687db75a995155ce44468fdd7549945952d1c4fb6c92e731093495527"
+    },
+    {
+      "id": "E08",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_RESULTS.tex",
+      "line": 10,
+      "quote": "Before additional results, we locked the rule, thresholds, seeds, and all eleven remaining compatible objects. Ten objects provide complete nine-cell coverage and all ten improve. Their median object-summed ratio is 0.4928, a 50.7\\% reduction; the interquartile range is [0.3314,0.5588] and the object-bootstrap 95\\% interval for the median is [0.3133,0.5647]. The remaining asymmetric voxel object completes six early/middle cells, with ratio 0.4925. Its late receiver endpoint fails the frozen normal-residual check at the first budget; the two subsequent budgets are not run. All three unavailable cells remain in the 99-cell denominator.",
+      "sha256": "51f4f76ddf30ed0ff60ff8a187509d5b53ee82f58bb4c806c053a5f35bc1a6fd"
+    },
+    {
+      "id": "E09",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_RESULTS.tex",
+      "line": 12,
+      "quote": "Among the 96 audited additional-object cells, 95 improve, one is equal within the evaluation floor, and none worsen. Absolute receiver gaps span $2.74\\times10^{-7}$--$3.09\\times10^{-3}$; exchange gaps span $8.73\\times10^{-8}$--$8.36\\times10^{-4}$. The smallest receiver denominator exceeds its evaluation floor by $6.31\\times10^9$, and the maximum full-reference true normal residual is $9.55\\times10^{-12}$. The improvement is resolved in the stored absolute quantities, rather than created by dividing two floor-level risks. Figure~\\ref{fig:locked-primary} reports both ratios and absolute gaps.",
+      "sha256": "51f4f76ddf30ed0ff60ff8a187509d5b53ee82f58bb4c806c053a5f35bc1a6fd"
+    },
+    {
+      "id": "E10",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_RESULTS.tex",
+      "line": 19,
+      "quote": "These additional objects were historically studied in a broader current-ranking investigation. Inspected records show no object-specific use in historical exchange-teacher or pilot-network development, but complete blind independence cannot be established from their historical exposure. We therefore describe this test as locked-rule validation on additional previously studied Maxwell objects. The bootstrap summarizes this fixed object set; it is not a distribution-free generalization guarantee.",
+      "sha256": "51f4f76ddf30ed0ff60ff8a187509d5b53ee82f58bb4c806c053a5f35bc1a6fd"
+    },
+    {
+      "id": "E11",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_RESULTS.tex",
+      "line": 22,
+      "quote": "Four objects were preselected by geometry and representation: smooth voxel, near-contact Gaussian, shell Gaussian, and asymmetric voxel. Their middle-state physics is fixed while 1\\% and 3\\% relative complex noise changes the residual, with three independent realizations at each level. Every noisy residual receives its own offline full-GN reference after online selection. All 72 planned cells are audited: 71 improve and one abstains with an unchanged gap. The median object-summed ratios are 0.3307 at 1\\% and 0.4026 at 3\\% (Table~\\ref{tab:noise}).",
+      "sha256": "51f4f76ddf30ed0ff60ff8a187509d5b53ee82f58bb4c806c053a5f35bc1a6fd"
+    },
+    {
+      "id": "E12",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_RESULTS.tex",
+      "line": 24,
+      "quote": "The controller verifies 408 finalists and rejects 98 below the numerical threshold; 172 exchanges are accepted. Verification costs 2448 current right-hand sides for $Jd$, including rejected finalists. Selected directions change with the residual, so this evidence concerns retained update utility rather than invariance of selected modes. The limited four-object, middle-state test supports the effect at these two noise levels.",
+      "sha256": "51f4f76ddf30ed0ff60ff8a187509d5b53ee82f58bb4c806c053a5f35bc1a6fd"
+    },
+    {
+      "id": "E13",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_COVERAGE_RESULTS.tex",
+      "line": 4,
+      "quote": "Across the ten complete additional objects, the reduced anchor's full-dictionary top choice captures 97.30--99.99\\% of the summed positive initial-exchange opportunity (median 99.54\\%). Restricting acquisition to the frozen 12-atom incoming pool captures 49.12--95.31\\% (median 72.95\\%). Thus candidate acquisition, rather than reduced ranking alone, is the larger limitation in this test. These are positive-gain-weighted initial-neighborhood captures, not the improvement fraction of the deployed multistep method. The separate bounded greedy path reaches a smaller final gap in 90 of 96 cells, the online path is smaller in five, and one agrees within the evaluation floor. A greedy path is a local diagnostic, not a global optimum; its difference from deployment combines coverage, ranking, and path interactions.",
+      "sha256": "bc5d4afdb552e71ad70e1aff84d67df410b7e4578b9d6faa4d2cf72f75df6ef3"
+    },
+    {
+      "id": "E14",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_SUPPLEMENT_COVERAGE.tex",
+      "line": 2,
+      "quote": "The declared initial domain contains $k(154-k)$ replacements: 600, 1168, and 2208 at $k=4,8,16$. All feasible endpoints are labeled in the 96 available cells. The 2016 late-state prerequisite exclusion leaves three unrun cells in the 99-cell denominator. Teacher labels never enter proposal, ranking, acceptance, or threshold selection.",
+      "sha256": "1a38f464b8ab94627598c0d2e73dd82149c0196beaddc51947fe8bac895aea3a"
+    },
+    {
+      "id": "E15",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_READER_COVERAGE.tex",
+      "line": 4,
+      "quote": "令每个单元的全字典最大正收益为$Q_*^+=\\max(0,\\max Q)$。对象内先对这些机会求和，再用anchor选中且通过方向复核的收益之和除以它，得到排序机会捕获率（ranking opportunity capture）。十个完整额外对象为97.30--99.99\\%，中位99.54\\%。同样计算12候选池内最好收益可覆盖的机会，得到候选覆盖率（candidate opportunity coverage）：49.12--95.31\\%，中位72.95\\%。零机会不提供权重；未完成对象只有六单元的观察值，不能填成九单元总体。",
+      "sha256": "68df04207ceb10029b1f9c59e8a323477504b128f232ea3a4658902ad8b6a2a4"
+    },
+    {
+      "id": "E16",
+      "file": "Gaussian/A17/CLOSURE_R1/A17_CANDIDATE_COVERAGE_FINAL.md",
+      "line": 26,
+      "quote": "15条teacher路径以数值局部1-swap停止、81条达到三动作上限。没有实例化合法输出误差半径，因而“数值局部停止”不是deterministic local-optimality certificate。线上短池之外没有完整上界，线上abstention更不能证明全字典没有好动作。",
+      "sha256": "2e7e6a1dba85eaf0783ac51274df0ff0e8bf0e74e3f0083d814fd16a228a8d85"
+    },
+    {
+      "id": "E17",
+      "file": "Gaussian/A17/CLOSURE_R1/analysis/OWNER_COVERAGE_STATISTICS_FINAL.json",
+      "line": 10,
+      "quote": "    \"anchor_top1_significance_verified_noop_capture\": {",
+      "sha256": "d828ab747ecae9675f63f10003e61c1d8a91ef492e7095a14646ef7a5f87ab78"
+    },
+    {
+      "id": "E18",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_NONLINEAR_RESULTS.tex",
+      "line": 18,
+      "quote": "Complex-material error decreases by 10.8\\%, 0.22\\%, and 7.16\\%, respectively, and held-out errors decrease in all three pairs. The near-contact real-part error increases slightly, so improved data fit does not imply uniform component recovery. The fourth object's exchange trajectory retains 17 completed updates. Before update 18, its receiver-derived starting endpoint fails the fixed normal-residual check, stopping that exchange trajectory. The separate receiver-only baseline job is not run after the queue stops. The four-object denominator and both unavailable final endpoints remain explicit.",
+      "sha256": "b83c08a32a9f0def0dc1b137da5f49f747b4e9f6f9672453eb7192d1a20a131a"
+    },
+    {
+      "id": "E19",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_SUPPLEMENT_RESULTS.tex",
+      "line": 22,
+      "quote": "The fourth object's exchange trajectory saves 17 completed accepted updates. Before update 18, construction of that trajectory's receiver-derived starting endpoint fails the frozen normal-residual test. The separate receiver-only job is not run after this fault. Thus there are six completed trajectories, one failed trajectory with a verified prefix, and one not-run baseline among eight planned jobs. No final paired material comparison is inferred for this object.",
+      "sha256": "7b6fcc9e1632993305b20a5bc546d0c8b8f893b892740addd836e66582ad9d88"
+    },
+    {
+      "id": "E20",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_NONLINEAR_RESULTS.tex",
+      "line": 20,
+      "quote": "These trajectories support a limited reconstruction consequence of the frozen rule. They also separate fidelity from efficiency: the complete child-wall ratios range from 1.46 to 2.68. Extra tangent actions purchase checked material changes; faster imaging is not established.",
+      "sha256": "b83c08a32a9f0def0dc1b137da5f49f747b4e9f6f9672453eb7192d1a20a131a"
+    },
+    {
+      "id": "E21",
+      "file": "Gaussian/A17/CLOSURE_R1/analysis/OWNER_NONLINEAR_STATISTICS_V1.json",
+      "line": 12,
+      "quote": "  \"unrun_receiver\": 2016,",
+      "sha256": "c7922067aaacf8e12c8922cf84a42442a4e545c35362c4fa6cbe10f8cf42bde8"
+    },
+    {
+      "id": "E22",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_COST_RESULTS.tex",
+      "line": 4,
+      "quote": "Full campaign accounting, including historical carry, failed launches, verification, references and offline full-dictionary diagnostics, closes at 19,962.060~s (5.545~h). This is an execution-accounting total, rather than a per-solve runtime. The Supplement distinguishes additive occupation from nested stage and action counts; no acceleration follows from either a warm selection time or one reduced class of right-hand sides.",
+      "sha256": "630a29005084ae76d0cdaa0285ca2e0e29472adbec402b5f0f42257c9ebb6406"
+    },
+    {
+      "id": "E23",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_COST_RESULTS.tex",
+      "line": 2,
+      "quote": "Exchange pays for the richer anchor, candidate acquisition, endpoint proposals and full directional checks beyond the unchanged receiver endpoint. The frozen workflow shares projected operators; a separate cold receiver-only build was not timed, so its warm selection wall is not an end-to-end baseline. The independently initialized nonlinear trajectories provide the all-in comparison: exchange takes 2.68, 1.74 and 1.46 times receiver-only child wall in the three complete pairs. The design purchases material-step fidelity with additional physics work.",
+      "sha256": "630a29005084ae76d0cdaa0285ca2e0e29472adbec402b5f0f42257c9ebb6406"
+    },
+    {
+      "id": "E24",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_SUPPLEMENT_COST.tex",
+      "line": 2,
+      "quote": "The authoritative final ledger has 61 paired closed attempts, with 57 zero and four nonzero exits. All four failed attempts retain their fees. The only additive quantities are historical carry 4889.515~s, closure occupation 15072.343~s and rejected preflight 0.202~s: total 19962.060~s. Successful preflights, child walls and A--I stage walls are already nested inside those occupation intervals.",
+      "sha256": "06bd9a882995e3b0069795bb2f104d2926ca6de1575179e40a71ebae7a29aa80"
+    },
+    {
+      "id": "E25",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_SUPPLEMENT_COST.tex",
+      "line": 18,
+      "quote": "Stage views distinguish common physical setup, receiver, anchor, incoming pool, endpoint/score computation, $Jx/Jd$ checks, acceptance/rejection, offline teacher/evaluation and nonlinear work. The full ledger retains missing allocations as null. Cached Gaussian teacher labels pay the dense-$J$ acquisition once; logical cached directions do not add new physical RHS. Voxel teacher directions retain actual block-solve counters. Matrix actions, uploads, SVD, ordinary adjoint and full-adjoint counts remain distinct.",
+      "sha256": "06bd9a882995e3b0069795bb2f104d2926ca6de1575179e40a71ebae7a29aa80"
+    },
+    {
+      "id": "E26",
+      "file": "Gaussian/A17/CLOSURE_R1/A17_FINAL_COST_AUDIT.md",
+      "line": 21,
+      "quote": "61 个 closure attempt 中 57 个退出零、4 个非零，全部收费。四个非零 attempt 共 876.811 秒；不能因其没有完整科学终点而删掉。最长单作业占用 765.593 秒。设备显存监测峰值 2,692 MiB 包含设备上其他用量，不能冒称某个方法的专属 allocated 峰值。",
+      "sha256": "f4b7e4f560ed473091f5405e0fd56c8338815c41d0fe2e7086f30cf825552573"
+    },
+    {
+      "id": "E27",
+      "file": "Gaussian/A17/CLOSURE_R1/A17_FINAL_COST_AUDIT.md",
+      "line": 47,
+      "quote": "完整三对都更慢。壳体的 full-forward RHS 虽由 690 降至 552，额外 Jx/Jd、取得和评分仍使总时间增加。不能只展示下降的某一类作用而写成加速。第四对象 exchange 的失败占用 765.593 秒保留；没有运行的 receiver baseline 没有虚构费用或终点。",
+      "sha256": "f4b7e4f560ed473091f5405e0fd56c8338815c41d0fe2e7086f30cf825552573"
+    },
+    {
+      "id": "E28",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/PAPER_TAP_FINAL.tex",
+      "line": 39,
+      "quote": "The relevant objects differ across these methods. Receiver singular structure describes radiation; the twofold construction adds internal-current propagation. Primal/dual derivative preservation matches an input--output map at sampled parameter points. Adaptive inverse ROM already combines primal/dual error estimates, high-fidelity fallback, and accepted-state basis enrichment \\cite{r5}; high-fidelity acceptance alone is therefore an established design principle. Here the specified replacement is propagated through the current state, the shared material injection and the receiver return, and the resulting finite material displacement is evaluated for the present residual. The electromagnetic contribution is this current-to-material decision interface and its controlled physical evidence.",
+      "sha256": "5d90d8b4465d14e39385b4b07900aaa29ba7cd264c6121e84495c5755a553478"
+    },
+    {
+      "id": "E29",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/PAPER_SUPPLEMENT_FINAL.tex",
+      "line": 60,
+      "quote": "Adaptive inverse ROM \\cite{r5}&Primal/dual residual error bounds, reduced trust-region decisions, full-model fallback, and accepted-state enrichment; see Sections 3.1--3.3.&The directional check tests the finite displacement caused by a fixed-rank current replacement. It is not a new generic acceptance principle.\\\\",
+      "sha256": "bd104d549b6aa64bb93a5685859f59713a4eba6cfb5ae773a47c147feb5992a2"
+    },
+    {
+      "id": "E30",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/PAPER_SUPPLEMENT_FINAL.tex",
+      "line": 68,
+      "quote": "The original SOM, TSOM and FFT-TSOM papers have verified bibliographic identities, but their primary full texts remain unavailable in this source audit. The available book and survey support the mechanism comparison; they do not establish the absence of an equivalent result in those original papers. S-DBIM full-text comparison also remains open. The accompanying reference audit retains these gaps and makes no first-ever claim. Native algorithms were not run as performance competitors.",
+      "sha256": "bd104d549b6aa64bb93a5685859f59713a4eba6cfb5ae773a47c147feb5992a2"
+    },
+    {
+      "id": "E31",
+      "file": "Gaussian/A17/CLOSURE_R1/A17_REFERENCE_AUDIT_FINAL.md",
+      "line": 38,
+      "quote": "论文已有清晰的机制与条件设计结果，也已公开承认上述成熟思想。剩余的原文缺口是正式投稿前最值得继续关闭的文献条件，而非需要重跑现有数值结果。审稿人仍可能认为“电流替换的物理解释 + 已知 ROM 验收”不足以形成独立方法贡献；正文因此把具体 Maxwell 见证、同秩材料更新效用和被锁定规则的外部对象结果放在贡献中心，而不依赖新命题的数量。",
+      "sha256": "345f5bedfc8d8c3bee498fc1f1613d71725146f323c17598f40c265346b3744d"
+    },
+    {
+      "id": "E32",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/PAPER_SUPPLEMENT_FINAL.tex",
+      "line": 97,
+      "quote": "The original structural material repair exceeds its specified direct current enlargement in 72/72 smooth and 36/36 sharp comparisons. Equal-real-rank material Krylov repair exceeds it in all those comparisons. Paid paired warm starts require 1.416 times matched PCG wall time and increase the recorded full-wave right-hand sides from 66 to 342. These results constrain solver interpretations; they are not overwritten by conditional exchange. TSOM-inspired banks are not native TSOM or FFT-TSOM runs.",
+      "sha256": "bd104d549b6aa64bb93a5685859f59713a4eba6cfb5ae773a47c147feb5992a2"
+    },
+    {
+      "id": "E33",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/PAPER_SUPPLEMENT_FINAL.tex",
+      "line": 103,
+      "quote": "The broad from-scratch current-ranking study covers 15 observed objects and 258/288 planned budget cells, with failures, missing references and deferred noise retained. Its material-aware finite ranking has median object-summed receiver risk ratio 1.0947; six objects improve. Receiver-centered conditional exchange asks a narrower question and does not overturn that negative result. The common-candidate $2\\times2$ diagnostic, rather than the earlier 0.1171 finite/first-order aggregate ratio, isolates finite-displacement curvature cost.",
+      "sha256": "bd104d549b6aa64bb93a5685859f59713a4eba6cfb5ae773a47c147feb5992a2"
+    },
+    {
+      "id": "E34",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/PAPER_SUPPLEMENT_FINAL.tex",
+      "line": 101,
+      "quote": "A separate moderate sphere has 0.252\\% aggregate field error and 0.731\\% uniform-material derivative error against independent vector Mie at the finest tested grid. This validates that sphere and uniform derivative; it does not independently certify every voxel tangent or every nonradial target. Coarse 12$^3$ inverse states versus 14$^3$ truth generation elsewhere constitute finer-grid checks within the same DDA family.",
+      "sha256": "bd104d549b6aa64bb93a5685859f59713a4eba6cfb5ae773a47c147feb5992a2"
+    },
+    {
+      "id": "E35",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_PHYSICAL_WITNESSES.tex",
+      "line": 36,
+      "quote": "When a top-one action is mandatory and no-op is deliberately removed, the linear score $-g_F^Td$ selects a negative-gain replacement in 29 of 36 cells. Including $-\\tfrac12d^TH_Fd$ reduces this count to 1 of 36. Finite-displacement curvature cost materially changes candidate ordering in these cases. The counts describe the controlled diagnostic; deployed conditional exchange separately rejects unfavorable checked actions. An older finite/first-order risk ratio also changed displacement construction and terminal search, and is not used to attribute an improvement to the curvature term alone.",
+      "sha256": "b97c4fb93b91b0d8a421c1ff2a92fb8c6a33e3ce0e22dddf02b21eb5771f1bb0"
+    },
+    {
+      "id": "E36",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_PHYSICAL_WITNESSES.tex",
+      "line": 26,
+      "quote": "whereas their joint rank-16 addition gives $Q_{AB}=+3.4787\\times10^{-7}$. Five of 540 predeclared pair tests have this singleton-negative, pair-positive pattern. This finite set demonstrates conditional, non-additive utility. It is neither a probability estimate over Maxwell modes nor a same-rank exchange trap. The fixed one-out/one-in method is retained; the pair witness explains a design boundary, rather than motivating an added search rule.",
+      "sha256": "b97c4fb93b91b0d8a421c1ff2a92fb8c6a33e3ce0e22dddf02b21eb5771f1bb0"
+    },
+    {
+      "id": "E37",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_EXCHANGE_METHOD.tex",
+      "line": 23,
+      "quote": "Here $\\mathrm{tiny}_{64}$ is the smallest positive normal FP64 number, as returned by the implemented floating-point type. The factor 32 and summation scale were fixed analytically before validation. The initial-output terms retain the numerical scale when a proposed displacement is extremely small. This tolerance assesses floating-point significance in the reported gain; it is not a bound on Maxwell discretization or current-solve output error. The present experiments therefore use \\emph{high-fidelity numerical verification}. A deterministic acceptance certificate would additionally require the valid output-error radii stated in the preceding section.",
+      "sha256": "d44f6fd687db75a995155ce44468fdd7549945952d1c4fb6c92e731093495527"
+    },
+    {
+      "id": "E38",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/REPORT_TO_XUDONG_FINAL.tex",
+      "line": 15,
+      "quote": "陈教授您好，我想汇报一个从电流压缩引出的材料反演问题。我最初希望用高斯（Gaussian）材料表示和少量电流端口降低计算量，后来发现，比“压缩后的场是否足够准确”更关键的是：这些电流方向生成的材料更新是否正确。现在我把问题收窄为：已有一个通过端点求解检查的接收电流基底，什么时候值得换掉其中一个方向？",
+      "sha256": "7a96fdd323f1aa54b64f6750847c3e760cd328746d912fc5aa57964183844db0"
+    },
+    {
+      "id": "E39",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/REPORT_TO_XUDONG_FINAL.tex",
+      "line": 63,
+      "quote": "这里两项要共同看。电流空间变大是在改变已有数据的近似模型，曲率增量可以不定。为了检验“响应更强是否就更有用”，我使用两个常见汇总量：信息体积（information volume）把尺度归一化曲率的特征值$\\nu_i$汇总成$\\tfrac12\\sum_i\\log(1+\\nu_i)$；有效维数（effective dimension）用$\\sum_i\\nu_i/(1+\\nu_i)$描述显著响应方向的数量。这里$\\nu_i$来自$P_0^{-1/2}J_U^TJ_UP_0^{-1/2}$，固定$P_0=10^{-5}I$，与求解时的LM阻尼分开。这两个数压缩了曲率信息，却没有保留当前残差的方向。",
+      "sha256": "7a96fdd323f1aa54b64f6750847c3e760cd328746d912fc5aa57964183844db0"
+    },
+    {
+      "id": "E40",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_TERMINOLOGY_ZH.tex",
+      "line": 15,
+      "quote": "较丰富约化参考&richer reduced anchor&用于排序的较大约化模型，不是完整最优解。\\\\",
+      "sha256": "40f3dff81f35c91babbc752793d131902d5e944c24d34590b3cd15a1915e9b56"
+    },
+    {
+      "id": "E41",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_CHINESE_DERIVATIONS.tex",
+      "line": 113,
+      "quote": "这里的观测、Schur和注入因子需要一起实化。$P$为照明次数；先对照明作块对角提升 $\\mathbf Y=I_P\\otimes Y_C$、$\\Gamma_{\\rm blk}=I_P\\otimes\\Gamma_C$，纵向堆叠注入 $\\mathbf N$，再定义 $\\mathcal R(F)=[\\operatorname{Re}F,-\\operatorname{Im}F;\\operatorname{Im}F,\\operatorname{Re}F]$ 和 $\\widehat N=[\\operatorname{Re}\\mathbf N;\\operatorname{Im}\\mathbf N]$。于是 $\\widehat D=\\mathcal R(\\mathbf Y)\\mathcal R(\\Gamma_{\\rm blk})^{-1}\\widehat N$，与数据的固定堆叠顺序只差一个排列。以下材料空间公式中的 $Y_C,\\Gamma_C,N_C$ 指这组实化因子，伴随为实转置。这一步保留跨照明共享材料，不能把一个复电流方向误当作一个实材料秩。",
+      "sha256": "7d7cf7092d65cacffc52b73e6c779ffd4ca615ce08602b0fee70106d8d00c1b7"
+    },
+    {
+      "id": "E42",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_PHYSICAL_WITNESSES.tex",
+      "line": 17,
+      "quote": "We use $P_0=10^{-5}I$. These summaries quantify information magnitude relative to that declared scale; measured noise-covariance calibration is not assumed. Information fidelity is a different question: how closely does this curvature approximate the full curvature? We use the offline diagnostic $e_I(U)=\\|(\\mathsf I_F+P_0)^{-1/2}(\\mathsf I_U-\\mathsf I_F)(\\mathsf I_F+P_0)^{-1/2}\\|_2$, where $\\mathsf I_F=J_F^TJ_F$; a smaller value means closer normalized curvature.",
+      "sha256": "b97c4fb93b91b0d8a421c1ff2a92fb8c6a33e3ce0e22dddf02b21eb5771f1bb0"
+    },
+    {
+      "id": "E43",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/PAPER_SUPPLEMENT_FINAL.tex",
+      "line": 108,
+      "quote": "Forty-two hash-identified external/vendor modules remain required for full GPU physics replay. If they cannot be redistributed, the public artifact is an evidence/reanalysis package with external kernel requirements, not a fully self-contained GPU rerun bundle. The local archive retains all versions, monitor failures and measured fees. Complete test and source checks are recorded in the reproducibility report.",
+      "sha256": "bd104d549b6aa64bb93a5685859f59713a4eba6cfb5ae773a47c147feb5992a2"
+    },
+    {
+      "id": "E44",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_DESIGN_DISCUSSION.tex",
+      "line": 6,
+      "quote": "The incoming pool restricts which opportunities can be tested. Full-dictionary reduced ranking can be accurate while the 12-atom pool omits a valuable direction, and successive exchanges can enter different local neighborhoods. Candidate coverage, scoring error, and path interactions are reported separately. Improving candidate acquisition is future work; the present method and validation do not add a learned proposer.",
+      "sha256": "e80c08e8773cd6b986d5cdc68706a57a42f916add719920ad54eb4cbb76fa701"
+    },
+    {
+      "id": "E45",
+      "file": "Gaussian/A17/CLOSURE_R1/analysis/OWNER_PRIMARY_STATISTICS_V1.json",
+      "line": 54,
+      "quote": "  \"confirmed_blind_objects\": 0,",
+      "sha256": "4a8b45a7be92c445788051c458ef5c47d2f7c1c9d7dd25260dae26d220b6fa58"
+    },
+    {
+      "id": "E46",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_SUPPLEMENT_COST.tex",
+      "line": 2,
+      "quote": "The authoritative final ledger has 61 paired closed attempts, with 57 zero and four nonzero exits. All four failed attempts retain their fees. The only additive quantities are historical carry 4889.515~s, closure occupation 15072.343~s and rejected preflight 0.202~s: total 19962.060~s. Successful preflights, child walls and A--I stage walls are already nested inside those occupation intervals.",
+      "sha256": "06bd9a882995e3b0069795bb2f104d2926ca6de1575179e40a71ebae7a29aa80"
+    },
+    {
+      "id": "E47",
+      "file": "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_ABSTRACT_ZH.tex",
+      "line": 4,
+      "quote": "因此，我从接收基底出发，在固定电流维数下测试少量一列移出、一列移入的条件交换（conditional exchange）。更丰富的约化模型先排序，每轮最多两个候选接受完整定向切向作用$Jd$的数值复核；只有共同完整二次目标确实下降，才改变空间。接受阈值只使用在线数值尺度，不读取完整最优材料步或真值。原四对象的对象汇总完整GN gap中位下降65.2\\%；冻结规则后，十个完整额外对象全部改善，中位下降50.7\\%。另一个对象保留晚期前置求解失败。这里的gap衡量材料步对完整GN步的保真度，不是最终图像误差。暗电流、信息正而收益负、以及单方向负而联合方向正的物理见证，共同说明接收强度和信息汇总不足以决定当前材料用途。论文给出的结果是一个有明确费用和适用范围的电磁机制与条件设计。",
+      "sha256": "bb6d5a86ac80d838f8c7d474beb6bac6f378eef6e4f2a52d63921d7a13de3b60"
+    }
+  ],
+  "source_hashes": {
+    "Gaussian/A17/CLOSURE_R1/A17_CANDIDATE_COVERAGE_FINAL.md": "2e7e6a1dba85eaf0783ac51274df0ff0e8bf0e74e3f0083d814fd16a228a8d85",
+    "Gaussian/A17/CLOSURE_R1/A17_CLOSURE_REPORT_ZH.md": "f6d19034a4a922a79551ca8a0a2609884bdf18bf16c784e64b6ebec3dbfabda5",
+    "Gaussian/A17/CLOSURE_R1/A17_FINAL_COST_AUDIT.md": "f4b7e4f560ed473091f5405e0fd56c8338815c41d0fe2e7086f30cf825552573",
+    "Gaussian/A17/CLOSURE_R1/A17_REFERENCE_AUDIT_FINAL.md": "345f5bedfc8d8c3bee498fc1f1613d71725146f323c17598f40c265346b3744d",
+    "Gaussian/A17/CLOSURE_R1/analysis/OWNER_COVERAGE_STATISTICS_FINAL.json": "d828ab747ecae9675f63f10003e61c1d8a91ef492e7095a14646ef7a5f87ab78",
+    "Gaussian/A17/CLOSURE_R1/analysis/OWNER_NONLINEAR_STATISTICS_V1.json": "c7922067aaacf8e12c8922cf84a42442a4e545c35362c4fa6cbe10f8cf42bde8",
+    "Gaussian/A17/CLOSURE_R1/analysis/OWNER_PRIMARY_STATISTICS_V1.json": "4a8b45a7be92c445788051c458ef5c47d2f7c1c9d7dd25260dae26d220b6fa58",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_ABSTRACT.tex": "7fefbca5fc6cc88e77c66357d2cf4eeb36d1ca85ac6f31d6a0affd9c4cf7f572",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_ABSTRACT_ZH.tex": "bb6d5a86ac80d838f8c7d474beb6bac6f378eef6e4f2a52d63921d7a13de3b60",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_CHEN_COST.tex": "e38ddb0d09bc1a3862968ace37cb581240683f933a234ba331d4a71143db5ebf",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_CHEN_COVERAGE.tex": "19d9832b720821948b40545f8e61d0c88a8264fad8312d590cd59079046a96aa",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_CHEN_NONLINEAR.tex": "b49a47b57da1406ba219b63e9ccbde7d9df81f78538a0ce0e2ca04fe386942cd",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_CHEN_RESULTS.tex": "9de4629c77fc8bc6d10826e555a97b916d8c022f00fed6f351cf6c33413a67cd",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_CHEN_SECONDARY.tex": "498b87989cc210262bab973a025e9607daaae7ab3110bf50d2f5f1a6791b6f80",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_COST_RESULTS.tex": "630a29005084ae76d0cdaa0285ca2e0e29472adbec402b5f0f42257c9ebb6406",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_COVERAGE_RESULTS.tex": "bc5d4afdb552e71ad70e1aff84d67df410b7e4578b9d6faa4d2cf72f75df6ef3",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_NONLINEAR_RESULTS.tex": "b83c08a32a9f0def0dc1b137da5f49f747b4e9f6f9672453eb7192d1a20a131a",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_READER_COST.tex": "6fdb0d6d9b570186ea56268122ba3953c88330cdc3b7fe9130e466fc9b637cf4",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_READER_COVERAGE.tex": "68df04207ceb10029b1f9c59e8a323477504b128f232ea3a4658902ad8b6a2a4",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_READER_NONLINEAR.tex": "f0f4d5d18ed697e3f4a963aae1cb36fc2b445407246660b2a05ce28a9cd7295c",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_READER_RESULTS.tex": "665e981cfcc921184ea0691355b074fb17fd4150a78e749d191703cc2362cd4f",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_READER_SECONDARY.tex": "703071dd23832a5fca63569958b7513166f7f4341075a8519b5047f9e208d45b",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_RESULTS.tex": "51f4f76ddf30ed0ff60ff8a187509d5b53ee82f58bb4c806c053a5f35bc1a6fd",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_SECONDARY_RESULTS.tex": "aeef67e9cbb4beea97cd2380636a6f6dd025661b76c5fd638a73b473d43324a8",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_SUPPLEMENT_COST.tex": "06bd9a882995e3b0069795bb2f104d2926ca6de1575179e40a71ebae7a29aa80",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_SUPPLEMENT_COVERAGE.tex": "1a38f464b8ab94627598c0d2e73dd82149c0196beaddc51947fe8bac895aea3a",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_SUPPLEMENT_RESULTS.tex": "7b6fcc9e1632993305b20a5bc546d0c8b8f893b892740addd836e66582ad9d88",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CONDITIONAL_EXCHANGE_THEORY.tex": "960389016c8478bb1c69834ffa7a3c5a895fa8ca0ba28040f039b6c7527556fd",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CORE_THEORY.tex": "1af4d3d080daee41b7b58eef2469228c1ed6a18ab67e105e702121d7c6a46952",
+    "Gaussian/A17/CLOSURE_R1/manuscript/EXCHANGE_DERIVATIONS_ZH.tex": "e2f46a8893e675aa9c1b2ac4b41c863c3923e8eab50385f2c65cd107e3847d4b",
+    "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_CHINESE_DERIVATIONS.tex": "7d7cf7092d65cacffc52b73e6c779ffd4ca615ce08602b0fee70106d8d00c1b7",
+    "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_DDA_MODEL.tex": "b1fb845a7096367d9f4ca801fb595293e1e48901347490844175a4e3d17c64e6",
+    "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_DESIGN_DISCUSSION.tex": "e80c08e8773cd6b986d5cdc68706a57a42f916add719920ad54eb4cbb76fa701",
+    "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_EXCHANGE_METHOD.tex": "d44f6fd687db75a995155ce44468fdd7549945952d1c4fb6c92e731093495527",
+    "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_METHOD_ZH.tex": "15c4db678601d464764ff423351b118363a77946da8e1ddc528d6481f08c83c6",
+    "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_PHYSICAL_WITNESSES.tex": "b97c4fb93b91b0d8a421c1ff2a92fb8c6a33e3ce0e22dddf02b21eb5771f1bb0",
+    "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_REFERENCES.tex": "49f31525fb3fc06d4f7ffec9f07064eeac7d65f93d7e56a5e694cce3ef9d1785",
+    "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_TERMINOLOGY_ZH.tex": "40f3dff81f35c91babbc752793d131902d5e944c24d34590b3cd15a1915e9b56",
+    "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_WITNESSES_ZH.tex": "57d044965dd46557725224578d1dd761e80927e84522740bb5d91c79bd253be6",
+    "Gaussian/A17/CLOSURE_R1/manuscript/PAPER_SUPPLEMENT_FINAL.tex": "bd104d549b6aa64bb93a5685859f59713a4eba6cfb5ae773a47c147feb5992a2",
+    "Gaussian/A17/CLOSURE_R1/manuscript/PAPER_TAP_FINAL.tex": "5d90d8b4465d14e39385b4b07900aaa29ba7cd264c6121e84495c5755a553478",
+    "Gaussian/A17/CLOSURE_R1/manuscript/READER_FUNDAMENTALS.tex": "db079e2accf0818e8d4e502300a9830b54b36a09ff898d7f3367cb2dbc1ad9ba",
+    "Gaussian/A17/CLOSURE_R1/manuscript/READER_GUIDE_FINAL.tex": "3fb4ab7678f2d2a9098b7d25b45cafd2bc9f889f99b2e245a0684b5ee4f9381e",
+    "Gaussian/A17/CLOSURE_R1/manuscript/REPORT_TO_XUDONG_FINAL.tex": "7a96fdd323f1aa54b64f6750847c3e760cd328746d912fc5aa57964183844db0",
+    "Gaussian/A17/CLOSURE_R1/manuscript/SUPPLEMENT_PHYSICAL_BRIDGE.tex": "55fa67d1058e9594a6836b50251f6141888403372e11eee4105bd2a0920426ac",
+    "Gaussian/A17/CLOSURE_R1/manuscript/figures/closure_validation_v1/Figure2_noise_objects.pdf": "eaaf492aaa5a94fd5d0135c6a47cac3da6232abc12603cc8befb2a1cc3c50861",
+    "Gaussian/A17/CLOSURE_R1/manuscript/figures/closure_validation_v2/Figure1_primary_overview.pdf": "81761975c45ebce6d53e9532940b1d2039f4d7777ea59ee2138cdc97aa550982",
+    "Gaussian/A17/CLOSURE_R1/manuscript/figures/coverage_closure_v2/bounded_path_risk.pdf": "e551e582fe9113d115944cf082cd102b0d2fa9f1c093eae8476f85f25d65e942",
+    "Gaussian/A17/CLOSURE_R1/manuscript/figures/coverage_closure_v2/initial_opportunity.pdf": "2b303ce23ad9f0ed6478ff62ca139baf93249bdfc714109fa16b91d7f69568a6",
+    "Gaussian/A17/CLOSURE_R1/manuscript/figures/information_and_pair_witness.pdf": "1919e927f92b523ed1f6e46841069f6d91641ffaa6af466b64912f432774b30e",
+    "Gaussian/A17/CLOSURE_R1/manuscript/figures/nonlinear_closure_v1/nonlinear_objective_curves.pdf": "ba71592d843b559c75286f84a32e0bb7a4ae09c8aca201533a84e8a1e5480d04",
+    "Gaussian/A17/CLOSURE_R1/manuscript/figures/nonlinear_closure_v1/nonlinear_reconstructions.pdf": "1ce7669a7bb2d05f15fba5607815a0ddf09e455a7065b7caf19c6c2634349226",
+    "Gaussian/A17/CLOSURE_R1/manuscript/figures/path_depth_dark.pdf": "6296dbfebe08ba4718843cb4912a16c3b3b8dc988c25ae1cdc22ff0582c21294",
+    "Gaussian/A17/CLOSURE_R1/manuscript/figures/physical_feedback.pdf": "44fe98f0353995ed5e209a5bb1397e1392554000905e3e5b5b95d148c4fe0666"
+  },
+  "entrypoints": [
+    "Gaussian/A17/CLOSURE_R1/manuscript/PAPER_TAP_FINAL.tex",
+    "Gaussian/A17/CLOSURE_R1/manuscript/PAPER_SUPPLEMENT_FINAL.tex",
+    "Gaussian/A17/CLOSURE_R1/manuscript/REPORT_TO_XUDONG_FINAL.tex",
+    "Gaussian/A17/CLOSURE_R1/manuscript/READER_GUIDE_FINAL.tex"
+  ],
+  "include_graph": {
+    "Gaussian/A17/CLOSURE_R1/manuscript/PAPER_TAP_FINAL.tex": [
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_ABSTRACT.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/CORE_THEORY.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/CONDITIONAL_EXCHANGE_THEORY.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_EXCHANGE_METHOD.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_PHYSICAL_WITNESSES.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_RESULTS.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_DESIGN_DISCUSSION.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_REFERENCES.tex"
+    ],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_ABSTRACT.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CORE_THEORY.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CONDITIONAL_EXCHANGE_THEORY.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_EXCHANGE_METHOD.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_PHYSICAL_WITNESSES.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_RESULTS.tex": [
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_SECONDARY_RESULTS.tex"
+    ],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_SECONDARY_RESULTS.tex": [
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_COVERAGE_RESULTS.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_NONLINEAR_RESULTS.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_COST_RESULTS.tex"
+    ],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_COVERAGE_RESULTS.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_NONLINEAR_RESULTS.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_COST_RESULTS.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_DESIGN_DISCUSSION.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_REFERENCES.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/PAPER_SUPPLEMENT_FINAL.tex": [
+      "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_DDA_MODEL.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_SUPPLEMENT_RESULTS.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_REFERENCES.tex"
+    ],
+    "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_DDA_MODEL.tex": [
+      "Gaussian/A17/CLOSURE_R1/manuscript/SUPPLEMENT_PHYSICAL_BRIDGE.tex"
+    ],
+    "Gaussian/A17/CLOSURE_R1/manuscript/SUPPLEMENT_PHYSICAL_BRIDGE.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_SUPPLEMENT_RESULTS.tex": [
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_SUPPLEMENT_COVERAGE.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_SUPPLEMENT_COST.tex"
+    ],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_SUPPLEMENT_COVERAGE.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_SUPPLEMENT_COST.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/REPORT_TO_XUDONG_FINAL.tex": [
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_CHEN_RESULTS.tex"
+    ],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_CHEN_RESULTS.tex": [
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_CHEN_SECONDARY.tex"
+    ],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_CHEN_SECONDARY.tex": [
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_CHEN_COVERAGE.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_CHEN_NONLINEAR.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_CHEN_COST.tex"
+    ],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_CHEN_COVERAGE.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_CHEN_NONLINEAR.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_CHEN_COST.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/READER_GUIDE_FINAL.tex": [
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_ABSTRACT_ZH.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_TERMINOLOGY_ZH.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/READER_FUNDAMENTALS.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_CHINESE_DERIVATIONS.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/EXCHANGE_DERIVATIONS_ZH.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_METHOD_ZH.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_WITNESSES_ZH.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_READER_RESULTS.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_REFERENCES.tex"
+    ],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_ABSTRACT_ZH.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_TERMINOLOGY_ZH.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/READER_FUNDAMENTALS.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_CHINESE_DERIVATIONS.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/EXCHANGE_DERIVATIONS_ZH.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_METHOD_ZH.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_WITNESSES_ZH.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_READER_RESULTS.tex": [
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_READER_SECONDARY.tex"
+    ],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_READER_SECONDARY.tex": [
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_READER_COVERAGE.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_READER_NONLINEAR.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_READER_COST.tex"
+    ],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_READER_COVERAGE.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_READER_NONLINEAR.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_READER_COST.tex": []
+  },
+  "no_compile_render_remote_physics": true,
+  "not_a_pdf_visual_review": true
+}

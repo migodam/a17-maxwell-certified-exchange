@@ -1,0 +1,14 @@
+{
+  "status": "PASS_API_ALGEBRA_ONLY",
+  "tests": 11,
+  "passed": 11,
+  "errors": 0,
+  "complex_r_rejection_in_shape_test": true,
+  "online_tolerance_sha256": "0cb18fc4b91f377c8a1cc96c426bbcff7e000a846b515aa53e59a384466cb8bf",
+  "test_sha256": "bf2b1c73226b2b2c409090f0cc042a88f20da9c2d407b624bf7161b0f3613fdf",
+  "log_sha256": "dd643ad5dede638f5729bb41f91d3651ad716d1a508bf7ae4b538e7d3328a86e",
+  "python": "3.13.13",
+  "root_formula_modified_by_worker": false,
+  "threshold_relaxed": false,
+  "prior_failure_receipt": "online_tolerance_unit_receipt_pre_validation_guard.json"
+}

@@ -1,0 +1,51 @@
+{
+  "schema": "a17.public.fee.csv.reconstruction.v1",
+  "status": "PASS_PUBLIC_DERIVED_CSV_FEES",
+  "source_authoritative_json_sha256": "6dd4a7d670b493cf508cb04df00dbdb4ee7c3bfd94bd8fb92148d7471d6ce27b",
+  "public_authority_sha256": "fd9d842a2fbd63309480dded35223bcaaeffca3fd1cd017297f216a9a2e02955",
+  "input_sha256": {
+    "attempt_csv": "ad0bfbeb634fce6f7eb3c0d6a57cc52d3048aea0501f488be4f9d3c00af7e98b",
+    "rejected_preflight_csv": "b5b9d04d5b6793c3519a5a8ef76005137ee69db1fbfdd2af23155aab6c34a88e"
+  },
+  "old_carry_s": 4889.515,
+  "occupation_s": 15072.343000000052,
+  "rejected_preflight_s": 0.2019999999902211,
+  "campaign_s": 19962.06000000004,
+  "failed_attempts_retained": 4,
+  "rejected_preflights_retained": 2,
+  "phase_totals": [
+    {
+      "partition": "original_replay",
+      "occupation_s": 268.7490000000107,
+      "rejected_preflight_s": 0.0
+    },
+    {
+      "partition": "primary_validation",
+      "occupation_s": 1158.673000000068,
+      "rejected_preflight_s": 0.015000000013969839
+    },
+    {
+      "partition": "noise",
+      "occupation_s": 895.25,
+      "rejected_preflight_s": 0.0
+    },
+    {
+      "partition": "nonlinear_transfer",
+      "occupation_s": 3704.670999999973,
+      "rejected_preflight_s": 0.0
+    },
+    {
+      "partition": "offline_coverage",
+      "occupation_s": 9039.907000000007,
+      "rejected_preflight_s": 0.0
+    },
+    {
+      "partition": "gate_or_failed_setup",
+      "occupation_s": 5.092999999993481,
+      "rejected_preflight_s": 0.18699999997625127
+    }
+  ],
+  "nested_stages_added": false,
+  "raw_private_monitor_reaudited": false,
+  "scope": "Reconstruct audited public CSV fees only. Private SSH/CIM/command monitor originals are not available or audited by this program."
+}

@@ -1,0 +1,1634 @@
+[
+  {
+    "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/remote_snapshots/replay_complete/results/replay_remaining_v2/object_2001/early/result.json",
+    "sha256": "2868c4a1f27fd3df4da08607173bcc224c8715ae74bc7606ef4d80e45bcb992f",
+    "runtime_receipt_sha256": "4171e0df8f00a152bc722ff5602da515514d6e9a134c5f03ada3bd2dc764e7d7",
+    "run_config_sha256": "a7fb378d965e32d25732ad07ae109d48d62073aea0dc5f6eef1f2d03f41004ca",
+    "paired_attempt": "a17_closure_replay_remaining_v2_2001_7016d76662014c3d98910ea298dfe051",
+    "attempt_binding": {
+      "kind": "EXACT_SERIAL_BATCH_CHILD",
+      "batch_receipt_path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/remote_snapshots/replay_complete/results/replay_remaining_v2/object_2001/batch_receipt.json",
+      "batch_receipt_sha256": "a462fa0f26bb770353735a4ad25522a21b9ea4f895d91e53726d98c87cdb471c",
+      "parent_command_sha256": "8ab895577d5aca6680b5e1c0798a45152dfa70a323226db13e424585d82782c1",
+      "parent_command_hash_status": "DERIVED_FROM_HASHED_LEDGER_PLUS_EXACT_ARGS_VALIDATION_NO_SEPARATE_MONITOR_FIELD",
+      "parent_runner_sha256": "cd6c97b1df19a2cc08900ecce53de5dff89426736055c01f7da2c99d01788f07",
+      "parent_runner_name": "run_locked_batch_v3.py",
+      "required_driver": "run_closure_v2.py",
+      "required_adapter": "closure_state_v2.py",
+      "parent_remote_out": "D:/AI/A17_FINAL_CLOSURE_R1/results/replay_remaining_v2/object_2001",
+      "child_name": "early",
+      "registered_tasks": 3,
+      "v2_fixture_validation": {
+        "manifest_sha256": "0e3d1caf767a9b6c5f470706415de33902301dbfae527891eb96a95229f7317a",
+        "fixture_key": "object_2001_early",
+        "config_sha256": "a4108a8bc3e17dc019c8a7b7ea309d34b0ef078a2b154b6ee45f1d2385330ea8",
+        "actual_import_aliases": [
+          {
+            "epoch": "initial",
+            "role": "run_closure_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "__main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              },
+              {
+                "module": "__mp_main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              }
+            ]
+          },
+          {
+            "epoch": "initial",
+            "role": "closure_state_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "closure_state_v2",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\closure_state_v2.py",
+                "sha256": "4eb15d3cfc3df786f14fea1a8f030cb9325dbf5d8a40d91803fbacc16b5ec1a5"
+              }
+            ]
+          },
+          {
+            "epoch": "initial",
+            "role": "verified_exchange.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "verified_exchange",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\verified_exchange.py",
+                "sha256": "b237b985377831eb9c93b36449ce84493494ca373769fe74acc0551c1ec421de"
+              }
+            ]
+          },
+          {
+            "epoch": "initial",
+            "role": "online_tolerance.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "online_tolerance",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\online_tolerance.py",
+                "sha256": "0cb18fc4b91f377c8a1cc96c426bbcff7e000a846b515aa53e59a384466cb8bf"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "run_closure_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "__main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              },
+              {
+                "module": "__mp_main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "closure_state_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "closure_state_v2",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\closure_state_v2.py",
+                "sha256": "4eb15d3cfc3df786f14fea1a8f030cb9325dbf5d8a40d91803fbacc16b5ec1a5"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "verified_exchange.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "verified_exchange",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\verified_exchange.py",
+                "sha256": "b237b985377831eb9c93b36449ce84493494ca373769fe74acc0551c1ec421de"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "online_tolerance.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "online_tolerance",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\online_tolerance.py",
+                "sha256": "0cb18fc4b91f377c8a1cc96c426bbcff7e000a846b515aa53e59a384466cb8bf"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "baseline_runtime_lock_sha256": "eb0fe259b9fd524521cd8e6c0eb93e8d5be921ba22dbc057cd5b370be24f2a5e",
+    "baseline_manifest_sha256": "b47422c1ec7c945a6cea536ec479c3515ab322a631d088d62eed25c2655e34db"
+  },
+  {
+    "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/remote_snapshots/replay_complete/results/replay_remaining_v2/object_2001/late/result.json",
+    "sha256": "6c1b359db25a1cd41e14f40ed9b4b73eed3227a33d7fd81086ba14723e6b594d",
+    "runtime_receipt_sha256": "622c697d68559cc7d8d9ea48e9b0767550568f2d78a0435fb7aa0f61d79d9b85",
+    "run_config_sha256": "575871841c0d697f29360ba54446c905e2d3127fdcdf5c493d5afce4f033cea0",
+    "paired_attempt": "a17_closure_replay_remaining_v2_2001_7016d76662014c3d98910ea298dfe051",
+    "attempt_binding": {
+      "kind": "EXACT_SERIAL_BATCH_CHILD",
+      "batch_receipt_path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/remote_snapshots/replay_complete/results/replay_remaining_v2/object_2001/batch_receipt.json",
+      "batch_receipt_sha256": "a462fa0f26bb770353735a4ad25522a21b9ea4f895d91e53726d98c87cdb471c",
+      "parent_command_sha256": "8ab895577d5aca6680b5e1c0798a45152dfa70a323226db13e424585d82782c1",
+      "parent_command_hash_status": "DERIVED_FROM_HASHED_LEDGER_PLUS_EXACT_ARGS_VALIDATION_NO_SEPARATE_MONITOR_FIELD",
+      "parent_runner_sha256": "cd6c97b1df19a2cc08900ecce53de5dff89426736055c01f7da2c99d01788f07",
+      "parent_runner_name": "run_locked_batch_v3.py",
+      "required_driver": "run_closure_v2.py",
+      "required_adapter": "closure_state_v2.py",
+      "parent_remote_out": "D:/AI/A17_FINAL_CLOSURE_R1/results/replay_remaining_v2/object_2001",
+      "child_name": "late",
+      "registered_tasks": 3,
+      "v2_fixture_validation": {
+        "manifest_sha256": "0e3d1caf767a9b6c5f470706415de33902301dbfae527891eb96a95229f7317a",
+        "fixture_key": "object_2001_late",
+        "config_sha256": "a4108a8bc3e17dc019c8a7b7ea309d34b0ef078a2b154b6ee45f1d2385330ea8",
+        "actual_import_aliases": [
+          {
+            "epoch": "initial",
+            "role": "run_closure_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "__main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              },
+              {
+                "module": "__mp_main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              }
+            ]
+          },
+          {
+            "epoch": "initial",
+            "role": "closure_state_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "closure_state_v2",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\closure_state_v2.py",
+                "sha256": "4eb15d3cfc3df786f14fea1a8f030cb9325dbf5d8a40d91803fbacc16b5ec1a5"
+              }
+            ]
+          },
+          {
+            "epoch": "initial",
+            "role": "verified_exchange.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "verified_exchange",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\verified_exchange.py",
+                "sha256": "b237b985377831eb9c93b36449ce84493494ca373769fe74acc0551c1ec421de"
+              }
+            ]
+          },
+          {
+            "epoch": "initial",
+            "role": "online_tolerance.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "online_tolerance",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\online_tolerance.py",
+                "sha256": "0cb18fc4b91f377c8a1cc96c426bbcff7e000a846b515aa53e59a384466cb8bf"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "run_closure_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "__main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              },
+              {
+                "module": "__mp_main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "closure_state_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "closure_state_v2",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\closure_state_v2.py",
+                "sha256": "4eb15d3cfc3df786f14fea1a8f030cb9325dbf5d8a40d91803fbacc16b5ec1a5"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "verified_exchange.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "verified_exchange",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\verified_exchange.py",
+                "sha256": "b237b985377831eb9c93b36449ce84493494ca373769fe74acc0551c1ec421de"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "online_tolerance.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "online_tolerance",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\online_tolerance.py",
+                "sha256": "0cb18fc4b91f377c8a1cc96c426bbcff7e000a846b515aa53e59a384466cb8bf"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "baseline_runtime_lock_sha256": "eb0fe259b9fd524521cd8e6c0eb93e8d5be921ba22dbc057cd5b370be24f2a5e",
+    "baseline_manifest_sha256": "b47422c1ec7c945a6cea536ec479c3515ab322a631d088d62eed25c2655e34db"
+  },
+  {
+    "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/remote_snapshots/replay_complete/results/replay_remaining_v2/object_2001/middle/result.json",
+    "sha256": "431907fba40be85567e018fbe91f86e4868032103421726c5d4ecab271546c86",
+    "runtime_receipt_sha256": "b6a690c53afc2279f26565e7a11304f000ef6526a9a4217fce0b294ef1edd570",
+    "run_config_sha256": "c1ffe64965f9e94f1c24d101905ce3f1fd9da6e4c2c2cc5b53b52f33214ff869",
+    "paired_attempt": "a17_closure_replay_remaining_v2_2001_7016d76662014c3d98910ea298dfe051",
+    "attempt_binding": {
+      "kind": "EXACT_SERIAL_BATCH_CHILD",
+      "batch_receipt_path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/remote_snapshots/replay_complete/results/replay_remaining_v2/object_2001/batch_receipt.json",
+      "batch_receipt_sha256": "a462fa0f26bb770353735a4ad25522a21b9ea4f895d91e53726d98c87cdb471c",
+      "parent_command_sha256": "8ab895577d5aca6680b5e1c0798a45152dfa70a323226db13e424585d82782c1",
+      "parent_command_hash_status": "DERIVED_FROM_HASHED_LEDGER_PLUS_EXACT_ARGS_VALIDATION_NO_SEPARATE_MONITOR_FIELD",
+      "parent_runner_sha256": "cd6c97b1df19a2cc08900ecce53de5dff89426736055c01f7da2c99d01788f07",
+      "parent_runner_name": "run_locked_batch_v3.py",
+      "required_driver": "run_closure_v2.py",
+      "required_adapter": "closure_state_v2.py",
+      "parent_remote_out": "D:/AI/A17_FINAL_CLOSURE_R1/results/replay_remaining_v2/object_2001",
+      "child_name": "middle",
+      "registered_tasks": 3,
+      "v2_fixture_validation": {
+        "manifest_sha256": "0e3d1caf767a9b6c5f470706415de33902301dbfae527891eb96a95229f7317a",
+        "fixture_key": "object_2001_middle",
+        "config_sha256": "a4108a8bc3e17dc019c8a7b7ea309d34b0ef078a2b154b6ee45f1d2385330ea8",
+        "actual_import_aliases": [
+          {
+            "epoch": "initial",
+            "role": "run_closure_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "__main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              },
+              {
+                "module": "__mp_main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              }
+            ]
+          },
+          {
+            "epoch": "initial",
+            "role": "closure_state_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "closure_state_v2",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\closure_state_v2.py",
+                "sha256": "4eb15d3cfc3df786f14fea1a8f030cb9325dbf5d8a40d91803fbacc16b5ec1a5"
+              }
+            ]
+          },
+          {
+            "epoch": "initial",
+            "role": "verified_exchange.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "verified_exchange",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\verified_exchange.py",
+                "sha256": "b237b985377831eb9c93b36449ce84493494ca373769fe74acc0551c1ec421de"
+              }
+            ]
+          },
+          {
+            "epoch": "initial",
+            "role": "online_tolerance.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "online_tolerance",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\online_tolerance.py",
+                "sha256": "0cb18fc4b91f377c8a1cc96c426bbcff7e000a846b515aa53e59a384466cb8bf"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "run_closure_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "__main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              },
+              {
+                "module": "__mp_main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "closure_state_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "closure_state_v2",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\closure_state_v2.py",
+                "sha256": "4eb15d3cfc3df786f14fea1a8f030cb9325dbf5d8a40d91803fbacc16b5ec1a5"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "verified_exchange.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "verified_exchange",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\verified_exchange.py",
+                "sha256": "b237b985377831eb9c93b36449ce84493494ca373769fe74acc0551c1ec421de"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "online_tolerance.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "online_tolerance",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\online_tolerance.py",
+                "sha256": "0cb18fc4b91f377c8a1cc96c426bbcff7e000a846b515aa53e59a384466cb8bf"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "baseline_runtime_lock_sha256": "eb0fe259b9fd524521cd8e6c0eb93e8d5be921ba22dbc057cd5b370be24f2a5e",
+    "baseline_manifest_sha256": "b47422c1ec7c945a6cea536ec479c3515ab322a631d088d62eed25c2655e34db"
+  },
+  {
+    "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/remote_snapshots/replay_complete/results/replay_remaining_v2/object_2012/early/result.json",
+    "sha256": "c78dcef04cf32971c29d3f6e12e6a1e0fbf2adf095595f9866a3831a5c0c3516",
+    "runtime_receipt_sha256": "d4d346011abbcbf7f91963c6a51740fa6937a88df8df4cd888133c6b8e4be128",
+    "run_config_sha256": "4ddc1fbd2e1f6e52dd1d984bbfd66e601a458805a286b73dab981c5df61fd850",
+    "paired_attempt": "a17_closure_replay_remaining_v2_2012_779a36662bac440aa852f9ff678d7168",
+    "attempt_binding": {
+      "kind": "EXACT_SERIAL_BATCH_CHILD",
+      "batch_receipt_path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/remote_snapshots/replay_complete/results/replay_remaining_v2/object_2012/batch_receipt.json",
+      "batch_receipt_sha256": "6c9bb4b876873f4260c7285fa55db7bc50cdcce8e26af02e72529e089f9effdb",
+      "parent_command_sha256": "585880088f530cdd9621eca453df432bbd25280223fec1d02a038fc0034d9888",
+      "parent_command_hash_status": "DERIVED_FROM_HASHED_LEDGER_PLUS_EXACT_ARGS_VALIDATION_NO_SEPARATE_MONITOR_FIELD",
+      "parent_runner_sha256": "cd6c97b1df19a2cc08900ecce53de5dff89426736055c01f7da2c99d01788f07",
+      "parent_runner_name": "run_locked_batch_v3.py",
+      "required_driver": "run_closure_v2.py",
+      "required_adapter": "closure_state_v2.py",
+      "parent_remote_out": "D:/AI/A17_FINAL_CLOSURE_R1/results/replay_remaining_v2/object_2012",
+      "child_name": "early",
+      "registered_tasks": 3,
+      "v2_fixture_validation": {
+        "manifest_sha256": "0e3d1caf767a9b6c5f470706415de33902301dbfae527891eb96a95229f7317a",
+        "fixture_key": "object_2012_early",
+        "config_sha256": "a4108a8bc3e17dc019c8a7b7ea309d34b0ef078a2b154b6ee45f1d2385330ea8",
+        "actual_import_aliases": [
+          {
+            "epoch": "initial",
+            "role": "run_closure_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "__main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              },
+              {
+                "module": "__mp_main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              }
+            ]
+          },
+          {
+            "epoch": "initial",
+            "role": "closure_state_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "closure_state_v2",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\closure_state_v2.py",
+                "sha256": "4eb15d3cfc3df786f14fea1a8f030cb9325dbf5d8a40d91803fbacc16b5ec1a5"
+              }
+            ]
+          },
+          {
+            "epoch": "initial",
+            "role": "verified_exchange.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "verified_exchange",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\verified_exchange.py",
+                "sha256": "b237b985377831eb9c93b36449ce84493494ca373769fe74acc0551c1ec421de"
+              }
+            ]
+          },
+          {
+            "epoch": "initial",
+            "role": "online_tolerance.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "online_tolerance",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\online_tolerance.py",
+                "sha256": "0cb18fc4b91f377c8a1cc96c426bbcff7e000a846b515aa53e59a384466cb8bf"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "run_closure_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "__main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              },
+              {
+                "module": "__mp_main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "closure_state_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "closure_state_v2",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\closure_state_v2.py",
+                "sha256": "4eb15d3cfc3df786f14fea1a8f030cb9325dbf5d8a40d91803fbacc16b5ec1a5"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "verified_exchange.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "verified_exchange",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\verified_exchange.py",
+                "sha256": "b237b985377831eb9c93b36449ce84493494ca373769fe74acc0551c1ec421de"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "online_tolerance.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "online_tolerance",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\online_tolerance.py",
+                "sha256": "0cb18fc4b91f377c8a1cc96c426bbcff7e000a846b515aa53e59a384466cb8bf"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "baseline_runtime_lock_sha256": "eb0fe259b9fd524521cd8e6c0eb93e8d5be921ba22dbc057cd5b370be24f2a5e",
+    "baseline_manifest_sha256": "b47422c1ec7c945a6cea536ec479c3515ab322a631d088d62eed25c2655e34db"
+  },
+  {
+    "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/remote_snapshots/replay_complete/results/replay_remaining_v2/object_2012/late/result.json",
+    "sha256": "e8ac6ff4a75a1609d09b758025072e8cff3d93030e25cc1a28df2d3be6ea3409",
+    "runtime_receipt_sha256": "281a23bd866a5f56044d866b5861953ccfe4e41435cb0aa4e95476ece7003158",
+    "run_config_sha256": "a9a384aec6e0e6c81ce017a7c95d7eefec8d8e25f59e390361341f776ab35abc",
+    "paired_attempt": "a17_closure_replay_remaining_v2_2012_779a36662bac440aa852f9ff678d7168",
+    "attempt_binding": {
+      "kind": "EXACT_SERIAL_BATCH_CHILD",
+      "batch_receipt_path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/remote_snapshots/replay_complete/results/replay_remaining_v2/object_2012/batch_receipt.json",
+      "batch_receipt_sha256": "6c9bb4b876873f4260c7285fa55db7bc50cdcce8e26af02e72529e089f9effdb",
+      "parent_command_sha256": "585880088f530cdd9621eca453df432bbd25280223fec1d02a038fc0034d9888",
+      "parent_command_hash_status": "DERIVED_FROM_HASHED_LEDGER_PLUS_EXACT_ARGS_VALIDATION_NO_SEPARATE_MONITOR_FIELD",
+      "parent_runner_sha256": "cd6c97b1df19a2cc08900ecce53de5dff89426736055c01f7da2c99d01788f07",
+      "parent_runner_name": "run_locked_batch_v3.py",
+      "required_driver": "run_closure_v2.py",
+      "required_adapter": "closure_state_v2.py",
+      "parent_remote_out": "D:/AI/A17_FINAL_CLOSURE_R1/results/replay_remaining_v2/object_2012",
+      "child_name": "late",
+      "registered_tasks": 3,
+      "v2_fixture_validation": {
+        "manifest_sha256": "0e3d1caf767a9b6c5f470706415de33902301dbfae527891eb96a95229f7317a",
+        "fixture_key": "object_2012_late",
+        "config_sha256": "a4108a8bc3e17dc019c8a7b7ea309d34b0ef078a2b154b6ee45f1d2385330ea8",
+        "actual_import_aliases": [
+          {
+            "epoch": "initial",
+            "role": "run_closure_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "__main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              },
+              {
+                "module": "__mp_main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              }
+            ]
+          },
+          {
+            "epoch": "initial",
+            "role": "closure_state_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "closure_state_v2",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\closure_state_v2.py",
+                "sha256": "4eb15d3cfc3df786f14fea1a8f030cb9325dbf5d8a40d91803fbacc16b5ec1a5"
+              }
+            ]
+          },
+          {
+            "epoch": "initial",
+            "role": "verified_exchange.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "verified_exchange",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\verified_exchange.py",
+                "sha256": "b237b985377831eb9c93b36449ce84493494ca373769fe74acc0551c1ec421de"
+              }
+            ]
+          },
+          {
+            "epoch": "initial",
+            "role": "online_tolerance.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "online_tolerance",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\online_tolerance.py",
+                "sha256": "0cb18fc4b91f377c8a1cc96c426bbcff7e000a846b515aa53e59a384466cb8bf"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "run_closure_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "__main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              },
+              {
+                "module": "__mp_main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "closure_state_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "closure_state_v2",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\closure_state_v2.py",
+                "sha256": "4eb15d3cfc3df786f14fea1a8f030cb9325dbf5d8a40d91803fbacc16b5ec1a5"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "verified_exchange.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "verified_exchange",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\verified_exchange.py",
+                "sha256": "b237b985377831eb9c93b36449ce84493494ca373769fe74acc0551c1ec421de"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "online_tolerance.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "online_tolerance",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\online_tolerance.py",
+                "sha256": "0cb18fc4b91f377c8a1cc96c426bbcff7e000a846b515aa53e59a384466cb8bf"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "baseline_runtime_lock_sha256": "eb0fe259b9fd524521cd8e6c0eb93e8d5be921ba22dbc057cd5b370be24f2a5e",
+    "baseline_manifest_sha256": "b47422c1ec7c945a6cea536ec479c3515ab322a631d088d62eed25c2655e34db"
+  },
+  {
+    "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/remote_snapshots/replay_complete/results/replay_remaining_v2/object_2012/middle/result.json",
+    "sha256": "12dc2c697a55f0cec7531295697378381539c3efedec2acc6d1bab119b945ec2",
+    "runtime_receipt_sha256": "2370454f75259152af4d0a05c67aaa9662081a605d15d72dcf1dba90188d77ad",
+    "run_config_sha256": "1db4606e603dd347ef2c5bd43115e3ad538dafdf332fc4aaf3310b7e60ee2f61",
+    "paired_attempt": "a17_closure_replay_remaining_v2_2012_779a36662bac440aa852f9ff678d7168",
+    "attempt_binding": {
+      "kind": "EXACT_SERIAL_BATCH_CHILD",
+      "batch_receipt_path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/remote_snapshots/replay_complete/results/replay_remaining_v2/object_2012/batch_receipt.json",
+      "batch_receipt_sha256": "6c9bb4b876873f4260c7285fa55db7bc50cdcce8e26af02e72529e089f9effdb",
+      "parent_command_sha256": "585880088f530cdd9621eca453df432bbd25280223fec1d02a038fc0034d9888",
+      "parent_command_hash_status": "DERIVED_FROM_HASHED_LEDGER_PLUS_EXACT_ARGS_VALIDATION_NO_SEPARATE_MONITOR_FIELD",
+      "parent_runner_sha256": "cd6c97b1df19a2cc08900ecce53de5dff89426736055c01f7da2c99d01788f07",
+      "parent_runner_name": "run_locked_batch_v3.py",
+      "required_driver": "run_closure_v2.py",
+      "required_adapter": "closure_state_v2.py",
+      "parent_remote_out": "D:/AI/A17_FINAL_CLOSURE_R1/results/replay_remaining_v2/object_2012",
+      "child_name": "middle",
+      "registered_tasks": 3,
+      "v2_fixture_validation": {
+        "manifest_sha256": "0e3d1caf767a9b6c5f470706415de33902301dbfae527891eb96a95229f7317a",
+        "fixture_key": "object_2012_middle",
+        "config_sha256": "a4108a8bc3e17dc019c8a7b7ea309d34b0ef078a2b154b6ee45f1d2385330ea8",
+        "actual_import_aliases": [
+          {
+            "epoch": "initial",
+            "role": "run_closure_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "__main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              },
+              {
+                "module": "__mp_main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              }
+            ]
+          },
+          {
+            "epoch": "initial",
+            "role": "closure_state_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "closure_state_v2",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\closure_state_v2.py",
+                "sha256": "4eb15d3cfc3df786f14fea1a8f030cb9325dbf5d8a40d91803fbacc16b5ec1a5"
+              }
+            ]
+          },
+          {
+            "epoch": "initial",
+            "role": "verified_exchange.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "verified_exchange",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\verified_exchange.py",
+                "sha256": "b237b985377831eb9c93b36449ce84493494ca373769fe74acc0551c1ec421de"
+              }
+            ]
+          },
+          {
+            "epoch": "initial",
+            "role": "online_tolerance.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "online_tolerance",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\online_tolerance.py",
+                "sha256": "0cb18fc4b91f377c8a1cc96c426bbcff7e000a846b515aa53e59a384466cb8bf"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "run_closure_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "__main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              },
+              {
+                "module": "__mp_main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "closure_state_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "closure_state_v2",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\closure_state_v2.py",
+                "sha256": "4eb15d3cfc3df786f14fea1a8f030cb9325dbf5d8a40d91803fbacc16b5ec1a5"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "verified_exchange.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "verified_exchange",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\verified_exchange.py",
+                "sha256": "b237b985377831eb9c93b36449ce84493494ca373769fe74acc0551c1ec421de"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "online_tolerance.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "online_tolerance",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\online_tolerance.py",
+                "sha256": "0cb18fc4b91f377c8a1cc96c426bbcff7e000a846b515aa53e59a384466cb8bf"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "baseline_runtime_lock_sha256": "eb0fe259b9fd524521cd8e6c0eb93e8d5be921ba22dbc057cd5b370be24f2a5e",
+    "baseline_manifest_sha256": "b47422c1ec7c945a6cea536ec479c3515ab322a631d088d62eed25c2655e34db"
+  },
+  {
+    "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/remote_snapshots/replay_complete/results/replay_remaining_v2/object_2014/early/result.json",
+    "sha256": "d9def02d276190726e622c4664b0bacd62567dd4213433f79ffe5b4670a9b0fe",
+    "runtime_receipt_sha256": "796c4fca5e5693134d46826226d3f4f2475288e34405ab1f77ffdd3665dbe2ca",
+    "run_config_sha256": "f2b2cadde0fe4075cb3c405a9ddf5c7ec75c8b3b28e9bdc9eb7843104faa4ee1",
+    "paired_attempt": "a17_closure_replay_remaining_v2_2014_ae31117d083b4246a36e7125d4593113",
+    "attempt_binding": {
+      "kind": "EXACT_SERIAL_BATCH_CHILD",
+      "batch_receipt_path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/remote_snapshots/replay_complete/results/replay_remaining_v2/object_2014/batch_receipt.json",
+      "batch_receipt_sha256": "cf82d592326ae0f98fc9de6b58fc51910bcf325c186b560534535508c928eb8f",
+      "parent_command_sha256": "a2bc7ba43412a8029c07c2f231fd57961624a37c930f5833f55b1ac1144ae1c9",
+      "parent_command_hash_status": "DERIVED_FROM_HASHED_LEDGER_PLUS_EXACT_ARGS_VALIDATION_NO_SEPARATE_MONITOR_FIELD",
+      "parent_runner_sha256": "cd6c97b1df19a2cc08900ecce53de5dff89426736055c01f7da2c99d01788f07",
+      "parent_runner_name": "run_locked_batch_v3.py",
+      "required_driver": "run_closure_v2.py",
+      "required_adapter": "closure_state_v2.py",
+      "parent_remote_out": "D:/AI/A17_FINAL_CLOSURE_R1/results/replay_remaining_v2/object_2014",
+      "child_name": "early",
+      "registered_tasks": 3,
+      "v2_fixture_validation": {
+        "manifest_sha256": "0e3d1caf767a9b6c5f470706415de33902301dbfae527891eb96a95229f7317a",
+        "fixture_key": "object_2014_early",
+        "config_sha256": "a4108a8bc3e17dc019c8a7b7ea309d34b0ef078a2b154b6ee45f1d2385330ea8",
+        "actual_import_aliases": [
+          {
+            "epoch": "initial",
+            "role": "run_closure_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "__main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              },
+              {
+                "module": "__mp_main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              }
+            ]
+          },
+          {
+            "epoch": "initial",
+            "role": "closure_state_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "closure_state_v2",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\closure_state_v2.py",
+                "sha256": "4eb15d3cfc3df786f14fea1a8f030cb9325dbf5d8a40d91803fbacc16b5ec1a5"
+              }
+            ]
+          },
+          {
+            "epoch": "initial",
+            "role": "verified_exchange.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "verified_exchange",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\verified_exchange.py",
+                "sha256": "b237b985377831eb9c93b36449ce84493494ca373769fe74acc0551c1ec421de"
+              }
+            ]
+          },
+          {
+            "epoch": "initial",
+            "role": "online_tolerance.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "online_tolerance",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\online_tolerance.py",
+                "sha256": "0cb18fc4b91f377c8a1cc96c426bbcff7e000a846b515aa53e59a384466cb8bf"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "run_closure_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "__main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              },
+              {
+                "module": "__mp_main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "closure_state_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "closure_state_v2",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\closure_state_v2.py",
+                "sha256": "4eb15d3cfc3df786f14fea1a8f030cb9325dbf5d8a40d91803fbacc16b5ec1a5"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "verified_exchange.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "verified_exchange",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\verified_exchange.py",
+                "sha256": "b237b985377831eb9c93b36449ce84493494ca373769fe74acc0551c1ec421de"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "online_tolerance.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "online_tolerance",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\online_tolerance.py",
+                "sha256": "0cb18fc4b91f377c8a1cc96c426bbcff7e000a846b515aa53e59a384466cb8bf"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "baseline_runtime_lock_sha256": "eb0fe259b9fd524521cd8e6c0eb93e8d5be921ba22dbc057cd5b370be24f2a5e",
+    "baseline_manifest_sha256": "b47422c1ec7c945a6cea536ec479c3515ab322a631d088d62eed25c2655e34db"
+  },
+  {
+    "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/remote_snapshots/replay_complete/results/replay_remaining_v2/object_2014/late/result.json",
+    "sha256": "20eb343217e7e9c34bc1ee53a869ea66a4133fc9307064c91ffad4d9401184a3",
+    "runtime_receipt_sha256": "fd8b008125dd68b89c5f0b290a251bee11032796f4002b61bbbf566bf0b9e3b9",
+    "run_config_sha256": "609aa722ead7a281aebd6b4415e8f6c5752185d0bef8b76b067e24b6d9c61e9c",
+    "paired_attempt": "a17_closure_replay_remaining_v2_2014_ae31117d083b4246a36e7125d4593113",
+    "attempt_binding": {
+      "kind": "EXACT_SERIAL_BATCH_CHILD",
+      "batch_receipt_path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/remote_snapshots/replay_complete/results/replay_remaining_v2/object_2014/batch_receipt.json",
+      "batch_receipt_sha256": "cf82d592326ae0f98fc9de6b58fc51910bcf325c186b560534535508c928eb8f",
+      "parent_command_sha256": "a2bc7ba43412a8029c07c2f231fd57961624a37c930f5833f55b1ac1144ae1c9",
+      "parent_command_hash_status": "DERIVED_FROM_HASHED_LEDGER_PLUS_EXACT_ARGS_VALIDATION_NO_SEPARATE_MONITOR_FIELD",
+      "parent_runner_sha256": "cd6c97b1df19a2cc08900ecce53de5dff89426736055c01f7da2c99d01788f07",
+      "parent_runner_name": "run_locked_batch_v3.py",
+      "required_driver": "run_closure_v2.py",
+      "required_adapter": "closure_state_v2.py",
+      "parent_remote_out": "D:/AI/A17_FINAL_CLOSURE_R1/results/replay_remaining_v2/object_2014",
+      "child_name": "late",
+      "registered_tasks": 3,
+      "v2_fixture_validation": {
+        "manifest_sha256": "0e3d1caf767a9b6c5f470706415de33902301dbfae527891eb96a95229f7317a",
+        "fixture_key": "object_2014_late",
+        "config_sha256": "a4108a8bc3e17dc019c8a7b7ea309d34b0ef078a2b154b6ee45f1d2385330ea8",
+        "actual_import_aliases": [
+          {
+            "epoch": "initial",
+            "role": "run_closure_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "__main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              },
+              {
+                "module": "__mp_main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              }
+            ]
+          },
+          {
+            "epoch": "initial",
+            "role": "closure_state_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "closure_state_v2",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\closure_state_v2.py",
+                "sha256": "4eb15d3cfc3df786f14fea1a8f030cb9325dbf5d8a40d91803fbacc16b5ec1a5"
+              }
+            ]
+          },
+          {
+            "epoch": "initial",
+            "role": "verified_exchange.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "verified_exchange",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\verified_exchange.py",
+                "sha256": "b237b985377831eb9c93b36449ce84493494ca373769fe74acc0551c1ec421de"
+              }
+            ]
+          },
+          {
+            "epoch": "initial",
+            "role": "online_tolerance.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "online_tolerance",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\online_tolerance.py",
+                "sha256": "0cb18fc4b91f377c8a1cc96c426bbcff7e000a846b515aa53e59a384466cb8bf"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "run_closure_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "__main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              },
+              {
+                "module": "__mp_main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "closure_state_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "closure_state_v2",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\closure_state_v2.py",
+                "sha256": "4eb15d3cfc3df786f14fea1a8f030cb9325dbf5d8a40d91803fbacc16b5ec1a5"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "verified_exchange.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "verified_exchange",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\verified_exchange.py",
+                "sha256": "b237b985377831eb9c93b36449ce84493494ca373769fe74acc0551c1ec421de"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "online_tolerance.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "online_tolerance",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\online_tolerance.py",
+                "sha256": "0cb18fc4b91f377c8a1cc96c426bbcff7e000a846b515aa53e59a384466cb8bf"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "baseline_runtime_lock_sha256": "eb0fe259b9fd524521cd8e6c0eb93e8d5be921ba22dbc057cd5b370be24f2a5e",
+    "baseline_manifest_sha256": "b47422c1ec7c945a6cea536ec479c3515ab322a631d088d62eed25c2655e34db"
+  },
+  {
+    "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/remote_snapshots/replay_complete/results/replay_remaining_v2/object_2014/middle/result.json",
+    "sha256": "98f3e7a2788876357066de1c6722522c136b257676107ab77a3013b0d0d7ed6a",
+    "runtime_receipt_sha256": "f232e531474e0d02812042f3f60d9875002b473eb38273d508a7b58b943d7018",
+    "run_config_sha256": "a89f1ba4c072b0d76be94c3f1c396bf596b8bcb8de50fb6afdacc2353969d6d0",
+    "paired_attempt": "a17_closure_replay_remaining_v2_2014_ae31117d083b4246a36e7125d4593113",
+    "attempt_binding": {
+      "kind": "EXACT_SERIAL_BATCH_CHILD",
+      "batch_receipt_path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/remote_snapshots/replay_complete/results/replay_remaining_v2/object_2014/batch_receipt.json",
+      "batch_receipt_sha256": "cf82d592326ae0f98fc9de6b58fc51910bcf325c186b560534535508c928eb8f",
+      "parent_command_sha256": "a2bc7ba43412a8029c07c2f231fd57961624a37c930f5833f55b1ac1144ae1c9",
+      "parent_command_hash_status": "DERIVED_FROM_HASHED_LEDGER_PLUS_EXACT_ARGS_VALIDATION_NO_SEPARATE_MONITOR_FIELD",
+      "parent_runner_sha256": "cd6c97b1df19a2cc08900ecce53de5dff89426736055c01f7da2c99d01788f07",
+      "parent_runner_name": "run_locked_batch_v3.py",
+      "required_driver": "run_closure_v2.py",
+      "required_adapter": "closure_state_v2.py",
+      "parent_remote_out": "D:/AI/A17_FINAL_CLOSURE_R1/results/replay_remaining_v2/object_2014",
+      "child_name": "middle",
+      "registered_tasks": 3,
+      "v2_fixture_validation": {
+        "manifest_sha256": "0e3d1caf767a9b6c5f470706415de33902301dbfae527891eb96a95229f7317a",
+        "fixture_key": "object_2014_middle",
+        "config_sha256": "a4108a8bc3e17dc019c8a7b7ea309d34b0ef078a2b154b6ee45f1d2385330ea8",
+        "actual_import_aliases": [
+          {
+            "epoch": "initial",
+            "role": "run_closure_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "__main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              },
+              {
+                "module": "__mp_main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              }
+            ]
+          },
+          {
+            "epoch": "initial",
+            "role": "closure_state_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "closure_state_v2",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\closure_state_v2.py",
+                "sha256": "4eb15d3cfc3df786f14fea1a8f030cb9325dbf5d8a40d91803fbacc16b5ec1a5"
+              }
+            ]
+          },
+          {
+            "epoch": "initial",
+            "role": "verified_exchange.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "verified_exchange",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\verified_exchange.py",
+                "sha256": "b237b985377831eb9c93b36449ce84493494ca373769fe74acc0551c1ec421de"
+              }
+            ]
+          },
+          {
+            "epoch": "initial",
+            "role": "online_tolerance.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "online_tolerance",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\online_tolerance.py",
+                "sha256": "0cb18fc4b91f377c8a1cc96c426bbcff7e000a846b515aa53e59a384466cb8bf"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "run_closure_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "__main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              },
+              {
+                "module": "__mp_main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "closure_state_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "closure_state_v2",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\closure_state_v2.py",
+                "sha256": "4eb15d3cfc3df786f14fea1a8f030cb9325dbf5d8a40d91803fbacc16b5ec1a5"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "verified_exchange.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "verified_exchange",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\verified_exchange.py",
+                "sha256": "b237b985377831eb9c93b36449ce84493494ca373769fe74acc0551c1ec421de"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "online_tolerance.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "online_tolerance",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\online_tolerance.py",
+                "sha256": "0cb18fc4b91f377c8a1cc96c426bbcff7e000a846b515aa53e59a384466cb8bf"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "baseline_runtime_lock_sha256": "eb0fe259b9fd524521cd8e6c0eb93e8d5be921ba22dbc057cd5b370be24f2a5e",
+    "baseline_manifest_sha256": "b47422c1ec7c945a6cea536ec479c3515ab322a631d088d62eed25c2655e34db"
+  },
+  {
+    "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/remote_snapshots/replay_complete/results/replay_v2/object_2007/early/result.json",
+    "sha256": "9717c2b279c0d5633f9118f5cc7dcb2f4506fa011963b566896c6fc9f169333d",
+    "runtime_receipt_sha256": "4caf5668086850a4a2b11be07585d5e5d391a11ee03425cda4d1257cc3fcff1e",
+    "run_config_sha256": "91be5f0f04b9f45773f7ba8a02190ea8eab3aa4ffb509832864db4427080e1c5",
+    "paired_attempt": "a17_closure_replay_2007_v2_e219059d9d3b4362886a47dcff3da659",
+    "attempt_binding": {
+      "kind": "EXACT_SERIAL_BATCH_CHILD",
+      "batch_receipt_path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/remote_snapshots/replay_complete/results/replay_v2/object_2007/batch_receipt.json",
+      "batch_receipt_sha256": "bdb6190599016a196d775a788177fd42a991a4b56ff889c2bd2730f4b72b5a42",
+      "parent_command_sha256": "cebf47fbe08c2238d9d498cfd6f3997c1fe0eed4118ed0dab0c0a0e28c2f6b30",
+      "parent_command_hash_status": "DERIVED_FROM_HASHED_LEDGER_PLUS_EXACT_ARGS_VALIDATION_NO_SEPARATE_MONITOR_FIELD",
+      "parent_runner_sha256": "cd6c97b1df19a2cc08900ecce53de5dff89426736055c01f7da2c99d01788f07",
+      "parent_runner_name": "run_locked_batch_v3.py",
+      "required_driver": "run_closure_v2.py",
+      "required_adapter": "closure_state_v2.py",
+      "parent_remote_out": "D:/AI/A17_FINAL_CLOSURE_R1/results/replay_v2/object_2007",
+      "child_name": "early",
+      "registered_tasks": 3,
+      "v2_fixture_validation": {
+        "manifest_sha256": "0e3d1caf767a9b6c5f470706415de33902301dbfae527891eb96a95229f7317a",
+        "fixture_key": "object_2007_early",
+        "config_sha256": "a4108a8bc3e17dc019c8a7b7ea309d34b0ef078a2b154b6ee45f1d2385330ea8",
+        "actual_import_aliases": [
+          {
+            "epoch": "initial",
+            "role": "run_closure_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "__main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              },
+              {
+                "module": "__mp_main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              }
+            ]
+          },
+          {
+            "epoch": "initial",
+            "role": "closure_state_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "closure_state_v2",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\closure_state_v2.py",
+                "sha256": "4eb15d3cfc3df786f14fea1a8f030cb9325dbf5d8a40d91803fbacc16b5ec1a5"
+              }
+            ]
+          },
+          {
+            "epoch": "initial",
+            "role": "verified_exchange.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "verified_exchange",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\verified_exchange.py",
+                "sha256": "b237b985377831eb9c93b36449ce84493494ca373769fe74acc0551c1ec421de"
+              }
+            ]
+          },
+          {
+            "epoch": "initial",
+            "role": "online_tolerance.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "online_tolerance",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\online_tolerance.py",
+                "sha256": "0cb18fc4b91f377c8a1cc96c426bbcff7e000a846b515aa53e59a384466cb8bf"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "run_closure_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "__main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              },
+              {
+                "module": "__mp_main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "closure_state_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "closure_state_v2",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\closure_state_v2.py",
+                "sha256": "4eb15d3cfc3df786f14fea1a8f030cb9325dbf5d8a40d91803fbacc16b5ec1a5"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "verified_exchange.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "verified_exchange",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\verified_exchange.py",
+                "sha256": "b237b985377831eb9c93b36449ce84493494ca373769fe74acc0551c1ec421de"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "online_tolerance.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "online_tolerance",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\online_tolerance.py",
+                "sha256": "0cb18fc4b91f377c8a1cc96c426bbcff7e000a846b515aa53e59a384466cb8bf"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "baseline_runtime_lock_sha256": "eb0fe259b9fd524521cd8e6c0eb93e8d5be921ba22dbc057cd5b370be24f2a5e",
+    "baseline_manifest_sha256": "b47422c1ec7c945a6cea536ec479c3515ab322a631d088d62eed25c2655e34db"
+  },
+  {
+    "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/remote_snapshots/replay_complete/results/replay_v2/object_2007/late/result.json",
+    "sha256": "81b20630a8044161b64d1b85b393df0a78a8465c82cd48b9ebac5108e4d49928",
+    "runtime_receipt_sha256": "5c9b147dbf0482e6d351d443a321c33b2ded6aa258398eab799c51fce4e26941",
+    "run_config_sha256": "c5f5855a5ee4d0542e8193d0facff7c5829f58ba0258b809ec3d89606df1e100",
+    "paired_attempt": "a17_closure_replay_2007_v2_e219059d9d3b4362886a47dcff3da659",
+    "attempt_binding": {
+      "kind": "EXACT_SERIAL_BATCH_CHILD",
+      "batch_receipt_path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/remote_snapshots/replay_complete/results/replay_v2/object_2007/batch_receipt.json",
+      "batch_receipt_sha256": "bdb6190599016a196d775a788177fd42a991a4b56ff889c2bd2730f4b72b5a42",
+      "parent_command_sha256": "cebf47fbe08c2238d9d498cfd6f3997c1fe0eed4118ed0dab0c0a0e28c2f6b30",
+      "parent_command_hash_status": "DERIVED_FROM_HASHED_LEDGER_PLUS_EXACT_ARGS_VALIDATION_NO_SEPARATE_MONITOR_FIELD",
+      "parent_runner_sha256": "cd6c97b1df19a2cc08900ecce53de5dff89426736055c01f7da2c99d01788f07",
+      "parent_runner_name": "run_locked_batch_v3.py",
+      "required_driver": "run_closure_v2.py",
+      "required_adapter": "closure_state_v2.py",
+      "parent_remote_out": "D:/AI/A17_FINAL_CLOSURE_R1/results/replay_v2/object_2007",
+      "child_name": "late",
+      "registered_tasks": 3,
+      "v2_fixture_validation": {
+        "manifest_sha256": "0e3d1caf767a9b6c5f470706415de33902301dbfae527891eb96a95229f7317a",
+        "fixture_key": "object_2007_late",
+        "config_sha256": "a4108a8bc3e17dc019c8a7b7ea309d34b0ef078a2b154b6ee45f1d2385330ea8",
+        "actual_import_aliases": [
+          {
+            "epoch": "initial",
+            "role": "run_closure_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "__main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              },
+              {
+                "module": "__mp_main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              }
+            ]
+          },
+          {
+            "epoch": "initial",
+            "role": "closure_state_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "closure_state_v2",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\closure_state_v2.py",
+                "sha256": "4eb15d3cfc3df786f14fea1a8f030cb9325dbf5d8a40d91803fbacc16b5ec1a5"
+              }
+            ]
+          },
+          {
+            "epoch": "initial",
+            "role": "verified_exchange.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "verified_exchange",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\verified_exchange.py",
+                "sha256": "b237b985377831eb9c93b36449ce84493494ca373769fe74acc0551c1ec421de"
+              }
+            ]
+          },
+          {
+            "epoch": "initial",
+            "role": "online_tolerance.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "online_tolerance",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\online_tolerance.py",
+                "sha256": "0cb18fc4b91f377c8a1cc96c426bbcff7e000a846b515aa53e59a384466cb8bf"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "run_closure_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "__main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              },
+              {
+                "module": "__mp_main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "closure_state_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "closure_state_v2",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\closure_state_v2.py",
+                "sha256": "4eb15d3cfc3df786f14fea1a8f030cb9325dbf5d8a40d91803fbacc16b5ec1a5"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "verified_exchange.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "verified_exchange",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\verified_exchange.py",
+                "sha256": "b237b985377831eb9c93b36449ce84493494ca373769fe74acc0551c1ec421de"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "online_tolerance.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "online_tolerance",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\online_tolerance.py",
+                "sha256": "0cb18fc4b91f377c8a1cc96c426bbcff7e000a846b515aa53e59a384466cb8bf"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "baseline_runtime_lock_sha256": "eb0fe259b9fd524521cd8e6c0eb93e8d5be921ba22dbc057cd5b370be24f2a5e",
+    "baseline_manifest_sha256": "b47422c1ec7c945a6cea536ec479c3515ab322a631d088d62eed25c2655e34db"
+  },
+  {
+    "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/remote_snapshots/replay_complete/results/replay_v2/object_2007/middle/result.json",
+    "sha256": "cb7118a9b93d0aaaad64e1cc9ce16c47753c83be2c8f7704d8fd93b6c8bb4ff7",
+    "runtime_receipt_sha256": "022dabf7279dbdaaf73d19163f8e97db531f754bbf76e9f2207f97d894dfd0cb",
+    "run_config_sha256": "f6d94d136414b684bded5d9c683a8298c23d630f600c3d90b05e62230f70d602",
+    "paired_attempt": "a17_closure_replay_2007_v2_e219059d9d3b4362886a47dcff3da659",
+    "attempt_binding": {
+      "kind": "EXACT_SERIAL_BATCH_CHILD",
+      "batch_receipt_path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/remote_snapshots/replay_complete/results/replay_v2/object_2007/batch_receipt.json",
+      "batch_receipt_sha256": "bdb6190599016a196d775a788177fd42a991a4b56ff889c2bd2730f4b72b5a42",
+      "parent_command_sha256": "cebf47fbe08c2238d9d498cfd6f3997c1fe0eed4118ed0dab0c0a0e28c2f6b30",
+      "parent_command_hash_status": "DERIVED_FROM_HASHED_LEDGER_PLUS_EXACT_ARGS_VALIDATION_NO_SEPARATE_MONITOR_FIELD",
+      "parent_runner_sha256": "cd6c97b1df19a2cc08900ecce53de5dff89426736055c01f7da2c99d01788f07",
+      "parent_runner_name": "run_locked_batch_v3.py",
+      "required_driver": "run_closure_v2.py",
+      "required_adapter": "closure_state_v2.py",
+      "parent_remote_out": "D:/AI/A17_FINAL_CLOSURE_R1/results/replay_v2/object_2007",
+      "child_name": "middle",
+      "registered_tasks": 3,
+      "v2_fixture_validation": {
+        "manifest_sha256": "0e3d1caf767a9b6c5f470706415de33902301dbfae527891eb96a95229f7317a",
+        "fixture_key": "object_2007_middle",
+        "config_sha256": "a4108a8bc3e17dc019c8a7b7ea309d34b0ef078a2b154b6ee45f1d2385330ea8",
+        "actual_import_aliases": [
+          {
+            "epoch": "initial",
+            "role": "run_closure_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "__main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              },
+              {
+                "module": "__mp_main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              }
+            ]
+          },
+          {
+            "epoch": "initial",
+            "role": "closure_state_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "closure_state_v2",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\closure_state_v2.py",
+                "sha256": "4eb15d3cfc3df786f14fea1a8f030cb9325dbf5d8a40d91803fbacc16b5ec1a5"
+              }
+            ]
+          },
+          {
+            "epoch": "initial",
+            "role": "verified_exchange.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "verified_exchange",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\verified_exchange.py",
+                "sha256": "b237b985377831eb9c93b36449ce84493494ca373769fe74acc0551c1ec421de"
+              }
+            ]
+          },
+          {
+            "epoch": "initial",
+            "role": "online_tolerance.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "online_tolerance",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\online_tolerance.py",
+                "sha256": "0cb18fc4b91f377c8a1cc96c426bbcff7e000a846b515aa53e59a384466cb8bf"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "run_closure_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "__main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              },
+              {
+                "module": "__mp_main__",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\run_closure_v2.py",
+                "sha256": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "closure_state_v2.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "closure_state_v2",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\closure_state_v2.py",
+                "sha256": "4eb15d3cfc3df786f14fea1a8f030cb9325dbf5d8a40d91803fbacc16b5ec1a5"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "verified_exchange.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "verified_exchange",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\verified_exchange.py",
+                "sha256": "b237b985377831eb9c93b36449ce84493494ca373769fe74acc0551c1ec421de"
+              }
+            ]
+          },
+          {
+            "epoch": "final",
+            "role": "online_tolerance.py",
+            "unique_source_identities": 1,
+            "aliases": [
+              {
+                "module": "online_tolerance",
+                "actual_path": "D:\\AI\\A17_FINAL_CLOSURE_R1\\code\\online_tolerance.py",
+                "sha256": "0cb18fc4b91f377c8a1cc96c426bbcff7e000a846b515aa53e59a384466cb8bf"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "baseline_runtime_lock_sha256": "eb0fe259b9fd524521cd8e6c0eb93e8d5be921ba22dbc057cd5b370be24f2a5e",
+    "baseline_manifest_sha256": "b47422c1ec7c945a6cea536ec479c3515ab322a631d088d62eed25c2655e34db"
+  }
+]

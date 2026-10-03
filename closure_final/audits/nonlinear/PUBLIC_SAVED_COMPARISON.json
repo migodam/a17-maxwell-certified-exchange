@@ -1,0 +1,547 @@
+{
+  "schema": "a17.public.nonlinear.saved.comparison.v1",
+  "identity": "NEW_PUBLIC_REANALYSIS_NOT_HISTORICAL_RUNTIME",
+  "status": "SUPPORTED_SAVED_REANALYSIS_MATCHES_OWNER_AND_FIGURE_TABLE",
+  "strict_all_case_full_metrics": "FAILED_MISSING_2016_PREFIX_FIELDS",
+  "counts": {
+    "completed": 6,
+    "failed_prefix": 1,
+    "not_run": 1,
+    "planned": 8
+  },
+  "completed_pair_owner_metric_checks": 36,
+  "owner_ratio_checks": 18,
+  "exact_float_equal_checks": 54,
+  "maximum_absolute_difference": 0.0,
+  "full_volume_csv_checks": [
+    {
+      "object_id": 2002,
+      "policy": "receiver_only",
+      "metric": "full_3D_complex_relative_L2",
+      "exact_float_equal": true
+    },
+    {
+      "object_id": 2002,
+      "policy": "verified_exchange",
+      "metric": "full_3D_complex_relative_L2",
+      "exact_float_equal": true
+    },
+    {
+      "object_id": 2005,
+      "policy": "receiver_only",
+      "metric": "full_3D_complex_relative_L2",
+      "exact_float_equal": true
+    },
+    {
+      "object_id": 2005,
+      "policy": "verified_exchange",
+      "metric": "full_3D_complex_relative_L2",
+      "exact_float_equal": true
+    },
+    {
+      "object_id": 2009,
+      "policy": "receiver_only",
+      "metric": "full_3D_complex_relative_L2",
+      "exact_float_equal": true
+    },
+    {
+      "object_id": 2009,
+      "policy": "verified_exchange",
+      "metric": "full_3D_complex_relative_L2",
+      "exact_float_equal": true
+    }
+  ],
+  "saved_curve_rows_exactly_equal": 125,
+  "completed_endpoint_objective_vs_last_saved_curve": "PASS_6_ENDPOINTS",
+  "source_sha256": {
+    "portable_output": "beec622a8d36f24bdf7f9e4638dcdd74e4518af1be3a49cbc4120a9e7814bca9",
+    "owner_statistics": "c7922067aaacf8e12c8922cf84a42442a4e545c35362c4fa6cbe10f8cf42bde8",
+    "owner_cases": "e9ed0a74688a67406f2340d6be36c3252f9b9cad1f9cb45f611768d668bf9b7e",
+    "merged_audited_curves": "b746333c6254d488a671fd13e72b74ec91dd8e77fed99647bf586227c31522ff",
+    "full_volume_csv": "6ab1915c22f9a9bbcf2fb42ce7661a399bbebc101f3564fad78fd14a5d39d274"
+  },
+  "checks": [
+    {
+      "object_id": 2002,
+      "policy": "receiver_only",
+      "metric": "material_complex_relative",
+      "portable": 0.30265989991235837,
+      "owner": 0.30265989991235837,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2002,
+      "policy": "verified_exchange",
+      "metric": "material_complex_relative",
+      "portable": 0.26985570102104034,
+      "owner": 0.26985570102104034,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2002,
+      "metric": "material_complex_relative_ratio",
+      "portable": 0.891613659752028,
+      "owner": 0.891613659752028,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2002,
+      "policy": "receiver_only",
+      "metric": "material_real_relative",
+      "portable": 0.28113554429981186,
+      "owner": 0.28113554429981186,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2002,
+      "policy": "verified_exchange",
+      "metric": "material_real_relative",
+      "portable": 0.25156272929660584,
+      "owner": 0.25156272929660584,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2002,
+      "metric": "material_real_relative_ratio",
+      "portable": 0.8948094056307991,
+      "owner": 0.8948094056307991,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2002,
+      "policy": "receiver_only",
+      "metric": "material_imag_relative",
+      "portable": 0.7438821436297941,
+      "owner": 0.7438821436297941,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2002,
+      "policy": "verified_exchange",
+      "metric": "material_imag_relative",
+      "portable": 0.6506356973584516,
+      "owner": 0.6506356973584516,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2002,
+      "metric": "material_imag_relative_ratio",
+      "portable": 0.874648898256458,
+      "owner": 0.874648898256458,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2002,
+      "policy": "receiver_only",
+      "metric": "measured_data_relative",
+      "portable": 0.006636584760103277,
+      "owner": 0.006636584760103277,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2002,
+      "policy": "verified_exchange",
+      "metric": "measured_data_relative",
+      "portable": 0.002836637656785271,
+      "owner": 0.002836637656785271,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2002,
+      "metric": "measured_data_relative_ratio",
+      "portable": 0.42742430923780256,
+      "owner": 0.42742430923780256,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2002,
+      "policy": "receiver_only",
+      "metric": "heldout_data_relative",
+      "portable": 0.0066372560770399805,
+      "owner": 0.0066372560770399805,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2002,
+      "policy": "verified_exchange",
+      "metric": "heldout_data_relative",
+      "portable": 0.002836497012561256,
+      "owner": 0.002836497012561256,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2002,
+      "metric": "heldout_data_relative_ratio",
+      "portable": 0.4273598878267553,
+      "owner": 0.4273598878267553,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2002,
+      "policy": "receiver_only",
+      "metric": "final_objective",
+      "portable": 2.2812266605176488e-05,
+      "owner": 2.2812266605176488e-05,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2002,
+      "policy": "verified_exchange",
+      "metric": "final_objective",
+      "portable": 4.825952316539358e-06,
+      "owner": 4.825952316539358e-06,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2002,
+      "metric": "final_objective_ratio",
+      "portable": 0.2115507590746931,
+      "owner": 0.2115507590746931,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2005,
+      "policy": "receiver_only",
+      "metric": "material_complex_relative",
+      "portable": 0.6721905292828861,
+      "owner": 0.6721905292828861,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2005,
+      "policy": "verified_exchange",
+      "metric": "material_complex_relative",
+      "portable": 0.6706810840360217,
+      "owner": 0.6706810840360217,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2005,
+      "metric": "material_complex_relative_ratio",
+      "portable": 0.9977544383904444,
+      "owner": 0.9977544383904444,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2005,
+      "policy": "receiver_only",
+      "metric": "material_real_relative",
+      "portable": 0.6810403285506288,
+      "owner": 0.6810403285506288,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2005,
+      "policy": "verified_exchange",
+      "metric": "material_real_relative",
+      "portable": 0.6834570638717895,
+      "owner": 0.6834570638717895,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2005,
+      "metric": "material_real_relative_ratio",
+      "portable": 1.0035485935558381,
+      "owner": 1.0035485935558381,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2005,
+      "policy": "receiver_only",
+      "metric": "material_imag_relative",
+      "portable": 0.44389608112576434,
+      "owner": 0.44389608112576434,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2005,
+      "policy": "verified_exchange",
+      "metric": "material_imag_relative",
+      "portable": 0.28588573530292966,
+      "owner": 0.28588573530292966,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2005,
+      "metric": "material_imag_relative_ratio",
+      "portable": 0.6440375291845226,
+      "owner": 0.6440375291845226,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2005,
+      "policy": "receiver_only",
+      "metric": "measured_data_relative",
+      "portable": 0.010531539728438188,
+      "owner": 0.010531539728438188,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2005,
+      "policy": "verified_exchange",
+      "metric": "measured_data_relative",
+      "portable": 0.0070832379481887515,
+      "owner": 0.0070832379481887515,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2005,
+      "metric": "measured_data_relative_ratio",
+      "portable": 0.67257382404037,
+      "owner": 0.67257382404037,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2005,
+      "policy": "receiver_only",
+      "metric": "heldout_data_relative",
+      "portable": 0.010520701970468883,
+      "owner": 0.010520701970468883,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2005,
+      "policy": "verified_exchange",
+      "metric": "heldout_data_relative",
+      "portable": 0.0070800563729569894,
+      "owner": 0.0070800563729569894,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2005,
+      "metric": "heldout_data_relative_ratio",
+      "portable": 0.6729642558861924,
+      "owner": 0.6729642558861924,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2005,
+      "policy": "receiver_only",
+      "metric": "final_objective",
+      "portable": 5.552962524636269e-05,
+      "owner": 5.552962524636269e-05,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2005,
+      "policy": "verified_exchange",
+      "metric": "final_objective",
+      "portable": 2.5144678638447564e-05,
+      "owner": 2.5144678638447564e-05,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2005,
+      "metric": "final_objective_ratio",
+      "portable": 0.45281556514906596,
+      "owner": 0.45281556514906596,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2009,
+      "policy": "receiver_only",
+      "metric": "material_complex_relative",
+      "portable": 0.6096404981110085,
+      "owner": 0.6096404981110085,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2009,
+      "policy": "verified_exchange",
+      "metric": "material_complex_relative",
+      "portable": 0.5659891533320666,
+      "owner": 0.5659891533320666,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2009,
+      "metric": "material_complex_relative_ratio",
+      "portable": 0.9283982200752786,
+      "owner": 0.9283982200752786,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2009,
+      "policy": "receiver_only",
+      "metric": "material_real_relative",
+      "portable": 0.6081470702418288,
+      "owner": 0.6081470702418288,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2009,
+      "policy": "verified_exchange",
+      "metric": "material_real_relative",
+      "portable": 0.5650597986341002,
+      "owner": 0.5650597986341002,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2009,
+      "metric": "material_real_relative_ratio",
+      "portable": 0.9291499150187552,
+      "owner": 0.9291499150187552,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2009,
+      "policy": "receiver_only",
+      "metric": "material_imag_relative",
+      "portable": 0.6975505261954482,
+      "owner": 0.6975505261954482,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2009,
+      "policy": "verified_exchange",
+      "metric": "material_imag_relative",
+      "portable": 0.6219015495622531,
+      "owner": 0.6219015495622531,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2009,
+      "metric": "material_imag_relative_ratio",
+      "portable": 0.8915505417997507,
+      "owner": 0.8915505417997507,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2009,
+      "policy": "receiver_only",
+      "metric": "measured_data_relative",
+      "portable": 0.014178603090241278,
+      "owner": 0.014178603090241278,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2009,
+      "policy": "verified_exchange",
+      "metric": "measured_data_relative",
+      "portable": 0.012178344863873399,
+      "owner": 0.012178344863873399,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2009,
+      "metric": "measured_data_relative_ratio",
+      "portable": 0.8589241680836246,
+      "owner": 0.8589241680836246,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2009,
+      "policy": "receiver_only",
+      "metric": "heldout_data_relative",
+      "portable": 0.014189977176007021,
+      "owner": 0.014189977176007021,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2009,
+      "policy": "verified_exchange",
+      "metric": "heldout_data_relative",
+      "portable": 0.012179283961979337,
+      "owner": 0.012179283961979337,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2009,
+      "metric": "heldout_data_relative_ratio",
+      "portable": 0.8583018711666821,
+      "owner": 0.8583018711666821,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2009,
+      "policy": "receiver_only",
+      "metric": "final_objective",
+      "portable": 0.00010113178829741431,
+      "owner": 0.00010113178829741431,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2009,
+      "policy": "verified_exchange",
+      "metric": "final_objective",
+      "portable": 7.481450780874412e-05,
+      "owner": 7.481450780874412e-05,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "object_id": 2009,
+      "metric": "final_objective_ratio",
+      "portable": 0.7397724204057898,
+      "owner": 0.7397724204057898,
+      "exact_float_equal": true,
+      "absolute_difference": 0.0
+    }
+  ],
+  "prefix_missing_prerequisites": {
+    "final_objective": "MISSING_SAVED_OBJECTIVE_PREREQUISITES",
+    "heldout_data_relative": "MISSING_SAVED_HELD_FIELD_OR_HELD_TRUTH",
+    "measured_data_relative": "MISSING_SAVED_FIELD"
+  },
+  "prefix_material_values_scope": "Last-safe saved chi diagnostic only; not a completed endpoint and not an owner endpoint metric",
+  "not_recomputed": [
+    "child_wall_s and wall_ratio",
+    "physical/kernel/RHS counters",
+    "private ledger/runtime provenance",
+    "intermediate full-field physics or Armijo source audit"
+  ],
+  "no_new_physics": true,
+  "scientific_acceptance": false
+}

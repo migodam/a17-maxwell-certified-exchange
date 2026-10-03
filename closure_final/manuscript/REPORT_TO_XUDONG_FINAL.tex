@@ -1,0 +1,94 @@
+\documentclass[UTF8,a4paper,11pt,fontset=none]{ctexart}
+\usepackage{fontspec}\setmainfont{Times New Roman}\setsansfont{Arial}\setmonofont{Menlo}\setCJKmainfont{Songti SC}\setCJKsansfont{Heiti SC}
+\usepackage[margin=2.2cm]{geometry}\usepackage{amsmath,amssymb,graphicx,booktabs,tabularx,hyperref,microtype}
+\hypersetup{hidelinks}\setlength{\parskip}{.4em}\setlength{\emergencystretch}{2em}
+\title{接收电流空间何时值得改变？\\关于材料激发、内部反馈与条件交换的研究汇报}
+\author{}\date{}
+% Use cached readable math sizes; no network font installation.
+\DeclareMathSizes{10}{10}{7}{6}
+\DeclareMathSizes{9}{9}{6}{6}
+\DeclareMathSizes{8}{8}{6}{6}
+\DeclareMathSizes{7}{7}{6}{6}
+\DeclareMathSizes{6}{6}{6}{6}
+\DeclareMathSizes{5}{6}{6}{6}
+\begin{document}\maketitle\vspace{-1.5em}
+陈教授您好，我想汇报一个从电流压缩引出的材料反演问题。我最初希望用高斯（Gaussian）材料表示和少量电流端口降低计算量，后来发现，比“压缩后的场是否足够准确”更关键的是：这些电流方向生成的材料更新是否正确。现在我把问题收窄为：已有一个通过端点求解检查的接收电流基底，什么时候值得换掉其中一个方向？
+
+\section{文献背景与问题的来由}
+电磁逆散射（electromagnetic inverse scattering）根据外部散射场估计内部介电材料。感应电流（induced current）连接材料与测量：材料在总场作用下产生电流，电流通过内部Green算子相互作用，最后向接收器辐射。求解器若保留全部电流自由度，三维计算和反演线性化都很昂贵，所以电流子空间（current subspace）自然成为组织问题的方式。
+
+我对subspace-based optimization method（SOM，子空间优化方法）的理解是，它首先利用接收Green算子的奇异结构区分容易观测和较难观测的电流，再结合材料与电流的一致性求解。Twofold SOM（TSOM）进一步利用内部传播；FFT-TSOM利用Fourier结构组织更高效的电流空间。Subspace-based distorted-Born iterative method（S-DBIM）则把背景更新与电流信息结合。因此，我想补上一个具体接口：\emph{在给定材料和当前残差下，改变这个电流子空间，会怎样改变材料这一步？}
+
+输出保持、导数保持和目标导向降阶模型（output-/derivative-preserving and goal-oriented reduced-order model, ROM）已有丰富研究；Krylov方法也直接围绕材料方程构造有效方向。我关注的物理链条是材料激发怎样进入指定电流、内部反馈怎样改变它的接收返回，以及这个改变怎样作用于当前材料步。这些已知方法是比较的出发点，指定电流替换的材料后果才是我想算清楚的接口。
+
+\section{材料扰动先变成电流激励，再经过多重散射}
+对第$p$次照明，用$\chi$表示材料对比度，$Q_Ts$表示允许的微小材料变化。$s$是实材料坐标，复介电常数的实部和虚部都在其中；$Q_T$在体积加权材料度量下正交化。材料方向经过当前总场形成注入（material injection）$B_ps$，再经完整内部方程$L$得到电流变化：
+\[
+L\,\delta j_p=B_ps,\qquad J_p=SL^{-1}B_p.
+\]
+$S$是接收及测量归一化算子。材料、局部总场、照明和材料表示都进入$B_p$。实际离散偶极子近似（discrete-dipole approximation, DDA）使用极化率（polarizability）$a(\chi)$，注入包含$a'(\chi)e_p^{\rm tot}$；极化率与材料对比度通过这个离散关系相连。各照明有自己的电流，但共享同一个材料变量，伴随必须做正确的实材料拉回（real material pullback）。
+
+\section{新增电流有直接辐射和保留反馈两条路径}
+设$V$是保留基底，$C$是指定新增方向，$R_0=V(V^*LV)^{-1}V^*$。取电流形式$L=I-XG_D$：$X$是同一电流归一化下的材料乘法算子，$G_D$把电流映射成内部场。在DDA离散中需使用相应极化率及自作用约定。消去$V$中的坐标以后，新增方向变成
+\[
+\bar C=(I-R_0L)C=C+R_0XG_DC.
+\]
+第一项是新增电流本身；第二项是它产生内部场、激发保留电流，后者再经过保留空间散射返回的响应。这是频域反馈（frequency-domain feedback），来自方程消元。接收器看见$S\bar C$，而不只是$SC$。
+
+\begin{figure}[htbp]\centering\includegraphics[width=.94\linewidth]{figures/physical_feedback.pdf}
+\caption{新增电流的直接辐射和保留电流反馈。场景是概念示意；箭头不代表计算场分布。}
+\end{figure}
+
+令$Y_C=S\bar C$为反馈后的观测因子，$N_C=C^*(B-LR_0B)$为材料进入新增方程的有效激励，$\Gamma_C=C^*L\bar C$为Schur补。端点导数差精确写成
+\[
+D_C=J_C-J_0=Y_C\Gamma_C^{-1}N_C.
+\]
+$Y_C$说明作用能否返回接收器，$N_C$说明当前材料扰动能否激发它；$\Gamma_C$保留两空间之间的反馈耦合。直接接收强度无法单独代替这个乘积。一个受控三维例子中，直接输出低于$1.7\times10^{-16}$，反馈后输出却为0.0672--0.0888，指定增广的材料导数变化达到3.56--5.22\%。
+
+\section{通路完整不等于当前材料步有收益}
+冻结当前材料、残差$r$、共同正则曲率$\Lambda$和先验线性项$\ell$后，正则化Gauss--Newton（GN）材料法方程为
+\[
+H_Us_U=-h_U,\qquad H_U=J_U^TJ_U+\Lambda,\quad h_U=J_U^Tr+\ell.
+\]
+记原端点的材料法方程矩阵为$H_0=J_0^*J_0+\Lambda$。对指定增广，我可以证明步差落在两组材料方向组成的空间：
+\[
+s_C-s_0\in\operatorname{Range}H_0^{-1}[J_0^*Y_C,N_C^*].
+\]
+这里$Y_C,N_C$在材料空间公式中也按全部照明实化：不同照明有不同电流分量，但共享实材料变量。第一组通过原敏感度把新增接收响应带回材料，第二组通过新增激励把残差带回材料。这个双侧支撑（paired material support）解释步会在哪里改变；它并没有判断这种改变是否对当前完整目标有用。
+
+改变电流模型，同时改变数据曲率$\mathsf I=J^TJ$和残差拉回$h=J^Tr+\ell$。对新旧端点，实际步差为
+\[
+d=s_n-s_o=-H_n^{-1}(\Delta h+\Delta\mathsf I s_o).
+\]
+这里两项要共同看。电流空间变大是在改变已有数据的近似模型，曲率增量可以不定。为了检验“响应更强是否就更有用”，我使用两个常见汇总量：信息体积（information volume）把尺度归一化曲率的特征值$\nu_i$汇总成$\tfrac12\sum_i\log(1+\nu_i)$；有效维数（effective dimension）用$\sum_i\nu_i/(1+\nu_i)$描述显著响应方向的数量。这里$\nu_i$来自$P_0^{-1/2}J_U^TJ_UP_0^{-1/2}$，固定$P_0=10^{-5}I$，与求解时为控制步长而加入的Levenberg--Marquardt（LM）阻尼分开。这两个数压缩了曲率信息，却没有保留当前残差的方向。
+
+真实Maxwell替换中，我看到信息体积增加6.3127、有效维数增加1.8613，相对完整曲率的归一化误差还略有下降，完整GN收益却为负。另一个增广见证中，两列单独加入都不利，联合加入却有利，说明作用需要放在当前空间中判断。对共同候选的受控比较，我暂时关闭no-op并强制选一个候选：只看实际位移的线性收益，29/36次选到负收益；计入有限位移的二次代价后降到1/36。这是解释排序的诊断，实际部署仍保留接受复核和no-op。
+
+历史对照也帮助我区分了两件事。沿完整描述步差的两组材料方向作双侧材料修正（paired repair），在72个平滑及36个尖锐冻结比较中都优于对应的直接电流增广（direct current enlargement）。但等材料秩的Krylov修正全部更好，计入构建与检查后的paired路径耗时为匹配预条件共轭梯度（preconditioned conjugate gradient, PCG）的1.416倍。由此我选择用电流结构判断模型如何改，而不是让它替代完整材料求解器。
+
+\section{我采用的设计：接收基底上的条件交换}
+我从接收导出的起始基底（receiver-derived basis）出发，检查一列移出、一列移入的具体替换。保留的是电流总维数，原receiver列可以被换掉。较丰富的约化参考（richer reduced anchor，简称anchor）先排序，每轮最多对两个进入完整复核的候选（finalist）做$Jd$检查，最多接受三个动作；没有可靠正收益时就保持当前空间。接受以后重新计算条件耦合，不能把第一次得分沿用到底。相同电流维数让我们比较表示的材料用途，额外anchor、候选取得与完整检查的费用也同时保留。
+
+判断标准是实际位移在共同完整二次目标上减少了多少。令$x=s_o$为当前约化模型生成的材料步，$F$指共同完整二次模型，$g_F(x)$和$H_F$是它的梯度与曲率：
+\[
+Q=-g_F(x)^Td-\tfrac12d^TH_Fd.
+\]
+缓存$u=r+J_Fx$，只算$z=J_Fd$即可评价
+\[
+Q=-\operatorname{Re}\langle u,z\rangle-(\ell+\Lambda x)^Td
+-\tfrac12(\|z\|^2+d^T\Lambda d).
+\]
+这样每个finalist只增加一个材料方向在全部照明下的切向作用，不需要再计算完整伴随，也不需要完整最优材料步$s_*$。这个作用仍需收费。
+
+接受阈值仅依赖上述各项的在线尺度、FP64精度和预先固定的常数；原完整参考底噪已从controller移出。36单元真实回放中，75个接受动作、终态空间、材料步和风险保持完全一致。这是高精度数值复核（high-fidelity numerical verification），尚未实例化严格输出误差半径，所以我不用deterministic certificate描述它。
+
+\input{CLOSURE_CHEN_RESULTS.tex}
+
+\section{我对结果的理解，以及想请教的问题}
+我的理解是，接收可见性提供一个可靠的起点，材料激发和内部反馈解释某个替换能产生什么影响，残差相关的有限收益才判断这个影响现在是否值得。这个链条把物理通路与材料更新连起来，而不是寻找一个脱离状态和目标的普遍模式排名。
+
+我想请教两个物理和方法上的问题。第一，在SOM/TSOM已有的内部传播组织中，您会如何理解这个保留空间返回项？特别是直接辐射接近零时，哪些几何或材料条件最有可能让反馈路径成为主导，哪些条件会使它抵消？第二，面对短候选池漏掉有用方向的情况，您觉得怎样的物理构造最适合扩大有效候选覆盖，而不先支付很大的全波费用？我希望把这个问题作为后续工作的具体起点，而不是不断叠加一个更复杂的求解器。
+
+\section*{主要阅读线索}
+陈教授的\emph{Computational Methods for Electromagnetic Inverse Scattering}及已取得全文的子空间方法综述，是我理解既有传播机制的主要依据。Primal/dual inverse ROM原文提供导数保持的对照。SOM、TSOM、FFT-TSOM及S-DBIM原始论文的全文仍有缺口；完整书目、全文证据和这些未关闭的条目随补充材料说明。因此论文采用明确的机制比较，不作历史优先性宣称。
+\end{document}

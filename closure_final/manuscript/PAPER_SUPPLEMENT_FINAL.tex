@@ -1,0 +1,112 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=24mm]{geometry}
+\usepackage{amsmath,amssymb,graphicx,booktabs,tabularx,array,url}
+\usepackage[hidelinks]{hyperref}\usepackage{fontspec}
+\setmainfont{Times New Roman}\setsansfont{Arial}\setmonofont{Menlo}
+\usepackage{microtype}\setlength{\emergencystretch}{2em}
+\newcommand{\Range}{\operatorname{Range}}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\renewcommand{\thetable}{S\arabic{table}}
+\title{Supplement: Maxwell Conditional Current Exchange\\Model, Locked Protocol, and Complete Evidence}
+\author{}\date{}
+% Use cached readable math sizes; no network font installation.
+\DeclareMathSizes{10}{10}{7}{6}
+\DeclareMathSizes{9}{9}{6}{6}
+\DeclareMathSizes{8}{8}{6}{6}
+\DeclareMathSizes{7}{7}{6}{6}
+\DeclareMathSizes{6}{6}{6}{6}
+\DeclareMathSizes{5}{6}{6}{6}
+\begin{document}\maketitle
+This supplement specifies the physical operators, numerical acceptance, validation population, and costs behind the receiver-centered exchange manuscript. Historical material-repair and solver controls are summarized separately; their original records remain unchanged in the accompanying archive. Current ranks refer to shared complex current columns, while material dimensions are real. Local full-GN fidelity and final material estimation are evaluated separately.
+\setcounter{tocdepth}{1}\tableofcontents
+\section{Physical model and shared material coordinates}
+\input{FINAL_DDA_MODEL.tex}
+
+\section{Exact model-change and gain identities}
+Let $J_o$ and $J_n$ be the real material Jacobians of two stable Galerkin current endpoints, and keep $r,\Lambda,\ell$ fixed. Write $D=J_n-J_o$. Then
+\[
+\Delta H=J_o^TD+D^TJ_o+D^TD,\qquad\Delta h=D^Tr.
+\]
+Subtracting $H_ns_n=-h_n$ and $H_os_o=-h_o$ gives $d=-H_n^{-1}(\Delta h+\Delta Hs_o)$. Both Hessians are positive definite under positive regularization, whereas their difference may be indefinite because of the interference terms. Endpoint stability does not imply invertibility of the common retained core; singular cores therefore bypass the Schur fast path and use direct stable endpoint calculation.
+
+For a low-rank realified factorization $D=YT$, the range identities
+\[
+\operatorname{Range}[\Delta H,D^T]=\operatorname{Range}[J_o^TD,D^T]
+\]
+follow by $\Delta H=J_o^TD+D^TJ_n$ and $J_o^TD=\Delta H-D^TJ_n$. Thus step differences lie in the corresponding paired material support after multiplication by $H_o^{-1}$. All illuminations share material variables, so a single complex current atom need not yield a rank-one real material Jacobian change. No singular response is discarded in the exact assertion.
+
+The quadratic gain holds for any executed displacement $d$, without assuming it is an exact submodel minimizer:
+\[
+Q=-g_F(x)^Td-\tfrac12d^TH_Fd.
+\]
+Using $u=r+J_Fx$, $z=J_Fd$, and real $\Lambda,\ell$ gives the directional formula in the main text. The standalone reduction formulas concern unconstrained endpoint steps; projection or nonlinear line search changes the actual executed displacement and is recorded separately.
+
+If valid output radii satisfy $\|u-\widehat u\|\le e_u$ and $\|z-\widehat z\|\le e_z$, direct expansion and Cauchy--Schwarz bound the gain error by
+\[
+\epsilon_Q=e_u\|\widehat z\|+(\|\widehat u\|+\|\widehat z\|)e_z
++e_ue_z+\tfrac12e_z^2.
+\]
+The current experiments do not instantiate these radii. Linear residuals, repeatability, and the FP64 significance tolerance are not substituted for them. A deterministic whole-neighborhood stopping certificate would also require upper bounds for every feasible declared action, including actions outside the online shortlist.
+
+\section{Closest-method comparison and source scope}
+The algebra used in the manuscript has established antecedents. Schur elimination is block Gaussian elimination; paired support follows the range of a normal-equation update; the finite-gain expression is the exact expansion of a quadratic. The source comparison below separates those tools from the Maxwell design question.
+
+\begin{table}[htbp]\centering\small
+\begin{tabularx}{\linewidth}{p{.19\linewidth}X X}\toprule
+Method / source&Established construction or decision&A distinction tested here\\\midrule
+SOM / TSOM \cite{r18,r17,r3,r16}&Receiver observability plus current/material consistency; TSOM also uses internal propagation. The book distinguishes an intersection construction (6.70) from a projected receiver-minor construction (6.71).&The current endpoint's state-dependent material injection and feedback-dressed return determine a specified replacement's material displacement.\\
+FFT-TSOM / MR-FFT-TSOM \cite{r1,r19,r3}&Fourier current organization, data/state residual objectives, and progressive mode counts. MR denotes multiplicative regularization.&The experiment keeps the endpoint current rank fixed and evaluates replacements on one common full material quadratic.\\
+Interpolatory inverse ROM \cite{r4}&Forward and adjoint solution-space inclusion preserves outputs and parameter derivatives at sampled points; see Theorem 3.1.&We resolve the effect of one specified current change through its Maxwell entry and return factors and the current residual.\\
+Adaptive inverse ROM \cite{r5}&Primal/dual residual error bounds, reduced trust-region decisions, full-model fallback, and accepted-state enrichment; see Sections 3.1--3.3.&The directional check tests the finite displacement caused by a fixed-rank current replacement. It is not a new generic acceptance principle.\\
+Goal-oriented ROM / Krylov \cite{r6,r8}&Task-aware reduction and useful material coarse/search spaces are established.&Current-space design is evaluated separately from replacing or accelerating a material linear solver.\\\bottomrule
+\end{tabularx}
+\caption{Closest-method comparison. These distinctions identify the experiment's decision target; they are not historical-priority assertions.}
+\end{table}
+
+The book (printed pp. 161--164), the 2010 current-subspace survey, the MR-FFT author proof, the interpolatory inverse-ROM author preprint, and the adaptive inverse-ROM full text were read. In the MR-FFT proof, Eqs. (6)--(14) define the current construction and regularized data/state objective, while Fig. 6 describes progressive Fourier counts 5, 6, and 12. It supplies an explicit antecedent for progressive enrichment. In the adaptive inverse-ROM full text, Eqs. (3.17)--(3.20) include error-controlled acceptance and full-model fallback; these features are credited to prior work.
+
+The original SOM, TSOM and FFT-TSOM papers have verified bibliographic identities, but their primary full texts remain unavailable in this source audit. The available book and survey support the mechanism comparison; they do not establish the absence of an equivalent result in those original papers. S-DBIM full-text comparison also remains open. The accompanying reference audit retains these gaps and makes no first-ever claim. Native algorithms were not run as performance competitors.
+
+\section{Frozen numerical rules and threshold replay}
+The source-locked method starts from the leading receiver basis and preserves exactly $k=4,8,16$ columns per endpoint. The directions themselves may be replaced. A fixed 154-atom dictionary comprises 32 receiver, 32 internal-propagation, 32 Fourier, 32 anchor primal/dual, 16 anchor current-residual, and 10 random directions. The short pool cycles through these six sources in that order, taking the first two available atoms per source and skipping atoms already selected. Each atom is individually normalized; every endpoint must still pass the rank and solve checks. A 64-column reduced anchor ranks finite endpoint displacements; at most two finalists per round are verified with full directional actions. The complete coupling is retained and conditional factors are refreshed after acceptance. There are at most three accepted exchanges. Endpoint relative stability and normal-equation criteria are $10^{-10}$; the backend is FP64, CUDA for large voxel contractions and four-thread CPU linear algebra for the small Gaussian material system.
+
+The online gain threshold is (\ref{eq:supp-tau}); all inputs are controller-visible:
+\begin{equation}\label{eq:supp-tau}
+\tau=32\,\mathrm{tiny}_{64}+32\frac{n\epsilon_{64}}{1-n\epsilon_{64}}S_Q,
+\qquad n=m_R+3d_R+16.
+\end{equation}
+$S_Q$ is the sum of absolute gain terms plus $\|r\|^2+\|u\|^2+|\ell^Tx|+\lambda\|x\|^2$; $\mathrm{tiny}_{64}$ is the smallest positive normal FP64 number. The constants and formula were fixed before new validation. Full reference optimizers, truth and evaluation-only floors do not enter acceptance. Each online state is saved before the offline full reference is opened. Full-$J$ caches are absent from the controller, including Gaussian cases.
+
+Physical replay of all 36 original cells gives the same 75 accepted exchanges and bitwise identical terminal steps and $Js$. Each final and receiver gap agrees exactly with its own pre-replay value. The largest candidate reduced-score difference is $2.78\times10^{-17}$ and largest finalist-score difference $1.31\times10^{-18}$; neither changes ranking. The full-reference maximum true relative residual is $8.86\times10^{-12}$. This removes the original numerical-floor dependency without changing the original scientific result.
+
+\section{Validation population and pre-result exclusions}
+The original four objects supplied the development evidence. All 11 remaining compatible saved objects are evaluated at the initial state, saved iteration index 3 and last saved state, each at the three current ranks. One missing-reference object is excluded before results; earlier development objects and objects without compatible saved material gauges are excluded by source availability. No object is removed for an unfavorable exchange result. The saved middle and late iterations are 3 and 17, respectively; no state is fabricated or interpolated.
+
+The 11 objects had appeared in earlier broad current-selection studies. No inspected record identifies object-specific use in historical exchange-teacher or pilot-network development, but a wholly unseen blind population cannot be established from their historical exposure. Accordingly, these results validate a locked exchange rule on additional, historically studied Maxwell objects. They are not described as an entirely new blind dataset. Pre-result source manifests and hashes document this distinction.
+
+Each object's risk ratio is its summed eligible-cell final gap divided by its summed receiver gap. The median, interquartile range, and 10,000-draw object bootstrap use seed 20261002. Cell counts describe correlated state--budget outcomes. Absolute risks and normalized $H$ step errors accompany ratios; denominator-floor cases remain in the data.
+
+\section{Noise and nonlinear protocols}
+Before primary results, four additional objects were selected by geometry and material representation: smooth voxel, near-contact Gaussian, shell Gaussian, and asymmetric voxel. At their middle states, independent complex Gaussian perturbations have exact relative measurement norms 1\% and 3\%, with three realizations per level. The seed sequence is [20261002, object identity, 100 or 300, realization 0--2]. Clean-data norm scaling remains fixed. Each residual obtains its own full reference only after online selection. The resulting 72 cells do not constitute 72 independent objects.
+
+Nonlinear transfer uses the same four predeclared objects, no added noise, and $k=8$. Both policies start at the saved scene's $0.1+0.04i$ initialization. The prior is $10^{-5}$ and total damping is $10^{-5}+0.01(0.3)^{\lfloor t/3\rfloor}$. The old full outer loop is reused: real contrast lower bound $-0.5$, imaginary lower bound 0, identical feasibility projection, full-gradient fallback for non-descent, and up to 24 Armijo trials starting at unit length and halving with constant $10^{-4}$. The cap is 18 updates; small executed steps terminate after iteration 9 under the existing rule. Only the tangent-current policy differs. Each policy pays its own acquisition; receiver-only does not pay for an exchange anchor or dictionary.
+
+\input{CLOSURE_SUPPLEMENT_RESULTS.tex}
+
+\section{Historical controls and independent validation limits}
+The original structural material repair exceeds its specified direct current enlargement in 72/72 smooth and 36/36 sharp comparisons. Equal-real-rank material Krylov repair exceeds it in all those comparisons. Paid paired warm starts require 1.416 times matched PCG wall time and increase the recorded full-wave right-hand sides from 66 to 342. These results constrain solver interpretations; they are not overwritten by conditional exchange. TSOM-inspired banks are not native TSOM or FFT-TSOM runs.
+
+Five original normalized closure checks miss tolerance despite absolute $H$ distances $1.06\times10^{-15}$--$3.43\times10^{-14}$ and Schur condition numbers 1.00020--1.00093. Precision traces support cancellation followed by small-denominator amplification, rather than Schur ill-conditioning or proven underflow. All failures remain in the historical archive. Four sharp-target full-model relative material errors are 0.755,0.750,0.560,0.906, limiting claims about interface recovery for that acquisition. The coarse high-contrast sphere has 21.40\% continuum discrepancy.
+
+A separate moderate sphere has 0.252\% aggregate field error and 0.731\% uniform-material derivative error against independent vector Mie at the finest tested grid. This validates that sphere and uniform derivative; it does not independently certify every voxel tangent or every nonradial target. Coarse 12$^3$ inverse states versus 14$^3$ truth generation elsewhere constitute finer-grid checks within the same DDA family.
+
+The broad from-scratch current-ranking study covers 15 observed objects and 258/288 planned budget cells, with failures, missing references and deferred noise retained. Its material-aware finite ranking has median object-summed receiver risk ratio 1.0947; six objects improve. Receiver-centered conditional exchange asks a narrower question and does not overturn that negative result. The common-candidate $2\times2$ diagnostic, rather than the earlier 0.1171 finite/first-order aggregate ratio, isolates finite-displacement curvature cost.
+
+\section{Reproducibility and scope of the evidence package}
+The package provides the locked inputs, code and dependency hashes, state and action arrays, completed/failure receipts, analysis and redraw scripts. Actual imported module paths and hashes bind the execution epoch; parser success or a hash without a runtime receipt is not execution evidence. Public Python must preserve executable numerical expressions exactly. Privacy configuration and transport receipts are kept outside the executable research source.
+
+Forty-two hash-identified external/vendor modules remain required for full GPU physics replay. If they cannot be redistributed, the public artifact is an evidence/reanalysis package with external kernel requirements, not a fully self-contained GPU rerun bundle. The local archive retains all versions, monitor failures and measured fees. Complete test and source checks are recorded in the reproducibility report.
+
+The archive file HISTORICAL\_SUPPLEMENT\_ARCHIVE.tex preserves the extended historical derivations and datasets. They support interpretation but are not presented as additional independent validation of the frozen exchange rule.
+\input{FINAL_REFERENCES.tex}
+\end{document}

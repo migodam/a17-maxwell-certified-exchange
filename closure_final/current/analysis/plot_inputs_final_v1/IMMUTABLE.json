@@ -1,0 +1,20 @@
+{
+  "schema": "a17.derived.plot.immutable_manifest.v1",
+  "immutable_complete": true,
+  "mock": false,
+  "files": {
+    "collection/STATUS.json": "ea18d063bd1a78c3306e64beff87e33ec649468aac8dafe37c8070ae517d7dfb",
+    "collection/ISSUES.json": "cf4ec30854401ae8c4c3f17bb288455fe5c767cfe6e6fb30d0792dee9fb3ddd5",
+    "collection/coverage.csv": "c994c28d687aaafee0d5d4b1e01ceea95a313df6bbb856ff3ad003434ab89da6",
+    "collection/cells.csv": "96caff279881fc908cab7f1e1e6be34f8d5fcfc197a6a54c3d6b9317e1a51310",
+    "collection/object_summed_risks.csv": "a823c2a7925f7e2487a5f15dc6d7246f5a5cebe3d1326d2cc4a0d93781745eb9",
+    "collection/attempt_costs.csv": "106287453c6428795b9adf3dc205d1f299f3021f217e5d0de334ce469eb02b06",
+    "scenes.json": "2714c9c3407474be80e4dc20706ea69cb9b7c7e67431186cd76c123e77234f5b",
+    "results/locked_validation_continuation_v1/object_2016/late/status.json": "87783072f66d10ca12ccd9ff81e2b4fa3ab6bfabd1f7a54864d21cf979ef1f83"
+  },
+  "source_snapshot_receipt": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/remote_snapshots/noise_complete_v1/snapshot_receipt.json",
+  "source_snapshot_receipt_sha256": "90635164cb526947310a22d8f61e92ae1ca6f0663f30365e531ccb9e6e7c1b1b",
+  "source_collection": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/analysis/noise_complete_audit_v2",
+  "collector_sha256": "fb39e83d049a005e08927250b9993dcaf74685df8bf852cfc9720a54300c0cac",
+  "no_new_physics": true
+}

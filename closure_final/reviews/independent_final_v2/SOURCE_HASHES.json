@@ -1,0 +1,147 @@
+{
+  "sha256": {
+    "Gaussian/A17/CLOSURE_R1/A17_CANDIDATE_COVERAGE_FINAL.md": "2e7e6a1dba85eaf0783ac51274df0ff0e8bf0e74e3f0083d814fd16a228a8d85",
+    "Gaussian/A17/CLOSURE_R1/A17_CLOSURE_REPORT_ZH.md": "f6d19034a4a922a79551ca8a0a2609884bdf18bf16c784e64b6ebec3dbfabda5",
+    "Gaussian/A17/CLOSURE_R1/A17_FINAL_COST_AUDIT.md": "f4b7e4f560ed473091f5405e0fd56c8338815c41d0fe2e7086f30cf825552573",
+    "Gaussian/A17/CLOSURE_R1/A17_REFERENCE_AUDIT_FINAL.md": "345f5bedfc8d8c3bee498fc1f1613d71725146f323c17598f40c265346b3744d",
+    "Gaussian/A17/CLOSURE_R1/analysis/OWNER_COVERAGE_STATISTICS_FINAL.json": "d828ab747ecae9675f63f10003e61c1d8a91ef492e7095a14646ef7a5f87ab78",
+    "Gaussian/A17/CLOSURE_R1/analysis/OWNER_NONLINEAR_STATISTICS_V1.json": "c7922067aaacf8e12c8922cf84a42442a4e545c35362c4fa6cbe10f8cf42bde8",
+    "Gaussian/A17/CLOSURE_R1/analysis/OWNER_PRIMARY_STATISTICS_V1.json": "4a8b45a7be92c445788051c458ef5c47d2f7c1c9d7dd25260dae26d220b6fa58",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_ABSTRACT.tex": "7fefbca5fc6cc88e77c66357d2cf4eeb36d1ca85ac6f31d6a0affd9c4cf7f572",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_ABSTRACT_ZH.tex": "bb6d5a86ac80d838f8c7d474beb6bac6f378eef6e4f2a52d63921d7a13de3b60",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_CHEN_COST.tex": "e38ddb0d09bc1a3862968ace37cb581240683f933a234ba331d4a71143db5ebf",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_CHEN_COVERAGE.tex": "19d9832b720821948b40545f8e61d0c88a8264fad8312d590cd59079046a96aa",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_CHEN_NONLINEAR.tex": "b49a47b57da1406ba219b63e9ccbde7d9df81f78538a0ce0e2ca04fe386942cd",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_CHEN_RESULTS.tex": "9de4629c77fc8bc6d10826e555a97b916d8c022f00fed6f351cf6c33413a67cd",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_CHEN_SECONDARY.tex": "498b87989cc210262bab973a025e9607daaae7ab3110bf50d2f5f1a6791b6f80",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_COST_RESULTS.tex": "630a29005084ae76d0cdaa0285ca2e0e29472adbec402b5f0f42257c9ebb6406",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_COVERAGE_RESULTS.tex": "bc5d4afdb552e71ad70e1aff84d67df410b7e4578b9d6faa4d2cf72f75df6ef3",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_NONLINEAR_RESULTS.tex": "b83c08a32a9f0def0dc1b137da5f49f747b4e9f6f9672453eb7192d1a20a131a",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_READER_COST.tex": "6fdb0d6d9b570186ea56268122ba3953c88330cdc3b7fe9130e466fc9b637cf4",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_READER_COVERAGE.tex": "68df04207ceb10029b1f9c59e8a323477504b128f232ea3a4658902ad8b6a2a4",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_READER_NONLINEAR.tex": "f0f4d5d18ed697e3f4a963aae1cb36fc2b445407246660b2a05ce28a9cd7295c",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_READER_RESULTS.tex": "665e981cfcc921184ea0691355b074fb17fd4150a78e749d191703cc2362cd4f",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_READER_SECONDARY.tex": "703071dd23832a5fca63569958b7513166f7f4341075a8519b5047f9e208d45b",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_RESULTS.tex": "51f4f76ddf30ed0ff60ff8a187509d5b53ee82f58bb4c806c053a5f35bc1a6fd",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_SECONDARY_RESULTS.tex": "aeef67e9cbb4beea97cd2380636a6f6dd025661b76c5fd638a73b473d43324a8",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_SUPPLEMENT_COST.tex": "06bd9a882995e3b0069795bb2f104d2926ca6de1575179e40a71ebae7a29aa80",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_SUPPLEMENT_COVERAGE.tex": "1a38f464b8ab94627598c0d2e73dd82149c0196beaddc51947fe8bac895aea3a",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_SUPPLEMENT_RESULTS.tex": "7b6fcc9e1632993305b20a5bc546d0c8b8f893b892740addd836e66582ad9d88",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CONDITIONAL_EXCHANGE_THEORY.tex": "960389016c8478bb1c69834ffa7a3c5a895fa8ca0ba28040f039b6c7527556fd",
+    "Gaussian/A17/CLOSURE_R1/manuscript/CORE_THEORY.tex": "1af4d3d080daee41b7b58eef2469228c1ed6a18ab67e105e702121d7c6a46952",
+    "Gaussian/A17/CLOSURE_R1/manuscript/EXCHANGE_DERIVATIONS_ZH.tex": "e2f46a8893e675aa9c1b2ac4b41c863c3923e8eab50385f2c65cd107e3847d4b",
+    "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_CHINESE_DERIVATIONS.tex": "7d7cf7092d65cacffc52b73e6c779ffd4ca615ce08602b0fee70106d8d00c1b7",
+    "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_DDA_MODEL.tex": "b1fb845a7096367d9f4ca801fb595293e1e48901347490844175a4e3d17c64e6",
+    "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_DESIGN_DISCUSSION.tex": "e80c08e8773cd6b986d5cdc68706a57a42f916add719920ad54eb4cbb76fa701",
+    "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_EXCHANGE_METHOD.tex": "d44f6fd687db75a995155ce44468fdd7549945952d1c4fb6c92e731093495527",
+    "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_METHOD_ZH.tex": "15c4db678601d464764ff423351b118363a77946da8e1ddc528d6481f08c83c6",
+    "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_PHYSICAL_WITNESSES.tex": "b97c4fb93b91b0d8a421c1ff2a92fb8c6a33e3ce0e22dddf02b21eb5771f1bb0",
+    "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_REFERENCES.tex": "49f31525fb3fc06d4f7ffec9f07064eeac7d65f93d7e56a5e694cce3ef9d1785",
+    "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_TERMINOLOGY_ZH.tex": "40f3dff81f35c91babbc752793d131902d5e944c24d34590b3cd15a1915e9b56",
+    "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_WITNESSES_ZH.tex": "57d044965dd46557725224578d1dd761e80927e84522740bb5d91c79bd253be6",
+    "Gaussian/A17/CLOSURE_R1/manuscript/PAPER_SUPPLEMENT_FINAL.tex": "bd104d549b6aa64bb93a5685859f59713a4eba6cfb5ae773a47c147feb5992a2",
+    "Gaussian/A17/CLOSURE_R1/manuscript/PAPER_TAP_FINAL.tex": "5d90d8b4465d14e39385b4b07900aaa29ba7cd264c6121e84495c5755a553478",
+    "Gaussian/A17/CLOSURE_R1/manuscript/READER_FUNDAMENTALS.tex": "db079e2accf0818e8d4e502300a9830b54b36a09ff898d7f3367cb2dbc1ad9ba",
+    "Gaussian/A17/CLOSURE_R1/manuscript/READER_GUIDE_FINAL.tex": "3fb4ab7678f2d2a9098b7d25b45cafd2bc9f889f99b2e245a0684b5ee4f9381e",
+    "Gaussian/A17/CLOSURE_R1/manuscript/REPORT_TO_XUDONG_FINAL.tex": "7a96fdd323f1aa54b64f6750847c3e760cd328746d912fc5aa57964183844db0",
+    "Gaussian/A17/CLOSURE_R1/manuscript/SUPPLEMENT_PHYSICAL_BRIDGE.tex": "55fa67d1058e9594a6836b50251f6141888403372e11eee4105bd2a0920426ac",
+    "Gaussian/A17/CLOSURE_R1/manuscript/figures/closure_validation_v1/Figure2_noise_objects.pdf": "eaaf492aaa5a94fd5d0135c6a47cac3da6232abc12603cc8befb2a1cc3c50861",
+    "Gaussian/A17/CLOSURE_R1/manuscript/figures/closure_validation_v2/Figure1_primary_overview.pdf": "81761975c45ebce6d53e9532940b1d2039f4d7777ea59ee2138cdc97aa550982",
+    "Gaussian/A17/CLOSURE_R1/manuscript/figures/coverage_closure_v2/bounded_path_risk.pdf": "e551e582fe9113d115944cf082cd102b0d2fa9f1c093eae8476f85f25d65e942",
+    "Gaussian/A17/CLOSURE_R1/manuscript/figures/coverage_closure_v2/initial_opportunity.pdf": "2b303ce23ad9f0ed6478ff62ca139baf93249bdfc714109fa16b91d7f69568a6",
+    "Gaussian/A17/CLOSURE_R1/manuscript/figures/information_and_pair_witness.pdf": "1919e927f92b523ed1f6e46841069f6d91641ffaa6af466b64912f432774b30e",
+    "Gaussian/A17/CLOSURE_R1/manuscript/figures/nonlinear_closure_v1/nonlinear_objective_curves.pdf": "ba71592d843b559c75286f84a32e0bb7a4ae09c8aca201533a84e8a1e5480d04",
+    "Gaussian/A17/CLOSURE_R1/manuscript/figures/nonlinear_closure_v1/nonlinear_reconstructions.pdf": "1ce7669a7bb2d05f15fba5607815a0ddf09e455a7065b7caf19c6c2634349226",
+    "Gaussian/A17/CLOSURE_R1/manuscript/figures/path_depth_dark.pdf": "6296dbfebe08ba4718843cb4912a16c3b3b8dc988c25ae1cdc22ff0582c21294",
+    "Gaussian/A17/CLOSURE_R1/manuscript/figures/physical_feedback.pdf": "44fe98f0353995ed5e209a5bb1397e1392554000905e3e5b5b95d148c4fe0666"
+  },
+  "graph": {
+    "Gaussian/A17/CLOSURE_R1/manuscript/PAPER_TAP_FINAL.tex": [
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_ABSTRACT.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/CORE_THEORY.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/CONDITIONAL_EXCHANGE_THEORY.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_EXCHANGE_METHOD.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_PHYSICAL_WITNESSES.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_RESULTS.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_DESIGN_DISCUSSION.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_REFERENCES.tex"
+    ],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_ABSTRACT.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CORE_THEORY.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CONDITIONAL_EXCHANGE_THEORY.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_EXCHANGE_METHOD.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_PHYSICAL_WITNESSES.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_RESULTS.tex": [
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_SECONDARY_RESULTS.tex"
+    ],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_SECONDARY_RESULTS.tex": [
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_COVERAGE_RESULTS.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_NONLINEAR_RESULTS.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_COST_RESULTS.tex"
+    ],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_COVERAGE_RESULTS.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_NONLINEAR_RESULTS.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_COST_RESULTS.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_DESIGN_DISCUSSION.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_REFERENCES.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/PAPER_SUPPLEMENT_FINAL.tex": [
+      "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_DDA_MODEL.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_SUPPLEMENT_RESULTS.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_REFERENCES.tex"
+    ],
+    "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_DDA_MODEL.tex": [
+      "Gaussian/A17/CLOSURE_R1/manuscript/SUPPLEMENT_PHYSICAL_BRIDGE.tex"
+    ],
+    "Gaussian/A17/CLOSURE_R1/manuscript/SUPPLEMENT_PHYSICAL_BRIDGE.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_SUPPLEMENT_RESULTS.tex": [
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_SUPPLEMENT_COVERAGE.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_SUPPLEMENT_COST.tex"
+    ],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_SUPPLEMENT_COVERAGE.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_SUPPLEMENT_COST.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/REPORT_TO_XUDONG_FINAL.tex": [
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_CHEN_RESULTS.tex"
+    ],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_CHEN_RESULTS.tex": [
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_CHEN_SECONDARY.tex"
+    ],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_CHEN_SECONDARY.tex": [
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_CHEN_COVERAGE.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_CHEN_NONLINEAR.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_CHEN_COST.tex"
+    ],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_CHEN_COVERAGE.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_CHEN_NONLINEAR.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_CHEN_COST.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/READER_GUIDE_FINAL.tex": [
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_ABSTRACT_ZH.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_TERMINOLOGY_ZH.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/READER_FUNDAMENTALS.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_CHINESE_DERIVATIONS.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/EXCHANGE_DERIVATIONS_ZH.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_METHOD_ZH.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_WITNESSES_ZH.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_READER_RESULTS.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_REFERENCES.tex"
+    ],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_ABSTRACT_ZH.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_TERMINOLOGY_ZH.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/READER_FUNDAMENTALS.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_CHINESE_DERIVATIONS.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/EXCHANGE_DERIVATIONS_ZH.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_METHOD_ZH.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/FINAL_WITNESSES_ZH.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_READER_RESULTS.tex": [
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_READER_SECONDARY.tex"
+    ],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_READER_SECONDARY.tex": [
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_READER_COVERAGE.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_READER_NONLINEAR.tex",
+      "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_READER_COST.tex"
+    ],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_READER_COVERAGE.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_READER_NONLINEAR.tex": [],
+    "Gaussian/A17/CLOSURE_R1/manuscript/CLOSURE_READER_COST.tex": []
+  },
+  "figure_hashes_are_not_visual_review": true
+}

@@ -1,0 +1,86 @@
+{
+  "schema": "a17.experiment.input.manifest.v1",
+  "synthetic_fixture": false,
+  "coverage_owner_authorized": true,
+  "coverage_pending": false,
+  "files": {
+    "frozen/STATUS.json": {
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/analysis/noise_complete_audit_v2/STATUS.json",
+      "sha256": "ea18d063bd1a78c3306e64beff87e33ec649468aac8dafe37c8070ae517d7dfb",
+      "bytes": 1269
+    },
+    "frozen/coverage.csv": {
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/analysis/noise_complete_audit_v2/coverage.csv",
+      "sha256": "c994c28d687aaafee0d5d4b1e01ceea95a313df6bbb856ff3ad003434ab89da6",
+      "bytes": 9389
+    },
+    "frozen/cells.csv": {
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/analysis/noise_complete_audit_v2/cells.csv",
+      "sha256": "96caff279881fc908cab7f1e1e6be34f8d5fcfc197a6a54c3d6b9317e1a51310",
+      "bytes": 213039
+    },
+    "frozen/SOURCE_BINDINGS.json": {
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/analysis/noise_complete_audit_v2/SOURCE_BINDINGS.json",
+      "sha256": "911537a2ed2211d5f2cf65f14a4e9721148f0f78ad3532c4e60d93d11e679ae5",
+      "bytes": 483165
+    },
+    "frozen/ISSUES.json": {
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/analysis/noise_complete_audit_v2/ISSUES.json",
+      "sha256": "cf4ec30854401ae8c4c3f17bb288455fe5c767cfe6e6fb30d0792dee9fb3ddd5",
+      "bytes": 2843
+    },
+    "frozen/replay_comparisons.csv": {
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/analysis/noise_complete_audit_v2/replay_comparisons.csv",
+      "sha256": "30599b31e24e039cdc19ae9bfab99d8f2914778b5dac4db1237ed46a68494a6d",
+      "bytes": 124314
+    },
+    "frozen/attempt_costs.csv": {
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/analysis/noise_complete_audit_v2/attempt_costs.csv",
+      "sha256": "106287453c6428795b9adf3dc205d1f299f3021f217e5d0de334ce469eb02b06",
+      "bytes": 8406
+    },
+    "frozen/state_stage_costs.csv": {
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/analysis/noise_complete_audit_v2/state_stage_costs.csv",
+      "sha256": "cacc78e1cf2baf402aaffd9ed8a6a22f95e9b2928385150eff907236f1b29293",
+      "bytes": 864586
+    },
+    "nonlinear/CASES.json": {
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/research/delegated/a17_closure_saved_nonlinear_final/audit_v2/CASES.json",
+      "sha256": "e9ed0a74688a67406f2340d6be36c3252f9b9cad1f9cb45f611768d668bf9b7e",
+      "bytes": 39990127
+    },
+    "nonlinear/SUMMARY.json": {
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/research/delegated/a17_closure_saved_nonlinear_final/audit_v2/SUMMARY.json",
+      "sha256": "5c21c7bb22700bc9578ee641b315a4a3a563890687d77d55137f2c41c78f73d9",
+      "bytes": 1385
+    },
+    "nonlinear/FULL_CHARGES.json": {
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/research/delegated/a17_closure_saved_nonlinear_final/audit_v2/FULL_CHARGES.json",
+      "sha256": "f6e4e46e1555249403dcf43c1eb0e5432a9417d3e4635b632947d70384999e4a",
+      "bytes": 39832416
+    },
+    "nonlinear/STAGE_COSTS.json": {
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/research/delegated/a17_closure_saved_nonlinear_final/audit_v2/STAGE_COSTS.json",
+      "sha256": "0972b20a9d2e07a2701a023136fa9f3c8dee4d4a47384741ee110b884bc6d8dc",
+      "bytes": 21913993
+    },
+    "nonlinear/USED_SOURCE_HASHES.json": {
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/research/delegated/a17_closure_saved_nonlinear_final/audit_v2/USED_SOURCE_HASHES.json",
+      "sha256": "c0e57609adad6f3c25382bc49c8f31ca49385fcf8a67e569bbca9c8465ef4e2e",
+      "bytes": 96520
+    },
+    "coverage/coverage_evidence.json": {
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/research/delegated/a17_closure_collectors_v5/real_saved_audit_v5/coverage_evidence.json",
+      "sha256": "e4f7c13169e570d49d6b5e0e16e8111c9c94e891dd419cded826c2652c40d978",
+      "bytes": 566487
+    }
+  },
+  "planned_denominators": {
+    "replay": 36,
+    "primary": 99,
+    "noise": 72,
+    "nonlinear": 8,
+    "offline_coverage": 99
+  },
+  "scientific_verdict": null
+}

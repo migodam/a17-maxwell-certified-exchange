@@ -1,0 +1,64 @@
+{
+  "schema": "a17.owner.primary.statistics.v1",
+  "planned_objects": 11,
+  "planned_cells": 99,
+  "audited_cells": 96,
+  "missing_failed_cells": 3,
+  "full_coverage": false,
+  "complete_objects": 10,
+  "partial_objects": [
+    2016
+  ],
+  "complete_object_ratios": [
+    0.5637956286585833,
+    0.3856114226791392,
+    0.6493932369415352,
+    0.29325618281609317,
+    0.21974109129171168,
+    0.4682570614822563,
+    0.5173779823138254,
+    0.5855874427790848,
+    0.5437752552912197,
+    0.31333277211128435
+  ],
+  "median_complete_objects": 0.49281752189804084,
+  "quartiles_complete_objects": [
+    0.33140243475324804,
+    0.5587905353167424
+  ],
+  "object_bootstrap_median_interval95_complete_objects": [
+    0.31333277211128435,
+    0.5646813490351523
+  ],
+  "object_bootstrap_seed": 20261002,
+  "object_bootstrap_repetitions": 10000,
+  "incomplete_object_sensitivity_median11": 0.49252371421137553,
+  "incomplete_object_sensitivity_scope": "2016 contributes early+middle only; not11complete objects",
+  "complete_objects_improved": 10,
+  "all_available_objects_improved": 11,
+  "cell_classification": {
+    "equal_within_evaluation_floor": 1,
+    "improved": 95
+  },
+  "max_reference_true_normal_residual": 9.547165679641322e-12,
+  "absolute_receiver_gap_range": [
+    2.741481596545216e-07,
+    0.003089229498790782
+  ],
+  "absolute_final_gap_range": [
+    8.731943800329767e-08,
+    0.0008355316767389723
+  ],
+  "accepted_moves": 216,
+  "minimum_risk_denominator_to_evaluation_floor": 6306254656.826374,
+  "confirmed_blind_objects": 0,
+  "scope": "Frozen rule on additional historically studied Maxwell objects; newA17teacher/NN exposure notfound; strongerblind independence unresolved",
+  "source_hashes": {
+    "analysis/primary_audit_v2/cells.csv": "cdae5e4aaf81892547faba843375c705b0a58c4c941640d44a9af9cabadc3924",
+    "analysis/primary_audit_v2/object_summed_risks.csv": "dd096074a21fc8a84a354975c6dc23ff1aa890d708598e829ea7ad39d6a9a0f1",
+    "analysis/primary_audit_v2/ISSUES.json": "6098fe1fa079bc90292867b37f9c97d8b0c2050911adb28faceeb4249dbfb6d7",
+    "remote_snapshots/primary_complete_v1/snapshot_receipt.json": "a6c2fa5c016b58c17bbf869566217ec1fe5955576153b8d174990667a7a576ab",
+    "remote_snapshots/primary_complete_v1/results/locked_validation_continuation_v1/object_2016/late/status.json": "87783072f66d10ca12ccd9ff81e2b4fa3ab6bfabd1f7a54864d21cf979ef1f83"
+  },
+  "scientific_owner": "Codex root"
+}

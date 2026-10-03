@@ -1,0 +1,196 @@
+{
+  "status": "PASS_DEVELOPMENT_ONLY",
+  "scope": "OFFLINE_OBJECT2007_SAVED_FULLJ_CONSISTENCY; NOT deployment callback, physical replay, holdout test or Maxwell error certificate",
+  "rows": 36,
+  "repetitions": [
+    {
+      "repetition": 0,
+      "wall_s": 0.42478116595884785
+    },
+    {
+      "repetition": 1,
+      "wall_s": 0.3654937079991214
+    }
+  ],
+  "repeat_identical": true,
+  "max_observed_error": 1.3552527156068805e-19,
+  "max_observed_error_over_tau": 3.187949713526514e-05,
+  "max_complex_observed_error": 8.639736061993863e-20,
+  "max_complex_observed_error_over_tau": 2.824658462541668e-05,
+  "max_dual_form_error": 1.2197274440461925e-19,
+  "inputs": [
+    {
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/EXCHANGE_R1/results/object_2007_early_portable/public_workspace.npz",
+      "sha256": "57472071192c9a243176547fbcd267ca43f28de68e880c71eb706b9cdf0454d2",
+      "scope": "OBJECT2007_SAVED_PUBLIC_WORKSPACE"
+    },
+    {
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/EXCHANGE_R1/results/object_2007_early_portable/offline_information_reference.npz",
+      "sha256": "37406465577f679e92ed1344e1ada7dc98ecfa51eb073bbba6dfe7dc30fc5936",
+      "scope": "OBJECT2007_DEVELOPMENT_ONLY_OFFLINE_PAID_FULLJ"
+    },
+    {
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/EXCHANGE_R1/results/object_2007_middle/public_workspace.npz",
+      "sha256": "5d10a5c1b5430db3c2bbd3acc7e453bffd518e8ce2a7f733783453815701727f",
+      "scope": "OBJECT2007_SAVED_PUBLIC_WORKSPACE"
+    },
+    {
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/EXCHANGE_R1/results/object_2007_middle/offline_information_reference.npz",
+      "sha256": "f76624ccdb7890bd0af993ce9bcb05e1cb473ed974ea5b1f414ce0a6bceeb0a0",
+      "scope": "OBJECT2007_DEVELOPMENT_ONLY_OFFLINE_PAID_FULLJ"
+    },
+    {
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/EXCHANGE_R1/results/object_2007_late/public_workspace.npz",
+      "sha256": "d0fdcf22b8f9a455cb85ca5efa2b49ac63649b0e007e720af3ecfb211c5cb2e0",
+      "scope": "OBJECT2007_SAVED_PUBLIC_WORKSPACE"
+    },
+    {
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/EXCHANGE_R1/results/object_2007_late/offline_information_reference.npz",
+      "sha256": "dbbe0f7d022ee7786578243f63b63c147cf915eb05e7857c074b6e6406719a5b",
+      "scope": "OBJECT2007_DEVELOPMENT_ONLY_OFFLINE_PAID_FULLJ"
+    }
+  ],
+  "online_tolerance_sha256": "0cb18fc4b91f377c8a1cc96c426bbcff7e000a846b515aa53e59a384466cb8bf",
+  "script_sha256": "a867796a28fadcbd45aee469edcf820fb432ed3653b355cca37948ed059a0a77",
+  "loaded_sources": [
+    {
+      "module": "__main__",
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/analysis/online_tolerance_dev_check.py",
+      "sha256": "a867796a28fadcbd45aee469edcf820fb432ed3653b355cca37948ed059a0a77"
+    },
+    {
+      "module": "a10_common",
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/EXCHANGE_R1/vendor/Gaussian/A10/code/a10_common.py",
+      "sha256": "2f839f86bc79c89ec5deba08d68624cf43b155f90c8a843906fc1bca5fe27f8d"
+    },
+    {
+      "module": "a9_engine",
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/EXCHANGE_R1/vendor/Gaussian/A9/code/a9_engine.py",
+      "sha256": "e4e28318e54598af66b29a407c0ab7ae8f9c10f56614f228687f896ef78c45e3"
+    },
+    {
+      "module": "anchored_rom",
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/EXCHANGE_R1/vendor/Gaussian/A10/code/anchored_rom.py",
+      "sha256": "daca797b622c79f39612e250896f0ea1cadac81da823360fe0e87141d143633f"
+    },
+    {
+      "module": "cair",
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/EXCHANGE_R1/vendor/Gaussian/A10/code/cair.py",
+      "sha256": "e8b6ae0a97de23db232d3c2731a642b0e2a238e13590636f803eafb1e23c36b8"
+    },
+    {
+      "module": "campaign_common",
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/EXCHANGE_R1/vendor/Gaussian/A12/code/campaign_common.py",
+      "sha256": "8d8af32accd40ba1efaa84ad08b4ef1bce75c8d04612c34cd78f658293f83f05"
+    },
+    {
+      "module": "endpoint_batch",
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/EXCHANGE_R1/code/endpoint_batch.py",
+      "sha256": "eb505112d990fad2f179990e191f9367291a13fb40699d755e77a8ed939d8cc2"
+    },
+    {
+      "module": "experiment_support",
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/EXCHANGE_R1/vendor/Gaussian/A9/code/experiment_support.py",
+      "sha256": "a14f1a9ee4c6f1b6af4e0be1e5b36cb38c16582d1296a3644759b5f3e0445346"
+    },
+    {
+      "module": "fast_contractions",
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/EXCHANGE_R1/vendor/Gaussian/A16/CURRENT_SELECTION_R1/code/fast_contractions.py",
+      "sha256": "a03471ef83e90fda7d49fb1f25d84b3f36b2eb8a203d97f0c1a9cb7172798eeb"
+    },
+    {
+      "module": "galerkin_rom",
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/EXCHANGE_R1/vendor/Gaussian/A12/code/galerkin_rom.py",
+      "sha256": "d68abbeb3dbfee8790769c451569e5b9069a74cc8799bbdd030b599d7f4eeede"
+    },
+    {
+      "module": "info_logger",
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/EXCHANGE_R1/code/info_logger.py",
+      "sha256": "cb08353163466b997f88ec18fcb986a4607b990d45b05b947d4efd896579da1e"
+    },
+    {
+      "module": "information_diagnostics",
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/EXCHANGE_R1/code/information_diagnostics.py",
+      "sha256": "4b08f2d93020456d6ce453a46bb03e97fa4185b53ea42610e7f3e07e124c4fda"
+    },
+    {
+      "module": "material_gauge_persistence",
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/EXCHANGE_R1/vendor/Gaussian/A16/CURRENT_SELECTION_R1/code/material_gauge_persistence.py",
+      "sha256": "f064e378d13df5a0835e4338a9c7d9b4914e1c89fbd365cdded735047f2641cc"
+    },
+    {
+      "module": "maxwell_state",
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/EXCHANGE_R1/code/maxwell_state.py",
+      "sha256": "8f12cc187b67fd6d5ed0378dd62b39055e28c8512289fb5bc893ad987e04eb51"
+    },
+    {
+      "module": "operators",
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/EXCHANGE_R1/vendor/Gaussian/A16/CURRENT_SELECTION_R1/code/operators.py",
+      "sha256": "09c7d7285a7d238cbeb5c8c376c185e2f055c26b6d08e4c6c68122691552f9c9"
+    },
+    {
+      "module": "pairtsom_adapter",
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/EXCHANGE_R1/vendor/Gaussian/A14/src/pairtsom_adapter.py",
+      "sha256": "b554e7873012ef1e8bf37e68efb2869c89217de09f1cdf21ee0974ffe0d31604"
+    },
+    {
+      "module": "pinned_runtime",
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/EXCHANGE_R1/code/pinned_runtime.py",
+      "sha256": "edea3e8138cb4ab774ab02e82b641e86dcfa72cb51d72b9b13bf9b6b719dc504"
+    },
+    {
+      "module": "portable_cached_onepass_v2",
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/EXCHANGE_R1/tools/matched/portable_cached_onepass_v2.py",
+      "sha256": "6c9180188db6e771f16e43331153f044375d531abc62e6d3b4963771c1290ed8"
+    },
+    {
+      "module": "reduced_normal",
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/EXCHANGE_R1/vendor/Gaussian/A10/code/reduced_normal.py",
+      "sha256": "c64c3dafb0982cb9cd88fae6340f252fa0e5c8add9db62bdacd10476adba5281"
+    },
+    {
+      "module": "removal_core_batch",
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/EXCHANGE_R1/code/removal_core_batch.py",
+      "sha256": "5a93964393d417024dba98d35db4a8ff26729dad6e9a27f87ab7e931e22cc640"
+    },
+    {
+      "module": "run_exchange",
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/EXCHANGE_R1/code/run_exchange.py",
+      "sha256": "8305891509db380224bcdc1743cb3e69c0d84cd706629afdafcf40645400448d"
+    },
+    {
+      "module": "scenes",
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/EXCHANGE_R1/vendor/Gaussian/A16/CURRENT_SELECTION_R1/code/scenes.py",
+      "sha256": "087389a8f9968e5775c4bb9a858fd261351d6e208d3a203f4c5cbd1401c93f91"
+    },
+    {
+      "module": "selector_coordinates",
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/EXCHANGE_R1/vendor/Gaussian/A16/CURRENT_SELECTION_R1/code/selector_coordinates.py",
+      "sha256": "4bfd9747d67201f6e7216a0a41c560ead5a6139be5be2b5b0d8490fff78315c2"
+    },
+    {
+      "module": "selectors_current",
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/EXCHANGE_R1/vendor/Gaussian/A16/CURRENT_SELECTION_R1/code/selectors_current.py",
+      "sha256": "419d2fbe7f3a95ba02e9debd97445769ed739a95582b052dd09f59b1cdbfeeae"
+    }
+  ],
+  "python": "3.13.13",
+  "numpy": "2.5.3",
+  "device": "cpu",
+  "precision": "float64/complex128",
+  "new_Maxwell_actions": 0,
+  "new_GPU_actions": 0,
+  "holdout_labels_read": 0,
+  "full_reference_optimum_loaded": false,
+  "floor_loaded": false,
+  "truth_loaded": false,
+  "physical_callback_used": false,
+  "wall_s": 0.7928704579826444,
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "2",
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2"
+  },
+  "current_online_tolerance_sha256": "0cb18fc4b91f377c8a1cc96c426bbcff7e000a846b515aa53e59a384466cb8bf",
+  "source_validation_change_note": "The completion-time recorded development source hash equals current source hash. Parent added scalar-dimension and complex-r rejection during worker task; SAFETY, gamma_N, gain, scale and tau unchanged. No pre-import source snapshot was captured, so validation-only edit timing relative to development import is not independently resolved. Development numerics were not repeated."
+}

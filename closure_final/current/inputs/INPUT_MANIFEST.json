@@ -1,0 +1,955 @@
+{
+  "schema": "a17.closure.inputs.v1",
+  "created_utc": "2026-10-02T09:34:17.135024+00:00",
+  "inputs": [
+    {
+      "path": "inputs/object_2002/anchor_00.npz",
+      "sha256": "7ee9d3aa5e89ff843dc82b8c9607bbde09d12c1f7ea73baade7a20b1ce02e67a",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2002/reference/anchor_00.npz",
+      "bytes": 1454,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2002/anchor_03.npz",
+      "sha256": "57c1d5e442aaa445cc95cdde72981db2a7d1ef6961054f81261201a4a8adf516",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2002/reference/anchor_03.npz",
+      "bytes": 53550,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2002/anchor_17.npz",
+      "sha256": "cd580ec4bae3d9ae3d5ce739efbb70b8a9602ffe3aa1a90ca5aed7aa2fd52c23",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2002/reference/anchor_17.npz",
+      "bytes": 53579,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2002/common_data.npz",
+      "sha256": "c279daff286f902a2b6178e16708d5977d95279632e526bbf37c925c61dc0f0b",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2002/reference/common_data.npz",
+      "bytes": 63173,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2002/material_gauge.json",
+      "sha256": "7e1e4b92f03b4880cee6725955d654d756b3483b3e5bce6291d0da2846025fa6",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2002/reference/material_gauge.json",
+      "bytes": 228,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2002/result.json",
+      "sha256": "0b709b624591db1b4a2f0eaa456edf7c0a100ff2a16edd153e49bb3db91812e4",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2002/reference/result.json",
+      "bytes": 19027,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2002/step_00.npz",
+      "sha256": "daf6915b87e50f2fde0cd486bf0c8acabda5d8d2092063cc3a04f0467dd7c190",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2002/reference/step_00.npz",
+      "bytes": 80642,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2002/step_03.npz",
+      "sha256": "7b38f7ce35b20c27c12ab613c1bd57147ee315371a556251c7777c646319d0ca",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2002/reference/step_03.npz",
+      "bytes": 80965,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2002/step_17.npz",
+      "sha256": "c4098a9fac7b5ba6d5c96d8a308c22c22d9ef5dfb274829b13aab9416245e5ba",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2002/reference/step_17.npz",
+      "bytes": 80845,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2003/anchor_00.npz",
+      "sha256": "2da5b960ff9e732cd3e7391d0294b1e3a1ff7eb29ad6680caf7fc508226ab13a",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2003/reference/anchor_00.npz",
+      "bytes": 1402,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2003/anchor_03.npz",
+      "sha256": "8aec8a7d0c4c5ee77b1309031f1505fa2c82cea935c08b63a94d05eaeadde703",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2003/reference/anchor_03.npz",
+      "bytes": 27972,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2003/anchor_17.npz",
+      "sha256": "9cc6dbae6b749e1831911a81366547a584693a521dfa3e5df98963d827bf8b20",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2003/reference/anchor_17.npz",
+      "bytes": 27947,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2003/common_data.npz",
+      "sha256": "d2dafff659d68b2e73579b9688e2042500e83e270f07de05b5b8841b5e880d11",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2003/reference/common_data.npz",
+      "bytes": 348362,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2003/material_gauge.json",
+      "sha256": "d42608487ff3cee98b1effc4afd3cebd9e4ddcc81cd6bcc614e398e688cb39a2",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2003/reference/material_gauge.json",
+      "bytes": 228,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2003/result.json",
+      "sha256": "47a14209773ab75f69006cb366209290d8fa3ee253006fc554c3895aede29d49",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2003/reference/result.json",
+      "bytes": 23994,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2003/step_00.npz",
+      "sha256": "05e3fc21659f0921b946a42213ab1a9b438f92dd810b370dd683f0002152e953",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2003/reference/step_00.npz",
+      "bytes": 28741,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2003/step_03.npz",
+      "sha256": "b2a5dd6afba43be18be67a0921f1db708ee057bdc9402faa7a0a8eb604f424b4",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2003/reference/step_03.npz",
+      "bytes": 28793,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2003/step_17.npz",
+      "sha256": "97dd9932e3e6a9ec82ebade8c785ca3306bd729570d0954a60a9dd21fd48f554",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2003/reference/step_17.npz",
+      "bytes": 28782,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2004/anchor_00.npz",
+      "sha256": "18764f0c93cf7f03eb3a54ed40a7f50758a2a2f4083879775e012718726356e3",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2004/reference/anchor_00.npz",
+      "bytes": 1454,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2004/anchor_03.npz",
+      "sha256": "2e19b6a01bded4709e78cb0c4152d400a745416505363134dbb8321ec0710e03",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2004/reference/anchor_03.npz",
+      "bytes": 53627,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2004/anchor_17.npz",
+      "sha256": "cc900739676a66e8bb62ccc2a3629e62add0d219c2733cd0732aaa7dc4a2afbd",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2004/reference/anchor_17.npz",
+      "bytes": 53483,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2004/common_data.npz",
+      "sha256": "23f630ccbffda7b15b84fd4d4eacbb1da6985687aa23053e100be1a4fb436f54",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2004/reference/common_data.npz",
+      "bytes": 62410,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2004/material_gauge.json",
+      "sha256": "7e1e4b92f03b4880cee6725955d654d756b3483b3e5bce6291d0da2846025fa6",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2004/reference/material_gauge.json",
+      "bytes": 228,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2004/result.json",
+      "sha256": "b3271c091ab8a7f6ce18877ff0e26b5c1accaeca70cf69fbf5d6972db0538426",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2004/reference/result.json",
+      "bytes": 14270,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2004/step_00.npz",
+      "sha256": "9f76ebd0a7bcd78e20013ca0c65e02f8904e06aa0647072e99c0587bbaa4aa5c",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2004/reference/step_00.npz",
+      "bytes": 80637,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2004/step_03.npz",
+      "sha256": "5f6f37931b833ad03b15eb7b299df01754d05c14e12c39220c510f5794c080cf",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2004/reference/step_03.npz",
+      "bytes": 81075,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2004/step_17.npz",
+      "sha256": "e86b89c2d05d727703a32b07a82f14e8bd0c058669b6b7f845ecfc8ac7bfb522",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2004/reference/step_17.npz",
+      "bytes": 81119,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2005/anchor_00.npz",
+      "sha256": "db9ebe300cfb9c95364e354f23a30c640e03a58d28f60e8b66f07c988009a37b",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2005/reference/anchor_00.npz",
+      "bytes": 1402,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2005/anchor_03.npz",
+      "sha256": "512bb397bb81dd2673a0bc0b7e9921cecbdc62bc2eee27bf2dc3ae1116fe5b96",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2005/reference/anchor_03.npz",
+      "bytes": 27734,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2005/anchor_17.npz",
+      "sha256": "40e7fc5c2291ca8030d7bd9623061cbfb1152b4ee69e254644df775c622763d8",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2005/reference/anchor_17.npz",
+      "bytes": 27894,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2005/common_data.npz",
+      "sha256": "5d73f2831ea58ba5d0a48640fdcdf033a6ed52d5c7f2399584e90da9e0e07e75",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2005/reference/common_data.npz",
+      "bytes": 322182,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2005/material_gauge.json",
+      "sha256": "d42608487ff3cee98b1effc4afd3cebd9e4ddcc81cd6bcc614e398e688cb39a2",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2005/reference/material_gauge.json",
+      "bytes": 228,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2005/result.json",
+      "sha256": "933662842ed561f8d7669608a500ffa6d57695dba9e02d9e6b2c340a58f950d1",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2005/reference/result.json",
+      "bytes": 30542,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2005/step_00.npz",
+      "sha256": "b0939cd263cc02904bea46e7ce03f067e956a79dfc36d2e15ef0221e8a430336",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2005/reference/step_00.npz",
+      "bytes": 28799,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2005/step_03.npz",
+      "sha256": "10d6fc42c180dec87daf9ef42fd092c9b77b9a4a18fa8b3cb6c31ed52e145196",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2005/reference/step_03.npz",
+      "bytes": 28813,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2005/step_17.npz",
+      "sha256": "1d07a6bfffb4c43cdfd2b6d530336a7a2c61ed54ca4708be146d4a8990e7f746",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2005/reference/step_17.npz",
+      "bytes": 28829,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2006/anchor_00.npz",
+      "sha256": "fb56ef4b3d15406ed1a970bf8576f3aebd0bacc2778fb3f8d566dc3641d4d811",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2006/reference/anchor_00.npz",
+      "bytes": 1454,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2006/anchor_03.npz",
+      "sha256": "474e3618e660dd2cacd828d0e67b64c698fdd7647e3e137c66dfcd356c3cecb7",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2006/reference/anchor_03.npz",
+      "bytes": 52462,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2006/anchor_17.npz",
+      "sha256": "f7aee29f88b484390bf098e222bad6f8827a75511fcd2dc98e788a3cab14259d",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2006/reference/anchor_17.npz",
+      "bytes": 53545,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2006/common_data.npz",
+      "sha256": "45bce7f022d0801d4ad914b9645b1c7cc952e072a62678c75345df7c73eff255",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2006/reference/common_data.npz",
+      "bytes": 37349,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2006/material_gauge.json",
+      "sha256": "7e1e4b92f03b4880cee6725955d654d756b3483b3e5bce6291d0da2846025fa6",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2006/reference/material_gauge.json",
+      "bytes": 228,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2006/result.json",
+      "sha256": "17b4b2ba5a8d21cc071fd06beb8270ddfea686de2f70052d563909c6d372c43c",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2006/reference/result.json",
+      "bytes": 33723,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2006/step_00.npz",
+      "sha256": "19dffb51ba4636abacd7c44b31f81989d43f04ad9ac9647ef9c3f3f4dc7237cd",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2006/reference/step_00.npz",
+      "bytes": 80772,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2006/step_03.npz",
+      "sha256": "920cb8852923f3f39baf1a14aab89d1e140e429553d855a6365a1d8f432454c9",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2006/reference/step_03.npz",
+      "bytes": 80838,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2006/step_17.npz",
+      "sha256": "ec486a4f50db1de3a98061c6a863f7e4ad16276e322728dc97d4c461b8d2cb0b",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2006/reference/step_17.npz",
+      "bytes": 80870,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2008/anchor_00.npz",
+      "sha256": "02ac93ab460eb67a1e1018cc66cad142cbfc60d6bf474682b47dc2abef34894d",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2008/reference/anchor_00.npz",
+      "bytes": 1454,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2008/anchor_03.npz",
+      "sha256": "ef0e59412c57659b65f39430d683d560afb7e85f78071a139253b85f7ab90ffd",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2008/reference/anchor_03.npz",
+      "bytes": 53935,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2008/anchor_17.npz",
+      "sha256": "e063cf0924d13e0c0d28d446e2e43352695f0eb1e469a9a41e735ceb33591439",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2008/reference/anchor_17.npz",
+      "bytes": 53611,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2008/common_data.npz",
+      "sha256": "e1d196fd7477fd42d8209034a419716ff14b2094ff2933d240d03b9812a5c907",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2008/reference/common_data.npz",
+      "bytes": 37348,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2008/material_gauge.json",
+      "sha256": "7e1e4b92f03b4880cee6725955d654d756b3483b3e5bce6291d0da2846025fa6",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2008/reference/material_gauge.json",
+      "bytes": 228,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2008/result.json",
+      "sha256": "e47bdeb97c7f7fda1754a96713f3f7a488d1f502230bc5c101f64b007181820b",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2008/reference/result.json",
+      "bytes": 29953,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2008/step_00.npz",
+      "sha256": "8d7e09cafd89c29a79bef5df292e6836fed8dec54f719e7e2640fbd71ec8ef0d",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2008/reference/step_00.npz",
+      "bytes": 80812,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2008/step_03.npz",
+      "sha256": "204938da5bb981aba8e050b8335314b5a5a63249a6c3ba3263c803ed756a279e",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2008/reference/step_03.npz",
+      "bytes": 81006,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2008/step_17.npz",
+      "sha256": "5569fbaadcaa2723ceff01d3487285c670cd95779c25f5868fdb806815f2d75d",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2008/reference/step_17.npz",
+      "bytes": 80786,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2009/anchor_00.npz",
+      "sha256": "bb8aaebe0a54882f88780087361aeacb452cfc8f3316ee80789c41807e4bcf3b",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2009/reference/anchor_00.npz",
+      "bytes": 1402,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2009/anchor_03.npz",
+      "sha256": "1e5afaf9e00dc20c21205487bf30e75110dbc2045ed2dd8e4c83a25e9d231c56",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2009/reference/anchor_03.npz",
+      "bytes": 27896,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2009/anchor_17.npz",
+      "sha256": "f836e50f227c0155a175c9199049d74eff634d5beeb3510867d4597bef11136b",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2009/reference/anchor_17.npz",
+      "bytes": 27934,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2009/common_data.npz",
+      "sha256": "097b06cc87a7e58373c7f17fb91e195a10f7431e363d8bbba21c8c3b5efd1c3c",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2009/reference/common_data.npz",
+      "bytes": 322314,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2009/material_gauge.json",
+      "sha256": "d42608487ff3cee98b1effc4afd3cebd9e4ddcc81cd6bcc614e398e688cb39a2",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2009/reference/material_gauge.json",
+      "bytes": 228,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2009/result.json",
+      "sha256": "8d5892d823c66c7ca0fd520d082afc5ff784fabb71a9bee0d135ea925f6d273e",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2009/reference/result.json",
+      "bytes": 28953,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2009/step_00.npz",
+      "sha256": "4570dca4cb7a1a966a3ebc53a93d8f9b2beee71095f54d9795fdb6e564cd3851",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2009/reference/step_00.npz",
+      "bytes": 28801,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2009/step_03.npz",
+      "sha256": "6fc214988d36602ce5c917ab65c53042cf68495226d7dbc89faac3ffcab1f068",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2009/reference/step_03.npz",
+      "bytes": 28823,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2009/step_17.npz",
+      "sha256": "1dad53f2ba44493dcc6bc092072c1a1b5916046b90cbad0fc4eea99ebfd6a447",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2009/reference/step_17.npz",
+      "bytes": 28826,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2010/anchor_00.npz",
+      "sha256": "f531815fc40fb22eb9d82895e2e32b3779298cea38323dcf5e17d3910ab23f93",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2010/reference/anchor_00.npz",
+      "bytes": 1454,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2010/anchor_03.npz",
+      "sha256": "2a31c911b2c4f46e2d61ae46cd428653093500a570786ba585149c660f823531",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2010/reference/anchor_03.npz",
+      "bytes": 49979,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2010/anchor_17.npz",
+      "sha256": "5213a0de725b6a0189149786c66af94b5e7dfce4fc13c3d417cc2a3474c7cd93",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2010/reference/anchor_17.npz",
+      "bytes": 51291,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2010/common_data.npz",
+      "sha256": "cbbbbcc8ed813bd8dea7afed721ad20be9dd90c257d89a3fa160951df738de1c",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2010/reference/common_data.npz",
+      "bytes": 37483,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2010/material_gauge.json",
+      "sha256": "7e1e4b92f03b4880cee6725955d654d756b3483b3e5bce6291d0da2846025fa6",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2010/reference/material_gauge.json",
+      "bytes": 228,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2010/result.json",
+      "sha256": "e468072cdebf13599032649d949deef6560ab1fd248f20ced2740b9975b4aa31",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2010/reference/result.json",
+      "bytes": 30333,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2010/step_00.npz",
+      "sha256": "a1695e38421b5da6a4779c2aabb991f20becec1ff372a75de4a1e143d22f3048",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2010/reference/step_00.npz",
+      "bytes": 80695,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2010/step_03.npz",
+      "sha256": "249b7be74eefeddcffca29a95a08476047a1a8b7890ef4205bbcf9a64c0882ce",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2010/reference/step_03.npz",
+      "bytes": 80830,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2010/step_17.npz",
+      "sha256": "a3725fecec5d1194f917b9de4fea283f1ef03fddbfa9dff174a1a5438ccabf89",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2010/reference/step_17.npz",
+      "bytes": 80694,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2011/anchor_00.npz",
+      "sha256": "bf9bb74c83d2e85a71f3004986ed37143f2b098ece8377704a06208a764bc7d9",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2011/reference/anchor_00.npz",
+      "bytes": 1402,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2011/anchor_03.npz",
+      "sha256": "3015f254cf28d9bf3745ab2d10e155eeba5ea43efc1d46d8e8a608c41e7cac2e",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2011/reference/anchor_03.npz",
+      "bytes": 27895,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2011/anchor_17.npz",
+      "sha256": "f4be5c5d435d56c8592a4c62ac4169a698a13a5a51d4d55ada3362ae7dde4e7f",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2011/reference/anchor_17.npz",
+      "bytes": 27880,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2011/common_data.npz",
+      "sha256": "48eb989f01dc6d4751bac66264c3b7118afa1c224a104db9c99c1672bf5158e2",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2011/reference/common_data.npz",
+      "bytes": 322320,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2011/material_gauge.json",
+      "sha256": "d42608487ff3cee98b1effc4afd3cebd9e4ddcc81cd6bcc614e398e688cb39a2",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2011/reference/material_gauge.json",
+      "bytes": 228,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2011/result.json",
+      "sha256": "d8a2701f6862fb78cf8b73617b2ebf85f25950bcce6cd8ded96b50bd4c925a35",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2011/reference/result.json",
+      "bytes": 24189,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2011/step_00.npz",
+      "sha256": "96148f775cff96c822f2a465d461e897e4ca9fc1acfc71199502dba5541af701",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2011/reference/step_00.npz",
+      "bytes": 28797,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2011/step_03.npz",
+      "sha256": "e8f6c424f2b63d14bbaf8bf97a74fb7aabdbfc1905acbf376d685109b62349ef",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2011/reference/step_03.npz",
+      "bytes": 28820,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2011/step_17.npz",
+      "sha256": "c474e132ac4f330eab90881948f1bfb1377265b68a68a3b262ff2773226e78a3",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2011/reference/step_17.npz",
+      "bytes": 28821,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2013/anchor_00.npz",
+      "sha256": "55df8bcd62925af67fabd04ebc28e53fd2d60da431f74d396c6e3c6f9b4c7328",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2013/reference/anchor_00.npz",
+      "bytes": 1402,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2013/anchor_03.npz",
+      "sha256": "147167efe6d7ab8c18c656f7cbfd455cf3e05399857072335422ef2bbe4e75b0",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2013/reference/anchor_03.npz",
+      "bytes": 27797,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2013/anchor_17.npz",
+      "sha256": "d29891624e80a81f07597190b36751cd04c6eee3ab333eaba8777ca62a535f31",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2013/reference/anchor_17.npz",
+      "bytes": 27830,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2013/common_data.npz",
+      "sha256": "69223fcd525a7c4f80872e48a6db19ec084bcff25b8b64dc8088f4765c3cc03f",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2013/reference/common_data.npz",
+      "bytes": 322451,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2013/material_gauge.json",
+      "sha256": "d42608487ff3cee98b1effc4afd3cebd9e4ddcc81cd6bcc614e398e688cb39a2",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2013/reference/material_gauge.json",
+      "bytes": 228,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2013/result.json",
+      "sha256": "0d20c9cebc1f9a0ab44126970381d79b27715b223b530e90f824826add93f5f2",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2013/reference/result.json",
+      "bytes": 33907,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2013/step_00.npz",
+      "sha256": "31d58b1e7f6acb731b12dc6103f678a378bdee5ab9817288108e9727df98ffdb",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2013/reference/step_00.npz",
+      "bytes": 28800,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2013/step_03.npz",
+      "sha256": "8e73cf6b0b561a09e87d363f12ee786a9cf6c73c71b04eec0c0e6531d21805d0",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2013/reference/step_03.npz",
+      "bytes": 28818,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2013/step_17.npz",
+      "sha256": "7e62f4ebc2e41f418e043ea9c47bcae5f5738136bc675612c6c049ab47b3196d",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2013/reference/step_17.npz",
+      "bytes": 28824,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2016/anchor_00.npz",
+      "sha256": "bc108006948eeabcbfcfa91344053c2408708cf56863de4d0b8267019db71589",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2016/reference/anchor_00.npz",
+      "bytes": 1454,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2016/anchor_03.npz",
+      "sha256": "942f3dc65ef36ecbbcfa3c45a673779f0b976907b7ed8339f826a418c9af73c1",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2016/reference/anchor_03.npz",
+      "bytes": 53811,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2016/anchor_17.npz",
+      "sha256": "74c64a54c6bf93d2839552c59d87f45be06b96dbc23798ac691bd8b24a8c4bbf",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2016/reference/anchor_17.npz",
+      "bytes": 53827,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2016/common_data.npz",
+      "sha256": "5f6a83847dcfbdf012277149b1445bc49f13f923129e2245f9424048dd3ba5cf",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2016/reference/common_data.npz",
+      "bytes": 37586,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2016/material_gauge.json",
+      "sha256": "7e1e4b92f03b4880cee6725955d654d756b3483b3e5bce6291d0da2846025fa6",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2016/reference/material_gauge.json",
+      "bytes": 228,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2016/result.json",
+      "sha256": "3149fbce90f2ad865ebf891f9881b74bc721a9cc510ccddee7eecbfc98448a97",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2016/reference/result.json",
+      "bytes": 38904,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2016/step_00.npz",
+      "sha256": "be1636daf357c504ab940c590d77c585323f55c30481627d7c5a5c4c0e2a5ba8",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2016/reference/step_00.npz",
+      "bytes": 80900,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2016/step_03.npz",
+      "sha256": "4b95e622accaf8a6948b0ba1b76c5591bca46836e6df8f32609a6bc8b438ce95",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2016/reference/step_03.npz",
+      "bytes": 80984,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2016/step_17.npz",
+      "sha256": "76f890c290fa96d6521142dea18d7c682a38a6fae485f23b69f5b2310cbf33c5",
+      "source": "Gaussian/A16/CURRENT_SELECTION_R1/evidence_snapshots/terminal_20261001t1143_v16/workspace/Gaussian/A16/CURRENT_SELECTION_R1/frozen_validation/core_v10_locked/object_2016/reference/step_17.npz",
+      "bytes": 80873,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2001/anchor_00.npz",
+      "sha256": "72629e8bf26b311539afed82a8a924ddbdf41dcb825b96d90950657b960cd5a5",
+      "source": "Gaussian/A17/EXCHANGE_R1/inputs/object_2001/anchor_00.npz",
+      "bytes": 1402,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2001/anchor_03.npz",
+      "sha256": "8e5bd16b4b09eeb3cd7039ad68c304ba1539b6a96f9cb6750cc06e508015db9f",
+      "source": "Gaussian/A17/EXCHANGE_R1/inputs/object_2001/anchor_03.npz",
+      "bytes": 27891,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2001/anchor_17.npz",
+      "sha256": "5bfc0b5dc030df3db6c3eb99f817ec4dc176def7274ab7382f598d2762a05ae5",
+      "source": "Gaussian/A17/EXCHANGE_R1/inputs/object_2001/anchor_17.npz",
+      "bytes": 27876,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2001/common_data.npz",
+      "sha256": "79850d4701fb2e7e0d0584094f88afe37d43712096d3470e221c25155a4e58d6",
+      "source": "Gaussian/A17/EXCHANGE_R1/inputs/object_2001/common_data.npz",
+      "bytes": 347636,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2001/result.json",
+      "sha256": "c908a6a0f27051b22f15777aae2eb360a776f5421fa2c832fd501fb38b5c1136",
+      "source": "Gaussian/A17/EXCHANGE_R1/inputs/object_2001/result.json",
+      "bytes": 33519,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2001/step_00.npz",
+      "sha256": "7713ca171efe6c40311d7caf4f5c83d34d3b1232a49590441a3cab346d068311",
+      "source": "Gaussian/A17/EXCHANGE_R1/inputs/object_2001/step_00.npz",
+      "bytes": 28812,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2001/step_03.npz",
+      "sha256": "82fd3573d9a6712f258045493890c4fee1a100b0fd2e935cd596970969efb5a5",
+      "source": "Gaussian/A17/EXCHANGE_R1/inputs/object_2001/step_03.npz",
+      "bytes": 28820,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2001/step_17.npz",
+      "sha256": "4499002704ee76b27c134da1a293db0fff8f070e8fa092e0f3148071b34a47b8",
+      "source": "Gaussian/A17/EXCHANGE_R1/inputs/object_2001/step_17.npz",
+      "bytes": 28790,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2007/anchor_00.npz",
+      "sha256": "fd36b56bf459c5aa89cff54bf63064c55677abd00aa95250a7a4b59407f982c6",
+      "source": "Gaussian/A17/EXCHANGE_R1/inputs/object_2007/anchor_00.npz",
+      "bytes": 1402,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2007/anchor_03.npz",
+      "sha256": "fb6f87680869a0ef35a8656a36a66f15b5661c3a5ee03e7165ef2593ba848c95",
+      "source": "Gaussian/A17/EXCHANGE_R1/inputs/object_2007/anchor_03.npz",
+      "bytes": 27744,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2007/anchor_17.npz",
+      "sha256": "dd98cfd22975f345415cb4317e1c3208fe1e3ee9b34ed7b79bf36984ac5b5249",
+      "source": "Gaussian/A17/EXCHANGE_R1/inputs/object_2007/anchor_17.npz",
+      "bytes": 27873,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2007/common_data.npz",
+      "sha256": "fc24b4ede802ce1b5e3e26bd54ddb7422697d629ca86dd9f33cb1698ed647d7a",
+      "source": "Gaussian/A17/EXCHANGE_R1/inputs/object_2007/common_data.npz",
+      "bytes": 322200,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2007/result.json",
+      "sha256": "a2c6fd4fbd08f8397482d466902c24664a5a3d7402100ce7ba6ed3eb210105f4",
+      "source": "Gaussian/A17/EXCHANGE_R1/inputs/object_2007/result.json",
+      "bytes": 29950,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2007/step_00.npz",
+      "sha256": "6474eb6ce2d2e0a07d6d2760598bc89382e24eb2f83fe6fde90be36c701492c0",
+      "source": "Gaussian/A17/EXCHANGE_R1/inputs/object_2007/step_00.npz",
+      "bytes": 28803,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2007/step_03.npz",
+      "sha256": "7be0e8ad3b21026c44e1bac736fa402ecb0a25d1f7627afc0bd03136f3b25d10",
+      "source": "Gaussian/A17/EXCHANGE_R1/inputs/object_2007/step_03.npz",
+      "bytes": 28814,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2007/step_17.npz",
+      "sha256": "a081e927bff9bdad5ae0adf1677009df8542f1c0d34045fad07e18d182744b56",
+      "source": "Gaussian/A17/EXCHANGE_R1/inputs/object_2007/step_17.npz",
+      "bytes": 28836,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2012/anchor_00.npz",
+      "sha256": "eeae94cec7025626da9bdeae1a997c234c59a30d73777f34ca000c59c34a6205",
+      "source": "Gaussian/A17/EXCHANGE_R1/inputs/object_2012/anchor_00.npz",
+      "bytes": 1454,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2012/anchor_03.npz",
+      "sha256": "23508de329d5d7297f05379d76aafa8645a4494f9e57f5139ccba224a63dc7dd",
+      "source": "Gaussian/A17/EXCHANGE_R1/inputs/object_2012/anchor_03.npz",
+      "bytes": 51179,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2012/anchor_17.npz",
+      "sha256": "03d838912a87918a597d27cdde7c5c7f1a6322d5a49edf46105cfaacdcb7f15f",
+      "source": "Gaussian/A17/EXCHANGE_R1/inputs/object_2012/anchor_17.npz",
+      "bytes": 52289,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2012/common_data.npz",
+      "sha256": "0fc12d8667b26e789a7e4a5ea6460d097375d6bb8a5356536aafb2ecb47f212f",
+      "source": "Gaussian/A17/EXCHANGE_R1/inputs/object_2012/common_data.npz",
+      "bytes": 37470,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2012/result.json",
+      "sha256": "d12d3972ab9246efdcd809ebd6818040614449f05cdb8f4b5b8d0893141a618b",
+      "source": "Gaussian/A17/EXCHANGE_R1/inputs/object_2012/result.json",
+      "bytes": 30946,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2012/step_00.npz",
+      "sha256": "ba258c23f8d6098cfe2258e6372635f11403ba31a21ad31f70673832cdd65797",
+      "source": "Gaussian/A17/EXCHANGE_R1/inputs/object_2012/step_00.npz",
+      "bytes": 80716,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2012/step_03.npz",
+      "sha256": "8194993b9de09a20d4e9f28a40d99e17ebce6cc84f04f0eb36580cc5ab44d44b",
+      "source": "Gaussian/A17/EXCHANGE_R1/inputs/object_2012/step_03.npz",
+      "bytes": 80808,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2012/step_17.npz",
+      "sha256": "d3a0c4d1ac1468166e7efa805845582379cb35e658ac263c3f470e1916822338",
+      "source": "Gaussian/A17/EXCHANGE_R1/inputs/object_2012/step_17.npz",
+      "bytes": 80977,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2014/anchor_00.npz",
+      "sha256": "27cf638796a904f7d457eb88c119fcbb1555e69b215ec432094b2db50272011b",
+      "source": "Gaussian/A17/EXCHANGE_R1/inputs/object_2014/anchor_00.npz",
+      "bytes": 1454,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2014/anchor_03.npz",
+      "sha256": "44051266f61b2365f8f5e9e9b33cf50246e9e428d73e21b636e4bf1691d14f1b",
+      "source": "Gaussian/A17/EXCHANGE_R1/inputs/object_2014/anchor_03.npz",
+      "bytes": 53810,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2014/anchor_17.npz",
+      "sha256": "8f2def80e8a448e1f76fc8a51516fceedc2896673614b0e556448fd24efbd401",
+      "source": "Gaussian/A17/EXCHANGE_R1/inputs/object_2014/anchor_17.npz",
+      "bytes": 53968,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2014/common_data.npz",
+      "sha256": "bb83985028ff0bab5dd26a0d056fff9425e59a4ab4b155e9c7dbc580a440ed7e",
+      "source": "Gaussian/A17/EXCHANGE_R1/inputs/object_2014/common_data.npz",
+      "bytes": 37563,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2014/result.json",
+      "sha256": "9b90120ccced9faa1bb234c307b6ee97c8c2227c4eef0e7460babacc15741605",
+      "source": "Gaussian/A17/EXCHANGE_R1/inputs/object_2014/result.json",
+      "bytes": 32919,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2014/step_00.npz",
+      "sha256": "d2e7bf5e202e7e99d6236529014c8417ef7542790be420de6a316d424b50083c",
+      "source": "Gaussian/A17/EXCHANGE_R1/inputs/object_2014/step_00.npz",
+      "bytes": 80858,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2014/step_03.npz",
+      "sha256": "363ac3491f57efca99579b6ffa220f572b1f57d8bc9b6f461ddd783305e2f6e2",
+      "source": "Gaussian/A17/EXCHANGE_R1/inputs/object_2014/step_03.npz",
+      "bytes": 81014,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/object_2014/step_17.npz",
+      "sha256": "856c8b7dce8265bcf7fa5b16e98d3e968ac851cde6e4fcf446c07503164c9457",
+      "source": "Gaussian/A17/EXCHANGE_R1/inputs/object_2014/step_17.npz",
+      "bytes": 80911,
+      "kind": "frozen_input"
+    },
+    {
+      "path": "inputs/scenes.json",
+      "sha256": "2714c9c3407474be80e4dc20706ea69cb9b7c7e67431186cd76c123e77234f5b",
+      "bytes": 25138,
+      "source": "pre-result scene/config adapter",
+      "kind": "config_input"
+    },
+    {
+      "path": "inputs/original_resolved_config.json",
+      "sha256": "a22385c4c9c931158c1b080e9ef396b8bf08f818d3765468d3239acb4369f6e0",
+      "bytes": 2476,
+      "source": "pre-result scene/config adapter",
+      "kind": "config_input"
+    }
+  ],
+  "objects": [
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2016
+  ],
+  "source_adapter_sha256": "434898b24a33dd98f9a0b65ba889737324b90221b8c8f1dad53b6d1296c1db71"
+}

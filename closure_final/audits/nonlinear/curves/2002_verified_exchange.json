@@ -1,0 +1,168 @@
+{
+  "derivation_identity": "NEW_PUBLIC_REANALYSIS_NOT_HISTORICAL_RUNTIME",
+  "objective_curve": [
+    {
+      "accepted": true,
+      "iteration": 0,
+      "object_id": 2002,
+      "objective_after": 0.0030354258470679098,
+      "objective_before": 0.17514736307560738,
+      "policy": "verified_exchange",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 1,
+      "object_id": 2002,
+      "objective_after": 0.00036724058570872616,
+      "objective_before": 0.003035425847067908,
+      "policy": "verified_exchange",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 2,
+      "object_id": 2002,
+      "objective_after": 0.00014888436240499938,
+      "objective_before": 0.00036724058570872616,
+      "policy": "verified_exchange",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 3,
+      "object_id": 2002,
+      "objective_after": 8.595242006292721e-05,
+      "objective_before": 0.00014888436240499938,
+      "policy": "verified_exchange",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 4,
+      "object_id": 2002,
+      "objective_after": 7.317104931762452e-05,
+      "objective_before": 8.595242006292721e-05,
+      "policy": "verified_exchange",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 5,
+      "object_id": 2002,
+      "objective_after": 5.8728447514820114e-05,
+      "objective_before": 7.317104931762452e-05,
+      "policy": "verified_exchange",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 6,
+      "object_id": 2002,
+      "objective_after": 4.9949561620070313e-05,
+      "objective_before": 5.87284475148201e-05,
+      "policy": "verified_exchange",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 7,
+      "object_id": 2002,
+      "objective_after": 2.4275905270700718e-05,
+      "objective_before": 4.994956162007032e-05,
+      "policy": "verified_exchange",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 8,
+      "object_id": 2002,
+      "objective_after": 2.338983893065269e-05,
+      "objective_before": 2.427590527070072e-05,
+      "policy": "verified_exchange",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 9,
+      "object_id": 2002,
+      "objective_after": 1.1527361276789504e-05,
+      "objective_before": 2.3389838930652685e-05,
+      "policy": "verified_exchange",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 10,
+      "object_id": 2002,
+      "objective_after": 8.781405506006675e-06,
+      "objective_before": 1.1527361276789502e-05,
+      "policy": "verified_exchange",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 11,
+      "object_id": 2002,
+      "objective_after": 6.0848683858669305e-06,
+      "objective_before": 8.781405506006679e-06,
+      "policy": "verified_exchange",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 12,
+      "object_id": 2002,
+      "objective_after": 5.532679028695175e-06,
+      "objective_before": 6.08486838586693e-06,
+      "policy": "verified_exchange",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 13,
+      "object_id": 2002,
+      "objective_after": 5.531574786014379e-06,
+      "objective_before": 5.532679028695175e-06,
+      "policy": "verified_exchange",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 14,
+      "object_id": 2002,
+      "objective_after": 5.5215414353875e-06,
+      "objective_before": 5.531574786014379e-06,
+      "policy": "verified_exchange",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 15,
+      "object_id": 2002,
+      "objective_after": 5.113266042083215e-06,
+      "objective_before": 5.5215414353875015e-06,
+      "policy": "verified_exchange",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 16,
+      "object_id": 2002,
+      "objective_after": 4.996262724191039e-06,
+      "objective_before": 5.113266042083216e-06,
+      "policy": "verified_exchange",
+      "scope": "COMPLETED_ENDPOINT"
+    },
+    {
+      "accepted": true,
+      "iteration": 17,
+      "object_id": 2002,
+      "objective_after": 4.8259523165393595e-06,
+      "objective_before": 4.996262724191038e-06,
+      "policy": "verified_exchange",
+      "scope": "COMPLETED_ENDPOINT"
+    }
+  ],
+  "source_merged_curves_sha256": "b746333c6254d488a671fd13e72b74ec91dd8e77fed99647bf586227c31522ff"
+}

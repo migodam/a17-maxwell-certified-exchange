@@ -1,0 +1,5 @@
+{
+  "status": "FAILED_BINDING_VALIDATION",
+  "error": "parent snapshot not verified closed",
+  "collector_sha256": "e65ed5409ff608f06a3f5c20e858096484f7d3f4ad0d307026203df887005900"
+}

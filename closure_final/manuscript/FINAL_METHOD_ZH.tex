@@ -1,0 +1,30 @@
+\section{从机制变成具体决定：接收基底上的条件交换}
+\subsection{保留可靠的起点，只检查指定替换}
+接收基底（receiver-derived basis）是接收算子中直接辐射最强的前$k$个奇异方向。本文从这个可复现的空间出发，问一个更具体的问题：移出一个已有方向、移入一个候选方向，生成的材料步是否更忠实于完整模型？被保留的是电流总维数，原接收方向可以被替换。所有照明共享$k=4,8,16$列复电流；材料变量、总场、完整前向残差、正则项和阻尼保持不变。接收起点仍须通过预设的端点稳定性与法方程残差检查，接收谱本身不保证内部求解一定稳定。
+
+程序先获得固定字典中的电流候选。候选来自六类信息：接收模式（receiver modes）、内部传播（internal propagation）、Fourier模式、anchor的正向/伴随响应（primal/dual responses）、anchor电流方程的剩余激励（current residual）以及固定随机电流。按这个顺序循环，从每类取两个尚未选中的方向，构成12个移入方向的短候选池（incoming short pool）。一个64列的较丰富约化参考（richer reduced anchor）用于排序。Anchor不是完整最优解，也不含真值；获取它的物理作用和时间单独收费。缓存投影矩阵所用的辅助空间只是计算载体，不代表实际保留秩；每个端点仍严格为$k$列。
+
+移出一个方向以后，剩下共同电流核心（common current core）。对每个可行移入方向，求解新端点模型，用真实端点步差$d$在anchor目标上排序。每轮最多两个候选进入完整定向复核（full directional verification），计算$J_Fd$并评价$Q$。只有超过在线数值阈值的候选才接受；否则保持当前空间，即无动作（no-op）。接受以后重新计算共同核心、耦合和评分，最多接受三次。
+
+没有测试到好候选，只能说明这个短池和这次复核没有找到可接受动作；池外可能还有好方向。因此停止时使用未解决弃权（abstention），不说已达到整个字典的局部最优。两列联合见证解释了动作之间的条件依赖，但本文没有因此改变冻结的一列交换规则。
+
+\subsection{在线数值阈值：不需要完整最优材料步}
+方向公式中每项可能发生相消。程序先累计它们的绝对量，再加入当前输出和基点的量级，构成数值尺度（numerical scale）：
+\begin{align*}
+S_Q={}&\sum_i|u_i||z_i|+\sum_j|(\ell+\lambda x)_j||d_j|\\
+&+\tfrac12\|z\|^2+\tfrac12\lambda\|d\|^2+\|r\|^2+\|u\|^2\\
+&+|\ell^Tx|+\lambda\|x\|^2.
+\end{align*}
+这里实现的$\Lambda=\lambda I$；$u=r+J_Fx$是执行这一步后的线性化残差，$z=J_Fd$是候选位移的测量变化。令$m_R$为测量实化后的维数、$d_R$为材料实维数，$n=m_R+3d_R+16$。使用FP64相对机器精度$\epsilon_{64}$，冻结阈值
+\[
+\tau_{\rm online}=32\,\mathrm{tiny}_{64}
++32\frac{n\epsilon_{64}}{1-n\epsilon_{64}}S_Q.
+\]
+其中$\mathrm{tiny}_{64}$是实现采用的FP64最小正正规数（smallest positive normal number），不是可调阈值。常数32和尺度表达式在验证结果出现前固定；判断为$Q>\tau_{\rm online}$。完整最优步$s_*$、真值和评估底噪不进入该阈值。原36个单元的真实物理回放表明，75个接受动作、每一步材料向量和输出以及最终风险全部保持相同。
+
+这个阈值控制数值显著性（numerical significance），没有证明DDA离散误差或完整输出误差的严格半径。因此称高精度数值复核（high-fidelity numerical verification），不称确定性认证（deterministic certification）。较小的求解残差说明离散线性方程被解得准确，不能独自给出连续Maxwell输出的误差界。
+
+\subsection{三个不同层次的结果}
+冻结更新保真度（frozen-update fidelity）用$R_{\rm GN}$判断约化材料步离完整GN步有多远。含噪检验（noise validation）改变同一物理状态的残差，每份残差有自己的完整GN参考。非线性迁移（nonlinear transfer）则从相同初始化真正迭代材料，使用可行性投影（feasibility projection）和线搜索（line search），比较最终材料与真值。前一层改善不能代替后一层结果。
+
+独立统计单位是对象（object），不是该对象的状态、预算或噪声次数。先把对象内的绝对GN差距相加，再计算相对receiver的比值；同时保留绝对差距和$H$范数步误差。这样，不会把高$k$时极小的receiver分母误读为普遍改善或普遍退化。

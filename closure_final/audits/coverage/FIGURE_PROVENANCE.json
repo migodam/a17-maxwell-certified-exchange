@@ -1,0 +1,38 @@
+{
+  "status": "CANDIDATE_OWNER_REVIEW_PENDING",
+  "scientific_acceptance": false,
+  "inputs": {
+    "initial": {
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/research/delegated/a17_closure_collectors_v5/real_saved_audit_v5/coverage_object_initial_opportunity.csv",
+      "sha256": "b396575a8cb347d97093661b94292097310f782fed39d91eae01d3f1d4e33889"
+    },
+    "path": {
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/research/delegated/a17_closure_collectors_v5/real_saved_audit_v5/coverage_path_final_risk.csv",
+      "sha256": "71a36ceb1799caa35c09ab95134318de62c2eae4e03dae764f56d50f2eceef49"
+    },
+    "authority": {
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/research/delegated/a17_closure_collectors_v5/real_saved_audit_v5/coverage_evidence.json",
+      "sha256": "e4f7c13169e570d49d6b5e0e16e8111c9c94e891dd419cded826c2652c40d978"
+    },
+    "labels": {
+      "path": "/Volumes/migodam's-external-brain/Research/Inv_SLAM/Gaussian/A17/CLOSURE_R1/analysis/coverage_labels_FINAL.json",
+      "sha256": "83324a0a16ec44e2260962975d3f63ae99c8b3b525582658a968aa5026925646"
+    }
+  },
+  "snapshot_receipt_sha256": "0d1463078905fcdc54dcc215d47a34e6a1629629691439805c44effeb966f7e8",
+  "config_sha256": "a214e38954be1438a7b3e5a84cc6ea595d07544ceff652d6fd84995765a00ae5",
+  "input_manifest_sha256": "ef75e7c448756ddce45bf92dedbc19e19c481478a54e42088d1c01232286c944",
+  "collector_sha256": "c48e2c725d97b23e864235f48f816c3c2c0ce8baefc244c279320b02e59d55b9",
+  "script_sha256": "4660203522b20845781ef5eed1fd9f125871fa53a98cf77abe6aa92373209493",
+  "outputs": {
+    "initial_opportunity.pdf": "2b303ce23ad9f0ed6478ff62ca139baf93249bdfc714109fa16b91d7f69568a6",
+    "initial_opportunity.svg": "ade8128e0f1a3bd0895f7559a229d685dfd52ccc0890185d41a9c97a9dcd0641",
+    "initial_opportunity.png": "86a40d2db2a2e03b1d4761f1ccbaf29fdb231a5f82a2d8665852c0626c5a217f",
+    "bounded_path_risk.pdf": "e551e582fe9113d115944cf082cd102b0d2fa9f1c093eae8476f85f25d65e942",
+    "bounded_path_risk.svg": "6cd430d363c36a570180350acfffe23baccc7eeda600fc7fb0501a5c33c97fae",
+    "bounded_path_risk.png": "c40034a8922608eb01e98df33916425d6f5c3c163dc4eaae398006291032a91f"
+  },
+  "planned_objects": 11,
+  "planned_cells": 99,
+  "scope": "Separate initial receiver-neighborhood captures and bounded local-path endpoints; no global-oracle claim."
+}

@@ -1,0 +1,13 @@
+{
+  "2002": {"geometry": "Smooth, 3 inclusions A", "material": "voxel"},
+  "2003": {"geometry": "Smooth, 4 inclusions A", "material": "Gaussian"},
+  "2004": {"geometry": "Smooth, 2 inclusions A", "material": "voxel"},
+  "2005": {"geometry": "Contact, 2 inclusions A", "material": "Gaussian"},
+  "2006": {"geometry": "Contact, 3 inclusions A", "material": "voxel"},
+  "2008": {"geometry": "Contact, 3 inclusions B", "material": "voxel"},
+  "2009": {"geometry": "Shell, 3 inclusions A", "material": "Gaussian"},
+  "2010": {"geometry": "Shell, 3 inclusions A", "material": "voxel"},
+  "2011": {"geometry": "Shell, 3 inclusions B", "material": "Gaussian"},
+  "2013": {"geometry": "Asymmetric, 3 inclusions A", "material": "Gaussian"},
+  "2016": {"geometry": "Asymmetric, 3 inclusions B", "material": "voxel"}
+}

@@ -1,0 +1,158 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "A17 consolidated saved experiment ledger v1",
+  "type": "object",
+  "required": [
+    "schema",
+    "status",
+    "scientific_verdict",
+    "scientific_acceptance",
+    "coverage_pending",
+    "planned_denominators",
+    "included_planned_rows",
+    "deferred_planned_rows",
+    "rows",
+    "cost_records",
+    "bound_evidence_inputs"
+  ],
+  "properties": {
+    "schema": {
+      "const": "a17.consolidated.experiment.ledger.v1"
+    },
+    "status": {
+      "enum": [
+        "PREPARED_PARTIAL_COVERAGE_PENDING",
+        "MERGED_OWNER_REVIEW_PENDING"
+      ]
+    },
+    "scientific_verdict": {
+      "type": "null"
+    },
+    "scientific_acceptance": {
+      "const": false
+    },
+    "coverage_pending": {
+      "type": "boolean"
+    },
+    "planned_denominators": {
+      "const": {
+        "replay": 36,
+        "primary": 99,
+        "noise": 72,
+        "nonlinear": 8,
+        "offline_coverage": 99
+      }
+    },
+    "included_planned_rows": {
+      "enum": [
+        215,
+        314
+      ]
+    },
+    "deferred_planned_rows": {
+      "enum": [
+        0,
+        99
+      ]
+    },
+    "rows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "experiment_group",
+          "planned_identity",
+          "planned",
+          "status",
+          "metric_scope",
+          "metrics",
+          "objective_label",
+          "per_candidate_wall_s",
+          "source"
+        ],
+        "properties": {
+          "experiment_group": {
+            "enum": [
+              "replay",
+              "primary",
+              "noise",
+              "nonlinear",
+              "offline_coverage"
+            ]
+          },
+          "planned_identity": {
+            "type": "object"
+          },
+          "planned": {
+            "const": true
+          },
+          "status": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "metric_scope": {
+            "enum": [
+              "FROZEN_MATERIAL_STEP_H_RISK",
+              "NONLINEAR_MATERIAL_AND_DATA_ENDPOINT",
+              "OFFLINE_INITIAL_1SWAP_AND_BOUNDED_PATH_DIAGNOSTIC"
+            ]
+          },
+          "metrics": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "additionalProperties": {
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "objective_label": {
+            "type": "null"
+          },
+          "per_candidate_wall_s": {
+            "type": "null"
+          },
+          "source": {
+            "type": "object",
+            "required": [
+              "input",
+              "sha256"
+            ],
+            "properties": {
+              "input": {
+                "type": "string"
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              },
+              "row_index_zero_based": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "json_pointer": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "cost_records": {
+      "type": "array"
+    },
+    "bound_evidence_inputs": {
+      "type": "object"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+\section{Closed costs and physical-action scope}
+The authoritative final ledger has 61 closed attempts with matched start/end records, comprising 57 zero and four nonzero exits. All four failed attempts retain their fees. The only additive quantities are historical carry 4889.515~s, closure occupation 15072.343~s and rejected preflight 0.202~s: total 19962.060~s. Successful preflights, child walls and A--I stage walls are already nested inside those occupation intervals.
+\begin{table}[htbp]\centering\small
+\caption{Mutually exclusive campaign fees. Offline diagnostics are not online deployment work.}\label{tab:closed-cost}
+\begin{tabular}{lr}\toprule
+Scope&Occupied wall (s)\\\midrule
+Historical carry&4889.515\\
+Physical threshold replay&268.749\\
+Additional frozen objects&1158.673\\
+Noisy frozen residuals&895.250\\
+Constrained nonlinear transfer&3704.671\\
+Offline coverage/path diagnosis&9039.907\\
+Gate and failed setup&5.093\\
+Rejected preflight outside occupation&0.202\\\midrule
+Total&19962.060\\\bottomrule
+\end{tabular}\end{table}
+
+Stage views distinguish common physical setup, receiver, anchor, incoming pool, endpoint/score computation, $Jx/Jd$ checks, acceptance/rejection, offline teacher/evaluation and nonlinear work. The full ledger retains missing allocations as null. Cached Gaussian teacher labels pay the dense-$J$ acquisition once; logical cached directions do not add new physical RHS. Voxel teacher directions retain actual block-solve counters. Matrix actions, uploads, SVD, ordinary adjoint and full-adjoint counts remain distinct.
+
+Shared frozen setup was not independently repeated as a cold receiver-only timing. Thus no cold incremental wall is manufactured by allocating a common cache to individual candidates. The three nonlinear pairs independently pay their own setup and are timed once each; their child-wall differences are 363.44, 302.77 and 186.39~s. Rejected finalists and the incomplete fourth trajectory remain charged. The maximum monitored device usage, 2692~MiB, includes other device activity and is not a policy-specific allocated-memory estimate.

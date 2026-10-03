@@ -1,0 +1,48 @@
+{
+  "schema": "a17.closure.offline_coverage.v2.lock",
+  "owner_status": "LOCKED_OFFLINE_ONLY",
+  "rule_config_sha256": "a214e38954be1438a7b3e5a84cc6ea595d07544ceff652d6fd84995765a00ae5",
+  "deployment_sources": {
+    "code/run_coverage_v2.py": "a7b3d8377b119b5c121e4d7d72c6bdd914eb0d7029b829104261c1a5ca9ecc14",
+    "code/closure_state_v2.py": "4eb15d3cfc3df786f14fea1a8f030cb9325dbf5d8a40d91803fbacc16b5ec1a5",
+    "code/run_closure_v2.py": "144f15b60331a9dec84ac81b36c1184d8f75dcbff5bad3db05ae35ddd64b9d63",
+    "code/closure_runtime.py": "14cee50971f7234d049c0dc3e71f8755a3c248b2ea867088355d86fea3edadc2",
+    "code/online_tolerance.py": "0cb18fc4b91f377c8a1cc96c426bbcff7e000a846b515aa53e59a384466cb8bf"
+  },
+  "k": [
+    4,
+    8,
+    16
+  ],
+  "dictionary_atoms": 154,
+  "allowed_path_actions": [
+    0,
+    3
+  ],
+  "no_online_feedback": true,
+  "cumulative_limit_s": 43200,
+  "max_job_s": 7200,
+  "scope": "Separate offline coverage deployment source addendum only; unchanged acceptance/rule/object configuration",
+  "created_utc": "2026-10-02T10:49:11.822605+00:00",
+  "objects": [
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2008,
+    2009,
+    2010,
+    2011,
+    2013,
+    2016
+  ],
+  "phases": [
+    "early",
+    "middle",
+    "late"
+  ],
+  "selected_path_actions": 3,
+  "per_state_offline_wall_limit_s": 1200,
+  "selection_rule_unchanged": true
+}

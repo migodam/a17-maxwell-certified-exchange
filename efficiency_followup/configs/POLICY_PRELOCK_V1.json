@@ -1,0 +1,61 @@
+{
+  "schema": "a17.efficiency.policy_prelock.v1",
+  "objects": [
+    2002,
+    2009
+  ],
+  "stages": {
+    "early": 0,
+    "middle": 3,
+    "late": 17
+  },
+  "k": [
+    4,
+    8,
+    16
+  ],
+  "policies": [
+    "original_top2_cap3",
+    "top1_cap3",
+    "top2_cap1",
+    "top1_cap1",
+    "top1_cap2"
+  ],
+  "incoming_count": 12,
+  "anchor_rank": 64,
+  "seed": 20260930,
+  "fp64": true,
+  "gateA": {
+    "GO_max_avg_Jd": 2.0,
+    "GO_min_object_gain_retention": 0.9,
+    "CONDITIONAL_max_avg_Jd": 3.0,
+    "CONDITIONAL_min_object_gain_retention": 0.8,
+    "unit": "Each pilot object; sum positive original gains across declared cells"
+  },
+  "gateB": {
+    "max_material_complex_relative_degradation": 0.01,
+    "max_heldout_relative_degradation": 0.01,
+    "absolute_metric_comparison_floor": 5e-09,
+    "stability": "No unaccepted/infeasible accepted physical update; same constraints and Armijo"
+  },
+  "gateC": {
+    "target_exchange_receiver_wall_ratio": 1.3,
+    "strong_target": 1.15,
+    "remaining_bottleneck_boundary": 1.5
+  },
+  "nonlinear": {
+    "k": 8,
+    "updates": 18,
+    "noise_percent": 0,
+    "matched_repeat_count": 3,
+    "paired_order_rotation": true,
+    "only_after_frozen_gate": true,
+    "outer_rules_source": "Unchanged CLOSURE_R1/code/run_nonlinear.py"
+  },
+  "preferred_bounded_P8": "top1_cap2 plus exact geometry-only cache only after measured source/runtime verification",
+  "histories": "Marginal saved/public workspace diagnostics kept separate from cold all-in cost",
+  "no_new_selector": true,
+  "no_NN": true,
+  "no_output_certificate": true,
+  "budget_carry_sha256": "76d5aa5078e976e4c30e4fefee0635a0a5829a755f811842d520d2fc18aaf9e8"
+}

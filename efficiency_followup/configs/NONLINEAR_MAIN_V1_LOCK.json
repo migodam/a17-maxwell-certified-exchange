@@ -1,0 +1,151 @@
+{
+  "schema": "a17.efficiency.nonlinear.lock.v1",
+  "nonlinear_version": "a17.efficiency.nonlinear_transfer.v1",
+  "nonlinear_objects": [
+    2002,
+    2009
+  ],
+  "nonlinear_policies": [
+    "receiver_only",
+    "original_top2_cap3",
+    "top1_cap2",
+    "reuse_previous",
+    "reuse_reset3"
+  ],
+  "nonlinear_repetitions": [
+    0,
+    1,
+    2
+  ],
+  "nonlinear_k": 8,
+  "nonlinear_noise_percent": 0,
+  "nonlinear_outer_rules": {
+    "initialization": "existing_scene_init",
+    "prior": 1e-05,
+    "lm0": 0.01,
+    "lm_decay": 0.3,
+    "lm_decay_period": 3,
+    "max_updates": 18,
+    "real_lower": -0.5,
+    "imag_lower": 0.0,
+    "real_trial_tolerance": 1e-08,
+    "imag_trial_tolerance": 1e-08,
+    "armijo": 0.0001,
+    "line_trials": 24,
+    "backtracking": 0.5,
+    "gradient_fallback_denominator_floor": 1e-08,
+    "small_step": 1e-06,
+    "small_step_first_iteration": 9
+  },
+  "efficient_controller_version": "a17.efficiency.frequency.v1",
+  "online_incoming_count": 12,
+  "anchor_rank": 64,
+  "pool_count": 32,
+  "residual_up_count": 16,
+  "random_pool_count": 10,
+  "pool_and_anchor_seed": 20260930,
+  "cuda_candidate_batch": 16,
+  "online_tolerance_schema": "a17.online.numerical_significance.v1",
+  "online_tolerance_safety": 32,
+  "precision": [
+    "float64",
+    "complex128"
+  ],
+  "cold_policy_setup": true,
+  "device": "cuda",
+  "source_hashes": {
+    "code/run_nonlinear_efficient.py": "fe1efc44b7bb83451a84c1563c664217ab6aebc675f8c910c0a3ba8ee6901864",
+    "code/efficient_exchange.py": "e92db6a070f3df13234b9beda24debe55aa25af4d7446f23348d8eed5db98fa3",
+    "code/closure_runtime.py": "14cee50971f7234d049c0dc3e71f8755a3c248b2ea867088355d86fea3edadc2",
+    "code/closure_state.py": "6ea766c775d20c56665b01b371c06b080259991366d242bedccc591da8c5382f",
+    "code/online_tolerance.py": "0cb18fc4b91f377c8a1cc96c426bbcff7e000a846b515aa53e59a384466cb8bf",
+    "code/geometry_cache_v2.py": "022362536c6f02de673af5895cb3476dd88b5d3fc8d69c6adcf1ba53af9c6295"
+  },
+  "gate_a_authorization_sha256": "0cb84125e54c1f3b8e5ffe223a6302222e1072dabdad309a44772a58b3a954b4",
+  "quality_tolerance": {
+    "max_material_complex_relative_degradation": 0.01,
+    "max_heldout_relative_degradation": 0.01,
+    "absolute_metric_comparison_floor": 5e-09,
+    "stability": "No unaccepted/infeasible accepted physical update; same constraints and Armijo"
+  },
+  "baseline_lock_sha256": "6317976787509a7680826f12a891695af7ccd45dcd4bf6834c84a76e88263a00",
+  "baseline_manifest_sha256": "b47422c1ec7c945a6cea536ec479c3515ab322a631d088d62eed25c2655e34db",
+  "input_manifest_sha256": "ef75e7c448756ddce45bf92dedbc19e19c481478a54e42088d1c01232286c944",
+  "audited_geometry_provider_sha256": "e8b6ae0a97de23db232d3c2731a642b0e2a238e13590636f803eafb1e23c36b8",
+  "numerical_environment": {
+    "python": "3.10.9",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "torch": "2.6.0+cu124",
+    "cuda_version": "12.4",
+    "threads": {
+      "OPENBLAS_NUM_THREADS": "4",
+      "OMP_NUM_THREADS": "4",
+      "MKL_NUM_THREADS": "4"
+    }
+  },
+  "authorized_routes": [
+    {
+      "policy": "receiver_only",
+      "geometry_cache": false,
+      "repetition": 0
+    },
+    {
+      "policy": "receiver_only",
+      "geometry_cache": false,
+      "repetition": 1
+    },
+    {
+      "policy": "receiver_only",
+      "geometry_cache": false,
+      "repetition": 2
+    },
+    {
+      "policy": "original_top2_cap3",
+      "geometry_cache": false,
+      "repetition": 0
+    },
+    {
+      "policy": "original_top2_cap3",
+      "geometry_cache": false,
+      "repetition": 1
+    },
+    {
+      "policy": "original_top2_cap3",
+      "geometry_cache": false,
+      "repetition": 2
+    },
+    {
+      "policy": "original_top2_cap3",
+      "geometry_cache": true,
+      "repetition": 0
+    },
+    {
+      "policy": "original_top2_cap3",
+      "geometry_cache": true,
+      "repetition": 1
+    },
+    {
+      "policy": "original_top2_cap3",
+      "geometry_cache": true,
+      "repetition": 2
+    },
+    {
+      "policy": "top1_cap2",
+      "geometry_cache": true,
+      "repetition": 0
+    },
+    {
+      "policy": "top1_cap2",
+      "geometry_cache": true,
+      "repetition": 1
+    },
+    {
+      "policy": "top1_cap2",
+      "geometry_cache": true,
+      "repetition": 2
+    }
+  ],
+  "owner_prelock_sha256": "e843d0f665c65107ce3d21e28c9fcf290eefaf0b966d515b1a42ee7a18157785",
+  "timing_scope": "Synchronized child reconstruction including all physical policy setup, archival I/O and final heldout metrics; external occupied wall additionally includes imports, guards and process startup. Three repetitions are timing repeats, not new scenes."
+}

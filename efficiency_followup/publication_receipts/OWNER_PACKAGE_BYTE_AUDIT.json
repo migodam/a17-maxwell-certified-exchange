@@ -1,0 +1,12 @@
+{
+  "status": "PASS_BYTE_PRESERVATION_CRC_AND_PARSE",
+  "admitted_payloads": 128,
+  "python_sources_parsed": 17,
+  "reports11": 11,
+  "zip_member_count": 131,
+  "zip_sha256": "e0eda0e95c50b5a56d694e6ffde34915037029d0e66695dfadac35a13b8b25db",
+  "manifest_sha256": "fc673095e6b051d579a5f3ecb47ac7bf68f213ba931d6b3dac0c9ecf39e4265b",
+  "numerical_jobs_launched": false,
+  "privacy_transform": "No executable or payload rewriting; separately admitted metadata projections",
+  "full_GPU_replay": false
+}

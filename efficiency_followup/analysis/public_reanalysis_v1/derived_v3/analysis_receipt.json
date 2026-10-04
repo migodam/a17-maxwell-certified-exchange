@@ -1,0 +1,19 @@
+{
+  "schema": "a17.efficiency.local_analysis.v3",
+  "status": "PARTIAL",
+  "cpu_analysis_wall_s": 1.6118060000007972,
+  "objects": [
+    2002,
+    2009
+  ],
+  "snapshots": "evidence/final_snapshot",
+  "scope_rules": "EFF cached frozen/profile/verification/cold nonlinear separated from CLOSURE saved evidence; matched NL strata bind version+configSHA+locked sources+driver; explicit method/cache/rep authorization required",
+  "missing_rule": "null/blank; no interpolation; zero denominator retention is null",
+  "duplicate_rule": "result byte SHA-256; identical bytes prefer complete local trajectory/config companions only; nested identical cells canonical payload SHA; distinct logical duplicates exported as conflicts",
+  "median_rule": "all unambiguous matched repetitions; median/MAD/std/min/max; never choose fastest rep",
+  "risk_rule": "full_gap-half_H_step_energy-reference_gradient_cross; telescoping gap reduction minus accepted gain",
+  "gate_decision": "OWNER_NOT_ASSIGNED",
+  "physics_launched": false,
+  "network": false,
+  "source_sha256": "c807804e13f4cf7d70e3297292b6d885736d8c61a0ef824877a1fd0492bd9693"
+}

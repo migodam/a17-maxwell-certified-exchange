@@ -1,0 +1,76 @@
+{
+  "schema": "a17.efficiency.frozen_pilot.config.v1",
+  "version": "a17.efficiency.frozen_pilot.v1",
+  "fixed": {
+    "objects": [
+      2002,
+      2009
+    ],
+    "phases": {
+      "early": 0,
+      "middle": 3,
+      "late": 17
+    },
+    "k": [
+      4,
+      8,
+      16
+    ],
+    "policies": [
+      "original_top2_cap3",
+      "top1_cap3",
+      "top2_cap1",
+      "top1_cap1",
+      "top1_cap2"
+    ],
+    "efficient_controller_version": "a17.efficiency.frequency.v1",
+    "precision": [
+      "float64",
+      "complex128"
+    ],
+    "incoming_count": 12,
+    "noise_percent": 0,
+    "endpoint_engine_batch_size": 16,
+    "cache_scope": "PERSISTED_PUBLIC_MAPS_NOT_COLD",
+    "endpoint_engine_setup": "NEW_ENGINE_PER_K_POLICY",
+    "nonlinear_updates": 0
+  },
+  "source_hashes": {
+    "code/run_frozen_pilot_sealed_v1.py": "8f31f445c06f4d10a591dc6ba0f7308531df0cbb0b52a0e861381230ed764fd4",
+    "code/efficient_exchange.py": "e92db6a070f3df13234b9beda24debe55aa25af4d7446f23348d8eed5db98fa3",
+    "code/closure_runtime.py": "14cee50971f7234d049c0dc3e71f8755a3c248b2ea867088355d86fea3edadc2",
+    "code/closure_state.py": "6ea766c775d20c56665b01b371c06b080259991366d242bedccc591da8c5382f",
+    "code/closure_state_v2.py": "4eb15d3cfc3df786f14fea1a8f030cb9325dbf5d8a40d91803fbacc16b5ec1a5",
+    "code/online_tolerance.py": "0cb18fc4b91f377c8a1cc96c426bbcff7e000a846b515aa53e59a384466cb8bf"
+  },
+  "baseline_manifest_sha256": "b47422c1ec7c945a6cea536ec479c3515ab322a631d088d62eed25c2655e34db",
+  "baseline_lock_sha256": "6317976787509a7680826f12a891695af7ccd45dcd4bf6834c84a76e88263a00",
+  "input_manifest_sha256": "ef75e7c448756ddce45bf92dedbc19e19c481478a54e42088d1c01232286c944",
+  "persisted_fixtures": {
+    "object_2002/early": {
+      "public_workspace.npz": "af39935ab244b8ec4d034513c4cf4a91204b2695695c0cd5c7fdc6da9b2b6bed",
+      "runtime_receipt.json": "37ccc38bad2069c0fab3463c25efbda71c911a1aef47e96b534e215ae315caa2"
+    },
+    "object_2002/middle": {
+      "public_workspace.npz": "f363d70364b2563f22449210eeae7cc46596b673a2207de9088eae520f522b8d",
+      "runtime_receipt.json": "9022d7a8a94f57998e9213e6293b09267891ca6233c40c70125d405125088b8e"
+    },
+    "object_2002/late": {
+      "public_workspace.npz": "06b93a6462bc4aa1d6d2aeaadae27bc43458b116d03038aad0d22359c545a9f3",
+      "runtime_receipt.json": "12ea04b3d51af6eb8e89cf9110b7740faf88ec67af0c98ad840e7ad530addefb"
+    },
+    "object_2009/early": {
+      "public_workspace.npz": "1adf3154679183b080c7d8431c28c43fc8cc534c23757da4300df9018a143dc1",
+      "runtime_receipt.json": "de3433935ff79db97d698022cdad9856fcea593ce5485b99f3bcdbdc84fc8159"
+    },
+    "object_2009/middle": {
+      "public_workspace.npz": "179ec286ad67c2cebfe717e9323ea33377935e648133448b89d78c05c0547e68",
+      "runtime_receipt.json": "1f2bf89045387a01ba8c99993074ffa50fa6069c5e96323b6735a98ac53653a3"
+    },
+    "object_2009/late": {
+      "public_workspace.npz": "70ce4d9bcfe614f48ab84e2c0d2f105a7e0aa095e2859c0311ee6a700f81f6bc",
+      "runtime_receipt.json": "3af21529525ef57a5685c64cb87b526ef5eec20da026395d3f9efa2387b7c8a1"
+    }
+  },
+  "owner_prelock_sha256": "e843d0f665c65107ce3d21e28c9fcf290eefaf0b966d515b1a42ee7a18157785"
+}

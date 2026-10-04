@@ -1,0 +1,21 @@
+{
+  "schema": "a17.efficiency.final_cost.v2",
+  "status": "CLOSED_LEDGER_ACCOUNTING_ONLY",
+  "prior_carry_s": 19962.059999999998,
+  "total_ceiling_s": 43200.0,
+  "new_known_paired_occupation_s": 17456.33999999991,
+  "new_known_guard_s": 0.0,
+  "cumulative_charged_s": 37418.39999999991,
+  "remaining_s": 5781.600000000093,
+  "ceiling_exceeded": false,
+  "closed_charged_attempts": 42,
+  "failed_or_stopped_attempts": 1,
+  "cost_scope": "Occupation includes successful preflight/setup/monitor/evaluation/failures; rejected preflight guard charged separately. Nested CPU and child wall never added.",
+  "preflight_ledger_evidence_status": "VERIFIED_ABSENT_NO_REJECTED_PREFLIGHT",
+  "child_wall_status": "NOT_MEASURED_FROM_EXECUTION_LEDGERS",
+  "snapshot_summary_sha256": "a706587bf73636c97a3166848388391c85c2df2248ea5f417108d7bc7b8e5e3b",
+  "assembler_sha256": "47073fb34b6f07896ac8fa4eadfda0bc6e83879708ec3adf84411718bc369f2e",
+  "physics_launched": false,
+  "network": false,
+  "gate_decision": "NONE"
+}

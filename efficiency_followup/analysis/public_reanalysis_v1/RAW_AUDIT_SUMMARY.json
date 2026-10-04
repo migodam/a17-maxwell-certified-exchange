@@ -1,0 +1,3583 @@
+{
+  "schema": "a17-public-raw-audit-summary-v1",
+  "original_audit_sha256": "73496a3c2fd192631fe7a27a8183851788fd7a58f2187e1717a7ae27c47795cc",
+  "auditor_source_sha256": "2e3fe793ecbe5be33117fb74659a0d695650de67345e8fe61650749101223048",
+  "numerical_jobs_launched": false,
+  "full_checkpoint_validation": "PER_RUN_ARRAY_STATUS_ONLY",
+  "identity_issue_count": 0,
+  "identity_issues": [],
+  "run_count": 34,
+  "runs": [
+    {
+      "object": 2002,
+      "policy": "top1_cap3",
+      "geometry_cache": true,
+      "repetition": 0,
+      "version": "a17.efficiency.nonlinear_top1cap3_transfer.v1",
+      "config_sha256": "b3ce29f8016755e3803deae2eb8b5b3c353a5fb9872c75edd7a415e158e318b9",
+      "identity_eligible": true,
+      "driver_role": "TOP1CAP3_CONDITIONAL",
+      "physics_identity": "98268ad725cd9e454ea4e6d00dc1e95ad67ab5c88adeca4a32bb0c922875673a",
+      "raw_binding_status": "HASH_BOUND_RAW_DIRECTORY",
+      "result_sha256": "ca114ca3dfe212d36bd20f8b34ce3aa01787d5954612bcf50324b92ece06acfa",
+      "source": "evidence/final_snapshot/results/nonlinear_top1cap3_transfer_v1/object_2002/top1_cap3_cache/rep0/result.json",
+      "status": "completed_max_updates",
+      "raw_array_check": {
+        "status": "MEASURED_ARRAY_CHECKS_ONLY",
+        "issues": [],
+        "accepted_checkpoint_checks": [
+          {
+            "iteration": 0,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 1,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 2,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 3,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 4,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 5,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 6,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 7,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 8,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 9,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 10,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 11,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 12,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 13,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 14,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 15,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 16,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 17,
+            "status": "MEASURED_FEASIBLE"
+          }
+        ],
+        "final_matches_last_safe": {
+          "status": "MEASURED_ARRAY_COMPARISON",
+          "bitwise_equal": true,
+          "max_abs_error": 0.0,
+          "relative_l2_error": 0.0,
+          "dtype_equal": true
+        }
+      },
+      "check_failures": []
+    },
+    {
+      "object": 2002,
+      "policy": "top1_cap3",
+      "geometry_cache": true,
+      "repetition": 1,
+      "version": "a17.efficiency.nonlinear_top1cap3_transfer.v1",
+      "config_sha256": "b3ce29f8016755e3803deae2eb8b5b3c353a5fb9872c75edd7a415e158e318b9",
+      "identity_eligible": true,
+      "driver_role": "TOP1CAP3_CONDITIONAL",
+      "physics_identity": "98268ad725cd9e454ea4e6d00dc1e95ad67ab5c88adeca4a32bb0c922875673a",
+      "raw_binding_status": "HASH_BOUND_RAW_DIRECTORY",
+      "result_sha256": "c60a8815de965ad064a0e3f1c982717f13758e3fa0ab673ba87d260653245f93",
+      "source": "evidence/final_snapshot/results/nonlinear_top1cap3_transfer_v1/object_2002/top1_cap3_cache/rep1/result.json",
+      "status": "completed_max_updates",
+      "raw_array_check": {
+        "status": "MEASURED_ARRAY_CHECKS_ONLY",
+        "issues": [],
+        "accepted_checkpoint_checks": [
+          {
+            "iteration": 0,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 1,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 2,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 3,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 4,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 5,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 6,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 7,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 8,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 9,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 10,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 11,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 12,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 13,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 14,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 15,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 16,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 17,
+            "status": "MEASURED_FEASIBLE"
+          }
+        ],
+        "final_matches_last_safe": {
+          "status": "MEASURED_ARRAY_COMPARISON",
+          "bitwise_equal": true,
+          "max_abs_error": 0.0,
+          "relative_l2_error": 0.0,
+          "dtype_equal": true
+        }
+      },
+      "check_failures": []
+    },
+    {
+      "object": 2002,
+      "policy": "top1_cap3",
+      "geometry_cache": true,
+      "repetition": 2,
+      "version": "a17.efficiency.nonlinear_top1cap3_transfer.v1",
+      "config_sha256": "b3ce29f8016755e3803deae2eb8b5b3c353a5fb9872c75edd7a415e158e318b9",
+      "identity_eligible": true,
+      "driver_role": "TOP1CAP3_CONDITIONAL",
+      "physics_identity": "98268ad725cd9e454ea4e6d00dc1e95ad67ab5c88adeca4a32bb0c922875673a",
+      "raw_binding_status": "HASH_BOUND_RAW_DIRECTORY",
+      "result_sha256": "4613a5bb0adb9d17646d77c3f45aa304dde9641d101b6d2afc9613a7913f789d",
+      "source": "evidence/final_snapshot/results/nonlinear_top1cap3_transfer_v1/object_2002/top1_cap3_cache/rep2/result.json",
+      "status": "completed_max_updates",
+      "raw_array_check": {
+        "status": "MEASURED_ARRAY_CHECKS_ONLY",
+        "issues": [],
+        "accepted_checkpoint_checks": [
+          {
+            "iteration": 0,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 1,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 2,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 3,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 4,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 5,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 6,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 7,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 8,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 9,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 10,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 11,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 12,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 13,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 14,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 15,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 16,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 17,
+            "status": "MEASURED_FEASIBLE"
+          }
+        ],
+        "final_matches_last_safe": {
+          "status": "MEASURED_ARRAY_COMPARISON",
+          "bitwise_equal": true,
+          "max_abs_error": 0.0,
+          "relative_l2_error": 0.0,
+          "dtype_equal": true
+        }
+      },
+      "check_failures": []
+    },
+    {
+      "object": 2009,
+      "policy": "top1_cap3",
+      "geometry_cache": true,
+      "repetition": 0,
+      "version": "a17.efficiency.nonlinear_top1cap3_transfer.v1",
+      "config_sha256": "b3ce29f8016755e3803deae2eb8b5b3c353a5fb9872c75edd7a415e158e318b9",
+      "identity_eligible": true,
+      "driver_role": "TOP1CAP3_CONDITIONAL",
+      "physics_identity": "98268ad725cd9e454ea4e6d00dc1e95ad67ab5c88adeca4a32bb0c922875673a",
+      "raw_binding_status": "HASH_BOUND_RAW_DIRECTORY",
+      "result_sha256": "262bf190fa972a34f12e2c1d897874f246ce7b8a47ced7d38fdf6dfd90546e00",
+      "source": "evidence/final_snapshot/results/nonlinear_top1cap3_transfer_v1/object_2009/top1_cap3_cache/rep0/result.json",
+      "status": "completed_max_updates",
+      "raw_array_check": {
+        "status": "MEASURED_ARRAY_CHECKS_ONLY",
+        "issues": [],
+        "accepted_checkpoint_checks": [
+          {
+            "iteration": 0,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 1,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 2,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 3,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 4,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 5,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 6,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 7,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 8,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 9,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 10,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 11,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 12,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 13,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 14,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 15,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 16,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 17,
+            "status": "MEASURED_FEASIBLE"
+          }
+        ],
+        "final_matches_last_safe": {
+          "status": "MEASURED_ARRAY_COMPARISON",
+          "bitwise_equal": true,
+          "max_abs_error": 0.0,
+          "relative_l2_error": 0.0,
+          "dtype_equal": true
+        }
+      },
+      "check_failures": []
+    },
+    {
+      "object": 2009,
+      "policy": "top1_cap3",
+      "geometry_cache": true,
+      "repetition": 1,
+      "version": "a17.efficiency.nonlinear_top1cap3_transfer.v1",
+      "config_sha256": "b3ce29f8016755e3803deae2eb8b5b3c353a5fb9872c75edd7a415e158e318b9",
+      "identity_eligible": true,
+      "driver_role": "TOP1CAP3_CONDITIONAL",
+      "physics_identity": "98268ad725cd9e454ea4e6d00dc1e95ad67ab5c88adeca4a32bb0c922875673a",
+      "raw_binding_status": "HASH_BOUND_RAW_DIRECTORY",
+      "result_sha256": "5c45c27b0e8b154d9f90f48ce51cdf3fb178072ad39bb895cfe1e5f00bd0e2d1",
+      "source": "evidence/final_snapshot/results/nonlinear_top1cap3_transfer_v1/object_2009/top1_cap3_cache/rep1/result.json",
+      "status": "completed_max_updates",
+      "raw_array_check": {
+        "status": "MEASURED_ARRAY_CHECKS_ONLY",
+        "issues": [],
+        "accepted_checkpoint_checks": [
+          {
+            "iteration": 0,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 1,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 2,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 3,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 4,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 5,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 6,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 7,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 8,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 9,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 10,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 11,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 12,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 13,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 14,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 15,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 16,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 17,
+            "status": "MEASURED_FEASIBLE"
+          }
+        ],
+        "final_matches_last_safe": {
+          "status": "MEASURED_ARRAY_COMPARISON",
+          "bitwise_equal": true,
+          "max_abs_error": 0.0,
+          "relative_l2_error": 0.0,
+          "dtype_equal": true
+        }
+      },
+      "check_failures": []
+    },
+    {
+      "object": 2009,
+      "policy": "top1_cap3",
+      "geometry_cache": true,
+      "repetition": 2,
+      "version": "a17.efficiency.nonlinear_top1cap3_transfer.v1",
+      "config_sha256": "b3ce29f8016755e3803deae2eb8b5b3c353a5fb9872c75edd7a415e158e318b9",
+      "identity_eligible": true,
+      "driver_role": "TOP1CAP3_CONDITIONAL",
+      "physics_identity": "98268ad725cd9e454ea4e6d00dc1e95ad67ab5c88adeca4a32bb0c922875673a",
+      "raw_binding_status": "HASH_BOUND_RAW_DIRECTORY",
+      "result_sha256": "30b65fccbf5cd7299aefd8c12307d3aa09232e54fad3fcf72ecffb955b8b3fd4",
+      "source": "evidence/final_snapshot/results/nonlinear_top1cap3_transfer_v1/object_2009/top1_cap3_cache/rep2/result.json",
+      "status": "completed_max_updates",
+      "raw_array_check": {
+        "status": "MEASURED_ARRAY_CHECKS_ONLY",
+        "issues": [],
+        "accepted_checkpoint_checks": [
+          {
+            "iteration": 0,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 1,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 2,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 3,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 4,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 5,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 6,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 7,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 8,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 9,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 10,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 11,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 12,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 13,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 14,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 15,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 16,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 17,
+            "status": "MEASURED_FEASIBLE"
+          }
+        ],
+        "final_matches_last_safe": {
+          "status": "MEASURED_ARRAY_COMPARISON",
+          "bitwise_equal": true,
+          "max_abs_error": 0.0,
+          "relative_l2_error": 0.0,
+          "dtype_equal": true
+        }
+      },
+      "check_failures": []
+    },
+    {
+      "object": 2002,
+      "policy": "original_top2_cap3",
+      "geometry_cache": true,
+      "repetition": 0,
+      "version": "a17.efficiency.nonlinear_transfer.v1",
+      "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+      "identity_eligible": true,
+      "driver_role": "MAIN",
+      "physics_identity": "98268ad725cd9e454ea4e6d00dc1e95ad67ab5c88adeca4a32bb0c922875673a",
+      "raw_binding_status": "HASH_BOUND_RAW_DIRECTORY",
+      "result_sha256": "03d1cea9d1c2187f45c8bce78b82d2124e0c729223f575ac586d0e1f9b12de12",
+      "source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2002/original_top2_cap3_cache/rep0/result.json",
+      "status": "completed_max_updates",
+      "raw_array_check": {
+        "status": "MEASURED_ARRAY_CHECKS_ONLY",
+        "issues": [],
+        "accepted_checkpoint_checks": [
+          {
+            "iteration": 0,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 1,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 2,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 3,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 4,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 5,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 6,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 7,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 8,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 9,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 10,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 11,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 12,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 13,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 14,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 15,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 16,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 17,
+            "status": "MEASURED_FEASIBLE"
+          }
+        ],
+        "final_matches_last_safe": {
+          "status": "MEASURED_ARRAY_COMPARISON",
+          "bitwise_equal": true,
+          "max_abs_error": 0.0,
+          "relative_l2_error": 0.0,
+          "dtype_equal": true
+        }
+      },
+      "check_failures": []
+    },
+    {
+      "object": 2002,
+      "policy": "original_top2_cap3",
+      "geometry_cache": true,
+      "repetition": 1,
+      "version": "a17.efficiency.nonlinear_transfer.v1",
+      "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+      "identity_eligible": true,
+      "driver_role": "MAIN",
+      "physics_identity": "98268ad725cd9e454ea4e6d00dc1e95ad67ab5c88adeca4a32bb0c922875673a",
+      "raw_binding_status": "HASH_BOUND_RAW_DIRECTORY",
+      "result_sha256": "6705050fa9f7141392c4dbc74ec69d984ffe708725195834bd9b057edb3f6f77",
+      "source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2002/original_top2_cap3_cache/rep1/result.json",
+      "status": "completed_max_updates",
+      "raw_array_check": {
+        "status": "MEASURED_ARRAY_CHECKS_ONLY",
+        "issues": [],
+        "accepted_checkpoint_checks": [
+          {
+            "iteration": 0,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 1,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 2,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 3,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 4,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 5,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 6,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 7,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 8,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 9,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 10,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 11,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 12,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 13,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 14,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 15,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 16,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 17,
+            "status": "MEASURED_FEASIBLE"
+          }
+        ],
+        "final_matches_last_safe": {
+          "status": "MEASURED_ARRAY_COMPARISON",
+          "bitwise_equal": true,
+          "max_abs_error": 0.0,
+          "relative_l2_error": 0.0,
+          "dtype_equal": true
+        }
+      },
+      "check_failures": []
+    },
+    {
+      "object": 2002,
+      "policy": "original_top2_cap3",
+      "geometry_cache": true,
+      "repetition": 2,
+      "version": "a17.efficiency.nonlinear_transfer.v1",
+      "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+      "identity_eligible": true,
+      "driver_role": "MAIN",
+      "physics_identity": "98268ad725cd9e454ea4e6d00dc1e95ad67ab5c88adeca4a32bb0c922875673a",
+      "raw_binding_status": "HASH_BOUND_RAW_DIRECTORY",
+      "result_sha256": "1baf42752f87d1b55ef874e01e7faacd574cd750808988ea279391a2321e24e7",
+      "source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2002/original_top2_cap3_cache/rep2/result.json",
+      "status": "completed_max_updates",
+      "raw_array_check": {
+        "status": "MEASURED_ARRAY_CHECKS_ONLY",
+        "issues": [],
+        "accepted_checkpoint_checks": [
+          {
+            "iteration": 0,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 1,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 2,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 3,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 4,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 5,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 6,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 7,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 8,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 9,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 10,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 11,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 12,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 13,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 14,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 15,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 16,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 17,
+            "status": "MEASURED_FEASIBLE"
+          }
+        ],
+        "final_matches_last_safe": {
+          "status": "MEASURED_ARRAY_COMPARISON",
+          "bitwise_equal": true,
+          "max_abs_error": 0.0,
+          "relative_l2_error": 0.0,
+          "dtype_equal": true
+        }
+      },
+      "check_failures": []
+    },
+    {
+      "object": 2002,
+      "policy": "original_top2_cap3",
+      "geometry_cache": false,
+      "repetition": 0,
+      "version": "a17.efficiency.nonlinear_transfer.v1",
+      "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+      "identity_eligible": true,
+      "driver_role": "MAIN",
+      "physics_identity": "98268ad725cd9e454ea4e6d00dc1e95ad67ab5c88adeca4a32bb0c922875673a",
+      "raw_binding_status": "HASH_BOUND_RAW_DIRECTORY",
+      "result_sha256": "2f724362b4f4d70b5adafa8be2fbbf9a1838a15f09a03ce60269a16717b8bb4c",
+      "source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2002/original_top2_cap3_no_cache/rep0/result.json",
+      "status": "completed_max_updates",
+      "raw_array_check": {
+        "status": "MEASURED_ARRAY_CHECKS_ONLY",
+        "issues": [],
+        "accepted_checkpoint_checks": [
+          {
+            "iteration": 0,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 1,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 2,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 3,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 4,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 5,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 6,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 7,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 8,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 9,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 10,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 11,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 12,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 13,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 14,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 15,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 16,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 17,
+            "status": "MEASURED_FEASIBLE"
+          }
+        ],
+        "final_matches_last_safe": {
+          "status": "MEASURED_ARRAY_COMPARISON",
+          "bitwise_equal": true,
+          "max_abs_error": 0.0,
+          "relative_l2_error": 0.0,
+          "dtype_equal": true
+        }
+      },
+      "check_failures": []
+    },
+    {
+      "object": 2002,
+      "policy": "original_top2_cap3",
+      "geometry_cache": false,
+      "repetition": 1,
+      "version": "a17.efficiency.nonlinear_transfer.v1",
+      "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+      "identity_eligible": true,
+      "driver_role": "MAIN",
+      "physics_identity": "98268ad725cd9e454ea4e6d00dc1e95ad67ab5c88adeca4a32bb0c922875673a",
+      "raw_binding_status": "HASH_BOUND_RAW_DIRECTORY",
+      "result_sha256": "f634339f574817171c358f4f0cbbb86248631ca8d6699b6f94c54a1d9421e667",
+      "source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2002/original_top2_cap3_no_cache/rep1/result.json",
+      "status": "completed_max_updates",
+      "raw_array_check": {
+        "status": "MEASURED_ARRAY_CHECKS_ONLY",
+        "issues": [],
+        "accepted_checkpoint_checks": [
+          {
+            "iteration": 0,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 1,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 2,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 3,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 4,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 5,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 6,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 7,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 8,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 9,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 10,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 11,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 12,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 13,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 14,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 15,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 16,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 17,
+            "status": "MEASURED_FEASIBLE"
+          }
+        ],
+        "final_matches_last_safe": {
+          "status": "MEASURED_ARRAY_COMPARISON",
+          "bitwise_equal": true,
+          "max_abs_error": 0.0,
+          "relative_l2_error": 0.0,
+          "dtype_equal": true
+        }
+      },
+      "check_failures": []
+    },
+    {
+      "object": 2002,
+      "policy": "original_top2_cap3",
+      "geometry_cache": false,
+      "repetition": 2,
+      "version": "a17.efficiency.nonlinear_transfer.v1",
+      "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+      "identity_eligible": true,
+      "driver_role": "MAIN",
+      "physics_identity": "98268ad725cd9e454ea4e6d00dc1e95ad67ab5c88adeca4a32bb0c922875673a",
+      "raw_binding_status": "HASH_BOUND_RAW_DIRECTORY",
+      "result_sha256": "32ae2c5d2984b1a25fbf4f87739ca7de1afec4076f631f2f9b191a669f2ef30d",
+      "source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2002/original_top2_cap3_no_cache/rep2/result.json",
+      "status": "completed_max_updates",
+      "raw_array_check": {
+        "status": "MEASURED_ARRAY_CHECKS_ONLY",
+        "issues": [],
+        "accepted_checkpoint_checks": [
+          {
+            "iteration": 0,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 1,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 2,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 3,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 4,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 5,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 6,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 7,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 8,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 9,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 10,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 11,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 12,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 13,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 14,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 15,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 16,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 17,
+            "status": "MEASURED_FEASIBLE"
+          }
+        ],
+        "final_matches_last_safe": {
+          "status": "MEASURED_ARRAY_COMPARISON",
+          "bitwise_equal": true,
+          "max_abs_error": 0.0,
+          "relative_l2_error": 0.0,
+          "dtype_equal": true
+        }
+      },
+      "check_failures": []
+    },
+    {
+      "object": 2002,
+      "policy": "receiver_only",
+      "geometry_cache": false,
+      "repetition": 0,
+      "version": "a17.efficiency.nonlinear_transfer.v1",
+      "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+      "identity_eligible": true,
+      "driver_role": "MAIN",
+      "physics_identity": "98268ad725cd9e454ea4e6d00dc1e95ad67ab5c88adeca4a32bb0c922875673a",
+      "raw_binding_status": "HASH_BOUND_RAW_DIRECTORY",
+      "result_sha256": "0b77ca9f3605643f49977e85d5baadaa230198f652d337f8256765ef276118ab",
+      "source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2002/receiver_only_no_cache/rep0/result.json",
+      "status": "completed_max_updates",
+      "raw_array_check": {
+        "status": "MEASURED_ARRAY_CHECKS_ONLY",
+        "issues": [],
+        "accepted_checkpoint_checks": [
+          {
+            "iteration": 0,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 1,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 2,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 3,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 4,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 5,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 6,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 7,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 8,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 9,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 10,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 11,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 12,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 13,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 14,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 15,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 16,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 17,
+            "status": "MEASURED_FEASIBLE"
+          }
+        ],
+        "final_matches_last_safe": {
+          "status": "MEASURED_ARRAY_COMPARISON",
+          "bitwise_equal": true,
+          "max_abs_error": 0.0,
+          "relative_l2_error": 0.0,
+          "dtype_equal": true
+        }
+      },
+      "check_failures": []
+    },
+    {
+      "object": 2002,
+      "policy": "receiver_only",
+      "geometry_cache": false,
+      "repetition": 1,
+      "version": "a17.efficiency.nonlinear_transfer.v1",
+      "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+      "identity_eligible": true,
+      "driver_role": "MAIN",
+      "physics_identity": "98268ad725cd9e454ea4e6d00dc1e95ad67ab5c88adeca4a32bb0c922875673a",
+      "raw_binding_status": "HASH_BOUND_RAW_DIRECTORY",
+      "result_sha256": "3ce42a2f182c4669373ac11a07e72b06ec92aa6a353fbe53ddb4f905b256786c",
+      "source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2002/receiver_only_no_cache/rep1/result.json",
+      "status": "completed_max_updates",
+      "raw_array_check": {
+        "status": "MEASURED_ARRAY_CHECKS_ONLY",
+        "issues": [],
+        "accepted_checkpoint_checks": [
+          {
+            "iteration": 0,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 1,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 2,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 3,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 4,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 5,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 6,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 7,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 8,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 9,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 10,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 11,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 12,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 13,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 14,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 15,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 16,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 17,
+            "status": "MEASURED_FEASIBLE"
+          }
+        ],
+        "final_matches_last_safe": {
+          "status": "MEASURED_ARRAY_COMPARISON",
+          "bitwise_equal": true,
+          "max_abs_error": 0.0,
+          "relative_l2_error": 0.0,
+          "dtype_equal": true
+        }
+      },
+      "check_failures": []
+    },
+    {
+      "object": 2002,
+      "policy": "receiver_only",
+      "geometry_cache": false,
+      "repetition": 2,
+      "version": "a17.efficiency.nonlinear_transfer.v1",
+      "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+      "identity_eligible": true,
+      "driver_role": "MAIN",
+      "physics_identity": "98268ad725cd9e454ea4e6d00dc1e95ad67ab5c88adeca4a32bb0c922875673a",
+      "raw_binding_status": "HASH_BOUND_RAW_DIRECTORY",
+      "result_sha256": "6b6c164531b7024f03aaddd9a1d5a6f5e63d22d6622ba8b26df93e5a3fc1e8ac",
+      "source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2002/receiver_only_no_cache/rep2/result.json",
+      "status": "completed_max_updates",
+      "raw_array_check": {
+        "status": "MEASURED_ARRAY_CHECKS_ONLY",
+        "issues": [],
+        "accepted_checkpoint_checks": [
+          {
+            "iteration": 0,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 1,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 2,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 3,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 4,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 5,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 6,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 7,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 8,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 9,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 10,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 11,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 12,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 13,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 14,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 15,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 16,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 17,
+            "status": "MEASURED_FEASIBLE"
+          }
+        ],
+        "final_matches_last_safe": {
+          "status": "MEASURED_ARRAY_COMPARISON",
+          "bitwise_equal": true,
+          "max_abs_error": 0.0,
+          "relative_l2_error": 0.0,
+          "dtype_equal": true
+        }
+      },
+      "check_failures": []
+    },
+    {
+      "object": 2002,
+      "policy": "reuse_previous",
+      "geometry_cache": true,
+      "repetition": 0,
+      "version": "a17.efficiency.nonlinear_reuse_transfer.v1",
+      "config_sha256": "472d0749d894cc092304b8808527600cb3c9caa8085ce9480e8be06917b2a941",
+      "identity_eligible": true,
+      "driver_role": "REUSE_SECONDARY",
+      "physics_identity": "98268ad725cd9e454ea4e6d00dc1e95ad67ab5c88adeca4a32bb0c922875673a",
+      "raw_binding_status": "HASH_BOUND_RAW_DIRECTORY",
+      "result_sha256": "2302b0438a2b734492a9e7e2c99520164889e0ff844e9092748a9df8397594d4",
+      "source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2002/reuse_previous_cache/rep0/result.json",
+      "status": "completed_max_updates",
+      "raw_array_check": {
+        "status": "MEASURED_ARRAY_CHECKS_ONLY",
+        "issues": [],
+        "accepted_checkpoint_checks": [
+          {
+            "iteration": 0,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 1,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 2,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 3,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 4,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 5,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 6,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 7,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 8,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 9,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 10,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 11,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 12,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 13,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 14,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 15,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 16,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 17,
+            "status": "MEASURED_FEASIBLE"
+          }
+        ],
+        "final_matches_last_safe": {
+          "status": "MEASURED_ARRAY_COMPARISON",
+          "bitwise_equal": true,
+          "max_abs_error": 0.0,
+          "relative_l2_error": 0.0,
+          "dtype_equal": true
+        }
+      },
+      "check_failures": []
+    },
+    {
+      "object": 2002,
+      "policy": "reuse_reset3",
+      "geometry_cache": true,
+      "repetition": 0,
+      "version": "a17.efficiency.nonlinear_reuse_transfer.v1",
+      "config_sha256": "472d0749d894cc092304b8808527600cb3c9caa8085ce9480e8be06917b2a941",
+      "identity_eligible": true,
+      "driver_role": "REUSE_SECONDARY",
+      "physics_identity": "98268ad725cd9e454ea4e6d00dc1e95ad67ab5c88adeca4a32bb0c922875673a",
+      "raw_binding_status": "HASH_BOUND_RAW_DIRECTORY",
+      "result_sha256": "05f23399b923c69e3ae87257bcdbea9419d6bc59d05023b1b4cb2f131b6ae074",
+      "source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2002/reuse_reset3_cache/rep0/result.json",
+      "status": "completed_max_updates",
+      "raw_array_check": {
+        "status": "MEASURED_ARRAY_CHECKS_ONLY",
+        "issues": [],
+        "accepted_checkpoint_checks": [
+          {
+            "iteration": 0,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 1,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 2,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 3,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 4,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 5,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 6,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 7,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 8,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 9,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 10,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 11,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 12,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 13,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 14,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 15,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 16,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 17,
+            "status": "MEASURED_FEASIBLE"
+          }
+        ],
+        "final_matches_last_safe": {
+          "status": "MEASURED_ARRAY_COMPARISON",
+          "bitwise_equal": true,
+          "max_abs_error": 0.0,
+          "relative_l2_error": 0.0,
+          "dtype_equal": true
+        }
+      },
+      "check_failures": []
+    },
+    {
+      "object": 2002,
+      "policy": "top1_cap2",
+      "geometry_cache": true,
+      "repetition": 0,
+      "version": "a17.efficiency.nonlinear_transfer.v1",
+      "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+      "identity_eligible": true,
+      "driver_role": "MAIN",
+      "physics_identity": "98268ad725cd9e454ea4e6d00dc1e95ad67ab5c88adeca4a32bb0c922875673a",
+      "raw_binding_status": "HASH_BOUND_RAW_DIRECTORY",
+      "result_sha256": "332830a7f3d0c03ba114c5ec0d7972997689e5fd763f8cac2b8750fffa803184",
+      "source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2002/top1_cap2_cache/rep0/result.json",
+      "status": "completed_max_updates",
+      "raw_array_check": {
+        "status": "MEASURED_ARRAY_CHECKS_ONLY",
+        "issues": [],
+        "accepted_checkpoint_checks": [
+          {
+            "iteration": 0,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 1,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 2,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 3,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 4,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 5,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 6,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 7,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 8,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 9,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 10,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 11,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 12,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 13,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 14,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 15,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 16,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 17,
+            "status": "MEASURED_FEASIBLE"
+          }
+        ],
+        "final_matches_last_safe": {
+          "status": "MEASURED_ARRAY_COMPARISON",
+          "bitwise_equal": true,
+          "max_abs_error": 0.0,
+          "relative_l2_error": 0.0,
+          "dtype_equal": true
+        }
+      },
+      "check_failures": []
+    },
+    {
+      "object": 2002,
+      "policy": "top1_cap2",
+      "geometry_cache": true,
+      "repetition": 1,
+      "version": "a17.efficiency.nonlinear_transfer.v1",
+      "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+      "identity_eligible": true,
+      "driver_role": "MAIN",
+      "physics_identity": "98268ad725cd9e454ea4e6d00dc1e95ad67ab5c88adeca4a32bb0c922875673a",
+      "raw_binding_status": "HASH_BOUND_RAW_DIRECTORY",
+      "result_sha256": "107ecdc7f23d376b45d22375d7c08434f8bc9547a446dbde53438039132705e2",
+      "source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2002/top1_cap2_cache/rep1/result.json",
+      "status": "completed_max_updates",
+      "raw_array_check": {
+        "status": "MEASURED_ARRAY_CHECKS_ONLY",
+        "issues": [],
+        "accepted_checkpoint_checks": [
+          {
+            "iteration": 0,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 1,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 2,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 3,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 4,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 5,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 6,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 7,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 8,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 9,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 10,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 11,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 12,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 13,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 14,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 15,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 16,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 17,
+            "status": "MEASURED_FEASIBLE"
+          }
+        ],
+        "final_matches_last_safe": {
+          "status": "MEASURED_ARRAY_COMPARISON",
+          "bitwise_equal": true,
+          "max_abs_error": 0.0,
+          "relative_l2_error": 0.0,
+          "dtype_equal": true
+        }
+      },
+      "check_failures": []
+    },
+    {
+      "object": 2002,
+      "policy": "top1_cap2",
+      "geometry_cache": true,
+      "repetition": 2,
+      "version": "a17.efficiency.nonlinear_transfer.v1",
+      "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+      "identity_eligible": true,
+      "driver_role": "MAIN",
+      "physics_identity": "98268ad725cd9e454ea4e6d00dc1e95ad67ab5c88adeca4a32bb0c922875673a",
+      "raw_binding_status": "HASH_BOUND_RAW_DIRECTORY",
+      "result_sha256": "279f41fc1af9320c2ee928c22f9b560788543479c141444fa0895f1ed96309ad",
+      "source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2002/top1_cap2_cache/rep2/result.json",
+      "status": "completed_max_updates",
+      "raw_array_check": {
+        "status": "MEASURED_ARRAY_CHECKS_ONLY",
+        "issues": [],
+        "accepted_checkpoint_checks": [
+          {
+            "iteration": 0,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 1,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 2,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 3,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 4,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 5,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 6,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 7,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 8,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 9,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 10,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 11,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 12,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 13,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 14,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 15,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 16,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 17,
+            "status": "MEASURED_FEASIBLE"
+          }
+        ],
+        "final_matches_last_safe": {
+          "status": "MEASURED_ARRAY_COMPARISON",
+          "bitwise_equal": true,
+          "max_abs_error": 0.0,
+          "relative_l2_error": 0.0,
+          "dtype_equal": true
+        }
+      },
+      "check_failures": []
+    },
+    {
+      "object": 2009,
+      "policy": "original_top2_cap3",
+      "geometry_cache": true,
+      "repetition": 0,
+      "version": "a17.efficiency.nonlinear_transfer.v1",
+      "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+      "identity_eligible": true,
+      "driver_role": "MAIN",
+      "physics_identity": "98268ad725cd9e454ea4e6d00dc1e95ad67ab5c88adeca4a32bb0c922875673a",
+      "raw_binding_status": "HASH_BOUND_RAW_DIRECTORY",
+      "result_sha256": "b72280487bff4cf2617f32bf0d2e6c0bca323446605a36e606fde4b29cb5b391",
+      "source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2009/original_top2_cap3_cache/rep0/result.json",
+      "status": "completed_max_updates",
+      "raw_array_check": {
+        "status": "MEASURED_ARRAY_CHECKS_ONLY",
+        "issues": [],
+        "accepted_checkpoint_checks": [
+          {
+            "iteration": 0,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 1,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 2,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 3,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 4,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 5,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 6,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 7,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 8,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 9,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 10,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 11,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 12,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 13,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 14,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 15,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 16,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 17,
+            "status": "MEASURED_FEASIBLE"
+          }
+        ],
+        "final_matches_last_safe": {
+          "status": "MEASURED_ARRAY_COMPARISON",
+          "bitwise_equal": true,
+          "max_abs_error": 0.0,
+          "relative_l2_error": 0.0,
+          "dtype_equal": true
+        }
+      },
+      "check_failures": []
+    },
+    {
+      "object": 2009,
+      "policy": "original_top2_cap3",
+      "geometry_cache": true,
+      "repetition": 1,
+      "version": "a17.efficiency.nonlinear_transfer.v1",
+      "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+      "identity_eligible": true,
+      "driver_role": "MAIN",
+      "physics_identity": "98268ad725cd9e454ea4e6d00dc1e95ad67ab5c88adeca4a32bb0c922875673a",
+      "raw_binding_status": "HASH_BOUND_RAW_DIRECTORY",
+      "result_sha256": "9a1713dea1b91d0597b593fdfbbd91deab2313a891a195c4ee51e388d78b36ac",
+      "source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2009/original_top2_cap3_cache/rep1/result.json",
+      "status": "completed_max_updates",
+      "raw_array_check": {
+        "status": "MEASURED_ARRAY_CHECKS_ONLY",
+        "issues": [],
+        "accepted_checkpoint_checks": [
+          {
+            "iteration": 0,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 1,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 2,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 3,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 4,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 5,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 6,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 7,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 8,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 9,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 10,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 11,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 12,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 13,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 14,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 15,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 16,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 17,
+            "status": "MEASURED_FEASIBLE"
+          }
+        ],
+        "final_matches_last_safe": {
+          "status": "MEASURED_ARRAY_COMPARISON",
+          "bitwise_equal": true,
+          "max_abs_error": 0.0,
+          "relative_l2_error": 0.0,
+          "dtype_equal": true
+        }
+      },
+      "check_failures": []
+    },
+    {
+      "object": 2009,
+      "policy": "original_top2_cap3",
+      "geometry_cache": true,
+      "repetition": 2,
+      "version": "a17.efficiency.nonlinear_transfer.v1",
+      "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+      "identity_eligible": true,
+      "driver_role": "MAIN",
+      "physics_identity": "98268ad725cd9e454ea4e6d00dc1e95ad67ab5c88adeca4a32bb0c922875673a",
+      "raw_binding_status": "HASH_BOUND_RAW_DIRECTORY",
+      "result_sha256": "fb6daffa2e519480cc81304f4874c1c652754149ebcfced4688ad59ffdba5878",
+      "source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2009/original_top2_cap3_cache/rep2/result.json",
+      "status": "completed_max_updates",
+      "raw_array_check": {
+        "status": "MEASURED_ARRAY_CHECKS_ONLY",
+        "issues": [],
+        "accepted_checkpoint_checks": [
+          {
+            "iteration": 0,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 1,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 2,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 3,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 4,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 5,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 6,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 7,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 8,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 9,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 10,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 11,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 12,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 13,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 14,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 15,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 16,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 17,
+            "status": "MEASURED_FEASIBLE"
+          }
+        ],
+        "final_matches_last_safe": {
+          "status": "MEASURED_ARRAY_COMPARISON",
+          "bitwise_equal": true,
+          "max_abs_error": 0.0,
+          "relative_l2_error": 0.0,
+          "dtype_equal": true
+        }
+      },
+      "check_failures": []
+    },
+    {
+      "object": 2009,
+      "policy": "original_top2_cap3",
+      "geometry_cache": false,
+      "repetition": 0,
+      "version": "a17.efficiency.nonlinear_transfer.v1",
+      "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+      "identity_eligible": true,
+      "driver_role": "MAIN",
+      "physics_identity": "98268ad725cd9e454ea4e6d00dc1e95ad67ab5c88adeca4a32bb0c922875673a",
+      "raw_binding_status": "HASH_BOUND_RAW_DIRECTORY",
+      "result_sha256": "46a5cabbd5400bfce09b4b522d7bda426f42412ef0ce1b6a4fb45c110c22e61f",
+      "source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2009/original_top2_cap3_no_cache/rep0/result.json",
+      "status": "completed_max_updates",
+      "raw_array_check": {
+        "status": "MEASURED_ARRAY_CHECKS_ONLY",
+        "issues": [],
+        "accepted_checkpoint_checks": [
+          {
+            "iteration": 0,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 1,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 2,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 3,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 4,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 5,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 6,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 7,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 8,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 9,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 10,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 11,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 12,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 13,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 14,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 15,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 16,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 17,
+            "status": "MEASURED_FEASIBLE"
+          }
+        ],
+        "final_matches_last_safe": {
+          "status": "MEASURED_ARRAY_COMPARISON",
+          "bitwise_equal": true,
+          "max_abs_error": 0.0,
+          "relative_l2_error": 0.0,
+          "dtype_equal": true
+        }
+      },
+      "check_failures": []
+    },
+    {
+      "object": 2009,
+      "policy": "original_top2_cap3",
+      "geometry_cache": false,
+      "repetition": 1,
+      "version": "a17.efficiency.nonlinear_transfer.v1",
+      "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+      "identity_eligible": true,
+      "driver_role": "MAIN",
+      "physics_identity": "98268ad725cd9e454ea4e6d00dc1e95ad67ab5c88adeca4a32bb0c922875673a",
+      "raw_binding_status": "HASH_BOUND_RAW_DIRECTORY",
+      "result_sha256": "3266aaea3cbcbc824d6aa41df820d9457d3f4012c848dd43f0b77ac1a8b82049",
+      "source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2009/original_top2_cap3_no_cache/rep1/result.json",
+      "status": "completed_max_updates",
+      "raw_array_check": {
+        "status": "MEASURED_ARRAY_CHECKS_ONLY",
+        "issues": [],
+        "accepted_checkpoint_checks": [
+          {
+            "iteration": 0,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 1,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 2,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 3,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 4,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 5,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 6,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 7,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 8,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 9,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 10,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 11,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 12,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 13,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 14,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 15,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 16,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 17,
+            "status": "MEASURED_FEASIBLE"
+          }
+        ],
+        "final_matches_last_safe": {
+          "status": "MEASURED_ARRAY_COMPARISON",
+          "bitwise_equal": true,
+          "max_abs_error": 0.0,
+          "relative_l2_error": 0.0,
+          "dtype_equal": true
+        }
+      },
+      "check_failures": []
+    },
+    {
+      "object": 2009,
+      "policy": "original_top2_cap3",
+      "geometry_cache": false,
+      "repetition": 2,
+      "version": "a17.efficiency.nonlinear_transfer.v1",
+      "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+      "identity_eligible": true,
+      "driver_role": "MAIN",
+      "physics_identity": "98268ad725cd9e454ea4e6d00dc1e95ad67ab5c88adeca4a32bb0c922875673a",
+      "raw_binding_status": "HASH_BOUND_RAW_DIRECTORY",
+      "result_sha256": "403480030b9bcaa18c5045eadce1b83b2b1eaba18f7953cbacefc6e94a3e6e69",
+      "source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2009/original_top2_cap3_no_cache/rep2/result.json",
+      "status": "completed_max_updates",
+      "raw_array_check": {
+        "status": "MEASURED_ARRAY_CHECKS_ONLY",
+        "issues": [],
+        "accepted_checkpoint_checks": [
+          {
+            "iteration": 0,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 1,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 2,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 3,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 4,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 5,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 6,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 7,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 8,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 9,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 10,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 11,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 12,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 13,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 14,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 15,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 16,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 17,
+            "status": "MEASURED_FEASIBLE"
+          }
+        ],
+        "final_matches_last_safe": {
+          "status": "MEASURED_ARRAY_COMPARISON",
+          "bitwise_equal": true,
+          "max_abs_error": 0.0,
+          "relative_l2_error": 0.0,
+          "dtype_equal": true
+        }
+      },
+      "check_failures": []
+    },
+    {
+      "object": 2009,
+      "policy": "receiver_only",
+      "geometry_cache": false,
+      "repetition": 0,
+      "version": "a17.efficiency.nonlinear_transfer.v1",
+      "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+      "identity_eligible": true,
+      "driver_role": "MAIN",
+      "physics_identity": "98268ad725cd9e454ea4e6d00dc1e95ad67ab5c88adeca4a32bb0c922875673a",
+      "raw_binding_status": "HASH_BOUND_RAW_DIRECTORY",
+      "result_sha256": "b5ff2e94c58253441eaa10b33d937724d8e354be1f14a35227f6ade4cb9ded91",
+      "source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2009/receiver_only_no_cache/rep0/result.json",
+      "status": "completed_max_updates",
+      "raw_array_check": {
+        "status": "MEASURED_ARRAY_CHECKS_ONLY",
+        "issues": [],
+        "accepted_checkpoint_checks": [
+          {
+            "iteration": 0,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 1,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 2,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 3,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 4,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 5,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 6,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 7,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 8,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 9,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 10,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 11,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 12,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 13,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 14,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 15,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 16,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 17,
+            "status": "MEASURED_FEASIBLE"
+          }
+        ],
+        "final_matches_last_safe": {
+          "status": "MEASURED_ARRAY_COMPARISON",
+          "bitwise_equal": true,
+          "max_abs_error": 0.0,
+          "relative_l2_error": 0.0,
+          "dtype_equal": true
+        }
+      },
+      "check_failures": []
+    },
+    {
+      "object": 2009,
+      "policy": "receiver_only",
+      "geometry_cache": false,
+      "repetition": 1,
+      "version": "a17.efficiency.nonlinear_transfer.v1",
+      "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+      "identity_eligible": true,
+      "driver_role": "MAIN",
+      "physics_identity": "98268ad725cd9e454ea4e6d00dc1e95ad67ab5c88adeca4a32bb0c922875673a",
+      "raw_binding_status": "HASH_BOUND_RAW_DIRECTORY",
+      "result_sha256": "ee8759b02829c224cbf57a1e627d9d4e8b9717cbb3508757cbb252803ea8a4f3",
+      "source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2009/receiver_only_no_cache/rep1/result.json",
+      "status": "completed_max_updates",
+      "raw_array_check": {
+        "status": "MEASURED_ARRAY_CHECKS_ONLY",
+        "issues": [],
+        "accepted_checkpoint_checks": [
+          {
+            "iteration": 0,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 1,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 2,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 3,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 4,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 5,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 6,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 7,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 8,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 9,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 10,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 11,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 12,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 13,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 14,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 15,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 16,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 17,
+            "status": "MEASURED_FEASIBLE"
+          }
+        ],
+        "final_matches_last_safe": {
+          "status": "MEASURED_ARRAY_COMPARISON",
+          "bitwise_equal": true,
+          "max_abs_error": 0.0,
+          "relative_l2_error": 0.0,
+          "dtype_equal": true
+        }
+      },
+      "check_failures": []
+    },
+    {
+      "object": 2009,
+      "policy": "receiver_only",
+      "geometry_cache": false,
+      "repetition": 2,
+      "version": "a17.efficiency.nonlinear_transfer.v1",
+      "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+      "identity_eligible": true,
+      "driver_role": "MAIN",
+      "physics_identity": "98268ad725cd9e454ea4e6d00dc1e95ad67ab5c88adeca4a32bb0c922875673a",
+      "raw_binding_status": "HASH_BOUND_RAW_DIRECTORY",
+      "result_sha256": "5aaa6ef44d5d3c4438163d09fc4fef7a96c6d5f9dc6994e54e1a8fb99c797af3",
+      "source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2009/receiver_only_no_cache/rep2/result.json",
+      "status": "completed_max_updates",
+      "raw_array_check": {
+        "status": "MEASURED_ARRAY_CHECKS_ONLY",
+        "issues": [],
+        "accepted_checkpoint_checks": [
+          {
+            "iteration": 0,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 1,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 2,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 3,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 4,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 5,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 6,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 7,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 8,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 9,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 10,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 11,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 12,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 13,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 14,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 15,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 16,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 17,
+            "status": "MEASURED_FEASIBLE"
+          }
+        ],
+        "final_matches_last_safe": {
+          "status": "MEASURED_ARRAY_COMPARISON",
+          "bitwise_equal": true,
+          "max_abs_error": 0.0,
+          "relative_l2_error": 0.0,
+          "dtype_equal": true
+        }
+      },
+      "check_failures": []
+    },
+    {
+      "object": 2009,
+      "policy": "reuse_previous",
+      "geometry_cache": true,
+      "repetition": 0,
+      "version": "a17.efficiency.nonlinear_reuse_transfer.v1",
+      "config_sha256": "472d0749d894cc092304b8808527600cb3c9caa8085ce9480e8be06917b2a941",
+      "identity_eligible": true,
+      "driver_role": "REUSE_SECONDARY",
+      "physics_identity": "98268ad725cd9e454ea4e6d00dc1e95ad67ab5c88adeca4a32bb0c922875673a",
+      "raw_binding_status": "HASH_BOUND_RAW_DIRECTORY",
+      "result_sha256": "ebeb22796dd2a6823374c66610f8fc6208e9f250b89d4133d5d025d5666bb625",
+      "source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2009/reuse_previous_cache/rep0/result.json",
+      "status": "completed_max_updates",
+      "raw_array_check": {
+        "status": "MEASURED_ARRAY_CHECKS_ONLY",
+        "issues": [],
+        "accepted_checkpoint_checks": [
+          {
+            "iteration": 0,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 1,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 2,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 3,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 4,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 5,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 6,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 7,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 8,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 9,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 10,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 11,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 12,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 13,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 14,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 15,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 16,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 17,
+            "status": "MEASURED_FEASIBLE"
+          }
+        ],
+        "final_matches_last_safe": {
+          "status": "MEASURED_ARRAY_COMPARISON",
+          "bitwise_equal": true,
+          "max_abs_error": 0.0,
+          "relative_l2_error": 0.0,
+          "dtype_equal": true
+        }
+      },
+      "check_failures": []
+    },
+    {
+      "object": 2009,
+      "policy": "reuse_reset3",
+      "geometry_cache": true,
+      "repetition": 0,
+      "version": "a17.efficiency.nonlinear_reuse_transfer.v1",
+      "config_sha256": "472d0749d894cc092304b8808527600cb3c9caa8085ce9480e8be06917b2a941",
+      "identity_eligible": true,
+      "driver_role": "REUSE_SECONDARY",
+      "physics_identity": "98268ad725cd9e454ea4e6d00dc1e95ad67ab5c88adeca4a32bb0c922875673a",
+      "raw_binding_status": "HASH_BOUND_RAW_DIRECTORY",
+      "result_sha256": "1a1f03071ed6318c9871cd417762ca60d873a940ef69fdee5f83cc6fd8648ef3",
+      "source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2009/reuse_reset3_cache/rep0/result.json",
+      "status": "completed_max_updates",
+      "raw_array_check": {
+        "status": "MEASURED_ARRAY_CHECKS_ONLY",
+        "issues": [],
+        "accepted_checkpoint_checks": [
+          {
+            "iteration": 0,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 1,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 2,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 3,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 4,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 5,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 6,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 7,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 8,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 9,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 10,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 11,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 12,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 13,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 14,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 15,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 16,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 17,
+            "status": "MEASURED_FEASIBLE"
+          }
+        ],
+        "final_matches_last_safe": {
+          "status": "MEASURED_ARRAY_COMPARISON",
+          "bitwise_equal": true,
+          "max_abs_error": 0.0,
+          "relative_l2_error": 0.0,
+          "dtype_equal": true
+        }
+      },
+      "check_failures": []
+    },
+    {
+      "object": 2009,
+      "policy": "top1_cap2",
+      "geometry_cache": true,
+      "repetition": 0,
+      "version": "a17.efficiency.nonlinear_transfer.v1",
+      "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+      "identity_eligible": true,
+      "driver_role": "MAIN",
+      "physics_identity": "98268ad725cd9e454ea4e6d00dc1e95ad67ab5c88adeca4a32bb0c922875673a",
+      "raw_binding_status": "HASH_BOUND_RAW_DIRECTORY",
+      "result_sha256": "249336d3e6be1dbd182f342612f91a6a035d032f430c9448f3bfaf6b7ed24bda",
+      "source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2009/top1_cap2_cache/rep0/result.json",
+      "status": "completed_max_updates",
+      "raw_array_check": {
+        "status": "MEASURED_ARRAY_CHECKS_ONLY",
+        "issues": [],
+        "accepted_checkpoint_checks": [
+          {
+            "iteration": 0,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 1,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 2,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 3,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 4,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 5,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 6,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 7,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 8,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 9,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 10,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 11,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 12,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 13,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 14,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 15,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 16,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 17,
+            "status": "MEASURED_FEASIBLE"
+          }
+        ],
+        "final_matches_last_safe": {
+          "status": "MEASURED_ARRAY_COMPARISON",
+          "bitwise_equal": true,
+          "max_abs_error": 0.0,
+          "relative_l2_error": 0.0,
+          "dtype_equal": true
+        }
+      },
+      "check_failures": []
+    },
+    {
+      "object": 2009,
+      "policy": "top1_cap2",
+      "geometry_cache": true,
+      "repetition": 1,
+      "version": "a17.efficiency.nonlinear_transfer.v1",
+      "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+      "identity_eligible": true,
+      "driver_role": "MAIN",
+      "physics_identity": "98268ad725cd9e454ea4e6d00dc1e95ad67ab5c88adeca4a32bb0c922875673a",
+      "raw_binding_status": "HASH_BOUND_RAW_DIRECTORY",
+      "result_sha256": "77e26c72ae57609f6745b31d1e96c80f204a89a500a9ab13b197257d257d56f8",
+      "source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2009/top1_cap2_cache/rep1/result.json",
+      "status": "completed_max_updates",
+      "raw_array_check": {
+        "status": "MEASURED_ARRAY_CHECKS_ONLY",
+        "issues": [],
+        "accepted_checkpoint_checks": [
+          {
+            "iteration": 0,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 1,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 2,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 3,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 4,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 5,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 6,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 7,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 8,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 9,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 10,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 11,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 12,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 13,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 14,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 15,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 16,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 17,
+            "status": "MEASURED_FEASIBLE"
+          }
+        ],
+        "final_matches_last_safe": {
+          "status": "MEASURED_ARRAY_COMPARISON",
+          "bitwise_equal": true,
+          "max_abs_error": 0.0,
+          "relative_l2_error": 0.0,
+          "dtype_equal": true
+        }
+      },
+      "check_failures": []
+    },
+    {
+      "object": 2009,
+      "policy": "top1_cap2",
+      "geometry_cache": true,
+      "repetition": 2,
+      "version": "a17.efficiency.nonlinear_transfer.v1",
+      "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+      "identity_eligible": true,
+      "driver_role": "MAIN",
+      "physics_identity": "98268ad725cd9e454ea4e6d00dc1e95ad67ab5c88adeca4a32bb0c922875673a",
+      "raw_binding_status": "HASH_BOUND_RAW_DIRECTORY",
+      "result_sha256": "a38abe75dd22fab152618899cb4bfc70fb796e9aa9f30675e2a6fd7ce64afd32",
+      "source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2009/top1_cap2_cache/rep2/result.json",
+      "status": "completed_max_updates",
+      "raw_array_check": {
+        "status": "MEASURED_ARRAY_CHECKS_ONLY",
+        "issues": [],
+        "accepted_checkpoint_checks": [
+          {
+            "iteration": 0,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 1,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 2,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 3,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 4,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 5,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 6,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 7,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 8,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 9,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 10,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 11,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 12,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 13,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 14,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 15,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 16,
+            "status": "MEASURED_FEASIBLE"
+          },
+          {
+            "iteration": 17,
+            "status": "MEASURED_FEASIBLE"
+          }
+        ],
+        "final_matches_last_safe": {
+          "status": "MEASURED_ARRAY_COMPARISON",
+          "bitwise_equal": true,
+          "max_abs_error": 0.0,
+          "relative_l2_error": 0.0,
+          "dtype_equal": true
+        }
+      },
+      "check_failures": []
+    }
+  ],
+  "same_physics_comparison_count": 34,
+  "comparison_class_counts": {
+    "EXPLICIT_CROSS_VERSION_SAME_PHYSICS_REP_SECONDARY_NO_INDEPENDENT_VALIDATION": 10,
+    "SAME_MAIN_VERSION_PHYSICS_REP": 24
+  },
+  "physics_identity_count": 1,
+  "cached_original_pair_count": 6,
+  "cached_original_array_equivalence": [
+    {
+      "object": 2002,
+      "repetition": 0,
+      "version": "a17.efficiency.nonlinear_transfer.v1",
+      "cached_source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2002/original_top2_cap3_cache/rep0/result.json",
+      "uncached_source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2002/original_top2_cap3_no_cache/rep0/result.json",
+      "cached_result_sha256": "03d1cea9d1c2187f45c8bce78b82d2124e0c729223f575ac586d0e1f9b12de12",
+      "uncached_result_sha256": "2f724362b4f4d70b5adafa8be2fbbf9a1838a15f09a03ce60269a16717b8bb4c",
+      "status": "MEASURED_ARRAY_COMPARISONS_ONLY",
+      "issues": [],
+      "array_comparison_summary": {
+        "member_count": 211,
+        "status_counts": {
+          "MEASURED_ARRAY_COMPARISON": 211
+        },
+        "bitwise_equal_count": 211,
+        "dtype_equal_count": 211,
+        "max_abs_error": 0.0,
+        "max_relative_l2_error": 0.0
+      }
+    },
+    {
+      "object": 2002,
+      "repetition": 1,
+      "version": "a17.efficiency.nonlinear_transfer.v1",
+      "cached_source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2002/original_top2_cap3_cache/rep1/result.json",
+      "uncached_source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2002/original_top2_cap3_no_cache/rep1/result.json",
+      "cached_result_sha256": "6705050fa9f7141392c4dbc74ec69d984ffe708725195834bd9b057edb3f6f77",
+      "uncached_result_sha256": "f634339f574817171c358f4f0cbbb86248631ca8d6699b6f94c54a1d9421e667",
+      "status": "MEASURED_ARRAY_COMPARISONS_ONLY",
+      "issues": [],
+      "array_comparison_summary": {
+        "member_count": 211,
+        "status_counts": {
+          "MEASURED_ARRAY_COMPARISON": 211
+        },
+        "bitwise_equal_count": 211,
+        "dtype_equal_count": 211,
+        "max_abs_error": 0.0,
+        "max_relative_l2_error": 0.0
+      }
+    },
+    {
+      "object": 2002,
+      "repetition": 2,
+      "version": "a17.efficiency.nonlinear_transfer.v1",
+      "cached_source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2002/original_top2_cap3_cache/rep2/result.json",
+      "uncached_source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2002/original_top2_cap3_no_cache/rep2/result.json",
+      "cached_result_sha256": "1baf42752f87d1b55ef874e01e7faacd574cd750808988ea279391a2321e24e7",
+      "uncached_result_sha256": "32ae2c5d2984b1a25fbf4f87739ca7de1afec4076f631f2f9b191a669f2ef30d",
+      "status": "MEASURED_ARRAY_COMPARISONS_ONLY",
+      "issues": [],
+      "array_comparison_summary": {
+        "member_count": 211,
+        "status_counts": {
+          "MEASURED_ARRAY_COMPARISON": 211
+        },
+        "bitwise_equal_count": 211,
+        "dtype_equal_count": 211,
+        "max_abs_error": 0.0,
+        "max_relative_l2_error": 0.0
+      }
+    },
+    {
+      "object": 2009,
+      "repetition": 0,
+      "version": "a17.efficiency.nonlinear_transfer.v1",
+      "cached_source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2009/original_top2_cap3_cache/rep0/result.json",
+      "uncached_source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2009/original_top2_cap3_no_cache/rep0/result.json",
+      "cached_result_sha256": "b72280487bff4cf2617f32bf0d2e6c0bca323446605a36e606fde4b29cb5b391",
+      "uncached_result_sha256": "46a5cabbd5400bfce09b4b522d7bda426f42412ef0ce1b6a4fb45c110c22e61f",
+      "status": "MEASURED_ARRAY_COMPARISONS_ONLY",
+      "issues": [],
+      "array_comparison_summary": {
+        "member_count": 225,
+        "status_counts": {
+          "MEASURED_ARRAY_COMPARISON": 225
+        },
+        "bitwise_equal_count": 225,
+        "dtype_equal_count": 225,
+        "max_abs_error": 0.0,
+        "max_relative_l2_error": 0.0
+      }
+    },
+    {
+      "object": 2009,
+      "repetition": 1,
+      "version": "a17.efficiency.nonlinear_transfer.v1",
+      "cached_source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2009/original_top2_cap3_cache/rep1/result.json",
+      "uncached_source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2009/original_top2_cap3_no_cache/rep1/result.json",
+      "cached_result_sha256": "9a1713dea1b91d0597b593fdfbbd91deab2313a891a195c4ee51e388d78b36ac",
+      "uncached_result_sha256": "3266aaea3cbcbc824d6aa41df820d9457d3f4012c848dd43f0b77ac1a8b82049",
+      "status": "MEASURED_ARRAY_COMPARISONS_ONLY",
+      "issues": [],
+      "array_comparison_summary": {
+        "member_count": 225,
+        "status_counts": {
+          "MEASURED_ARRAY_COMPARISON": 225
+        },
+        "bitwise_equal_count": 225,
+        "dtype_equal_count": 225,
+        "max_abs_error": 0.0,
+        "max_relative_l2_error": 0.0
+      }
+    },
+    {
+      "object": 2009,
+      "repetition": 2,
+      "version": "a17.efficiency.nonlinear_transfer.v1",
+      "cached_source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2009/original_top2_cap3_cache/rep2/result.json",
+      "uncached_source": "evidence/final_snapshot/results/nonlinear_transfer_v1/object_2009/original_top2_cap3_no_cache/rep2/result.json",
+      "cached_result_sha256": "fb6daffa2e519480cc81304f4874c1c652754149ebcfced4688ad59ffdba5878",
+      "uncached_result_sha256": "403480030b9bcaa18c5045eadce1b83b2b1eaba18f7953cbacefc6e94a3e6e69",
+      "status": "MEASURED_ARRAY_COMPARISONS_ONLY",
+      "issues": [],
+      "array_comparison_summary": {
+        "member_count": 225,
+        "status_counts": {
+          "MEASURED_ARRAY_COMPARISON": 225
+        },
+        "bitwise_equal_count": 225,
+        "dtype_equal_count": 225,
+        "max_abs_error": 0.0,
+        "max_relative_l2_error": 0.0
+      }
+    }
+  ],
+  "input_manifest_count": 4183,
+  "detail_scope": "Per-member repeated comparisons omitted; complete run and comparison numerical summaries retained in owner_nonlinear_v2 tables; original full audit hash bound, payload not distributed."
+}

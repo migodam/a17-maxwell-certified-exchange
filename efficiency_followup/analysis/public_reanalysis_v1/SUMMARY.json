@@ -1,0 +1,578 @@
+{
+  "schema": "a17-public-reanalysis-projection-v1",
+  "scope": "Compact evidence/reanalysis metadata; no scientific verdict, numerical launch, package build or self-contained GPU replay.",
+  "source_namespace_mapping": [
+    {
+      "source_anchor": "final collection raw evidence root",
+      "relative_namespace": "evidence/final_snapshot"
+    },
+    {
+      "source_anchor": "final collection root",
+      "relative_namespace": "evidence/final_collection"
+    },
+    {
+      "source_anchor": "EFFICIENCY_R1 root",
+      "relative_namespace": "evidence/efficiency"
+    },
+    {
+      "source_anchor": "Inv_SLAM root",
+      "relative_namespace": "evidence/project"
+    }
+  ],
+  "mapping_rule": "Longest declared path prefix; string equality or prefix plus slash; suffix copied unchanged. Paths identify hash-bound evidence, not distributed payload. Absolute prefixes recorded only in local generator, never public metadata. No regex executable cleaning.",
+  "inputs": {
+    "evidence/efficiency/analysis/derived_v3/analysis_receipt.json": {
+      "sha256": "2833213c2f7fd6ea5c13cbad7eae595ced73185a7cf90bfa78c39a9b1b38e589",
+      "bytes": 1228
+    },
+    "evidence/efficiency/analysis/derived_v3/availability.json": {
+      "sha256": "cdc80446188031240316f21e2cac22570e5325167114a2eea06217b747a1fbb1",
+      "bytes": 26713
+    },
+    "evidence/efficiency/analysis/derived_v3/cache_branch_records.json": {
+      "sha256": "3ff7105c7cbc62bf0d89d75a4a5e42f5c943c9ca69e94eec4a9dfb6245ba67ed",
+      "bytes": 885119
+    },
+    "evidence/efficiency/analysis/derived_v3/conflicts.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    "evidence/efficiency/analysis/derived_v3/cost_components.json": {
+      "sha256": "36f57d3408a5edf6fb370e03e10ed86889294510989e64d45e8f45994277991a",
+      "bytes": 735698
+    },
+    "evidence/efficiency/analysis/derived_v3/duplicate_snapshots.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    "evidence/efficiency/analysis/derived_v3/frozen_cells.json": {
+      "sha256": "f444098641e779eb60fa3d92542d3a9b8a70a71941b59c46cf99c7dc085540a6",
+      "bytes": 166944
+    },
+    "evidence/efficiency/analysis/derived_v3/frozen_object_policy.json": {
+      "sha256": "c2e329b76354f4ef0c383eda5118b0f54c5e2506ba038e4e0cc93f79bbd1c22b",
+      "bytes": 8245
+    },
+    "evidence/efficiency/analysis/derived_v3/input_manifest.json": {
+      "sha256": "35d2b6c14148aa9dc3f2d291bc93d6c6164c656d958941ed872a2bd743d7f325",
+      "bytes": 93178
+    },
+    "evidence/efficiency/analysis/derived_v3/nonlinear_identity_audit.json": {
+      "sha256": "e159dc5bf3acf4876d2034255e0b2d4f771fb30b53f19df1156684253c9e7714",
+      "bytes": 43925
+    },
+    "evidence/efficiency/analysis/derived_v3/nonlinear_matched_summary.json": {
+      "sha256": "5ae72e2d7a0b89c526e085ee9fe9cdedbaad42c4c55dad8788c8619e425534b8",
+      "bytes": 52715
+    },
+    "evidence/efficiency/analysis/derived_v3/nonlinear_runs.json": {
+      "sha256": "2c7269646d16b09a3754fa0278a25dc8d9719a34a169d0479f37ae5ad211da31",
+      "bytes": 694842
+    },
+    "evidence/efficiency/analysis/derived_v3/numerical_checks.json": {
+      "sha256": "024d8767c6ee9877e1802fe9bc5ed1beed06781bd36a4edf7ebccf512b5f5bab",
+      "bytes": 57386
+    },
+    "evidence/efficiency/analysis/derived_v3/occupation_receipts.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    "evidence/efficiency/analysis/derived_v3/profile_runs.json": {
+      "sha256": "1649059e64dcc5ede5ef6c75e44cfd347a9285652eefb02c9d778a0276d8b1aa",
+      "bytes": 13358
+    },
+    "evidence/efficiency/analysis/derived_v3/verification_block_controls.json": {
+      "sha256": "f4f293f76d358966d24d74b99fd50606e566961da1476e6cc41d4cd82f84595a",
+      "bytes": 27207
+    },
+    "evidence/efficiency/analysis/owner_nonlinear_v2/FINAL_DTYPE_CHECK.json": {
+      "sha256": "6e06794ecf0248dd8f7dfbfb66e63b64d93e9ed298efb9b9d6b5ee20e5e158c9",
+      "bytes": 11645
+    },
+    "evidence/efficiency/analysis/owner_nonlinear_v2/comparisons.json": {
+      "sha256": "be8879d36af4db50753e31123cfae3028e975bbbc7f76ca899a6695e9ee547ab",
+      "bytes": 45918
+    },
+    "evidence/efficiency/analysis/owner_nonlinear_v2/identity_issues.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    "evidence/efficiency/analysis/owner_nonlinear_v2/input_manifest.json": {
+      "sha256": "3f5644ad190f8994907a9cedc044319088f16b0ac3d0885b3c0ed4de5844dd73",
+      "bytes": 1451338
+    },
+    "evidence/efficiency/analysis/owner_nonlinear_v2/runs.json": {
+      "sha256": "8d319726f617cae336efd87079bf78caed176a0c769aabe49c2d836229c00240",
+      "bytes": 153013
+    },
+    "evidence/efficiency/analysis/final_cost_v2/BUDGET_RECEIPT.json": {
+      "sha256": "23fe2d791775eee8f445b4cd5a6bde2b8fc890063c78d2f34af4a38dbe7d033e",
+      "bytes": 1004
+    },
+    "evidence/efficiency/analysis/final_cost_v2/attempts.json": {
+      "sha256": "aec1ec8dc476e9c0a029b96caeae4f9565592062d2ea18f83a1749f678c3e138",
+      "bytes": 43243
+    },
+    "evidence/efficiency/analysis/final_cost_v2/failures_and_open.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    "evidence/efficiency/analysis/final_cost_v2/guard_fees.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    "evidence/efficiency/analysis/final_cost_v2/input_bindings.json": {
+      "sha256": "c92a9cfbcff53215eacf36563fd5845314a69c1389cf376cc18e2dea01e911f4",
+      "bytes": 1025
+    },
+    "evidence/efficiency/analysis/final_cost_v2/unit_costs.json": {
+      "sha256": "c71ec100be562566e2440990175c837112f02fdfa21e35a03ad923cad0aa91ff",
+      "bytes": 15047
+    },
+    "evidence/efficiency/analysis/owner_nonlinear_v2/AUDIT.json": {
+      "sha256": "73496a3c2fd192631fe7a27a8183851788fd7a58f2187e1717a7ae27c47795cc",
+      "bytes": 2062487
+    },
+    "evidence/efficiency/analysis/owner_nonlinear_v2/cached_original_array_equivalence.json": {
+      "sha256": "bb8d958969e05f665da05ccb24bdbcf55824549b7b8c31ecdb3dd7cf438b7e0c",
+      "bytes": 337338
+    },
+    "evidence/final_collection/FINAL_EVIDENCE_SUMMARY_V2.json": {
+      "sha256": "a706587bf73636c97a3166848388391c85c2df2248ea5f417108d7bc7b8e5e3b",
+      "bytes": 3179025
+    },
+    "evidence/efficiency/research/IMMUTABLE_DEPENDENCY_CLONE_RECEIPT.json": {
+      "sha256": "ec445073cf855378f5dbfe97aab1bc5b25e3f57f0a95118cf77f6bfb98d1c833",
+      "bytes": 12207
+    }
+  },
+  "outputs": {
+    "derived_v3/analysis_receipt.json": {
+      "sha256": "1a54fa3c072c876e6805978c60fe3703e6098ed233b70f66c613c10a30fd0ab1",
+      "bytes": 1126
+    },
+    "derived_v3/availability.json": {
+      "sha256": "cdc80446188031240316f21e2cac22570e5325167114a2eea06217b747a1fbb1",
+      "bytes": 26713
+    },
+    "derived_v3/availability.csv": {
+      "sha256": "11d9347e95d290a8f4a88246f8a90c26f5e47b195d94d52fe93afad2cb96e8b0",
+      "bytes": 11067
+    },
+    "derived_v3/cache_branch_records.json": {
+      "sha256": "94a045d44cc82a69d68a6c392df3e4826398f0862c4636489e9039b2d956b808",
+      "bytes": 803723
+    },
+    "derived_v3/cache_branch_records.csv": {
+      "sha256": "5bc69736bcd9e1d6428cf08e47331870bdb90778edf5ffa736549f96d39d88a8",
+      "bytes": 483751
+    },
+    "derived_v3/conflicts.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    "derived_v3/conflicts.csv": {
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "bytes": 2
+    },
+    "derived_v3/cost_components.json": {
+      "sha256": "2a0348d7d062bc126c8b10d51e3355c2c037ac97b3325318733ceecc753a7a31",
+      "bytes": 611694
+    },
+    "derived_v3/cost_components.csv": {
+      "sha256": "1d4ed34cadbefb6cc8210d86b047222559d941586a8f0634577360f40042a7c0",
+      "bytes": 395792
+    },
+    "derived_v3/duplicate_snapshots.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    "derived_v3/duplicate_snapshots.csv": {
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "bytes": 2
+    },
+    "derived_v3/frozen_cells.json": {
+      "sha256": "da4c41420e2dd87c03d259a1e500d53c2625f35daec64311025cd3b7c7ee7c4f",
+      "bytes": 157134
+    },
+    "derived_v3/frozen_cells.csv": {
+      "sha256": "1540a8c3cac62689e29f6684411b9b2ff233c44d2e60bd71072e263c3f73fadf",
+      "bytes": 67064
+    },
+    "derived_v3/frozen_object_policy.json": {
+      "sha256": "c2e329b76354f4ef0c383eda5118b0f54c5e2506ba038e4e0cc93f79bbd1c22b",
+      "bytes": 8245
+    },
+    "derived_v3/frozen_object_policy.csv": {
+      "sha256": "a314d769da8e2f0da15428a9f000cdd0735d727723d7b6e05b13a17831701509",
+      "bytes": 3131
+    },
+    "derived_v3/input_manifest.json": {
+      "sha256": "f736fd132695e0ff9ecdffe8f8f04a3f23d9b122b5535b1334380010491a6826",
+      "bytes": 69051
+    },
+    "derived_v3/input_manifest.csv": {
+      "sha256": "a9c08dafc3ba495b91dfc6b19bd2e669597fb0c5c2e94899027ba9e654ba8e4b",
+      "bytes": 53803
+    },
+    "derived_v3/nonlinear_identity_audit.json": {
+      "sha256": "8be442b63ef136a938f514ce181d91da9ed241a06a7501c269062aaf19a748f3",
+      "bytes": 40317
+    },
+    "derived_v3/nonlinear_identity_audit.csv": {
+      "sha256": "3f501f13edbe349207143620b9463674d2cf657bda3bac581a0d16c60ecf3a34",
+      "bytes": 26736
+    },
+    "derived_v3/nonlinear_matched_summary.json": {
+      "sha256": "5ae72e2d7a0b89c526e085ee9fe9cdedbaad42c4c55dad8788c8619e425534b8",
+      "bytes": 52715
+    },
+    "derived_v3/nonlinear_matched_summary.csv": {
+      "sha256": "ea28e401d86b3806686eb6dc5c68ca661fa396c58fd60a6b467315920d8d54ba",
+      "bytes": 15883
+    },
+    "derived_v3/nonlinear_runs.json": {
+      "sha256": "ff7064e8e545a74c0340a19738a520c725c178362bdf04125c445e40926bb6c6",
+      "bytes": 691234
+    },
+    "derived_v3/nonlinear_runs.csv": {
+      "sha256": "0579dddeffcfa57774891dd6513c6d9b480693038972a5ec4800f7e1b6bac14e",
+      "bytes": 551196
+    },
+    "derived_v3/numerical_checks.json": {
+      "sha256": "815de03bd8b4f1078e1a7a04a39cf0aba788a176b852aab166cff7d000bb3adc",
+      "bytes": 54836
+    },
+    "derived_v3/numerical_checks.csv": {
+      "sha256": "90ae154c0c8b8d1975bedc5a1a014f3a55f7a00ce5c14631ae9795d31f8987d5",
+      "bytes": 41969
+    },
+    "derived_v3/occupation_receipts.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    "derived_v3/occupation_receipts.csv": {
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "bytes": 2
+    },
+    "derived_v3/profile_runs.json": {
+      "sha256": "64b86b913e8d89dcf8dc4cd84f3a869211874f51bc2223d54b03b9d480c82947",
+      "bytes": 12848
+    },
+    "derived_v3/profile_runs.csv": {
+      "sha256": "0c642ffbd39d2dae5a10e844607a01f69620ff4578e4be5acb1d4c4b88f1aa9c",
+      "bytes": 9965
+    },
+    "derived_v3/verification_block_controls.json": {
+      "sha256": "98adad3827502f7cc1eadbdbbce2b8cd6005c37a2670e90056eb0fbcdb326738",
+      "bytes": 25371
+    },
+    "derived_v3/verification_block_controls.csv": {
+      "sha256": "1069aeee28a5d39d43c1c6b62ac878ac81f19abd83c3f0a462f4aac8d314e52d",
+      "bytes": 18155
+    },
+    "owner_nonlinear_v2/FINAL_DTYPE_CHECK.json": {
+      "sha256": "6e06794ecf0248dd8f7dfbfb66e63b64d93e9ed298efb9b9d6b5ee20e5e158c9",
+      "bytes": 11645
+    },
+    "owner_nonlinear_v2/comparisons.json": {
+      "sha256": "be8879d36af4db50753e31123cfae3028e975bbbc7f76ca899a6695e9ee547ab",
+      "bytes": 45918
+    },
+    "owner_nonlinear_v2/comparisons.csv": {
+      "sha256": "53876b0eab89ffc06ae175311066b378d1e7c310e8c2e0aa809da97b70cbdc20",
+      "bytes": 23123
+    },
+    "owner_nonlinear_v2/identity_issues.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    "owner_nonlinear_v2/identity_issues.csv": {
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "bytes": 2
+    },
+    "owner_nonlinear_v2/input_manifest.json": {
+      "sha256": "d033495c4822cdfca549550b6cb16c69b025c4a2c669d7a330ca0050af2aa1d9",
+      "bytes": 1024887
+    },
+    "owner_nonlinear_v2/input_manifest.csv": {
+      "sha256": "26dd8f7c310d04ef4086c3958d8ab307952039e297ca0465b07bc33edf73cb74",
+      "bytes": 792492
+    },
+    "owner_nonlinear_v2/runs.json": {
+      "sha256": "63eaf76e336793b5bdce3bbe31d0fc5012ce69f751471df68ce488cd75d8b4f5",
+      "bytes": 149545
+    },
+    "owner_nonlinear_v2/runs.csv": {
+      "sha256": "7f731e1f4c208d4df789d7d437ab4a0925bfca4c839da46417596dc65f377bdc",
+      "bytes": 90180
+    },
+    "final_cost_v2/BUDGET_RECEIPT.json": {
+      "sha256": "23fe2d791775eee8f445b4cd5a6bde2b8fc890063c78d2f34af4a38dbe7d033e",
+      "bytes": 1004
+    },
+    "final_cost_v2/attempts.json": {
+      "sha256": "aec1ec8dc476e9c0a029b96caeae4f9565592062d2ea18f83a1749f678c3e138",
+      "bytes": 43243
+    },
+    "final_cost_v2/attempts.csv": {
+      "sha256": "c48d3adfcba778038bba002bd3824d0a436ec421cb32c19b2cbdcecda4caa6d8",
+      "bytes": 21157
+    },
+    "final_cost_v2/failures_and_open.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    "final_cost_v2/failures_and_open.csv": {
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "bytes": 2
+    },
+    "final_cost_v2/guard_fees.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    "final_cost_v2/guard_fees.csv": {
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "bytes": 2
+    },
+    "final_cost_v2/input_bindings.json": {
+      "sha256": "c3455b4e5f631d71f69cd3aab1771b3c2ce351ebe9d6fa8f84d4c859a7b7e698",
+      "bytes": 975
+    },
+    "final_cost_v2/input_bindings.csv": {
+      "sha256": "15f9acc2d15ce572b7fa6c48c5427483e01ea8fb07e7ffc03eaa5e9ec2c6cea6",
+      "bytes": 753
+    },
+    "final_cost_v2/unit_costs.json": {
+      "sha256": "c71ec100be562566e2440990175c837112f02fdfa21e35a03ad923cad0aa91ff",
+      "bytes": 15047
+    },
+    "final_cost_v2/unit_costs.csv": {
+      "sha256": "71571fa8981cff187a9981a27daec184c02c1b108aa6235cbb09caa029befa9b",
+      "bytes": 6768
+    },
+    "RAW_AUDIT_SUMMARY.json": {
+      "sha256": "95b47451afae20cc5c01a026727aded5c1893030bac3dbaf7418231b87556888",
+      "bytes": 104351
+    },
+    "FAILURE_ATTEMPT_SUMMARY.json": {
+      "sha256": "27e4151061d98bfc623bab0e18aea6e1686509f796760bc18f9f09dfd78127ed",
+      "bytes": 1340
+    },
+    "IMMUTABLE_SOURCE_IDENTITIES.json": {
+      "sha256": "1e6740dd068daf62ca790237361a3e817705a15fb306c31c22fb49fbfedb0731",
+      "bytes": 12379
+    },
+    "PUBLIC_CLOSURE_RECEIPT.json": {
+      "sha256": "18b36f24a0f3bb1288eac58b8127f23318278850bbf9af51432bc35b71797139",
+      "bytes": 8407
+    }
+  },
+  "transformations": [
+    {
+      "input": "analysis/derived_v3/analysis_receipt.json",
+      "output": "derived_v3/analysis_receipt.json",
+      "kind": "structured prefix mapping and exact-key omission; all numerical leaf paths and values preserved",
+      "numeric_leaf_count": 3
+    },
+    {
+      "input": "analysis/derived_v3/availability.json",
+      "output": "derived_v3/availability.json",
+      "kind": "structured prefix mapping and exact-key omission; all numerical leaf paths and values preserved",
+      "numeric_leaf_count": 252
+    },
+    {
+      "input": "analysis/derived_v3/cache_branch_records.json",
+      "output": "derived_v3/cache_branch_records.json",
+      "kind": "structured prefix mapping and exact-key omission; all numerical leaf paths and values preserved",
+      "numeric_leaf_count": 8829
+    },
+    {
+      "input": "analysis/derived_v3/conflicts.json",
+      "output": "derived_v3/conflicts.json",
+      "kind": "structured prefix mapping and exact-key omission; all numerical leaf paths and values preserved",
+      "numeric_leaf_count": 0
+    },
+    {
+      "input": "analysis/derived_v3/cost_components.json",
+      "output": "derived_v3/cost_components.json",
+      "kind": "structured prefix mapping and exact-key omission; all numerical leaf paths and values preserved",
+      "numeric_leaf_count": 4591
+    },
+    {
+      "input": "analysis/derived_v3/duplicate_snapshots.json",
+      "output": "derived_v3/duplicate_snapshots.json",
+      "kind": "structured prefix mapping and exact-key omission; all numerical leaf paths and values preserved",
+      "numeric_leaf_count": 0
+    },
+    {
+      "input": "analysis/derived_v3/frozen_cells.json",
+      "output": "derived_v3/frozen_cells.json",
+      "kind": "structured prefix mapping and exact-key omission; all numerical leaf paths and values preserved",
+      "numeric_leaf_count": 2160
+    },
+    {
+      "input": "analysis/derived_v3/frozen_object_policy.json",
+      "output": "derived_v3/frozen_object_policy.json",
+      "kind": "structured prefix mapping and exact-key omission; all numerical leaf paths and values preserved",
+      "numeric_leaf_count": 156
+    },
+    {
+      "input": "analysis/derived_v3/input_manifest.json",
+      "output": "derived_v3/input_manifest.json",
+      "kind": "structured prefix mapping and exact-key omission; all numerical leaf paths and values preserved",
+      "numeric_leaf_count": 288
+    },
+    {
+      "input": "analysis/derived_v3/nonlinear_identity_audit.json",
+      "output": "derived_v3/nonlinear_identity_audit.json",
+      "kind": "structured prefix mapping and exact-key omission; all numerical leaf paths and values preserved",
+      "numeric_leaf_count": 72
+    },
+    {
+      "input": "analysis/derived_v3/nonlinear_matched_summary.json",
+      "output": "derived_v3/nonlinear_matched_summary.json",
+      "kind": "structured prefix mapping and exact-key omission; all numerical leaf paths and values preserved",
+      "numeric_leaf_count": 866
+    },
+    {
+      "input": "analysis/derived_v3/nonlinear_runs.json",
+      "output": "derived_v3/nonlinear_runs.json",
+      "kind": "structured prefix mapping and exact-key omission; all numerical leaf paths and values preserved",
+      "numeric_leaf_count": 1338
+    },
+    {
+      "input": "analysis/derived_v3/numerical_checks.json",
+      "output": "derived_v3/numerical_checks.json",
+      "kind": "structured prefix mapping and exact-key omission; all numerical leaf paths and values preserved",
+      "numeric_leaf_count": 699
+    },
+    {
+      "input": "analysis/derived_v3/occupation_receipts.json",
+      "output": "derived_v3/occupation_receipts.json",
+      "kind": "structured prefix mapping and exact-key omission; all numerical leaf paths and values preserved",
+      "numeric_leaf_count": 0
+    },
+    {
+      "input": "analysis/derived_v3/profile_runs.json",
+      "output": "derived_v3/profile_runs.json",
+      "kind": "structured prefix mapping and exact-key omission; all numerical leaf paths and values preserved",
+      "numeric_leaf_count": 71
+    },
+    {
+      "input": "analysis/derived_v3/verification_block_controls.json",
+      "output": "derived_v3/verification_block_controls.json",
+      "kind": "structured prefix mapping and exact-key omission; all numerical leaf paths and values preserved",
+      "numeric_leaf_count": 495
+    },
+    {
+      "input": "analysis/owner_nonlinear_v2/FINAL_DTYPE_CHECK.json",
+      "output": "owner_nonlinear_v2/FINAL_DTYPE_CHECK.json",
+      "kind": "structured prefix mapping and exact-key omission; all numerical leaf paths and values preserved",
+      "numeric_leaf_count": 68
+    },
+    {
+      "input": "analysis/owner_nonlinear_v2/comparisons.json",
+      "output": "owner_nonlinear_v2/comparisons.json",
+      "kind": "structured prefix mapping and exact-key omission; all numerical leaf paths and values preserved",
+      "numeric_leaf_count": 272
+    },
+    {
+      "input": "analysis/owner_nonlinear_v2/identity_issues.json",
+      "output": "owner_nonlinear_v2/identity_issues.json",
+      "kind": "structured prefix mapping and exact-key omission; all numerical leaf paths and values preserved",
+      "numeric_leaf_count": 0
+    },
+    {
+      "input": "analysis/owner_nonlinear_v2/input_manifest.json",
+      "output": "owner_nonlinear_v2/input_manifest.json",
+      "kind": "structured prefix mapping and exact-key omission; all numerical leaf paths and values preserved",
+      "numeric_leaf_count": 0
+    },
+    {
+      "input": "analysis/owner_nonlinear_v2/runs.json",
+      "output": "owner_nonlinear_v2/runs.json",
+      "kind": "structured prefix mapping and exact-key omission; all numerical leaf paths and values preserved",
+      "numeric_leaf_count": 1896
+    },
+    {
+      "input": "analysis/final_cost_v2/BUDGET_RECEIPT.json",
+      "output": "final_cost_v2/BUDGET_RECEIPT.json",
+      "kind": "structured prefix mapping and exact-key omission; all numerical leaf paths and values preserved",
+      "numeric_leaf_count": 8
+    },
+    {
+      "input": "analysis/final_cost_v2/attempts.json",
+      "output": "final_cost_v2/attempts.json",
+      "kind": "structured prefix mapping and exact-key omission; all numerical leaf paths and values preserved",
+      "numeric_leaf_count": 370
+    },
+    {
+      "input": "analysis/final_cost_v2/failures_and_open.json",
+      "output": "final_cost_v2/failures_and_open.json",
+      "kind": "structured prefix mapping and exact-key omission; all numerical leaf paths and values preserved",
+      "numeric_leaf_count": 0
+    },
+    {
+      "input": "analysis/final_cost_v2/guard_fees.json",
+      "output": "final_cost_v2/guard_fees.json",
+      "kind": "structured prefix mapping and exact-key omission; all numerical leaf paths and values preserved",
+      "numeric_leaf_count": 0
+    },
+    {
+      "input": "analysis/final_cost_v2/input_bindings.json",
+      "output": "final_cost_v2/input_bindings.json",
+      "kind": "structured prefix mapping and exact-key omission; all numerical leaf paths and values preserved",
+      "numeric_leaf_count": 3
+    },
+    {
+      "input": "analysis/final_cost_v2/unit_costs.json",
+      "output": "final_cost_v2/unit_costs.json",
+      "kind": "structured prefix mapping and exact-key omission; all numerical leaf paths and values preserved",
+      "numeric_leaf_count": 210
+    }
+  ],
+  "explicit_omitted_keys": [
+    "api_key",
+    "argv",
+    "errors",
+    "host",
+    "hostname",
+    "password",
+    "ssh_target",
+    "stderr",
+    "stdout",
+    "token",
+    "watcher_source"
+  ],
+  "actual_field_omissions": {
+    "/*/watcher_source": 1
+  },
+  "mapped_string_counts": {
+    "evidence/final_snapshot": 6635,
+    "evidence/project": 238,
+    "evidence/efficiency": 48,
+    "evidence/final_collection": 1
+  },
+  "nonprojected_tables": [
+    {
+      "name": "derived_v3/parse_errors",
+      "reason": "parser telemetry; original JSON has zero records"
+    },
+    {
+      "name": "final_cost_v2/whitelisted_events",
+      "reason": "84 repeated ledger start/end records compacted into complete 42 paired attempts; attempts preserve exact occupation and charge fields"
+    },
+    {
+      "name": "owner_nonlinear_v2/AUDIT",
+      "reason": "Repeated raw member and manifest records summarized; original SHA retained"
+    },
+    {
+      "name": "owner_nonlinear_v2/cached_original_array_equivalence",
+      "reason": "Repeated member comparisons replaced by counts, status counts and maxima"
+    }
+  ],
+  "raw_arrays_included": false,
+  "numeric_leaf_equality_check": "Exact Python numeric path/value equality for every projected full table (including every nested numerical field). JSON is authoritative; CSV serialized from projected JSON.",
+  "csv_rule": "Dictionary/list cells encoded as JSON; null scalar as blank; IEEE floating-point parsed and serialized without arithmetic transformations."
+}

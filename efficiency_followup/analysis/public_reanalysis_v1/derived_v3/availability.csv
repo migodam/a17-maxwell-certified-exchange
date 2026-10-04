@@ -1,0 +1,129 @@
+scope,object,policy,geometry_cache,repetition,config_sha256,status,reason,phase,k
+eff_nonlinear_authorized_route,2002,receiver_only,False,0,988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648,MEASURED,Explicit lock expectation; no best-run selection,,
+eff_nonlinear_authorized_route,2002,receiver_only,False,1,988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648,MEASURED,Explicit lock expectation; no best-run selection,,
+eff_nonlinear_authorized_route,2002,receiver_only,False,2,988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648,MEASURED,Explicit lock expectation; no best-run selection,,
+eff_nonlinear_authorized_route,2002,original_top2_cap3,False,0,988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648,MEASURED,Explicit lock expectation; no best-run selection,,
+eff_nonlinear_authorized_route,2002,original_top2_cap3,False,1,988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648,MEASURED,Explicit lock expectation; no best-run selection,,
+eff_nonlinear_authorized_route,2002,original_top2_cap3,False,2,988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648,MEASURED,Explicit lock expectation; no best-run selection,,
+eff_nonlinear_authorized_route,2002,original_top2_cap3,True,0,988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648,MEASURED,Explicit lock expectation; no best-run selection,,
+eff_nonlinear_authorized_route,2002,original_top2_cap3,True,1,988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648,MEASURED,Explicit lock expectation; no best-run selection,,
+eff_nonlinear_authorized_route,2002,original_top2_cap3,True,2,988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648,MEASURED,Explicit lock expectation; no best-run selection,,
+eff_nonlinear_authorized_route,2002,top1_cap2,True,0,988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648,MEASURED,Explicit lock expectation; no best-run selection,,
+eff_nonlinear_authorized_route,2002,top1_cap2,True,1,988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648,MEASURED,Explicit lock expectation; no best-run selection,,
+eff_nonlinear_authorized_route,2002,top1_cap2,True,2,988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648,MEASURED,Explicit lock expectation; no best-run selection,,
+eff_nonlinear_authorized_route,2009,receiver_only,False,0,988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648,MEASURED,Explicit lock expectation; no best-run selection,,
+eff_nonlinear_authorized_route,2009,receiver_only,False,1,988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648,MEASURED,Explicit lock expectation; no best-run selection,,
+eff_nonlinear_authorized_route,2009,receiver_only,False,2,988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648,MEASURED,Explicit lock expectation; no best-run selection,,
+eff_nonlinear_authorized_route,2009,original_top2_cap3,False,0,988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648,MEASURED,Explicit lock expectation; no best-run selection,,
+eff_nonlinear_authorized_route,2009,original_top2_cap3,False,1,988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648,MEASURED,Explicit lock expectation; no best-run selection,,
+eff_nonlinear_authorized_route,2009,original_top2_cap3,False,2,988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648,MEASURED,Explicit lock expectation; no best-run selection,,
+eff_nonlinear_authorized_route,2009,original_top2_cap3,True,0,988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648,MEASURED,Explicit lock expectation; no best-run selection,,
+eff_nonlinear_authorized_route,2009,original_top2_cap3,True,1,988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648,MEASURED,Explicit lock expectation; no best-run selection,,
+eff_nonlinear_authorized_route,2009,original_top2_cap3,True,2,988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648,MEASURED,Explicit lock expectation; no best-run selection,,
+eff_nonlinear_authorized_route,2009,top1_cap2,True,0,988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648,MEASURED,Explicit lock expectation; no best-run selection,,
+eff_nonlinear_authorized_route,2009,top1_cap2,True,1,988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648,MEASURED,Explicit lock expectation; no best-run selection,,
+eff_nonlinear_authorized_route,2009,top1_cap2,True,2,988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648,MEASURED,Explicit lock expectation; no best-run selection,,
+eff_nonlinear_authorized_route,2002,reuse_previous,True,0,472d0749d894cc092304b8808527600cb3c9caa8085ce9480e8be06917b2a941,MEASURED,Explicit lock expectation; no best-run selection,,
+eff_nonlinear_authorized_route,2002,reuse_reset3,True,0,472d0749d894cc092304b8808527600cb3c9caa8085ce9480e8be06917b2a941,MEASURED,Explicit lock expectation; no best-run selection,,
+eff_nonlinear_authorized_route,2009,reuse_previous,True,0,472d0749d894cc092304b8808527600cb3c9caa8085ce9480e8be06917b2a941,MEASURED,Explicit lock expectation; no best-run selection,,
+eff_nonlinear_authorized_route,2009,reuse_reset3,True,0,472d0749d894cc092304b8808527600cb3c9caa8085ce9480e8be06917b2a941,MEASURED,Explicit lock expectation; no best-run selection,,
+eff_nonlinear_authorized_route,2002,top1_cap3,True,0,b3ce29f8016755e3803deae2eb8b5b3c353a5fb9872c75edd7a415e158e318b9,MEASURED,Explicit lock expectation; no best-run selection,,
+eff_nonlinear_authorized_route,2002,top1_cap3,True,1,b3ce29f8016755e3803deae2eb8b5b3c353a5fb9872c75edd7a415e158e318b9,MEASURED,Explicit lock expectation; no best-run selection,,
+eff_nonlinear_authorized_route,2002,top1_cap3,True,2,b3ce29f8016755e3803deae2eb8b5b3c353a5fb9872c75edd7a415e158e318b9,MEASURED,Explicit lock expectation; no best-run selection,,
+eff_nonlinear_authorized_route,2009,top1_cap3,True,0,b3ce29f8016755e3803deae2eb8b5b3c353a5fb9872c75edd7a415e158e318b9,MEASURED,Explicit lock expectation; no best-run selection,,
+eff_nonlinear_authorized_route,2009,top1_cap3,True,1,b3ce29f8016755e3803deae2eb8b5b3c353a5fb9872c75edd7a415e158e318b9,MEASURED,Explicit lock expectation; no best-run selection,,
+eff_nonlinear_authorized_route,2009,top1_cap3,True,2,b3ce29f8016755e3803deae2eb8b5b3c353a5fb9872c75edd7a415e158e318b9,MEASURED,Explicit lock expectation; no best-run selection,,
+eff_frozen,2002,original_top2_cap3,,,,MEASURED,,early,4
+eff_frozen,2002,top1_cap3,,,,MEASURED,,early,4
+eff_frozen,2002,top2_cap1,,,,MEASURED,,early,4
+eff_frozen,2002,top1_cap1,,,,MEASURED,,early,4
+eff_frozen,2002,top1_cap2,,,,MEASURED,,early,4
+eff_frozen,2002,original_top2_cap3,,,,MEASURED,,early,8
+eff_frozen,2002,top1_cap3,,,,MEASURED,,early,8
+eff_frozen,2002,top2_cap1,,,,MEASURED,,early,8
+eff_frozen,2002,top1_cap1,,,,MEASURED,,early,8
+eff_frozen,2002,top1_cap2,,,,MEASURED,,early,8
+eff_frozen,2002,original_top2_cap3,,,,MEASURED,,early,16
+eff_frozen,2002,top1_cap3,,,,MEASURED,,early,16
+eff_frozen,2002,top2_cap1,,,,MEASURED,,early,16
+eff_frozen,2002,top1_cap1,,,,MEASURED,,early,16
+eff_frozen,2002,top1_cap2,,,,MEASURED,,early,16
+eff_frozen,2002,original_top2_cap3,,,,MEASURED,,middle,4
+eff_frozen,2002,top1_cap3,,,,MEASURED,,middle,4
+eff_frozen,2002,top2_cap1,,,,MEASURED,,middle,4
+eff_frozen,2002,top1_cap1,,,,MEASURED,,middle,4
+eff_frozen,2002,top1_cap2,,,,MEASURED,,middle,4
+eff_frozen,2002,original_top2_cap3,,,,MEASURED,,middle,8
+eff_frozen,2002,top1_cap3,,,,MEASURED,,middle,8
+eff_frozen,2002,top2_cap1,,,,MEASURED,,middle,8
+eff_frozen,2002,top1_cap1,,,,MEASURED,,middle,8
+eff_frozen,2002,top1_cap2,,,,MEASURED,,middle,8
+eff_frozen,2002,original_top2_cap3,,,,MEASURED,,middle,16
+eff_frozen,2002,top1_cap3,,,,MEASURED,,middle,16
+eff_frozen,2002,top2_cap1,,,,MEASURED,,middle,16
+eff_frozen,2002,top1_cap1,,,,MEASURED,,middle,16
+eff_frozen,2002,top1_cap2,,,,MEASURED,,middle,16
+eff_frozen,2002,original_top2_cap3,,,,MEASURED,,late,4
+eff_frozen,2002,top1_cap3,,,,MEASURED,,late,4
+eff_frozen,2002,top2_cap1,,,,MEASURED,,late,4
+eff_frozen,2002,top1_cap1,,,,MEASURED,,late,4
+eff_frozen,2002,top1_cap2,,,,MEASURED,,late,4
+eff_frozen,2002,original_top2_cap3,,,,MEASURED,,late,8
+eff_frozen,2002,top1_cap3,,,,MEASURED,,late,8
+eff_frozen,2002,top2_cap1,,,,MEASURED,,late,8
+eff_frozen,2002,top1_cap1,,,,MEASURED,,late,8
+eff_frozen,2002,top1_cap2,,,,MEASURED,,late,8
+eff_frozen,2002,original_top2_cap3,,,,MEASURED,,late,16
+eff_frozen,2002,top1_cap3,,,,MEASURED,,late,16
+eff_frozen,2002,top2_cap1,,,,MEASURED,,late,16
+eff_frozen,2002,top1_cap1,,,,MEASURED,,late,16
+eff_frozen,2002,top1_cap2,,,,MEASURED,,late,16
+eff_profile,2002,,,,,MEASURED,No gate assigned,,
+eff_verification_control,2002,,,,,MEASURED,No gate assigned,,
+eff_frozen,2009,original_top2_cap3,,,,MEASURED,,early,4
+eff_frozen,2009,top1_cap3,,,,MEASURED,,early,4
+eff_frozen,2009,top2_cap1,,,,MEASURED,,early,4
+eff_frozen,2009,top1_cap1,,,,MEASURED,,early,4
+eff_frozen,2009,top1_cap2,,,,MEASURED,,early,4
+eff_frozen,2009,original_top2_cap3,,,,MEASURED,,early,8
+eff_frozen,2009,top1_cap3,,,,MEASURED,,early,8
+eff_frozen,2009,top2_cap1,,,,MEASURED,,early,8
+eff_frozen,2009,top1_cap1,,,,MEASURED,,early,8
+eff_frozen,2009,top1_cap2,,,,MEASURED,,early,8
+eff_frozen,2009,original_top2_cap3,,,,MEASURED,,early,16
+eff_frozen,2009,top1_cap3,,,,MEASURED,,early,16
+eff_frozen,2009,top2_cap1,,,,MEASURED,,early,16
+eff_frozen,2009,top1_cap1,,,,MEASURED,,early,16
+eff_frozen,2009,top1_cap2,,,,MEASURED,,early,16
+eff_frozen,2009,original_top2_cap3,,,,MEASURED,,middle,4
+eff_frozen,2009,top1_cap3,,,,MEASURED,,middle,4
+eff_frozen,2009,top2_cap1,,,,MEASURED,,middle,4
+eff_frozen,2009,top1_cap1,,,,MEASURED,,middle,4
+eff_frozen,2009,top1_cap2,,,,MEASURED,,middle,4
+eff_frozen,2009,original_top2_cap3,,,,MEASURED,,middle,8
+eff_frozen,2009,top1_cap3,,,,MEASURED,,middle,8
+eff_frozen,2009,top2_cap1,,,,MEASURED,,middle,8
+eff_frozen,2009,top1_cap1,,,,MEASURED,,middle,8
+eff_frozen,2009,top1_cap2,,,,MEASURED,,middle,8
+eff_frozen,2009,original_top2_cap3,,,,MEASURED,,middle,16
+eff_frozen,2009,top1_cap3,,,,MEASURED,,middle,16
+eff_frozen,2009,top2_cap1,,,,MEASURED,,middle,16
+eff_frozen,2009,top1_cap1,,,,MEASURED,,middle,16
+eff_frozen,2009,top1_cap2,,,,MEASURED,,middle,16
+eff_frozen,2009,original_top2_cap3,,,,MEASURED,,late,4
+eff_frozen,2009,top1_cap3,,,,MEASURED,,late,4
+eff_frozen,2009,top2_cap1,,,,MEASURED,,late,4
+eff_frozen,2009,top1_cap1,,,,MEASURED,,late,4
+eff_frozen,2009,top1_cap2,,,,MEASURED,,late,4
+eff_frozen,2009,original_top2_cap3,,,,MEASURED,,late,8
+eff_frozen,2009,top1_cap3,,,,MEASURED,,late,8
+eff_frozen,2009,top2_cap1,,,,MEASURED,,late,8
+eff_frozen,2009,top1_cap1,,,,MEASURED,,late,8
+eff_frozen,2009,top1_cap2,,,,MEASURED,,late,8
+eff_frozen,2009,original_top2_cap3,,,,MEASURED,,late,16
+eff_frozen,2009,top1_cap3,,,,MEASURED,,late,16
+eff_frozen,2009,top2_cap1,,,,MEASURED,,late,16
+eff_frozen,2009,top1_cap1,,,,MEASURED,,late,16
+eff_frozen,2009,top1_cap2,,,,MEASURED,,late,16
+eff_profile,2009,,,,,MEASURED,No gate assigned,,
+eff_verification_control,2009,,,,,MEASURED,No gate assigned,,

@@ -1,0 +1,18 @@
+{
+  "cpu_saved_array_s": 3.4364998749806546,
+  "input_predeclaration_sha256": "ec8eaa6f8f157413816e10cef265fc407181214e6f6a24bcf725bbb4f030a126",
+  "fixed_radius_constants_sha256": "1345a498b7ae2af50c5f7dfc87ebe48205b4037e4400b539c8405a22de2b6c8a",
+  "screen_before_label_load_sha256": "eec823ad7648ce6807ab79d7195ef343fbebba1a56fbe0d197c426f6ffb9fbb6",
+  "online_features_sha256": "1432d6a8868a217135005c6de2f6eb2b6bd948dbce48f174d957963ad3385279",
+  "online_outputs_sha256": "bb88c32cfcf3d066a9b284e3eafc44f96af7280610b4d2a18a1ddd1586d1e33a",
+  "offline_labels_sha256": "802b3d7bddadbd8ea6d4f04d2e953a64e73a0336d0c9e702f5281bc6b80c4d34",
+  "radius_constants_modified": false,
+  "true_labels_used_in_screen": false,
+  "threshold_uses_tau": false,
+  "gradient_adjoint_added": false,
+  "new_physics": false,
+  "new_training": false,
+  "cheap_accept_allowed": false,
+  "QA": "PASS",
+  "diagnostic_gain_only": "does not reconstruct a changed causal deployment path"
+}

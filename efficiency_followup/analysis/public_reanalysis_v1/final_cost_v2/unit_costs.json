@@ -1,0 +1,422 @@
+[
+  {
+    "unit": "cache_block_v1_2002",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 31.25,
+    "known_record_charge_s": 31.25,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "cache_block_v2_2002",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 27.18699999997625,
+    "known_record_charge_s": 27.18699999997625,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "cache_block_v2_2009",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 26.06199999997625,
+    "known_record_charge_s": 26.06199999997625,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "frozen_pilot_v1_2002",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 114.01600000000326,
+    "known_record_charge_s": 114.01600000000326,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "frozen_pilot_v1_2009",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 86.89100000000326,
+    "known_record_charge_s": 86.89100000000326,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "nleff_cond_v1_2002_top1_cap3_cache_r0",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 431.21899999998277,
+    "known_record_charge_s": 431.21899999998277,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "nleff_cond_v1_2002_top1_cap3_cache_r1",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 431.0,
+    "known_record_charge_s": 431.0,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "nleff_cond_v1_2002_top1_cap3_cache_r2",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 430.9529999999795,
+    "known_record_charge_s": 430.9529999999795,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "nleff_cond_v1_2009_top1_cap3_cache_r0",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 576.094000000041,
+    "known_record_charge_s": 576.094000000041,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "nleff_cond_v1_2009_top1_cap3_cache_r1",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 541.219000000041,
+    "known_record_charge_s": 541.219000000041,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "nleff_cond_v1_2009_top1_cap3_cache_r2",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 540.375,
+    "known_record_charge_s": 540.375,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "nleff_v1_2002_original_top2_cap3_cache_r0",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 533.5310000000172,
+    "known_record_charge_s": 533.5310000000172,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "nleff_v1_2002_original_top2_cap3_cache_r1",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 534.125,
+    "known_record_charge_s": 534.125,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "nleff_v1_2002_original_top2_cap3_cache_r2",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 534.7660000000033,
+    "known_record_charge_s": 534.7660000000033,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "nleff_v1_2002_original_top2_cap3_no_cache_r0",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 586.0469999999623,
+    "known_record_charge_s": 586.0469999999623,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "nleff_v1_2002_original_top2_cap3_no_cache_r1",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 586.9689999999828,
+    "known_record_charge_s": 586.9689999999828,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "nleff_v1_2002_original_top2_cap3_no_cache_r2",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 587.4839999999967,
+    "known_record_charge_s": 587.4839999999967,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "nleff_v1_2002_receiver_only_no_cache_r0",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 224.25,
+    "known_record_charge_s": 224.25,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "nleff_v1_2002_receiver_only_no_cache_r1",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 222.295999999973,
+    "known_record_charge_s": 222.295999999973,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "nleff_v1_2002_receiver_only_no_cache_r2",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 222.48499999998603,
+    "known_record_charge_s": 222.48499999998603,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "nleff_v1_2002_reuse_previous_cache_r0",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 670.390000000014,
+    "known_record_charge_s": 670.390000000014,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "nleff_v1_2002_reuse_reset3_cache_r0",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 476.61000000004424,
+    "known_record_charge_s": 476.61000000004424,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "nleff_v1_2002_top1_cap2_cache_r0",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 472.4220000000205,
+    "known_record_charge_s": 472.4220000000205,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "nleff_v1_2002_top1_cap2_cache_r1",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 471.795999999973,
+    "known_record_charge_s": 471.795999999973,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "nleff_v1_2002_top1_cap2_cache_r2",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 473.5,
+    "known_record_charge_s": 473.5,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "nleff_v1_2009_original_top2_cap3_cache_r0",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 545.0779999999795,
+    "known_record_charge_s": 545.0779999999795,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "nleff_v1_2009_original_top2_cap3_cache_r1",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 545.3279999999795,
+    "known_record_charge_s": 545.3279999999795,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "nleff_v1_2009_original_top2_cap3_cache_r2",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 545.4369999999763,
+    "known_record_charge_s": 545.4369999999763,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "nleff_v1_2009_original_top2_cap3_no_cache_r0",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 598.2660000000033,
+    "known_record_charge_s": 598.2660000000033,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "nleff_v1_2009_original_top2_cap3_no_cache_r1",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 598.1869999999763,
+    "known_record_charge_s": 598.1869999999763,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "nleff_v1_2009_original_top2_cap3_no_cache_r2",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 599.9370000000345,
+    "known_record_charge_s": 599.9370000000345,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "nleff_v1_2009_receiver_only_no_cache_r0",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 410.0,
+    "known_record_charge_s": 410.0,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "nleff_v1_2009_receiver_only_no_cache_r1",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 412.53100000001723,
+    "known_record_charge_s": 412.53100000001723,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "nleff_v1_2009_receiver_only_no_cache_r2",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 412.9220000000205,
+    "known_record_charge_s": 412.9220000000205,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "nleff_v1_2009_reuse_previous_cache_r0",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 611.7029999999795,
+    "known_record_charge_s": 611.7029999999795,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "nleff_v1_2009_reuse_reset3_cache_r0",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 578.7970000000205,
+    "known_record_charge_s": 578.7970000000205,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "nleff_v1_2009_top1_cap2_cache_r0",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 558.0,
+    "known_record_charge_s": 558.0,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "nleff_v1_2009_top1_cap2_cache_r1",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 557.140000000014,
+    "known_record_charge_s": 557.140000000014,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "nleff_v1_2009_top1_cap2_cache_r2",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 557.155999999959,
+    "known_record_charge_s": 557.155999999959,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "profile_v1_2002",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 1.9060000000172295,
+    "known_record_charge_s": 1.9060000000172295,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 1,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "profile_v1_2002_dependency_clone",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 66.51499999995576,
+    "known_record_charge_s": 66.51499999995576,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  },
+  {
+    "unit": "profile_v1_2009_dependency_clone",
+    "status": "KNOWN_UNIT_RECORD_SUM_ONLY",
+    "occupation_and_rejected_guard_s": 24.5,
+    "known_record_charge_s": 24.5,
+    "attempt_count": 1,
+    "guard_count": 0,
+    "failed_or_stopped_count": 0,
+    "source": "attempts.json/guard_fees.json; line links retained there"
+  }
+]

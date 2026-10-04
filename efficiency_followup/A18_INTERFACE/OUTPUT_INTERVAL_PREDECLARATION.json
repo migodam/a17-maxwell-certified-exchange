@@ -1,0 +1,21 @@
+{
+  "schema": "a17.saved_empirical_output_interval.v1",
+  "owner_formula_source": "root Codex continuation instruction",
+  "radius_constants_sha256": "LOCK_AT_EXECUTION_AND_DO_NOT_MODIFY",
+  "c_anchor_fixed": 0.9960683840733512,
+  "c_displacement_fixed": 0.0898323733945177,
+  "development_object": 2002,
+  "heldout_object": 2009,
+  "rejection_threshold_fixed": 0,
+  "Q_A": "-dot(u,z_A)-prior_linear-0.5*norm(z_A)^2-prior_curvature",
+  "Q_UB": "-dot(u,z_A)+norm(u)*eps-prior_linear-0.5*max(0,norm(z_A)-eps)^2-prior_curvature",
+  "Q_LB": "-dot(u,z_A)-norm(u)*eps-prior_linear-0.5*(norm(z_A)+eps)^2-prior_curvature",
+  "inputs_for_screen": ["saved paid u=r+Jx", "reconstructed anchor z_A", "x,d,ell,lambda prior terms", "unchanged development-fitted radii"],
+  "true_gain_and_tau": "offline evaluation only, never bound construction or threshold",
+  "requires_new_adjoint": false,
+  "full_base_residual_Jx": "already paid and causal only after previous accepted verified exchanges",
+  "certificate": "EMPIRICAL_NONRIGOROUS_RADIUS",
+  "cheap_accept": "NOT_ALLOWED",
+  "new_physics": false,
+  "training": false
+}

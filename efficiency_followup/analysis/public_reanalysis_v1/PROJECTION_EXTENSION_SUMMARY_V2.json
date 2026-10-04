@@ -1,0 +1,46 @@
+{
+  "schema": "a17-public-projection-extension-v2",
+  "previous_summary_sha256": "c31656b329b81c38b7f2705abf2121727869b8ca0954e07fb47735010410db8d",
+  "previous_summary_unchanged": true,
+  "original_full_audit_sha256": "73496a3c2fd192631fe7a27a8183851788fd7a58f2187e1717a7ae27c47795cc",
+  "full_audit_projection": {
+    "output_relative": "owner_nonlinear_v2/AUDIT.json",
+    "sha256": "465222b8f4c377f0b0d3fc878cb3788c81a5931d5e2e2c4184701b8760b26644",
+    "bytes": 1631242,
+    "schema_preserved": "a17.efficiency.owner_trajectory_audit.v2",
+    "all_keys_and_numerical_fields_preserved": true,
+    "fields_omitted": [],
+    "mapped_path_string_count": 4230,
+    "transformation": "Same declared longest structural path-prefix mapping as v1; every dictionary key, list position, numerical value and schema retained. No executable cleaning."
+  },
+  "exact_copies": [
+    {
+      "input_relative": "analysis/owner_closeout_v1/SUMMARY.json",
+      "input_sha256": "669559b2cdb10484ad68f70cf094d19fb904015c93f922841b0d5626df533fb6",
+      "output_relative": "owner_closeout_v1/SUMMARY.json",
+      "output_sha256": "669559b2cdb10484ad68f70cf094d19fb904015c93f922841b0d5626df533fb6",
+      "transformation": "Exact byte copy; numeric/path-free metadata passed builder content tripwire."
+    },
+    {
+      "input_relative": "analysis/owner_closeout_v1/SUMMARY.csv",
+      "input_sha256": "0d3fef64b08bd8794a19d5ee1dd2d52346d17f86e16dc74eca3cdc10825118a2",
+      "output_relative": "owner_closeout_v1/SUMMARY.csv",
+      "output_sha256": "0d3fef64b08bd8794a19d5ee1dd2d52346d17f86e16dc74eca3cdc10825118a2",
+      "transformation": "Exact byte copy; numeric/path-free metadata passed builder content tripwire."
+    }
+  ],
+  "plot_prepare_tables_validation": {
+    "plot_source_sha256": "5f30c151672285f9c29c09dc3d472149b7bb3c11857c7be71a3bf2c79b019f95",
+    "analysis_receipt_sha256": "1a54fa3c072c876e6805978c60fe3703e6098ed233b70f66c613c10a30fd0ab1",
+    "frozen_table_sha256": "c2e329b76354f4ef0c383eda5118b0f54c5e2506ba038e4e0cc93f79bbd1c22b",
+    "comparisons": 34,
+    "groups": 14,
+    "open_comparisons": 0,
+    "rendering": false,
+    "physics_launched": false,
+    "raw_arrays_opened": false,
+    "compatible_audit_relative": "owner_nonlinear_v2/AUDIT.json",
+    "compact_summary_role": "RAW_AUDIT_SUMMARY.json remains a human/count summary and is not a plot prepare_tables input."
+  },
+  "scope": "Metadata extension only; no package, admission, scientific gate or verdict."
+}

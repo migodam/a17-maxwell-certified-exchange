@@ -1,0 +1,1176 @@
+[
+  {
+    "scope": "eff_nonlinear_authorized_route",
+    "object": 2002,
+    "policy": "receiver_only",
+    "geometry_cache": false,
+    "repetition": 0,
+    "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+    "status": "MEASURED",
+    "reason": "Explicit lock expectation; no best-run selection"
+  },
+  {
+    "scope": "eff_nonlinear_authorized_route",
+    "object": 2002,
+    "policy": "receiver_only",
+    "geometry_cache": false,
+    "repetition": 1,
+    "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+    "status": "MEASURED",
+    "reason": "Explicit lock expectation; no best-run selection"
+  },
+  {
+    "scope": "eff_nonlinear_authorized_route",
+    "object": 2002,
+    "policy": "receiver_only",
+    "geometry_cache": false,
+    "repetition": 2,
+    "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+    "status": "MEASURED",
+    "reason": "Explicit lock expectation; no best-run selection"
+  },
+  {
+    "scope": "eff_nonlinear_authorized_route",
+    "object": 2002,
+    "policy": "original_top2_cap3",
+    "geometry_cache": false,
+    "repetition": 0,
+    "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+    "status": "MEASURED",
+    "reason": "Explicit lock expectation; no best-run selection"
+  },
+  {
+    "scope": "eff_nonlinear_authorized_route",
+    "object": 2002,
+    "policy": "original_top2_cap3",
+    "geometry_cache": false,
+    "repetition": 1,
+    "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+    "status": "MEASURED",
+    "reason": "Explicit lock expectation; no best-run selection"
+  },
+  {
+    "scope": "eff_nonlinear_authorized_route",
+    "object": 2002,
+    "policy": "original_top2_cap3",
+    "geometry_cache": false,
+    "repetition": 2,
+    "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+    "status": "MEASURED",
+    "reason": "Explicit lock expectation; no best-run selection"
+  },
+  {
+    "scope": "eff_nonlinear_authorized_route",
+    "object": 2002,
+    "policy": "original_top2_cap3",
+    "geometry_cache": true,
+    "repetition": 0,
+    "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+    "status": "MEASURED",
+    "reason": "Explicit lock expectation; no best-run selection"
+  },
+  {
+    "scope": "eff_nonlinear_authorized_route",
+    "object": 2002,
+    "policy": "original_top2_cap3",
+    "geometry_cache": true,
+    "repetition": 1,
+    "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+    "status": "MEASURED",
+    "reason": "Explicit lock expectation; no best-run selection"
+  },
+  {
+    "scope": "eff_nonlinear_authorized_route",
+    "object": 2002,
+    "policy": "original_top2_cap3",
+    "geometry_cache": true,
+    "repetition": 2,
+    "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+    "status": "MEASURED",
+    "reason": "Explicit lock expectation; no best-run selection"
+  },
+  {
+    "scope": "eff_nonlinear_authorized_route",
+    "object": 2002,
+    "policy": "top1_cap2",
+    "geometry_cache": true,
+    "repetition": 0,
+    "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+    "status": "MEASURED",
+    "reason": "Explicit lock expectation; no best-run selection"
+  },
+  {
+    "scope": "eff_nonlinear_authorized_route",
+    "object": 2002,
+    "policy": "top1_cap2",
+    "geometry_cache": true,
+    "repetition": 1,
+    "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+    "status": "MEASURED",
+    "reason": "Explicit lock expectation; no best-run selection"
+  },
+  {
+    "scope": "eff_nonlinear_authorized_route",
+    "object": 2002,
+    "policy": "top1_cap2",
+    "geometry_cache": true,
+    "repetition": 2,
+    "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+    "status": "MEASURED",
+    "reason": "Explicit lock expectation; no best-run selection"
+  },
+  {
+    "scope": "eff_nonlinear_authorized_route",
+    "object": 2009,
+    "policy": "receiver_only",
+    "geometry_cache": false,
+    "repetition": 0,
+    "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+    "status": "MEASURED",
+    "reason": "Explicit lock expectation; no best-run selection"
+  },
+  {
+    "scope": "eff_nonlinear_authorized_route",
+    "object": 2009,
+    "policy": "receiver_only",
+    "geometry_cache": false,
+    "repetition": 1,
+    "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+    "status": "MEASURED",
+    "reason": "Explicit lock expectation; no best-run selection"
+  },
+  {
+    "scope": "eff_nonlinear_authorized_route",
+    "object": 2009,
+    "policy": "receiver_only",
+    "geometry_cache": false,
+    "repetition": 2,
+    "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+    "status": "MEASURED",
+    "reason": "Explicit lock expectation; no best-run selection"
+  },
+  {
+    "scope": "eff_nonlinear_authorized_route",
+    "object": 2009,
+    "policy": "original_top2_cap3",
+    "geometry_cache": false,
+    "repetition": 0,
+    "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+    "status": "MEASURED",
+    "reason": "Explicit lock expectation; no best-run selection"
+  },
+  {
+    "scope": "eff_nonlinear_authorized_route",
+    "object": 2009,
+    "policy": "original_top2_cap3",
+    "geometry_cache": false,
+    "repetition": 1,
+    "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+    "status": "MEASURED",
+    "reason": "Explicit lock expectation; no best-run selection"
+  },
+  {
+    "scope": "eff_nonlinear_authorized_route",
+    "object": 2009,
+    "policy": "original_top2_cap3",
+    "geometry_cache": false,
+    "repetition": 2,
+    "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+    "status": "MEASURED",
+    "reason": "Explicit lock expectation; no best-run selection"
+  },
+  {
+    "scope": "eff_nonlinear_authorized_route",
+    "object": 2009,
+    "policy": "original_top2_cap3",
+    "geometry_cache": true,
+    "repetition": 0,
+    "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+    "status": "MEASURED",
+    "reason": "Explicit lock expectation; no best-run selection"
+  },
+  {
+    "scope": "eff_nonlinear_authorized_route",
+    "object": 2009,
+    "policy": "original_top2_cap3",
+    "geometry_cache": true,
+    "repetition": 1,
+    "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+    "status": "MEASURED",
+    "reason": "Explicit lock expectation; no best-run selection"
+  },
+  {
+    "scope": "eff_nonlinear_authorized_route",
+    "object": 2009,
+    "policy": "original_top2_cap3",
+    "geometry_cache": true,
+    "repetition": 2,
+    "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+    "status": "MEASURED",
+    "reason": "Explicit lock expectation; no best-run selection"
+  },
+  {
+    "scope": "eff_nonlinear_authorized_route",
+    "object": 2009,
+    "policy": "top1_cap2",
+    "geometry_cache": true,
+    "repetition": 0,
+    "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+    "status": "MEASURED",
+    "reason": "Explicit lock expectation; no best-run selection"
+  },
+  {
+    "scope": "eff_nonlinear_authorized_route",
+    "object": 2009,
+    "policy": "top1_cap2",
+    "geometry_cache": true,
+    "repetition": 1,
+    "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+    "status": "MEASURED",
+    "reason": "Explicit lock expectation; no best-run selection"
+  },
+  {
+    "scope": "eff_nonlinear_authorized_route",
+    "object": 2009,
+    "policy": "top1_cap2",
+    "geometry_cache": true,
+    "repetition": 2,
+    "config_sha256": "988f1c0f2abec91f01cf3a472834e89d56cee90d5bf7ae4ab0d6167d95506648",
+    "status": "MEASURED",
+    "reason": "Explicit lock expectation; no best-run selection"
+  },
+  {
+    "scope": "eff_nonlinear_authorized_route",
+    "object": 2002,
+    "policy": "reuse_previous",
+    "geometry_cache": true,
+    "repetition": 0,
+    "config_sha256": "472d0749d894cc092304b8808527600cb3c9caa8085ce9480e8be06917b2a941",
+    "status": "MEASURED",
+    "reason": "Explicit lock expectation; no best-run selection"
+  },
+  {
+    "scope": "eff_nonlinear_authorized_route",
+    "object": 2002,
+    "policy": "reuse_reset3",
+    "geometry_cache": true,
+    "repetition": 0,
+    "config_sha256": "472d0749d894cc092304b8808527600cb3c9caa8085ce9480e8be06917b2a941",
+    "status": "MEASURED",
+    "reason": "Explicit lock expectation; no best-run selection"
+  },
+  {
+    "scope": "eff_nonlinear_authorized_route",
+    "object": 2009,
+    "policy": "reuse_previous",
+    "geometry_cache": true,
+    "repetition": 0,
+    "config_sha256": "472d0749d894cc092304b8808527600cb3c9caa8085ce9480e8be06917b2a941",
+    "status": "MEASURED",
+    "reason": "Explicit lock expectation; no best-run selection"
+  },
+  {
+    "scope": "eff_nonlinear_authorized_route",
+    "object": 2009,
+    "policy": "reuse_reset3",
+    "geometry_cache": true,
+    "repetition": 0,
+    "config_sha256": "472d0749d894cc092304b8808527600cb3c9caa8085ce9480e8be06917b2a941",
+    "status": "MEASURED",
+    "reason": "Explicit lock expectation; no best-run selection"
+  },
+  {
+    "scope": "eff_nonlinear_authorized_route",
+    "object": 2002,
+    "policy": "top1_cap3",
+    "geometry_cache": true,
+    "repetition": 0,
+    "config_sha256": "b3ce29f8016755e3803deae2eb8b5b3c353a5fb9872c75edd7a415e158e318b9",
+    "status": "MEASURED",
+    "reason": "Explicit lock expectation; no best-run selection"
+  },
+  {
+    "scope": "eff_nonlinear_authorized_route",
+    "object": 2002,
+    "policy": "top1_cap3",
+    "geometry_cache": true,
+    "repetition": 1,
+    "config_sha256": "b3ce29f8016755e3803deae2eb8b5b3c353a5fb9872c75edd7a415e158e318b9",
+    "status": "MEASURED",
+    "reason": "Explicit lock expectation; no best-run selection"
+  },
+  {
+    "scope": "eff_nonlinear_authorized_route",
+    "object": 2002,
+    "policy": "top1_cap3",
+    "geometry_cache": true,
+    "repetition": 2,
+    "config_sha256": "b3ce29f8016755e3803deae2eb8b5b3c353a5fb9872c75edd7a415e158e318b9",
+    "status": "MEASURED",
+    "reason": "Explicit lock expectation; no best-run selection"
+  },
+  {
+    "scope": "eff_nonlinear_authorized_route",
+    "object": 2009,
+    "policy": "top1_cap3",
+    "geometry_cache": true,
+    "repetition": 0,
+    "config_sha256": "b3ce29f8016755e3803deae2eb8b5b3c353a5fb9872c75edd7a415e158e318b9",
+    "status": "MEASURED",
+    "reason": "Explicit lock expectation; no best-run selection"
+  },
+  {
+    "scope": "eff_nonlinear_authorized_route",
+    "object": 2009,
+    "policy": "top1_cap3",
+    "geometry_cache": true,
+    "repetition": 1,
+    "config_sha256": "b3ce29f8016755e3803deae2eb8b5b3c353a5fb9872c75edd7a415e158e318b9",
+    "status": "MEASURED",
+    "reason": "Explicit lock expectation; no best-run selection"
+  },
+  {
+    "scope": "eff_nonlinear_authorized_route",
+    "object": 2009,
+    "policy": "top1_cap3",
+    "geometry_cache": true,
+    "repetition": 2,
+    "config_sha256": "b3ce29f8016755e3803deae2eb8b5b3c353a5fb9872c75edd7a415e158e318b9",
+    "status": "MEASURED",
+    "reason": "Explicit lock expectation; no best-run selection"
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "early",
+    "k": 4,
+    "policy": "original_top2_cap3",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "early",
+    "k": 4,
+    "policy": "top1_cap3",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "early",
+    "k": 4,
+    "policy": "top2_cap1",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "early",
+    "k": 4,
+    "policy": "top1_cap1",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "early",
+    "k": 4,
+    "policy": "top1_cap2",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "early",
+    "k": 8,
+    "policy": "original_top2_cap3",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "early",
+    "k": 8,
+    "policy": "top1_cap3",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "early",
+    "k": 8,
+    "policy": "top2_cap1",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "early",
+    "k": 8,
+    "policy": "top1_cap1",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "early",
+    "k": 8,
+    "policy": "top1_cap2",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "early",
+    "k": 16,
+    "policy": "original_top2_cap3",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "early",
+    "k": 16,
+    "policy": "top1_cap3",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "early",
+    "k": 16,
+    "policy": "top2_cap1",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "early",
+    "k": 16,
+    "policy": "top1_cap1",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "early",
+    "k": 16,
+    "policy": "top1_cap2",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "middle",
+    "k": 4,
+    "policy": "original_top2_cap3",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "middle",
+    "k": 4,
+    "policy": "top1_cap3",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "middle",
+    "k": 4,
+    "policy": "top2_cap1",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "middle",
+    "k": 4,
+    "policy": "top1_cap1",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "middle",
+    "k": 4,
+    "policy": "top1_cap2",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "middle",
+    "k": 8,
+    "policy": "original_top2_cap3",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "middle",
+    "k": 8,
+    "policy": "top1_cap3",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "middle",
+    "k": 8,
+    "policy": "top2_cap1",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "middle",
+    "k": 8,
+    "policy": "top1_cap1",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "middle",
+    "k": 8,
+    "policy": "top1_cap2",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "middle",
+    "k": 16,
+    "policy": "original_top2_cap3",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "middle",
+    "k": 16,
+    "policy": "top1_cap3",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "middle",
+    "k": 16,
+    "policy": "top2_cap1",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "middle",
+    "k": 16,
+    "policy": "top1_cap1",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "middle",
+    "k": 16,
+    "policy": "top1_cap2",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "late",
+    "k": 4,
+    "policy": "original_top2_cap3",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "late",
+    "k": 4,
+    "policy": "top1_cap3",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "late",
+    "k": 4,
+    "policy": "top2_cap1",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "late",
+    "k": 4,
+    "policy": "top1_cap1",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "late",
+    "k": 4,
+    "policy": "top1_cap2",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "late",
+    "k": 8,
+    "policy": "original_top2_cap3",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "late",
+    "k": 8,
+    "policy": "top1_cap3",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "late",
+    "k": 8,
+    "policy": "top2_cap1",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "late",
+    "k": 8,
+    "policy": "top1_cap1",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "late",
+    "k": 8,
+    "policy": "top1_cap2",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "late",
+    "k": 16,
+    "policy": "original_top2_cap3",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "late",
+    "k": 16,
+    "policy": "top1_cap3",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "late",
+    "k": 16,
+    "policy": "top2_cap1",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "late",
+    "k": 16,
+    "policy": "top1_cap1",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2002,
+    "phase": "late",
+    "k": 16,
+    "policy": "top1_cap2",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_profile",
+    "object": 2002,
+    "status": "MEASURED",
+    "reason": "No gate assigned"
+  },
+  {
+    "scope": "eff_verification_control",
+    "object": 2002,
+    "status": "MEASURED",
+    "reason": "No gate assigned"
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "early",
+    "k": 4,
+    "policy": "original_top2_cap3",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "early",
+    "k": 4,
+    "policy": "top1_cap3",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "early",
+    "k": 4,
+    "policy": "top2_cap1",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "early",
+    "k": 4,
+    "policy": "top1_cap1",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "early",
+    "k": 4,
+    "policy": "top1_cap2",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "early",
+    "k": 8,
+    "policy": "original_top2_cap3",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "early",
+    "k": 8,
+    "policy": "top1_cap3",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "early",
+    "k": 8,
+    "policy": "top2_cap1",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "early",
+    "k": 8,
+    "policy": "top1_cap1",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "early",
+    "k": 8,
+    "policy": "top1_cap2",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "early",
+    "k": 16,
+    "policy": "original_top2_cap3",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "early",
+    "k": 16,
+    "policy": "top1_cap3",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "early",
+    "k": 16,
+    "policy": "top2_cap1",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "early",
+    "k": 16,
+    "policy": "top1_cap1",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "early",
+    "k": 16,
+    "policy": "top1_cap2",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "middle",
+    "k": 4,
+    "policy": "original_top2_cap3",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "middle",
+    "k": 4,
+    "policy": "top1_cap3",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "middle",
+    "k": 4,
+    "policy": "top2_cap1",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "middle",
+    "k": 4,
+    "policy": "top1_cap1",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "middle",
+    "k": 4,
+    "policy": "top1_cap2",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "middle",
+    "k": 8,
+    "policy": "original_top2_cap3",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "middle",
+    "k": 8,
+    "policy": "top1_cap3",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "middle",
+    "k": 8,
+    "policy": "top2_cap1",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "middle",
+    "k": 8,
+    "policy": "top1_cap1",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "middle",
+    "k": 8,
+    "policy": "top1_cap2",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "middle",
+    "k": 16,
+    "policy": "original_top2_cap3",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "middle",
+    "k": 16,
+    "policy": "top1_cap3",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "middle",
+    "k": 16,
+    "policy": "top2_cap1",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "middle",
+    "k": 16,
+    "policy": "top1_cap1",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "middle",
+    "k": 16,
+    "policy": "top1_cap2",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "late",
+    "k": 4,
+    "policy": "original_top2_cap3",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "late",
+    "k": 4,
+    "policy": "top1_cap3",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "late",
+    "k": 4,
+    "policy": "top2_cap1",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "late",
+    "k": 4,
+    "policy": "top1_cap1",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "late",
+    "k": 4,
+    "policy": "top1_cap2",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "late",
+    "k": 8,
+    "policy": "original_top2_cap3",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "late",
+    "k": 8,
+    "policy": "top1_cap3",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "late",
+    "k": 8,
+    "policy": "top2_cap1",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "late",
+    "k": 8,
+    "policy": "top1_cap1",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "late",
+    "k": 8,
+    "policy": "top1_cap2",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "late",
+    "k": 16,
+    "policy": "original_top2_cap3",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "late",
+    "k": 16,
+    "policy": "top1_cap3",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "late",
+    "k": 16,
+    "policy": "top2_cap1",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "late",
+    "k": 16,
+    "policy": "top1_cap1",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_frozen",
+    "object": 2009,
+    "phase": "late",
+    "k": 16,
+    "policy": "top1_cap2",
+    "status": "MEASURED",
+    "reason": null
+  },
+  {
+    "scope": "eff_profile",
+    "object": 2009,
+    "status": "MEASURED",
+    "reason": "No gate assigned"
+  },
+  {
+    "scope": "eff_verification_control",
+    "object": 2009,
+    "status": "MEASURED",
+    "reason": "No gate assigned"
+  }
+]

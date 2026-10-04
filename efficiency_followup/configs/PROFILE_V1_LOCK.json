@@ -1,0 +1,35 @@
+{
+  "version": "a17.eff.frozen_exclusive_profile.v1",
+  "fixed": {
+    "objects": [
+      2002,
+      2009
+    ],
+    "phase": "middle",
+    "iteration": 3,
+    "k": 8,
+    "diagnostic_blocks": 2,
+    "precision": [
+      "float64",
+      "complex128"
+    ],
+    "nonlinear_updates": 0,
+    "shared_full_gradient": true
+  },
+  "profile_source_sha256": "f080f824da3e35b2373e75dc3aeeb276e21135257080748ecd608a1a89c387f9",
+  "closure_sources": {
+    "closure_runtime.py": "14cee50971f7234d049c0dc3e71f8755a3c248b2ea867088355d86fea3edadc2",
+    "closure_state.py": "6ea766c775d20c56665b01b371c06b080259991366d242bedccc591da8c5382f",
+    "closure_state_v2.py": "4eb15d3cfc3df786f14fea1a8f030cb9325dbf5d8a40d91803fbacc16b5ec1a5",
+    "efficient_exchange.py": "e92db6a070f3df13234b9beda24debe55aa25af4d7446f23348d8eed5db98fa3",
+    "online_tolerance.py": "0cb18fc4b91f377c8a1cc96c426bbcff7e000a846b515aa53e59a384466cb8bf",
+    "profile_physics.py": "f080f824da3e35b2373e75dc3aeeb276e21135257080748ecd608a1a89c387f9",
+    "run_frozen_pilot.py": "d661f99fcbfd559b0d5c138d732c92b48f517eb9e480a3e7ed79661ce4ea053a",
+    "test_efficient_exchange_small.py": "2747ec967476646221c6129400eafc0a0757b9b37911428c2e7b3d67d058b6bb",
+    "verified_exchange.py": "b237b985377831eb9c93b36449ce84493494ca373769fe74acc0551c1ec421de",
+    "watch_efficiency.py": "f1690d6ab3255ef02f2a56e645ac8561f18fecbf90d27cdf470464bbf7d43a09"
+  },
+  "baseline_manifest_sha256": "b47422c1ec7c945a6cea536ec479c3515ab322a631d088d62eed25c2655e34db",
+  "baseline_lock_sha256": "6317976787509a7680826f12a891695af7ccd45dcd4bf6834c84a76e88263a00",
+  "input_manifest_sha256": "ef75e7c448756ddce45bf92dedbc19e19c481478a54e42088d1c01232286c944"
+}

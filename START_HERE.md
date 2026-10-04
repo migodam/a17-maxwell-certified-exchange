@@ -1,3 +1,17 @@
+# A17 reading entry
+
+**Latest efficiency evidence:** [verified-exchange follow-up](efficiency_followup/START_HERE.md) · [Web-GPT review context](efficiency_followup/GPT_REVIEW_CONTEXT.md) · [evidence download](https://github.com/migodam/a17-maxwell-certified-exchange/releases/tag/a17-efficient-verification-2026-10-04).
+
+**Final paper and scientific closure:** [manuscript, Chinese reports, locked holdout, noise and nonlinear evidence](closure_final/START_HERE.md).
+
+The efficiency follow-up measures 26.89%/9.64% lower time than the original exchange route on two prescribed objects, with the CONDITIONAL verdict retained. Receiver-only reconstruction remains faster. All original scientific evidence is preserved.
+
+---
+
+## Original four-object snapshot — preserved historical text
+
+The text below describes the original snapshot at [`56097653`](https://github.com/migodam/a17-maxwell-certified-exchange/tree/56097653e6a814399581c3759fc3e3e8f0c2284c). Later holdout, noise and nonlinear results are in `closure_final/`; later efficiency evidence is in `efficiency_followup/`.
+
 # A17 — When does a current mode improve a material update?
 
 **Four-object vector-Maxwell result: 35/36 frozen state–budget cases improve at unchanged current dimension; the median object-summed full-GN gap is reduced by 65.2%.**

@@ -1,0 +1,821 @@
+[
+  {
+    "scope": "eff_verification_control",
+    "object": 2002,
+    "version": "a17.eff.cache_original_block_control.v1",
+    "run_id": "2cbc73a38c459a8c20bc80af2b808dee96c21ff3cc65cfb3eb7881ca1bb45393",
+    "source": "evidence/final_snapshot/results/cache_block_v1/object_2002/verification_result.json",
+    "repeat": 0,
+    "mode": "block",
+    "wall_s": 0.3132628999883309,
+    "counter_delta": {
+      "lu_factorizations": 0,
+      "jvp_rhs": 12,
+      "solve_calls": 1,
+      "kernel_build_blocks": 0,
+      "goff_rhs": 0,
+      "kernel_entries": 0,
+      "solve_rhs": 12,
+      "solve_rhs_full_forward": 0,
+      "jvp_calls": 1,
+      "full_L_materializations": 0,
+      "solve_rhs_full_tangent": 12,
+      "solve_rhs_full": 12,
+      "lu_factorizations_full": 0
+    },
+    "maximum_abs_vs_saved": 0.0,
+    "gain_check": {
+      "max_gain_difference": 0.0,
+      "max_tau_difference": 0.0,
+      "eligible_same": true,
+      "selected_same": true,
+      "actual_selected": 0,
+      "reference_selected": 0,
+      "actual_gain": [
+        3.0360049546480468e-05,
+        2.7605338866948625e-05
+      ],
+      "actual_tau": [
+        2.1206106351791233e-14,
+        2.5257075789731262e-14
+      ],
+      "base_scope": "Historical paid saved x/u/r/ell; no new Jx or adjoint is obtained for this kernel control."
+    },
+    "full_rhs": 12,
+    "material_directions": 2
+  },
+  {
+    "scope": "eff_verification_control",
+    "object": 2002,
+    "version": "a17.eff.cache_original_block_control.v1",
+    "run_id": "2cbc73a38c459a8c20bc80af2b808dee96c21ff3cc65cfb3eb7881ca1bb45393",
+    "source": "evidence/final_snapshot/results/cache_block_v1/object_2002/verification_result.json",
+    "repeat": 0,
+    "mode": "columns",
+    "wall_s": 0.07200200000079349,
+    "counter_delta": {
+      "lu_factorizations": 0,
+      "jvp_rhs": 12,
+      "solve_calls": 2,
+      "kernel_build_blocks": 0,
+      "goff_rhs": 0,
+      "kernel_entries": 0,
+      "solve_rhs": 12,
+      "solve_rhs_full_forward": 0,
+      "jvp_calls": 2,
+      "full_L_materializations": 0,
+      "solve_rhs_full_tangent": 12,
+      "solve_rhs_full": 12,
+      "lu_factorizations_full": 0
+    },
+    "maximum_abs_vs_saved": 0.0,
+    "gain_check": {
+      "max_gain_difference": 0.0,
+      "max_tau_difference": 0.0,
+      "eligible_same": true,
+      "selected_same": true,
+      "actual_selected": 0,
+      "reference_selected": 0,
+      "actual_gain": [
+        3.0360049546480468e-05,
+        2.7605338866948625e-05
+      ],
+      "actual_tau": [
+        2.1206106351791233e-14,
+        2.5257075789731262e-14
+      ],
+      "base_scope": "Historical paid saved x/u/r/ell; no new Jx or adjoint is obtained for this kernel control."
+    },
+    "full_rhs": 12,
+    "material_directions": 2,
+    "paired_block_column_max_abs": 0.0
+  },
+  {
+    "scope": "eff_verification_control",
+    "object": 2002,
+    "version": "a17.eff.cache_original_block_control.v1",
+    "run_id": "2cbc73a38c459a8c20bc80af2b808dee96c21ff3cc65cfb3eb7881ca1bb45393",
+    "source": "evidence/final_snapshot/results/cache_block_v1/object_2002/verification_result.json",
+    "repeat": 1,
+    "mode": "columns",
+    "wall_s": 0.07595740002579987,
+    "counter_delta": {
+      "lu_factorizations": 0,
+      "jvp_rhs": 12,
+      "solve_calls": 2,
+      "kernel_build_blocks": 0,
+      "goff_rhs": 0,
+      "kernel_entries": 0,
+      "solve_rhs": 12,
+      "solve_rhs_full_forward": 0,
+      "jvp_calls": 2,
+      "full_L_materializations": 0,
+      "solve_rhs_full_tangent": 12,
+      "solve_rhs_full": 12,
+      "lu_factorizations_full": 0
+    },
+    "maximum_abs_vs_saved": 0.0,
+    "gain_check": {
+      "max_gain_difference": 0.0,
+      "max_tau_difference": 0.0,
+      "eligible_same": true,
+      "selected_same": true,
+      "actual_selected": 0,
+      "reference_selected": 0,
+      "actual_gain": [
+        3.0360049546480468e-05,
+        2.7605338866948625e-05
+      ],
+      "actual_tau": [
+        2.1206106351791233e-14,
+        2.5257075789731262e-14
+      ],
+      "base_scope": "Historical paid saved x/u/r/ell; no new Jx or adjoint is obtained for this kernel control."
+    },
+    "full_rhs": 12,
+    "material_directions": 2
+  },
+  {
+    "scope": "eff_verification_control",
+    "object": 2002,
+    "version": "a17.eff.cache_original_block_control.v1",
+    "run_id": "2cbc73a38c459a8c20bc80af2b808dee96c21ff3cc65cfb3eb7881ca1bb45393",
+    "source": "evidence/final_snapshot/results/cache_block_v1/object_2002/verification_result.json",
+    "repeat": 1,
+    "mode": "block",
+    "wall_s": 0.081059499992989,
+    "counter_delta": {
+      "lu_factorizations": 0,
+      "jvp_rhs": 12,
+      "solve_calls": 1,
+      "kernel_build_blocks": 0,
+      "goff_rhs": 0,
+      "kernel_entries": 0,
+      "solve_rhs": 12,
+      "solve_rhs_full_forward": 0,
+      "jvp_calls": 1,
+      "full_L_materializations": 0,
+      "solve_rhs_full_tangent": 12,
+      "solve_rhs_full": 12,
+      "lu_factorizations_full": 0
+    },
+    "maximum_abs_vs_saved": 0.0,
+    "gain_check": {
+      "max_gain_difference": 0.0,
+      "max_tau_difference": 0.0,
+      "eligible_same": true,
+      "selected_same": true,
+      "actual_selected": 0,
+      "reference_selected": 0,
+      "actual_gain": [
+        3.0360049546480468e-05,
+        2.7605338866948625e-05
+      ],
+      "actual_tau": [
+        2.1206106351791233e-14,
+        2.5257075789731262e-14
+      ],
+      "base_scope": "Historical paid saved x/u/r/ell; no new Jx or adjoint is obtained for this kernel control."
+    },
+    "full_rhs": 12,
+    "material_directions": 2,
+    "paired_block_column_max_abs": 0.0
+  },
+  {
+    "scope": "eff_verification_control",
+    "object": 2002,
+    "version": "a17.eff.cache_original_block_control.v1",
+    "run_id": "2cbc73a38c459a8c20bc80af2b808dee96c21ff3cc65cfb3eb7881ca1bb45393",
+    "source": "evidence/final_snapshot/results/cache_block_v1/object_2002/verification_result.json",
+    "repeat": 2,
+    "mode": "block",
+    "wall_s": 0.07956290000583977,
+    "counter_delta": {
+      "lu_factorizations": 0,
+      "jvp_rhs": 12,
+      "solve_calls": 1,
+      "kernel_build_blocks": 0,
+      "goff_rhs": 0,
+      "kernel_entries": 0,
+      "solve_rhs": 12,
+      "solve_rhs_full_forward": 0,
+      "jvp_calls": 1,
+      "full_L_materializations": 0,
+      "solve_rhs_full_tangent": 12,
+      "solve_rhs_full": 12,
+      "lu_factorizations_full": 0
+    },
+    "maximum_abs_vs_saved": 0.0,
+    "gain_check": {
+      "max_gain_difference": 0.0,
+      "max_tau_difference": 0.0,
+      "eligible_same": true,
+      "selected_same": true,
+      "actual_selected": 0,
+      "reference_selected": 0,
+      "actual_gain": [
+        3.0360049546480468e-05,
+        2.7605338866948625e-05
+      ],
+      "actual_tau": [
+        2.1206106351791233e-14,
+        2.5257075789731262e-14
+      ],
+      "base_scope": "Historical paid saved x/u/r/ell; no new Jx or adjoint is obtained for this kernel control."
+    },
+    "full_rhs": 12,
+    "material_directions": 2
+  },
+  {
+    "scope": "eff_verification_control",
+    "object": 2002,
+    "version": "a17.eff.cache_original_block_control.v1",
+    "run_id": "2cbc73a38c459a8c20bc80af2b808dee96c21ff3cc65cfb3eb7881ca1bb45393",
+    "source": "evidence/final_snapshot/results/cache_block_v1/object_2002/verification_result.json",
+    "repeat": 2,
+    "mode": "columns",
+    "wall_s": 0.0841307999799028,
+    "counter_delta": {
+      "lu_factorizations": 0,
+      "jvp_rhs": 12,
+      "solve_calls": 2,
+      "kernel_build_blocks": 0,
+      "goff_rhs": 0,
+      "kernel_entries": 0,
+      "solve_rhs": 12,
+      "solve_rhs_full_forward": 0,
+      "jvp_calls": 2,
+      "full_L_materializations": 0,
+      "solve_rhs_full_tangent": 12,
+      "solve_rhs_full": 12,
+      "lu_factorizations_full": 0
+    },
+    "maximum_abs_vs_saved": 0.0,
+    "gain_check": {
+      "max_gain_difference": 0.0,
+      "max_tau_difference": 0.0,
+      "eligible_same": true,
+      "selected_same": true,
+      "actual_selected": 0,
+      "reference_selected": 0,
+      "actual_gain": [
+        3.0360049546480468e-05,
+        2.7605338866948625e-05
+      ],
+      "actual_tau": [
+        2.1206106351791233e-14,
+        2.5257075789731262e-14
+      ],
+      "base_scope": "Historical paid saved x/u/r/ell; no new Jx or adjoint is obtained for this kernel control."
+    },
+    "full_rhs": 12,
+    "material_directions": 2,
+    "paired_block_column_max_abs": 0.0
+  },
+  {
+    "scope": "eff_verification_control",
+    "object": 2002,
+    "version": "a17.eff.cache_original_block_control.v2",
+    "run_id": "1627683f6042a019872fdc3c725b3a31b06651922e8025e58bdea47aa8a1344a",
+    "source": "evidence/final_snapshot/results/cache_block_v2/object_2002/verification_result.json",
+    "repeat": 0,
+    "mode": "block",
+    "wall_s": 0.2509876000112854,
+    "counter_delta": {
+      "kernel_entries": 0,
+      "jvp_calls": 1,
+      "solve_rhs_full_tangent": 12,
+      "lu_factorizations": 0,
+      "jvp_rhs": 12,
+      "solve_rhs_full_forward": 0,
+      "solve_rhs_full": 12,
+      "kernel_build_blocks": 0,
+      "lu_factorizations_full": 0,
+      "full_L_materializations": 0,
+      "solve_rhs": 12,
+      "goff_rhs": 0,
+      "solve_calls": 1
+    },
+    "maximum_abs_vs_saved": 0.0,
+    "gain_check": {
+      "max_gain_difference": 0.0,
+      "max_tau_difference": 0.0,
+      "eligible_same": true,
+      "selected_same": true,
+      "actual_selected": 0,
+      "reference_selected": 0,
+      "actual_gain": [
+        3.0360049546480468e-05,
+        2.7605338866948625e-05
+      ],
+      "actual_tau": [
+        2.1206106351791233e-14,
+        2.5257075789731262e-14
+      ],
+      "base_scope": "Historical paid saved x/u/r/ell; no new Jx or adjoint is obtained for this kernel control."
+    },
+    "full_rhs": 12,
+    "material_directions": 2
+  },
+  {
+    "scope": "eff_verification_control",
+    "object": 2002,
+    "version": "a17.eff.cache_original_block_control.v2",
+    "run_id": "1627683f6042a019872fdc3c725b3a31b06651922e8025e58bdea47aa8a1344a",
+    "source": "evidence/final_snapshot/results/cache_block_v2/object_2002/verification_result.json",
+    "repeat": 0,
+    "mode": "columns",
+    "wall_s": 0.0759212999837473,
+    "counter_delta": {
+      "kernel_entries": 0,
+      "jvp_calls": 2,
+      "solve_rhs_full_tangent": 12,
+      "lu_factorizations": 0,
+      "jvp_rhs": 12,
+      "solve_rhs_full_forward": 0,
+      "solve_rhs_full": 12,
+      "kernel_build_blocks": 0,
+      "lu_factorizations_full": 0,
+      "full_L_materializations": 0,
+      "solve_rhs": 12,
+      "goff_rhs": 0,
+      "solve_calls": 2
+    },
+    "maximum_abs_vs_saved": 0.0,
+    "gain_check": {
+      "max_gain_difference": 0.0,
+      "max_tau_difference": 0.0,
+      "eligible_same": true,
+      "selected_same": true,
+      "actual_selected": 0,
+      "reference_selected": 0,
+      "actual_gain": [
+        3.0360049546480468e-05,
+        2.7605338866948625e-05
+      ],
+      "actual_tau": [
+        2.1206106351791233e-14,
+        2.5257075789731262e-14
+      ],
+      "base_scope": "Historical paid saved x/u/r/ell; no new Jx or adjoint is obtained for this kernel control."
+    },
+    "full_rhs": 12,
+    "material_directions": 2,
+    "paired_block_column_max_abs": 0.0
+  },
+  {
+    "scope": "eff_verification_control",
+    "object": 2002,
+    "version": "a17.eff.cache_original_block_control.v2",
+    "run_id": "1627683f6042a019872fdc3c725b3a31b06651922e8025e58bdea47aa8a1344a",
+    "source": "evidence/final_snapshot/results/cache_block_v2/object_2002/verification_result.json",
+    "repeat": 1,
+    "mode": "columns",
+    "wall_s": 0.07555249996948987,
+    "counter_delta": {
+      "kernel_entries": 0,
+      "jvp_calls": 2,
+      "solve_rhs_full_tangent": 12,
+      "lu_factorizations": 0,
+      "jvp_rhs": 12,
+      "solve_rhs_full_forward": 0,
+      "solve_rhs_full": 12,
+      "kernel_build_blocks": 0,
+      "lu_factorizations_full": 0,
+      "full_L_materializations": 0,
+      "solve_rhs": 12,
+      "goff_rhs": 0,
+      "solve_calls": 2
+    },
+    "maximum_abs_vs_saved": 0.0,
+    "gain_check": {
+      "max_gain_difference": 0.0,
+      "max_tau_difference": 0.0,
+      "eligible_same": true,
+      "selected_same": true,
+      "actual_selected": 0,
+      "reference_selected": 0,
+      "actual_gain": [
+        3.0360049546480468e-05,
+        2.7605338866948625e-05
+      ],
+      "actual_tau": [
+        2.1206106351791233e-14,
+        2.5257075789731262e-14
+      ],
+      "base_scope": "Historical paid saved x/u/r/ell; no new Jx or adjoint is obtained for this kernel control."
+    },
+    "full_rhs": 12,
+    "material_directions": 2
+  },
+  {
+    "scope": "eff_verification_control",
+    "object": 2002,
+    "version": "a17.eff.cache_original_block_control.v2",
+    "run_id": "1627683f6042a019872fdc3c725b3a31b06651922e8025e58bdea47aa8a1344a",
+    "source": "evidence/final_snapshot/results/cache_block_v2/object_2002/verification_result.json",
+    "repeat": 1,
+    "mode": "block",
+    "wall_s": 0.0836420000414364,
+    "counter_delta": {
+      "kernel_entries": 0,
+      "jvp_calls": 1,
+      "solve_rhs_full_tangent": 12,
+      "lu_factorizations": 0,
+      "jvp_rhs": 12,
+      "solve_rhs_full_forward": 0,
+      "solve_rhs_full": 12,
+      "kernel_build_blocks": 0,
+      "lu_factorizations_full": 0,
+      "full_L_materializations": 0,
+      "solve_rhs": 12,
+      "goff_rhs": 0,
+      "solve_calls": 1
+    },
+    "maximum_abs_vs_saved": 0.0,
+    "gain_check": {
+      "max_gain_difference": 0.0,
+      "max_tau_difference": 0.0,
+      "eligible_same": true,
+      "selected_same": true,
+      "actual_selected": 0,
+      "reference_selected": 0,
+      "actual_gain": [
+        3.0360049546480468e-05,
+        2.7605338866948625e-05
+      ],
+      "actual_tau": [
+        2.1206106351791233e-14,
+        2.5257075789731262e-14
+      ],
+      "base_scope": "Historical paid saved x/u/r/ell; no new Jx or adjoint is obtained for this kernel control."
+    },
+    "full_rhs": 12,
+    "material_directions": 2,
+    "paired_block_column_max_abs": 0.0
+  },
+  {
+    "scope": "eff_verification_control",
+    "object": 2002,
+    "version": "a17.eff.cache_original_block_control.v2",
+    "run_id": "1627683f6042a019872fdc3c725b3a31b06651922e8025e58bdea47aa8a1344a",
+    "source": "evidence/final_snapshot/results/cache_block_v2/object_2002/verification_result.json",
+    "repeat": 2,
+    "mode": "block",
+    "wall_s": 0.07910179998725653,
+    "counter_delta": {
+      "kernel_entries": 0,
+      "jvp_calls": 1,
+      "solve_rhs_full_tangent": 12,
+      "lu_factorizations": 0,
+      "jvp_rhs": 12,
+      "solve_rhs_full_forward": 0,
+      "solve_rhs_full": 12,
+      "kernel_build_blocks": 0,
+      "lu_factorizations_full": 0,
+      "full_L_materializations": 0,
+      "solve_rhs": 12,
+      "goff_rhs": 0,
+      "solve_calls": 1
+    },
+    "maximum_abs_vs_saved": 0.0,
+    "gain_check": {
+      "max_gain_difference": 0.0,
+      "max_tau_difference": 0.0,
+      "eligible_same": true,
+      "selected_same": true,
+      "actual_selected": 0,
+      "reference_selected": 0,
+      "actual_gain": [
+        3.0360049546480468e-05,
+        2.7605338866948625e-05
+      ],
+      "actual_tau": [
+        2.1206106351791233e-14,
+        2.5257075789731262e-14
+      ],
+      "base_scope": "Historical paid saved x/u/r/ell; no new Jx or adjoint is obtained for this kernel control."
+    },
+    "full_rhs": 12,
+    "material_directions": 2
+  },
+  {
+    "scope": "eff_verification_control",
+    "object": 2002,
+    "version": "a17.eff.cache_original_block_control.v2",
+    "run_id": "1627683f6042a019872fdc3c725b3a31b06651922e8025e58bdea47aa8a1344a",
+    "source": "evidence/final_snapshot/results/cache_block_v2/object_2002/verification_result.json",
+    "repeat": 2,
+    "mode": "columns",
+    "wall_s": 0.07678750000195578,
+    "counter_delta": {
+      "kernel_entries": 0,
+      "jvp_calls": 2,
+      "solve_rhs_full_tangent": 12,
+      "lu_factorizations": 0,
+      "jvp_rhs": 12,
+      "solve_rhs_full_forward": 0,
+      "solve_rhs_full": 12,
+      "kernel_build_blocks": 0,
+      "lu_factorizations_full": 0,
+      "full_L_materializations": 0,
+      "solve_rhs": 12,
+      "goff_rhs": 0,
+      "solve_calls": 2
+    },
+    "maximum_abs_vs_saved": 0.0,
+    "gain_check": {
+      "max_gain_difference": 0.0,
+      "max_tau_difference": 0.0,
+      "eligible_same": true,
+      "selected_same": true,
+      "actual_selected": 0,
+      "reference_selected": 0,
+      "actual_gain": [
+        3.0360049546480468e-05,
+        2.7605338866948625e-05
+      ],
+      "actual_tau": [
+        2.1206106351791233e-14,
+        2.5257075789731262e-14
+      ],
+      "base_scope": "Historical paid saved x/u/r/ell; no new Jx or adjoint is obtained for this kernel control."
+    },
+    "full_rhs": 12,
+    "material_directions": 2,
+    "paired_block_column_max_abs": 0.0
+  },
+  {
+    "scope": "eff_verification_control",
+    "object": 2009,
+    "version": "a17.eff.cache_original_block_control.v2",
+    "run_id": "d80ce4606e45224cf2af49d857e9627faea5f6f4cc04c5bb1233d3eba6b60c07",
+    "source": "evidence/final_snapshot/results/cache_block_v2/object_2009/verification_result.json",
+    "repeat": 0,
+    "mode": "block",
+    "wall_s": 0.23329720000037923,
+    "counter_delta": {
+      "jvp_calls": 1,
+      "solve_calls": 1,
+      "kernel_entries": 0,
+      "jvp_rhs": 12,
+      "full_L_materializations": 0,
+      "solve_rhs_full_forward": 0,
+      "solve_rhs_full_tangent": 12,
+      "lu_factorizations": 0,
+      "lu_factorizations_full": 0,
+      "solve_rhs": 12,
+      "solve_rhs_full": 12,
+      "goff_rhs": 0,
+      "kernel_build_blocks": 0
+    },
+    "maximum_abs_vs_saved": 0.0,
+    "gain_check": {
+      "max_gain_difference": 0.0,
+      "max_tau_difference": 0.0,
+      "eligible_same": true,
+      "selected_same": true,
+      "actual_selected": 0,
+      "reference_selected": 0,
+      "actual_gain": [
+        1.619983827897227e-05,
+        6.225578733282877e-06
+      ],
+      "actual_tau": [
+        4.912027572981884e-15,
+        4.752532679643434e-15
+      ],
+      "base_scope": "Historical paid saved x/u/r/ell; no new Jx or adjoint is obtained for this kernel control."
+    },
+    "full_rhs": 12,
+    "material_directions": 2
+  },
+  {
+    "scope": "eff_verification_control",
+    "object": 2009,
+    "version": "a17.eff.cache_original_block_control.v2",
+    "run_id": "d80ce4606e45224cf2af49d857e9627faea5f6f4cc04c5bb1233d3eba6b60c07",
+    "source": "evidence/final_snapshot/results/cache_block_v2/object_2009/verification_result.json",
+    "repeat": 0,
+    "mode": "columns",
+    "wall_s": 0.11300280003342777,
+    "counter_delta": {
+      "jvp_calls": 2,
+      "solve_calls": 2,
+      "kernel_entries": 0,
+      "jvp_rhs": 12,
+      "full_L_materializations": 0,
+      "solve_rhs_full_tangent": 12,
+      "solve_rhs_full_forward": 0,
+      "lu_factorizations": 0,
+      "lu_factorizations_full": 0,
+      "solve_rhs": 12,
+      "solve_rhs_full": 12,
+      "goff_rhs": 0,
+      "kernel_build_blocks": 0
+    },
+    "maximum_abs_vs_saved": 6.505213034913027e-19,
+    "gain_check": {
+      "max_gain_difference": 6.776263578034403e-21,
+      "max_tau_difference": 7.888609052210118e-31,
+      "eligible_same": true,
+      "selected_same": true,
+      "actual_selected": 0,
+      "reference_selected": 0,
+      "actual_gain": [
+        1.6199838278972277e-05,
+        6.225578733282875e-06
+      ],
+      "actual_tau": [
+        4.912027572981884e-15,
+        4.752532679643435e-15
+      ],
+      "base_scope": "Historical paid saved x/u/r/ell; no new Jx or adjoint is obtained for this kernel control."
+    },
+    "full_rhs": 12,
+    "material_directions": 2,
+    "paired_block_column_max_abs": 6.505213034913027e-19
+  },
+  {
+    "scope": "eff_verification_control",
+    "object": 2009,
+    "version": "a17.eff.cache_original_block_control.v2",
+    "run_id": "d80ce4606e45224cf2af49d857e9627faea5f6f4cc04c5bb1233d3eba6b60c07",
+    "source": "evidence/final_snapshot/results/cache_block_v2/object_2009/verification_result.json",
+    "repeat": 1,
+    "mode": "columns",
+    "wall_s": 0.07634119997965172,
+    "counter_delta": {
+      "jvp_calls": 2,
+      "solve_calls": 2,
+      "kernel_entries": 0,
+      "jvp_rhs": 12,
+      "full_L_materializations": 0,
+      "solve_rhs_full_tangent": 12,
+      "solve_rhs_full_forward": 0,
+      "lu_factorizations": 0,
+      "lu_factorizations_full": 0,
+      "solve_rhs": 12,
+      "solve_rhs_full": 12,
+      "goff_rhs": 0,
+      "kernel_build_blocks": 0
+    },
+    "maximum_abs_vs_saved": 6.505213034913027e-19,
+    "gain_check": {
+      "max_gain_difference": 6.776263578034403e-21,
+      "max_tau_difference": 7.888609052210118e-31,
+      "eligible_same": true,
+      "selected_same": true,
+      "actual_selected": 0,
+      "reference_selected": 0,
+      "actual_gain": [
+        1.6199838278972277e-05,
+        6.225578733282875e-06
+      ],
+      "actual_tau": [
+        4.912027572981884e-15,
+        4.752532679643435e-15
+      ],
+      "base_scope": "Historical paid saved x/u/r/ell; no new Jx or adjoint is obtained for this kernel control."
+    },
+    "full_rhs": 12,
+    "material_directions": 2
+  },
+  {
+    "scope": "eff_verification_control",
+    "object": 2009,
+    "version": "a17.eff.cache_original_block_control.v2",
+    "run_id": "d80ce4606e45224cf2af49d857e9627faea5f6f4cc04c5bb1233d3eba6b60c07",
+    "source": "evidence/final_snapshot/results/cache_block_v2/object_2009/verification_result.json",
+    "repeat": 1,
+    "mode": "block",
+    "wall_s": 0.08387269999366254,
+    "counter_delta": {
+      "jvp_calls": 1,
+      "solve_calls": 1,
+      "kernel_entries": 0,
+      "jvp_rhs": 12,
+      "full_L_materializations": 0,
+      "solve_rhs_full_tangent": 12,
+      "solve_rhs_full_forward": 0,
+      "lu_factorizations": 0,
+      "lu_factorizations_full": 0,
+      "solve_rhs": 12,
+      "solve_rhs_full": 12,
+      "goff_rhs": 0,
+      "kernel_build_blocks": 0
+    },
+    "maximum_abs_vs_saved": 0.0,
+    "gain_check": {
+      "max_gain_difference": 0.0,
+      "max_tau_difference": 0.0,
+      "eligible_same": true,
+      "selected_same": true,
+      "actual_selected": 0,
+      "reference_selected": 0,
+      "actual_gain": [
+        1.619983827897227e-05,
+        6.225578733282877e-06
+      ],
+      "actual_tau": [
+        4.912027572981884e-15,
+        4.752532679643434e-15
+      ],
+      "base_scope": "Historical paid saved x/u/r/ell; no new Jx or adjoint is obtained for this kernel control."
+    },
+    "full_rhs": 12,
+    "material_directions": 2,
+    "paired_block_column_max_abs": 6.505213034913027e-19
+  },
+  {
+    "scope": "eff_verification_control",
+    "object": 2009,
+    "version": "a17.eff.cache_original_block_control.v2",
+    "run_id": "d80ce4606e45224cf2af49d857e9627faea5f6f4cc04c5bb1233d3eba6b60c07",
+    "source": "evidence/final_snapshot/results/cache_block_v2/object_2009/verification_result.json",
+    "repeat": 2,
+    "mode": "block",
+    "wall_s": 0.08220090001123026,
+    "counter_delta": {
+      "jvp_calls": 1,
+      "solve_calls": 1,
+      "kernel_entries": 0,
+      "jvp_rhs": 12,
+      "full_L_materializations": 0,
+      "solve_rhs_full_tangent": 12,
+      "solve_rhs_full_forward": 0,
+      "lu_factorizations": 0,
+      "lu_factorizations_full": 0,
+      "solve_rhs": 12,
+      "solve_rhs_full": 12,
+      "goff_rhs": 0,
+      "kernel_build_blocks": 0
+    },
+    "maximum_abs_vs_saved": 0.0,
+    "gain_check": {
+      "max_gain_difference": 0.0,
+      "max_tau_difference": 0.0,
+      "eligible_same": true,
+      "selected_same": true,
+      "actual_selected": 0,
+      "reference_selected": 0,
+      "actual_gain": [
+        1.619983827897227e-05,
+        6.225578733282877e-06
+      ],
+      "actual_tau": [
+        4.912027572981884e-15,
+        4.752532679643434e-15
+      ],
+      "base_scope": "Historical paid saved x/u/r/ell; no new Jx or adjoint is obtained for this kernel control."
+    },
+    "full_rhs": 12,
+    "material_directions": 2
+  },
+  {
+    "scope": "eff_verification_control",
+    "object": 2009,
+    "version": "a17.eff.cache_original_block_control.v2",
+    "run_id": "d80ce4606e45224cf2af49d857e9627faea5f6f4cc04c5bb1233d3eba6b60c07",
+    "source": "evidence/final_snapshot/results/cache_block_v2/object_2009/verification_result.json",
+    "repeat": 2,
+    "mode": "columns",
+    "wall_s": 0.073843999998644,
+    "counter_delta": {
+      "jvp_calls": 2,
+      "solve_calls": 2,
+      "kernel_entries": 0,
+      "jvp_rhs": 12,
+      "full_L_materializations": 0,
+      "solve_rhs_full_tangent": 12,
+      "solve_rhs_full_forward": 0,
+      "lu_factorizations": 0,
+      "lu_factorizations_full": 0,
+      "solve_rhs": 12,
+      "solve_rhs_full": 12,
+      "goff_rhs": 0,
+      "kernel_build_blocks": 0
+    },
+    "maximum_abs_vs_saved": 6.505213034913027e-19,
+    "gain_check": {
+      "max_gain_difference": 6.776263578034403e-21,
+      "max_tau_difference": 7.888609052210118e-31,
+      "eligible_same": true,
+      "selected_same": true,
+      "actual_selected": 0,
+      "reference_selected": 0,
+      "actual_gain": [
+        1.6199838278972277e-05,
+        6.225578733282875e-06
+      ],
+      "actual_tau": [
+        4.912027572981884e-15,
+        4.752532679643435e-15
+      ],
+      "base_scope": "Historical paid saved x/u/r/ell; no new Jx or adjoint is obtained for this kernel control."
+    },
+    "full_rhs": 12,
+    "material_directions": 2,
+    "paired_block_column_max_abs": 6.505213034913027e-19
+  }
+]

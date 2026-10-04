@@ -1,0 +1,15 @@
+{
+  "schema": "a17.saved_empirical_anchor_radius.v1",
+  "development_objects": [2002],
+  "heldout_objects": [2009],
+  "cohorts": ["nonlinear_k8_all18", "frozen_early_middle_late_k4_k8_k16"],
+  "fit_rule": "1.1 times maximum development error-to-feature norm ratio",
+  "models": ["c_anchor * norm(anchor_Jd)", "c_displacement * norm(d)"],
+  "zero_denominator_rule": "if denominator==0 and error>0, model is unavailable; if both zero, ratio=0",
+  "norm": "Euclidean FP64 realified normalized receiver outputs; physical orthonormal material coefficient norm",
+  "do_not_tune_on_heldout": true,
+  "certificate_type": "EMPIRICAL_NONCERTIFIED",
+  "deployable_cheap_gain_without_gx": "NOT_RUN_MISSING_GX",
+  "retrospective_Qupper0_zero_threshold": 0,
+  "training": false
+}

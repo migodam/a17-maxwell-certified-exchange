@@ -1,0 +1,77 @@
+{
+  "schema": "a17.efficiency.delivery_receipt.final.v1",
+  "status": "COMPLETE_LOCAL_EVIDENCE_DELIVERY",
+  "final_verdict": "CONDITIONAL",
+  "unique_recommendation": "top1 finalist / cap3 accepted exchanges / geometry_cache_v2 / current-state full Jd checks",
+  "reports11": 11,
+  "final_package": "deliverables/FINAL_PACKAGE_V2/A17_EFFICIENCY_EVIDENCE.zip",
+  "zip_sha256": "e0eda0e95c50b5a56d694e6ffde34915037029d0e66695dfadac35a13b8b25db",
+  "package_byte_audit": {
+    "status": "PASS_BYTE_PRESERVATION_CRC_AND_PARSE",
+    "admitted_payloads": 128,
+    "python_sources_parsed": 17,
+    "reports11": 11,
+    "zip_member_count": 131,
+    "zip_sha256": "e0eda0e95c50b5a56d694e6ffde34915037029d0e66695dfadac35a13b8b25db",
+    "manifest_sha256": "fc673095e6b051d579a5f3ecb47ac7bf68f213ba931d6b3dac0c9ecf39e4265b",
+    "numerical_jobs_launched": false,
+    "privacy_transform": "No executable or payload rewriting; separately admitted metadata projections",
+    "full_GPU_replay": false
+  },
+  "public_reanalysis_replay": {
+    "owner_groups": 14,
+    "open_comparisons": 0,
+    "owner_figures": 3,
+    "generic_figures": 8,
+    "generic_measurement_status": "PARTIAL_authorized_single_repeat_scopes_not_running_jobs",
+    "numerical_jobs_launched": false,
+    "primary_png_checks": [
+      {
+        "name": "owner_quality_wall_physics_01",
+        "original_sha256": "64ba2464fb92299620822f24a7281ee766a3596f4a8e979c8362192980d456c8",
+        "replot_sha256": "64ba2464fb92299620822f24a7281ee766a3596f4a8e979c8362192980d456c8",
+        "byte_equal": true
+      },
+      {
+        "name": "owner_physical_counts_2002_physics_01",
+        "original_sha256": "cbeb4b6cd3baf468ff690e78309fa3056afecc2ce88eb80d8daef7434b891ecb",
+        "replot_sha256": "cbeb4b6cd3baf468ff690e78309fa3056afecc2ce88eb80d8daef7434b891ecb",
+        "byte_equal": true
+      },
+      {
+        "name": "owner_physical_counts_2009_physics_01",
+        "original_sha256": "107641b3b11a16e72b500088e4f88cdeb101b61618e7d79bf314b7cf83c570d2",
+        "replot_sha256": "107641b3b11a16e72b500088e4f88cdeb101b61618e7d79bf314b7cf83c570d2",
+        "byte_equal": true
+      },
+      {
+        "name": "01_frozen_gain_vs_Jd",
+        "original_sha256": "e4f55a0044d393b13e91bd268e89590a85b70b87143dc986f2814cda24d151b5",
+        "replot_sha256": "e4f55a0044d393b13e91bd268e89590a85b70b87143dc986f2814cda24d151b5",
+        "byte_equal": true
+      },
+      {
+        "name": "03_original_18_update_net_vs_Jd",
+        "original_sha256": "5f0e552fe1c04e8d620ceca9440cb5d6f3d067000728d4ff9d2ce12697e79183",
+        "replot_sha256": "5f0e552fe1c04e8d620ceca9440cb5d6f3d067000728d4ff9d2ce12697e79183",
+        "byte_equal": true
+      }
+    ]
+  },
+  "limitations": "Not self-contained GPU replay;42vendor and17historicalsource hash-only; no universal acceleration/certificate or newholdout",
+  "prior_package_issue": {
+    "version1": "Missing archival plot_efficiency.py provenance dependency discovered on public generic replot; originalpackage retained",
+    "version2": "Only exact archival style source added; no numerical source/config/rule/results change"
+  },
+  "independent_review": "GPT-6.1 Sol read-only review; reproduction/rank/conditional/navigation fixes plus four-scope typo corrected by root",
+  "cost_summary": {
+    "new_occupation_s": 17456.34,
+    "cumulative_s": 37418.4,
+    "ceiling_s": 43200,
+    "paired_attempts": 42,
+    "unknown_or_active_attempts_at_snapshot": 0
+  },
+  "numerical_jobs_complete": true,
+  "no_additional_numerical_work": true,
+  "no_automatic_publish": true
+}

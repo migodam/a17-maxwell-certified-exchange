@@ -1,0 +1,25 @@
+[
+  {
+    "source": "execution/gpu_attempts.jsonl",
+    "status": "HASH_BOUND",
+    "sha256": "6f07e6e0b9ddb5c6e7612027f007aece34b6a5009ebf10d7bae0b3763ee8ec36",
+    "bytes": 275167
+  },
+  {
+    "source": "execution/preflight_checks.jsonl",
+    "status": "VERIFIED_ABSENT_NO_REJECTED_PREFLIGHT",
+    "sha256": null,
+    "exists": false,
+    "charged_guard_s": 0.0,
+    "watcher_sha256": "f1690d6ab3255ef02f2a56e645ac8561f18fecbf90d27cdf470464bbf7d43a09",
+    "guard_epoch_sha256": "49f002edff1e8e6e4f6bc6c6ed8d0aebc8f3399baa751639cbce2dd6b1d0d2fe",
+    "absence_key": "0:execution/preflight_checks.jsonl",
+    "interpretation": "Exact bound watcher records this ledger only for rejected preflight before start; explicit null epoch member and no inventory/local file record absence."
+  },
+  {
+    "source": "research/BUDGET_CARRY_LOCK.json",
+    "status": "HASH_BOUND",
+    "sha256": "76d5aa5078e976e4c30e4fefee0635a0a5829a755f811842d520d2fc18aaf9e8",
+    "bytes": 1037
+  }
+]

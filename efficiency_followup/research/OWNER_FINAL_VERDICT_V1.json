@@ -1,0 +1,43 @@
+{
+  "schema": "a17.efficiency.owner_final_verdict.v1",
+  "finalized": true,
+  "final_verdict": "CONDITIONAL",
+  "unique_recommended_policy": {
+    "name": "top1_cap3_geometry_cache_v2",
+    "finalists_per_round": 1,
+    "max_accepted_exchanges": 3,
+    "current_start": "receiver_each_outer_iteration",
+    "cache": "geometry-only V/meta, current-state operators refreshed",
+    "acceptance": "paid full current-state Jd and original online finite-gain tolerance; no approximate accept"
+  },
+  "gateA": {
+    "top1_cap2": "GO_FROZEN_ONLY",
+    "recommended": "CONDITIONAL",
+    "reason": "recommended frozen directions 2.667/2.556, above GO max2; retained object gains 100.016/100.028%"
+  },
+  "gateB": {
+    "top1_cap2": "FAIL_SMOOTH_QUALITY",
+    "recommended": "PASS_TESTED_TWO_OBJECTS_NOISELESS_K8",
+    "tolerance": "both <=1.01*original+5e-9; same feasibility/Armijo"
+  },
+  "gateC": {
+    "recommended": "FAIL_TARGET_1_3",
+    "ratio_to_receiver": [
+      1.9581916003969189,
+      1.31765791478289
+    ]
+  },
+  "independent_objects": 2,
+  "no_new_holdout": true,
+  "nonlinear_statewise_full_GN_gap": "NOT_MEASURED",
+  "all_numerical_jobs_terminal": true,
+  "cost_accounting": "CLOSED_LEDGER_ACCOUNTING_ONLY",
+  "numerical_source_unchanged_since_final_snapshot": true,
+  "old_science_untouched": true,
+  "no_NN": true,
+  "no_more_numerical_jobs": true,
+  "evidence_scope": "Efficiency follow-up; not universal speedup, not deterministic output certificate, not self-contained GPU replay",
+  "snapshot_summary_sha256": "a706587bf73636c97a3166848388391c85c2df2248ea5f417108d7bc7b8e5e3b",
+  "owner_summary_sha256": "669559b2cdb10484ad68f70cf094d19fb904015c93f922841b0d5626df533fb6",
+  "budget_receipt_sha256": "23fe2d791775eee8f445b4cd5a6bde2b8fc890063c78d2f34af4a38dbe7d033e"
+}

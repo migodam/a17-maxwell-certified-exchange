@@ -1,0 +1,3012 @@
+{
+  "created_at": "2026-10-30T01:58:00.735159+00:00",
+  "mode": "PARTIAL",
+  "physics_actions": 0,
+  "status": "PARTIAL",
+  "terminal_gate": false,
+  "input_errors": [],
+  "failures": [],
+  "trajectories": [
+    {
+      "target": "digit3",
+      "policy": "full_gn",
+      "checks": [
+        {
+          "kind": "checkpoint_metrics",
+          "iteration": 0,
+          "checkpoint": "chi_01.npz",
+          "status": "PASS",
+          "mismatches": {},
+          "missing_keys": []
+        },
+        {
+          "kind": "iteration_index",
+          "iteration": 0,
+          "checkpoint": "chi_01.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "before_metrics",
+          "iteration": 0,
+          "checkpoint": "chi_01.npz",
+          "status": "PASS",
+          "mismatches": {},
+          "missing_keys": []
+        },
+        {
+          "kind": "objective_before",
+          "iteration": 0,
+          "checkpoint": "chi_01.npz",
+          "status": "PASS",
+          "recomputed": 0.35592080154373595,
+          "recorded": 0.3559208015437358
+        },
+        {
+          "kind": "armijo_saved_trial_and_safe_chi",
+          "iteration": 0,
+          "checkpoint": "chi_01.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "accepted_update_count",
+          "iteration": 0,
+          "checkpoint": "chi_01.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "objective_after",
+          "iteration": 0,
+          "checkpoint": "chi_01.npz",
+          "status": "PASS",
+          "recomputed": 0.28995665864454817,
+          "recorded": 0.289956658644548
+        },
+        {
+          "kind": "physical_feasibility",
+          "iteration": 0,
+          "checkpoint": "chi_01.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "checkpoint_metrics",
+          "iteration": 1,
+          "checkpoint": "chi_02.npz",
+          "status": "PASS",
+          "mismatches": {},
+          "missing_keys": []
+        },
+        {
+          "kind": "iteration_index",
+          "iteration": 1,
+          "checkpoint": "chi_02.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "before_metrics",
+          "iteration": 1,
+          "checkpoint": "chi_02.npz",
+          "status": "PASS",
+          "mismatches": {},
+          "missing_keys": []
+        },
+        {
+          "kind": "objective_before",
+          "iteration": 1,
+          "checkpoint": "chi_02.npz",
+          "status": "PASS",
+          "recomputed": 0.28995665864454817,
+          "recorded": 0.2899566586445481
+        },
+        {
+          "kind": "armijo_saved_trial_and_safe_chi",
+          "iteration": 1,
+          "checkpoint": "chi_02.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "accepted_update_count",
+          "iteration": 1,
+          "checkpoint": "chi_02.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "objective_after",
+          "iteration": 1,
+          "checkpoint": "chi_02.npz",
+          "status": "PASS",
+          "recomputed": 0.2855360291251629,
+          "recorded": 0.2855360291251629
+        },
+        {
+          "kind": "physical_feasibility",
+          "iteration": 1,
+          "checkpoint": "chi_02.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "checkpoint_metrics",
+          "iteration": 2,
+          "checkpoint": "chi_03.npz",
+          "status": "PASS",
+          "mismatches": {},
+          "missing_keys": []
+        },
+        {
+          "kind": "iteration_index",
+          "iteration": 2,
+          "checkpoint": "chi_03.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "before_metrics",
+          "iteration": 2,
+          "checkpoint": "chi_03.npz",
+          "status": "PASS",
+          "mismatches": {},
+          "missing_keys": []
+        },
+        {
+          "kind": "objective_before",
+          "iteration": 2,
+          "checkpoint": "chi_03.npz",
+          "status": "PASS",
+          "recomputed": 0.2855360291251629,
+          "recorded": 0.28553602912516285
+        },
+        {
+          "kind": "armijo_saved_trial_and_safe_chi",
+          "iteration": 2,
+          "checkpoint": "chi_03.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "accepted_update_count",
+          "iteration": 2,
+          "checkpoint": "chi_03.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "objective_after",
+          "iteration": 2,
+          "checkpoint": "chi_03.npz",
+          "status": "PASS",
+          "recomputed": 0.09135824896064686,
+          "recorded": 0.09135824896064686
+        },
+        {
+          "kind": "physical_feasibility",
+          "iteration": 2,
+          "checkpoint": "chi_03.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "checkpoint_metrics",
+          "iteration": 3,
+          "checkpoint": "chi_04.npz",
+          "status": "PASS",
+          "mismatches": {},
+          "missing_keys": []
+        },
+        {
+          "kind": "iteration_index",
+          "iteration": 3,
+          "checkpoint": "chi_04.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "before_metrics",
+          "iteration": 3,
+          "checkpoint": "chi_04.npz",
+          "status": "PASS",
+          "mismatches": {},
+          "missing_keys": []
+        },
+        {
+          "kind": "objective_before",
+          "iteration": 3,
+          "checkpoint": "chi_04.npz",
+          "status": "PASS",
+          "recomputed": 0.09135824896064686,
+          "recorded": 0.09135824896064687
+        },
+        {
+          "kind": "armijo_saved_trial_and_safe_chi",
+          "iteration": 3,
+          "checkpoint": "chi_04.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "accepted_update_count",
+          "iteration": 3,
+          "checkpoint": "chi_04.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "objective_after",
+          "iteration": 3,
+          "checkpoint": "chi_04.npz",
+          "status": "PASS",
+          "recomputed": 0.054588891033732254,
+          "recorded": 0.054588891033732254
+        },
+        {
+          "kind": "physical_feasibility",
+          "iteration": 3,
+          "checkpoint": "chi_04.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "checkpoint_metrics",
+          "iteration": 4,
+          "checkpoint": "chi_05.npz",
+          "status": "PASS",
+          "mismatches": {},
+          "missing_keys": []
+        },
+        {
+          "kind": "iteration_index",
+          "iteration": 4,
+          "checkpoint": "chi_05.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "before_metrics",
+          "iteration": 4,
+          "checkpoint": "chi_05.npz",
+          "status": "PASS",
+          "mismatches": {},
+          "missing_keys": []
+        },
+        {
+          "kind": "objective_before",
+          "iteration": 4,
+          "checkpoint": "chi_05.npz",
+          "status": "PASS",
+          "recomputed": 0.054588891033732254,
+          "recorded": 0.05458889103373223
+        },
+        {
+          "kind": "armijo_saved_trial_and_safe_chi",
+          "iteration": 4,
+          "checkpoint": "chi_05.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "accepted_update_count",
+          "iteration": 4,
+          "checkpoint": "chi_05.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "objective_after",
+          "iteration": 4,
+          "checkpoint": "chi_05.npz",
+          "status": "PASS",
+          "recomputed": 0.021981648264714413,
+          "recorded": 0.021981648264714406
+        },
+        {
+          "kind": "physical_feasibility",
+          "iteration": 4,
+          "checkpoint": "chi_05.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "checkpoint_metrics",
+          "iteration": 5,
+          "checkpoint": "chi_06.npz",
+          "status": "PASS",
+          "mismatches": {},
+          "missing_keys": []
+        },
+        {
+          "kind": "iteration_index",
+          "iteration": 5,
+          "checkpoint": "chi_06.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "before_metrics",
+          "iteration": 5,
+          "checkpoint": "chi_06.npz",
+          "status": "PASS",
+          "mismatches": {},
+          "missing_keys": []
+        },
+        {
+          "kind": "objective_before",
+          "iteration": 5,
+          "checkpoint": "chi_06.npz",
+          "status": "PASS",
+          "recomputed": 0.021981648264714413,
+          "recorded": 0.02198164826471441
+        },
+        {
+          "kind": "armijo_saved_trial_and_safe_chi",
+          "iteration": 5,
+          "checkpoint": "chi_06.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "accepted_update_count",
+          "iteration": 5,
+          "checkpoint": "chi_06.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "objective_after",
+          "iteration": 5,
+          "checkpoint": "chi_06.npz",
+          "status": "PASS",
+          "recomputed": 0.017059345669886324,
+          "recorded": 0.017059345669886324
+        },
+        {
+          "kind": "physical_feasibility",
+          "iteration": 5,
+          "checkpoint": "chi_06.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "checkpoint_metrics",
+          "iteration": 6,
+          "checkpoint": "chi_07.npz",
+          "status": "PASS",
+          "mismatches": {},
+          "missing_keys": []
+        },
+        {
+          "kind": "iteration_index",
+          "iteration": 6,
+          "checkpoint": "chi_07.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "before_metrics",
+          "iteration": 6,
+          "checkpoint": "chi_07.npz",
+          "status": "PASS",
+          "mismatches": {},
+          "missing_keys": []
+        },
+        {
+          "kind": "objective_before",
+          "iteration": 6,
+          "checkpoint": "chi_07.npz",
+          "status": "PASS",
+          "recomputed": 0.017059345669886324,
+          "recorded": 0.017059345669886317
+        },
+        {
+          "kind": "armijo_saved_trial_and_safe_chi",
+          "iteration": 6,
+          "checkpoint": "chi_07.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "accepted_update_count",
+          "iteration": 6,
+          "checkpoint": "chi_07.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "objective_after",
+          "iteration": 6,
+          "checkpoint": "chi_07.npz",
+          "status": "PASS",
+          "recomputed": 0.016886249464397658,
+          "recorded": 0.016886249464397658
+        },
+        {
+          "kind": "physical_feasibility",
+          "iteration": 6,
+          "checkpoint": "chi_07.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "checkpoint_metrics",
+          "iteration": 7,
+          "checkpoint": "chi_08.npz",
+          "status": "PASS",
+          "mismatches": {},
+          "missing_keys": []
+        },
+        {
+          "kind": "iteration_index",
+          "iteration": 7,
+          "checkpoint": "chi_08.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "before_metrics",
+          "iteration": 7,
+          "checkpoint": "chi_08.npz",
+          "status": "PASS",
+          "mismatches": {},
+          "missing_keys": []
+        },
+        {
+          "kind": "objective_before",
+          "iteration": 7,
+          "checkpoint": "chi_08.npz",
+          "status": "PASS",
+          "recomputed": 0.016886249464397658,
+          "recorded": 0.016886249464397665
+        },
+        {
+          "kind": "armijo_saved_trial_and_safe_chi",
+          "iteration": 7,
+          "checkpoint": "chi_08.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "accepted_update_count",
+          "iteration": 7,
+          "checkpoint": "chi_08.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "objective_after",
+          "iteration": 7,
+          "checkpoint": "chi_08.npz",
+          "status": "PASS",
+          "recomputed": 0.015845188609214366,
+          "recorded": 0.015845188609214366
+        },
+        {
+          "kind": "physical_feasibility",
+          "iteration": 7,
+          "checkpoint": "chi_08.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "checkpoint_metrics",
+          "iteration": 8,
+          "checkpoint": "chi_09.npz",
+          "status": "PASS",
+          "mismatches": {},
+          "missing_keys": []
+        },
+        {
+          "kind": "iteration_index",
+          "iteration": 8,
+          "checkpoint": "chi_09.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "before_metrics",
+          "iteration": 8,
+          "checkpoint": "chi_09.npz",
+          "status": "PASS",
+          "mismatches": {},
+          "missing_keys": []
+        },
+        {
+          "kind": "objective_before",
+          "iteration": 8,
+          "checkpoint": "chi_09.npz",
+          "status": "PASS",
+          "recomputed": 0.015845188609214366,
+          "recorded": 0.01584518860921436
+        },
+        {
+          "kind": "armijo_saved_trial_and_safe_chi",
+          "iteration": 8,
+          "checkpoint": "chi_09.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "accepted_update_count",
+          "iteration": 8,
+          "checkpoint": "chi_09.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "objective_after",
+          "iteration": 8,
+          "checkpoint": "chi_09.npz",
+          "status": "PASS",
+          "recomputed": 0.013148575727333649,
+          "recorded": 0.013148575727333646
+        },
+        {
+          "kind": "physical_feasibility",
+          "iteration": 8,
+          "checkpoint": "chi_09.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "checkpoint_metrics",
+          "iteration": 9,
+          "checkpoint": "chi_10.npz",
+          "status": "PASS",
+          "mismatches": {},
+          "missing_keys": []
+        },
+        {
+          "kind": "iteration_index",
+          "iteration": 9,
+          "checkpoint": "chi_10.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "before_metrics",
+          "iteration": 9,
+          "checkpoint": "chi_10.npz",
+          "status": "PASS",
+          "mismatches": {},
+          "missing_keys": []
+        },
+        {
+          "kind": "objective_before",
+          "iteration": 9,
+          "checkpoint": "chi_10.npz",
+          "status": "PASS",
+          "recomputed": 0.013148575727333649,
+          "recorded": 0.013148575727333647
+        },
+        {
+          "kind": "armijo_saved_trial_and_safe_chi",
+          "iteration": 9,
+          "checkpoint": "chi_10.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "accepted_update_count",
+          "iteration": 9,
+          "checkpoint": "chi_10.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "objective_after",
+          "iteration": 9,
+          "checkpoint": "chi_10.npz",
+          "status": "PASS",
+          "recomputed": 0.010638798467611232,
+          "recorded": 0.010638798467611229
+        },
+        {
+          "kind": "physical_feasibility",
+          "iteration": 9,
+          "checkpoint": "chi_10.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "checkpoint_metrics",
+          "iteration": 10,
+          "checkpoint": "chi_11.npz",
+          "status": "PASS",
+          "mismatches": {},
+          "missing_keys": []
+        },
+        {
+          "kind": "iteration_index",
+          "iteration": 10,
+          "checkpoint": "chi_11.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "before_metrics",
+          "iteration": 10,
+          "checkpoint": "chi_11.npz",
+          "status": "PASS",
+          "mismatches": {},
+          "missing_keys": []
+        },
+        {
+          "kind": "objective_before",
+          "iteration": 10,
+          "checkpoint": "chi_11.npz",
+          "status": "PASS",
+          "recomputed": 0.010638798467611232,
+          "recorded": 0.010638798467611225
+        },
+        {
+          "kind": "armijo_saved_trial_and_safe_chi",
+          "iteration": 10,
+          "checkpoint": "chi_11.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "accepted_update_count",
+          "iteration": 10,
+          "checkpoint": "chi_11.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "objective_after",
+          "iteration": 10,
+          "checkpoint": "chi_11.npz",
+          "status": "PASS",
+          "recomputed": 0.009590340503824523,
+          "recorded": 0.009590340503824523
+        },
+        {
+          "kind": "physical_feasibility",
+          "iteration": 10,
+          "checkpoint": "chi_11.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "checkpoint_metrics",
+          "iteration": 11,
+          "checkpoint": "chi_12.npz",
+          "status": "PASS",
+          "mismatches": {},
+          "missing_keys": []
+        },
+        {
+          "kind": "iteration_index",
+          "iteration": 11,
+          "checkpoint": "chi_12.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "before_metrics",
+          "iteration": 11,
+          "checkpoint": "chi_12.npz",
+          "status": "PASS",
+          "mismatches": {},
+          "missing_keys": []
+        },
+        {
+          "kind": "objective_before",
+          "iteration": 11,
+          "checkpoint": "chi_12.npz",
+          "status": "PASS",
+          "recomputed": 0.009590340503824523,
+          "recorded": 0.00959034050382452
+        },
+        {
+          "kind": "armijo_saved_trial_and_safe_chi",
+          "iteration": 11,
+          "checkpoint": "chi_12.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "accepted_update_count",
+          "iteration": 11,
+          "checkpoint": "chi_12.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "objective_after",
+          "iteration": 11,
+          "checkpoint": "chi_12.npz",
+          "status": "PASS",
+          "recomputed": 0.008472734562535611,
+          "recorded": 0.008472734562535611
+        },
+        {
+          "kind": "physical_feasibility",
+          "iteration": 11,
+          "checkpoint": "chi_12.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "checkpoint_metrics",
+          "iteration": 12,
+          "checkpoint": "chi_13.npz",
+          "status": "PASS",
+          "mismatches": {},
+          "missing_keys": []
+        },
+        {
+          "kind": "iteration_index",
+          "iteration": 12,
+          "checkpoint": "chi_13.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "before_metrics",
+          "iteration": 12,
+          "checkpoint": "chi_13.npz",
+          "status": "PASS",
+          "mismatches": {},
+          "missing_keys": []
+        },
+        {
+          "kind": "objective_before",
+          "iteration": 12,
+          "checkpoint": "chi_13.npz",
+          "status": "PASS",
+          "recomputed": 0.008472734562535611,
+          "recorded": 0.008472734562535611
+        },
+        {
+          "kind": "armijo_saved_trial_and_safe_chi",
+          "iteration": 12,
+          "checkpoint": "chi_13.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "accepted_update_count",
+          "iteration": 12,
+          "checkpoint": "chi_13.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "objective_after",
+          "iteration": 12,
+          "checkpoint": "chi_13.npz",
+          "status": "PASS",
+          "recomputed": 0.007337290803941263,
+          "recorded": 0.007337290803941267
+        },
+        {
+          "kind": "physical_feasibility",
+          "iteration": 12,
+          "checkpoint": "chi_13.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "checkpoint_metrics",
+          "iteration": 13,
+          "checkpoint": "chi_14.npz",
+          "status": "PASS",
+          "mismatches": {},
+          "missing_keys": []
+        },
+        {
+          "kind": "iteration_index",
+          "iteration": 13,
+          "checkpoint": "chi_14.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "before_metrics",
+          "iteration": 13,
+          "checkpoint": "chi_14.npz",
+          "status": "PASS",
+          "mismatches": {},
+          "missing_keys": []
+        },
+        {
+          "kind": "objective_before",
+          "iteration": 13,
+          "checkpoint": "chi_14.npz",
+          "status": "PASS",
+          "recomputed": 0.007337290803941263,
+          "recorded": 0.007337290803941263
+        },
+        {
+          "kind": "armijo_saved_trial_and_safe_chi",
+          "iteration": 13,
+          "checkpoint": "chi_14.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "accepted_update_count",
+          "iteration": 13,
+          "checkpoint": "chi_14.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "objective_after",
+          "iteration": 13,
+          "checkpoint": "chi_14.npz",
+          "status": "PASS",
+          "recomputed": 0.00674036976448607,
+          "recorded": 0.006740369764486069
+        },
+        {
+          "kind": "physical_feasibility",
+          "iteration": 13,
+          "checkpoint": "chi_14.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "checkpoint_metrics",
+          "iteration": 14,
+          "checkpoint": "chi_15.npz",
+          "status": "PASS",
+          "mismatches": {},
+          "missing_keys": []
+        },
+        {
+          "kind": "iteration_index",
+          "iteration": 14,
+          "checkpoint": "chi_15.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "before_metrics",
+          "iteration": 14,
+          "checkpoint": "chi_15.npz",
+          "status": "PASS",
+          "mismatches": {},
+          "missing_keys": []
+        },
+        {
+          "kind": "objective_before",
+          "iteration": 14,
+          "checkpoint": "chi_15.npz",
+          "status": "PASS",
+          "recomputed": 0.00674036976448607,
+          "recorded": 0.006740369764486069
+        },
+        {
+          "kind": "armijo_saved_trial_and_safe_chi",
+          "iteration": 14,
+          "checkpoint": "chi_15.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "accepted_update_count",
+          "iteration": 14,
+          "checkpoint": "chi_15.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "objective_after",
+          "iteration": 14,
+          "checkpoint": "chi_15.npz",
+          "status": "PASS",
+          "recomputed": 0.0060450216113256,
+          "recorded": 0.006045021611325598
+        },
+        {
+          "kind": "physical_feasibility",
+          "iteration": 14,
+          "checkpoint": "chi_15.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "checkpoint_metrics",
+          "iteration": 15,
+          "checkpoint": "chi_16.npz",
+          "status": "PASS",
+          "mismatches": {},
+          "missing_keys": []
+        },
+        {
+          "kind": "iteration_index",
+          "iteration": 15,
+          "checkpoint": "chi_16.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "before_metrics",
+          "iteration": 15,
+          "checkpoint": "chi_16.npz",
+          "status": "PASS",
+          "mismatches": {},
+          "missing_keys": []
+        },
+        {
+          "kind": "objective_before",
+          "iteration": 15,
+          "checkpoint": "chi_16.npz",
+          "status": "PASS",
+          "recomputed": 0.0060450216113256,
+          "recorded": 0.006045021611325598
+        },
+        {
+          "kind": "armijo_saved_trial_and_safe_chi",
+          "iteration": 15,
+          "checkpoint": "chi_16.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "accepted_update_count",
+          "iteration": 15,
+          "checkpoint": "chi_16.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "objective_after",
+          "iteration": 15,
+          "checkpoint": "chi_16.npz",
+          "status": "PASS",
+          "recomputed": 0.0057721553297010375,
+          "recorded": 0.005772155329701035
+        },
+        {
+          "kind": "physical_feasibility",
+          "iteration": 15,
+          "checkpoint": "chi_16.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "checkpoint_metrics",
+          "iteration": 16,
+          "checkpoint": "chi_17.npz",
+          "status": "PASS",
+          "mismatches": {},
+          "missing_keys": []
+        },
+        {
+          "kind": "iteration_index",
+          "iteration": 16,
+          "checkpoint": "chi_17.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "before_metrics",
+          "iteration": 16,
+          "checkpoint": "chi_17.npz",
+          "status": "PASS",
+          "mismatches": {},
+          "missing_keys": []
+        },
+        {
+          "kind": "objective_before",
+          "iteration": 16,
+          "checkpoint": "chi_17.npz",
+          "status": "PASS",
+          "recomputed": 0.0057721553297010375,
+          "recorded": 0.005772155329701036
+        },
+        {
+          "kind": "armijo_saved_trial_and_safe_chi",
+          "iteration": 16,
+          "checkpoint": "chi_17.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "accepted_update_count",
+          "iteration": 16,
+          "checkpoint": "chi_17.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "objective_after",
+          "iteration": 16,
+          "checkpoint": "chi_17.npz",
+          "status": "PASS",
+          "recomputed": 0.005376435289615667,
+          "recorded": 0.005376435289615667
+        },
+        {
+          "kind": "physical_feasibility",
+          "iteration": 16,
+          "checkpoint": "chi_17.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "checkpoint_metrics",
+          "iteration": 17,
+          "checkpoint": "chi_18.npz",
+          "status": "PASS",
+          "mismatches": {},
+          "missing_keys": []
+        },
+        {
+          "kind": "iteration_index",
+          "iteration": 17,
+          "checkpoint": "chi_18.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "before_metrics",
+          "iteration": 17,
+          "checkpoint": "chi_18.npz",
+          "status": "PASS",
+          "mismatches": {},
+          "missing_keys": []
+        },
+        {
+          "kind": "objective_before",
+          "iteration": 17,
+          "checkpoint": "chi_18.npz",
+          "status": "PASS",
+          "recomputed": 0.005376435289615667,
+          "recorded": 0.005376435289615667
+        },
+        {
+          "kind": "armijo_saved_trial_and_safe_chi",
+          "iteration": 17,
+          "checkpoint": "chi_18.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "accepted_update_count",
+          "iteration": 17,
+          "checkpoint": "chi_18.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "objective_after",
+          "iteration": 17,
+          "checkpoint": "chi_18.npz",
+          "status": "PASS",
+          "recomputed": 0.005185083393047037,
+          "recorded": 0.0051850833930470325
+        },
+        {
+          "kind": "physical_feasibility",
+          "iteration": 17,
+          "checkpoint": "chi_18.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "final_equals_last_chronological_safe",
+          "status": "PASS"
+        },
+        {
+          "kind": "final_metrics",
+          "status": "PASS",
+          "mismatches": {},
+          "missing_keys": []
+        },
+        {
+          "kind": "final_counts",
+          "status": "PASS"
+        },
+        {
+          "kind": "final_objective_equals_last_safe",
+          "status": "PASS",
+          "recomputed": 0.005185083393047037,
+          "last_safe": 0.005185083393047037
+        }
+      ],
+      "refinement": {
+        "status": "NOT_CHECKED",
+        "unique_top_level_calls": 0,
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      },
+      "directional_accepted_actions": 0,
+      "directional_gain_sum": 0,
+      "directional_gain_sum_outer_accepted": 0,
+      "directional_actions": [],
+      "not_checked": []
+    },
+    {
+      "target": "digit3",
+      "policy": "receiver",
+      "checks": [
+        {
+          "kind": "checkpoint_metrics",
+          "iteration": 0,
+          "checkpoint": "chi_01.npz",
+          "status": "PASS",
+          "mismatches": {},
+          "missing_keys": []
+        },
+        {
+          "kind": "iteration_index",
+          "iteration": 0,
+          "checkpoint": "chi_01.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "before_metrics",
+          "iteration": 0,
+          "checkpoint": "chi_01.npz",
+          "status": "PASS",
+          "mismatches": {},
+          "missing_keys": []
+        },
+        {
+          "kind": "objective_before",
+          "iteration": 0,
+          "checkpoint": "chi_01.npz",
+          "status": "PASS",
+          "recomputed": 0.35592080154373595,
+          "recorded": 0.3559208015437358
+        },
+        {
+          "kind": "armijo_saved_trial_and_safe_chi",
+          "iteration": 0,
+          "checkpoint": "chi_01.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "accepted_update_count",
+          "iteration": 0,
+          "checkpoint": "chi_01.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "objective_after",
+          "iteration": 0,
+          "checkpoint": "chi_01.npz",
+          "status": "PASS",
+          "recomputed": 0.24807757214360132,
+          "recorded": 0.2480775721436014
+        },
+        {
+          "kind": "physical_feasibility",
+          "iteration": 0,
+          "checkpoint": "chi_01.npz",
+          "status": "PASS"
+        },
+        {
+          "kind": "refinement_top_equals_batches",
+          "iteration": 0,
+          "key": "attempted_units",
+          "status": "PASS"
+        },
+        {
+          "kind": "refinement_top_equals_batches",
+          "iteration": 0,
+          "key": "correction_steps",
+          "status": "PASS"
+        },
+        {
+          "kind": "refinement_top_equals_batches",
+          "iteration": 0,
+          "key": "recovered_units",
+          "status": "PASS"
+        },
+        {
+          "kind": "refinement_top_equals_batches",
+          "iteration": 0,
+          "key": "remaining_residual_failed_units",
+          "status": "PASS"
+        },
+        {
+          "kind": "refinement_top_equals_batches",
+          "iteration": 0,
+          "key": "refinement_nonfinite_units",
+          "status": "PASS"
+        }
+      ],
+      "refinement": {
+        "status": "CHECKED",
+        "unique_top_level_calls": 1,
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      },
+      "directional_accepted_actions": 0,
+      "directional_gain_sum": 0,
+      "directional_gain_sum_outer_accepted": 0,
+      "directional_actions": [],
+      "not_checked": []
+    },
+    {
+      "target": "digit3",
+      "policy": "projected_internal",
+      "checks": [],
+      "refinement": {
+        "status": "NOT_CHECKED",
+        "unique_top_level_calls": 0,
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      },
+      "directional_accepted_actions": 0,
+      "directional_gain_sum": 0,
+      "directional_gain_sum_outer_accepted": 0,
+      "directional_actions": [],
+      "not_checked": []
+    },
+    {
+      "target": "digit3",
+      "policy": "fourier",
+      "checks": [],
+      "refinement": {
+        "status": "NOT_CHECKED",
+        "unique_top_level_calls": 0,
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      },
+      "directional_accepted_actions": 0,
+      "directional_gain_sum": 0,
+      "directional_gain_sum_outer_accepted": 0,
+      "directional_actions": [],
+      "not_checked": []
+    },
+    {
+      "target": "digit3",
+      "policy": "random",
+      "checks": [],
+      "refinement": {
+        "status": "NOT_CHECKED",
+        "unique_top_level_calls": 0,
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      },
+      "directional_accepted_actions": 0,
+      "directional_gain_sum": 0,
+      "directional_gain_sum_outer_accepted": 0,
+      "directional_actions": [],
+      "not_checked": []
+    },
+    {
+      "target": "digit3",
+      "policy": "exchange",
+      "checks": [],
+      "refinement": {
+        "status": "NOT_CHECKED",
+        "unique_top_level_calls": 0,
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      },
+      "directional_accepted_actions": 0,
+      "directional_gain_sum": 0,
+      "directional_gain_sum_outer_accepted": 0,
+      "directional_actions": [],
+      "not_checked": []
+    },
+    {
+      "target": "letter_e",
+      "policy": "full_gn",
+      "checks": [],
+      "refinement": {
+        "status": "NOT_CHECKED",
+        "unique_top_level_calls": 0,
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      },
+      "directional_accepted_actions": 0,
+      "directional_gain_sum": 0,
+      "directional_gain_sum_outer_accepted": 0,
+      "directional_actions": [],
+      "not_checked": []
+    },
+    {
+      "target": "letter_e",
+      "policy": "receiver",
+      "checks": [],
+      "refinement": {
+        "status": "NOT_CHECKED",
+        "unique_top_level_calls": 0,
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      },
+      "directional_accepted_actions": 0,
+      "directional_gain_sum": 0,
+      "directional_gain_sum_outer_accepted": 0,
+      "directional_actions": [],
+      "not_checked": []
+    },
+    {
+      "target": "letter_e",
+      "policy": "projected_internal",
+      "checks": [],
+      "refinement": {
+        "status": "NOT_CHECKED",
+        "unique_top_level_calls": 0,
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      },
+      "directional_accepted_actions": 0,
+      "directional_gain_sum": 0,
+      "directional_gain_sum_outer_accepted": 0,
+      "directional_actions": [],
+      "not_checked": []
+    },
+    {
+      "target": "letter_e",
+      "policy": "fourier",
+      "checks": [],
+      "refinement": {
+        "status": "NOT_CHECKED",
+        "unique_top_level_calls": 0,
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      },
+      "directional_accepted_actions": 0,
+      "directional_gain_sum": 0,
+      "directional_gain_sum_outer_accepted": 0,
+      "directional_actions": [],
+      "not_checked": []
+    },
+    {
+      "target": "letter_e",
+      "policy": "random",
+      "checks": [],
+      "refinement": {
+        "status": "NOT_CHECKED",
+        "unique_top_level_calls": 0,
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      },
+      "directional_accepted_actions": 0,
+      "directional_gain_sum": 0,
+      "directional_gain_sum_outer_accepted": 0,
+      "directional_actions": [],
+      "not_checked": []
+    },
+    {
+      "target": "letter_e",
+      "policy": "exchange",
+      "checks": [],
+      "refinement": {
+        "status": "NOT_CHECKED",
+        "unique_top_level_calls": 0,
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      },
+      "directional_accepted_actions": 0,
+      "directional_gain_sum": 0,
+      "directional_gain_sum_outer_accepted": 0,
+      "directional_actions": [],
+      "not_checked": []
+    },
+    {
+      "target": "torus",
+      "policy": "full_gn",
+      "checks": [],
+      "refinement": {
+        "status": "NOT_CHECKED",
+        "unique_top_level_calls": 0,
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      },
+      "directional_accepted_actions": 0,
+      "directional_gain_sum": 0,
+      "directional_gain_sum_outer_accepted": 0,
+      "directional_actions": [],
+      "not_checked": []
+    },
+    {
+      "target": "torus",
+      "policy": "receiver",
+      "checks": [],
+      "refinement": {
+        "status": "NOT_CHECKED",
+        "unique_top_level_calls": 0,
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      },
+      "directional_accepted_actions": 0,
+      "directional_gain_sum": 0,
+      "directional_gain_sum_outer_accepted": 0,
+      "directional_actions": [],
+      "not_checked": []
+    },
+    {
+      "target": "torus",
+      "policy": "projected_internal",
+      "checks": [],
+      "refinement": {
+        "status": "NOT_CHECKED",
+        "unique_top_level_calls": 0,
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      },
+      "directional_accepted_actions": 0,
+      "directional_gain_sum": 0,
+      "directional_gain_sum_outer_accepted": 0,
+      "directional_actions": [],
+      "not_checked": []
+    },
+    {
+      "target": "torus",
+      "policy": "fourier",
+      "checks": [],
+      "refinement": {
+        "status": "NOT_CHECKED",
+        "unique_top_level_calls": 0,
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      },
+      "directional_accepted_actions": 0,
+      "directional_gain_sum": 0,
+      "directional_gain_sum_outer_accepted": 0,
+      "directional_actions": [],
+      "not_checked": []
+    },
+    {
+      "target": "torus",
+      "policy": "random",
+      "checks": [],
+      "refinement": {
+        "status": "NOT_CHECKED",
+        "unique_top_level_calls": 0,
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      },
+      "directional_accepted_actions": 0,
+      "directional_gain_sum": 0,
+      "directional_gain_sum_outer_accepted": 0,
+      "directional_actions": [],
+      "not_checked": []
+    },
+    {
+      "target": "torus",
+      "policy": "exchange",
+      "checks": [],
+      "refinement": {
+        "status": "NOT_CHECKED",
+        "unique_top_level_calls": 0,
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      },
+      "directional_accepted_actions": 0,
+      "directional_gain_sum": 0,
+      "directional_gain_sum_outer_accepted": 0,
+      "directional_actions": [],
+      "not_checked": []
+    },
+    {
+      "target": "double_torus",
+      "policy": "full_gn",
+      "checks": [],
+      "refinement": {
+        "status": "NOT_CHECKED",
+        "unique_top_level_calls": 0,
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      },
+      "directional_accepted_actions": 0,
+      "directional_gain_sum": 0,
+      "directional_gain_sum_outer_accepted": 0,
+      "directional_actions": [],
+      "not_checked": []
+    },
+    {
+      "target": "double_torus",
+      "policy": "receiver",
+      "checks": [],
+      "refinement": {
+        "status": "NOT_CHECKED",
+        "unique_top_level_calls": 0,
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      },
+      "directional_accepted_actions": 0,
+      "directional_gain_sum": 0,
+      "directional_gain_sum_outer_accepted": 0,
+      "directional_actions": [],
+      "not_checked": []
+    },
+    {
+      "target": "double_torus",
+      "policy": "projected_internal",
+      "checks": [],
+      "refinement": {
+        "status": "NOT_CHECKED",
+        "unique_top_level_calls": 0,
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      },
+      "directional_accepted_actions": 0,
+      "directional_gain_sum": 0,
+      "directional_gain_sum_outer_accepted": 0,
+      "directional_actions": [],
+      "not_checked": []
+    },
+    {
+      "target": "double_torus",
+      "policy": "fourier",
+      "checks": [],
+      "refinement": {
+        "status": "NOT_CHECKED",
+        "unique_top_level_calls": 0,
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      },
+      "directional_accepted_actions": 0,
+      "directional_gain_sum": 0,
+      "directional_gain_sum_outer_accepted": 0,
+      "directional_actions": [],
+      "not_checked": []
+    },
+    {
+      "target": "double_torus",
+      "policy": "random",
+      "checks": [],
+      "refinement": {
+        "status": "NOT_CHECKED",
+        "unique_top_level_calls": 0,
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      },
+      "directional_accepted_actions": 0,
+      "directional_gain_sum": 0,
+      "directional_gain_sum_outer_accepted": 0,
+      "directional_actions": [],
+      "not_checked": []
+    },
+    {
+      "target": "double_torus",
+      "policy": "exchange",
+      "checks": [],
+      "refinement": {
+        "status": "NOT_CHECKED",
+        "unique_top_level_calls": 0,
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      },
+      "directional_accepted_actions": 0,
+      "directional_gain_sum": 0,
+      "directional_gain_sum_outer_accepted": 0,
+      "directional_actions": [],
+      "not_checked": []
+    },
+    {
+      "target": "cross3d",
+      "policy": "full_gn",
+      "checks": [],
+      "refinement": {
+        "status": "NOT_CHECKED",
+        "unique_top_level_calls": 0,
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      },
+      "directional_accepted_actions": 0,
+      "directional_gain_sum": 0,
+      "directional_gain_sum_outer_accepted": 0,
+      "directional_actions": [],
+      "not_checked": []
+    },
+    {
+      "target": "cross3d",
+      "policy": "receiver",
+      "checks": [],
+      "refinement": {
+        "status": "NOT_CHECKED",
+        "unique_top_level_calls": 0,
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      },
+      "directional_accepted_actions": 0,
+      "directional_gain_sum": 0,
+      "directional_gain_sum_outer_accepted": 0,
+      "directional_actions": [],
+      "not_checked": []
+    },
+    {
+      "target": "cross3d",
+      "policy": "projected_internal",
+      "checks": [],
+      "refinement": {
+        "status": "NOT_CHECKED",
+        "unique_top_level_calls": 0,
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      },
+      "directional_accepted_actions": 0,
+      "directional_gain_sum": 0,
+      "directional_gain_sum_outer_accepted": 0,
+      "directional_actions": [],
+      "not_checked": []
+    },
+    {
+      "target": "cross3d",
+      "policy": "fourier",
+      "checks": [],
+      "refinement": {
+        "status": "NOT_CHECKED",
+        "unique_top_level_calls": 0,
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      },
+      "directional_accepted_actions": 0,
+      "directional_gain_sum": 0,
+      "directional_gain_sum_outer_accepted": 0,
+      "directional_actions": [],
+      "not_checked": []
+    },
+    {
+      "target": "cross3d",
+      "policy": "random",
+      "checks": [],
+      "refinement": {
+        "status": "NOT_CHECKED",
+        "unique_top_level_calls": 0,
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      },
+      "directional_accepted_actions": 0,
+      "directional_gain_sum": 0,
+      "directional_gain_sum_outer_accepted": 0,
+      "directional_actions": [],
+      "not_checked": []
+    },
+    {
+      "target": "cross3d",
+      "policy": "exchange",
+      "checks": [],
+      "refinement": {
+        "status": "NOT_CHECKED",
+        "unique_top_level_calls": 0,
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      },
+      "directional_accepted_actions": 0,
+      "directional_gain_sum": 0,
+      "directional_gain_sum_outer_accepted": 0,
+      "directional_actions": [],
+      "not_checked": []
+    },
+    {
+      "target": "offset_shell",
+      "policy": "full_gn",
+      "checks": [],
+      "refinement": {
+        "status": "NOT_CHECKED",
+        "unique_top_level_calls": 0,
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      },
+      "directional_accepted_actions": 0,
+      "directional_gain_sum": 0,
+      "directional_gain_sum_outer_accepted": 0,
+      "directional_actions": [],
+      "not_checked": []
+    },
+    {
+      "target": "offset_shell",
+      "policy": "receiver",
+      "checks": [],
+      "refinement": {
+        "status": "NOT_CHECKED",
+        "unique_top_level_calls": 0,
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      },
+      "directional_accepted_actions": 0,
+      "directional_gain_sum": 0,
+      "directional_gain_sum_outer_accepted": 0,
+      "directional_actions": [],
+      "not_checked": []
+    },
+    {
+      "target": "offset_shell",
+      "policy": "projected_internal",
+      "checks": [],
+      "refinement": {
+        "status": "NOT_CHECKED",
+        "unique_top_level_calls": 0,
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      },
+      "directional_accepted_actions": 0,
+      "directional_gain_sum": 0,
+      "directional_gain_sum_outer_accepted": 0,
+      "directional_actions": [],
+      "not_checked": []
+    },
+    {
+      "target": "offset_shell",
+      "policy": "fourier",
+      "checks": [],
+      "refinement": {
+        "status": "NOT_CHECKED",
+        "unique_top_level_calls": 0,
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      },
+      "directional_accepted_actions": 0,
+      "directional_gain_sum": 0,
+      "directional_gain_sum_outer_accepted": 0,
+      "directional_actions": [],
+      "not_checked": []
+    },
+    {
+      "target": "offset_shell",
+      "policy": "random",
+      "checks": [],
+      "refinement": {
+        "status": "NOT_CHECKED",
+        "unique_top_level_calls": 0,
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      },
+      "directional_accepted_actions": 0,
+      "directional_gain_sum": 0,
+      "directional_gain_sum_outer_accepted": 0,
+      "directional_actions": [],
+      "not_checked": []
+    },
+    {
+      "target": "offset_shell",
+      "policy": "exchange",
+      "checks": [],
+      "refinement": {
+        "status": "NOT_CHECKED",
+        "unique_top_level_calls": 0,
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      },
+      "directional_accepted_actions": 0,
+      "directional_gain_sum": 0,
+      "directional_gain_sum_outer_accepted": 0,
+      "directional_actions": [],
+      "not_checked": []
+    }
+  ],
+  "cost_ledger": {
+    "total_counts": {
+      "state": 85,
+      "rhs": 3596
+    },
+    "COST_STATE": {
+      "states": 85,
+      "rhs": 3596,
+      "wall_s": 1.2835276669356972,
+      "sessions": [
+        {
+          "phase": "validate",
+          "status": "COMPLETE",
+          "pid": 70700,
+          "started": "2026-10-30T09:54:41+0800",
+          "wall_s": 1.2835276669356972,
+          "ended": "2026-10-30T09:54:43+0800"
+        },
+        {
+          "phase": "run",
+          "status": "RUNNING",
+          "pid": 71023,
+          "started": "2026-10-30T09:55:04+0800"
+        }
+      ],
+      "active_wall_s": 175.2232096248772
+    },
+    "by_phase": {
+      "validate": {
+        "state": 1,
+        "rhs": 272
+      },
+      "run": {
+        "state": 84,
+        "rhs": 3324
+      }
+    },
+    "by_stage": {
+      "new_adapter_validation": {
+        "state": 1,
+        "rhs": 272
+      },
+      "synthesis/digit3": {
+        "state": 1,
+        "rhs": 12
+      },
+      "synthesis/letter_e": {
+        "state": 1,
+        "rhs": 12
+      },
+      "synthesis/torus": {
+        "state": 1,
+        "rhs": 12
+      },
+      "synthesis/double_torus": {
+        "state": 1,
+        "rhs": 12
+      },
+      "synthesis/cross3d": {
+        "state": 1,
+        "rhs": 12
+      },
+      "synthesis/offset_shell": {
+        "state": 1,
+        "rhs": 12
+      },
+      "digit3/full_gn/update_0": {
+        "state": 3,
+        "rhs": 164
+      },
+      "digit3/full_gn/update_1": {
+        "state": 2,
+        "rhs": 152
+      },
+      "digit3/full_gn/update_2": {
+        "state": 1,
+        "rhs": 140
+      },
+      "digit3/full_gn/update_3": {
+        "state": 1,
+        "rhs": 140
+      },
+      "digit3/full_gn/update_4": {
+        "state": 1,
+        "rhs": 140
+      },
+      "digit3/full_gn/update_5": {
+        "state": 1,
+        "rhs": 140
+      },
+      "digit3/full_gn/update_6": {
+        "state": 3,
+        "rhs": 164
+      },
+      "digit3/full_gn/update_7": {
+        "state": 3,
+        "rhs": 164
+      },
+      "digit3/full_gn/update_8": {
+        "state": 5,
+        "rhs": 188
+      },
+      "digit3/full_gn/update_9": {
+        "state": 5,
+        "rhs": 188
+      },
+      "digit3/full_gn/update_10": {
+        "state": 6,
+        "rhs": 200
+      },
+      "digit3/full_gn/update_11": {
+        "state": 6,
+        "rhs": 200
+      },
+      "digit3/full_gn/update_12": {
+        "state": 7,
+        "rhs": 212
+      },
+      "digit3/full_gn/update_13": {
+        "state": 5,
+        "rhs": 188
+      },
+      "digit3/full_gn/update_14": {
+        "state": 7,
+        "rhs": 212
+      },
+      "digit3/full_gn/update_15": {
+        "state": 6,
+        "rhs": 200
+      },
+      "digit3/full_gn/update_16": {
+        "state": 7,
+        "rhs": 212
+      },
+      "digit3/full_gn/update_17": {
+        "state": 6,
+        "rhs": 200
+      },
+      "digit3/receiver/update_0": {
+        "state": 2,
+        "rhs": 36
+      },
+      "digit3/receiver/update_1": {
+        "state": 1,
+        "rhs": 12
+      }
+    },
+    "by_trajectory": {
+      "synthesis/digit3": {
+        "state": 1,
+        "rhs": 12
+      },
+      "synthesis/letter_e": {
+        "state": 1,
+        "rhs": 12
+      },
+      "synthesis/torus": {
+        "state": 1,
+        "rhs": 12
+      },
+      "synthesis/double_torus": {
+        "state": 1,
+        "rhs": 12
+      },
+      "synthesis/cross3d": {
+        "state": 1,
+        "rhs": 12
+      },
+      "synthesis/offset_shell": {
+        "state": 1,
+        "rhs": 12
+      },
+      "digit3/full_gn": {
+        "state": 75,
+        "rhs": 3204
+      },
+      "digit3/receiver": {
+        "state": 3,
+        "rhs": 48
+      }
+    },
+    "parse_error_lines": [],
+    "checks": [
+      {
+        "kind": "ledger_running_total",
+        "line": 1,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 2,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 3,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 4,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 5,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 6,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 7,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 8,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 9,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 10,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 11,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 12,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 13,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 14,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 15,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 16,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 17,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 18,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 19,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 20,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 21,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 22,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 23,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 24,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 25,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 26,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 27,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 28,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 29,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 30,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 31,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 32,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 33,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 34,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 35,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 36,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 37,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 38,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 39,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 40,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 41,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 42,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 43,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 44,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 45,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 46,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 47,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 48,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 49,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 50,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 51,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 52,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 53,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 54,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 55,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 56,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 57,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 58,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 59,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 60,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 61,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 62,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 63,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 64,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 65,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 66,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 67,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 68,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 69,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 70,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 71,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 72,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 73,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 74,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 75,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 76,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 77,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 78,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 79,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 80,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 81,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 82,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 83,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 84,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 85,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 86,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 87,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 88,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 89,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 90,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 91,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 92,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 93,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 94,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 95,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 96,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 97,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 98,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 99,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 100,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 101,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 102,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 103,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 104,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 105,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 106,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 107,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 108,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 109,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 110,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 111,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 112,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 113,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 114,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 115,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 116,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 117,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 118,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 119,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 120,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 121,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 122,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 123,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 124,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 125,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 126,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 127,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 128,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 129,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 130,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 131,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 132,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 133,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 134,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 135,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 136,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 137,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 138,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 139,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 140,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 141,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 142,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 143,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 144,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 145,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 146,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 147,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 148,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 149,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 150,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 151,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 152,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 153,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 154,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 155,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 156,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 157,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 158,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 159,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 160,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 161,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 162,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 163,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 164,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 165,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 166,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 167,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 168,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 169,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 170,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 171,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 172,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 173,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 174,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 175,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 176,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 177,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 178,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 179,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 180,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 181,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 182,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 183,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 184,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 185,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 186,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 187,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 188,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 189,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 190,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 191,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 192,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 193,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 194,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 195,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_running_total",
+        "line": 196,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_vs_COST_STATE",
+        "field": "states",
+        "ledger": 85,
+        "cost_state": 85,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_vs_COST_STATE",
+        "field": "rhs",
+        "ledger": 3596,
+        "cost_state": 3596,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_vs_model_counter",
+        "trajectory": "digit3/full_gn",
+        "field": "lu_factorizations_full",
+        "ledger": 75,
+        "counter": 75,
+        "status": "PASS"
+      },
+      {
+        "kind": "ledger_vs_model_counter",
+        "trajectory": "digit3/full_gn",
+        "field": "solve_rhs_full",
+        "ledger": 3204,
+        "counter": 3204,
+        "status": "PASS"
+      }
+    ],
+    "scope": "All ledger work including validation and synthesis; model counter alignment only for saved terminal trajectories. Wall time is retained, not reconstructed from event timestamps."
+  },
+  "not_checked": [
+    "No Maxwell recomputation: saved measured/heldout residuals cannot be independently validated from chi alone.",
+    "No reference/hash reads, scheduling, best-truth checkpoint selection or plots.",
+    "Partial mode is a single non-atomic snapshot; in-flight checkpoints may be unavailable."
+  ]
+}

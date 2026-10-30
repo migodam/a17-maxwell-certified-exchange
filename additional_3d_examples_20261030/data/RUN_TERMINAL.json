@@ -1,0 +1,224 @@
+{
+  "status": "ALL_PLANNED_TERMINAL",
+  "outcomes": [
+    {
+      "case": "letter_e",
+      "policy": "projected_internal",
+      "status": "MAX_UPDATES"
+    },
+    {
+      "case": "torus",
+      "policy": "exchange",
+      "status": "MAX_UPDATES",
+      "execution_host": "existing_remote_terminal_preserved"
+    },
+    {
+      "case": "double_torus",
+      "policy": "exchange",
+      "status": "MAX_UPDATES",
+      "execution_host": "existing_remote_terminal_preserved"
+    },
+    {
+      "case": "torus",
+      "policy": "random",
+      "status": "MAX_UPDATES",
+      "execution_host": "existing_remote_terminal_preserved"
+    },
+    {
+      "case": "digit3",
+      "policy": "random",
+      "status": "MAX_UPDATES"
+    },
+    {
+      "case": "letter_e",
+      "policy": "receiver",
+      "status": "MAX_UPDATES"
+    },
+    {
+      "case": "letter_e",
+      "policy": "full_gn",
+      "status": "MAX_UPDATES"
+    },
+    {
+      "case": "torus",
+      "policy": "receiver",
+      "status": "MAX_UPDATES",
+      "execution_host": "existing_remote_terminal_preserved"
+    },
+    {
+      "case": "double_torus",
+      "policy": "fourier",
+      "status": "MAX_UPDATES",
+      "execution_host": "existing_remote_terminal_preserved"
+    },
+    {
+      "case": "torus",
+      "policy": "fourier",
+      "status": "MAX_UPDATES",
+      "execution_host": "existing_remote_terminal_preserved"
+    },
+    {
+      "case": "digit3",
+      "policy": "full_gn",
+      "status": "MAX_UPDATES"
+    },
+    {
+      "case": "digit3",
+      "policy": "exchange",
+      "status": "MAX_UPDATES"
+    },
+    {
+      "case": "digit3",
+      "policy": "projected_internal",
+      "status": "MAX_UPDATES"
+    },
+    {
+      "case": "digit3",
+      "policy": "fourier",
+      "status": "MAX_UPDATES"
+    },
+    {
+      "case": "torus",
+      "policy": "projected_internal",
+      "status": "MAX_UPDATES",
+      "execution_host": "existing_remote_terminal_preserved"
+    },
+    {
+      "case": "double_torus",
+      "policy": "full_gn",
+      "status": "MAX_UPDATES",
+      "execution_host": "existing_remote_terminal_preserved"
+    },
+    {
+      "case": "double_torus",
+      "policy": "receiver",
+      "status": "MAX_UPDATES",
+      "execution_host": "existing_remote_terminal_preserved"
+    },
+    {
+      "case": "torus",
+      "policy": "full_gn",
+      "status": "MAX_UPDATES",
+      "execution_host": "existing_remote_terminal_preserved"
+    },
+    {
+      "case": "double_torus",
+      "policy": "random",
+      "status": "MAX_UPDATES",
+      "execution_host": "existing_remote_terminal_preserved"
+    },
+    {
+      "case": "double_torus",
+      "policy": "projected_internal",
+      "status": "MAX_UPDATES",
+      "execution_host": "existing_remote_terminal_preserved"
+    },
+    {
+      "case": "digit3",
+      "policy": "receiver",
+      "status": "MAX_UPDATES"
+    },
+    {
+      "case": "letter_e",
+      "policy": "fourier",
+      "status": "MAX_UPDATES"
+    },
+    {
+      "case": "letter_e",
+      "policy": "exchange",
+      "status": "MAX_UPDATES"
+    },
+    {
+      "case": "letter_e",
+      "policy": "random",
+      "status": "MAX_UPDATES"
+    },
+    {
+      "case": "cross3d",
+      "policy": "random",
+      "status": "MAX_UPDATES",
+      "execution_host": "existing_remote_terminal_preserved"
+    },
+    {
+      "case": "cross3d",
+      "policy": "exchange",
+      "status": "MAX_UPDATES",
+      "execution_host": "XINAN_4060_serial_resume",
+      "resumed_prefix": true
+    },
+    {
+      "case": "cross3d",
+      "policy": "full_gn",
+      "status": "MAX_UPDATES",
+      "execution_host": "XINAN_4060_serial_resume",
+      "resumed_prefix": true
+    },
+    {
+      "case": "cross3d",
+      "policy": "receiver",
+      "status": "MAX_UPDATES",
+      "execution_host": "XINAN_4060_serial_resume",
+      "resumed_prefix": false
+    },
+    {
+      "case": "cross3d",
+      "policy": "projected_internal",
+      "status": "MAX_UPDATES",
+      "execution_host": "XINAN_4060_serial_resume",
+      "resumed_prefix": false
+    },
+    {
+      "case": "cross3d",
+      "policy": "fourier",
+      "status": "MAX_UPDATES",
+      "execution_host": "XINAN_4060_serial_resume",
+      "resumed_prefix": false
+    },
+    {
+      "case": "offset_shell",
+      "policy": "full_gn",
+      "status": "MAX_UPDATES",
+      "execution_host": "XINAN_4060_serial_resume",
+      "resumed_prefix": false
+    },
+    {
+      "case": "offset_shell",
+      "policy": "exchange",
+      "status": "MAX_UPDATES",
+      "execution_host": "XINAN_4060_serial_resume",
+      "resumed_prefix": true
+    },
+    {
+      "case": "offset_shell",
+      "policy": "receiver",
+      "status": "MAX_UPDATES",
+      "execution_host": "XINAN_4060_serial_resume",
+      "resumed_prefix": false
+    },
+    {
+      "case": "offset_shell",
+      "policy": "projected_internal",
+      "status": "MAX_UPDATES",
+      "execution_host": "XINAN_4060_serial_resume",
+      "resumed_prefix": false
+    },
+    {
+      "case": "offset_shell",
+      "policy": "fourier",
+      "status": "MAX_UPDATES",
+      "execution_host": "XINAN_4060_serial_resume",
+      "resumed_prefix": false
+    },
+    {
+      "case": "offset_shell",
+      "policy": "random",
+      "status": "MAX_UPDATES",
+      "execution_host": "XINAN_4060_serial_resume",
+      "resumed_prefix": false
+    }
+  ],
+  "not_run": [],
+  "new_physical_work_stopped": true,
+  "continuation": "single-GPU native-crash recovery; committed prefixes and prior terminal jobs retained",
+  "approved_wall_cap_seconds": 10800
+}

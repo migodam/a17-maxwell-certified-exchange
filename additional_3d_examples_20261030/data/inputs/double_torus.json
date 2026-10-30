@@ -1,0 +1,14 @@
+{
+  "case": "double_torus",
+  "definition": {
+    "label": "Double torus (two z-axis holes)",
+    "formula": "Union over c=+/-0.20 of (sqrt((x-c)^2+y*y)-.15)^2+z*z<=.09^2. Maximum abs(x)=.44.",
+    "nominal_min_thickness": 0.18
+  },
+  "seed": 2026103104,
+  "same_grid": true,
+  "truth_n": 12,
+  "inverse_n": 12,
+  "truth_voxels": 96,
+  "synthesis_wall_s": 1.9968625418841839
+}

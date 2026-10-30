@@ -1,0 +1,62 @@
+{
+  "states": 2090,
+  "rhs": 43720,
+  "wall_s": 5837.80392659182,
+  "sessions": [
+    {
+      "phase": "validate",
+      "status": "COMPLETE",
+      "pid": 70700,
+      "started": "2026-10-30T09:54:41+0800",
+      "wall_s": 1.2835276669356972,
+      "ended": "2026-10-30T09:54:43+0800"
+    },
+    {
+      "phase": "run",
+      "status": "ERROR",
+      "pid": 71023,
+      "started": "2026-10-30T09:55:04+0800",
+      "wall_s": 2263.8887711248826,
+      "ended": "2026-10-30T10:32:48+0800"
+    },
+    {
+      "phase": "XINAN_i9_continuation",
+      "status": "ERROR",
+      "pid": 20044,
+      "started": "2026-10-30T10:37:24+0800",
+      "wall_s": 1029.262443300002,
+      "ended": "2026-10-30T10:54:33+0800"
+    },
+    {
+      "phase": "XINAN_4060_continuation",
+      "status": "ERROR",
+      "pid": 2456,
+      "started": "2026-10-30T10:54:52+0800",
+      "wall_s": 678.7627771999978,
+      "ended": "2026-10-30T11:06:11+0800"
+    },
+    {
+      "phase": "XINAN_4060_parallel",
+      "status": "ERROR",
+      "pid": 19120,
+      "started": "2026-10-30T11:06:26+0800",
+      "wall_s": 1241.512048100005,
+      "ended": "2026-10-30T11:27:08+0800"
+    },
+    {
+      "phase": "XINAN_4060_parallel",
+      "status": "ERROR",
+      "pid": 14252,
+      "started": "2026-10-30T11:36:58+0800",
+      "wall_s": 623.0943591999967,
+      "ended": "2026-10-30T11:47:21+0800"
+    },
+    {
+      "phase": "XINAN_4060_parallel",
+      "status": "RUNNING",
+      "pid": 23388,
+      "started": "2026-10-30T11:49:17+0800"
+    }
+  ],
+  "active_wall_s": 276.84345929999836
+}

@@ -1,0 +1,12 @@
+{
+  "pid": 12264,
+  "event": "LOGGING_NAMESPACE_EXCEPTION",
+  "error": "'builtin_function_or_method' object has no attribute 'ndarray'",
+  "location": "original_exchange_helpers.clean",
+  "cause": "not established",
+  "committed_update_count": 4,
+  "recovery": "fresh serial GPU process; continue committed prefix; no code-rule repair",
+  "failed_attempt_preserved": true,
+  "prior_cost_reset": false,
+  "extra_tests_run": false
+}

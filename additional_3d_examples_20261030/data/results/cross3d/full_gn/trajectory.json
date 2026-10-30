@@ -1,0 +1,2114 @@
+[
+  {
+    "iteration": 0,
+    "accepted": true,
+    "accepted_update_count": 1,
+    "alpha": 1.0,
+    "gradient_fallback": false,
+    "slope": -1.0094047801052946,
+    "objective_before": 0.454545279905158,
+    "objective_after": 0.25135228321792347,
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 0.25135228321792347,
+        "accepted": true,
+        "source_residual": 4.4747166130748024e-15
+      }
+    ],
+    "metrics": {
+      "complex_nrmse": 1.6219745405262038,
+      "real_nrmse": 1.4742969962395125,
+      "imag_nrmse": 8.606746136925459,
+      "complex_mae": 0.27222976275068717,
+      "real_mae": 0.2332133357724711,
+      "imag_mae": 0.0866516222657948,
+      "measured_relative_residual": 0.7090159843773134,
+      "min_real": -0.5,
+      "min_imag": 0.0,
+      "max_real": 0.8899193497172689,
+      "support_iou": 0.035897435897435895,
+      "support_voxels": 122,
+      "truth_voxels": 80
+    },
+    "before_metrics": {
+      "complex_nrmse": 1.0081937760093964,
+      "real_nrmse": 1.007968253468335,
+      "imag_nrmse": 1.0428326807307082,
+      "complex_mae": 0.13763854146470855,
+      "real_mae": 0.13703703703703704,
+      "imag_mae": 0.012777777777777779,
+      "measured_relative_residual": 0.9534624060812862,
+      "min_real": 0.1,
+      "min_imag": 0.01,
+      "max_real": 0.1,
+      "support_iou": 0.0,
+      "support_voxels": 0,
+      "truth_voxels": 80
+    },
+    "step_norm": 0.3000555475857316,
+    "executed_step_norm": 0.3000555475857316,
+    "phases": {
+      "linearization_s": 2.3583722000039415,
+      "policy_s": 0.6125835999991978,
+      "projection_s": 0.00017150001076515764,
+      "line_search_s": 2.561762600002112
+    },
+    "wall_s": 5.5331892000103835,
+    "normal_residual": 1.2882043549474206e-15,
+    "actual_rank": 5184,
+    "jacobian": {
+      "method": "original_DenseDDA_receiver_adjoint_assembly",
+      "scope": "full-model offline reference; never selector input",
+      "N": 1728,
+      "P": 12,
+      "receiver_channels_m": 128,
+      "complex_material_coordinates_q": 1728,
+      "real_material_dimension": 3456,
+      "jacobian_shape": [
+        3072,
+        3456
+      ],
+      "dtype": "float64",
+      "data_layout": "source-major: per source [Re(m); Im(m)]",
+      "material_layout": "[Re(q); Im(q)]",
+      "material_basis": "voxel: delta_chi=(z_R+i*z_I)/sqrt(volume)",
+      "scale": 0.7361051889199683,
+      "receiver_adjoint_rhs": 128,
+      "physical_full_solver_rhs": 128,
+      "physical_full_tangent_rhs": 0,
+      "physical_new_lu_factorizations": 0,
+      "original_counter_totals_delta": {
+        "solve_rhs_full_adjoint": 128,
+        "solve_calls": 1,
+        "solve_rhs_full": 128,
+        "solve_rhs_adjoint": 128,
+        "solve_rhs": 128
+      },
+      "context_ledger_full_adjoint_rhs_added": 0,
+      "caller_charge_rhs_invoked": false,
+      "counter_views": "original counters and optional context ledger are not additive",
+      "adjoint_solve_and_admission_wall_s": 0.14417580000008456,
+      "assembly_total_wall_s": 0.28843070000584703,
+      "numerical_equivalence_status": "PARENT_CHECK_REQUIRED_BEFORE_USE"
+    }
+  },
+  {
+    "iteration": 1,
+    "accepted": true,
+    "accepted_update_count": 2,
+    "alpha": 0.125,
+    "gradient_fallback": true,
+    "slope": -0.7712557479257515,
+    "objective_before": 0.25135228321792347,
+    "objective_after": 0.20194927074215924,
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 2.967783805697138,
+        "accepted": false,
+        "source_residual": 4.817223496979988e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 0.7159062482711352,
+        "accepted": false,
+        "source_residual": 4.612619116456467e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.2566189667197902,
+        "accepted": false,
+        "source_residual": 4.559748766962839e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.20194927074215924,
+        "accepted": true,
+        "source_residual": 4.590774092451212e-15
+      }
+    ],
+    "metrics": {
+      "complex_nrmse": 1.5677532281458235,
+      "real_nrmse": 1.450225939842383,
+      "imag_nrmse": 7.607820287271052,
+      "complex_mae": 0.2584209455584527,
+      "real_mae": 0.2275631320148734,
+      "imag_mae": 0.0765731011554765,
+      "measured_relative_residual": 0.6355295011881389,
+      "min_real": -0.5,
+      "min_imag": 0.0,
+      "max_real": 0.889852531087885,
+      "support_iou": 0.03755868544600939,
+      "support_voxels": 141,
+      "truth_voxels": 80
+    },
+    "before_metrics": {
+      "complex_nrmse": 1.6219745405262038,
+      "real_nrmse": 1.4742969962395125,
+      "imag_nrmse": 8.606746136925459,
+      "complex_mae": 0.27222976275068717,
+      "real_mae": 0.2332133357724711,
+      "imag_mae": 0.0866516222657948,
+      "measured_relative_residual": 0.7090159843773134,
+      "min_real": -0.5,
+      "min_imag": 0.0,
+      "max_real": 0.8899193497172689,
+      "support_iou": 0.035897435897435895,
+      "support_voxels": 122,
+      "truth_voxels": 80
+    },
+    "step_norm": 0.32345132800568704,
+    "executed_step_norm": 0.04043141600071088,
+    "phases": {
+      "linearization_s": 0.0008280000038212165,
+      "policy_s": 0.5164876999915577,
+      "projection_s": 0.00020979999681003392,
+      "line_search_s": 8.84708849999879
+    },
+    "wall_s": 9.364807599995402,
+    "normal_residual": 1.2857390836390517e-15,
+    "actual_rank": 5184,
+    "jacobian": {
+      "method": "original_DenseDDA_receiver_adjoint_assembly",
+      "scope": "full-model offline reference; never selector input",
+      "N": 1728,
+      "P": 12,
+      "receiver_channels_m": 128,
+      "complex_material_coordinates_q": 1728,
+      "real_material_dimension": 3456,
+      "jacobian_shape": [
+        3072,
+        3456
+      ],
+      "dtype": "float64",
+      "data_layout": "source-major: per source [Re(m); Im(m)]",
+      "material_layout": "[Re(q); Im(q)]",
+      "material_basis": "voxel: delta_chi=(z_R+i*z_I)/sqrt(volume)",
+      "scale": 0.7361051889199683,
+      "receiver_adjoint_rhs": 128,
+      "physical_full_solver_rhs": 128,
+      "physical_full_tangent_rhs": 0,
+      "physical_new_lu_factorizations": 0,
+      "original_counter_totals_delta": {
+        "solve_rhs_full_adjoint": 128,
+        "solve_calls": 1,
+        "solve_rhs_full": 128,
+        "solve_rhs_adjoint": 128,
+        "solve_rhs": 128
+      },
+      "context_ledger_full_adjoint_rhs_added": 0,
+      "caller_charge_rhs_invoked": false,
+      "counter_views": "original counters and optional context ledger are not additive",
+      "adjoint_solve_and_admission_wall_s": 0.16188500000862405,
+      "assembly_total_wall_s": 0.2346278000040911,
+      "numerical_equivalence_status": "PARENT_CHECK_REQUIRED_BEFORE_USE"
+    }
+  },
+  {
+    "iteration": 2,
+    "accepted": true,
+    "accepted_update_count": 3,
+    "alpha": 0.125,
+    "gradient_fallback": true,
+    "slope": -0.777687623673575,
+    "objective_before": 0.2019492707421593,
+    "objective_after": 0.17945937599808187,
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 3.7483638948776767,
+        "accepted": false,
+        "source_residual": 4.531447728076045e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 1.1163993005859447,
+        "accepted": false,
+        "source_residual": 4.6492614725255665e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.3196630928959594,
+        "accepted": false,
+        "source_residual": 4.68330268728326e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.17945937599808187,
+        "accepted": true,
+        "source_residual": 4.621840398812266e-15
+      }
+    ],
+    "metrics": {
+      "complex_nrmse": 1.5367426709127354,
+      "real_nrmse": 1.4451999374041964,
+      "imag_nrmse": 6.709243588200512,
+      "complex_mae": 0.2520113096856387,
+      "real_mae": 0.22522804511481506,
+      "imag_mae": 0.06758510207071441,
+      "measured_relative_residual": 0.5990976324853539,
+      "min_real": -0.5,
+      "min_imag": 0.0,
+      "max_real": 0.8856859859541588,
+      "support_iou": 0.04371584699453552,
+      "support_voxels": 111,
+      "truth_voxels": 80
+    },
+    "before_metrics": {
+      "complex_nrmse": 1.5677532281458235,
+      "real_nrmse": 1.450225939842383,
+      "imag_nrmse": 7.607820287271052,
+      "complex_mae": 0.2584209455584527,
+      "real_mae": 0.2275631320148734,
+      "imag_mae": 0.0765731011554765,
+      "measured_relative_residual": 0.6355295011881389,
+      "min_real": -0.5,
+      "min_imag": 0.0,
+      "max_real": 0.889852531087885,
+      "support_iou": 0.03755868544600939,
+      "support_voxels": 141,
+      "truth_voxels": 80
+    },
+    "step_norm": 0.33810030543061403,
+    "executed_step_norm": 0.042262538178826754,
+    "phases": {
+      "linearization_s": 0.0011131999926874414,
+      "policy_s": 0.49960909999208525,
+      "projection_s": 0.0002877999941119924,
+      "line_search_s": 12.264908599987393
+    },
+    "wall_s": 12.766112099998281,
+    "normal_residual": 1.2475043934281444e-15,
+    "actual_rank": 5184,
+    "jacobian": {
+      "method": "original_DenseDDA_receiver_adjoint_assembly",
+      "scope": "full-model offline reference; never selector input",
+      "N": 1728,
+      "P": 12,
+      "receiver_channels_m": 128,
+      "complex_material_coordinates_q": 1728,
+      "real_material_dimension": 3456,
+      "jacobian_shape": [
+        3072,
+        3456
+      ],
+      "dtype": "float64",
+      "data_layout": "source-major: per source [Re(m); Im(m)]",
+      "material_layout": "[Re(q); Im(q)]",
+      "material_basis": "voxel: delta_chi=(z_R+i*z_I)/sqrt(volume)",
+      "scale": 0.7361051889199683,
+      "receiver_adjoint_rhs": 128,
+      "physical_full_solver_rhs": 128,
+      "physical_full_tangent_rhs": 0,
+      "physical_new_lu_factorizations": 0,
+      "original_counter_totals_delta": {
+        "solve_rhs_full_adjoint": 128,
+        "solve_calls": 1,
+        "solve_rhs_full": 128,
+        "solve_rhs_adjoint": 128,
+        "solve_rhs": 128
+      },
+      "context_ledger_full_adjoint_rhs_added": 0,
+      "caller_charge_rhs_invoked": false,
+      "counter_views": "original counters and optional context ledger are not additive",
+      "adjoint_solve_and_admission_wall_s": 0.14429050000035204,
+      "assembly_total_wall_s": 0.21253079999587499,
+      "numerical_equivalence_status": "PARENT_CHECK_REQUIRED_BEFORE_USE"
+    }
+  },
+  {
+    "iteration": 3,
+    "accepted": true,
+    "accepted_update_count": 4,
+    "alpha": 0.0625,
+    "gradient_fallback": true,
+    "slope": -1.437206142730353,
+    "objective_before": 0.17945937599808187,
+    "objective_after": 0.14320340938808643,
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 7.284735799961202,
+        "accepted": false,
+        "source_residual": 5.145336611868946e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 2.602493669725617,
+        "accepted": false,
+        "source_residual": 4.706290537472942e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.6877846011515414,
+        "accepted": false,
+        "source_residual": 4.600176821355761e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.21711627280171408,
+        "accepted": false,
+        "source_residual": 4.6502457889196054e-15
+      },
+      {
+        "alpha": 0.0625,
+        "objective": 0.14320340938808643,
+        "accepted": true,
+        "source_residual": 4.6048649526786414e-15
+      }
+    ],
+    "metrics": {
+      "complex_nrmse": 1.5041188582983405,
+      "real_nrmse": 1.4214078815463211,
+      "imag_nrmse": 6.330140757000261,
+      "complex_mae": 0.2445506466907363,
+      "real_mae": 0.22148085465981288,
+      "imag_mae": 0.06371377069868765,
+      "measured_relative_residual": 0.5351692193168034,
+      "min_real": -0.5,
+      "min_imag": 0.0,
+      "max_real": 0.8873735851623477,
+      "support_iou": 0.038461538461538464,
+      "support_voxels": 136,
+      "truth_voxels": 80
+    },
+    "before_metrics": {
+      "complex_nrmse": 1.5367426709127354,
+      "real_nrmse": 1.4451999374041964,
+      "imag_nrmse": 6.709243588200512,
+      "complex_mae": 0.2520113096856387,
+      "real_mae": 0.22522804511481506,
+      "imag_mae": 0.06758510207071441,
+      "measured_relative_residual": 0.5990976324853539,
+      "min_real": -0.5,
+      "min_imag": 0.0,
+      "max_real": 0.8856859859541588,
+      "support_iou": 0.04371584699453552,
+      "support_voxels": 111,
+      "truth_voxels": 80
+    },
+    "step_norm": 0.5238274312448807,
+    "executed_step_norm": 0.032739214452805046,
+    "phases": {
+      "linearization_s": 2.3975311999965925,
+      "policy_s": 0.47556739998981357,
+      "projection_s": 0.00014709999959450215,
+      "line_search_s": 10.950619399998686
+    },
+    "wall_s": 13.82407200000307,
+    "normal_residual": 1.3633202195031539e-15,
+    "actual_rank": 5184,
+    "jacobian": {
+      "method": "original_DenseDDA_receiver_adjoint_assembly",
+      "scope": "full-model offline reference; never selector input",
+      "N": 1728,
+      "P": 12,
+      "receiver_channels_m": 128,
+      "complex_material_coordinates_q": 1728,
+      "real_material_dimension": 3456,
+      "jacobian_shape": [
+        3072,
+        3456
+      ],
+      "dtype": "float64",
+      "data_layout": "source-major: per source [Re(m); Im(m)]",
+      "material_layout": "[Re(q); Im(q)]",
+      "material_basis": "voxel: delta_chi=(z_R+i*z_I)/sqrt(volume)",
+      "scale": 0.7361051889199683,
+      "receiver_adjoint_rhs": 128,
+      "physical_full_solver_rhs": 128,
+      "physical_full_tangent_rhs": 0,
+      "physical_new_lu_factorizations": 0,
+      "original_counter_totals_delta": {
+        "solve_rhs_full_adjoint": 128,
+        "solve_rhs": 128,
+        "solve_rhs_adjoint": 128,
+        "solve_calls": 1,
+        "solve_rhs_full": 128
+      },
+      "context_ledger_full_adjoint_rhs_added": 0,
+      "caller_charge_rhs_invoked": false,
+      "counter_views": "original counters and optional context ledger are not additive",
+      "adjoint_solve_and_admission_wall_s": 0.14168840000638738,
+      "assembly_total_wall_s": 0.21054280000680592,
+      "numerical_equivalence_status": "PARENT_CHECK_REQUIRED_BEFORE_USE"
+    }
+  },
+  {
+    "iteration": 4,
+    "accepted": true,
+    "accepted_update_count": 5,
+    "alpha": 0.125,
+    "gradient_fallback": true,
+    "slope": -0.4615846242111136,
+    "objective_before": 0.14320340938808634,
+    "objective_after": 0.1361230145828548,
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 3.12082286181042,
+        "accepted": false,
+        "source_residual": 4.7001060228799155e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 0.7977080309972178,
+        "accepted": false,
+        "source_residual": 4.6423343686614275e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.23818490324612174,
+        "accepted": false,
+        "source_residual": 4.696617435829882e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.1361230145828548,
+        "accepted": true,
+        "source_residual": 4.695741947689052e-15
+      }
+    ],
+    "metrics": {
+      "complex_nrmse": 1.479023927597613,
+      "real_nrmse": 1.4150387721290647,
+      "imag_nrmse": 5.578658093007441,
+      "complex_mae": 0.24043118983760395,
+      "real_mae": 0.22052513230690884,
+      "imag_mae": 0.05624062659027111,
+      "measured_relative_residual": 0.5217713169712849,
+      "min_real": -0.5,
+      "min_imag": 0.0,
+      "max_real": 0.882009504975694,
+      "support_iou": 0.04371584699453552,
+      "support_voxels": 111,
+      "truth_voxels": 80
+    },
+    "before_metrics": {
+      "complex_nrmse": 1.5041188582983405,
+      "real_nrmse": 1.4214078815463211,
+      "imag_nrmse": 6.330140757000261,
+      "complex_mae": 0.2445506466907363,
+      "real_mae": 0.22148085465981288,
+      "imag_mae": 0.06371377069868765,
+      "measured_relative_residual": 0.5351692193168034,
+      "min_real": -0.5,
+      "min_imag": 0.0,
+      "max_real": 0.8873735851623477,
+      "support_iou": 0.038461538461538464,
+      "support_voxels": 136,
+      "truth_voxels": 80
+    },
+    "step_norm": 0.26789986221956585,
+    "executed_step_norm": 0.03348748277744573,
+    "phases": {
+      "linearization_s": 0.0008980999991763383,
+      "policy_s": 0.4767588000104297,
+      "projection_s": 0.00015749999147374183,
+      "line_search_s": 8.775614600002882
+    },
+    "wall_s": 9.253638299996965,
+    "normal_residual": 1.3249343358405043e-15,
+    "actual_rank": 5184,
+    "jacobian": {
+      "method": "original_DenseDDA_receiver_adjoint_assembly",
+      "scope": "full-model offline reference; never selector input",
+      "N": 1728,
+      "P": 12,
+      "receiver_channels_m": 128,
+      "complex_material_coordinates_q": 1728,
+      "real_material_dimension": 3456,
+      "jacobian_shape": [
+        3072,
+        3456
+      ],
+      "dtype": "float64",
+      "data_layout": "source-major: per source [Re(m); Im(m)]",
+      "material_layout": "[Re(q); Im(q)]",
+      "material_basis": "voxel: delta_chi=(z_R+i*z_I)/sqrt(volume)",
+      "scale": 0.7361051889199683,
+      "receiver_adjoint_rhs": 128,
+      "physical_full_solver_rhs": 128,
+      "physical_full_tangent_rhs": 0,
+      "physical_new_lu_factorizations": 0,
+      "original_counter_totals_delta": {
+        "solve_rhs_full_adjoint": 128,
+        "solve_rhs": 128,
+        "solve_rhs_adjoint": 128,
+        "solve_calls": 1,
+        "solve_rhs_full": 128
+      },
+      "context_ledger_full_adjoint_rhs_added": 0,
+      "caller_charge_rhs_invoked": false,
+      "counter_views": "original counters and optional context ledger are not additive",
+      "adjoint_solve_and_admission_wall_s": 0.14170500000182074,
+      "assembly_total_wall_s": 0.20895909999671858,
+      "numerical_equivalence_status": "PARENT_CHECK_REQUIRED_BEFORE_USE"
+    }
+  },
+  {
+    "iteration": 5,
+    "accepted": true,
+    "accepted_update_count": 6,
+    "alpha": 0.0625,
+    "gradient_fallback": true,
+    "slope": -1.4432082150058214,
+    "objective_before": 0.13612301458285478,
+    "objective_after": 0.11365640777138193,
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 7.66712201279812,
+        "accepted": false,
+        "source_residual": 5.219772893736104e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 3.0848574629783028,
+        "accepted": false,
+        "source_residual": 4.834584735166589e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.8400481142662891,
+        "accepted": false,
+        "source_residual": 4.6736769730428215e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.22812565670728113,
+        "accepted": false,
+        "source_residual": 4.635045810952729e-15
+      },
+      {
+        "alpha": 0.0625,
+        "objective": 0.11365640777138193,
+        "accepted": true,
+        "source_residual": 4.6362790502143444e-15
+      }
+    ],
+    "metrics": {
+      "complex_nrmse": 1.4484978503220176,
+      "real_nrmse": 1.39070913473089,
+      "imag_nrmse": 5.2663771273945414,
+      "complex_mae": 0.23323859323921242,
+      "real_mae": 0.21632920782597115,
+      "imag_mae": 0.05304169284917742,
+      "measured_relative_residual": 0.4767726323942168,
+      "min_real": -0.5,
+      "min_imag": 0.0,
+      "max_real": 0.8837956731038693,
+      "support_iou": 0.04326923076923077,
+      "support_voxels": 137,
+      "truth_voxels": 80
+    },
+    "before_metrics": {
+      "complex_nrmse": 1.479023927597613,
+      "real_nrmse": 1.4150387721290647,
+      "imag_nrmse": 5.578658093007441,
+      "complex_mae": 0.24043118983760395,
+      "real_mae": 0.22052513230690884,
+      "imag_mae": 0.05624062659027111,
+      "measured_relative_residual": 0.5217713169712849,
+      "min_real": -0.5,
+      "min_imag": 0.0,
+      "max_real": 0.882009504975694,
+      "support_iou": 0.04371584699453552,
+      "support_voxels": 111,
+      "truth_voxels": 80
+    },
+    "step_norm": 0.5624496998364704,
+    "executed_step_norm": 0.0351531062397794,
+    "phases": {
+      "linearization_s": 0.0007181999972090125,
+      "policy_s": 0.47884359999443404,
+      "projection_s": 0.00016169999435078353,
+      "line_search_s": 10.908306299999822
+    },
+    "wall_s": 11.388216199993622,
+    "normal_residual": 1.40435137384675e-15,
+    "actual_rank": 5184,
+    "jacobian": {
+      "method": "original_DenseDDA_receiver_adjoint_assembly",
+      "scope": "full-model offline reference; never selector input",
+      "N": 1728,
+      "P": 12,
+      "receiver_channels_m": 128,
+      "complex_material_coordinates_q": 1728,
+      "real_material_dimension": 3456,
+      "jacobian_shape": [
+        3072,
+        3456
+      ],
+      "dtype": "float64",
+      "data_layout": "source-major: per source [Re(m); Im(m)]",
+      "material_layout": "[Re(q); Im(q)]",
+      "material_basis": "voxel: delta_chi=(z_R+i*z_I)/sqrt(volume)",
+      "scale": 0.7361051889199683,
+      "receiver_adjoint_rhs": 128,
+      "physical_full_solver_rhs": 128,
+      "physical_full_tangent_rhs": 0,
+      "physical_new_lu_factorizations": 0,
+      "original_counter_totals_delta": {
+        "solve_rhs_full_adjoint": 128,
+        "solve_rhs": 128,
+        "solve_rhs_adjoint": 128,
+        "solve_calls": 1,
+        "solve_rhs_full": 128
+      },
+      "context_ledger_full_adjoint_rhs_added": 0,
+      "caller_charge_rhs_invoked": false,
+      "counter_views": "original counters and optional context ledger are not additive",
+      "adjoint_solve_and_admission_wall_s": 0.1401490999996895,
+      "assembly_total_wall_s": 0.21102289999544155,
+      "numerical_equivalence_status": "PARENT_CHECK_REQUIRED_BEFORE_USE"
+    }
+  },
+  {
+    "iteration": 6,
+    "accepted": true,
+    "accepted_update_count": 7,
+    "alpha": 0.0625,
+    "gradient_fallback": true,
+    "slope": -0.743800600042704,
+    "objective_before": 0.1136564077713819,
+    "objective_after": 0.09747994701794566,
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 4.390373011179151,
+        "accepted": false,
+        "source_residual": 4.473052758266143e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 1.7175256172736628,
+        "accepted": false,
+        "source_residual": 4.659560745525933e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.43376563256358147,
+        "accepted": false,
+        "source_residual": 4.745591739115523e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.14428054352925662,
+        "accepted": false,
+        "source_residual": 4.690426103359228e-15
+      },
+      {
+        "alpha": 0.0625,
+        "objective": 0.09747994701794566,
+        "accepted": true,
+        "source_residual": 4.732916914997686e-15
+      }
+    ],
+    "metrics": {
+      "complex_nrmse": 1.433139640564439,
+      "real_nrmse": 1.382009898877732,
+      "imag_nrmse": 4.954208435591272,
+      "complex_mae": 0.23043207408038466,
+      "real_mae": 0.21423430075821098,
+      "imag_mae": 0.049950505713069526,
+      "measured_relative_residual": 0.44154187170124487,
+      "min_real": -0.5,
+      "min_imag": 0.0,
+      "max_real": 0.879696039217652,
+      "support_iou": 0.04371584699453552,
+      "support_voxels": 111,
+      "truth_voxels": 80
+    },
+    "before_metrics": {
+      "complex_nrmse": 1.4484978503220176,
+      "real_nrmse": 1.39070913473089,
+      "imag_nrmse": 5.2663771273945414,
+      "complex_mae": 0.23323859323921242,
+      "real_mae": 0.21632920782597115,
+      "imag_mae": 0.05304169284917742,
+      "measured_relative_residual": 0.4767726323942168,
+      "min_real": -0.5,
+      "min_imag": 0.0,
+      "max_real": 0.8837956731038693,
+      "support_iou": 0.04326923076923077,
+      "support_voxels": 137,
+      "truth_voxels": 80
+    },
+    "step_norm": 0.3863004436054229,
+    "executed_step_norm": 0.024143777725338933,
+    "phases": {
+      "linearization_s": 0.0008940000116126612,
+      "policy_s": 0.4903005999949528,
+      "projection_s": 0.00014429999282583594,
+      "line_search_s": 10.924689899999066
+    },
+    "wall_s": 11.416258600002038,
+    "normal_residual": 1.4653760746144599e-15,
+    "actual_rank": 5184,
+    "jacobian": {
+      "method": "original_DenseDDA_receiver_adjoint_assembly",
+      "scope": "full-model offline reference; never selector input",
+      "N": 1728,
+      "P": 12,
+      "receiver_channels_m": 128,
+      "complex_material_coordinates_q": 1728,
+      "real_material_dimension": 3456,
+      "jacobian_shape": [
+        3072,
+        3456
+      ],
+      "dtype": "float64",
+      "data_layout": "source-major: per source [Re(m); Im(m)]",
+      "material_layout": "[Re(q); Im(q)]",
+      "material_basis": "voxel: delta_chi=(z_R+i*z_I)/sqrt(volume)",
+      "scale": 0.7361051889199683,
+      "receiver_adjoint_rhs": 128,
+      "physical_full_solver_rhs": 128,
+      "physical_full_tangent_rhs": 0,
+      "physical_new_lu_factorizations": 0,
+      "original_counter_totals_delta": {
+        "solve_rhs_full_adjoint": 128,
+        "solve_rhs": 128,
+        "solve_rhs_adjoint": 128,
+        "solve_calls": 1,
+        "solve_rhs_full": 128
+      },
+      "context_ledger_full_adjoint_rhs_added": 0,
+      "caller_charge_rhs_invoked": false,
+      "counter_views": "original counters and optional context ledger are not additive",
+      "adjoint_solve_and_admission_wall_s": 0.14114490000065416,
+      "assembly_total_wall_s": 0.2102666999999201,
+      "numerical_equivalence_status": "PARENT_CHECK_REQUIRED_BEFORE_USE"
+    }
+  },
+  {
+    "iteration": 7,
+    "accepted": true,
+    "accepted_update_count": 8,
+    "alpha": 0.0625,
+    "gradient_fallback": true,
+    "slope": -0.44596603463658635,
+    "objective_before": 0.09747994701794556,
+    "objective_after": 0.08980284003692114,
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 4.110704892210538,
+        "accepted": false,
+        "source_residual": 4.893672270561543e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 1.1677036446576639,
+        "accepted": false,
+        "source_residual": 4.699337724656347e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.3152164777366765,
+        "accepted": false,
+        "source_residual": 4.6803541833751466e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.12329123929304345,
+        "accepted": false,
+        "source_residual": 4.698157320342803e-15
+      },
+      {
+        "alpha": 0.0625,
+        "objective": 0.08980284003692114,
+        "accepted": true,
+        "source_residual": 4.737616747704277e-15
+      }
+    ],
+    "metrics": {
+      "complex_nrmse": 1.4094412635157783,
+      "real_nrmse": 1.363730746539971,
+      "imag_nrmse": 4.668325518929639,
+      "complex_mae": 0.22544328690472373,
+      "real_mae": 0.2112846994586073,
+      "imag_mae": 0.04707888157904872,
+      "measured_relative_residual": 0.42379834722538423,
+      "min_real": -0.5,
+      "min_imag": 0.0,
+      "max_real": 0.879270858250833,
+      "support_iou": 0.050761421319796954,
+      "support_voxels": 127,
+      "truth_voxels": 80
+    },
+    "before_metrics": {
+      "complex_nrmse": 1.433139640564439,
+      "real_nrmse": 1.382009898877732,
+      "imag_nrmse": 4.954208435591272,
+      "complex_mae": 0.23043207408038466,
+      "real_mae": 0.21423430075821098,
+      "imag_mae": 0.049950505713069526,
+      "measured_relative_residual": 0.44154187170124487,
+      "min_real": -0.5,
+      "min_imag": 0.0,
+      "max_real": 0.879696039217652,
+      "support_iou": 0.04371584699453552,
+      "support_voxels": 111,
+      "truth_voxels": 80
+    },
+    "step_norm": 0.3161783043703098,
+    "executed_step_norm": 0.019761144023144363,
+    "phases": {
+      "linearization_s": 0.0007764000038150698,
+      "policy_s": 0.47526719998859335,
+      "projection_s": 0.0001669999910518527,
+      "line_search_s": 10.947894800003269
+    },
+    "wall_s": 11.424324800012982,
+    "normal_residual": 1.574354634425408e-15,
+    "actual_rank": 5184,
+    "jacobian": {
+      "method": "original_DenseDDA_receiver_adjoint_assembly",
+      "scope": "full-model offline reference; never selector input",
+      "N": 1728,
+      "P": 12,
+      "receiver_channels_m": 128,
+      "complex_material_coordinates_q": 1728,
+      "real_material_dimension": 3456,
+      "jacobian_shape": [
+        3072,
+        3456
+      ],
+      "dtype": "float64",
+      "data_layout": "source-major: per source [Re(m); Im(m)]",
+      "material_layout": "[Re(q); Im(q)]",
+      "material_basis": "voxel: delta_chi=(z_R+i*z_I)/sqrt(volume)",
+      "scale": 0.7361051889199683,
+      "receiver_adjoint_rhs": 128,
+      "physical_full_solver_rhs": 128,
+      "physical_full_tangent_rhs": 0,
+      "physical_new_lu_factorizations": 0,
+      "original_counter_totals_delta": {
+        "solve_rhs_full_adjoint": 128,
+        "solve_rhs": 128,
+        "solve_rhs_adjoint": 128,
+        "solve_calls": 1,
+        "solve_rhs_full": 128
+      },
+      "context_ledger_full_adjoint_rhs_added": 0,
+      "caller_charge_rhs_invoked": false,
+      "counter_views": "original counters and optional context ledger are not additive",
+      "adjoint_solve_and_admission_wall_s": 0.14052699999592733,
+      "assembly_total_wall_s": 0.2094786999950884,
+      "numerical_equivalence_status": "PARENT_CHECK_REQUIRED_BEFORE_USE"
+    }
+  },
+  {
+    "iteration": 8,
+    "accepted": true,
+    "accepted_update_count": 9,
+    "alpha": 0.0625,
+    "gradient_fallback": true,
+    "slope": -0.48244656726155366,
+    "objective_before": 0.08980284003692111,
+    "objective_after": 0.08292223123505023,
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 4.110842028176682,
+        "accepted": false,
+        "source_residual": 4.5439088978733615e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 1.3830821439584788,
+        "accepted": false,
+        "source_residual": 4.659261088569892e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.3559310092432131,
+        "accepted": false,
+        "source_residual": 4.689996230052338e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.12412999070032364,
+        "accepted": false,
+        "source_residual": 4.725054211775124e-15
+      },
+      {
+        "alpha": 0.0625,
+        "objective": 0.08292223123505023,
+        "accepted": true,
+        "source_residual": 4.70745327773614e-15
+      }
+    ],
+    "metrics": {
+      "complex_nrmse": 1.3967228301278345,
+      "real_nrmse": 1.3563971593685993,
+      "imag_nrmse": 4.392940930273503,
+      "complex_mae": 0.22359227398939646,
+      "real_mae": 0.21014463301397449,
+      "imag_mae": 0.044351492474441444,
+      "measured_relative_residual": 0.4072392666194964,
+      "min_real": -0.5,
+      "min_imag": 0.0,
+      "max_real": 0.8753482660925568,
+      "support_iou": 0.05084745762711865,
+      "support_voxels": 106,
+      "truth_voxels": 80
+    },
+    "before_metrics": {
+      "complex_nrmse": 1.4094412635157783,
+      "real_nrmse": 1.363730746539971,
+      "imag_nrmse": 4.668325518929639,
+      "complex_mae": 0.22544328690472373,
+      "real_mae": 0.2112846994586073,
+      "imag_mae": 0.04707888157904872,
+      "measured_relative_residual": 0.42379834722538423,
+      "min_real": -0.5,
+      "min_imag": 0.0,
+      "max_real": 0.879270858250833,
+      "support_iou": 0.050761421319796954,
+      "support_voxels": 127,
+      "truth_voxels": 80
+    },
+    "step_norm": 0.3317971178841566,
+    "executed_step_norm": 0.020737319867759788,
+    "phases": {
+      "linearization_s": 0.0007070999999996275,
+      "policy_s": 0.47645509999711066,
+      "projection_s": 0.00016260000120382756,
+      "line_search_s": 10.92132870000205
+    },
+    "wall_s": 11.398836100008339,
+    "normal_residual": 1.5680673409036044e-15,
+    "actual_rank": 5184,
+    "jacobian": {
+      "method": "original_DenseDDA_receiver_adjoint_assembly",
+      "scope": "full-model offline reference; never selector input",
+      "N": 1728,
+      "P": 12,
+      "receiver_channels_m": 128,
+      "complex_material_coordinates_q": 1728,
+      "real_material_dimension": 3456,
+      "jacobian_shape": [
+        3072,
+        3456
+      ],
+      "dtype": "float64",
+      "data_layout": "source-major: per source [Re(m); Im(m)]",
+      "material_layout": "[Re(q); Im(q)]",
+      "material_basis": "voxel: delta_chi=(z_R+i*z_I)/sqrt(volume)",
+      "scale": 0.7361051889199683,
+      "receiver_adjoint_rhs": 128,
+      "physical_full_solver_rhs": 128,
+      "physical_full_tangent_rhs": 0,
+      "physical_new_lu_factorizations": 0,
+      "original_counter_totals_delta": {
+        "solve_rhs_full_adjoint": 128,
+        "solve_rhs": 128,
+        "solve_rhs_adjoint": 128,
+        "solve_calls": 1,
+        "solve_rhs_full": 128
+      },
+      "context_ledger_full_adjoint_rhs_added": 0,
+      "caller_charge_rhs_invoked": false,
+      "counter_views": "original counters and optional context ledger are not additive",
+      "adjoint_solve_and_admission_wall_s": 0.14149009999528062,
+      "assembly_total_wall_s": 0.21025980000558775,
+      "numerical_equivalence_status": "PARENT_CHECK_REQUIRED_BEFORE_USE"
+    }
+  },
+  {
+    "iteration": 9,
+    "accepted": true,
+    "accepted_update_count": 10,
+    "alpha": 0.0625,
+    "gradient_fallback": true,
+    "slope": -0.5735127889519794,
+    "objective_before": 0.08292223123505024,
+    "objective_after": 0.08118395362121784,
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 5.59267661361065,
+        "accepted": false,
+        "source_residual": 4.999464022348966e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 1.8179665888120442,
+        "accepted": false,
+        "source_residual": 4.798247611014727e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.4828020119259951,
+        "accepted": false,
+        "source_residual": 4.650425909955813e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.14818539800843902,
+        "accepted": false,
+        "source_residual": 4.713251422450918e-15
+      },
+      {
+        "alpha": 0.0625,
+        "objective": 0.08118395362121784,
+        "accepted": true,
+        "source_residual": 4.715019430200308e-15
+      }
+    ],
+    "metrics": {
+      "complex_nrmse": 1.3719084232560574,
+      "real_nrmse": 1.3357432522529855,
+      "imag_nrmse": 4.1451842404972075,
+      "complex_mae": 0.2182527234946032,
+      "real_mae": 0.20662438948514547,
+      "imag_mae": 0.04183696326347889,
+      "measured_relative_residual": 0.4029482551377879,
+      "min_real": -0.5,
+      "min_imag": 0.0,
+      "max_real": 0.8751429837055308,
+      "support_iou": 0.05102040816326531,
+      "support_voxels": 126,
+      "truth_voxels": 80
+    },
+    "before_metrics": {
+      "complex_nrmse": 1.3967228301278345,
+      "real_nrmse": 1.3563971593685993,
+      "imag_nrmse": 4.392940930273503,
+      "complex_mae": 0.22359227398939646,
+      "real_mae": 0.21014463301397449,
+      "imag_mae": 0.044351492474441444,
+      "measured_relative_residual": 0.4072392666194964,
+      "min_real": -0.5,
+      "min_imag": 0.0,
+      "max_real": 0.8753482660925568,
+      "support_iou": 0.05084745762711865,
+      "support_voxels": 106,
+      "truth_voxels": 80
+    },
+    "step_norm": 0.3926437083407669,
+    "executed_step_norm": 0.02454023177129793,
+    "phases": {
+      "linearization_s": 0.0007722000009380281,
+      "policy_s": 0.4820101000077557,
+      "projection_s": 0.00017949999892152846,
+      "line_search_s": 10.8909452999942
+    },
+    "wall_s": 11.374161699990509,
+    "normal_residual": 1.8132346137929794e-15,
+    "actual_rank": 5184,
+    "jacobian": {
+      "method": "original_DenseDDA_receiver_adjoint_assembly",
+      "scope": "full-model offline reference; never selector input",
+      "N": 1728,
+      "P": 12,
+      "receiver_channels_m": 128,
+      "complex_material_coordinates_q": 1728,
+      "real_material_dimension": 3456,
+      "jacobian_shape": [
+        3072,
+        3456
+      ],
+      "dtype": "float64",
+      "data_layout": "source-major: per source [Re(m); Im(m)]",
+      "material_layout": "[Re(q); Im(q)]",
+      "material_basis": "voxel: delta_chi=(z_R+i*z_I)/sqrt(volume)",
+      "scale": 0.7361051889199683,
+      "receiver_adjoint_rhs": 128,
+      "physical_full_solver_rhs": 128,
+      "physical_full_tangent_rhs": 0,
+      "physical_new_lu_factorizations": 0,
+      "original_counter_totals_delta": {
+        "solve_rhs_full_adjoint": 128,
+        "solve_rhs": 128,
+        "solve_rhs_adjoint": 128,
+        "solve_calls": 1,
+        "solve_rhs_full": 128
+      },
+      "context_ledger_full_adjoint_rhs_added": 0,
+      "caller_charge_rhs_invoked": false,
+      "counter_views": "original counters and optional context ledger are not additive",
+      "adjoint_solve_and_admission_wall_s": 0.14042729999346193,
+      "assembly_total_wall_s": 0.2114024999900721,
+      "numerical_equivalence_status": "PARENT_CHECK_REQUIRED_BEFORE_USE"
+    }
+  },
+  {
+    "iteration": 10,
+    "accepted": true,
+    "accepted_update_count": 11,
+    "alpha": 0.0625,
+    "gradient_fallback": true,
+    "slope": -0.7649593387565646,
+    "objective_before": 0.08118395362121784,
+    "objective_after": 0.07260323923323911,
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 4.528928111892964,
+        "accepted": false,
+        "source_residual": 4.437683261545898e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 2.1024542500860246,
+        "accepted": false,
+        "source_residual": 4.58773504202598e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.5339357127182126,
+        "accepted": false,
+        "source_residual": 4.603321481735251e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.1448562134013701,
+        "accepted": false,
+        "source_residual": 4.759331705140992e-15
+      },
+      {
+        "alpha": 0.0625,
+        "objective": 0.07260323923323911,
+        "accepted": true,
+        "source_residual": 4.717492266968626e-15
+      }
+    ],
+    "metrics": {
+      "complex_nrmse": 1.3554396415273569,
+      "real_nrmse": 1.3234326200322586,
+      "imag_nrmse": 3.9031419322697785,
+      "complex_mae": 0.2155132002572048,
+      "real_mae": 0.2041804165559378,
+      "imag_mae": 0.03943382164659716,
+      "measured_relative_residual": 0.38105888024586043,
+      "min_real": -0.5,
+      "min_imag": 0.0,
+      "max_real": 0.8699033361716523,
+      "support_iou": 0.054878048780487805,
+      "support_voxels": 93,
+      "truth_voxels": 80
+    },
+    "before_metrics": {
+      "complex_nrmse": 1.3719084232560574,
+      "real_nrmse": 1.3357432522529855,
+      "imag_nrmse": 4.1451842404972075,
+      "complex_mae": 0.2182527234946032,
+      "real_mae": 0.20662438948514547,
+      "imag_mae": 0.04183696326347889,
+      "measured_relative_residual": 0.4029482551377879,
+      "min_real": -0.5,
+      "min_imag": 0.0,
+      "max_real": 0.8751429837055308,
+      "support_iou": 0.05102040816326531,
+      "support_voxels": 126,
+      "truth_voxels": 80
+    },
+    "step_norm": 0.4253741596515934,
+    "executed_step_norm": 0.02658588497822459,
+    "phases": {
+      "linearization_s": 0.0007600999961141497,
+      "policy_s": 0.4809790999861434,
+      "projection_s": 0.00016999999934341758,
+      "line_search_s": 10.898737099996652
+    },
+    "wall_s": 11.38084450000315,
+    "normal_residual": 1.7729487388777635e-15,
+    "actual_rank": 5184,
+    "jacobian": {
+      "method": "original_DenseDDA_receiver_adjoint_assembly",
+      "scope": "full-model offline reference; never selector input",
+      "N": 1728,
+      "P": 12,
+      "receiver_channels_m": 128,
+      "complex_material_coordinates_q": 1728,
+      "real_material_dimension": 3456,
+      "jacobian_shape": [
+        3072,
+        3456
+      ],
+      "dtype": "float64",
+      "data_layout": "source-major: per source [Re(m); Im(m)]",
+      "material_layout": "[Re(q); Im(q)]",
+      "material_basis": "voxel: delta_chi=(z_R+i*z_I)/sqrt(volume)",
+      "scale": 0.7361051889199683,
+      "receiver_adjoint_rhs": 128,
+      "physical_full_solver_rhs": 128,
+      "physical_full_tangent_rhs": 0,
+      "physical_new_lu_factorizations": 0,
+      "original_counter_totals_delta": {
+        "solve_rhs_full_adjoint": 128,
+        "solve_rhs": 128,
+        "solve_rhs_adjoint": 128,
+        "solve_calls": 1,
+        "solve_rhs_full": 128
+      },
+      "context_ledger_full_adjoint_rhs_added": 0,
+      "caller_charge_rhs_invoked": false,
+      "counter_views": "original counters and optional context ledger are not additive",
+      "adjoint_solve_and_admission_wall_s": 0.14127010000811424,
+      "assembly_total_wall_s": 0.2072799000015948,
+      "numerical_equivalence_status": "PARENT_CHECK_REQUIRED_BEFORE_USE"
+    }
+  },
+  {
+    "iteration": 11,
+    "accepted": true,
+    "accepted_update_count": 12,
+    "alpha": 0.03125,
+    "gradient_fallback": true,
+    "slope": -0.78965116679696,
+    "objective_before": 0.07260323923323908,
+    "objective_after": 0.06188211355163213,
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 7.073636255271106,
+        "accepted": false,
+        "source_residual": 5.177359603310317e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 2.702178130908746,
+        "accepted": false,
+        "source_residual": 4.705801654896512e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.7417807964988163,
+        "accepted": false,
+        "source_residual": 4.702951178339937e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.19703105355727887,
+        "accepted": false,
+        "source_residual": 4.841617610561473e-15
+      },
+      {
+        "alpha": 0.0625,
+        "objective": 0.07918156904608402,
+        "accepted": false,
+        "source_residual": 4.7475845441483005e-15
+      },
+      {
+        "alpha": 0.03125,
+        "objective": 0.06188211355163213,
+        "accepted": true,
+        "source_residual": 4.728577962960364e-15
+      }
+    ],
+    "metrics": {
+      "complex_nrmse": 1.3403681863730559,
+      "real_nrmse": 1.3098972553943546,
+      "imag_nrmse": 3.79667229606223,
+      "complex_mae": 0.2122450204474219,
+      "real_mae": 0.20175830949572066,
+      "imag_mae": 0.03833712984282532,
+      "measured_relative_residual": 0.35180056484359373,
+      "min_real": -0.5,
+      "min_imag": 0.0,
+      "max_real": 0.869657285310039,
+      "support_iou": 0.056179775280898875,
+      "support_voxels": 108,
+      "truth_voxels": 80
+    },
+    "before_metrics": {
+      "complex_nrmse": 1.3554396415273569,
+      "real_nrmse": 1.3234326200322586,
+      "imag_nrmse": 3.9031419322697785,
+      "complex_mae": 0.2155132002572048,
+      "real_mae": 0.2041804165559378,
+      "imag_mae": 0.03943382164659716,
+      "measured_relative_residual": 0.38105888024586043,
+      "min_real": -0.5,
+      "min_imag": 0.0,
+      "max_real": 0.8699033361716523,
+      "support_iou": 0.054878048780487805,
+      "support_voxels": 93,
+      "truth_voxels": 80
+    },
+    "step_norm": 0.49056109872603065,
+    "executed_step_norm": 0.015330034335188458,
+    "phases": {
+      "linearization_s": 0.0007232000061776489,
+      "policy_s": 0.48832959998981096,
+      "projection_s": 0.00017079999088309705,
+      "line_search_s": 13.080073999997694
+    },
+    "wall_s": 13.569503800012171,
+    "normal_residual": 1.8602690403019266e-15,
+    "actual_rank": 5184,
+    "jacobian": {
+      "method": "original_DenseDDA_receiver_adjoint_assembly",
+      "scope": "full-model offline reference; never selector input",
+      "N": 1728,
+      "P": 12,
+      "receiver_channels_m": 128,
+      "complex_material_coordinates_q": 1728,
+      "real_material_dimension": 3456,
+      "jacobian_shape": [
+        3072,
+        3456
+      ],
+      "dtype": "float64",
+      "data_layout": "source-major: per source [Re(m); Im(m)]",
+      "material_layout": "[Re(q); Im(q)]",
+      "material_basis": "voxel: delta_chi=(z_R+i*z_I)/sqrt(volume)",
+      "scale": 0.7361051889199683,
+      "receiver_adjoint_rhs": 128,
+      "physical_full_solver_rhs": 128,
+      "physical_full_tangent_rhs": 0,
+      "physical_new_lu_factorizations": 0,
+      "original_counter_totals_delta": {
+        "solve_rhs_full_adjoint": 128,
+        "solve_rhs": 128,
+        "solve_rhs_adjoint": 128,
+        "solve_calls": 1,
+        "solve_rhs_full": 128
+      },
+      "context_ledger_full_adjoint_rhs_added": 0,
+      "caller_charge_rhs_invoked": false,
+      "counter_views": "original counters and optional context ledger are not additive",
+      "adjoint_solve_and_admission_wall_s": 0.14031909999903291,
+      "assembly_total_wall_s": 0.2072720999858575,
+      "numerical_equivalence_status": "PARENT_CHECK_REQUIRED_BEFORE_USE"
+    }
+  },
+  {
+    "iteration": 12,
+    "accepted": true,
+    "accepted_update_count": 13,
+    "alpha": 0.0625,
+    "gradient_fallback": true,
+    "slope": -0.15181567835429083,
+    "objective_before": 0.061882113551632145,
+    "objective_after": 0.05800641215321768,
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 1.5071454717365937,
+        "accepted": false,
+        "source_residual": 4.741060396410742e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 0.37432834365966217,
+        "accepted": false,
+        "source_residual": 4.767397579846723e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.11729868372745846,
+        "accepted": false,
+        "source_residual": 4.80231901838231e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.06566945181178618,
+        "accepted": false,
+        "source_residual": 4.821072544066955e-15
+      },
+      {
+        "alpha": 0.0625,
+        "objective": 0.05800641215321768,
+        "accepted": true,
+        "source_residual": 4.7320141354850905e-15
+      }
+    ],
+    "metrics": {
+      "complex_nrmse": 1.3239274602304314,
+      "real_nrmse": 1.2969320560786297,
+      "imag_nrmse": 3.578778138108753,
+      "complex_mae": 0.20997959206645525,
+      "real_mae": 0.2002226828511953,
+      "imag_mae": 0.036158787035693696,
+      "measured_relative_residual": 0.3406056916200852,
+      "min_real": -0.5,
+      "min_imag": 0.0,
+      "max_real": 0.8678652341168903,
+      "support_iou": 0.062111801242236024,
+      "support_voxels": 91,
+      "truth_voxels": 80
+    },
+    "before_metrics": {
+      "complex_nrmse": 1.3403681863730559,
+      "real_nrmse": 1.3098972553943546,
+      "imag_nrmse": 3.79667229606223,
+      "complex_mae": 0.2122450204474219,
+      "real_mae": 0.20175830949572066,
+      "imag_mae": 0.03833712984282532,
+      "measured_relative_residual": 0.35180056484359373,
+      "min_real": -0.5,
+      "min_imag": 0.0,
+      "max_real": 0.869657285310039,
+      "support_iou": 0.056179775280898875,
+      "support_voxels": 108,
+      "truth_voxels": 80
+    },
+    "step_norm": 0.18022268477942124,
+    "executed_step_norm": 0.011263917798713828,
+    "phases": {
+      "linearization_s": 0.0007170000026235357,
+      "policy_s": 0.48496839999279473,
+      "projection_s": 0.00015669999993406236,
+      "line_search_s": 10.906094999998459
+    },
+    "wall_s": 11.392187300007208,
+    "normal_residual": 2.0428975451632837e-15,
+    "actual_rank": 5184,
+    "jacobian": {
+      "method": "original_DenseDDA_receiver_adjoint_assembly",
+      "scope": "full-model offline reference; never selector input",
+      "N": 1728,
+      "P": 12,
+      "receiver_channels_m": 128,
+      "complex_material_coordinates_q": 1728,
+      "real_material_dimension": 3456,
+      "jacobian_shape": [
+        3072,
+        3456
+      ],
+      "dtype": "float64",
+      "data_layout": "source-major: per source [Re(m); Im(m)]",
+      "material_layout": "[Re(q); Im(q)]",
+      "material_basis": "voxel: delta_chi=(z_R+i*z_I)/sqrt(volume)",
+      "scale": 0.7361051889199683,
+      "receiver_adjoint_rhs": 128,
+      "physical_full_solver_rhs": 128,
+      "physical_full_tangent_rhs": 0,
+      "physical_new_lu_factorizations": 0,
+      "original_counter_totals_delta": {
+        "solve_rhs_full_adjoint": 128,
+        "solve_rhs": 128,
+        "solve_rhs_adjoint": 128,
+        "solve_calls": 1,
+        "solve_rhs_full": 128
+      },
+      "context_ledger_full_adjoint_rhs_added": 0,
+      "caller_charge_rhs_invoked": false,
+      "counter_views": "original counters and optional context ledger are not additive",
+      "adjoint_solve_and_admission_wall_s": 0.14116009999997914,
+      "assembly_total_wall_s": 0.20645250000234228,
+      "numerical_equivalence_status": "PARENT_CHECK_REQUIRED_BEFORE_USE"
+    }
+  },
+  {
+    "iteration": 13,
+    "accepted": true,
+    "accepted_update_count": 14,
+    "alpha": 0.03125,
+    "gradient_fallback": true,
+    "slope": -0.3012365131032469,
+    "objective_before": 0.05800641215321771,
+    "objective_after": 0.05390787670300676,
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 4.060958493466693,
+        "accepted": false,
+        "source_residual": 4.9097175248097955e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 1.2108421842912305,
+        "accepted": false,
+        "source_residual": 4.8544780929749005e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.32323628211159827,
+        "accepted": false,
+        "source_residual": 4.753373417319742e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.10585460090419439,
+        "accepted": false,
+        "source_residual": 4.808304410829698e-15
+      },
+      {
+        "alpha": 0.0625,
+        "objective": 0.060496045345483154,
+        "accepted": false,
+        "source_residual": 4.77028175699557e-15
+      },
+      {
+        "alpha": 0.03125,
+        "objective": 0.05390787670300676,
+        "accepted": true,
+        "source_residual": 4.74450849460199e-15
+      }
+    ],
+    "metrics": {
+      "complex_nrmse": 1.3113448102509264,
+      "real_nrmse": 1.2857164760450677,
+      "imag_nrmse": 3.4812882841492687,
+      "complex_mae": 0.2073813783599341,
+      "real_mae": 0.1982376367408492,
+      "imag_mae": 0.03515664730167549,
+      "measured_relative_residual": 0.32835221805730996,
+      "min_real": -0.5,
+      "min_imag": 0.0,
+      "max_real": 0.8818354870184029,
+      "support_iou": 0.059880239520958084,
+      "support_voxels": 97,
+      "truth_voxels": 80
+    },
+    "before_metrics": {
+      "complex_nrmse": 1.3239274602304314,
+      "real_nrmse": 1.2969320560786297,
+      "imag_nrmse": 3.578778138108753,
+      "complex_mae": 0.20997959206645525,
+      "real_mae": 0.2002226828511953,
+      "imag_mae": 0.036158787035693696,
+      "measured_relative_residual": 0.3406056916200852,
+      "min_real": -0.5,
+      "min_imag": 0.0,
+      "max_real": 0.8678652341168903,
+      "support_iou": 0.062111801242236024,
+      "support_voxels": 91,
+      "truth_voxels": 80
+    },
+    "step_norm": 0.30997257649316357,
+    "executed_step_norm": 0.009686643015411361,
+    "phases": {
+      "linearization_s": 0.0009640000062063336,
+      "policy_s": 0.4851731000089785,
+      "projection_s": 0.00016009999671950936,
+      "line_search_s": 13.110108199995011
+    },
+    "wall_s": 13.596632200002205,
+    "normal_residual": 2.167551167196477e-15,
+    "actual_rank": 5184,
+    "jacobian": {
+      "method": "original_DenseDDA_receiver_adjoint_assembly",
+      "scope": "full-model offline reference; never selector input",
+      "N": 1728,
+      "P": 12,
+      "receiver_channels_m": 128,
+      "complex_material_coordinates_q": 1728,
+      "real_material_dimension": 3456,
+      "jacobian_shape": [
+        3072,
+        3456
+      ],
+      "dtype": "float64",
+      "data_layout": "source-major: per source [Re(m); Im(m)]",
+      "material_layout": "[Re(q); Im(q)]",
+      "material_basis": "voxel: delta_chi=(z_R+i*z_I)/sqrt(volume)",
+      "scale": 0.7361051889199683,
+      "receiver_adjoint_rhs": 128,
+      "physical_full_solver_rhs": 128,
+      "physical_full_tangent_rhs": 0,
+      "physical_new_lu_factorizations": 0,
+      "original_counter_totals_delta": {
+        "solve_rhs_full_adjoint": 128,
+        "solve_rhs": 128,
+        "solve_rhs_adjoint": 128,
+        "solve_calls": 1,
+        "solve_rhs_full": 128
+      },
+      "context_ledger_full_adjoint_rhs_added": 0,
+      "caller_charge_rhs_invoked": false,
+      "counter_views": "original counters and optional context ledger are not additive",
+      "adjoint_solve_and_admission_wall_s": 0.14072929999383632,
+      "assembly_total_wall_s": 0.20727089999127202,
+      "numerical_equivalence_status": "PARENT_CHECK_REQUIRED_BEFORE_USE"
+    }
+  },
+  {
+    "iteration": 14,
+    "accepted": true,
+    "accepted_update_count": 15,
+    "alpha": 0.0625,
+    "gradient_fallback": true,
+    "slope": -0.13930429487648918,
+    "objective_before": 0.05390787670300676,
+    "objective_after": 0.05164220071090294,
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 1.7090576901895438,
+        "accepted": false,
+        "source_residual": 4.737233590006148e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 0.42633718293687267,
+        "accepted": false,
+        "source_residual": 4.80401126907059e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.12589497573710828,
+        "accepted": false,
+        "source_residual": 4.824754061785854e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.06259187196590908,
+        "accepted": false,
+        "source_residual": 4.8010920570317764e-15
+      },
+      {
+        "alpha": 0.0625,
+        "objective": 0.05164220071090294,
+        "accepted": true,
+        "source_residual": 4.763264781715314e-15
+      }
+    ],
+    "metrics": {
+      "complex_nrmse": 1.295301631063929,
+      "real_nrmse": 1.272571975839283,
+      "imag_nrmse": 3.285974982885908,
+      "complex_mae": 0.2052325288889579,
+      "real_mae": 0.1966602870459716,
+      "imag_mae": 0.033183579310770345,
+      "measured_relative_residual": 0.32137801616876494,
+      "min_real": -0.5,
+      "min_imag": 0.0,
+      "max_real": 0.8889399635351903,
+      "support_iou": 0.06493506493506493,
+      "support_voxels": 84,
+      "truth_voxels": 80
+    },
+    "before_metrics": {
+      "complex_nrmse": 1.3113448102509264,
+      "real_nrmse": 1.2857164760450677,
+      "imag_nrmse": 3.4812882841492687,
+      "complex_mae": 0.2073813783599341,
+      "real_mae": 0.1982376367408492,
+      "imag_mae": 0.03515664730167549,
+      "measured_relative_residual": 0.32835221805730996,
+      "min_real": -0.5,
+      "min_imag": 0.0,
+      "max_real": 0.8818354870184029,
+      "support_iou": 0.059880239520958084,
+      "support_voxels": 97,
+      "truth_voxels": 80
+    },
+    "step_norm": 0.1867895763013895,
+    "executed_step_norm": 0.011674348518836844,
+    "phases": {
+      "linearization_s": 0.0007725000032223761,
+      "policy_s": 0.4771915000019362,
+      "projection_s": 0.0001500000071246177,
+      "line_search_s": 10.953596299994388
+    },
+    "wall_s": 11.431889700004831,
+    "normal_residual": 2.1684128853294563e-15,
+    "actual_rank": 5184,
+    "jacobian": {
+      "method": "original_DenseDDA_receiver_adjoint_assembly",
+      "scope": "full-model offline reference; never selector input",
+      "N": 1728,
+      "P": 12,
+      "receiver_channels_m": 128,
+      "complex_material_coordinates_q": 1728,
+      "real_material_dimension": 3456,
+      "jacobian_shape": [
+        3072,
+        3456
+      ],
+      "dtype": "float64",
+      "data_layout": "source-major: per source [Re(m); Im(m)]",
+      "material_layout": "[Re(q); Im(q)]",
+      "material_basis": "voxel: delta_chi=(z_R+i*z_I)/sqrt(volume)",
+      "scale": 0.7361051889199683,
+      "receiver_adjoint_rhs": 128,
+      "physical_full_solver_rhs": 128,
+      "physical_full_tangent_rhs": 0,
+      "physical_new_lu_factorizations": 0,
+      "original_counter_totals_delta": {
+        "solve_rhs_full_adjoint": 128,
+        "solve_rhs": 128,
+        "solve_rhs_adjoint": 128,
+        "solve_calls": 1,
+        "solve_rhs_full": 128
+      },
+      "context_ledger_full_adjoint_rhs_added": 0,
+      "caller_charge_rhs_invoked": false,
+      "counter_views": "original counters and optional context ledger are not additive",
+      "adjoint_solve_and_admission_wall_s": 0.1417894000041997,
+      "assembly_total_wall_s": 0.2084469999972498,
+      "numerical_equivalence_status": "PARENT_CHECK_REQUIRED_BEFORE_USE"
+    }
+  },
+  {
+    "iteration": 15,
+    "accepted": true,
+    "accepted_update_count": 16,
+    "alpha": 0.03125,
+    "gradient_fallback": true,
+    "slope": -0.38325651083150947,
+    "objective_before": 0.05164220071090297,
+    "objective_after": 0.04790569375888888,
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 5.291051113510803,
+        "accepted": false,
+        "source_residual": 4.961336310196684e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 1.757055704418397,
+        "accepted": false,
+        "source_residual": 4.847782633240579e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.4734711375418803,
+        "accepted": false,
+        "source_residual": 4.8288646100377116e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.13552257331015383,
+        "accepted": false,
+        "source_residual": 4.797742123208947e-15
+      },
+      {
+        "alpha": 0.0625,
+        "objective": 0.06068863101095246,
+        "accepted": false,
+        "source_residual": 4.7478826607846055e-15
+      },
+      {
+        "alpha": 0.03125,
+        "objective": 0.04790569375888888,
+        "accepted": true,
+        "source_residual": 4.836684982091092e-15
+      }
+    ],
+    "metrics": {
+      "complex_nrmse": 1.2820127001466146,
+      "real_nrmse": 1.2603734613132713,
+      "imag_nrmse": 3.1999527183952092,
+      "complex_mae": 0.2023667107630425,
+      "real_mae": 0.1943789646159381,
+      "imag_mae": 0.03228133083472108,
+      "measured_relative_residual": 0.3095332451875276,
+      "min_real": -0.5,
+      "min_imag": 0.0,
+      "max_real": 0.9040981633761196,
+      "support_iou": 0.06832298136645963,
+      "support_voxels": 92,
+      "truth_voxels": 80
+    },
+    "before_metrics": {
+      "complex_nrmse": 1.295301631063929,
+      "real_nrmse": 1.272571975839283,
+      "imag_nrmse": 3.285974982885908,
+      "complex_mae": 0.2052325288889579,
+      "real_mae": 0.1966602870459716,
+      "imag_mae": 0.033183579310770345,
+      "measured_relative_residual": 0.32137801616876494,
+      "min_real": -0.5,
+      "min_imag": 0.0,
+      "max_real": 0.8889399635351903,
+      "support_iou": 0.06493506493506493,
+      "support_voxels": 84,
+      "truth_voxels": 80
+    },
+    "step_norm": 0.3749742745410424,
+    "executed_step_norm": 0.011717946079407574,
+    "phases": {
+      "linearization_s": 0.0009078000002773479,
+      "policy_s": 0.4837420999974711,
+      "projection_s": 0.00017210000078193843,
+      "line_search_s": 13.146071700000903
+    },
+    "wall_s": 13.631092600000557,
+    "normal_residual": 2.3892400459867535e-15,
+    "actual_rank": 5184,
+    "jacobian": {
+      "method": "original_DenseDDA_receiver_adjoint_assembly",
+      "scope": "full-model offline reference; never selector input",
+      "N": 1728,
+      "P": 12,
+      "receiver_channels_m": 128,
+      "complex_material_coordinates_q": 1728,
+      "real_material_dimension": 3456,
+      "jacobian_shape": [
+        3072,
+        3456
+      ],
+      "dtype": "float64",
+      "data_layout": "source-major: per source [Re(m); Im(m)]",
+      "material_layout": "[Re(q); Im(q)]",
+      "material_basis": "voxel: delta_chi=(z_R+i*z_I)/sqrt(volume)",
+      "scale": 0.7361051889199683,
+      "receiver_adjoint_rhs": 128,
+      "physical_full_solver_rhs": 128,
+      "physical_full_tangent_rhs": 0,
+      "physical_new_lu_factorizations": 0,
+      "original_counter_totals_delta": {
+        "solve_rhs_full_adjoint": 128,
+        "solve_rhs": 128,
+        "solve_rhs_adjoint": 128,
+        "solve_calls": 1,
+        "solve_rhs_full": 128
+      },
+      "context_ledger_full_adjoint_rhs_added": 0,
+      "caller_charge_rhs_invoked": false,
+      "counter_views": "original counters and optional context ledger are not additive",
+      "adjoint_solve_and_admission_wall_s": 0.1415971999958856,
+      "assembly_total_wall_s": 0.20848359999945387,
+      "numerical_equivalence_status": "PARENT_CHECK_REQUIRED_BEFORE_USE"
+    }
+  },
+  {
+    "iteration": 16,
+    "accepted": true,
+    "accepted_update_count": 17,
+    "alpha": 0.03125,
+    "gradient_fallback": true,
+    "slope": -0.20701067766382303,
+    "objective_before": 0.047905693758888875,
+    "objective_after": 0.04525498580263022,
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 3.3253291487411674,
+        "accepted": false,
+        "source_residual": 4.661449266599753e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 0.9563821320218069,
+        "accepted": false,
+        "source_residual": 4.725725956008598e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.24909709797260093,
+        "accepted": false,
+        "source_residual": 4.7223723533186446e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.0842566515265118,
+        "accepted": false,
+        "source_residual": 4.8006229231437075e-15
+      },
+      {
+        "alpha": 0.0625,
+        "objective": 0.050343747500442494,
+        "accepted": false,
+        "source_residual": 4.824386820125066e-15
+      },
+      {
+        "alpha": 0.03125,
+        "objective": 0.04525498580263022,
+        "accepted": true,
+        "source_residual": 4.800347144122039e-15
+      }
+    ],
+    "metrics": {
+      "complex_nrmse": 1.2741639976097061,
+      "real_nrmse": 1.2537543943715812,
+      "imag_nrmse": 3.112077589625766,
+      "complex_mae": 0.2014241098285551,
+      "real_mae": 0.1936089662821548,
+      "imag_mae": 0.03138625635662315,
+      "measured_relative_residual": 0.30084782450679953,
+      "min_real": -0.5,
+      "min_imag": 0.0,
+      "max_real": 0.9051476580504126,
+      "support_iou": 0.06535947712418301,
+      "support_voxels": 83,
+      "truth_voxels": 80
+    },
+    "before_metrics": {
+      "complex_nrmse": 1.2820127001466146,
+      "real_nrmse": 1.2603734613132713,
+      "imag_nrmse": 3.1999527183952092,
+      "complex_mae": 0.2023667107630425,
+      "real_mae": 0.1943789646159381,
+      "imag_mae": 0.03228133083472108,
+      "measured_relative_residual": 0.3095332451875276,
+      "min_real": -0.5,
+      "min_imag": 0.0,
+      "max_real": 0.9040981633761196,
+      "support_iou": 0.06832298136645963,
+      "support_voxels": 92,
+      "truth_voxels": 80
+    },
+    "step_norm": 0.2648230296922156,
+    "executed_step_norm": 0.008275719677881738,
+    "phases": {
+      "linearization_s": 0.000850600001285784,
+      "policy_s": 0.49253019999014214,
+      "projection_s": 0.00017090000619646162,
+      "line_search_s": 13.167851100006374
+    },
+    "wall_s": 13.661619199992856,
+    "normal_residual": 2.4924544208811072e-15,
+    "actual_rank": 5184,
+    "jacobian": {
+      "method": "original_DenseDDA_receiver_adjoint_assembly",
+      "scope": "full-model offline reference; never selector input",
+      "N": 1728,
+      "P": 12,
+      "receiver_channels_m": 128,
+      "complex_material_coordinates_q": 1728,
+      "real_material_dimension": 3456,
+      "jacobian_shape": [
+        3072,
+        3456
+      ],
+      "dtype": "float64",
+      "data_layout": "source-major: per source [Re(m); Im(m)]",
+      "material_layout": "[Re(q); Im(q)]",
+      "material_basis": "voxel: delta_chi=(z_R+i*z_I)/sqrt(volume)",
+      "scale": 0.7361051889199683,
+      "receiver_adjoint_rhs": 128,
+      "physical_full_solver_rhs": 128,
+      "physical_full_tangent_rhs": 0,
+      "physical_new_lu_factorizations": 0,
+      "original_counter_totals_delta": {
+        "solve_rhs_full_adjoint": 128,
+        "solve_rhs": 128,
+        "solve_rhs_adjoint": 128,
+        "solve_calls": 1,
+        "solve_rhs_full": 128
+      },
+      "context_ledger_full_adjoint_rhs_added": 0,
+      "caller_charge_rhs_invoked": false,
+      "counter_views": "original counters and optional context ledger are not additive",
+      "adjoint_solve_and_admission_wall_s": 0.14239189999352675,
+      "assembly_total_wall_s": 0.20868440000049304,
+      "numerical_equivalence_status": "PARENT_CHECK_REQUIRED_BEFORE_USE"
+    }
+  },
+  {
+    "iteration": 17,
+    "accepted": true,
+    "accepted_update_count": 18,
+    "alpha": 0.03125,
+    "gradient_fallback": true,
+    "slope": -0.1394576367026683,
+    "objective_before": 0.04525498580263026,
+    "objective_after": 0.04313841638485049,
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 2.0507822807277734,
+        "accepted": false,
+        "source_residual": 4.8933793011335955e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 0.5504957969151444,
+        "accepted": false,
+        "source_residual": 4.835315241474944e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.15530422204387714,
+        "accepted": false,
+        "source_residual": 4.769829176075835e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.06391554856283335,
+        "accepted": false,
+        "source_residual": 4.747982535788762e-15
+      },
+      {
+        "alpha": 0.0625,
+        "objective": 0.045526924924075146,
+        "accepted": false,
+        "source_residual": 4.763105264129938e-15
+      },
+      {
+        "alpha": 0.03125,
+        "objective": 0.04313841638485049,
+        "accepted": true,
+        "source_residual": 4.7942306632486054e-15
+      }
+    ],
+    "metrics": {
+      "complex_nrmse": 1.2623444131319317,
+      "real_nrmse": 1.2429484120519736,
+      "imag_nrmse": 3.0308607537199874,
+      "complex_mae": 0.19912371884334748,
+      "real_mae": 0.19172971444731754,
+      "imag_mae": 0.03053384734834399,
+      "measured_relative_residual": 0.2937282489785379,
+      "min_real": -0.5,
+      "min_imag": 0.0,
+      "max_real": 0.916702687464521,
+      "support_iou": 0.07692307692307693,
+      "support_voxels": 88,
+      "truth_voxels": 80
+    },
+    "before_metrics": {
+      "complex_nrmse": 1.2741639976097061,
+      "real_nrmse": 1.2537543943715812,
+      "imag_nrmse": 3.112077589625766,
+      "complex_mae": 0.2014241098285551,
+      "real_mae": 0.1936089662821548,
+      "imag_mae": 0.03138625635662315,
+      "measured_relative_residual": 0.30084782450679953,
+      "min_real": -0.5,
+      "min_imag": 0.0,
+      "max_real": 0.9051476580504126,
+      "support_iou": 0.06535947712418301,
+      "support_voxels": 83,
+      "truth_voxels": 80
+    },
+    "step_norm": 0.214066870491974,
+    "executed_step_norm": 0.006689589702874188,
+    "phases": {
+      "linearization_s": 0.0007059000054141507,
+      "policy_s": 0.4999994000099832,
+      "projection_s": 0.000231999991228804,
+      "line_search_s": 13.152191500004847
+    },
+    "wall_s": 13.653338300005998,
+    "normal_residual": 2.5190964298515937e-15,
+    "actual_rank": 5184,
+    "jacobian": {
+      "method": "original_DenseDDA_receiver_adjoint_assembly",
+      "scope": "full-model offline reference; never selector input",
+      "N": 1728,
+      "P": 12,
+      "receiver_channels_m": 128,
+      "complex_material_coordinates_q": 1728,
+      "real_material_dimension": 3456,
+      "jacobian_shape": [
+        3072,
+        3456
+      ],
+      "dtype": "float64",
+      "data_layout": "source-major: per source [Re(m); Im(m)]",
+      "material_layout": "[Re(q); Im(q)]",
+      "material_basis": "voxel: delta_chi=(z_R+i*z_I)/sqrt(volume)",
+      "scale": 0.7361051889199683,
+      "receiver_adjoint_rhs": 128,
+      "physical_full_solver_rhs": 128,
+      "physical_full_tangent_rhs": 0,
+      "physical_new_lu_factorizations": 0,
+      "original_counter_totals_delta": {
+        "solve_rhs_full_adjoint": 128,
+        "solve_rhs": 128,
+        "solve_rhs_adjoint": 128,
+        "solve_calls": 1,
+        "solve_rhs_full": 128
+      },
+      "context_ledger_full_adjoint_rhs_added": 0,
+      "caller_charge_rhs_invoked": false,
+      "counter_views": "original counters and optional context ledger are not additive",
+      "adjoint_solve_and_admission_wall_s": 0.14099040000292007,
+      "assembly_total_wall_s": 0.20774979999987409,
+      "numerical_equivalence_status": "PARENT_CHECK_REQUIRED_BEFORE_USE"
+    }
+  }
+]

@@ -1,0 +1,184 @@
+{
+  "source_count": 44,
+  "files": [
+    {
+      "path": "Gaussian/A17/SHAPES_3D_BASELINES_20261030/run_comparison.py",
+      "bytes": 16993
+    },
+    {
+      "path": "Gaussian/A17/SHAPES_3D_BASELINES_20261030/research/delegated/som/shapes.py",
+      "bytes": 5712
+    },
+    {
+      "path": "Gaussian/A17/SHAPES_3D_BASELINES_20261030/research/delegated/endpoint/refined_endpoint_batch.py",
+      "bytes": 10401
+    },
+    {
+      "path": "Gaussian/A17/EXCHANGE_R1/vendor/Gaussian/A9/code/a9_engine.py",
+      "bytes": 43596
+    },
+    {
+      "path": "Gaussian/A17/EXCHANGE_R1/vendor/Gaussian/A9/code/experiment_support.py",
+      "bytes": 7014
+    },
+    {
+      "path": "Gaussian/A17/EXCHANGE_R1/vendor/Gaussian/A10/code/a10_common.py",
+      "bytes": 4562
+    },
+    {
+      "path": "Gaussian/A17/EXCHANGE_R1/vendor/Gaussian/A10/code/anchored_rom.py",
+      "bytes": 3788
+    },
+    {
+      "path": "Gaussian/A17/EXCHANGE_R1/vendor/Gaussian/A10/code/cair.py",
+      "bytes": 6805
+    },
+    {
+      "path": "Gaussian/A17/EXCHANGE_R1/vendor/Gaussian/A10/code/feasible_step.py",
+      "bytes": 1718
+    },
+    {
+      "path": "Gaussian/A17/EXCHANGE_R1/vendor/Gaussian/A10/code/reduced_normal.py",
+      "bytes": 6333
+    },
+    {
+      "path": "Gaussian/A17/EXCHANGE_R1/vendor/Gaussian/A12/code/campaign_common.py",
+      "bytes": 4212
+    },
+    {
+      "path": "Gaussian/A17/EXCHANGE_R1/vendor/Gaussian/A12/code/galerkin_rom.py",
+      "bytes": 7836
+    },
+    {
+      "path": "Gaussian/A17/EXCHANGE_R1/vendor/Gaussian/A14/src/pairtsom_adapter.py",
+      "bytes": 44043
+    },
+    {
+      "path": "Gaussian/A17/EXCHANGE_R1/vendor/Gaussian/A16/CURRENT_SELECTION_R1/code/fast_contractions.py",
+      "bytes": 4288
+    },
+    {
+      "path": "Gaussian/A17/EXCHANGE_R1/vendor/Gaussian/A16/CURRENT_SELECTION_R1/code/operators.py",
+      "bytes": 18344
+    },
+    {
+      "path": "Gaussian/A17/EXCHANGE_R1/vendor/Gaussian/A16/CURRENT_SELECTION_R1/code/selectors_current.py",
+      "bytes": 38432
+    },
+    {
+      "path": "Gaussian/A17/EXCHANGE_R1/vendor/Gaussian/A16/CURRENT_SELECTION_R1/code/selector_coordinates.py",
+      "bytes": 9244
+    },
+    {
+      "path": "Gaussian/A17/EXCHANGE_R1/vendor/Gaussian/A16/CURRENT_SELECTION_R1/code/scenes.py",
+      "bytes": 5890
+    },
+    {
+      "path": "Gaussian/A17/EXCHANGE_R1/code/endpoint_batch.py",
+      "bytes": 14302
+    },
+    {
+      "path": "Gaussian/A17/EXCHANGE_R1/code/removal_core_batch.py",
+      "bytes": 14397
+    },
+    {
+      "path": "Gaussian/A17/CLOSURE_R1/code/online_tolerance.py",
+      "bytes": 3037
+    },
+    {
+      "path": "Gaussian/A17/CLOSURE_R1/code/verified_exchange.py",
+      "bytes": 8463
+    },
+    {
+      "path": "Gaussian/A17/SHAPES_3D_20261030/run_shapes.py",
+      "bytes": 22325
+    },
+    {
+      "path": "Gaussian/A17/SHAPES_3D_20261030/research/delegated/kernel/isolated_imports.py",
+      "bytes": 4592
+    },
+    {
+      "path": "Gaussian/A17/SHAPES_3D_20261030/research/delegated/kernel/original_exchange_helpers.py",
+      "bytes": 7663
+    },
+    {
+      "path": "Gaussian/A17/SHAPES_3D_20261030/research/delegated/kernel/original_exchange_controller.py",
+      "bytes": 10385
+    },
+    {
+      "path": "Gaussian/A17/SHAPES_3D_20261030/research/delegated/evidence/full_material_jacobian.py",
+      "bytes": 8512
+    },
+    {
+      "path": "Gaussian/A17/SHAPES_3D_BASELINES_20261030/collect_final.py",
+      "bytes": 3357
+    },
+    {
+      "path": "Gaussian/A17/SHAPES_3D_BASELINES_20261030/write_final_reports.py",
+      "bytes": 22716
+    },
+    {
+      "path": "Gaussian/A17/SHAPES_3D_BASELINES_20261030/research/delegated/som/plot_results.py",
+      "bytes": 17500
+    },
+    {
+      "path": "Gaussian/A17/SHAPES_3D_BASELINES_20261030/research/delegated/som/plot_extra_controls.py",
+      "bytes": 8007
+    },
+    {
+      "path": "Gaussian/A17/SHAPES_3D_BASELINES_20261030/resumable_case.py",
+      "bytes": 7801
+    },
+    {
+      "path": "Gaussian/A17/SHAPES_3D_BASELINES_20261030/remote_serial_resume.py",
+      "bytes": 6392
+    },
+    {
+      "path": "Gaussian/A17/SHAPES_3D_BASELINES_20261030/remote_continuation.py",
+      "bytes": 1934
+    },
+    {
+      "path": "Gaussian/A17/SHAPES_3D_BASELINES_20261030/remote_gpu_continuation.py",
+      "bytes": 2681
+    },
+    {
+      "path": "Gaussian/A17/SHAPES_3D_BASELINES_20261030/remote_fast_gpu_parallel.py",
+      "bytes": 2963
+    },
+    {
+      "path": "Gaussian/A17/SHAPES_3D_BASELINES_20261030/remote_fast_gpu_extended.py",
+      "bytes": 284
+    },
+    {
+      "path": "Gaussian/A17/SHAPES_3D_BASELINES_20261030/remote_gpu_parallel.py",
+      "bytes": 6877
+    },
+    {
+      "path": "Gaussian/A17/SHAPES_3D_BASELINES_20261030/research/delegated/endpoint/gpu_refined_endpoint_batch.py",
+      "bytes": 8705
+    },
+    {
+      "path": "Gaussian/A17/SHAPES_3D_BASELINES_20261030/remote_gradient_serial.py",
+      "bytes": 2469
+    },
+    {
+      "path": "Gaussian/A17/SHAPES_3D_BASELINES_20261030/research/delegated/endpoint/gradient_control.py",
+      "bytes": 16718
+    },
+    {
+      "path": "Gaussian/A17/SHAPES_3D_BASELINES_20261030/prepare_native_resume.py",
+      "bytes": 3663
+    },
+    {
+      "path": "Gaussian/A17/SHAPES_3D_BASELINES_20261030/prepare_namespace_resume.py",
+      "bytes": 2860
+    },
+    {
+      "path": "Gaussian/A17/SHAPES_3D_BASELINES_20261030/export_final_snapshot.py",
+      "bytes": 1551
+    }
+  ],
+  "export": "explicit copy without executable-source redaction",
+  "hashes_computed": false,
+  "publication_physical_replay": false
+}

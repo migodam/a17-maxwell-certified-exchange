@@ -1,0 +1,14 @@
+{
+  "case": "cross3d",
+  "definition": {
+    "label": "Three-axis thick cross",
+    "formula": "Union of x/y/z rods with longitudinal abs(coord)<=.35 and both transverse abs(coord)<=.10.",
+    "nominal_min_thickness": 0.2
+  },
+  "seed": 2026103105,
+  "same_grid": true,
+  "truth_n": 12,
+  "inverse_n": 12,
+  "truth_voxels": 80,
+  "synthesis_wall_s": 1.8564122919924557
+}

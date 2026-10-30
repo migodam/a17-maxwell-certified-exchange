@@ -1,0 +1,14 @@
+{
+  "kind": "NATIVE_CRASH",
+  "pid": 23388,
+  "exception_code": "0xc0000005",
+  "fault_module": "python310.dll",
+  "fault_unix_s": 1793332435.895,
+  "process_start_unix_s": 1793332156.327979,
+  "observed_process_lifetime_s": 279.5670208930969,
+  "charged_wall_s": 281,
+  "wall_scope": "conservative process-lifetime ceiling +1 second; includes startup, not idle after crash",
+  "root_cause": "not established; no crash reproduction or additional test run",
+  "recovery": "single GPU job, resume saved accepted updates, no completed trajectory rerun",
+  "exit_code_seen_by_ssh": 5
+}

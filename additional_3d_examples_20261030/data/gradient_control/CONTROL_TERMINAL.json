@@ -1,0 +1,20 @@
+{
+  "status": "ALL_CONTROL_TERMINAL",
+  "outcomes": [
+    {
+      "case": "digit3",
+      "status": "MAX_UPDATES"
+    },
+    {
+      "case": "torus",
+      "status": "MAX_UPDATES"
+    }
+  ],
+  "posthoc": true,
+  "physics_backend": "original_DenseDDA_CUDA_complex128",
+  "cpu_threads": 4,
+  "P_core_mask": "0xffff",
+  "parallel_jobs": 1,
+  "cost_caps_unchanged": true,
+  "new_physical_work_stopped": true
+}

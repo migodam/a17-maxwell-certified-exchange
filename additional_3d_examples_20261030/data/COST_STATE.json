@@ -1,0 +1,101 @@
+{
+  "states": 3084,
+  "rhs": 63808,
+  "wall_s": 8700.103921991831,
+  "sessions": [
+    {
+      "phase": "validate",
+      "status": "COMPLETE",
+      "pid": 70700,
+      "started": "2026-10-30T09:54:41+0800",
+      "wall_s": 1.2835276669356972,
+      "ended": "2026-10-30T09:54:43+0800"
+    },
+    {
+      "phase": "run",
+      "status": "ERROR",
+      "pid": 71023,
+      "started": "2026-10-30T09:55:04+0800",
+      "wall_s": 2263.8887711248826,
+      "ended": "2026-10-30T10:32:48+0800"
+    },
+    {
+      "phase": "XINAN_i9_continuation",
+      "status": "ERROR",
+      "pid": 20044,
+      "started": "2026-10-30T10:37:24+0800",
+      "wall_s": 1029.262443300002,
+      "ended": "2026-10-30T10:54:33+0800"
+    },
+    {
+      "phase": "XINAN_4060_continuation",
+      "status": "ERROR",
+      "pid": 2456,
+      "started": "2026-10-30T10:54:52+0800",
+      "wall_s": 678.7627771999978,
+      "ended": "2026-10-30T11:06:11+0800"
+    },
+    {
+      "phase": "XINAN_4060_parallel",
+      "status": "ERROR",
+      "pid": 19120,
+      "started": "2026-10-30T11:06:26+0800",
+      "wall_s": 1241.512048100005,
+      "ended": "2026-10-30T11:27:08+0800"
+    },
+    {
+      "phase": "XINAN_4060_parallel",
+      "status": "ERROR",
+      "pid": 14252,
+      "started": "2026-10-30T11:36:58+0800",
+      "wall_s": 623.0943591999967,
+      "ended": "2026-10-30T11:47:21+0800"
+    },
+    {
+      "phase": "XINAN_4060_parallel",
+      "status": "NATIVE_CRASH_C0000005",
+      "pid": 23388,
+      "started": "2026-10-30T11:49:17+0800",
+      "wall_s": 281,
+      "ended": "2026-10-30T03:53:55.895000+00:00",
+      "accounting": {
+        "kind": "NATIVE_CRASH",
+        "pid": 23388,
+        "exception_code": "0xc0000005",
+        "fault_module": "python310.dll",
+        "fault_unix_s": 1793332435.895,
+        "process_start_unix_s": 1793332156.327979,
+        "observed_process_lifetime_s": 279.5670208930969,
+        "charged_wall_s": 281,
+        "wall_scope": "conservative process-lifetime ceiling +1 second; includes startup, not idle after crash",
+        "root_cause": "not established; no crash reproduction or additional test run",
+        "recovery": "single GPU job, resume saved accepted updates, no completed trajectory rerun",
+        "exit_code_seen_by_ssh": 5
+      }
+    },
+    {
+      "phase": "XINAN_4060_serial_native_resume",
+      "status": "ERROR",
+      "pid": 12264,
+      "started": "2026-10-30T12:19:04+0800",
+      "wall_s": 1110.9338567000086,
+      "ended": "2026-10-30T12:37:35+0800"
+    },
+    {
+      "phase": "XINAN_4060_serial_native_resume",
+      "status": "ALL_PLANNED_TERMINAL",
+      "pid": 13632,
+      "started": "2026-10-30T12:38:41+0800",
+      "wall_s": 953.4218249999976,
+      "ended": "2026-10-30T12:54:35+0800"
+    },
+    {
+      "phase": "XINAN_GPU_serial_ordinary_gradient_control",
+      "status": "ALL_CONTROL_TERMINAL",
+      "pid": 15612,
+      "started": "2026-10-30T12:55:02+0800",
+      "wall_s": 516.9443137000053,
+      "ended": "2026-10-30T13:03:39+0800"
+    }
+  ]
+}

@@ -1,0 +1,3092 @@
+[
+  {
+    "iteration": 0,
+    "accepted": true,
+    "accepted_update_count": 1,
+    "alpha": 0.0625,
+    "gradient_fallback": false,
+    "slope": -0.11518442078774871,
+    "objective_before": 0.376194115813029,
+    "objective_after": 0.3742552682779801,
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 1.0054415727264276,
+        "accepted": false,
+        "source_residual": 4.633729765561597e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 0.5731123999086496,
+        "accepted": false,
+        "source_residual": 4.801659178524874e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.42202335065796437,
+        "accepted": false,
+        "source_residual": 4.7779613569504915e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.38200700934186077,
+        "accepted": false,
+        "source_residual": 4.743366141110341e-15
+      },
+      {
+        "alpha": 0.0625,
+        "objective": 0.3742552682779801,
+        "accepted": true,
+        "source_residual": 4.816895286736651e-15
+      }
+    ],
+    "metrics": {
+      "complex_nrmse": 1.0046492403399487,
+      "real_nrmse": 1.0030935772730298,
+      "imag_nrmse": 1.2236612559991134,
+      "complex_mae": 0.14529233715700982,
+      "real_mae": 0.1436645686652593,
+      "imag_mae": 0.017822282500286255,
+      "measured_relative_residual": 0.8651650307198914,
+      "min_real": 0.0625,
+      "min_imag": 0.009375,
+      "max_real": 0.20452045121955328,
+      "support_iou": 0.0,
+      "support_voxels": 0,
+      "truth_voxels": 96
+    },
+    "before_metrics": {
+      "complex_nrmse": 0.990114091481097,
+      "real_nrmse": 0.9899494936611658,
+      "imag_nrmse": 1.015504800579492,
+      "complex_mae": 0.14506649851540845,
+      "real_mae": 0.14444444444444446,
+      "imag_mae": 0.013333333333333332,
+      "measured_relative_residual": 0.8674031540328051,
+      "min_real": 0.1,
+      "min_imag": 0.01,
+      "max_real": 0.1,
+      "support_iou": 0.0,
+      "support_voxels": 0,
+      "truth_voxels": 96
+    },
+    "step_norm": 0.39760594974840446,
+    "executed_step_norm": 0.02485037185927528,
+    "phases": {
+      "linearization_s": 2.909348000001046,
+      "policy_s": 1.4363326000020606,
+      "projection_s": 9.699999645818025e-05,
+      "line_search_s": 15.117790799995419
+    },
+    "wall_s": 19.463773099996615,
+    "actual_rank": 16,
+    "normal_residual": 6.213287760937347e-14,
+    "endpoint_statistics": {
+      "candidate_count": 1,
+      "chunks": 1,
+      "public_projection_batches": 1,
+      "normal_matrix_batches": 1,
+      "current_factorizations": 1,
+      "current_solve_rhs": 20736,
+      "normal_factorizations": 1,
+      "normal_solve_rhs": 1,
+      "normal_factor_dimension_sum": 192,
+      "info_trace_evaluations": 1,
+      "factorization_failures": 0,
+      "successful_units": 1,
+      "host_upload_bytes": 0,
+      "host_download_bytes": 0,
+      "setup_upload_bytes": 0,
+      "setup_wall_s": 0.0008113000076264143,
+      "paid_common_input_bytes": 5397504,
+      "PB_layout_copy_bytes": 0,
+      "stage_wall_s": {
+        "shared_public_projections": 0.0010439000034239143,
+        "current_stability": 8.830000297166407e-05,
+        "current_full_coupling_solve": 0.007259599995450117,
+        "compressed_normal_batch": 0.008325599992531352,
+        "material_step_and_batched_return": 0.007418799999868497
+      },
+      "explicit_workspace_bytes_peak": 22506504,
+      "bytes_scope": "explicit array estimates; not allocator peak; overlap not summed as job occupation",
+      "physical_full_rhs": 0,
+      "full_J_materialized": false,
+      "real_material_H_materialized": false,
+      "branch": "woodbury",
+      "device": "cpu",
+      "total_evaluate_wall_s": 0.02616449999914039,
+      "refinement": {
+        "implementation": "CPU complex128 / float64, same SPD inverse; maximum 3 corrections",
+        "normal_residual_tolerance": 1e-10,
+        "max_corrections_per_unit": 3,
+        "batches": [
+          {
+            "accepted_indices": [
+              0
+            ],
+            "index_scope": "local evaluate or evaluate_incoming invocation; nested fallback calls have local indices",
+            "branch": "woodbury",
+            "raw_normal_relative_residual": [
+              6.213287760937347e-14
+            ],
+            "final_normal_relative_residual": [
+              6.213287760937347e-14
+            ],
+            "raw_residual_failed_indices": [],
+            "refinement_iterations": [
+              0
+            ],
+            "attempted_units": 0,
+            "correction_steps": 0,
+            "recovered_units": 0,
+            "remaining_residual_failed_units": 0,
+            "refinement_nonfinite_units": 0
+          }
+        ],
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      }
+    },
+    "basis_metadata": {
+      "fourier_labels": [
+        "fourier_(0, 0, 0)_component_0",
+        "fourier_(0, 0, 0)_component_1",
+        "fourier_(0, 0, 0)_component_2",
+        "fourier_(-1, 0, 0)_component_0",
+        "fourier_(-1, 0, 0)_component_1",
+        "fourier_(-1, 0, 0)_component_2",
+        "fourier_(0, -1, 0)_component_0",
+        "fourier_(0, -1, 0)_component_1",
+        "fourier_(0, -1, 0)_component_2",
+        "fourier_(0, 0, -1)_component_0",
+        "fourier_(0, 0, -1)_component_1",
+        "fourier_(0, 0, -1)_component_2",
+        "fourier_(0, 0, 1)_component_0",
+        "fourier_(0, 0, 1)_component_1",
+        "fourier_(0, 0, 1)_component_2",
+        "fourier_(0, 1, 0)_component_0"
+      ]
+    }
+  },
+  {
+    "iteration": 1,
+    "accepted": true,
+    "accepted_update_count": 2,
+    "alpha": 0.0625,
+    "gradient_fallback": false,
+    "slope": -0.09894944313610682,
+    "objective_before": 0.3742552682779802,
+    "objective_after": 0.37382842106140185,
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 1.1022081860423185,
+        "accepted": false,
+        "source_residual": 4.547752666072247e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 0.6056531972633813,
+        "accepted": false,
+        "source_residual": 4.684304901253099e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.43151739680921036,
+        "accepted": false,
+        "source_residual": 4.738351898931566e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.3840384341709103,
+        "accepted": false,
+        "source_residual": 4.711825225765333e-15
+      },
+      {
+        "alpha": 0.0625,
+        "objective": 0.37382842106140185,
+        "accepted": true,
+        "source_residual": 4.725131046879261e-15
+      }
+    ],
+    "metrics": {
+      "complex_nrmse": 1.0255645607408013,
+      "real_nrmse": 1.0202789764390312,
+      "imag_nrmse": 1.6557139491384887,
+      "complex_mae": 0.1447791206780724,
+      "real_mae": 0.14090632860072877,
+      "imag_mae": 0.022663656957674763,
+      "measured_relative_residual": 0.8646715083828602,
+      "min_real": 0.02734375,
+      "min_imag": 0.0087890625,
+      "max_real": 0.30609601825082655,
+      "support_iou": 0.0,
+      "support_voxels": 0,
+      "truth_voxels": 96
+    },
+    "before_metrics": {
+      "complex_nrmse": 1.0046492403399487,
+      "real_nrmse": 1.0030935772730298,
+      "imag_nrmse": 1.2236612559991134,
+      "complex_mae": 0.14529233715700982,
+      "real_mae": 0.1436645686652593,
+      "imag_mae": 0.017822282500286255,
+      "measured_relative_residual": 0.8651650307198914,
+      "min_real": 0.0625,
+      "min_imag": 0.009375,
+      "max_real": 0.20452045121955328,
+      "support_iou": 0.0,
+      "support_voxels": 0,
+      "truth_voxels": 96
+    },
+    "step_norm": 0.4049239708526053,
+    "executed_step_norm": 0.02530774817828783,
+    "phases": {
+      "linearization_s": 0.0013485000090440735,
+      "policy_s": 0.1922430999984499,
+      "projection_s": 0.00014000000373926014,
+      "line_search_s": 13.433438499996555
+    },
+    "wall_s": 13.627363499996136,
+    "actual_rank": 16,
+    "normal_residual": 8.09960172107716e-14,
+    "endpoint_statistics": {
+      "candidate_count": 1,
+      "chunks": 1,
+      "public_projection_batches": 1,
+      "normal_matrix_batches": 1,
+      "current_factorizations": 1,
+      "current_solve_rhs": 20736,
+      "normal_factorizations": 1,
+      "normal_solve_rhs": 1,
+      "normal_factor_dimension_sum": 192,
+      "info_trace_evaluations": 1,
+      "factorization_failures": 0,
+      "successful_units": 1,
+      "host_upload_bytes": 0,
+      "host_download_bytes": 0,
+      "setup_upload_bytes": 0,
+      "setup_wall_s": 0.0007214999932330102,
+      "paid_common_input_bytes": 5397504,
+      "PB_layout_copy_bytes": 0,
+      "stage_wall_s": {
+        "shared_public_projections": 0.0007388000085484236,
+        "current_stability": 7.750000804662704e-05,
+        "current_full_coupling_solve": 0.006792000000132248,
+        "compressed_normal_batch": 0.028807800001231954,
+        "material_step_and_batched_return": 0.007842799997888505
+      },
+      "explicit_workspace_bytes_peak": 22506504,
+      "bytes_scope": "explicit array estimates; not allocator peak; overlap not summed as job occupation",
+      "physical_full_rhs": 0,
+      "full_J_materialized": false,
+      "real_material_H_materialized": false,
+      "branch": "woodbury",
+      "device": "cpu",
+      "total_evaluate_wall_s": 0.046320199995534495,
+      "refinement": {
+        "implementation": "CPU complex128 / float64, same SPD inverse; maximum 3 corrections",
+        "normal_residual_tolerance": 1e-10,
+        "max_corrections_per_unit": 3,
+        "batches": [
+          {
+            "accepted_indices": [
+              0
+            ],
+            "index_scope": "local evaluate or evaluate_incoming invocation; nested fallback calls have local indices",
+            "branch": "woodbury",
+            "raw_normal_relative_residual": [
+              8.09960172107716e-14
+            ],
+            "final_normal_relative_residual": [
+              8.09960172107716e-14
+            ],
+            "raw_residual_failed_indices": [],
+            "refinement_iterations": [
+              0
+            ],
+            "attempted_units": 0,
+            "correction_steps": 0,
+            "recovered_units": 0,
+            "remaining_residual_failed_units": 0,
+            "refinement_nonfinite_units": 0
+          }
+        ],
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      }
+    },
+    "basis_metadata": {
+      "fourier_labels": [
+        "fourier_(0, 0, 0)_component_0",
+        "fourier_(0, 0, 0)_component_1",
+        "fourier_(0, 0, 0)_component_2",
+        "fourier_(-1, 0, 0)_component_0",
+        "fourier_(-1, 0, 0)_component_1",
+        "fourier_(-1, 0, 0)_component_2",
+        "fourier_(0, -1, 0)_component_0",
+        "fourier_(0, -1, 0)_component_1",
+        "fourier_(0, -1, 0)_component_2",
+        "fourier_(0, 0, -1)_component_0",
+        "fourier_(0, 0, -1)_component_1",
+        "fourier_(0, 0, -1)_component_2",
+        "fourier_(0, 0, 1)_component_0",
+        "fourier_(0, 0, 1)_component_1",
+        "fourier_(0, 0, 1)_component_2",
+        "fourier_(0, 1, 0)_component_0"
+      ]
+    }
+  },
+  {
+    "iteration": 2,
+    "accepted": true,
+    "accepted_update_count": 3,
+    "alpha": 0.015625,
+    "gradient_fallback": false,
+    "slope": -0.04640801650512469,
+    "objective_before": 0.37382842106140207,
+    "objective_after": 0.3735258123347264,
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 1.2236791225814196,
+        "accepted": false,
+        "source_residual": 4.4754353489668976e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 0.6622521146281855,
+        "accepted": false,
+        "source_residual": 4.609857022843204e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.45443474806573037,
+        "accepted": false,
+        "source_residual": 4.825889280147145e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.39311879367483404,
+        "accepted": false,
+        "source_residual": 4.749583297896731e-15
+      },
+      {
+        "alpha": 0.0625,
+        "objective": 0.3774740968968478,
+        "accepted": false,
+        "source_residual": 4.704895528627777e-15
+      },
+      {
+        "alpha": 0.03125,
+        "objective": 0.37405016752635767,
+        "accepted": false,
+        "source_residual": 4.712295227643918e-15
+      },
+      {
+        "alpha": 0.015625,
+        "objective": 0.3735258123347264,
+        "accepted": true,
+        "source_residual": 4.726156308057173e-15
+      }
+    ],
+    "metrics": {
+      "complex_nrmse": 1.031464087279939,
+      "real_nrmse": 1.0247563795375119,
+      "imag_nrmse": 1.7941572791476035,
+      "complex_mae": 0.1445733730225134,
+      "real_mae": 0.13981692524495815,
+      "imag_mae": 0.02414131634092385,
+      "measured_relative_residual": 0.8643214641074162,
+      "min_real": 0.01910400390625,
+      "min_imag": 0.0086517333984375,
+      "max_real": 0.33053067585230445,
+      "support_iou": 0.0,
+      "support_voxels": 0,
+      "truth_voxels": 96
+    },
+    "before_metrics": {
+      "complex_nrmse": 1.0255645607408013,
+      "real_nrmse": 1.0202789764390312,
+      "imag_nrmse": 1.6557139491384887,
+      "complex_mae": 0.1447791206780724,
+      "real_mae": 0.14090632860072877,
+      "imag_mae": 0.022663656957674763,
+      "measured_relative_residual": 0.8646715083828602,
+      "min_real": 0.02734375,
+      "min_imag": 0.0087890625,
+      "max_real": 0.30609601825082655,
+      "support_iou": 0.0,
+      "support_voxels": 0,
+      "truth_voxels": 96
+    },
+    "step_norm": 0.42659921956857366,
+    "executed_step_norm": 0.0066656128057589635,
+    "phases": {
+      "linearization_s": 0.0009659999923314899,
+      "policy_s": 0.18158189998939633,
+      "projection_s": 0.00014509999891743064,
+      "line_search_s": 15.925075100007234
+    },
+    "wall_s": 16.107978999993065,
+    "actual_rank": 16,
+    "normal_residual": 6.552718295092142e-14,
+    "endpoint_statistics": {
+      "candidate_count": 1,
+      "chunks": 1,
+      "public_projection_batches": 1,
+      "normal_matrix_batches": 1,
+      "current_factorizations": 1,
+      "current_solve_rhs": 20736,
+      "normal_factorizations": 1,
+      "normal_solve_rhs": 1,
+      "normal_factor_dimension_sum": 192,
+      "info_trace_evaluations": 1,
+      "factorization_failures": 0,
+      "successful_units": 1,
+      "host_upload_bytes": 0,
+      "host_download_bytes": 0,
+      "setup_upload_bytes": 0,
+      "setup_wall_s": 0.0008282000053441152,
+      "paid_common_input_bytes": 5397504,
+      "PB_layout_copy_bytes": 0,
+      "stage_wall_s": {
+        "shared_public_projections": 0.0007770000083837658,
+        "current_stability": 8.190001244656742e-05,
+        "current_full_coupling_solve": 0.009023899998283014,
+        "compressed_normal_batch": 0.009754200000315905,
+        "material_step_and_batched_return": 0.008002499991562217
+      },
+      "explicit_workspace_bytes_peak": 22506504,
+      "bytes_scope": "explicit array estimates; not allocator peak; overlap not summed as job occupation",
+      "physical_full_rhs": 0,
+      "full_J_materialized": false,
+      "real_material_H_materialized": false,
+      "branch": "woodbury",
+      "device": "cpu",
+      "total_evaluate_wall_s": 0.02953010000055656,
+      "refinement": {
+        "implementation": "CPU complex128 / float64, same SPD inverse; maximum 3 corrections",
+        "normal_residual_tolerance": 1e-10,
+        "max_corrections_per_unit": 3,
+        "batches": [
+          {
+            "accepted_indices": [
+              0
+            ],
+            "index_scope": "local evaluate or evaluate_incoming invocation; nested fallback calls have local indices",
+            "branch": "woodbury",
+            "raw_normal_relative_residual": [
+              6.552718295092142e-14
+            ],
+            "final_normal_relative_residual": [
+              6.552718295092142e-14
+            ],
+            "raw_residual_failed_indices": [],
+            "refinement_iterations": [
+              0
+            ],
+            "attempted_units": 0,
+            "correction_steps": 0,
+            "recovered_units": 0,
+            "remaining_residual_failed_units": 0,
+            "refinement_nonfinite_units": 0
+          }
+        ],
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      }
+    },
+    "basis_metadata": {
+      "fourier_labels": [
+        "fourier_(0, 0, 0)_component_0",
+        "fourier_(0, 0, 0)_component_1",
+        "fourier_(0, 0, 0)_component_2",
+        "fourier_(-1, 0, 0)_component_0",
+        "fourier_(-1, 0, 0)_component_1",
+        "fourier_(-1, 0, 0)_component_2",
+        "fourier_(0, -1, 0)_component_0",
+        "fourier_(0, -1, 0)_component_1",
+        "fourier_(0, -1, 0)_component_2",
+        "fourier_(0, 0, -1)_component_0",
+        "fourier_(0, 0, -1)_component_1",
+        "fourier_(0, 0, -1)_component_2",
+        "fourier_(0, 0, 1)_component_0",
+        "fourier_(0, 0, 1)_component_1",
+        "fourier_(0, 0, 1)_component_2",
+        "fourier_(0, 1, 0)_component_0"
+      ]
+    }
+  },
+  {
+    "iteration": 3,
+    "accepted": true,
+    "accepted_update_count": 4,
+    "alpha": 0.03125,
+    "gradient_fallback": false,
+    "slope": -0.18023435337882876,
+    "objective_before": 0.3735258123347262,
+    "objective_after": 0.3730354662891095,
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 1.695323840546417,
+        "accepted": false,
+        "source_residual": 4.295208449146128e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 0.962445550786921,
+        "accepted": false,
+        "source_residual": 4.420796333320756e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.5660392601022906,
+        "accepted": false,
+        "source_residual": 4.516454935651766e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.42222324073917733,
+        "accepted": false,
+        "source_residual": 4.634456708574953e-15
+      },
+      {
+        "alpha": 0.0625,
+        "objective": 0.38184712519384717,
+        "accepted": false,
+        "source_residual": 4.744891960847583e-15
+      },
+      {
+        "alpha": 0.03125,
+        "objective": 0.3730354662891095,
+        "accepted": true,
+        "source_residual": 4.693933995703879e-15
+      }
+    ],
+    "metrics": {
+      "complex_nrmse": 1.0478410549307293,
+      "real_nrmse": 1.0331902218643136,
+      "imag_nrmse": 2.421126269788461,
+      "complex_mae": 0.14575646395138758,
+      "real_mae": 0.1361700105499853,
+      "imag_mae": 0.031178319532389302,
+      "measured_relative_residual": 0.863753943872342,
+      "min_real": 0.0028820037841796875,
+      "min_imag": 0.008381366729736328,
+      "max_real": 0.41849160356927423,
+      "support_iou": 0.0,
+      "support_voxels": 0,
+      "truth_voxels": 96
+    },
+    "before_metrics": {
+      "complex_nrmse": 1.031464087279939,
+      "real_nrmse": 1.0247563795375119,
+      "imag_nrmse": 1.7941572791476035,
+      "complex_mae": 0.1445733730225134,
+      "real_mae": 0.13981692524495815,
+      "imag_mae": 0.02414131634092385,
+      "measured_relative_residual": 0.8643214641074162,
+      "min_real": 0.01910400390625,
+      "min_imag": 0.0086517333984375,
+      "max_real": 0.33053067585230445,
+      "support_iou": 0.0,
+      "support_voxels": 0,
+      "truth_voxels": 96
+    },
+    "step_norm": 0.7552943853711328,
+    "executed_step_norm": 0.0236029495428479,
+    "phases": {
+      "linearization_s": 0.0007994000043254346,
+      "policy_s": 0.1734809000045061,
+      "projection_s": 9.189998672809452e-05,
+      "line_search_s": 17.969951100007165
+    },
+    "wall_s": 18.144539500004612,
+    "actual_rank": 16,
+    "normal_residual": 4.465704109936064e-13,
+    "endpoint_statistics": {
+      "candidate_count": 1,
+      "chunks": 1,
+      "public_projection_batches": 1,
+      "normal_matrix_batches": 1,
+      "current_factorizations": 1,
+      "current_solve_rhs": 20736,
+      "normal_factorizations": 1,
+      "normal_solve_rhs": 1,
+      "normal_factor_dimension_sum": 192,
+      "info_trace_evaluations": 1,
+      "factorization_failures": 0,
+      "successful_units": 1,
+      "host_upload_bytes": 0,
+      "host_download_bytes": 0,
+      "setup_upload_bytes": 0,
+      "setup_wall_s": 0.0008723000064492226,
+      "paid_common_input_bytes": 5397504,
+      "PB_layout_copy_bytes": 0,
+      "stage_wall_s": {
+        "shared_public_projections": 0.0007866999949328601,
+        "current_stability": 0.00010150000161956996,
+        "current_full_coupling_solve": 0.00893180001003202,
+        "compressed_normal_batch": 0.013166000004275702,
+        "material_step_and_batched_return": 0.007754300007945858
+      },
+      "explicit_workspace_bytes_peak": 22506504,
+      "bytes_scope": "explicit array estimates; not allocator peak; overlap not summed as job occupation",
+      "physical_full_rhs": 0,
+      "full_J_materialized": false,
+      "real_material_H_materialized": false,
+      "branch": "woodbury",
+      "device": "cpu",
+      "total_evaluate_wall_s": 0.0326679999998305,
+      "refinement": {
+        "implementation": "CPU complex128 / float64, same SPD inverse; maximum 3 corrections",
+        "normal_residual_tolerance": 1e-10,
+        "max_corrections_per_unit": 3,
+        "batches": [
+          {
+            "accepted_indices": [
+              0
+            ],
+            "index_scope": "local evaluate or evaluate_incoming invocation; nested fallback calls have local indices",
+            "branch": "woodbury",
+            "raw_normal_relative_residual": [
+              4.465704109936064e-13
+            ],
+            "final_normal_relative_residual": [
+              4.465704109936064e-13
+            ],
+            "raw_residual_failed_indices": [],
+            "refinement_iterations": [
+              0
+            ],
+            "attempted_units": 0,
+            "correction_steps": 0,
+            "recovered_units": 0,
+            "remaining_residual_failed_units": 0,
+            "refinement_nonfinite_units": 0
+          }
+        ],
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      }
+    },
+    "basis_metadata": {
+      "fourier_labels": [
+        "fourier_(0, 0, 0)_component_0",
+        "fourier_(0, 0, 0)_component_1",
+        "fourier_(0, 0, 0)_component_2",
+        "fourier_(-1, 0, 0)_component_0",
+        "fourier_(-1, 0, 0)_component_1",
+        "fourier_(-1, 0, 0)_component_2",
+        "fourier_(0, -1, 0)_component_0",
+        "fourier_(0, -1, 0)_component_1",
+        "fourier_(0, -1, 0)_component_2",
+        "fourier_(0, 0, -1)_component_0",
+        "fourier_(0, 0, -1)_component_1",
+        "fourier_(0, 0, -1)_component_2",
+        "fourier_(0, 0, 1)_component_0",
+        "fourier_(0, 0, 1)_component_1",
+        "fourier_(0, 0, 1)_component_2",
+        "fourier_(0, 1, 0)_component_0"
+      ]
+    }
+  },
+  {
+    "iteration": 4,
+    "accepted": true,
+    "accepted_update_count": 5,
+    "alpha": 0.25,
+    "gradient_fallback": true,
+    "slope": -3.195156842381132,
+    "objective_before": 0.37303546628910955,
+    "objective_after": 0.24338392841159834,
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 2.2644412048035245,
+        "accepted": false,
+        "source_residual": 4.0249940454895095e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 0.8654727841021742,
+        "accepted": false,
+        "source_residual": 4.349575552944508e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.24338392841159834,
+        "accepted": true,
+        "source_residual": 4.333759102501371e-15
+      }
+    ],
+    "metrics": {
+      "complex_nrmse": 0.8392783413994375,
+      "real_nrmse": 0.7239630673062144,
+      "imag_nrmse": 5.373163866303514,
+      "complex_mae": 0.14334945375098332,
+      "real_mae": 0.11090981912193477,
+      "imag_mae": 0.07314195654140387,
+      "measured_relative_residual": 0.6976872068691662,
+      "min_real": -0.12283849716186523,
+      "min_imag": 0.006286025047302246,
+      "max_real": 0.630404513798818,
+      "support_iou": 0.36,
+      "support_voxels": 40,
+      "truth_voxels": 96
+    },
+    "before_metrics": {
+      "complex_nrmse": 1.0478410549307293,
+      "real_nrmse": 1.0331902218643136,
+      "imag_nrmse": 2.421126269788461,
+      "complex_mae": 0.14575646395138758,
+      "real_mae": 0.1361700105499853,
+      "imag_mae": 0.031178319532389302,
+      "measured_relative_residual": 0.863753943872342,
+      "min_real": 0.0028820037841796875,
+      "min_imag": 0.008381366729736328,
+      "max_real": 0.41849160356927423,
+      "support_iou": 0.0,
+      "support_voxels": 0,
+      "truth_voxels": 96
+    },
+    "step_norm": 0.8020865820479279,
+    "executed_step_norm": 0.20052164551198198,
+    "phases": {
+      "linearization_s": 0.0009580000041751191,
+      "policy_s": 0.1896642000065185,
+      "projection_s": 0.00013329999637790024,
+      "line_search_s": 6.794493199995486
+    },
+    "wall_s": 6.985456499998691,
+    "actual_rank": 16,
+    "normal_residual": 1.0888309463895352e-12,
+    "endpoint_statistics": {
+      "candidate_count": 1,
+      "chunks": 1,
+      "public_projection_batches": 1,
+      "normal_matrix_batches": 1,
+      "current_factorizations": 1,
+      "current_solve_rhs": 20736,
+      "normal_factorizations": 1,
+      "normal_solve_rhs": 1,
+      "normal_factor_dimension_sum": 192,
+      "info_trace_evaluations": 1,
+      "factorization_failures": 0,
+      "successful_units": 1,
+      "host_upload_bytes": 0,
+      "host_download_bytes": 0,
+      "setup_upload_bytes": 0,
+      "setup_wall_s": 0.000839899992570281,
+      "paid_common_input_bytes": 5397504,
+      "PB_layout_copy_bytes": 0,
+      "stage_wall_s": {
+        "shared_public_projections": 0.0010570000013103709,
+        "current_stability": 8.859999070409685e-05,
+        "current_full_coupling_solve": 0.009703400006401353,
+        "compressed_normal_batch": 0.008446100007859059,
+        "material_step_and_batched_return": 0.009233300006599165
+      },
+      "explicit_workspace_bytes_peak": 22506504,
+      "bytes_scope": "explicit array estimates; not allocator peak; overlap not summed as job occupation",
+      "physical_full_rhs": 0,
+      "full_J_materialized": false,
+      "real_material_H_materialized": false,
+      "branch": "woodbury",
+      "device": "cpu",
+      "total_evaluate_wall_s": 0.030383099991013296,
+      "refinement": {
+        "implementation": "CPU complex128 / float64, same SPD inverse; maximum 3 corrections",
+        "normal_residual_tolerance": 1e-10,
+        "max_corrections_per_unit": 3,
+        "batches": [
+          {
+            "accepted_indices": [
+              0
+            ],
+            "index_scope": "local evaluate or evaluate_incoming invocation; nested fallback calls have local indices",
+            "branch": "woodbury",
+            "raw_normal_relative_residual": [
+              1.0888309463895352e-12
+            ],
+            "final_normal_relative_residual": [
+              1.0888309463895352e-12
+            ],
+            "raw_residual_failed_indices": [],
+            "refinement_iterations": [
+              0
+            ],
+            "attempted_units": 0,
+            "correction_steps": 0,
+            "recovered_units": 0,
+            "remaining_residual_failed_units": 0,
+            "refinement_nonfinite_units": 0
+          }
+        ],
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      }
+    },
+    "basis_metadata": {
+      "fourier_labels": [
+        "fourier_(0, 0, 0)_component_0",
+        "fourier_(0, 0, 0)_component_1",
+        "fourier_(0, 0, 0)_component_2",
+        "fourier_(-1, 0, 0)_component_0",
+        "fourier_(-1, 0, 0)_component_1",
+        "fourier_(-1, 0, 0)_component_2",
+        "fourier_(0, -1, 0)_component_0",
+        "fourier_(0, -1, 0)_component_1",
+        "fourier_(0, -1, 0)_component_2",
+        "fourier_(0, 0, -1)_component_0",
+        "fourier_(0, 0, -1)_component_1",
+        "fourier_(0, 0, -1)_component_2",
+        "fourier_(0, 0, 1)_component_0",
+        "fourier_(0, 0, 1)_component_1",
+        "fourier_(0, 0, 1)_component_2",
+        "fourier_(0, 1, 0)_component_0"
+      ]
+    }
+  },
+  {
+    "iteration": 5,
+    "accepted": true,
+    "accepted_update_count": 6,
+    "alpha": 0.125,
+    "gradient_fallback": true,
+    "slope": -1.1680880872352186,
+    "objective_before": 0.24338392841159825,
+    "objective_after": 0.1810245749275199,
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 4.707706634696072,
+        "accepted": false,
+        "source_residual": 5.026711226897135e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 1.1688926785742082,
+        "accepted": false,
+        "source_residual": 4.574294563124045e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.30611079619701254,
+        "accepted": false,
+        "source_residual": 4.536733512358386e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.1810245749275199,
+        "accepted": true,
+        "source_residual": 4.502689011860813e-15
+      }
+    ],
+    "metrics": {
+      "complex_nrmse": 0.7810969423912439,
+      "real_nrmse": 0.6892560288412378,
+      "imag_nrmse": 4.659387025350019,
+      "complex_mae": 0.1255326595430185,
+      "real_mae": 0.0965857613612041,
+      "imag_mae": 0.06373957343994573,
+      "measured_relative_residual": 0.6017049594964764,
+      "min_real": -0.10504498995636434,
+      "min_imag": 0.005500271916389465,
+      "max_real": 0.6442596111307478,
+      "support_iou": 0.44329896907216493,
+      "support_voxels": 44,
+      "truth_voxels": 96
+    },
+    "before_metrics": {
+      "complex_nrmse": 0.8392783413994375,
+      "real_nrmse": 0.7239630673062144,
+      "imag_nrmse": 5.373163866303514,
+      "complex_mae": 0.14334945375098332,
+      "real_mae": 0.11090981912193477,
+      "imag_mae": 0.07314195654140387,
+      "measured_relative_residual": 0.6976872068691662,
+      "min_real": -0.12283849716186523,
+      "min_imag": 0.006286025047302246,
+      "max_real": 0.630404513798818,
+      "support_iou": 0.36,
+      "support_voxels": 40,
+      "truth_voxels": 96
+    },
+    "step_norm": 0.48803842078162,
+    "executed_step_norm": 0.0610048025977025,
+    "phases": {
+      "linearization_s": 0.0007966999983182177,
+      "policy_s": 0.17621349998808,
+      "projection_s": 0.00014620000729337335,
+      "line_search_s": 9.106570700008888
+    },
+    "wall_s": 9.284026699999231,
+    "actual_rank": 16,
+    "normal_residual": 5.749144728733183e-13,
+    "endpoint_statistics": {
+      "candidate_count": 1,
+      "chunks": 1,
+      "public_projection_batches": 1,
+      "normal_matrix_batches": 1,
+      "current_factorizations": 1,
+      "current_solve_rhs": 20736,
+      "normal_factorizations": 1,
+      "normal_solve_rhs": 1,
+      "normal_factor_dimension_sum": 192,
+      "info_trace_evaluations": 1,
+      "factorization_failures": 0,
+      "successful_units": 1,
+      "host_upload_bytes": 0,
+      "host_download_bytes": 0,
+      "setup_upload_bytes": 0,
+      "setup_wall_s": 0.0012894000101368874,
+      "paid_common_input_bytes": 5397504,
+      "PB_layout_copy_bytes": 0,
+      "stage_wall_s": {
+        "shared_public_projections": 0.0008921999979065731,
+        "current_stability": 7.779999577905983e-05,
+        "current_full_coupling_solve": 0.007211799995275214,
+        "compressed_normal_batch": 0.007626099992194213,
+        "material_step_and_batched_return": 0.007536699995398521
+      },
+      "explicit_workspace_bytes_peak": 22506504,
+      "bytes_scope": "explicit array estimates; not allocator peak; overlap not summed as job occupation",
+      "physical_full_rhs": 0,
+      "full_J_materialized": false,
+      "real_material_H_materialized": false,
+      "branch": "woodbury",
+      "device": "cpu",
+      "total_evaluate_wall_s": 0.025415600000997074,
+      "refinement": {
+        "implementation": "CPU complex128 / float64, same SPD inverse; maximum 3 corrections",
+        "normal_residual_tolerance": 1e-10,
+        "max_corrections_per_unit": 3,
+        "batches": [
+          {
+            "accepted_indices": [
+              0
+            ],
+            "index_scope": "local evaluate or evaluate_incoming invocation; nested fallback calls have local indices",
+            "branch": "woodbury",
+            "raw_normal_relative_residual": [
+              5.749144728733183e-13
+            ],
+            "final_normal_relative_residual": [
+              5.749144728733183e-13
+            ],
+            "raw_residual_failed_indices": [],
+            "refinement_iterations": [
+              0
+            ],
+            "attempted_units": 0,
+            "correction_steps": 0,
+            "recovered_units": 0,
+            "remaining_residual_failed_units": 0,
+            "refinement_nonfinite_units": 0
+          }
+        ],
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      }
+    },
+    "basis_metadata": {
+      "fourier_labels": [
+        "fourier_(0, 0, 0)_component_0",
+        "fourier_(0, 0, 0)_component_1",
+        "fourier_(0, 0, 0)_component_2",
+        "fourier_(-1, 0, 0)_component_0",
+        "fourier_(-1, 0, 0)_component_1",
+        "fourier_(-1, 0, 0)_component_2",
+        "fourier_(0, -1, 0)_component_0",
+        "fourier_(0, -1, 0)_component_1",
+        "fourier_(0, -1, 0)_component_2",
+        "fourier_(0, 0, -1)_component_0",
+        "fourier_(0, 0, -1)_component_1",
+        "fourier_(0, 0, -1)_component_2",
+        "fourier_(0, 0, 1)_component_0",
+        "fourier_(0, 0, 1)_component_1",
+        "fourier_(0, 0, 1)_component_2",
+        "fourier_(0, 1, 0)_component_0"
+      ]
+    }
+  },
+  {
+    "iteration": 6,
+    "accepted": true,
+    "accepted_update_count": 7,
+    "alpha": 0.125,
+    "gradient_fallback": true,
+    "slope": -0.8942294953891247,
+    "objective_before": 0.18102457492751997,
+    "objective_after": 0.1534792151225146,
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 3.6951665738247375,
+        "accepted": false,
+        "source_residual": 4.448564042188166e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 1.169527118936107,
+        "accepted": false,
+        "source_residual": 4.4472333784392825e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.30907278416282896,
+        "accepted": false,
+        "source_residual": 4.5828851441552206e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.1534792151225146,
+        "accepted": true,
+        "source_residual": 4.5464406259588514e-15
+      }
+    ],
+    "metrics": {
+      "complex_nrmse": 0.7474528909515039,
+      "real_nrmse": 0.6769922281291427,
+      "imag_nrmse": 4.030022807769809,
+      "complex_mae": 0.11898706350169072,
+      "real_mae": 0.09465738466493362,
+      "imag_mae": 0.05524010557805475,
+      "measured_relative_residual": 0.5540380202268673,
+      "min_real": -0.1544143662118188,
+      "min_imag": 0.004812737926840782,
+      "max_real": 0.6289349969877205,
+      "support_iou": 0.28125,
+      "support_voxels": 27,
+      "truth_voxels": 96
+    },
+    "before_metrics": {
+      "complex_nrmse": 0.7810969423912439,
+      "real_nrmse": 0.6892560288412378,
+      "imag_nrmse": 4.659387025350019,
+      "complex_mae": 0.1255326595430185,
+      "real_mae": 0.0965857613612041,
+      "imag_mae": 0.06373957343994573,
+      "measured_relative_residual": 0.6017049594964764,
+      "min_real": -0.10504498995636434,
+      "min_imag": 0.005500271916389465,
+      "max_real": 0.6442596111307478,
+      "support_iou": 0.44329896907216493,
+      "support_voxels": 44,
+      "truth_voxels": 96
+    },
+    "step_norm": 0.41380752416918326,
+    "executed_step_norm": 0.05172594052114791,
+    "phases": {
+      "linearization_s": 0.005234900003415532,
+      "policy_s": 0.17668839999532793,
+      "projection_s": 0.00021499999274965376,
+      "line_search_s": 14.647507300003781
+    },
+    "wall_s": 14.829820600003586,
+    "actual_rank": 16,
+    "normal_residual": 1.885859339813065e-12,
+    "endpoint_statistics": {
+      "candidate_count": 1,
+      "chunks": 1,
+      "public_projection_batches": 1,
+      "normal_matrix_batches": 1,
+      "current_factorizations": 1,
+      "current_solve_rhs": 20736,
+      "normal_factorizations": 1,
+      "normal_solve_rhs": 1,
+      "normal_factor_dimension_sum": 192,
+      "info_trace_evaluations": 1,
+      "factorization_failures": 0,
+      "successful_units": 1,
+      "host_upload_bytes": 0,
+      "host_download_bytes": 0,
+      "setup_upload_bytes": 0,
+      "setup_wall_s": 0.001030900006298907,
+      "paid_common_input_bytes": 5397504,
+      "PB_layout_copy_bytes": 0,
+      "stage_wall_s": {
+        "shared_public_projections": 0.00144009999348782,
+        "current_stability": 9.820000559557229e-05,
+        "current_full_coupling_solve": 0.014310899990960024,
+        "compressed_normal_batch": 0.011538999999174848,
+        "material_step_and_batched_return": 0.008359400002518669
+      },
+      "explicit_workspace_bytes_peak": 22506504,
+      "bytes_scope": "explicit array estimates; not allocator peak; overlap not summed as job occupation",
+      "physical_full_rhs": 0,
+      "full_J_materialized": false,
+      "real_material_H_materialized": false,
+      "branch": "woodbury",
+      "device": "cpu",
+      "total_evaluate_wall_s": 0.037568100000498816,
+      "refinement": {
+        "implementation": "CPU complex128 / float64, same SPD inverse; maximum 3 corrections",
+        "normal_residual_tolerance": 1e-10,
+        "max_corrections_per_unit": 3,
+        "batches": [
+          {
+            "accepted_indices": [
+              0
+            ],
+            "index_scope": "local evaluate or evaluate_incoming invocation; nested fallback calls have local indices",
+            "branch": "woodbury",
+            "raw_normal_relative_residual": [
+              1.885859339813065e-12
+            ],
+            "final_normal_relative_residual": [
+              1.885859339813065e-12
+            ],
+            "raw_residual_failed_indices": [],
+            "refinement_iterations": [
+              0
+            ],
+            "attempted_units": 0,
+            "correction_steps": 0,
+            "recovered_units": 0,
+            "remaining_residual_failed_units": 0,
+            "refinement_nonfinite_units": 0
+          }
+        ],
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      }
+    },
+    "basis_metadata": {
+      "fourier_labels": [
+        "fourier_(0, 0, 0)_component_0",
+        "fourier_(0, 0, 0)_component_1",
+        "fourier_(0, 0, 0)_component_2",
+        "fourier_(-1, 0, 0)_component_0",
+        "fourier_(-1, 0, 0)_component_1",
+        "fourier_(-1, 0, 0)_component_2",
+        "fourier_(0, -1, 0)_component_0",
+        "fourier_(0, -1, 0)_component_1",
+        "fourier_(0, -1, 0)_component_2",
+        "fourier_(0, 0, -1)_component_0",
+        "fourier_(0, 0, -1)_component_1",
+        "fourier_(0, 0, -1)_component_2",
+        "fourier_(0, 0, 1)_component_0",
+        "fourier_(0, 0, 1)_component_1",
+        "fourier_(0, 0, 1)_component_2",
+        "fourier_(0, 1, 0)_component_0"
+      ]
+    }
+  },
+  {
+    "iteration": 7,
+    "accepted": true,
+    "accepted_update_count": 8,
+    "alpha": 0.0625,
+    "gradient_fallback": true,
+    "slope": -1.2060534342603222,
+    "objective_before": 0.1534792151225147,
+    "objective_after": 0.11840474002065686,
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 6.350401730576036,
+        "accepted": false,
+        "source_residual": 5.089312883424383e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 2.1095138266990165,
+        "accepted": false,
+        "source_residual": 4.76566571536864e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.525169308868809,
+        "accepted": false,
+        "source_residual": 4.675315020773706e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.1676344630518324,
+        "accepted": false,
+        "source_residual": 4.49589039841329e-15
+      },
+      {
+        "alpha": 0.0625,
+        "objective": 0.11840474002065686,
+        "accepted": true,
+        "source_residual": 4.6168438875159626e-15
+      }
+    ],
+    "metrics": {
+      "complex_nrmse": 0.7216040696198808,
+      "real_nrmse": 0.6585385073935794,
+      "imag_nrmse": 3.7577425725277354,
+      "complex_mae": 0.11287067040988928,
+      "real_mae": 0.09104469014071073,
+      "imag_mae": 0.05157022865642666,
+      "measured_relative_residual": 0.4866304698616354,
+      "min_real": -0.11493687808738214,
+      "min_imag": 0.004511941806413233,
+      "max_real": 0.6671838260950617,
+      "support_iou": 0.5208333333333334,
+      "support_voxels": 50,
+      "truth_voxels": 96
+    },
+    "before_metrics": {
+      "complex_nrmse": 0.7474528909515039,
+      "real_nrmse": 0.6769922281291427,
+      "imag_nrmse": 4.030022807769809,
+      "complex_mae": 0.11898706350169072,
+      "real_mae": 0.09465738466493362,
+      "imag_mae": 0.05524010557805475,
+      "measured_relative_residual": 0.5540380202268673,
+      "min_real": -0.1544143662118188,
+      "min_imag": 0.004812737926840782,
+      "max_real": 0.6289349969877205,
+      "support_iou": 0.28125,
+      "support_voxels": 27,
+      "truth_voxels": 96
+    },
+    "step_norm": 0.5429606556122096,
+    "executed_step_norm": 0.0339350409757631,
+    "phases": {
+      "linearization_s": 0.000836499995784834,
+      "policy_s": 0.1694426000030944,
+      "projection_s": 0.00012110000534448773,
+      "line_search_s": 17.575076100009028
+    },
+    "wall_s": 17.745688499999233,
+    "actual_rank": 16,
+    "normal_residual": 2.042219795673954e-12,
+    "endpoint_statistics": {
+      "candidate_count": 1,
+      "chunks": 1,
+      "public_projection_batches": 1,
+      "normal_matrix_batches": 1,
+      "current_factorizations": 1,
+      "current_solve_rhs": 20736,
+      "normal_factorizations": 1,
+      "normal_solve_rhs": 1,
+      "normal_factor_dimension_sum": 192,
+      "info_trace_evaluations": 1,
+      "factorization_failures": 0,
+      "successful_units": 1,
+      "host_upload_bytes": 0,
+      "host_download_bytes": 0,
+      "setup_upload_bytes": 0,
+      "setup_wall_s": 0.0010534000030020252,
+      "paid_common_input_bytes": 5397504,
+      "PB_layout_copy_bytes": 0,
+      "stage_wall_s": {
+        "shared_public_projections": 0.000996100003249012,
+        "current_stability": 8.420000085607171e-05,
+        "current_full_coupling_solve": 0.008162899990566075,
+        "compressed_normal_batch": 0.010538699993048795,
+        "material_step_and_batched_return": 0.008304700008011423
+      },
+      "explicit_workspace_bytes_peak": 22506504,
+      "bytes_scope": "explicit array estimates; not allocator peak; overlap not summed as job occupation",
+      "physical_full_rhs": 0,
+      "full_J_materialized": false,
+      "real_material_H_materialized": false,
+      "branch": "woodbury",
+      "device": "cpu",
+      "total_evaluate_wall_s": 0.030085899998084642,
+      "refinement": {
+        "implementation": "CPU complex128 / float64, same SPD inverse; maximum 3 corrections",
+        "normal_residual_tolerance": 1e-10,
+        "max_corrections_per_unit": 3,
+        "batches": [
+          {
+            "accepted_indices": [
+              0
+            ],
+            "index_scope": "local evaluate or evaluate_incoming invocation; nested fallback calls have local indices",
+            "branch": "woodbury",
+            "raw_normal_relative_residual": [
+              2.042219795673954e-12
+            ],
+            "final_normal_relative_residual": [
+              2.042219795673954e-12
+            ],
+            "raw_residual_failed_indices": [],
+            "refinement_iterations": [
+              0
+            ],
+            "attempted_units": 0,
+            "correction_steps": 0,
+            "recovered_units": 0,
+            "remaining_residual_failed_units": 0,
+            "refinement_nonfinite_units": 0
+          }
+        ],
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      }
+    },
+    "basis_metadata": {
+      "fourier_labels": [
+        "fourier_(0, 0, 0)_component_0",
+        "fourier_(0, 0, 0)_component_1",
+        "fourier_(0, 0, 0)_component_2",
+        "fourier_(-1, 0, 0)_component_0",
+        "fourier_(-1, 0, 0)_component_1",
+        "fourier_(-1, 0, 0)_component_2",
+        "fourier_(0, -1, 0)_component_0",
+        "fourier_(0, -1, 0)_component_1",
+        "fourier_(0, -1, 0)_component_2",
+        "fourier_(0, 0, -1)_component_0",
+        "fourier_(0, 0, -1)_component_1",
+        "fourier_(0, 0, -1)_component_2",
+        "fourier_(0, 0, 1)_component_0",
+        "fourier_(0, 0, 1)_component_1",
+        "fourier_(0, 0, 1)_component_2",
+        "fourier_(0, 1, 0)_component_0"
+      ]
+    }
+  },
+  {
+    "iteration": 8,
+    "accepted": true,
+    "accepted_update_count": 9,
+    "alpha": 0.125,
+    "gradient_fallback": true,
+    "slope": -0.32546414523200773,
+    "objective_before": 0.1184047400206568,
+    "objective_after": 0.10247948112919703,
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 1.6268020822714628,
+        "accepted": false,
+        "source_residual": 4.674037452945413e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 0.3944440992286179,
+        "accepted": false,
+        "source_residual": 4.594907020789817e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.14025276679022258,
+        "accepted": false,
+        "source_residual": 4.6408769893430054e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.10247948112919703,
+        "accepted": true,
+        "source_residual": 4.638198675823163e-15
+      }
+    ],
+    "metrics": {
+      "complex_nrmse": 0.6947528533714956,
+      "real_nrmse": 0.6467766460798904,
+      "imag_nrmse": 3.246408090297584,
+      "complex_mae": 0.10993472647652763,
+      "real_mae": 0.09197912088058192,
+      "imag_mae": 0.04461046784504994,
+      "measured_relative_residual": 0.45272361812419437,
+      "min_real": -0.16306976832645936,
+      "min_imag": 0.003947949080611579,
+      "max_real": 0.6838077629905669,
+      "support_iou": 0.53125,
+      "support_voxels": 51,
+      "truth_voxels": 96
+    },
+    "before_metrics": {
+      "complex_nrmse": 0.7216040696198808,
+      "real_nrmse": 0.6585385073935794,
+      "imag_nrmse": 3.7577425725277354,
+      "complex_mae": 0.11287067040988928,
+      "real_mae": 0.09104469014071073,
+      "imag_mae": 0.05157022865642666,
+      "measured_relative_residual": 0.4866304698616354,
+      "min_real": -0.11493687808738214,
+      "min_imag": 0.004511941806413233,
+      "max_real": 0.6671838260950617,
+      "support_iou": 0.5208333333333334,
+      "support_voxels": 50,
+      "truth_voxels": 96
+    },
+    "step_norm": 0.23422203880022208,
+    "executed_step_norm": 0.02927775485002776,
+    "phases": {
+      "linearization_s": 0.0007560000085504726,
+      "policy_s": 0.16924660000950098,
+      "projection_s": 0.00012129999231547117,
+      "line_search_s": 15.212541600005352
+    },
+    "wall_s": 15.382941300005768,
+    "actual_rank": 16,
+    "normal_residual": 3.006066530226746e-12,
+    "endpoint_statistics": {
+      "candidate_count": 1,
+      "chunks": 1,
+      "public_projection_batches": 1,
+      "normal_matrix_batches": 1,
+      "current_factorizations": 1,
+      "current_solve_rhs": 20736,
+      "normal_factorizations": 1,
+      "normal_solve_rhs": 1,
+      "normal_factor_dimension_sum": 192,
+      "info_trace_evaluations": 1,
+      "factorization_failures": 0,
+      "successful_units": 1,
+      "host_upload_bytes": 0,
+      "host_download_bytes": 0,
+      "setup_upload_bytes": 0,
+      "setup_wall_s": 0.0010397000005468726,
+      "paid_common_input_bytes": 5397504,
+      "PB_layout_copy_bytes": 0,
+      "stage_wall_s": {
+        "shared_public_projections": 0.000908499991055578,
+        "current_stability": 8.72999953571707e-05,
+        "current_full_coupling_solve": 0.00726359999680426,
+        "compressed_normal_batch": 0.007598199998028576,
+        "material_step_and_batched_return": 0.006773999994038604
+      },
+      "explicit_workspace_bytes_peak": 22506504,
+      "bytes_scope": "explicit array estimates; not allocator peak; overlap not summed as job occupation",
+      "physical_full_rhs": 0,
+      "full_J_materialized": false,
+      "real_material_H_materialized": false,
+      "branch": "woodbury",
+      "device": "cpu",
+      "total_evaluate_wall_s": 0.024607600003946573,
+      "refinement": {
+        "implementation": "CPU complex128 / float64, same SPD inverse; maximum 3 corrections",
+        "normal_residual_tolerance": 1e-10,
+        "max_corrections_per_unit": 3,
+        "batches": [
+          {
+            "accepted_indices": [
+              0
+            ],
+            "index_scope": "local evaluate or evaluate_incoming invocation; nested fallback calls have local indices",
+            "branch": "woodbury",
+            "raw_normal_relative_residual": [
+              3.006066530226746e-12
+            ],
+            "final_normal_relative_residual": [
+              3.006066530226746e-12
+            ],
+            "raw_residual_failed_indices": [],
+            "refinement_iterations": [
+              0
+            ],
+            "attempted_units": 0,
+            "correction_steps": 0,
+            "recovered_units": 0,
+            "remaining_residual_failed_units": 0,
+            "refinement_nonfinite_units": 0
+          }
+        ],
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      }
+    },
+    "basis_metadata": {
+      "fourier_labels": [
+        "fourier_(0, 0, 0)_component_0",
+        "fourier_(0, 0, 0)_component_1",
+        "fourier_(0, 0, 0)_component_2",
+        "fourier_(-1, 0, 0)_component_0",
+        "fourier_(-1, 0, 0)_component_1",
+        "fourier_(-1, 0, 0)_component_2",
+        "fourier_(0, -1, 0)_component_0",
+        "fourier_(0, -1, 0)_component_1",
+        "fourier_(0, -1, 0)_component_2",
+        "fourier_(0, 0, -1)_component_0",
+        "fourier_(0, 0, -1)_component_1",
+        "fourier_(0, 0, -1)_component_2",
+        "fourier_(0, 0, 1)_component_0",
+        "fourier_(0, 0, 1)_component_1",
+        "fourier_(0, 0, 1)_component_2",
+        "fourier_(0, 1, 0)_component_0"
+      ]
+    }
+  },
+  {
+    "iteration": 9,
+    "accepted": true,
+    "accepted_update_count": 10,
+    "alpha": 0.0625,
+    "gradient_fallback": true,
+    "slope": -0.7348116847157737,
+    "objective_before": 0.10247948112919701,
+    "objective_after": 0.08665067206696747,
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 5.160780670068482,
+        "accepted": false,
+        "source_residual": 5.117969533981129e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 1.6357233274702945,
+        "accepted": false,
+        "source_residual": 4.8530479187287465e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.4148913201894647,
+        "accepted": false,
+        "source_residual": 4.519975231899683e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.13298944903151944,
+        "accepted": false,
+        "source_residual": 4.559609458372619e-15
+      },
+      {
+        "alpha": 0.0625,
+        "objective": 0.08665067206696747,
+        "accepted": true,
+        "source_residual": 4.561909044527582e-15
+      }
+    ],
+    "metrics": {
+      "complex_nrmse": 0.6764656723491675,
+      "real_nrmse": 0.6339967998411405,
+      "imag_nrmse": 3.0254788054835173,
+      "complex_mae": 0.10648172156790194,
+      "real_mae": 0.0909229445845311,
+      "imag_mae": 0.04160496321259134,
+      "measured_relative_residual": 0.41629446036849527,
+      "min_real": -0.12515745283853688,
+      "min_imag": 0.0037012022630733554,
+      "max_real": 0.7167782900457071,
+      "support_iou": 0.6458333333333334,
+      "support_voxels": 62,
+      "truth_voxels": 96
+    },
+    "before_metrics": {
+      "complex_nrmse": 0.6947528533714956,
+      "real_nrmse": 0.6467766460798904,
+      "imag_nrmse": 3.246408090297584,
+      "complex_mae": 0.10993472647652763,
+      "real_mae": 0.09197912088058192,
+      "imag_mae": 0.04461046784504994,
+      "measured_relative_residual": 0.45272361812419437,
+      "min_real": -0.16306976832645936,
+      "min_imag": 0.003947949080611579,
+      "max_real": 0.6838077629905669,
+      "support_iou": 0.53125,
+      "support_voxels": 51,
+      "truth_voxels": 96
+    },
+    "step_norm": 0.44866396576136763,
+    "executed_step_norm": 0.028041497860085477,
+    "phases": {
+      "linearization_s": 0.02233219999470748,
+      "policy_s": 0.16728939999302384,
+      "projection_s": 0.0001227000029757619,
+      "line_search_s": 19.901069300001836
+    },
+    "wall_s": 20.09099559999595,
+    "actual_rank": 16,
+    "normal_residual": 8.981007154659176e-12,
+    "endpoint_statistics": {
+      "candidate_count": 1,
+      "chunks": 1,
+      "public_projection_batches": 1,
+      "normal_matrix_batches": 1,
+      "current_factorizations": 1,
+      "current_solve_rhs": 20736,
+      "normal_factorizations": 1,
+      "normal_solve_rhs": 1,
+      "normal_factor_dimension_sum": 192,
+      "info_trace_evaluations": 1,
+      "factorization_failures": 0,
+      "successful_units": 1,
+      "host_upload_bytes": 0,
+      "host_download_bytes": 0,
+      "setup_upload_bytes": 0,
+      "setup_wall_s": 0.0013964999961899593,
+      "paid_common_input_bytes": 5397504,
+      "PB_layout_copy_bytes": 0,
+      "stage_wall_s": {
+        "shared_public_projections": 0.0011666999926092103,
+        "current_stability": 0.00012110000534448773,
+        "current_full_coupling_solve": 0.007063800003379583,
+        "compressed_normal_batch": 0.008163999998942018,
+        "material_step_and_batched_return": 0.007339100004173815
+      },
+      "explicit_workspace_bytes_peak": 22506504,
+      "bytes_scope": "explicit array estimates; not allocator peak; overlap not summed as job occupation",
+      "physical_full_rhs": 0,
+      "full_J_materialized": false,
+      "real_material_H_materialized": false,
+      "branch": "woodbury",
+      "device": "cpu",
+      "total_evaluate_wall_s": 0.02617830000235699,
+      "refinement": {
+        "implementation": "CPU complex128 / float64, same SPD inverse; maximum 3 corrections",
+        "normal_residual_tolerance": 1e-10,
+        "max_corrections_per_unit": 3,
+        "batches": [
+          {
+            "accepted_indices": [
+              0
+            ],
+            "index_scope": "local evaluate or evaluate_incoming invocation; nested fallback calls have local indices",
+            "branch": "woodbury",
+            "raw_normal_relative_residual": [
+              8.981007154659176e-12
+            ],
+            "final_normal_relative_residual": [
+              8.981007154659176e-12
+            ],
+            "raw_residual_failed_indices": [],
+            "refinement_iterations": [
+              0
+            ],
+            "attempted_units": 0,
+            "correction_steps": 0,
+            "recovered_units": 0,
+            "remaining_residual_failed_units": 0,
+            "refinement_nonfinite_units": 0
+          }
+        ],
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      }
+    },
+    "basis_metadata": {
+      "fourier_labels": [
+        "fourier_(0, 0, 0)_component_0",
+        "fourier_(0, 0, 0)_component_1",
+        "fourier_(0, 0, 0)_component_2",
+        "fourier_(-1, 0, 0)_component_0",
+        "fourier_(-1, 0, 0)_component_1",
+        "fourier_(-1, 0, 0)_component_2",
+        "fourier_(0, -1, 0)_component_0",
+        "fourier_(0, -1, 0)_component_1",
+        "fourier_(0, -1, 0)_component_2",
+        "fourier_(0, 0, -1)_component_0",
+        "fourier_(0, 0, -1)_component_1",
+        "fourier_(0, 0, -1)_component_2",
+        "fourier_(0, 0, 1)_component_0",
+        "fourier_(0, 0, 1)_component_1",
+        "fourier_(0, 0, 1)_component_2",
+        "fourier_(0, 1, 0)_component_0"
+      ]
+    }
+  },
+  {
+    "iteration": 10,
+    "accepted": true,
+    "accepted_update_count": 11,
+    "alpha": 0.0625,
+    "gradient_fallback": true,
+    "slope": -0.40949428388270215,
+    "objective_before": 0.08665067206696749,
+    "objective_after": 0.07606156598799607,
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 3.181446521441411,
+        "accepted": false,
+        "source_residual": 4.628037756227323e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 0.8907080105771805,
+        "accepted": false,
+        "source_residual": 4.6286510118178974e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.2342226288920027,
+        "accepted": false,
+        "source_residual": 4.537163339585676e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.09648265279775871,
+        "accepted": false,
+        "source_residual": 4.659883249589671e-15
+      },
+      {
+        "alpha": 0.0625,
+        "objective": 0.07606156598799607,
+        "accepted": true,
+        "source_residual": 4.539573763771432e-15
+      }
+    ],
+    "metrics": {
+      "complex_nrmse": 0.663109350797138,
+      "real_nrmse": 0.6258485134006776,
+      "imag_nrmse": 2.818516316807285,
+      "complex_mae": 0.1042386207436632,
+      "real_mae": 0.08960724405096746,
+      "imag_mae": 0.03878049157215839,
+      "measured_relative_residual": 0.390029293942613,
+      "min_real": -0.14858511203612834,
+      "min_imag": 0.0034698771216312707,
+      "max_real": 0.7149235951675946,
+      "support_iou": 0.625,
+      "support_voxels": 60,
+      "truth_voxels": 96
+    },
+    "before_metrics": {
+      "complex_nrmse": 0.6764656723491675,
+      "real_nrmse": 0.6339967998411405,
+      "imag_nrmse": 3.0254788054835173,
+      "complex_mae": 0.10648172156790194,
+      "real_mae": 0.0909229445845311,
+      "imag_mae": 0.04160496321259134,
+      "measured_relative_residual": 0.41629446036849527,
+      "min_real": -0.12515745283853688,
+      "min_imag": 0.0037012022630733554,
+      "max_real": 0.7167782900457071,
+      "support_iou": 0.6458333333333334,
+      "support_voxels": 62,
+      "truth_voxels": 96
+    },
+    "step_norm": 0.3204480508690574,
+    "executed_step_norm": 0.02002800317931609,
+    "phases": {
+      "linearization_s": 0.0007839000027161092,
+      "policy_s": 1.840409099997487,
+      "projection_s": 0.0001340000017080456,
+      "line_search_s": 16.929553699999815
+    },
+    "wall_s": 18.771055499993963,
+    "actual_rank": 16,
+    "normal_residual": 6.855325602484708e-12,
+    "endpoint_statistics": {
+      "candidate_count": 1,
+      "chunks": 1,
+      "public_projection_batches": 1,
+      "normal_matrix_batches": 1,
+      "current_factorizations": 1,
+      "current_solve_rhs": 20736,
+      "normal_factorizations": 1,
+      "normal_solve_rhs": 1,
+      "normal_factor_dimension_sum": 192,
+      "info_trace_evaluations": 1,
+      "factorization_failures": 0,
+      "successful_units": 1,
+      "host_upload_bytes": 0,
+      "host_download_bytes": 0,
+      "setup_upload_bytes": 0,
+      "setup_wall_s": 0.0007427999953506514,
+      "paid_common_input_bytes": 5397504,
+      "PB_layout_copy_bytes": 0,
+      "stage_wall_s": {
+        "shared_public_projections": 0.0009406000026501715,
+        "current_stability": 8.880000677891076e-05,
+        "current_full_coupling_solve": 0.00687760001164861,
+        "compressed_normal_batch": 0.011968099992373027,
+        "material_step_and_batched_return": 0.008505999998305924
+      },
+      "explicit_workspace_bytes_peak": 22506504,
+      "bytes_scope": "explicit array estimates; not allocator peak; overlap not summed as job occupation",
+      "physical_full_rhs": 0,
+      "full_J_materialized": false,
+      "real_material_H_materialized": false,
+      "branch": "woodbury",
+      "device": "cpu",
+      "total_evaluate_wall_s": 0.03040680001140572,
+      "refinement": {
+        "implementation": "CPU complex128 / float64, same SPD inverse; maximum 3 corrections",
+        "normal_residual_tolerance": 1e-10,
+        "max_corrections_per_unit": 3,
+        "batches": [
+          {
+            "accepted_indices": [
+              0
+            ],
+            "index_scope": "local evaluate or evaluate_incoming invocation; nested fallback calls have local indices",
+            "branch": "woodbury",
+            "raw_normal_relative_residual": [
+              6.855325602484708e-12
+            ],
+            "final_normal_relative_residual": [
+              6.855325602484708e-12
+            ],
+            "raw_residual_failed_indices": [],
+            "refinement_iterations": [
+              0
+            ],
+            "attempted_units": 0,
+            "correction_steps": 0,
+            "recovered_units": 0,
+            "remaining_residual_failed_units": 0,
+            "refinement_nonfinite_units": 0
+          }
+        ],
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      }
+    },
+    "basis_metadata": {
+      "fourier_labels": [
+        "fourier_(0, 0, 0)_component_0",
+        "fourier_(0, 0, 0)_component_1",
+        "fourier_(0, 0, 0)_component_2",
+        "fourier_(-1, 0, 0)_component_0",
+        "fourier_(-1, 0, 0)_component_1",
+        "fourier_(-1, 0, 0)_component_2",
+        "fourier_(0, -1, 0)_component_0",
+        "fourier_(0, -1, 0)_component_1",
+        "fourier_(0, -1, 0)_component_2",
+        "fourier_(0, 0, -1)_component_0",
+        "fourier_(0, 0, -1)_component_1",
+        "fourier_(0, 0, -1)_component_2",
+        "fourier_(0, 0, 1)_component_0",
+        "fourier_(0, 0, 1)_component_1",
+        "fourier_(0, 0, 1)_component_2",
+        "fourier_(0, 1, 0)_component_0"
+      ]
+    }
+  },
+  {
+    "iteration": 11,
+    "accepted": true,
+    "accepted_update_count": 12,
+    "alpha": 0.0625,
+    "gradient_fallback": true,
+    "slope": -0.30602708080951757,
+    "objective_before": 0.07606156598799607,
+    "objective_after": 0.06819322219620973,
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 2.7007866864807775,
+        "accepted": false,
+        "source_residual": 5.1479458663291394e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 0.6930212069490658,
+        "accepted": false,
+        "source_residual": 4.828126819971971e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.1873296992149064,
+        "accepted": false,
+        "source_residual": 4.716409948641269e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.08356966706763062,
+        "accepted": false,
+        "source_residual": 4.678841541026342e-15
+      },
+      {
+        "alpha": 0.0625,
+        "objective": 0.06819322219620973,
+        "accepted": true,
+        "source_residual": 4.62615631544182e-15
+      }
+    ],
+    "metrics": {
+      "complex_nrmse": 0.6480704956261583,
+      "real_nrmse": 0.615256301384494,
+      "imag_nrmse": 2.6262800824828285,
+      "complex_mae": 0.10190826054190598,
+      "real_mae": 0.08917098238155832,
+      "imag_mae": 0.03615674497719259,
+      "measured_relative_residual": 0.36930498540812967,
+      "min_real": -0.12955073922214846,
+      "min_imag": 0.0032530098015293163,
+      "max_real": 0.7393275536564773,
+      "support_iou": 0.7083333333333334,
+      "support_voxels": 68,
+      "truth_voxels": 96
+    },
+    "before_metrics": {
+      "complex_nrmse": 0.663109350797138,
+      "real_nrmse": 0.6258485134006776,
+      "imag_nrmse": 2.818516316807285,
+      "complex_mae": 0.1042386207436632,
+      "real_mae": 0.08960724405096746,
+      "imag_mae": 0.03878049157215839,
+      "measured_relative_residual": 0.390029293942613,
+      "min_real": -0.14858511203612834,
+      "min_imag": 0.0034698771216312707,
+      "max_real": 0.7149235951675946,
+      "support_iou": 0.625,
+      "support_voxels": 60,
+      "truth_voxels": 96
+    },
+    "step_norm": 0.276956354090071,
+    "executed_step_norm": 0.01730977213062944,
+    "phases": {
+      "linearization_s": 0.0010405999928480014,
+      "policy_s": 0.1584757999953581,
+      "projection_s": 0.0001438999897800386,
+      "line_search_s": 19.06590070000675
+    },
+    "wall_s": 19.225760000001173,
+    "actual_rank": 16,
+    "normal_residual": 6.332395614992015e-12,
+    "endpoint_statistics": {
+      "candidate_count": 1,
+      "chunks": 1,
+      "public_projection_batches": 1,
+      "normal_matrix_batches": 1,
+      "current_factorizations": 1,
+      "current_solve_rhs": 20736,
+      "normal_factorizations": 1,
+      "normal_solve_rhs": 1,
+      "normal_factor_dimension_sum": 192,
+      "info_trace_evaluations": 1,
+      "factorization_failures": 0,
+      "successful_units": 1,
+      "host_upload_bytes": 0,
+      "host_download_bytes": 0,
+      "setup_upload_bytes": 0,
+      "setup_wall_s": 0.0008907999872462824,
+      "paid_common_input_bytes": 5397504,
+      "PB_layout_copy_bytes": 0,
+      "stage_wall_s": {
+        "shared_public_projections": 0.0007359999872278422,
+        "current_stability": 7.480000203941017e-05,
+        "current_full_coupling_solve": 0.007503699991502799,
+        "compressed_normal_batch": 0.008094299992080778,
+        "material_step_and_batched_return": 0.006573999999091029
+      },
+      "explicit_workspace_bytes_peak": 22506504,
+      "bytes_scope": "explicit array estimates; not allocator peak; overlap not summed as job occupation",
+      "physical_full_rhs": 0,
+      "full_J_materialized": false,
+      "real_material_H_materialized": false,
+      "branch": "woodbury",
+      "device": "cpu",
+      "total_evaluate_wall_s": 0.02494709999882616,
+      "refinement": {
+        "implementation": "CPU complex128 / float64, same SPD inverse; maximum 3 corrections",
+        "normal_residual_tolerance": 1e-10,
+        "max_corrections_per_unit": 3,
+        "batches": [
+          {
+            "accepted_indices": [
+              0
+            ],
+            "index_scope": "local evaluate or evaluate_incoming invocation; nested fallback calls have local indices",
+            "branch": "woodbury",
+            "raw_normal_relative_residual": [
+              6.332395614992015e-12
+            ],
+            "final_normal_relative_residual": [
+              6.332395614992015e-12
+            ],
+            "raw_residual_failed_indices": [],
+            "refinement_iterations": [
+              0
+            ],
+            "attempted_units": 0,
+            "correction_steps": 0,
+            "recovered_units": 0,
+            "remaining_residual_failed_units": 0,
+            "refinement_nonfinite_units": 0
+          }
+        ],
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      }
+    },
+    "basis_metadata": {
+      "fourier_labels": [
+        "fourier_(0, 0, 0)_component_0",
+        "fourier_(0, 0, 0)_component_1",
+        "fourier_(0, 0, 0)_component_2",
+        "fourier_(-1, 0, 0)_component_0",
+        "fourier_(-1, 0, 0)_component_1",
+        "fourier_(-1, 0, 0)_component_2",
+        "fourier_(0, -1, 0)_component_0",
+        "fourier_(0, -1, 0)_component_1",
+        "fourier_(0, -1, 0)_component_2",
+        "fourier_(0, 0, -1)_component_0",
+        "fourier_(0, 0, -1)_component_1",
+        "fourier_(0, 0, -1)_component_2",
+        "fourier_(0, 0, 1)_component_0",
+        "fourier_(0, 0, 1)_component_1",
+        "fourier_(0, 0, 1)_component_2",
+        "fourier_(0, 1, 0)_component_0"
+      ]
+    }
+  },
+  {
+    "iteration": 12,
+    "accepted": true,
+    "accepted_update_count": 13,
+    "alpha": 0.0625,
+    "gradient_fallback": true,
+    "slope": -0.29616463756622635,
+    "objective_before": 0.06819322219620977,
+    "objective_after": 0.06169806077234589,
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 2.741440633627839,
+        "accepted": false,
+        "source_residual": 4.663437905217699e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 0.7306388404354897,
+        "accepted": false,
+        "source_residual": 4.6709417934550986e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.19373149181738267,
+        "accepted": false,
+        "source_residual": 4.689201907630834e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.07995632885436678,
+        "accepted": false,
+        "source_residual": 4.594197734250959e-15
+      },
+      {
+        "alpha": 0.0625,
+        "objective": 0.06169806077234589,
+        "accepted": true,
+        "source_residual": 4.62663083633866e-15
+      }
+    ],
+    "metrics": {
+      "complex_nrmse": 0.6363990819135128,
+      "real_nrmse": 0.6076776437621584,
+      "imag_nrmse": 2.447054894325132,
+      "complex_mae": 0.10005542542711526,
+      "real_mae": 0.08799374613480888,
+      "imag_mae": 0.03371052987814137,
+      "measured_relative_residual": 0.35127743240472814,
+      "min_real": -0.1521081696144036,
+      "min_imag": 0.003049696688933734,
+      "max_real": 0.7371298828861438,
+      "support_iou": 0.65625,
+      "support_voxels": 63,
+      "truth_voxels": 96
+    },
+    "before_metrics": {
+      "complex_nrmse": 0.6480704956261583,
+      "real_nrmse": 0.615256301384494,
+      "imag_nrmse": 2.6262800824828285,
+      "complex_mae": 0.10190826054190598,
+      "real_mae": 0.08917098238155832,
+      "imag_mae": 0.03615674497719259,
+      "measured_relative_residual": 0.36930498540812967,
+      "min_real": -0.12955073922214846,
+      "min_imag": 0.0032530098015293163,
+      "max_real": 0.7393275536564773,
+      "support_iou": 0.7083333333333334,
+      "support_voxels": 68,
+      "truth_voxels": 96
+    },
+    "step_norm": 0.28224896640677183,
+    "executed_step_norm": 0.01764056040042324,
+    "phases": {
+      "linearization_s": 0.0007612000044900924,
+      "policy_s": 0.16053249999822583,
+      "projection_s": 0.00011269999959040433,
+      "line_search_s": 18.89244690000487
+    },
+    "wall_s": 19.05405950000568,
+    "actual_rank": 16,
+    "normal_residual": 2.390040712349835e-11,
+    "endpoint_statistics": {
+      "candidate_count": 1,
+      "chunks": 1,
+      "public_projection_batches": 1,
+      "normal_matrix_batches": 1,
+      "current_factorizations": 1,
+      "current_solve_rhs": 20736,
+      "normal_factorizations": 1,
+      "normal_solve_rhs": 1,
+      "normal_factor_dimension_sum": 192,
+      "info_trace_evaluations": 1,
+      "factorization_failures": 0,
+      "successful_units": 1,
+      "host_upload_bytes": 0,
+      "host_download_bytes": 0,
+      "setup_upload_bytes": 0,
+      "setup_wall_s": 0.0009282999963033944,
+      "paid_common_input_bytes": 5397504,
+      "PB_layout_copy_bytes": 0,
+      "stage_wall_s": {
+        "shared_public_projections": 0.0008394000033149496,
+        "current_stability": 8.47000046633184e-05,
+        "current_full_coupling_solve": 0.007776300000841729,
+        "compressed_normal_batch": 0.0086717999947723,
+        "material_step_and_batched_return": 0.007945999997900799
+      },
+      "explicit_workspace_bytes_peak": 22506504,
+      "bytes_scope": "explicit array estimates; not allocator peak; overlap not summed as job occupation",
+      "physical_full_rhs": 0,
+      "full_J_materialized": false,
+      "real_material_H_materialized": false,
+      "branch": "woodbury",
+      "device": "cpu",
+      "total_evaluate_wall_s": 0.027275900007225573,
+      "refinement": {
+        "implementation": "CPU complex128 / float64, same SPD inverse; maximum 3 corrections",
+        "normal_residual_tolerance": 1e-10,
+        "max_corrections_per_unit": 3,
+        "batches": [
+          {
+            "accepted_indices": [
+              0
+            ],
+            "index_scope": "local evaluate or evaluate_incoming invocation; nested fallback calls have local indices",
+            "branch": "woodbury",
+            "raw_normal_relative_residual": [
+              2.390040712349835e-11
+            ],
+            "final_normal_relative_residual": [
+              2.390040712349835e-11
+            ],
+            "raw_residual_failed_indices": [],
+            "refinement_iterations": [
+              0
+            ],
+            "attempted_units": 0,
+            "correction_steps": 0,
+            "recovered_units": 0,
+            "remaining_residual_failed_units": 0,
+            "refinement_nonfinite_units": 0
+          }
+        ],
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      }
+    },
+    "basis_metadata": {
+      "fourier_labels": [
+        "fourier_(0, 0, 0)_component_0",
+        "fourier_(0, 0, 0)_component_1",
+        "fourier_(0, 0, 0)_component_2",
+        "fourier_(-1, 0, 0)_component_0",
+        "fourier_(-1, 0, 0)_component_1",
+        "fourier_(-1, 0, 0)_component_2",
+        "fourier_(0, -1, 0)_component_0",
+        "fourier_(0, -1, 0)_component_1",
+        "fourier_(0, -1, 0)_component_2",
+        "fourier_(0, 0, -1)_component_0",
+        "fourier_(0, 0, -1)_component_1",
+        "fourier_(0, 0, -1)_component_2",
+        "fourier_(0, 0, 1)_component_0",
+        "fourier_(0, 0, 1)_component_1",
+        "fourier_(0, 0, 1)_component_2",
+        "fourier_(0, 1, 0)_component_0"
+      ]
+    }
+  },
+  {
+    "iteration": 13,
+    "accepted": true,
+    "accepted_update_count": 14,
+    "alpha": 0.0625,
+    "gradient_fallback": true,
+    "slope": -0.3300851582446973,
+    "objective_before": 0.061698060772345874,
+    "objective_after": 0.057159601531639626,
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 3.4117143429075307,
+        "accepted": false,
+        "source_residual": 5.0750232246696586e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 0.9512338627182935,
+        "accepted": false,
+        "source_residual": 4.8888885068926445e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.24413998153615585,
+        "accepted": false,
+        "source_residual": 4.716304020117767e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.08562622121855133,
+        "accepted": false,
+        "source_residual": 4.6327648500559435e-15
+      },
+      {
+        "alpha": 0.0625,
+        "objective": 0.057159601531639626,
+        "accepted": true,
+        "source_residual": 4.635356530454301e-15
+      }
+    ],
+    "metrics": {
+      "complex_nrmse": 0.6216458600272248,
+      "real_nrmse": 0.5963288731189228,
+      "imag_nrmse": 2.2813335346196264,
+      "complex_mae": 0.09788494172708274,
+      "real_mae": 0.08752249106880179,
+      "imag_mae": 0.03144902211391077,
+      "measured_relative_residual": 0.33811082087486793,
+      "min_real": -0.12730953365757616,
+      "min_imag": 0.0028590906458753756,
+      "max_real": 0.7625857765673476,
+      "support_iou": 0.78125,
+      "support_voxels": 75,
+      "truth_voxels": 96
+    },
+    "before_metrics": {
+      "complex_nrmse": 0.6363990819135128,
+      "real_nrmse": 0.6076776437621584,
+      "imag_nrmse": 2.447054894325132,
+      "complex_mae": 0.10005542542711526,
+      "real_mae": 0.08799374613480888,
+      "imag_mae": 0.03371052987814137,
+      "measured_relative_residual": 0.35127743240472814,
+      "min_real": -0.1521081696144036,
+      "min_imag": 0.003049696688933734,
+      "max_real": 0.7371298828861438,
+      "support_iou": 0.65625,
+      "support_voxels": 63,
+      "truth_voxels": 96
+    },
+    "step_norm": 0.3187778197605105,
+    "executed_step_norm": 0.019923613735031907,
+    "phases": {
+      "linearization_s": 0.000894600001629442,
+      "policy_s": 0.15848539999569766,
+      "projection_s": 0.00013210000179242343,
+      "line_search_s": 19.029952600001707
+    },
+    "wall_s": 19.189670000007027,
+    "actual_rank": 16,
+    "normal_residual": 1.9878124104699746e-11,
+    "endpoint_statistics": {
+      "candidate_count": 1,
+      "chunks": 1,
+      "public_projection_batches": 1,
+      "normal_matrix_batches": 1,
+      "current_factorizations": 1,
+      "current_solve_rhs": 20736,
+      "normal_factorizations": 1,
+      "normal_solve_rhs": 1,
+      "normal_factor_dimension_sum": 192,
+      "info_trace_evaluations": 1,
+      "factorization_failures": 0,
+      "successful_units": 1,
+      "host_upload_bytes": 0,
+      "host_download_bytes": 0,
+      "setup_upload_bytes": 0,
+      "setup_wall_s": 0.0009610999986762181,
+      "paid_common_input_bytes": 5397504,
+      "PB_layout_copy_bytes": 0,
+      "stage_wall_s": {
+        "shared_public_projections": 0.0009606000094208866,
+        "current_stability": 9.639999188948423e-05,
+        "current_full_coupling_solve": 0.007824800006346777,
+        "compressed_normal_batch": 0.009118899994064122,
+        "material_step_and_batched_return": 0.008021999994525686
+      },
+      "explicit_workspace_bytes_peak": 22506504,
+      "bytes_scope": "explicit array estimates; not allocator peak; overlap not summed as job occupation",
+      "physical_full_rhs": 0,
+      "full_J_materialized": false,
+      "real_material_H_materialized": false,
+      "branch": "woodbury",
+      "device": "cpu",
+      "total_evaluate_wall_s": 0.028026200001477264,
+      "refinement": {
+        "implementation": "CPU complex128 / float64, same SPD inverse; maximum 3 corrections",
+        "normal_residual_tolerance": 1e-10,
+        "max_corrections_per_unit": 3,
+        "batches": [
+          {
+            "accepted_indices": [
+              0
+            ],
+            "index_scope": "local evaluate or evaluate_incoming invocation; nested fallback calls have local indices",
+            "branch": "woodbury",
+            "raw_normal_relative_residual": [
+              1.9878124104699746e-11
+            ],
+            "final_normal_relative_residual": [
+              1.9878124104699746e-11
+            ],
+            "raw_residual_failed_indices": [],
+            "refinement_iterations": [
+              0
+            ],
+            "attempted_units": 0,
+            "correction_steps": 0,
+            "recovered_units": 0,
+            "remaining_residual_failed_units": 0,
+            "refinement_nonfinite_units": 0
+          }
+        ],
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      }
+    },
+    "basis_metadata": {
+      "fourier_labels": [
+        "fourier_(0, 0, 0)_component_0",
+        "fourier_(0, 0, 0)_component_1",
+        "fourier_(0, 0, 0)_component_2",
+        "fourier_(-1, 0, 0)_component_0",
+        "fourier_(-1, 0, 0)_component_1",
+        "fourier_(-1, 0, 0)_component_2",
+        "fourier_(0, -1, 0)_component_0",
+        "fourier_(0, -1, 0)_component_1",
+        "fourier_(0, -1, 0)_component_2",
+        "fourier_(0, 0, -1)_component_0",
+        "fourier_(0, 0, -1)_component_1",
+        "fourier_(0, 0, -1)_component_2",
+        "fourier_(0, 0, 1)_component_0",
+        "fourier_(0, 0, 1)_component_1",
+        "fourier_(0, 0, 1)_component_2",
+        "fourier_(0, 1, 0)_component_0"
+      ]
+    }
+  },
+  {
+    "iteration": 14,
+    "accepted": true,
+    "accepted_update_count": 15,
+    "alpha": 0.0625,
+    "gradient_fallback": true,
+    "slope": -0.42136476476195256,
+    "objective_before": 0.05715960153163964,
+    "objective_after": 0.05318203980580402,
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 3.7536517389184865,
+        "accepted": false,
+        "source_residual": 4.516737049275946e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 1.272120751518168,
+        "accepted": false,
+        "source_residual": 4.59848223449383e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.3181466989054128,
+        "accepted": false,
+        "source_residual": 4.600726925116629e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.09499932522577649,
+        "accepted": false,
+        "source_residual": 4.7018063132993465e-15
+      },
+      {
+        "alpha": 0.0625,
+        "objective": 0.05318203980580402,
+        "accepted": true,
+        "source_residual": 4.718584634100997e-15
+      }
+    ],
+    "metrics": {
+      "complex_nrmse": 0.6099618038224189,
+      "real_nrmse": 0.5877773129398493,
+      "imag_nrmse": 2.126924653736157,
+      "complex_mae": 0.09551694276181238,
+      "real_mae": 0.08540410793072066,
+      "imag_mae": 0.029330922095530725,
+      "measured_relative_residual": 0.32613461465264615,
+      "min_real": -0.15060268780397765,
+      "min_imag": 0.0026803974805081647,
+      "max_real": 0.7521171745855961,
+      "support_iou": 0.7083333333333334,
+      "support_voxels": 68,
+      "truth_voxels": 96
+    },
+    "before_metrics": {
+      "complex_nrmse": 0.6216458600272248,
+      "real_nrmse": 0.5963288731189228,
+      "imag_nrmse": 2.2813335346196264,
+      "complex_mae": 0.09788494172708274,
+      "real_mae": 0.08752249106880179,
+      "imag_mae": 0.03144902211391077,
+      "measured_relative_residual": 0.33811082087486793,
+      "min_real": -0.12730953365757616,
+      "min_imag": 0.0028590906458753756,
+      "max_real": 0.7625857765673476,
+      "support_iou": 0.78125,
+      "support_voxels": 75,
+      "truth_voxels": 96
+    },
+    "step_norm": 0.37204775999581785,
+    "executed_step_norm": 0.023252984999738616,
+    "phases": {
+      "linearization_s": 0.0007808000082150102,
+      "policy_s": 0.16733470000326633,
+      "projection_s": 0.00012419999984558672,
+      "line_search_s": 19.323899700000766
+    },
+    "wall_s": 19.492387300007977,
+    "actual_rank": 16,
+    "normal_residual": 1.488898274263112e-11,
+    "endpoint_statistics": {
+      "candidate_count": 1,
+      "chunks": 1,
+      "public_projection_batches": 1,
+      "normal_matrix_batches": 1,
+      "current_factorizations": 1,
+      "current_solve_rhs": 20736,
+      "normal_factorizations": 1,
+      "normal_solve_rhs": 1,
+      "normal_factor_dimension_sum": 192,
+      "info_trace_evaluations": 1,
+      "factorization_failures": 0,
+      "successful_units": 1,
+      "host_upload_bytes": 0,
+      "host_download_bytes": 0,
+      "setup_upload_bytes": 0,
+      "setup_wall_s": 0.0011399000068195164,
+      "paid_common_input_bytes": 5397504,
+      "PB_layout_copy_bytes": 0,
+      "stage_wall_s": {
+        "shared_public_projections": 0.0010879999899771065,
+        "current_stability": 9.129999671131372e-05,
+        "current_full_coupling_solve": 0.007859299992560409,
+        "compressed_normal_batch": 0.009151000005658716,
+        "material_step_and_batched_return": 0.0075409999990370125
+      },
+      "explicit_workspace_bytes_peak": 22506504,
+      "bytes_scope": "explicit array estimates; not allocator peak; overlap not summed as job occupation",
+      "physical_full_rhs": 0,
+      "full_J_materialized": false,
+      "real_material_H_materialized": false,
+      "branch": "woodbury",
+      "device": "cpu",
+      "total_evaluate_wall_s": 0.027894600003492087,
+      "refinement": {
+        "implementation": "CPU complex128 / float64, same SPD inverse; maximum 3 corrections",
+        "normal_residual_tolerance": 1e-10,
+        "max_corrections_per_unit": 3,
+        "batches": [
+          {
+            "accepted_indices": [
+              0
+            ],
+            "index_scope": "local evaluate or evaluate_incoming invocation; nested fallback calls have local indices",
+            "branch": "woodbury",
+            "raw_normal_relative_residual": [
+              1.488898274263112e-11
+            ],
+            "final_normal_relative_residual": [
+              1.488898274263112e-11
+            ],
+            "raw_residual_failed_indices": [],
+            "refinement_iterations": [
+              0
+            ],
+            "attempted_units": 0,
+            "correction_steps": 0,
+            "recovered_units": 0,
+            "remaining_residual_failed_units": 0,
+            "refinement_nonfinite_units": 0
+          }
+        ],
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      }
+    },
+    "basis_metadata": {
+      "fourier_labels": [
+        "fourier_(0, 0, 0)_component_0",
+        "fourier_(0, 0, 0)_component_1",
+        "fourier_(0, 0, 0)_component_2",
+        "fourier_(-1, 0, 0)_component_0",
+        "fourier_(-1, 0, 0)_component_1",
+        "fourier_(-1, 0, 0)_component_2",
+        "fourier_(0, -1, 0)_component_0",
+        "fourier_(0, -1, 0)_component_1",
+        "fourier_(0, -1, 0)_component_2",
+        "fourier_(0, 0, -1)_component_0",
+        "fourier_(0, 0, -1)_component_1",
+        "fourier_(0, 0, -1)_component_2",
+        "fourier_(0, 0, 1)_component_0",
+        "fourier_(0, 0, 1)_component_1",
+        "fourier_(0, 0, 1)_component_2",
+        "fourier_(0, 1, 0)_component_0"
+      ]
+    }
+  },
+  {
+    "iteration": 15,
+    "accepted": true,
+    "accepted_update_count": 16,
+    "alpha": 0.03125,
+    "gradient_fallback": true,
+    "slope": -0.5641467261619326,
+    "objective_before": 0.053182039805804014,
+    "objective_after": 0.04453252881132001,
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 5.500344527889224,
+        "accepted": false,
+        "source_residual": 5.184687896822442e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 1.9046778657572756,
+        "accepted": false,
+        "source_residual": 4.971617887891158e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.4930663648282846,
+        "accepted": false,
+        "source_residual": 4.6508575003558745e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.1284907826585685,
+        "accepted": false,
+        "source_residual": 4.698132768412685e-15
+      },
+      {
+        "alpha": 0.0625,
+        "objective": 0.05408297627728041,
+        "accepted": false,
+        "source_residual": 4.737516289096016e-15
+      },
+      {
+        "alpha": 0.03125,
+        "objective": 0.04453252881132001,
+        "accepted": true,
+        "source_residual": 4.6967726112475065e-15
+      }
+    ],
+    "metrics": {
+      "complex_nrmse": 0.5996200619420715,
+      "real_nrmse": 0.5786125513171816,
+      "imag_nrmse": 2.0559675771553203,
+      "complex_mae": 0.09369704601300029,
+      "real_mae": 0.08439852750402795,
+      "imag_mae": 0.028360851030884773,
+      "measured_relative_residual": 0.2984372211970382,
+      "min_real": -0.13834525332633152,
+      "min_imag": 0.0025966350592422846,
+      "max_real": 0.7690287258356882,
+      "support_iou": 0.78125,
+      "support_voxels": 75,
+      "truth_voxels": 96
+    },
+    "before_metrics": {
+      "complex_nrmse": 0.6099618038224189,
+      "real_nrmse": 0.5877773129398493,
+      "imag_nrmse": 2.126924653736157,
+      "complex_mae": 0.09551694276181238,
+      "real_mae": 0.08540410793072066,
+      "imag_mae": 0.029330922095530725,
+      "measured_relative_residual": 0.32613461465264615,
+      "min_real": -0.15060268780397765,
+      "min_imag": 0.0026803974805081647,
+      "max_real": 0.7521171745855961,
+      "support_iou": 0.7083333333333334,
+      "support_voxels": 68,
+      "truth_voxels": 96
+    },
+    "step_norm": 0.46311551452719707,
+    "executed_step_norm": 0.014472359828974908,
+    "phases": {
+      "linearization_s": 0.021710299988626502,
+      "policy_s": 0.16407620000245515,
+      "projection_s": 0.00011589999485295266,
+      "line_search_s": 23.448090499994578
+    },
+    "wall_s": 23.63424810000288,
+    "actual_rank": 16,
+    "normal_residual": 6.206241608435451e-11,
+    "endpoint_statistics": {
+      "candidate_count": 1,
+      "chunks": 1,
+      "public_projection_batches": 1,
+      "normal_matrix_batches": 1,
+      "current_factorizations": 1,
+      "current_solve_rhs": 20736,
+      "normal_factorizations": 1,
+      "normal_solve_rhs": 1,
+      "normal_factor_dimension_sum": 192,
+      "info_trace_evaluations": 1,
+      "factorization_failures": 0,
+      "successful_units": 1,
+      "host_upload_bytes": 0,
+      "host_download_bytes": 0,
+      "setup_upload_bytes": 0,
+      "setup_wall_s": 0.001030900006298907,
+      "paid_common_input_bytes": 5397504,
+      "PB_layout_copy_bytes": 0,
+      "stage_wall_s": {
+        "shared_public_projections": 0.0012470000074245036,
+        "current_stability": 9.050000517163426e-05,
+        "current_full_coupling_solve": 0.00785540000651963,
+        "compressed_normal_batch": 0.00800659999367781,
+        "material_step_and_batched_return": 0.007170400000177324
+      },
+      "explicit_workspace_bytes_peak": 22506504,
+      "bytes_scope": "explicit array estimates; not allocator peak; overlap not summed as job occupation",
+      "physical_full_rhs": 0,
+      "full_J_materialized": false,
+      "real_material_H_materialized": false,
+      "branch": "woodbury",
+      "device": "cpu",
+      "total_evaluate_wall_s": 0.026209200004814193,
+      "refinement": {
+        "implementation": "CPU complex128 / float64, same SPD inverse; maximum 3 corrections",
+        "normal_residual_tolerance": 1e-10,
+        "max_corrections_per_unit": 3,
+        "batches": [
+          {
+            "accepted_indices": [
+              0
+            ],
+            "index_scope": "local evaluate or evaluate_incoming invocation; nested fallback calls have local indices",
+            "branch": "woodbury",
+            "raw_normal_relative_residual": [
+              6.206241608435451e-11
+            ],
+            "final_normal_relative_residual": [
+              6.206241608435451e-11
+            ],
+            "raw_residual_failed_indices": [],
+            "refinement_iterations": [
+              0
+            ],
+            "attempted_units": 0,
+            "correction_steps": 0,
+            "recovered_units": 0,
+            "remaining_residual_failed_units": 0,
+            "refinement_nonfinite_units": 0
+          }
+        ],
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      }
+    },
+    "basis_metadata": {
+      "fourier_labels": [
+        "fourier_(0, 0, 0)_component_0",
+        "fourier_(0, 0, 0)_component_1",
+        "fourier_(0, 0, 0)_component_2",
+        "fourier_(-1, 0, 0)_component_0",
+        "fourier_(-1, 0, 0)_component_1",
+        "fourier_(-1, 0, 0)_component_2",
+        "fourier_(0, -1, 0)_component_0",
+        "fourier_(0, -1, 0)_component_1",
+        "fourier_(0, -1, 0)_component_2",
+        "fourier_(0, 0, -1)_component_0",
+        "fourier_(0, 0, -1)_component_1",
+        "fourier_(0, 0, -1)_component_2",
+        "fourier_(0, 0, 1)_component_0",
+        "fourier_(0, 0, 1)_component_1",
+        "fourier_(0, 0, 1)_component_2",
+        "fourier_(0, 1, 0)_component_0"
+      ]
+    }
+  },
+  {
+    "iteration": 16,
+    "accepted": true,
+    "accepted_update_count": 17,
+    "alpha": 0.125,
+    "gradient_fallback": true,
+    "slope": -0.10019231476008503,
+    "objective_before": 0.04453252881132001,
+    "objective_after": 0.03979447639580222,
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 0.5374427288035734,
+        "accepted": false,
+        "source_residual": 4.985445037639537e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 0.12944330727598063,
+        "accepted": false,
+        "source_residual": 4.827309746986362e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.05151377514543269,
+        "accepted": false,
+        "source_residual": 4.769336497047734e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.03979447639580222,
+        "accepted": true,
+        "source_residual": 4.539971728745177e-15
+      }
+    ],
+    "metrics": {
+      "complex_nrmse": 0.5747918042290127,
+      "real_nrmse": 0.5586998862677943,
+      "imag_nrmse": 1.7833659909763118,
+      "complex_mae": 0.09018413361830803,
+      "real_mae": 0.08218811576242796,
+      "imag_mae": 0.024605615227496578,
+      "measured_relative_residual": 0.2821146074011176,
+      "min_real": -0.15899105954651183,
+      "min_imag": 0.002272055676836999,
+      "max_real": 0.7812269913749851,
+      "support_iou": 0.7916666666666666,
+      "support_voxels": 76,
+      "truth_voxels": 96
+    },
+    "before_metrics": {
+      "complex_nrmse": 0.5996200619420715,
+      "real_nrmse": 0.5786125513171816,
+      "imag_nrmse": 2.0559675771553203,
+      "complex_mae": 0.09369704601300029,
+      "real_mae": 0.08439852750402795,
+      "imag_mae": 0.028360851030884773,
+      "measured_relative_residual": 0.2984372211970382,
+      "min_real": -0.13834525332633152,
+      "min_imag": 0.0025966350592422846,
+      "max_real": 0.7690287258356882,
+      "support_iou": 0.78125,
+      "support_voxels": 75,
+      "truth_voxels": 96
+    },
+    "step_norm": 0.1334561881745416,
+    "executed_step_norm": 0.0166820235218177,
+    "phases": {
+      "linearization_s": 0.021484299999428913,
+      "policy_s": 0.16818840001360513,
+      "projection_s": 0.00016580001101829112,
+      "line_search_s": 15.798882800008869
+    },
+    "wall_s": 15.988980699999956,
+    "actual_rank": 16,
+    "normal_residual": 6.65287404440701e-11,
+    "endpoint_statistics": {
+      "candidate_count": 1,
+      "chunks": 1,
+      "public_projection_batches": 1,
+      "normal_matrix_batches": 1,
+      "current_factorizations": 1,
+      "current_solve_rhs": 20736,
+      "normal_factorizations": 1,
+      "normal_solve_rhs": 1,
+      "normal_factor_dimension_sum": 192,
+      "info_trace_evaluations": 1,
+      "factorization_failures": 0,
+      "successful_units": 1,
+      "host_upload_bytes": 0,
+      "host_download_bytes": 0,
+      "setup_upload_bytes": 0,
+      "setup_wall_s": 0.0007651000050827861,
+      "paid_common_input_bytes": 5397504,
+      "PB_layout_copy_bytes": 0,
+      "stage_wall_s": {
+        "shared_public_projections": 0.0008879000088199973,
+        "current_stability": 9.609998960513622e-05,
+        "current_full_coupling_solve": 0.006602599998586811,
+        "compressed_normal_batch": 0.008938200000557117,
+        "material_step_and_batched_return": 0.008204600002500229
+      },
+      "explicit_workspace_bytes_peak": 22506504,
+      "bytes_scope": "explicit array estimates; not allocator peak; overlap not summed as job occupation",
+      "physical_full_rhs": 0,
+      "full_J_materialized": false,
+      "real_material_H_materialized": false,
+      "branch": "woodbury",
+      "device": "cpu",
+      "total_evaluate_wall_s": 0.026760499997180887,
+      "refinement": {
+        "implementation": "CPU complex128 / float64, same SPD inverse; maximum 3 corrections",
+        "normal_residual_tolerance": 1e-10,
+        "max_corrections_per_unit": 3,
+        "batches": [
+          {
+            "accepted_indices": [
+              0
+            ],
+            "index_scope": "local evaluate or evaluate_incoming invocation; nested fallback calls have local indices",
+            "branch": "woodbury",
+            "raw_normal_relative_residual": [
+              6.65287404440701e-11
+            ],
+            "final_normal_relative_residual": [
+              6.65287404440701e-11
+            ],
+            "raw_residual_failed_indices": [],
+            "refinement_iterations": [
+              0
+            ],
+            "attempted_units": 0,
+            "correction_steps": 0,
+            "recovered_units": 0,
+            "remaining_residual_failed_units": 0,
+            "refinement_nonfinite_units": 0
+          }
+        ],
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      }
+    },
+    "basis_metadata": {
+      "fourier_labels": [
+        "fourier_(0, 0, 0)_component_0",
+        "fourier_(0, 0, 0)_component_1",
+        "fourier_(0, 0, 0)_component_2",
+        "fourier_(-1, 0, 0)_component_0",
+        "fourier_(-1, 0, 0)_component_1",
+        "fourier_(-1, 0, 0)_component_2",
+        "fourier_(0, -1, 0)_component_0",
+        "fourier_(0, -1, 0)_component_1",
+        "fourier_(0, -1, 0)_component_2",
+        "fourier_(0, 0, -1)_component_0",
+        "fourier_(0, 0, -1)_component_1",
+        "fourier_(0, 0, -1)_component_2",
+        "fourier_(0, 0, 1)_component_0",
+        "fourier_(0, 0, 1)_component_1",
+        "fourier_(0, 0, 1)_component_2",
+        "fourier_(0, 1, 0)_component_0"
+      ]
+    }
+  },
+  {
+    "iteration": 17,
+    "accepted": true,
+    "accepted_update_count": 18,
+    "alpha": 0.03125,
+    "gradient_fallback": true,
+    "slope": -0.5004596325382706,
+    "objective_before": 0.039794476395802234,
+    "objective_after": 0.03389526605387529,
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 5.433193465245028,
+        "accepted": false,
+        "source_residual": 5.205870500783354e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 1.9959340698892207,
+        "accepted": false,
+        "source_residual": 4.957500993008693e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.5331144124933342,
+        "accepted": false,
+        "source_residual": 4.8639644709076455e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.13433527524982436,
+        "accepted": false,
+        "source_residual": 4.713438784111696e-15
+      },
+      {
+        "alpha": 0.0625,
+        "objective": 0.047656781451827356,
+        "accepted": false,
+        "source_residual": 4.720936094984017e-15
+      },
+      {
+        "alpha": 0.03125,
+        "objective": 0.03389526605387529,
+        "accepted": true,
+        "source_residual": 4.671048662246117e-15
+      }
+    ],
+    "metrics": {
+      "complex_nrmse": 0.5644053571199413,
+      "real_nrmse": 0.5491128463816279,
+      "imag_nrmse": 1.7260518029816387,
+      "complex_mae": 0.08843482038601017,
+      "real_mae": 0.08115425048873173,
+      "imag_mae": 0.023816116411062162,
+      "measured_relative_residual": 0.2603655897207351,
+      "min_real": -0.15934131648462663,
+      "min_imag": 0.002201053936935843,
+      "max_real": 0.7999194254264791,
+      "support_iou": 0.8125,
+      "support_voxels": 78,
+      "truth_voxels": 96
+    },
+    "before_metrics": {
+      "complex_nrmse": 0.5747918042290127,
+      "real_nrmse": 0.5586998862677943,
+      "imag_nrmse": 1.7833659909763118,
+      "complex_mae": 0.09018413361830803,
+      "real_mae": 0.08218811576242796,
+      "imag_mae": 0.024605615227496578,
+      "measured_relative_residual": 0.2821146074011176,
+      "min_real": -0.15899105954651183,
+      "min_imag": 0.002272055676836999,
+      "max_real": 0.7812269913749851,
+      "support_iou": 0.7916666666666666,
+      "support_voxels": 76,
+      "truth_voxels": 96
+    },
+    "step_norm": 0.473412853914271,
+    "executed_step_norm": 0.01479415168482097,
+    "phases": {
+      "linearization_s": 0.0007802000036463141,
+      "policy_s": 0.16585910000139847,
+      "projection_s": 0.00012880000576842576,
+      "line_search_s": 23.52329510000709
+    },
+    "wall_s": 23.69023870000092,
+    "actual_rank": 16,
+    "normal_residual": 5.1130313032311964e-11,
+    "endpoint_statistics": {
+      "candidate_count": 1,
+      "chunks": 1,
+      "public_projection_batches": 1,
+      "normal_matrix_batches": 1,
+      "current_factorizations": 1,
+      "current_solve_rhs": 20736,
+      "normal_factorizations": 1,
+      "normal_solve_rhs": 1,
+      "normal_factor_dimension_sum": 192,
+      "info_trace_evaluations": 1,
+      "factorization_failures": 0,
+      "successful_units": 1,
+      "host_upload_bytes": 0,
+      "host_download_bytes": 0,
+      "setup_upload_bytes": 0,
+      "setup_wall_s": 0.0009325999999418855,
+      "paid_common_input_bytes": 5397504,
+      "PB_layout_copy_bytes": 0,
+      "stage_wall_s": {
+        "shared_public_projections": 0.0010856000008061528,
+        "current_stability": 9.229998977389187e-05,
+        "current_full_coupling_solve": 0.00720500000170432,
+        "compressed_normal_batch": 0.008719900011783466,
+        "material_step_and_batched_return": 0.007624000005307607
+      },
+      "explicit_workspace_bytes_peak": 22506504,
+      "bytes_scope": "explicit array estimates; not allocator peak; overlap not summed as job occupation",
+      "physical_full_rhs": 0,
+      "full_J_materialized": false,
+      "real_material_H_materialized": false,
+      "branch": "woodbury",
+      "device": "cpu",
+      "total_evaluate_wall_s": 0.02672750000783708,
+      "refinement": {
+        "implementation": "CPU complex128 / float64, same SPD inverse; maximum 3 corrections",
+        "normal_residual_tolerance": 1e-10,
+        "max_corrections_per_unit": 3,
+        "batches": [
+          {
+            "accepted_indices": [
+              0
+            ],
+            "index_scope": "local evaluate or evaluate_incoming invocation; nested fallback calls have local indices",
+            "branch": "woodbury",
+            "raw_normal_relative_residual": [
+              5.1130313032311964e-11
+            ],
+            "final_normal_relative_residual": [
+              5.1130313032311964e-11
+            ],
+            "raw_residual_failed_indices": [],
+            "refinement_iterations": [
+              0
+            ],
+            "attempted_units": 0,
+            "correction_steps": 0,
+            "recovered_units": 0,
+            "remaining_residual_failed_units": 0,
+            "refinement_nonfinite_units": 0
+          }
+        ],
+        "attempted_units": 0,
+        "correction_steps": 0,
+        "recovered_units": 0,
+        "remaining_residual_failed_units": 0,
+        "refinement_nonfinite_units": 0
+      }
+    },
+    "basis_metadata": {
+      "fourier_labels": [
+        "fourier_(0, 0, 0)_component_0",
+        "fourier_(0, 0, 0)_component_1",
+        "fourier_(0, 0, 0)_component_2",
+        "fourier_(-1, 0, 0)_component_0",
+        "fourier_(-1, 0, 0)_component_1",
+        "fourier_(-1, 0, 0)_component_2",
+        "fourier_(0, -1, 0)_component_0",
+        "fourier_(0, -1, 0)_component_1",
+        "fourier_(0, -1, 0)_component_2",
+        "fourier_(0, 0, -1)_component_0",
+        "fourier_(0, 0, -1)_component_1",
+        "fourier_(0, 0, -1)_component_2",
+        "fourier_(0, 0, 1)_component_0",
+        "fourier_(0, 0, 1)_component_1",
+        "fourier_(0, 0, 1)_component_2",
+        "fourier_(0, 1, 0)_component_0"
+      ]
+    }
+  }
+]

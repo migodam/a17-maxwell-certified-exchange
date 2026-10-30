@@ -1,3 +1,5 @@
+**Additional 3D reconstruction study (2026-10-30):** [six geometries, six primary baselines, and full-gradient controls](additional_3d_examples_20261030/START_HERE.md) · [Chinese interpretation](additional_3d_examples_20261030/RESEARCH_REPORT_ZH.md). Mixed application evidence: A17 beats receiver on3/6 final material errors; median ratio1.0328. This supplements the frozen mechanism paper and does not claim general imaging superiority.
+
 # A17 reading entry
 
 **Latest efficiency evidence:** [verified-exchange follow-up](efficiency_followup/START_HERE.md) · [Web-GPT review context](efficiency_followup/GPT_REVIEW_CONTEXT.md) · [evidence download](https://github.com/migodam/a17-maxwell-certified-exchange/releases/tag/a17-efficient-verification-2026-10-04).

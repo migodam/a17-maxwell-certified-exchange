@@ -1,0 +1,14 @@
+{
+  "case": "offset_shell",
+  "definition": {
+    "label": "Shell with offset core",
+    "formula": "Shell: .18<=sqrt(x*x+y*y+z*z)<=.35, chi=.7+.06j; core: (x-.07)^2+y*y+z*z<=.09^2 inside cavity r<.18, chi=1.4+.12j. Core and shell labels disjoint.",
+    "nominal_min_thickness": 0.17
+  },
+  "seed": 2026103106,
+  "same_grid": true,
+  "truth_n": 12,
+  "inverse_n": 12,
+  "truth_voxels": 280,
+  "synthesis_wall_s": 1.7496558330021799
+}

@@ -1,0 +1,14 @@
+{
+  "case": "letter_e",
+  "definition": {
+    "label": "Volumetric letter E",
+    "formula": "Vertical beam x in [-.34,-.14], abs(y)<=.35; union three horizontal bars x in [-.34,.30], abs(y-c)<=.10 for c=-.25,0,.25; abs(z)<=.17.",
+    "nominal_min_thickness": 0.2
+  },
+  "seed": 2026103102,
+  "same_grid": true,
+  "truth_n": 12,
+  "inverse_n": 12,
+  "truth_voxels": 208,
+  "synthesis_wall_s": 1.7693006249610335
+}

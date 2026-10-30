@@ -1,0 +1,315 @@
+{
+  "status": "ALL_PLANNED_TERMINAL",
+  "outcomes": [
+    {
+      "case": "letter_e",
+      "policy": "projected_internal",
+      "status": "MAX_UPDATES"
+    },
+    {
+      "case": "torus",
+      "policy": "exchange",
+      "status": "MAX_UPDATES",
+      "execution_host": "existing_remote_terminal_preserved"
+    },
+    {
+      "case": "double_torus",
+      "policy": "exchange",
+      "status": "MAX_UPDATES",
+      "execution_host": "existing_remote_terminal_preserved"
+    },
+    {
+      "case": "torus",
+      "policy": "random",
+      "status": "MAX_UPDATES",
+      "execution_host": "existing_remote_terminal_preserved"
+    },
+    {
+      "case": "digit3",
+      "policy": "random",
+      "status": "MAX_UPDATES"
+    },
+    {
+      "case": "letter_e",
+      "policy": "receiver",
+      "status": "MAX_UPDATES"
+    },
+    {
+      "case": "letter_e",
+      "policy": "full_gn",
+      "status": "MAX_UPDATES"
+    },
+    {
+      "case": "torus",
+      "policy": "receiver",
+      "status": "MAX_UPDATES",
+      "execution_host": "existing_remote_terminal_preserved"
+    },
+    {
+      "case": "double_torus",
+      "policy": "fourier",
+      "status": "MAX_UPDATES",
+      "execution_host": "existing_remote_terminal_preserved"
+    },
+    {
+      "case": "torus",
+      "policy": "fourier",
+      "status": "MAX_UPDATES",
+      "execution_host": "existing_remote_terminal_preserved"
+    },
+    {
+      "case": "digit3",
+      "policy": "full_gn",
+      "status": "MAX_UPDATES"
+    },
+    {
+      "case": "digit3",
+      "policy": "exchange",
+      "status": "MAX_UPDATES"
+    },
+    {
+      "case": "digit3",
+      "policy": "projected_internal",
+      "status": "MAX_UPDATES"
+    },
+    {
+      "case": "digit3",
+      "policy": "fourier",
+      "status": "MAX_UPDATES"
+    },
+    {
+      "case": "torus",
+      "policy": "projected_internal",
+      "status": "MAX_UPDATES",
+      "execution_host": "existing_remote_terminal_preserved"
+    },
+    {
+      "case": "double_torus",
+      "policy": "full_gn",
+      "status": "MAX_UPDATES",
+      "execution_host": "existing_remote_terminal_preserved"
+    },
+    {
+      "case": "double_torus",
+      "policy": "receiver",
+      "status": "MAX_UPDATES",
+      "execution_host": "existing_remote_terminal_preserved"
+    },
+    {
+      "case": "torus",
+      "policy": "full_gn",
+      "status": "MAX_UPDATES",
+      "execution_host": "existing_remote_terminal_preserved"
+    },
+    {
+      "case": "double_torus",
+      "policy": "random",
+      "status": "MAX_UPDATES",
+      "execution_host": "existing_remote_terminal_preserved"
+    },
+    {
+      "case": "double_torus",
+      "policy": "projected_internal",
+      "status": "MAX_UPDATES",
+      "execution_host": "existing_remote_terminal_preserved"
+    },
+    {
+      "case": "digit3",
+      "policy": "receiver",
+      "status": "MAX_UPDATES"
+    },
+    {
+      "case": "letter_e",
+      "policy": "fourier",
+      "status": "MAX_UPDATES"
+    },
+    {
+      "case": "letter_e",
+      "policy": "exchange",
+      "status": "MAX_UPDATES"
+    },
+    {
+      "case": "letter_e",
+      "policy": "random",
+      "status": "MAX_UPDATES"
+    },
+    {
+      "case": "cross3d",
+      "policy": "random",
+      "status": "MAX_UPDATES",
+      "execution_host": "existing_remote_terminal_preserved"
+    },
+    {
+      "case": "cross3d",
+      "policy": "exchange",
+      "status": "MAX_UPDATES",
+      "execution_host": "XINAN_4060_serial_resume",
+      "resumed_prefix": true
+    },
+    {
+      "case": "cross3d",
+      "policy": "full_gn",
+      "status": "MAX_UPDATES",
+      "execution_host": "XINAN_4060_serial_resume",
+      "resumed_prefix": true
+    },
+    {
+      "case": "cross3d",
+      "policy": "receiver",
+      "status": "MAX_UPDATES",
+      "execution_host": "XINAN_4060_serial_resume",
+      "resumed_prefix": false
+    },
+    {
+      "case": "cross3d",
+      "policy": "projected_internal",
+      "status": "MAX_UPDATES",
+      "execution_host": "XINAN_4060_serial_resume",
+      "resumed_prefix": false
+    },
+    {
+      "case": "cross3d",
+      "policy": "fourier",
+      "status": "MAX_UPDATES",
+      "execution_host": "XINAN_4060_serial_resume",
+      "resumed_prefix": false
+    },
+    {
+      "case": "offset_shell",
+      "policy": "full_gn",
+      "status": "MAX_UPDATES",
+      "execution_host": "XINAN_4060_serial_resume",
+      "resumed_prefix": false
+    },
+    {
+      "case": "offset_shell",
+      "policy": "exchange",
+      "status": "MAX_UPDATES",
+      "execution_host": "XINAN_4060_serial_resume",
+      "resumed_prefix": true
+    },
+    {
+      "case": "offset_shell",
+      "policy": "receiver",
+      "status": "MAX_UPDATES",
+      "execution_host": "XINAN_4060_serial_resume",
+      "resumed_prefix": false
+    },
+    {
+      "case": "offset_shell",
+      "policy": "projected_internal",
+      "status": "MAX_UPDATES",
+      "execution_host": "XINAN_4060_serial_resume",
+      "resumed_prefix": false
+    },
+    {
+      "case": "offset_shell",
+      "policy": "fourier",
+      "status": "MAX_UPDATES",
+      "execution_host": "XINAN_4060_serial_resume",
+      "resumed_prefix": false
+    },
+    {
+      "case": "offset_shell",
+      "policy": "random",
+      "status": "MAX_UPDATES",
+      "execution_host": "XINAN_4060_serial_resume",
+      "resumed_prefix": false
+    }
+  ],
+  "not_run": [],
+  "master_phase_wall_s": 953.4218249999976,
+  "cumulative_budget_snapshot": {
+    "states": 2912,
+    "rhs": 61312,
+    "wall_s": 8183.159608291826,
+    "sessions": [
+      {
+        "phase": "validate",
+        "status": "COMPLETE",
+        "pid": 70700,
+        "started": "2026-10-30T09:54:41+0800",
+        "wall_s": 1.2835276669356972,
+        "ended": "2026-10-30T09:54:43+0800"
+      },
+      {
+        "phase": "run",
+        "status": "ERROR",
+        "pid": 71023,
+        "started": "2026-10-30T09:55:04+0800",
+        "wall_s": 2263.8887711248826,
+        "ended": "2026-10-30T10:32:48+0800"
+      },
+      {
+        "phase": "XINAN_i9_continuation",
+        "status": "ERROR",
+        "pid": 20044,
+        "started": "2026-10-30T10:37:24+0800",
+        "wall_s": 1029.262443300002,
+        "ended": "2026-10-30T10:54:33+0800"
+      },
+      {
+        "phase": "XINAN_4060_continuation",
+        "status": "ERROR",
+        "pid": 2456,
+        "started": "2026-10-30T10:54:52+0800",
+        "wall_s": 678.7627771999978,
+        "ended": "2026-10-30T11:06:11+0800"
+      },
+      {
+        "phase": "XINAN_4060_parallel",
+        "status": "ERROR",
+        "pid": 19120,
+        "started": "2026-10-30T11:06:26+0800",
+        "wall_s": 1241.512048100005,
+        "ended": "2026-10-30T11:27:08+0800"
+      },
+      {
+        "phase": "XINAN_4060_parallel",
+        "status": "ERROR",
+        "pid": 14252,
+        "started": "2026-10-30T11:36:58+0800",
+        "wall_s": 623.0943591999967,
+        "ended": "2026-10-30T11:47:21+0800"
+      },
+      {
+        "phase": "XINAN_4060_parallel",
+        "status": "NATIVE_CRASH_C0000005",
+        "pid": 23388,
+        "started": "2026-10-30T11:49:17+0800",
+        "wall_s": 281,
+        "ended": "2026-10-30T03:53:55.895000+00:00",
+        "accounting": {
+          "kind": "NATIVE_CRASH",
+          "pid": 23388,
+          "exception_code": "0xc0000005",
+          "fault_module": "python310.dll",
+          "fault_unix_s": 1793332435.895,
+          "process_start_unix_s": 1793332156.327979,
+          "observed_process_lifetime_s": 279.5670208930969,
+          "charged_wall_s": 281,
+          "wall_scope": "conservative process-lifetime ceiling +1 second; includes startup, not idle after crash",
+          "root_cause": "not established; no crash reproduction or additional test run",
+          "recovery": "single GPU job, resume saved accepted updates, no completed trajectory rerun",
+          "exit_code_seen_by_ssh": 5
+        }
+      },
+      {
+        "phase": "XINAN_4060_serial_native_resume",
+        "status": "ERROR",
+        "pid": 12264,
+        "started": "2026-10-30T12:19:04+0800",
+        "wall_s": 1110.9338567000086,
+        "ended": "2026-10-30T12:37:35+0800"
+      },
+      {
+        "phase": "XINAN_4060_serial_native_resume",
+        "status": "ALL_PLANNED_TERMINAL",
+        "pid": 13632,
+        "started": "2026-10-30T12:38:41+0800",
+        "wall_s": 953.4218249999976,
+        "ended": "2026-10-30T12:54:35+0800"
+      }
+    ]
+  }
+}

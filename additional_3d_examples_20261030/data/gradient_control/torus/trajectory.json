@@ -1,0 +1,1965 @@
+[
+  {
+    "iteration": 0,
+    "accepted": true,
+    "accepted_update_count": 1,
+    "proposal_computed": true,
+    "completed": true,
+    "attempt_status": "COMPLETED",
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 2.126155220703364,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 3.675455920035582e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 1.0195824578825634,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 3.9464512942330424e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.3403609675910476,
+        "accepted": true,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.216217899535356e-15
+      }
+    ],
+    "phases": {
+      "linearization_s": 3.0719282000063686,
+      "policy_s": 0.08201099999132566,
+      "projection_s": 0.0002271999983349815,
+      "line_search_s": 8.603439800004708
+    },
+    "before_metrics": {
+      "complex_nrmse": 0.9901140914810961,
+      "real_nrmse": 0.9899494936611645,
+      "imag_nrmse": 1.015504800579492,
+      "complex_mae": 0.14506649851540845,
+      "real_mae": 0.14444444444444446,
+      "imag_mae": 0.013333333333333332,
+      "measured_relative_residual": 0.8496202488666812,
+      "min_real": 0.1,
+      "min_imag": 0.01,
+      "max_real": 0.1,
+      "support_iou": 0.0,
+      "support_voxels": 0,
+      "truth_voxels": 96
+    },
+    "objective_before": 0.3609272836421407,
+    "lambda_normal": 0.01001,
+    "direction_source": "projected_gradient_safeguard",
+    "policy": "full_gradient",
+    "gradient_fallback": false,
+    "gradient_only_control": true,
+    "slope": -3.8225917415175727,
+    "projection": {
+      "blocks": [
+        {
+          "success": true,
+          "iterations": 0
+        },
+        {
+          "success": true,
+          "iterations": 0
+        }
+      ],
+      "projection_distance": 0.3423638186290682,
+      "proposal_norm": 0.9999999999999994,
+      "executed_direction_norm": 0.7851218415775822,
+      "certificate_scope": "C3 only unprojected proposal; exact convex projection would transfer an absolute bound, but this numeric projection is not KKT-certified",
+      "projection_optimality_certified": false,
+      "all_solver_success": true
+    },
+    "step_norm": 0.7851218415775822,
+    "alpha": 0.25,
+    "executed_step_norm": 0.19628046039439556,
+    "objective_after": 0.3403609675910476,
+    "metrics": {
+      "complex_nrmse": 0.8335329729915455,
+      "real_nrmse": 0.6794950269376278,
+      "imag_nrmse": 6.0918785539176605,
+      "complex_mae": 0.14741129336589,
+      "real_mae": 0.09312969261913819,
+      "imag_mae": 0.09738056930136986,
+      "measured_relative_residual": 0.825058513029169,
+      "min_real": -0.04999999999999999,
+      "min_imag": 0.0075,
+      "max_real": 0.5205000410977018,
+      "support_iou": 0.21875,
+      "support_voxels": 21,
+      "truth_voxels": 96
+    },
+    "wall_s": 11.759980600007111
+  },
+  {
+    "iteration": 1,
+    "accepted": true,
+    "accepted_update_count": 2,
+    "proposal_computed": true,
+    "completed": true,
+    "attempt_status": "COMPLETED",
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 5.346490518215851,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.934599005404185e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 1.3219801764790353,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.596733142428064e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.36525274211052494,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.334268758263087e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.24695397466246716,
+        "accepted": true,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.261857309703406e-15
+      }
+    ],
+    "phases": {
+      "linearization_s": 0.001902400006656535,
+      "policy_s": 0.08427179999125656,
+      "projection_s": 0.0002801999944495037,
+      "line_search_s": 11.621818800005713
+    },
+    "before_metrics": {
+      "complex_nrmse": 0.8335329729915455,
+      "real_nrmse": 0.6794950269376278,
+      "imag_nrmse": 6.0918785539176605,
+      "complex_mae": 0.14741129336589,
+      "real_mae": 0.09312969261913819,
+      "imag_mae": 0.09738056930136986,
+      "measured_relative_residual": 0.825058513029169,
+      "min_real": -0.04999999999999999,
+      "min_imag": 0.0075,
+      "max_real": 0.5205000410977018,
+      "support_iou": 0.21875,
+      "support_voxels": 21,
+      "truth_voxels": 96
+    },
+    "objective_before": 0.3403609675910476,
+    "lambda_normal": 0.01001,
+    "direction_source": "projected_gradient_safeguard",
+    "policy": "full_gradient",
+    "gradient_fallback": false,
+    "gradient_only_control": true,
+    "slope": -1.4688847808805785,
+    "projection": {
+      "blocks": [
+        {
+          "success": true,
+          "iterations": 0
+        },
+        {
+          "success": true,
+          "iterations": 0
+        }
+      ],
+      "projection_distance": 0.7531886890803126,
+      "proposal_norm": 0.9999999999999997,
+      "executed_direction_norm": 0.5256114060737528,
+      "certificate_scope": "C3 only unprojected proposal; exact convex projection would transfer an absolute bound, but this numeric projection is not KKT-certified",
+      "projection_optimality_certified": false,
+      "all_solver_success": true
+    },
+    "step_norm": 0.5256114060737528,
+    "alpha": 0.125,
+    "executed_step_norm": 0.0657014257592191,
+    "objective_after": 0.24695397466246716,
+    "metrics": {
+      "complex_nrmse": 0.7749945550939545,
+      "real_nrmse": 0.6519854784858284,
+      "imag_nrmse": 5.294092259532145,
+      "complex_mae": 0.13331462727461937,
+      "real_mae": 0.0819551331269439,
+      "imag_mae": 0.08500071774868234,
+      "measured_relative_residual": 0.7027856501287129,
+      "min_real": -0.05587035855196637,
+      "min_imag": 0.0065625,
+      "max_real": 0.5973259062472991,
+      "support_iou": 0.6041666666666666,
+      "support_voxels": 58,
+      "truth_voxels": 96
+    },
+    "wall_s": 11.71052090000012
+  },
+  {
+    "iteration": 2,
+    "accepted": true,
+    "accepted_update_count": 3,
+    "proposal_computed": true,
+    "completed": true,
+    "attempt_status": "COMPLETED",
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 2.4808111971192304,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.49085410008916e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 0.607954837776503,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.4612946586538194e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.23233854709799773,
+        "accepted": true,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.454303732651991e-15
+      }
+    ],
+    "phases": {
+      "linearization_s": 0.0019137000053888187,
+      "policy_s": 0.08233640000980813,
+      "projection_s": 0.00021040000137872994,
+      "line_search_s": 8.716645100008463
+    },
+    "before_metrics": {
+      "complex_nrmse": 0.7749945550939545,
+      "real_nrmse": 0.6519854784858284,
+      "imag_nrmse": 5.294092259532145,
+      "complex_mae": 0.13331462727461937,
+      "real_mae": 0.0819551331269439,
+      "imag_mae": 0.08500071774868234,
+      "measured_relative_residual": 0.7027856501287129,
+      "min_real": -0.05587035855196637,
+      "min_imag": 0.0065625,
+      "max_real": 0.5973259062472991,
+      "support_iou": 0.6041666666666666,
+      "support_voxels": 58,
+      "truth_voxels": 96
+    },
+    "objective_before": 0.24695397466246716,
+    "lambda_normal": 0.01001,
+    "direction_source": "projected_gradient_safeguard",
+    "policy": "full_gradient",
+    "gradient_fallback": false,
+    "gradient_only_control": true,
+    "slope": -0.7064815552896199,
+    "projection": {
+      "blocks": [
+        {
+          "success": true,
+          "iterations": 0
+        },
+        {
+          "success": true,
+          "iterations": 0
+        }
+      ],
+      "projection_distance": 0.8485354628670615,
+      "proposal_norm": 0.9999999999999998,
+      "executed_direction_norm": 0.32615157610121037,
+      "certificate_scope": "C3 only unprojected proposal; exact convex projection would transfer an absolute bound, but this numeric projection is not KKT-certified",
+      "projection_optimality_certified": false,
+      "all_solver_success": true
+    },
+    "step_norm": 0.32615157610121037,
+    "alpha": 0.25,
+    "executed_step_norm": 0.08153789402530259,
+    "objective_after": 0.23233854709799773,
+    "metrics": {
+      "complex_nrmse": 0.7302785748137903,
+      "real_nrmse": 0.6627168907116942,
+      "imag_nrmse": 3.9036497965287715,
+      "complex_mae": 0.12547677217051165,
+      "real_mae": 0.09450085269699542,
+      "imag_mae": 0.06274595387412538,
+      "measured_relative_residual": 0.6816720470690929,
+      "min_real": -0.16588955882278245,
+      "min_imag": 0.004921875,
+      "max_real": 0.5737532651451857,
+      "support_iou": 0.2916666666666667,
+      "support_voxels": 28,
+      "truth_voxels": 96
+    },
+    "wall_s": 8.803724199999124
+  },
+  {
+    "iteration": 3,
+    "accepted": true,
+    "accepted_update_count": 4,
+    "proposal_computed": true,
+    "completed": true,
+    "attempt_status": "COMPLETED",
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 6.178438932238026,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 5.30122899474911e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 3.091277589034306,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.735521214079996e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.7578573786186141,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.525054319594776e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.1866075941331541,
+        "accepted": true,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.508107026467923e-15
+      }
+    ],
+    "phases": {
+      "linearization_s": 0.0019431999971857294,
+      "policy_s": 0.0821962999907555,
+      "projection_s": 0.00019580000662244856,
+      "line_search_s": 11.4149563999963
+    },
+    "before_metrics": {
+      "complex_nrmse": 0.7302785748137903,
+      "real_nrmse": 0.6627168907116942,
+      "imag_nrmse": 3.9036497965287715,
+      "complex_mae": 0.12547677217051165,
+      "real_mae": 0.09450085269699542,
+      "imag_mae": 0.06274595387412538,
+      "measured_relative_residual": 0.6816720470690929,
+      "min_real": -0.16588955882278245,
+      "min_imag": 0.004921875,
+      "max_real": 0.5737532651451857,
+      "support_iou": 0.2916666666666667,
+      "support_voxels": 28,
+      "truth_voxels": 96
+    },
+    "objective_before": 0.23233854709799756,
+    "lambda_normal": 0.00301,
+    "direction_source": "projected_gradient_safeguard",
+    "policy": "full_gradient",
+    "gradient_fallback": false,
+    "gradient_only_control": true,
+    "slope": -2.7114025300040145,
+    "projection": {
+      "blocks": [
+        {
+          "success": true,
+          "iterations": 0
+        },
+        {
+          "success": true,
+          "iterations": 0
+        }
+      ],
+      "projection_distance": 0.5681978038511765,
+      "proposal_norm": 1.0,
+      "executed_direction_norm": 0.7736383280986204,
+      "certificate_scope": "C3 only unprojected proposal; exact convex projection would transfer an absolute bound, but this numeric projection is not KKT-certified",
+      "projection_optimality_certified": false,
+      "all_solver_success": true
+    },
+    "step_norm": 0.7736383280986204,
+    "alpha": 0.125,
+    "executed_step_norm": 0.09670479101232755,
+    "objective_after": 0.1866075941331541,
+    "metrics": {
+      "complex_nrmse": 0.6946526884196651,
+      "real_nrmse": 0.6418695136862821,
+      "imag_nrmse": 3.3919517799718735,
+      "complex_mae": 0.1231411479377914,
+      "real_mae": 0.09926284119752982,
+      "imag_mae": 0.05456362224732583,
+      "measured_relative_residual": 0.6109132030897988,
+      "min_real": -0.08771429375074781,
+      "min_imag": 0.004306640625,
+      "max_real": 0.6963157700916647,
+      "support_iou": 0.78125,
+      "support_voxels": 75,
+      "truth_voxels": 96
+    },
+    "wall_s": 11.502218800000264
+  },
+  {
+    "iteration": 4,
+    "accepted": true,
+    "accepted_update_count": 5,
+    "proposal_computed": true,
+    "completed": true,
+    "attempt_status": "COMPLETED",
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 3.4622368551250102,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.503174330153272e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 1.7185646247658262,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.413499891454386e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.3609140949057585,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.615337601818078e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.11512427128967304,
+        "accepted": true,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.59102090233044e-15
+      }
+    ],
+    "phases": {
+      "linearization_s": 0.0019967000116594136,
+      "policy_s": 0.08267080000950955,
+      "projection_s": 0.00019209999300073832,
+      "line_search_s": 11.495765300001949
+    },
+    "before_metrics": {
+      "complex_nrmse": 0.6946526884196651,
+      "real_nrmse": 0.6418695136862821,
+      "imag_nrmse": 3.3919517799718735,
+      "complex_mae": 0.1231411479377914,
+      "real_mae": 0.09926284119752982,
+      "imag_mae": 0.05456362224732583,
+      "measured_relative_residual": 0.6109132030897988,
+      "min_real": -0.08771429375074781,
+      "min_imag": 0.004306640625,
+      "max_real": 0.6963157700916647,
+      "support_iou": 0.78125,
+      "support_voxels": 75,
+      "truth_voxels": 96
+    },
+    "objective_before": 0.1866075941331541,
+    "lambda_normal": 0.00301,
+    "direction_source": "projected_gradient_safeguard",
+    "policy": "full_gradient",
+    "gradient_fallback": false,
+    "gradient_only_control": true,
+    "slope": -1.7292086609604507,
+    "projection": {
+      "blocks": [
+        {
+          "success": true,
+          "iterations": 0
+        },
+        {
+          "success": true,
+          "iterations": 0
+        }
+      ],
+      "projection_distance": 0.6518772320853713,
+      "proposal_norm": 0.9999999999999999,
+      "executed_direction_norm": 0.5470233344675554,
+      "certificate_scope": "C3 only unprojected proposal; exact convex projection would transfer an absolute bound, but this numeric projection is not KKT-certified",
+      "projection_optimality_certified": false,
+      "all_solver_success": true
+    },
+    "step_norm": 0.5470233344675554,
+    "alpha": 0.125,
+    "executed_step_norm": 0.06837791680844442,
+    "objective_after": 0.11512427128967304,
+    "metrics": {
+      "complex_nrmse": 0.6519932349383969,
+      "real_nrmse": 0.6101662907294426,
+      "imag_nrmse": 2.945146569058132,
+      "complex_mae": 0.10239325218699144,
+      "real_mae": 0.08035557081281043,
+      "imag_mae": 0.047219336732771115,
+      "measured_relative_residual": 0.47984194499460386,
+      "min_real": -0.11825814249185965,
+      "min_imag": 0.003768310546875,
+      "max_real": 0.616439775213769,
+      "support_iou": 0.5416666666666666,
+      "support_voxels": 52,
+      "truth_voxels": 96
+    },
+    "wall_s": 11.583927100000437
+  },
+  {
+    "iteration": 5,
+    "accepted": true,
+    "accepted_update_count": 6,
+    "proposal_computed": true,
+    "completed": true,
+    "attempt_status": "COMPLETED",
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 5.3727585492227545,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 5.175234560288268e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 1.7926041992375132,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.933204229122756e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.4401859698445621,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.592702090775037e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.1340890963560595,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.560105434703107e-15
+      },
+      {
+        "alpha": 0.0625,
+        "objective": 0.08945862426001407,
+        "accepted": true,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.587434252654348e-15
+      }
+    ],
+    "phases": {
+      "linearization_s": 0.002020300002186559,
+      "policy_s": 0.08340780000435188,
+      "projection_s": 0.00022200000239536166,
+      "line_search_s": 14.350012099996093
+    },
+    "before_metrics": {
+      "complex_nrmse": 0.6519932349383969,
+      "real_nrmse": 0.6101662907294426,
+      "imag_nrmse": 2.945146569058132,
+      "complex_mae": 0.10239325218699144,
+      "real_mae": 0.08035557081281043,
+      "imag_mae": 0.047219336732771115,
+      "measured_relative_residual": 0.47984194499460386,
+      "min_real": -0.11825814249185965,
+      "min_imag": 0.003768310546875,
+      "max_real": 0.616439775213769,
+      "support_iou": 0.5416666666666666,
+      "support_voxels": 52,
+      "truth_voxels": 96
+    },
+    "objective_before": 0.11512427128967308,
+    "lambda_normal": 0.00301,
+    "direction_source": "projected_gradient_safeguard",
+    "policy": "full_gradient",
+    "gradient_fallback": false,
+    "gradient_only_control": true,
+    "slope": -0.9484443757808132,
+    "projection": {
+      "blocks": [
+        {
+          "success": true,
+          "iterations": 0
+        },
+        {
+          "success": true,
+          "iterations": 0
+        }
+      ],
+      "projection_distance": 0.806222122419742,
+      "proposal_norm": 0.9999999999999999,
+      "executed_direction_norm": 0.5136393316858678,
+      "certificate_scope": "C3 only unprojected proposal; exact convex projection would transfer an absolute bound, but this numeric projection is not KKT-certified",
+      "projection_optimality_certified": false,
+      "all_solver_success": true
+    },
+    "step_norm": 0.5136393316858678,
+    "alpha": 0.0625,
+    "executed_step_norm": 0.03210245823036674,
+    "objective_after": 0.08945862426001407,
+    "metrics": {
+      "complex_nrmse": 0.6282043616077638,
+      "real_nrmse": 0.590492584509496,
+      "imag_nrmse": 2.7524116751822465,
+      "complex_mae": 0.1005058630421777,
+      "real_mae": 0.08038538999864368,
+      "imag_mae": 0.04401600442098493,
+      "measured_relative_residual": 0.42298582789109296,
+      "min_real": -0.08398885742150426,
+      "min_imag": 0.0035327911376953126,
+      "max_real": 0.6768031241146936,
+      "support_iou": 0.75,
+      "support_voxels": 72,
+      "truth_voxels": 96
+    },
+    "wall_s": 14.439433400009875
+  },
+  {
+    "iteration": 6,
+    "accepted": true,
+    "accepted_update_count": 7,
+    "proposal_computed": true,
+    "completed": true,
+    "attempt_status": "COMPLETED",
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 2.0810755307122117,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.576529453452629e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 0.5182507325549058,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.5322533626054755e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.14936539831897747,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.689422718494082e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.08298632510066242,
+        "accepted": true,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.61600119808395e-15
+      }
+    ],
+    "phases": {
+      "linearization_s": 0.0019017000013263896,
+      "policy_s": 0.09095660000457428,
+      "projection_s": 0.00021610000112559646,
+      "line_search_s": 12.004084200001671
+    },
+    "before_metrics": {
+      "complex_nrmse": 0.6282043616077638,
+      "real_nrmse": 0.590492584509496,
+      "imag_nrmse": 2.7524116751822465,
+      "complex_mae": 0.1005058630421777,
+      "real_mae": 0.08038538999864368,
+      "imag_mae": 0.04401600442098493,
+      "measured_relative_residual": 0.42298582789109296,
+      "min_real": -0.08398885742150426,
+      "min_imag": 0.0035327911376953126,
+      "max_real": 0.6768031241146936,
+      "support_iou": 0.75,
+      "support_voxels": 72,
+      "truth_voxels": 96
+    },
+    "objective_before": 0.08945862426001405,
+    "lambda_normal": 0.00091,
+    "direction_source": "projected_gradient_safeguard",
+    "policy": "full_gradient",
+    "gradient_fallback": false,
+    "gradient_only_control": true,
+    "slope": -0.3233461372680938,
+    "projection": {
+      "blocks": [
+        {
+          "success": true,
+          "iterations": 0
+        },
+        {
+          "success": true,
+          "iterations": 0
+        }
+      ],
+      "projection_distance": 0.9123263933793803,
+      "proposal_norm": 0.9999999999999998,
+      "executed_direction_norm": 0.26093437926823804,
+      "certificate_scope": "C3 only unprojected proposal; exact convex projection would transfer an absolute bound, but this numeric projection is not KKT-certified",
+      "projection_optimality_certified": false,
+      "all_solver_success": true
+    },
+    "step_norm": 0.26093437926823804,
+    "alpha": 0.125,
+    "executed_step_norm": 0.032616797408529755,
+    "objective_after": 0.08298632510066242,
+    "metrics": {
+      "complex_nrmse": 0.6050404482746436,
+      "real_nrmse": 0.5759907744053159,
+      "imag_nrmse": 2.3930708922538155,
+      "complex_mae": 0.09840274782499574,
+      "real_mae": 0.08256508578528458,
+      "imag_mae": 0.03797042324924803,
+      "measured_relative_residual": 0.4073970718073472,
+      "min_real": -0.13418105679826978,
+      "min_imag": 0.003091192245483399,
+      "max_real": 0.6893066823105449,
+      "support_iou": 0.7395833333333334,
+      "support_voxels": 71,
+      "truth_voxels": 96
+    },
+    "wall_s": 12.101398500002688
+  },
+  {
+    "iteration": 7,
+    "accepted": true,
+    "accepted_update_count": 8,
+    "proposal_computed": true,
+    "completed": true,
+    "attempt_status": "COMPLETED",
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 5.826798666335496,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 5.153468765359058e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 2.2091467163759964,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.877311771308047e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.5648472689787949,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.664964865433744e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.14354589881967258,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.610129566858929e-15
+      },
+      {
+        "alpha": 0.0625,
+        "objective": 0.067443013601581,
+        "accepted": true,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.603086440399008e-15
+      }
+    ],
+    "phases": {
+      "linearization_s": 0.002801099995849654,
+      "policy_s": 0.11064210000040475,
+      "projection_s": 0.0002829999866662547,
+      "line_search_s": 14.615918600000441
+    },
+    "before_metrics": {
+      "complex_nrmse": 0.6050404482746436,
+      "real_nrmse": 0.5759907744053159,
+      "imag_nrmse": 2.3930708922538155,
+      "complex_mae": 0.09840274782499574,
+      "real_mae": 0.08256508578528458,
+      "imag_mae": 0.03797042324924803,
+      "measured_relative_residual": 0.4073970718073472,
+      "min_real": -0.13418105679826978,
+      "min_imag": 0.003091192245483399,
+      "max_real": 0.6893066823105449,
+      "support_iou": 0.7395833333333334,
+      "support_voxels": 71,
+      "truth_voxels": 96
+    },
+    "objective_before": 0.08298632510066246,
+    "lambda_normal": 0.00091,
+    "direction_source": "projected_gradient_safeguard",
+    "policy": "full_gradient",
+    "gradient_fallback": false,
+    "gradient_only_control": true,
+    "slope": -0.9634494409875232,
+    "projection": {
+      "blocks": [
+        {
+          "success": true,
+          "iterations": 0
+        },
+        {
+          "success": true,
+          "iterations": 0
+        }
+      ],
+      "projection_distance": 0.7908384598424185,
+      "proposal_norm": 1.0,
+      "executed_direction_norm": 0.5518237466193169,
+      "certificate_scope": "C3 only unprojected proposal; exact convex projection would transfer an absolute bound, but this numeric projection is not KKT-certified",
+      "projection_optimality_certified": false,
+      "all_solver_success": true
+    },
+    "step_norm": 0.5518237466193169,
+    "alpha": 0.0625,
+    "executed_step_norm": 0.034488984163707305,
+    "objective_after": 0.067443013601581,
+    "metrics": {
+      "complex_nrmse": 0.58716679166444,
+      "real_nrmse": 0.5611336919741536,
+      "imag_nrmse": 2.2395701299601423,
+      "complex_mae": 0.09562440608289231,
+      "real_mae": 0.08117919376589697,
+      "imag_mae": 0.03541424444922926,
+      "measured_relative_residual": 0.3672679777647883,
+      "min_real": -0.09404397972910898,
+      "min_imag": 0.0028979927301406865,
+      "max_real": 0.7439846132824522,
+      "support_iou": 0.7708333333333334,
+      "support_voxels": 74,
+      "truth_voxels": 96
+    },
+    "wall_s": 14.736674899992067
+  },
+  {
+    "iteration": 8,
+    "accepted": true,
+    "accepted_update_count": 9,
+    "proposal_computed": true,
+    "completed": true,
+    "attempt_status": "COMPLETED",
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 3.555559213947405,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.5385231354796705e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 1.3126320402424605,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.457071981779186e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.3201580064475944,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.6452517673827425e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.09560854081084319,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.7282723031029364e-15
+      },
+      {
+        "alpha": 0.0625,
+        "objective": 0.05774524995910367,
+        "accepted": true,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.604768887482302e-15
+      }
+    ],
+    "phases": {
+      "linearization_s": 0.0019150000007357448,
+      "policy_s": 0.08350949999294244,
+      "projection_s": 0.00025260000256821513,
+      "line_search_s": 14.380807800000184
+    },
+    "before_metrics": {
+      "complex_nrmse": 0.58716679166444,
+      "real_nrmse": 0.5611336919741536,
+      "imag_nrmse": 2.2395701299601423,
+      "complex_mae": 0.09562440608289231,
+      "real_mae": 0.08117919376589697,
+      "imag_mae": 0.03541424444922926,
+      "measured_relative_residual": 0.3672679777647883,
+      "min_real": -0.09404397972910898,
+      "min_imag": 0.0028979927301406865,
+      "max_real": 0.7439846132824522,
+      "support_iou": 0.7708333333333334,
+      "support_voxels": 74,
+      "truth_voxels": 96
+    },
+    "objective_before": 0.06744301360158098,
+    "lambda_normal": 0.00091,
+    "direction_source": "projected_gradient_safeguard",
+    "policy": "full_gradient",
+    "gradient_fallback": false,
+    "gradient_only_control": true,
+    "slope": -0.5215939041632269,
+    "projection": {
+      "blocks": [
+        {
+          "success": true,
+          "iterations": 0
+        },
+        {
+          "success": true,
+          "iterations": 0
+        }
+      ],
+      "projection_distance": 0.8621109339632567,
+      "proposal_norm": 0.9999999999999999,
+      "executed_direction_norm": 0.39744343252710274,
+      "certificate_scope": "C3 only unprojected proposal; exact convex projection would transfer an absolute bound, but this numeric projection is not KKT-certified",
+      "projection_optimality_certified": false,
+      "all_solver_success": true
+    },
+    "step_norm": 0.39744343252710274,
+    "alpha": 0.0625,
+    "executed_step_norm": 0.02484021453294392,
+    "objective_after": 0.05774524995910367,
+    "metrics": {
+      "complex_nrmse": 0.5724457886470129,
+      "real_nrmse": 0.5492420272714793,
+      "imag_nrmse": 2.096299536401531,
+      "complex_mae": 0.09194758655648591,
+      "real_mae": 0.07850827184897972,
+      "imag_mae": 0.03308632802036601,
+      "measured_relative_residual": 0.33983852990038965,
+      "min_real": -0.11941623099603967,
+      "min_imag": 0.0027168681845068936,
+      "max_real": 0.7321997362724171,
+      "support_iou": 0.75,
+      "support_voxels": 72,
+      "truth_voxels": 96
+    },
+    "wall_s": 14.47116339999775
+  },
+  {
+    "iteration": 9,
+    "accepted": true,
+    "accepted_update_count": 10,
+    "proposal_computed": true,
+    "completed": true,
+    "attempt_status": "COMPLETED",
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 3.77720404394386,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 5.187274237880494e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 1.0941440720905498,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.994104565298261e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.2739568104316505,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.609114308269331e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.08669768070839853,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.62535564408595e-15
+      },
+      {
+        "alpha": 0.0625,
+        "objective": 0.052722942744946745,
+        "accepted": true,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.671455853894334e-15
+      }
+    ],
+    "phases": {
+      "linearization_s": 0.0020619999995687976,
+      "policy_s": 0.09219099998881575,
+      "projection_s": 0.0002741999924182892,
+      "line_search_s": 14.343486500001745
+    },
+    "before_metrics": {
+      "complex_nrmse": 0.5724457886470129,
+      "real_nrmse": 0.5492420272714793,
+      "imag_nrmse": 2.096299536401531,
+      "complex_mae": 0.09194758655648591,
+      "real_mae": 0.07850827184897972,
+      "imag_mae": 0.03308632802036601,
+      "measured_relative_residual": 0.33983852990038965,
+      "min_real": -0.11941623099603967,
+      "min_imag": 0.0027168681845068936,
+      "max_real": 0.7321997362724171,
+      "support_iou": 0.75,
+      "support_voxels": 72,
+      "truth_voxels": 96
+    },
+    "objective_before": 0.05774524995910366,
+    "lambda_normal": 0.00028,
+    "direction_source": "projected_gradient_safeguard",
+    "policy": "full_gradient",
+    "gradient_fallback": false,
+    "gradient_only_control": true,
+    "slope": -0.3846935134035897,
+    "projection": {
+      "blocks": [
+        {
+          "success": true,
+          "iterations": 0
+        },
+        {
+          "success": true,
+          "iterations": 0
+        }
+      ],
+      "projection_distance": 0.8952656277660954,
+      "proposal_norm": 1.0,
+      "executed_direction_norm": 0.35882662877825156,
+      "certificate_scope": "C3 only unprojected proposal; exact convex projection would transfer an absolute bound, but this numeric projection is not KKT-certified",
+      "projection_optimality_certified": false,
+      "all_solver_success": true
+    },
+    "step_norm": 0.35882662877825156,
+    "alpha": 0.0625,
+    "executed_step_norm": 0.022426664298640722,
+    "objective_after": 0.052722942744946745,
+    "metrics": {
+      "complex_nrmse": 0.5575164670882108,
+      "real_nrmse": 0.5367623873689644,
+      "imag_nrmse": 1.9645303228191875,
+      "complex_mae": 0.0901975353130985,
+      "real_mae": 0.07801601048245717,
+      "imag_mae": 0.030938167015414877,
+      "measured_relative_residual": 0.3247239077035001,
+      "min_real": -0.09466288263923094,
+      "min_imag": 0.0025470639229752128,
+      "max_real": 0.7776872702367796,
+      "support_iou": 0.8125,
+      "support_voxels": 78,
+      "truth_voxels": 96
+    },
+    "wall_s": 14.443250700001954
+  },
+  {
+    "iteration": 10,
+    "accepted": true,
+    "accepted_update_count": 11,
+    "proposal_computed": true,
+    "completed": true,
+    "attempt_status": "COMPLETED",
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 3.5178907402416177,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.543459579984762e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 1.294353513636561,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.537963551827872e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.31724101604704374,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.690417627880592e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.08986041265213963,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.716786604659478e-15
+      },
+      {
+        "alpha": 0.0625,
+        "objective": 0.048160007732746334,
+        "accepted": true,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.696813745716937e-15
+      }
+    ],
+    "phases": {
+      "linearization_s": 0.001899099996080622,
+      "policy_s": 0.08446239998738747,
+      "projection_s": 0.0002057999954558909,
+      "line_search_s": 14.38558460000786
+    },
+    "before_metrics": {
+      "complex_nrmse": 0.5575164670882108,
+      "real_nrmse": 0.5367623873689644,
+      "imag_nrmse": 1.9645303228191875,
+      "complex_mae": 0.0901975353130985,
+      "real_mae": 0.07801601048245717,
+      "imag_mae": 0.030938167015414877,
+      "measured_relative_residual": 0.3247239077035001,
+      "min_real": -0.09466288263923094,
+      "min_imag": 0.0025470639229752128,
+      "max_real": 0.7776872702367796,
+      "support_iou": 0.8125,
+      "support_voxels": 78,
+      "truth_voxels": 96
+    },
+    "objective_before": 0.05272294274494676,
+    "lambda_normal": 0.00028,
+    "direction_source": "projected_gradient_safeguard",
+    "policy": "full_gradient",
+    "gradient_fallback": false,
+    "gradient_only_control": true,
+    "slope": -0.4305916653879327,
+    "projection": {
+      "blocks": [
+        {
+          "success": true,
+          "iterations": 0
+        },
+        {
+          "success": true,
+          "iterations": 0
+        }
+      ],
+      "projection_distance": 0.8757766780964329,
+      "proposal_norm": 1.0000000000000002,
+      "executed_direction_norm": 0.3852024538506753,
+      "certificate_scope": "C3 only unprojected proposal; exact convex projection would transfer an absolute bound, but this numeric projection is not KKT-certified",
+      "projection_optimality_certified": false,
+      "all_solver_success": true
+    },
+    "step_norm": 0.3852024538506753,
+    "alpha": 0.0625,
+    "executed_step_norm": 0.024075153365667207,
+    "objective_after": 0.048160007732746334,
+    "metrics": {
+      "complex_nrmse": 0.5445271199268348,
+      "real_nrmse": 0.5260061827664136,
+      "imag_nrmse": 1.8424229396651937,
+      "complex_mae": 0.08728899964208289,
+      "real_mae": 0.07609180293715191,
+      "imag_mae": 0.029014282436464773,
+      "measured_relative_residual": 0.31035420199733316,
+      "min_real": -0.119996452474279,
+      "min_imag": 0.002387872427789262,
+      "max_real": 0.7674249708571158,
+      "support_iou": 0.75,
+      "support_voxels": 72,
+      "truth_voxels": 96
+    },
+    "wall_s": 14.477820200001588
+  },
+  {
+    "iteration": 11,
+    "accepted": true,
+    "accepted_update_count": 12,
+    "proposal_computed": true,
+    "completed": true,
+    "attempt_status": "COMPLETED",
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 5.009992298967903,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 5.211151054458516e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 1.7142223195946222,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 5.085551982102881e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.4374259134279861,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.69974312678345e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.11338948555775802,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.669008683899104e-15
+      },
+      {
+        "alpha": 0.0625,
+        "objective": 0.0479489479674465,
+        "accepted": true,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.533363284195373e-15
+      }
+    ],
+    "phases": {
+      "linearization_s": 0.001852900008088909,
+      "policy_s": 0.08346259999962058,
+      "projection_s": 0.000222100003156811,
+      "line_search_s": 14.365182699999423
+    },
+    "before_metrics": {
+      "complex_nrmse": 0.5445271199268348,
+      "real_nrmse": 0.5260061827664136,
+      "imag_nrmse": 1.8424229396651937,
+      "complex_mae": 0.08728899964208289,
+      "real_mae": 0.07609180293715191,
+      "imag_mae": 0.029014282436464773,
+      "measured_relative_residual": 0.31035420199733316,
+      "min_real": -0.119996452474279,
+      "min_imag": 0.002387872427789262,
+      "max_real": 0.7674249708571158,
+      "support_iou": 0.75,
+      "support_voxels": 72,
+      "truth_voxels": 96
+    },
+    "objective_before": 0.04816000773274635,
+    "lambda_normal": 0.00028,
+    "direction_source": "projected_gradient_safeguard",
+    "policy": "full_gradient",
+    "gradient_fallback": false,
+    "gradient_only_control": true,
+    "slope": -0.5211808546544651,
+    "projection": {
+      "blocks": [
+        {
+          "success": true,
+          "iterations": 0
+        },
+        {
+          "success": true,
+          "iterations": 0
+        }
+      ],
+      "projection_distance": 0.8569072366693425,
+      "proposal_norm": 1.0,
+      "executed_direction_norm": 0.4551759825628025,
+      "certificate_scope": "C3 only unprojected proposal; exact convex projection would transfer an absolute bound, but this numeric projection is not KKT-certified",
+      "projection_optimality_certified": false,
+      "all_solver_success": true
+    },
+    "step_norm": 0.4551759825628025,
+    "alpha": 0.0625,
+    "executed_step_norm": 0.028448498910175157,
+    "objective_after": 0.0479489479674465,
+    "metrics": {
+      "complex_nrmse": 0.5304649813730542,
+      "real_nrmse": 0.5138252180698148,
+      "imag_nrmse": 1.7310427473412644,
+      "complex_mae": 0.08573056397979067,
+      "real_mae": 0.07562655206374848,
+      "imag_mae": 0.027316465393072396,
+      "measured_relative_residual": 0.30967340374807706,
+      "min_real": -0.09772110952538578,
+      "min_imag": 0.002238630401052433,
+      "max_real": 0.8190559642928711,
+      "support_iou": 0.8958333333333334,
+      "support_voxels": 86,
+      "truth_voxels": 96
+    },
+    "wall_s": 14.45659240000532
+  },
+  {
+    "iteration": 12,
+    "accepted": true,
+    "accepted_update_count": 13,
+    "proposal_computed": true,
+    "completed": true,
+    "attempt_status": "COMPLETED",
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 3.4764230825382243,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.5129380758608104e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 1.843675222174871,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.507264423841172e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.4544482498759688,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.670171779094294e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.10546800984523494,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.688099732198452e-15
+      },
+      {
+        "alpha": 0.0625,
+        "objective": 0.040766028483382254,
+        "accepted": true,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.7400382940278795e-15
+      }
+    ],
+    "phases": {
+      "linearization_s": 0.0020311999978730455,
+      "policy_s": 0.09044400000129826,
+      "projection_s": 0.00022529999841935933,
+      "line_search_s": 14.558970900005079
+    },
+    "before_metrics": {
+      "complex_nrmse": 0.5304649813730542,
+      "real_nrmse": 0.5138252180698148,
+      "imag_nrmse": 1.7310427473412644,
+      "complex_mae": 0.08573056397979067,
+      "real_mae": 0.07562655206374848,
+      "imag_mae": 0.027316465393072396,
+      "measured_relative_residual": 0.30967340374807706,
+      "min_real": -0.09772110952538578,
+      "min_imag": 0.002238630401052433,
+      "max_real": 0.8190559642928711,
+      "support_iou": 0.8958333333333334,
+      "support_voxels": 86,
+      "truth_voxels": 96
+    },
+    "objective_before": 0.04794894796744652,
+    "lambda_normal": 9.1e-05,
+    "direction_source": "projected_gradient_safeguard",
+    "policy": "full_gradient",
+    "gradient_fallback": false,
+    "gradient_only_control": true,
+    "slope": -0.6710567217098412,
+    "projection": {
+      "blocks": [
+        {
+          "success": true,
+          "iterations": 0
+        },
+        {
+          "success": true,
+          "iterations": 0
+        }
+      ],
+      "projection_distance": 0.7906069980896003,
+      "proposal_norm": 0.9999999999999998,
+      "executed_direction_norm": 0.4744296314602176,
+      "certificate_scope": "C3 only unprojected proposal; exact convex projection would transfer an absolute bound, but this numeric projection is not KKT-certified",
+      "projection_optimality_certified": false,
+      "all_solver_success": true
+    },
+    "step_norm": 0.4744296314602176,
+    "alpha": 0.0625,
+    "executed_step_norm": 0.0296518519662636,
+    "objective_after": 0.040766028483382254,
+    "metrics": {
+      "complex_nrmse": 0.5200601759069967,
+      "real_nrmse": 0.5052043125175173,
+      "imag_nrmse": 1.627985225868328,
+      "complex_mae": 0.08195483174851385,
+      "real_mae": 0.07252351089654169,
+      "imag_mae": 0.02581345225095903,
+      "measured_relative_residual": 0.28553767955327974,
+      "min_real": -0.11700200057446497,
+      "min_imag": 0.002098716000986656,
+      "max_real": 0.7931146448280543,
+      "support_iou": 0.78125,
+      "support_voxels": 75,
+      "truth_voxels": 96
+    },
+    "wall_s": 14.657951700006379
+  },
+  {
+    "iteration": 13,
+    "accepted": true,
+    "accepted_update_count": 14,
+    "proposal_computed": true,
+    "completed": true,
+    "attempt_status": "COMPLETED",
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 5.792412610030968,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 5.220800872290506e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 2.2737288896103163,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 5.071659202242882e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.6037868900890514,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.879199714798482e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.1447793427363401,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.6819747612463684e-15
+      },
+      {
+        "alpha": 0.0625,
+        "objective": 0.04656675857859812,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.734796097257016e-15
+      },
+      {
+        "alpha": 0.03125,
+        "objective": 0.032118900200741464,
+        "accepted": true,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.702244176574795e-15
+      }
+    ],
+    "phases": {
+      "linearization_s": 0.001976800005650148,
+      "policy_s": 0.09271949999674689,
+      "projection_s": 0.00020560000848490745,
+      "line_search_s": 17.38610630000767
+    },
+    "before_metrics": {
+      "complex_nrmse": 0.5200601759069967,
+      "real_nrmse": 0.5052043125175173,
+      "imag_nrmse": 1.627985225868328,
+      "complex_mae": 0.08195483174851385,
+      "real_mae": 0.07252351089654169,
+      "imag_mae": 0.02581345225095903,
+      "measured_relative_residual": 0.28553767955327974,
+      "min_real": -0.11700200057446497,
+      "min_imag": 0.002098716000986656,
+      "max_real": 0.7931146448280543,
+      "support_iou": 0.78125,
+      "support_voxels": 75,
+      "truth_voxels": 96
+    },
+    "objective_before": 0.04076602848338221,
+    "lambda_normal": 9.1e-05,
+    "direction_source": "projected_gradient_safeguard",
+    "policy": "full_gradient",
+    "gradient_fallback": false,
+    "gradient_only_control": true,
+    "slope": -0.6431677422210242,
+    "projection": {
+      "blocks": [
+        {
+          "success": true,
+          "iterations": 0
+        },
+        {
+          "success": true,
+          "iterations": 0
+        }
+      ],
+      "projection_distance": 0.8154338602105752,
+      "proposal_norm": 1.0000000000000002,
+      "executed_direction_norm": 0.5352448028862544,
+      "certificate_scope": "C3 only unprojected proposal; exact convex projection would transfer an absolute bound, but this numeric projection is not KKT-certified",
+      "projection_optimality_certified": false,
+      "all_solver_success": true
+    },
+    "step_norm": 0.5352448028862544,
+    "alpha": 0.03125,
+    "executed_step_norm": 0.01672640009019545,
+    "objective_after": 0.032118900200741464,
+    "metrics": {
+      "complex_nrmse": 0.508746653243551,
+      "real_nrmse": 0.4944477594078898,
+      "imag_nrmse": 1.5811901475345,
+      "complex_mae": 0.08012700892535952,
+      "real_mae": 0.07076728474183026,
+      "imag_mae": 0.025142405812207055,
+      "measured_relative_residual": 0.25345120907908736,
+      "min_real": -0.1033022712082122,
+      "min_imag": 0.002033131125955823,
+      "max_real": 0.8227750675191307,
+      "support_iou": 0.8645833333333334,
+      "support_voxels": 83,
+      "truth_voxels": 96
+    },
+    "wall_s": 17.487609200004954
+  },
+  {
+    "iteration": 14,
+    "accepted": true,
+    "accepted_update_count": 15,
+    "proposal_computed": true,
+    "completed": true,
+    "attempt_status": "COMPLETED",
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 1.358316752545624,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.7906883958438895e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 0.3287453512242863,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.736188581076903e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.08797481203143936,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.600527107433819e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.03811201328629697,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.631617727143323e-15
+      },
+      {
+        "alpha": 0.0625,
+        "objective": 0.02983317327472728,
+        "accepted": true,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.661078172618265e-15
+      }
+    ],
+    "phases": {
+      "linearization_s": 0.0020924000127706677,
+      "policy_s": 0.0823579999996582,
+      "projection_s": 0.00023410000721924007,
+      "line_search_s": 14.634289400011767
+    },
+    "before_metrics": {
+      "complex_nrmse": 0.508746653243551,
+      "real_nrmse": 0.4944477594078898,
+      "imag_nrmse": 1.5811901475345,
+      "complex_mae": 0.08012700892535952,
+      "real_mae": 0.07076728474183026,
+      "imag_mae": 0.025142405812207055,
+      "measured_relative_residual": 0.25345120907908736,
+      "min_real": -0.1033022712082122,
+      "min_imag": 0.002033131125955823,
+      "max_real": 0.8227750675191307,
+      "support_iou": 0.8645833333333334,
+      "support_voxels": 83,
+      "truth_voxels": 96
+    },
+    "objective_before": 0.03211890020074146,
+    "lambda_normal": 9.1e-05,
+    "direction_source": "projected_gradient_safeguard",
+    "policy": "full_gradient",
+    "gradient_fallback": false,
+    "gradient_only_control": true,
+    "slope": -0.11867508621902251,
+    "projection": {
+      "blocks": [
+        {
+          "success": true,
+          "iterations": 0
+        },
+        {
+          "success": true,
+          "iterations": 0
+        }
+      ],
+      "projection_distance": 0.950986628760331,
+      "proposal_norm": 0.9999999999999999,
+      "executed_direction_norm": 0.19950254480547178,
+      "certificate_scope": "C3 only unprojected proposal; exact convex projection would transfer an absolute bound, but this numeric projection is not KKT-certified",
+      "projection_optimality_certified": false,
+      "all_solver_success": true
+    },
+    "step_norm": 0.19950254480547178,
+    "alpha": 0.0625,
+    "executed_step_norm": 0.012468909050341986,
+    "objective_after": 0.02983317327472728,
+    "metrics": {
+      "complex_nrmse": 0.4946219482925332,
+      "real_nrmse": 0.48164814176708015,
+      "imag_nrmse": 1.4912088659514005,
+      "complex_mae": 0.07828665248527576,
+      "real_mae": 0.06985462582150041,
+      "imag_mae": 0.023849891420349503,
+      "measured_relative_residual": 0.24426634415059204,
+      "min_real": -0.1204515811542779,
+      "min_imag": 0.0019060604305835842,
+      "max_real": 0.8337245603279945,
+      "support_iou": 0.8645833333333334,
+      "support_voxels": 83,
+      "truth_voxels": 96
+    },
+    "wall_s": 14.726318500004709
+  },
+  {
+    "iteration": 15,
+    "accepted": true,
+    "accepted_update_count": 16,
+    "proposal_computed": true,
+    "completed": true,
+    "attempt_status": "COMPLETED",
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 3.876868716132025,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 5.068290682010998e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 1.211814616848717,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 5.137982677910525e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.3079961239928333,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.739574569413442e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.08229447649371256,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.8143958622542365e-15
+      },
+      {
+        "alpha": 0.0625,
+        "objective": 0.03419383800046035,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.735901720598259e-15
+      },
+      {
+        "alpha": 0.03125,
+        "objective": 0.026576025500340477,
+        "accepted": true,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.819947314688192e-15
+      }
+    ],
+    "phases": {
+      "linearization_s": 0.0020511000038823113,
+      "policy_s": 0.09175510000204667,
+      "projection_s": 0.0002010999887716025,
+      "line_search_s": 17.265242900000885
+    },
+    "before_metrics": {
+      "complex_nrmse": 0.4946219482925332,
+      "real_nrmse": 0.48164814176708015,
+      "imag_nrmse": 1.4912088659514005,
+      "complex_mae": 0.07828665248527576,
+      "real_mae": 0.06985462582150041,
+      "imag_mae": 0.023849891420349503,
+      "measured_relative_residual": 0.24426634415059204,
+      "min_real": -0.1204515811542779,
+      "min_imag": 0.0019060604305835842,
+      "max_real": 0.8337245603279945,
+      "support_iou": 0.8645833333333334,
+      "support_voxels": 83,
+      "truth_voxels": 96
+    },
+    "objective_before": 0.02983317327472727,
+    "lambda_normal": 3.4299999999999993e-05,
+    "direction_source": "projected_gradient_safeguard",
+    "policy": "full_gradient",
+    "gradient_fallback": false,
+    "gradient_only_control": true,
+    "slope": -0.2768658188144667,
+    "projection": {
+      "blocks": [
+        {
+          "success": true,
+          "iterations": 0
+        },
+        {
+          "success": true,
+          "iterations": 0
+        }
+      ],
+      "projection_distance": 0.9030852234784862,
+      "proposal_norm": 0.9999999999999994,
+      "executed_direction_norm": 0.36807585796850395,
+      "certificate_scope": "C3 only unprojected proposal; exact convex projection would transfer an absolute bound, but this numeric projection is not KKT-certified",
+      "projection_optimality_certified": false,
+      "all_solver_success": true
+    },
+    "step_norm": 0.36807585796850395,
+    "alpha": 0.03125,
+    "executed_step_norm": 0.011502370561515748,
+    "objective_after": 0.026576025500340477,
+    "metrics": {
+      "complex_nrmse": 0.48526350815763597,
+      "real_nrmse": 0.47278337979892227,
+      "imag_nrmse": 1.450410741307474,
+      "complex_mae": 0.07681944464447142,
+      "real_mae": 0.06865894521130711,
+      "imag_mae": 0.023248121408888787,
+      "measured_relative_residual": 0.23054663766083697,
+      "min_real": -0.10955008764508974,
+      "min_imag": 0.0018464960421278472,
+      "max_real": 0.8576590977458018,
+      "support_iou": 0.9166666666666666,
+      "support_voxels": 88,
+      "truth_voxels": 96
+    },
+    "wall_s": 17.366720899997745
+  },
+  {
+    "iteration": 16,
+    "accepted": true,
+    "accepted_update_count": 17,
+    "proposal_computed": true,
+    "completed": true,
+    "attempt_status": "COMPLETED",
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 2.018559363798252,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.750347568957138e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 0.5141790858877472,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.674995931742506e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.12756668018531414,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.7689033098005515e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.04293648771302877,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.677238367165275e-15
+      },
+      {
+        "alpha": 0.0625,
+        "objective": 0.02653231565840105,
+        "accepted": true,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.68546998420573e-15
+      }
+    ],
+    "phases": {
+      "linearization_s": 0.0019221999973524362,
+      "policy_s": 0.08587540000735316,
+      "projection_s": 0.000221800000872463,
+      "line_search_s": 14.3911408999993
+    },
+    "before_metrics": {
+      "complex_nrmse": 0.48526350815763597,
+      "real_nrmse": 0.47278337979892227,
+      "imag_nrmse": 1.450410741307474,
+      "complex_mae": 0.07681944464447142,
+      "real_mae": 0.06865894521130711,
+      "imag_mae": 0.023248121408888787,
+      "measured_relative_residual": 0.23054663766083697,
+      "min_real": -0.10955008764508974,
+      "min_imag": 0.0018464960421278472,
+      "max_real": 0.8576590977458018,
+      "support_iou": 0.9166666666666666,
+      "support_voxels": 88,
+      "truth_voxels": 96
+    },
+    "objective_before": 0.026576025500340467,
+    "lambda_normal": 3.4299999999999993e-05,
+    "direction_source": "projected_gradient_safeguard",
+    "policy": "full_gradient",
+    "gradient_fallback": false,
+    "gradient_only_control": true,
+    "slope": -0.12851488133047034,
+    "projection": {
+      "blocks": [
+        {
+          "success": true,
+          "iterations": 0
+        },
+        {
+          "success": true,
+          "iterations": 0
+        }
+      ],
+      "projection_distance": 0.9458788040110829,
+      "proposal_norm": 1.0000000000000002,
+      "executed_direction_norm": 0.23479758820742494,
+      "certificate_scope": "C3 only unprojected proposal; exact convex projection would transfer an absolute bound, but this numeric projection is not KKT-certified",
+      "projection_optimality_certified": false,
+      "all_solver_success": true
+    },
+    "step_norm": 0.23479758820742494,
+    "alpha": 0.0625,
+    "executed_step_norm": 0.014674849262964059,
+    "objective_after": 0.02653231565840105,
+    "metrics": {
+      "complex_nrmse": 0.4721070501086274,
+      "real_nrmse": 0.4607087059715413,
+      "imag_nrmse": 1.3726695837614578,
+      "complex_mae": 0.0747152123946414,
+      "real_mae": 0.06724981586792309,
+      "imag_mae": 0.022075080345355744,
+      "measured_relative_residual": 0.2303569316252665,
+      "min_real": -0.1337203393264337,
+      "min_imag": 0.0017310900394948568,
+      "max_real": 0.8642016729480838,
+      "support_iou": 0.90625,
+      "support_voxels": 87,
+      "truth_voxels": 96
+    },
+    "wall_s": 14.486944600008428
+  },
+  {
+    "iteration": 17,
+    "accepted": true,
+    "accepted_update_count": 18,
+    "proposal_computed": true,
+    "completed": true,
+    "attempt_status": "COMPLETED",
+    "trials": [
+      {
+        "alpha": 1.0,
+        "objective": 5.386627744982862,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 5.197645846020113e-15
+      },
+      {
+        "alpha": 0.5,
+        "objective": 2.1113911055984365,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 5.136222867688579e-15
+      },
+      {
+        "alpha": 0.25,
+        "objective": 0.571186277338345,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 5.043355587691457e-15
+      },
+      {
+        "alpha": 0.125,
+        "objective": 0.13816778249081244,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.739196685441775e-15
+      },
+      {
+        "alpha": 0.0625,
+        "objective": 0.04017831822643557,
+        "accepted": false,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.853252210734304e-15
+      },
+      {
+        "alpha": 0.03125,
+        "objective": 0.02276118589671935,
+        "accepted": true,
+        "trial_status": "COMPLETED",
+        "source_residual": 4.8711616957584785e-15
+      }
+    ],
+    "phases": {
+      "linearization_s": 0.002019699997617863,
+      "policy_s": 0.09079459999338724,
+      "projection_s": 0.00019800000882241875,
+      "line_search_s": 17.413344700005837
+    },
+    "before_metrics": {
+      "complex_nrmse": 0.4721070501086274,
+      "real_nrmse": 0.4607087059715413,
+      "imag_nrmse": 1.3726695837614578,
+      "complex_mae": 0.0747152123946414,
+      "real_mae": 0.06724981586792309,
+      "imag_mae": 0.022075080345355744,
+      "measured_relative_residual": 0.2303569316252665,
+      "min_real": -0.1337203393264337,
+      "min_imag": 0.0017310900394948568,
+      "max_real": 0.8642016729480838,
+      "support_iou": 0.90625,
+      "support_voxels": 87,
+      "truth_voxels": 96
+    },
+    "objective_before": 0.026532315658401053,
+    "lambda_normal": 3.4299999999999993e-05,
+    "direction_source": "projected_gradient_safeguard",
+    "policy": "full_gradient",
+    "gradient_fallback": false,
+    "gradient_only_control": true,
+    "slope": -0.45818436011504177,
+    "projection": {
+      "blocks": [
+        {
+          "success": true,
+          "iterations": 0
+        },
+        {
+          "success": true,
+          "iterations": 0
+        }
+      ],
+      "projection_distance": 0.8404784000722142,
+      "proposal_norm": 1.0,
+      "executed_direction_norm": 0.5023614484077246,
+      "certificate_scope": "C3 only unprojected proposal; exact convex projection would transfer an absolute bound, but this numeric projection is not KKT-certified",
+      "projection_optimality_certified": false,
+      "all_solver_success": true
+    },
+    "step_norm": 0.5023614484077246,
+    "alpha": 0.03125,
+    "executed_step_norm": 0.015698795262741393,
+    "objective_after": 0.02276118589671935,
+    "metrics": {
+      "complex_nrmse": 0.462434359925198,
+      "real_nrmse": 0.4513964948884192,
+      "imag_nrmse": 1.3378710396681355,
+      "complex_mae": 0.07310938314459249,
+      "real_mae": 0.06591025447300886,
+      "imag_mae": 0.021531618163155217,
+      "measured_relative_residual": 0.2133589920103733,
+      "min_real": -0.11517784638019804,
+      "min_imag": 0.0016769934757606426,
+      "max_real": 0.8921595383259202,
+      "support_iou": 0.9166666666666666,
+      "support_voxels": 88,
+      "truth_voxels": 96
+    },
+    "wall_s": 17.51490019999619
+  }
+]

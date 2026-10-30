@@ -1,0 +1,14 @@
+{
+  "case": "digit3",
+  "definition": {
+    "label": "Volumetric digit 3",
+    "formula": "Union of ellipses centered y=+/-0.15: (x/.29)^2+((y-c)/.27)^2<=1, remove inner ellipses (.10,.09), cut x<-.12; abs(z)<=.17.",
+    "nominal_min_thickness": 0.18
+  },
+  "seed": 2026103101,
+  "same_grid": true,
+  "truth_n": 12,
+  "inverse_n": 12,
+  "truth_voxels": 120,
+  "synthesis_wall_s": 2.0489109160844237
+}

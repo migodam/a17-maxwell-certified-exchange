@@ -1,0 +1,14 @@
+{
+  "case": "torus",
+  "definition": {
+    "label": "Torus (z-axis hole)",
+    "formula": "(sqrt(x*x+y*y)-.24)^2+z*z<=.12^2.",
+    "nominal_min_thickness": 0.24
+  },
+  "seed": 2026103103,
+  "same_grid": true,
+  "truth_n": 12,
+  "inverse_n": 12,
+  "truth_voxels": 96,
+  "synthesis_wall_s": 1.866662582848221
+}
